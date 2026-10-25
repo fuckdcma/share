@@ -1,0 +1,109 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Button.Width" Value="75"/>
+    <Constant Name="Button.Height" Value="60"/>
+  </Constants>
+  <Window>
+    <Widget Id="FriendsPanelServiceTabItem" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true">
+      <Children>
+
+        <!-- Steam -->
+        <StringBasedVisibilityWidget UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="Steam" SecondString="@ServiceName">
+          <Children>
+            <ButtonWidget TabName="@ServiceName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Brush="MPLobby.FriendsPanel.Tab.Steam" >
+              <Children>
+                <HintWidget DataSource="{ServiceNameHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </StringBasedVisibilityWidget>
+
+        <!-- Epic -->
+        <StringBasedVisibilityWidget UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="Epic" SecondString="@ServiceName">
+          <Children>
+            <ButtonWidget TabName="@ServiceName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Brush="MPLobby.FriendsPanel.Tab.Epic">
+              <Children>
+                <HintWidget DataSource="{ServiceNameHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </StringBasedVisibilityWidget>
+
+        <!-- GOG -->
+        <StringBasedVisibilityWidget UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="GOG" SecondString="@ServiceName">
+          <Children>
+            <ButtonWidget TabName="@ServiceName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Brush="MPLobby.FriendsPanel.Tab.GOG" >
+              <Children>
+                <HintWidget DataSource="{ServiceNameHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </StringBasedVisibilityWidget>
+
+        <!-- GDK -->
+        <StringBasedVisibilityWidget UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="GDK" SecondString="@ServiceName">
+          <Children>
+            <ButtonWidget TabName="@ServiceName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Brush="MPLobby.FriendsPanel.Tab.GDK" >
+              <Children>
+                <HintWidget DataSource="{ServiceNameHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </StringBasedVisibilityWidget>
+
+        <!-- PS -->
+        <StringBasedVisibilityWidget UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="PlayStation" SecondString="@ServiceName">
+          <Children>
+            <ButtonWidget TabName="@ServiceName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Brush="MPLobby.FriendsPanel.Tab.PS" >
+              <Children>
+                <HintWidget DataSource="{ServiceNameHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false"/>
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </StringBasedVisibilityWidget>
+
+        <!-- TW -->
+        <StringBasedVisibilityWidget UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="TaleWorlds" SecondString="@ServiceName">
+          <Children>
+            <ButtonWidget TabName="@ServiceName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Brush="MPLobby.FriendsPanel.Tab.TaleWorlds" >
+              <Children>
+                <HintWidget DataSource="{ServiceNameHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false"/>
+              </Children>
+            </ButtonWidget>
+
+            <!-- Notification Icon -->
+            <Widget DataSource="{..\..}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="21" SuggestedWidth="21" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="50" MarginTop="40" Sprite="BlankWhiteCircle" Color="#FF4800FF" IsVisible="@HasNotification" >
+              <Children>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPHUD.UserProfile.NameText" Brush.FontSize="14" PositionYOffset="1" IntText="@NotificationCount"/>
+              </Children>
+            </Widget>
+          </Children>
+        </StringBasedVisibilityWidget>
+
+        <!-- Clan Members -->
+        <StringBasedVisibilityWidget UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="ClanFriends" SecondString="@ServiceName">
+          <Children>
+            <ButtonWidget TabName="@ServiceName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Brush="MPLobby.FriendsPanel.Tab.Clan" >
+              <Children>
+                <HintWidget DataSource="{ServiceNameHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </StringBasedVisibilityWidget>
+
+        <!-- Recently Played -->
+        <StringBasedVisibilityWidget UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="RecentlyPlayedPlayers" SecondString="@ServiceName">
+          <Children>
+            <ButtonWidget TabName="@ServiceName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Brush="MPLobby.FriendsPanel.Tab.Recent" >
+              <Children>
+                <HintWidget DataSource="{ServiceNameHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </StringBasedVisibilityWidget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

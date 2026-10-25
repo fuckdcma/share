@@ -1,0 +1,11 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsEnabled">
+      <Children>
+          <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" HorizontalAlignment="Center" MarginTop="35" Brush="Duel.State.RemainingTime.Text" Text="@RemainingTime" />
+          <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" HorizontalAlignment="Center" MarginTop="35" MarginRight="500" Brush="Duel.State.RemainingTime.Text" Text="@ScoreSelf" />
+          <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" HorizontalAlignment="Center" MarginTop="35" MarginLeft="500" Brush="Duel.State.RemainingTime.Text" Text="@ScoreEnemy" />
+     </Children>
+    </Widget>
+  </Window>
+</Prefab>

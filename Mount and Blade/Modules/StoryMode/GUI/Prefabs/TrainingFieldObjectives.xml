@@ -1,0 +1,88 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsEnabled="false">
+      <Children>
+        <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" MarginLeft="25" MarginTop="25" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <Children>
+
+            <!--Objectives-->
+            <ListPanel DataSource="{ObjectiveItems}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  MinWidth="350" StackLayout.LayoutMethod="VerticalTopToBottom" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.5">
+              <ItemTemplate>
+                <TrainingFieldObjectiveItem/>
+              </ItemTemplate>
+            </ListPanel>
+
+            <RichTextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Objective.Text.WithOutline" MarginTop="25" Text="@LeaveAnyTimeText"/>
+          </Children>
+        </ListPanel>
+
+        <Widget Id="ControlTutorialParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center">
+          <Children>
+            <ListPanel DataSource="{ActiveObjective}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalBottomToTop">
+              <Children>
+                
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="190" SuggestedHeight="160" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                  <Children>
+                    <Widget Id="TransparentBackground" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.5" IsVisible="@IsBackgroundActive" >
+                      <Children>
+                        <TutorialDirectionArrowWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalArrowWidget="HorizontalArrow" VerticalArrowWidget="VerticalArrow" ArrowState="@ArrowState">
+                          <Children>
+                            <BrushWidget Id="HorizontalArrow" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="121" SuggestedHeight="31" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="TrainingField.DirectionArrow.Horizontal" />
+                            <BrushWidget Id="VerticalArrow" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="31" SuggestedHeight="121" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="TrainingField.DirectionArrow.Vertical" />
+                          </Children>
+                        </TutorialDirectionArrowWidget>
+                      </Children>
+                    </Widget>
+                    
+                    <ListPanel  DataSource="{ObjectiveKeys}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <ItemTemplate>
+
+                        <TutorialObjectiveItemWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="80" SuggestedHeight="80" InputType="@InputType" KeyPressWidget="KeyPressWidget" MouseMoveWidget="MouseMoveWidget" StickMoveWidget="StickMoveWidget">
+                          <Children>
+
+                            <InputKeyVisualWidget Id="KeyPressWidget" DataSource="{Key}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" KeyID="@KeyID" IsVisible="@IsVisible" Brush="TrainingField.Key.Press.Widget"/>
+
+                            <TutorialObjectiveMouseParentWidget Id="MouseMoveWidget" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" KeyId="@ForcedKeyId" MovementType="@MovementType" MouseBodyWidget="MouseParent" MouseLeftClickWidget="MouseParent\LeftClick" MouseRightClickWidget="MouseParent\RightClick" MouseMiddleClickWidget="MouseParent\MiddleClick" HorizontalAlignment="Center" VerticalAlignment="Center">
+                              <Children>
+                                <BrushWidget Id="MouseParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="65" SuggestedHeight="99" Brush="TrainingField.Mouse.Move" UpdateChildrenStates="true">
+                                  <Children>
+                                    <BrushWidget Id="LeftClick" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="36" Brush="TrainingField.Mouse.Button.Left" HorizontalAlignment="Left" VerticalAlignment="Top" MarginTop="1" MarginLeft="2" />
+                                    <BrushWidget Id="RightClick" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="36" Brush="TrainingField.Mouse.Button.Right" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="1" MarginLeft="-2" />
+                                    <BrushWidget Id="MiddleClick" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="9" SuggestedHeight="25" Brush="TrainingField.Mouse.Button.Middle" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="17" AlphaFactor="0"/>
+                                  </Children>
+                                </BrushWidget>
+                              </Children>
+                            </TutorialObjectiveMouseParentWidget>
+
+                            <TutorialObjectiveStickParentWidget Id="StickMoveWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MovementType="@MovementType" StickMiddle="StickMiddle">
+                              <Children>
+                                <Widget Id="StickBody" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="65" SuggestedHeight="65" Sprite="General\Mouse\stick_body" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                                <Widget Id="StickMiddle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="32" Sprite="General\Mouse\stick_click" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                  <Children>
+                                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Objective.Text" Text="@ForcedKeyName"/>
+                                  </Children>
+                                </Widget>
+
+                              </Children>
+                            </TutorialObjectiveStickParentWidget>
+
+                          </Children>
+                        </TutorialObjectiveItemWidget>
+
+                      </ItemTemplate>
+                    </ListPanel>
+                  </Children>
+                </Widget>
+
+				  <TextWidget DataSource="{..}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15" Text="@TimerText" Brush.FontSize="45" />
+				  <RichTextWidget DataSource="{..}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="25" Text="@CurrentObjectiveExplanationText" Brush="Training.Main.Text" />
+
+              </Children>
+            </ListPanel>
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

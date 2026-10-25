@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<bodies>
+	<body
+		name="cape_over_dress"
+		owner_skeleton="human_skeleton">
+		<capsules>
+			<capsule
+				name="spine"
+				length="0.200"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.000000, 0.069756, 0.997559, 0.000000, 0.000000, 0.997561, -0.069756, 0.000000, -0.999999, -0.000000, -0.000000, 0.000000, -0.000000, -0.021073, 0.911170, 1.000000">
+				<points>
+					<point
+						radius="0.220">
+						<bones>
+							<bone
+								name="spine"
+								weight="1.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.210">
+						<bones>
+							<bone
+								name="spine"
+								weight="1.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="spine1"
+				length="0.080"
+				origin="0.000, 0.000, 0.000"
+				frame="0.000000, 0.041296, 0.999146, 0.000000, 0.000003, 0.999146, -0.041296, 0.000000, -1.000000, 0.000003, -0.000000, 0.000000, 0.003207, -0.009234, 1.232395, 1.000000">
+				<points>
+					<point
+						radius="0.190">
+						<bones>
+							<bone
+								name="spine1"
+								weight="1.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.170">
+						<bones>
+							<bone
+								name="spine1"
+								weight="1.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="l_thigh"
+				length="0.200"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.078250, -0.066326, -0.994725, 0.000000, -0.005993, 0.997798, -0.066059, 0.000000, 0.996916, 0.000791, -0.078475, 0.000000, -0.100021, 0.009439, 0.915758, 1.000000">
+				<points>
+					<point
+						radius="0.160">
+						<bones>
+							<bone
+								name="l_thigh"
+								weight="1.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.180">
+						<bones>
+							<bone
+								name="l_thigh"
+								weight="1.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="r_thigh"
+				length="0.200"
+				origin="0.000, 0.000, 0.000"
+				frame="0.078249, -0.066325, -0.994725, 0.000000, 0.005991, 0.997798, -0.066059, 0.000000, 0.996916, -0.000791, 0.078475, 0.000000, 0.099969, 0.000873, 0.915269, 1.000000">
+				<points>
+					<point
+						radius="0.160">
+						<bones>
+							<bone
+								name="r_thigh"
+								weight="1.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.180">
+						<bones>
+							<bone
+								name="r_thigh"
+								weight="1.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="r_calf"
+				length="0.290"
+				origin="0.000, 0.000, 0.000"
+				frame="0.077815, -0.119797, -0.989744, 0.000000, 0.010184, 0.992798, -0.119366, 0.000000, 0.996916, -0.000791, 0.078475, 0.000000, 0.132305, -0.007017, 0.497309, 1.000000">
+				<points>
+					<point
+						radius="0.160">
+						<bones>
+							<bone
+								name="r_calf"
+								weight="1.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.140">
+						<bones>
+							<bone
+								name="r_calf"
+								weight="1.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="l_calf"
+				length="0.290"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.077815, -0.119797, -0.989744, 0.000000, -0.010185, 0.992798, -0.119366, 0.000000, 0.996916, 0.000791, -0.078475, 0.000000, -0.133408, -0.007095, 0.498455, 1.000000">
+				<points>
+					<point
+						radius="0.160">
+						<bones>
+							<bone
+								name="l_calf"
+								weight="1.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.140">
+						<bones>
+							<bone
+								name="l_calf"
+								weight="1.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+		</capsules>
+	</body>
+	<body
+		name="climb_rope_body_large">
+		<capsules>
+			<capsule
+				name="New capsule"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.005202, 0.000000, -0.999986, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.999986, 0.000000, -0.005202, 0.000000, 0.025315, 4.630805, 4.866756, 1.000000">
+				<points>
+					<point
+						radius="5.000">
+						<bones />
+					</point>
+					<point
+						radius="5.000">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+		</capsules>
+	</body>
+	<body
+		name="lateen_sail"
+		owner_skeleton="lateen_sail_a_skeleton">
+		<capsules>
+			<capsule
+				name="mast"
+				length="40.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.000000, 0.000000, 1.000000, 0.000000, 1.000000, -0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, -8.720000, 1.000000">
+				<points>
+					<point
+						radius="0.450">
+						<bones>
+							<bone
+								name="bn_mast"
+								weight="1.000" />
+							<bone
+								name="bn_root"
+								weight="0.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.450">
+						<bones>
+							<bone
+								name="bn_mast"
+								weight="1.000" />
+							<bone
+								name="bn_c"
+								weight="0.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+		</capsules>
+	</body>
+	<body
+		name="sail_faction_flag_pole"
+		owner_skeleton="square_sail_a_skeleton">
+		<capsules>
+			<capsule
+				name="sail_pole_col"
+				length="30.000"
+				origin="0.000, 0.000, 0.000"
+				frame="0.033204, -0.000000, 0.999449, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999449, 0.000000, 0.033204, 0.000000, -0.228826, 0.001918, -6.376987, 1.000000">
+				<points>
+					<point
+						radius="0.130">
+						<bones>
+							<bone
+								name="bn_sail_root"
+								weight="1.000" />
+							<bone
+								name="bn_sail_root"
+								weight="1.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.130">
+						<bones>
+							<bone
+								name="bn_sail_root"
+								weight="1.000" />
+							<bone
+								name="bn_sail_root"
+								weight="1.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+		</capsules>
+	</body>
+	<body
+		name="sail_pole"
+		owner_skeleton="square_sail_a_skeleton">
+		<capsules>
+			<capsule
+				name="sail_pole_col"
+				length="30.000"
+				origin="0.000, 0.000, 0.000"
+				frame="0.033204, -0.000000, 0.999449, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999449, 0.000000, 0.033204, 0.000000, -0.211879, -0.311314, -6.377551, 1.000000">
+				<points>
+					<point
+						radius="0.450">
+						<bones>
+							<bone
+								name="bn_mast"
+								weight="1.000" />
+							<bone
+								name="bn_mast"
+								weight="1.000" />
+						</bones>
+					</point>
+					<point
+						radius="0.450">
+						<bones>
+							<bone
+								name="bn_mast"
+								weight="1.000" />
+							<bone
+								name="bn_mast"
+								weight="1.000" />
+						</bones>
+					</point>
+				</points>
+			</capsule>
+		</capsules>
+	</body>
+	<body
+		name="ship_roof_a_l3">
+		<capsules>
+			<capsule
+				name="New capsule"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.001878, 0.000000, 0.999998, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999998, 0.000000, -0.001878, 0.000000, 4.046687, -4.847392, -0.562468, 1.000000">
+				<points>
+					<point
+						radius="0.400">
+						<bones />
+					</point>
+					<point
+						radius="0.400">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule2"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.001878, 0.000000, 0.999998, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999998, 0.000000, -0.001878, 0.000000, 3.767313, -3.115607, -0.488300, 1.000000">
+				<points>
+					<point
+						radius="0.400">
+						<bones />
+					</point>
+					<point
+						radius="0.400">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule21"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.001878, 0.000000, 0.999998, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999998, 0.000000, -0.001878, 0.000000, 3.164848, -1.344400, -0.489431, 1.000000">
+				<points>
+					<point
+						radius="0.400">
+						<bones />
+					</point>
+					<point
+						radius="0.400">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule211"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.001878, 0.000000, 0.999998, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999998, 0.000000, -0.001878, 0.000000, 1.244972, 1.200441, -0.493036, 1.000000">
+				<points>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule2111"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.001878, 0.000000, 0.999998, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999998, 0.000000, -0.001878, 0.000000, -1.451080, 1.259872, -0.498099, 1.000000">
+				<points>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule21111"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.001878, 0.000000, 0.999998, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999998, 0.000000, -0.001878, 0.000000, -3.492158, -1.303745, -0.501932, 1.000000">
+				<points>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule211111"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.001878, 0.000000, 0.999998, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999998, 0.000000, -0.001878, 0.000000, -4.121821, -3.090112, -0.503114, 1.000000">
+				<points>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule2111111"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.001878, 0.000000, 0.999998, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.999998, 0.000000, -0.001878, 0.000000, -4.334529, -4.896461, -0.503513, 1.000000">
+				<points>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+					<point
+						radius="0.600">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+		</capsules>
+	</body>
+	<body
+		name="ship_roof_b_l3">
+		<capsules>
+			<capsule
+				name="New capsule"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="0.850935, 0.073754, -0.520067, 0.000000, -0.048765, 0.996910, 0.061589, 0.000000, 0.523003, -0.027048, 0.851902, 0.000000, 2.263858, -7.036173, 0.984577, 1.000000">
+				<points>
+					<point
+						radius="0.100">
+						<bones />
+					</point>
+					<point
+						radius="0.100">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule1"
+				length="1.000"
+				origin="0.000, 0.000, 0.000"
+				frame="0.851650, 0.000000, 0.524110, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000, -0.524110, 0.000000, 0.851650, 0.000000, -3.084735, -6.946845, 0.467949, 1.000000">
+				<points>
+					<point
+						radius="0.100">
+						<bones />
+					</point>
+					<point
+						radius="0.100">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+		</capsules>
+	</body>
+	<body
+		name="ship_roof_c_l3">
+		<capsules>
+			<capsule
+				name="New capsule"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="0.119907, -0.992785, 0.000000, 0.000000, 0.992785, 0.119907, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 2.736491, -2.265307, 1.685813, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule1"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="0.151077, -0.988522, 0.000000, 0.000000, 0.988522, 0.151077, 0.000000, 0.000000, 0.000000, 0.000000, 1.000000, 0.000000, 2.648654, -2.275916, 1.324958, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule11"
+				length="3.500"
+				origin="0.000, 0.000, 0.000"
+				frame="0.145275, -0.950557, 0.274474, 0.000000, 0.988522, 0.151077, 0.000000, 0.000000, -0.041467, 0.271324, 0.961595, 0.000000, 2.118594, 1.192346, 0.790833, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule111"
+				length="3.500"
+				origin="0.000, 0.000, 0.000"
+				frame="0.145275, -0.950558, 0.274474, 0.000000, 0.988522, 0.151077, 0.000000, 0.000000, -0.041467, 0.271324, 0.961595, 0.000000, 2.133784, 1.092959, 0.438599, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule12"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="0.151077, -0.988522, 0.000000, 0.000000, 0.988522, 0.151077, 0.000000, 0.000000, -0.000000, 0.000000, 1.000000, 0.000000, 2.670684, -2.272549, 1.499337, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule13"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="0.151077, -0.988522, 0.000000, 0.000000, 0.988522, 0.151077, 0.000000, 0.000000, -0.000000, 0.000000, 1.000000, 0.000000, 2.648654, -2.275916, 1.058965, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule131"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.109473, -0.993102, -0.042004, 0.000000, 0.993981, -0.109559, -0.000272, 0.000000, -0.004332, -0.041781, 0.999118, 0.000000, -2.806826, -2.019403, 1.058965, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule14"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.131785, -0.991027, -0.022350, 0.000000, 0.991275, -0.131818, 0.000000, 0.000000, -0.002946, -0.022155, 0.999751, 0.000000, -2.709962, -1.995656, 1.324958, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule1111"
+				length="3.500"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.172537, -0.949909, 0.260586, 0.000000, 0.984130, -0.155105, 0.086203, 0.000000, -0.041467, 0.271324, 0.961595, 0.000000, -2.261069, 0.321280, 0.466817, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule112"
+				length="3.500"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.138753, -0.954661, 0.263384, 0.000000, 0.989459, -0.122502, 0.077234, 0.000000, -0.041467, 0.271324, 0.961595, 0.000000, -2.341685, 0.510674, 0.790833, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule141"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.131785, -0.991027, -0.022350, 0.000000, 0.991275, -0.131818, 0.000000, 0.000000, -0.002946, -0.022155, 0.999751, 0.000000, -2.707998, -1.980885, 0.658387, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule142"
+				length="5.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.131785, -0.991027, -0.022350, 0.000000, 0.991275, -0.131818, 0.000000, 0.000000, -0.002946, -0.022155, 0.999751, 0.000000, -2.711173, -2.004764, 1.735923, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+			<capsule
+				name="New capsule1421"
+				length="6.000"
+				origin="0.000, 0.000, 0.000"
+				frame="-0.999852, 0.017035, -0.002569, 0.000000, -0.016974, -0.999610, -0.022202, 0.000000, -0.002946, -0.022155, 0.999751, 0.000000, 2.712877, -6.845652, 1.038219, 1.000000">
+				<points>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+					<point
+						radius="0.300">
+						<bones />
+					</point>
+				</points>
+			</capsule>
+		</capsules>
+	</body>
+</bodies>

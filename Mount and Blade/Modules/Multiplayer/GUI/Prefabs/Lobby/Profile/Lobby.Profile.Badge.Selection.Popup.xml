@@ -1,0 +1,219 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Divider.Width" BrushName="MPEscapeMenu.Divider" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Divider.Height" BrushName="MPEscapeMenu.Divider" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.9">
+      <Children>
+
+        <NavigationForcedScopeCollectionTargeter CollectionID="LobbyBadgeSelectionCollection" CollectionParent="..\." />
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="382" Sprite="escape_menu_gradient_9" />
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="382" HorizontalAlignment="Right" Sprite="escape_menu_gradient_9" HorizontalFlip="true" />
+
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="720" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="flat_panel_9" >
+          <Children>
+
+            <Widget ClipContents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="533" MarginLeft="60" MarginRight="60" VerticalAlignment="Bottom">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1377" Sprite="StdAssets\flat_panel_texture" />
+              </Children>
+            </Widget>
+
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="30" MarginBottom="200" VerticalAlignment="Top" StackLayout.LayoutMethod="VerticalTopToBottom">
+              <Children>
+
+                <!-- Title -->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" MarginBottom="15" Brush="MPLobby.Profile.Popup.Title" Text="@BadgesText"/>
+
+                <!-- Separator -->
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="20" Sprite="MPLobby\Matchmaking\information_panel_header" MarginLeft="60" MarginRight="60" MarginBottom="20"/>
+
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="600" SuggestedHeight="690" HorizontalAlignment="Center">
+                  <Children>
+
+                    <!-- All Items List -->
+                    <ScrollablePanel Id="BadgesScrollablePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SuggestedWidth="600" SuggestedHeight="690" HorizontalAlignment="Center" AutoHideScrollBars="true" ClipRect="BadgesRect" InnerPanel="BadgesRect\BadgesListPanel" MouseScrollAxis="Vertical" VerticalScrollbar="..\BadgesScrollbar" >
+                      <Children>
+                        <Widget Id="BadgesRect" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" ClipContents="true" >
+                          <Children>
+
+                            <ListPanel Id="BadgesListPanel" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+                              <Children>
+
+                                <!-- First Group Title -->
+                                <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="-10" MarginTop="50" Brush="MPLobby.Armory.SelectionTitle" Text="@SpecialBadgesText" />
+
+                                <!-- First Group of Badges (Special) -->
+                                <NavigationScopeTargeter ScopeID="LobbyBadgeSelectionSpecialBadgesScope" ScopeParent="..\SpecialBadgesGrid" ScopeMovements="Horizontal" AlternateScopeMovements="Vertical" AlternateMovementStepSize="4" />
+                                <NavigatableGridWidget Id="SpecialBadgesGrid" DataSource="{Badges}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" DefaultCellWidth="130" DefaultCellHeight="180" ColumnCount="4" LayoutImp="GridLayout">
+                                  <ItemTemplate>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="130" SuggestedHeight="130" HorizontalAlignment="Center">
+                                      <Children>
+                                        <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+
+                                        <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" Brush="MPLobby.Profile.Badge.Card" Command.Click="ExecuteSetAsActive" Command.HoverBegin="ExecuteGainFocus" Command.HoverEnd="ExecuteLoseFocus" IsEnabled="@IsEarned" IsSelected="@IsSelected" DoNotPassEventsToChildren="true" UpdateChildrenStates="true">
+                                          <Children>
+                                            <!-- Badge Sprite -->
+                                            <MultiplayerPlayerBadgeVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Icon" BadgeId="@BadgeId" />
+
+                                            <!-- Loading animation for when being changed -->
+                                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="100" SuggestedWidth="100" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.7" IsVisible="@IsBeingChanged">
+                                              <Children>
+                                                <MultiplayerCircleLoading Parameter.IsEnabled="@IsBeingChanged" />
+                                              </Children>
+                                            </Widget>
+
+                                            <!-- Badge Name -->
+                                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" PositionYOffset="114" MarginTop="5" IsEnabled="false" Text="@Name" Brush="MPLobby.Profile.BadgesText"/>
+
+                                            <!-- Badge Description Tooltip -->
+                                            <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+
+                                            <!-- Notification When Badge Is First Earned -->
+                                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="23" SuggestedHeight="23" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginBottom="15" MarginRight="15" Sprite="MPLobby\Generic\notification_icon" Color="#FEC157FF" IsVisible="@HasNotification" />
+                                          </Children>
+                                        </ButtonWidget>
+                                      </Children>
+                                    </Widget>
+                                  </ItemTemplate>
+                                </NavigatableGridWidget>
+
+                                <!-- Second Group Title -->
+                                <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="MPLobby.Armory.SelectionTitle" Text="@AchievementBadgesText" MarginTop="25" />
+
+                                <!-- Second Group of Badges (Progressive) -->
+                                <NavigationScopeTargeter ScopeID="LobbyBadgeSelectionProgressiveBadgesScope" ScopeParent="..\ProgressiveBadgesGrid" ScopeMovements="Horizontal" AlternateScopeMovements="Vertical" AlternateMovementStepSize="4" />
+                                <NavigatableGridWidget Id="ProgressiveBadgesGrid" DataSource="{AchivementBadgeGroups}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" DefaultCellWidth="130" DefaultCellHeight="180" ColumnCount="4" LayoutImp="GridLayout">
+                                  <ItemTemplate>
+
+                                    <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren">
+                                      <Children>
+
+                                        <!-- Best Badge Earned in Category -->
+                                        <Widget DataSource="{ShownBadgeItem}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="130" SuggestedHeight="130" HorizontalAlignment="Center">
+                                          <Children>
+                                            <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+
+                                            <MultiplayerLobbyBadgeButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" Brush="MPLobby.Profile.Badge.Card" Command.HoverBegin="ExecuteGainFocus" Command.HoverEnd="ExecuteLoseFocus" Command.Click="ExecuteSetAsActive" Command.AlternateClick="ExecuteShowProgression" IsSelected="@IsSelected" DoNotPassEventsToChildren="true" UpdateChildrenStates="true">
+                                              <Children>
+                                                <!-- Badge Sprite -->
+                                                <MultiplayerPlayerBadgeVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Icon" BadgeId="@BadgeId" />
+
+                                                <!-- Loading animation for when being changed -->
+                                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="100" SuggestedWidth="100" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.7" IsVisible="@IsBeingChanged">
+                                                  <Children>
+                                                    <MultiplayerCircleLoading PositionYOffset="-5" Parameter.IsEnabled="@IsBeingChanged" />
+                                                  </Children>
+                                                </Widget>
+
+                                                <!-- Progress -->
+                                                <FillBarWidget DataSource="{..}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="10" PositionYOffset="-8" HorizontalAlignment="Center" VerticalAlignment="Bottom" FillWidget="FillWidget" MaxAmount="@TotalProgress" InitialAmount="@CurrentProgress" Sprite="MPLobby\Home\player_stats_level_bar_bed" ColorFactor="0.3" >
+                                                  <Children>
+                                                    <Widget Id="FillWidget" ClipContents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="4" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="2" MarginRight="2" Sprite="MPLobby\Home\player_stats_level_bar_fill" AlphaFactor="0.9">
+                                                      <Children>
+                                                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" Sprite="MPLobby\Home\player_stats_level_bar_fill_glow" AlphaFactor="0.7" />
+                                                      </Children>
+                                                    </Widget>
+                                                  </Children>
+                                                </FillBarWidget>
+
+                                                <!-- Inspect Progress Key -->
+                                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="10" MarginRight="10" IsVisible="@IsFocused">
+                                                  <Children>
+                                                    <InputKeyVisualWidget DataSource="{InspectProgressKey}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" KeyID="@KeyID" />
+                                                  </Children>
+                                                </Widget>
+
+                                                <!-- Badge Name -->
+                                                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" PositionYOffset="114" StackLayout.LayoutMethod="VerticalTopToBottom">
+                                                  <Children>
+                                                    <ScrollingTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="24" MarginTop="5" IsEnabled="false" Text="@Name" Brush="MPLobby.Profile.BadgesText" ScrollOnHoverWidget="..\..\." IsAutoScrolling="false" />
+                                                  </Children>
+                                                </ListPanel>
+
+                                                <!-- Badge Description Tooltip -->
+                                                <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+
+                                                <!-- Notification When Badge Is First Earned -->
+                                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="18" SuggestedHeight="18" HorizontalAlignment="Left" VerticalAlignment="Top" MarginTop="13" MarginLeft="13" Sprite="MPLobby\Generic\notification_icon" Color="#FEC157FF" IsVisible="@HasNotification" />
+
+                                              </Children>
+                                            </MultiplayerLobbyBadgeButtonWidget>
+
+                                          </Children>
+                                        </Widget>
+
+                                      </Children>
+                                    </Widget>
+
+                                  </ItemTemplate>
+                                </NavigatableGridWidget>
+
+                              </Children>
+                            </ListPanel>
+
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ScrollablePanel>
+
+                    <ScrollbarWidget Id="BadgesScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="10" MarginTop="6" MarginBottom="10" PositionXOffset="0" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#5A4033FF" AlphaFactor="0.2" />
+                        <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                      </Children>
+                    </ScrollbarWidget>
+
+                  </Children>
+                </Widget>
+
+              </Children>
+            </ListPanel>
+
+            <!-- Badge Properties Panel -->
+            <ListPanel DataSource="{InspectedBadge}" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="220" MarginLeft="100" MarginRight="100" MarginBottom="30" VerticalAlignment="Bottom" StackLayout.LayoutMethod="VerticalTopToBottom" IsVisible="@IsFocused">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="26" Text="@Name" Brush="MPLobby.Badge.Popup.Property.Title" />
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Text="@Description" MarginTop="5" Brush="MPLobby.Badge.Popup.Property.Description" />
+                <ListPanel DataSource="{Conditions}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginTop="5" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom" >
+                  <ItemTemplate>
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" >
+                      <Children>
+                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Text="@Definition" Brush="MPLobby.Badge.Popup.Property.Description" />
+                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="5" Text="@Value" Brush="MPLobby.Badge.Popup.Property.Description" Brush.FontColor="#F1C16DFF" />
+                      </Children>
+                    </ListPanel>
+                  </ItemTemplate>
+                </ListPanel>
+              </Children>
+            </ListPanel>
+
+            <!--Cancel-->
+            <NavigationScopeTargeter ScopeID="LobbyBadgeSelectionCloseButtonScope" ScopeParent="..\CloseButton" />
+            <ButtonWidget Id="CloseButton" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginBottom="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="WideButton.Flat" Command.Click="ExecuteClosePopup" GamepadNavigationIndex="0">
+              <Children>
+                <!--Cancel Text-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="MPLobby.PlayButton.Text" Brush.FontSize="28" Brush.TextVerticalAlignment="Center" Text="@CloseText">
+                  <Children>
+                    <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                  </Children>
+                </TextWidget>
+              </Children>
+            </ButtonWidget>
+
+            <Widget ClipContents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="120" MarginLeft="60" MarginRight="60" VerticalAlignment="Top">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Divider.Width" SuggestedHeight="!Divider.Height" HorizontalAlignment="Center" Sprite="MPTeamSelection\divider_notched" />
+              </Children>
+            </Widget>
+
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </Widget>
+
+  </Window>
+</Prefab>

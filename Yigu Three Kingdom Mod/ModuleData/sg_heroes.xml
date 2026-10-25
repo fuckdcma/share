@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Heroes>
+  <Hero id="main_hero" father="Hero.main_hero_father" mother="Hero.main_hero_mother" faction="Faction.player_faction" />
+  <Hero id="main_hero_father" alive="false" faction="Faction.player_faction" spouse="Hero.main_hero_mother" />
+  <Hero id="main_hero_mother" alive="false" faction="Faction.player_faction" spouse="Hero.main_hero_father" />
+  <Hero id="lord_liuzhang" faction="Faction.clan_liuzhang" text="{=lord_liuzhang_intro}字季玉，江夏竟陵（今湖北潜江）人，益州牧刘焉幼子。性格宽柔但优柔寡断，继位后无力调和“东州兵”（南阳流民武装）与益州本土豪强的矛盾，导致内部分裂。建安十六年（211年）因畏惧曹操与张鲁威胁，迎刘备入蜀反遭吞并。成都被围时，以“无恩德加于百姓”为由开城投降，迁居荆州。陈寿评其“暗弱据土，自然见夺”，然其治下益州民生富庶，乱世中行仁政实属难得" />
+  <Hero id="lord_wanglei" faction="Faction.clan_liuzhang" text="{=lord_wanglei_intro}益州广汉人，任州从事。以刚烈忠直著称，建安十七年（212年）力谏刘璋勿迎刘备，以绳索自缚倒悬城门，声言“若不听谏，断绳赴死”。刘璋拒谏后，王累割绳坠亡殉主，成为三国最悲壮的尸谏典范。其死暴露刘璋拒纳忠言、刚愎自用之弊，加速益州崩解" />
+  <Hero id="lord_lengbao" faction="Faction.clan_liuzhang" text="{=lord_lengbao_intro}刘璋麾下名将，擅山地战。建安十八年（213年）涪城之战中率部抵御刘备，误中庞统分兵诱敌之计。后于雒城北掘涪水欲淹刘备军，反被黄忠识破，决堤时遭斩杀。其阵亡标志刘璋军早期溃败" />
+  <Hero id="lord_dengxian" faction="Faction.clan_liuzhang" text="{=lord_dengxian_intro}与冷苞并称“蜀中名将”，统骑兵精锐。涪城之战中协同冷苞设防，遭张飞伏击兵败阵亡。其骁勇善战却因刘璋战略失误未能发挥，早逝折射益州武将悲剧性命运" />
+  <Hero id="lord_zhangren" faction="Faction.clan_zhangren" text="{=lord_zhangren_intro}蜀郡寒门（今成都）出身，官至益州从事。统领刘璋精锐“东州兵”，以忠勇善谋闻名。建安十八年（213年）于雒城设伏射杀庞统，坚守孤城一年余。金雁桥之战被诸葛亮设计围擒，刘备惜才劝降，张任厉声道：“老臣终不复事二主！”慷慨就义。蜀人誉其“蜀中第一大将”，墓至今存于广汉" />
+  <Hero id="lord_liuba" faction="Faction.clan_zhangren" text="{=lord_liuba_intro}字子初，零陵烝阳（今湖南衡阳）人，名士之后。初避刘备投曹操，后辗转入蜀辅刘璋，力谏“刘备入必为害”未被采纳。刘备克成都后不计前嫌重用之，任尚书令，制定《蜀科》奠定蜀汉法制，首创“直百钱”解决财政危机。诸葛亮叹：“运筹帷幄，吾不如子初！”性清高寡交，章武二年（222年）病逝" />
+  <Hero id="lord_zhangsong" faction="Faction.clan_zhangren" text="{=lord_zhangsong_intro}蜀郡人，益州别驾，过目不忘但貌丑性傲。建安十三年（208年）使曹遭冷遇，归劝刘璋联刘抗曹。暗献《西蜀地形图》予刘备，暴露益州防务虚实。建安十七年（212年）事泄，其兄张肃告发，刘璋怒斩之。张松之叛直接导致刘备入川师出有名，堪称益州变局关键推手" />
+  <Hero id="lord_liuxun" faction="Faction.clan_liuzhang" father="Hero.lord_liuzhang" text="{=lord_liuxun_intro}刘璋长子，雒城守将。建安十八年（213年）以孤城抵御刘备大军近一年，指挥张任射杀庞统，创防御战典范。城破后随父降刘，刘备任其为奉车中郎将虚职，未再掌兵权。其弟刘阐后归东吴，兄弟分仕两国折射乱世家族悲剧" />
+  <Hero id="lord_wuyi" faction="Faction.clan_liuzhang" text="{=lord_wuyi_intro}兖州陈留豪族，妹为刘备穆皇后。原为刘璋中郎将，涪城兵败降刘。蜀汉时官至车骑将军，建兴八年（230年）与魏延大破郭淮于阳溪。曾上书痛斥李严督粮失职，要求罢黜其官，显刚直之性。建兴十五年（237年）病逝，杨戏赞其“车骑高劲，以弱制强”" />
+  <Hero id="lord_wuban" faction="Faction.clan_liuzhang" text="{=lord_wuban_intro}吴懿族弟，以豪侠称。夷陵之战任先锋，北伐时随诸葛亮破司马懿于祁山，官至骠骑将军。其勇猛善战为蜀汉东州派武将代表，然因外戚身份备受争议" />
+  <Hero id="lord_huangquan" faction="Faction.clan_liuzhang" text="{=lord_huangquan_intro}字公衡，巴西阆中（今四川阆中）人，刘璋主簿。初谏拒刘备被外放，后降刘任镇北将军。夷陵之战前警告“水军顺流易进难退”，刘备不听，令其督江北军。蜀败后归路断绝，无奈降魏，官至车骑将军。刘备护其家小：“孤负黄权，权不负孤。”晚年于南阳卧龙岗建庵祭诸葛亮，显故国之思。" />
+  <Hero id="lord_yanyan" faction="Faction.clan_yanyan" text="{=lord_yanyan_intro}巴郡临江（今重庆忠县）人，刘璋麾下巴郡太守。年迈仍“万夫不当之勇”，据守江州。建安十八年（213年）被张飞智擒，怒喝：“我州但有断头将军，无降将军！”张飞义释之，遂归降，助平川东。归刘后事迹鲜见载，或因年高退隐" />
+  <Hero id="lord_gaopei" faction="Faction.clan_yanyan" text="{=lord_gaopei_intro}涪水关守将，刘璋心腹。建安十七年（212年）识破刘备“假道伐虢”之计，与杨怀共谋设鸿门宴除刘。刘备以“怠慢宾客”为由抢先诛杀，控制入川要冲。其死使刘璋丧失北线屏障" />
+  <Hero id="lord_yanghuai" faction="Faction.clan_yanyan" text="{=lord_yanghuai_intro}白水都督，与高沛同守涪水关。多次进谏刘璋与刘备和解，未果。终与高沛共谋除刘事败被杀。演义中二人并肩死忠，结局映照刘璋集团末路悲歌" />
+  <Hero id="lord_liyan" faction="Faction.clan_liyan" text="{=lord_liyan_intro}字正方，南阳人，原刘璋成都县令。建安十八年（213年）绵竹之战降刘，刘备托孤任其为中都护。任犍为太守时开凿修觉山道、重修通济堰，造福民生。建兴九年（231年）督粮失期，反诬诸葛亮退兵，被废为民。诸葛亮死讯传来，激愤病卒。陈寿评其“性矜傲”，与诸葛亮争权致败" />
+  <Hero id="lord_mengda" faction="Faction.clan_liyan" text="{=lord_mengda_intro}扶风人，与法正同入蜀投刘璋。降刘后守宜都，关羽败亡时未救，畏罪降魏。后欲叛魏归蜀，事泄被司马懿斩于上庸（228年）。其反复折射乱世士人“择主而事”的生存困境" />
+  <Hero id="lord_fazheng" faction="Faction.clan_fazheng" text="{=lord_fazheng_intro}字孝直，扶风郿县（今陕西眉县）人，名士法真之孙。怀才不遇于刘璋，暗通刘备献取蜀三策。建安二十四年（219年）定军山献“声东击西”计斩夏侯渊，曹操叹“吾收奸雄略尽，独不得法正邪！”任尚书令，性睚眦必报，刘备却言“孤之有孝直，如鱼得水”。建安二十五年（220年）早逝，刘备痛哭追谥“翼侯”，为蜀汉唯一获谥大臣" />
+  <Hero id="lord_zhaowei" faction="Faction.clan_fazheng" text="{=lord_zhaowei_intro}巴西安汉（今四川南充）豪强，刘焉托孤重臣。初拥刘璋继位，建安五年（200年）因不满东州兵欺压益州民，联合本土大族反叛，自称益州牧。刘璋遣东州兵镇压，赵韪败退江州，被部将庞乐、李异刺杀。其叛反映益州内外势力深刻矛盾" />
+  <Hero id="lord_mateng" faction="Faction.clan_mateng" text="{=lord_mateng_intro}字寿成，伏波将军马援之后。雄踞西凉三十载，联合韩遂组建关陇联军。建安七年应诏入京任卫尉，因马超反曹遭株连，与子马休马铁同被诛杀于许昌。其人以信义著于羌胡，然疏于对子管教终致灭族之祸。" />
+  <Hero id="lord_yangshi" faction="Faction.clan_mateng" text="{=lord_yangshi_intro}马腾的正妻，马超的母亲。她是一位深明大义、性格刚强的女性，在部族和家族中威望很高。她代表的是马腾“伏波将军马援之后”的汉室忠良血脉，是势力的精神旗帜。衣谷三国编创人物。" />
+  <Hero id="lord_maxiu" faction="Faction.clan_mateng" father="Hero.lord_mateng" text="{=lord_maxiu_intro}马腾次子，随父入京任骑都尉。建安十七年曹操以马超叛乱为由，将其与父兄囚于市曹斩首。性温厚善抚士卒，然未及施展才能便陨落政治漩涡。" />
+  <Hero id="lord_matie" faction="Faction.clan_mateng" father="Hero.lord_mateng" text="{=lord_matie_intro}马腾幼子，精于骑射。随父入京任羽林郎，与父兄同日遇害。潼关之战前曾劝谏马超勿叛，未获采纳，终成政治牺牲品。" />
+  <Hero id="lord_machao" faction="Faction.clan_machao" father="Hero.lord_mateng" text="{=lord_machao_intro}马超，字孟起，司隶扶风郡茂陵人，马腾之子，刘备麾下武将，五虎将之一。汉伏波将军马援之后，建安十六年（211年），曹操治兵关中，马超联合关中诸侯韩遂等共抗曹军，曹操纳贾诩离间之计促其败走。后依附张鲁，率军南下袭刘璋。时刘备入蜀，马超归降刘备。蜀汉章武元年（221年），刘备登基，官至骠骑将军。" />
+  <Hero id="lord_mayi" faction="Faction.clan_machao" text="{=lord_mayi_intro}马腾族弟，潼关之战率偏师牵制曹军。马超败走后独守狄道三月，粮尽突围时中伏身亡。羌人感其忠勇，以天将军之名立祠祭祀。" />
+  <Hero id="lord_madai" faction="Faction.clan_machao" text="{=lord_madai_intro}马超从弟，沉默如影。潼关救主断后十二战，汉中之战识破曹操疑兵。诸葛亮逝后遵遗计诛魏延，稳蜀汉十年边疆。" />
+  <Hero id="lord_marong" faction="Faction.clan_machao" text="{=lord_marong_intro}马腾的堂弟，性格沉稳如山。他负责训练和指挥马腾军中最精锐的重甲骑兵“铁鹞卫”。他不善言辞，但每逢大战必稳守中军，是军团最可靠的盾牌与核心。衣谷三国编创人物。" />
+  <Hero id="lord_pangde" faction="Faction.clan_pangde" text="{=lord_pangde_intro}字令明，抬棺死战关云长。原为马超副将，汉中兵败降曹。襄樊之战水淹七军时立筏死战，箭尽弓折宁死不降，成就武圣威名。" />
+  <Hero id="lord_hanyue" faction="Faction.clan_pangde" text="{=lord_hanyue_intro}羌族酋长之女，马腾为巩固与羌人联盟而为马超定下的未婚妻。她骑术精湛，能驯养狼群，率领一支来去如风的羌族轻骑兵，负责侦察、迂回与侧翼打击。衣谷三国编创人物。" />
+  <Hero id="lord_pangni" faction="Faction.clan_pangde" text="{=lord_pangni_intro}庞德的兄长，勇武甚至在庞德之上，但性格更为火爆冲动。是军中的先锋大将，每逢战事必先登陷阵，深受士兵爱戴。与庞德的冷静形成鲜明互补。衣谷三国编创人物。" />
+  <Hero id="lord_jiangyuan" faction="Faction.clan_pangde" text="{=lord_jiangyuan_intro}凉州本地的寒门士子，仰慕马腾威名而投靠，是马腾军中少有的智谋之士。他熟知凉州地理与周边势力情况，为马腾处理文书、制定战略，是马腾的“张良”。衣谷三国编创人物。" />
+  <Hero id="lord_mayunlu" faction="Faction.clan_mayunlu" father="Hero.lord_mateng" spouse="Hero.lord_zhaoyun" text="{=lord_mayunlu_intro}马超之妹，赵云之妻。潼关之战率羌骑断曹军粮道，汉水救夫破重围。使七尺烂银枪与月牙飞刀，西凉称飞骠将军。" />
+  <Hero id="lord_liangshuo" faction="Faction.clan_mayunlu" text="{=lord_liangshuo_intro}归附马腾的凉州地方豪强，善于经营。他负责管理马腾控制下的城镇、筹措粮草、经营与西域的商路，是势力的财政支柱。衣谷三国编创人物。" />
+  <Hero id="lord_huoyan" faction="Faction.clan_mayunlu" text="{=lord_huoyan_intro}原为汉朝边军司马，后追随马腾。他精通正规军的战阵操练与兵法，善于指挥多兵种协同作战，弥补了马腾军只重骑战、缺乏章法的短板。衣谷三国编创人物。" />
+  <Hero id="lord_mirongqi" faction="Faction.clan_mayunlu" text="{=lord_mirongqi_intro}羌族中的萨满，拥有很高的精神地位。他通过古老的仪式为军队祈福、鼓舞士气，也能用草药进行治疗。他的存在，象征着马腾势力得到了羌人精神上的认可。衣谷三国编创人物。" />
+  <Hero id="lord_lvbu" faction="Faction.clan_lvbu" spouse="Hero.lord_yanshi" text="{=lord_lvbu_intro}吕布，字奉先，并州五原郡九原县人，汉末群雄之一。其短视无谋，色利皆动，生性反复无常。先后依附丁原、董卓等，皆叛之。后与司徒王允合力诛杀董卓，旋即被董卓旧部李傕等击败，王允身死，吕布狼狈出逃，无奈依附袁绍。后以陈宫为谋主，欲图兖州而不得，再用计取徐州，遂割据一方。建安三年（199年），吕布下邳兵败被擒，曹操下令将其缢杀。" />
+  <Hero id="lord_diaochan" faction="Faction.clan_lvbu" text="{=lord_diaochan_intro}貂蝉，四大美女之一，有“闭月”之美称。演义中，原为东汉王允家歌伎，后王允收其为养女。王允欲以貂蝉美色离间董卓吕布二人，貂蝉则为报义父养育之恩而甘愿献身。貂蝉委身董卓，促使董吕父子反目，诱使吕布除去国贼董卓。" />
+  <Hero id="lord_yanshi" faction="Faction.clan_lvbu" spouse="Hero.lord_lvbu" text="{=lord_yanshi_intro}严氏，吕布的正妻，亦称严夫人，与吕布生有一女。建安三年（198年），吕布为曹操困于下邳，因严氏反对，吕布遂不纳陈宫之计，致使吕布败亡。吕布既诛，为曹操所安置，与其女迁许昌。" />
+  <Hero id="lord_lvwen" faction="Faction.clan_lvbu" father="Hero.lord_lvbu" mother="Hero.lord_yanshi" text="{=lord_lvwen_intro}吕雯，字玲绮，吕布之女，五原郡九原县人。吕布与其妻严氏所生之女，素为吕布钟爱。吕布欲许其女嫁袁术之子，然终不得行。建安三年（199年）吕布为曹操所诛，曹操安置其家小，遂被迁往许昌。 吕布之女，小字玲绮。善骑射，常随父征战。袁术求联姻未果。下邳城破后随母迁许昌，后嫁曹魏属官。潼关之战阵前救赵云，银枪白马英姿传为佳话。" />
+  <Hero id="lord_zhangliao" faction="Faction.clan_zhangliao" text="{=lord_zhangliao_intro}字文远，雁门马邑人。原属吕布，下邳降曹。合肥之战以八百破十万，威震逍遥津。黄初三年抱病破吕范，旋卒。曹丕流涕：此亦古之召虎也！谥刚侯，配享曹操庙庭。" />
+  <Hero id="lord_weixu" faction="Faction.clan_zhangliao" text="{=lord_weixu_intro}魏续，吕布麾下武将，与吕布外内之亲。时高顺屡进忠言，布甚厌之，吕布与高顺渐为疏远。后吕布命魏续接管高顺部曲。建安三年（198年），曹操率军攻吕布，围下邳三月有余，魏续知吕布已无胜算，遂与侯成、宋宪缚陈宫降曹。" />
+  <Hero id="lord_songxian" faction="Faction.clan_zhangliao" text="{=lord_songxian_intro}宋宪，吕布麾下武将，其人勇猛，武力过人，与张辽、侯成等号曰“八健将“。建安三年（198年），曹操围下邳，因同侯成献酒而触怒吕布被杖责，后怀恨在心，与侯成、魏续等密谋反叛。" />
+  <Hero id="lord_houcheng" faction="Faction.clan_zhangliao" text="{=lord_houcheng_intro}侯成，吕布麾下武将，因其有勇好斗，与张辽、曹性等号曰“八健将”，随吕布转战各地。建安三年（198年），曹操围下邳，因献酒而触怒吕布，遂杖责之。成不忿，乃夜盗赤兔。后宋宪、魏续、侯成三人投降曹操，吕布为曹操所擒杀。" />
+  <Hero id="lord_qinyilu" faction="Faction.clan_zhangliao" text="{=lord_qinyilu_intro}吕布使节，妻杜氏美艳。下邳城破，曹操纳杜氏，以宜禄为铚长。关羽请诛之，曹操不许。后随张杨叛变，被张飞诱至林中缢杀。" />
+  <Hero id="lord_gaoshun" faction="Faction.clan_gaoshun" text="{=lord_gaoshun_intro}高顺，吕布麾下中郎将。史载其为人清廉且威严，统率直属部众七百余人，甲坚兵锐，战无不胜，素有“陷阵”之名。追随其主吕布，始终不弃，屡为吕布作战征伐，并平定郝萌之叛。建安三年（199年），曹操亲征吕布，围困下邳，城破，与吕布、陈宫一同兵败被擒，誓死不降，被曹操下令斩首。" />
+  <Hero id="lord_caoxing" faction="Faction.clan_gaoshun" text="{=lord_caoxing_intro}曹性，吕布麾下部将，本为郝萌部属，建安元年（196年），郝萌反，先为高顺所击，败。回营，郝萌与曹性战，郝萌死，曹性将其首级献予吕布。曹性因平郝萌治乱而得吕布赏识，被称“健儿”，尽收郝萌部曲。以善射而著称，夏侯惇的眼睛便是曹性所射瞎。吕布死后，不见于史载。" />
+  <Hero id="lord_haomeng" faction="Faction.clan_gaoshun" text="{=lord_haomeng_intro}郝萌，冀州河内郡人，吕布麾下武将。初随吕布转战各地，因勇猛过人，受吕布赏识，为其帐下“八健将”之一。建安元年（196年）六月，受袁术蛊惑而起兵反吕，兵入下邳，先后为高顺、曹性所击，兵败身死。" />
+  <Hero id="lord_weiyue" faction="Faction.clan_gaoshun" text="{=lord_weiyue_intro}魏越，吕布的部将，作战勇猛为吕布所喜。初平三年（192年），袁绍与公孙瓒争，吕布率成廉、魏越等助绍，越随吕布陷锋突击，大破张燕军。" />
+  <Hero id="lord_chengong" faction="Faction.clan_chengong" text="{=lord_chengong_intro}字公台，刚烈智士。初随曹操，因诛边让事叛之。迎吕布为兖州牧，献计破曹操。下邳被俘，曹操泣问：奈卿老母何？答：宫闻以孝治天下者不害人之亲！从容赴刑，兖州士民为之流涕。" />
+  <Hero id="lord_yunshuo" faction="Faction.clan_chengong" text="{=lord_yunshuo_intro}五原郡的猎户之子，与吕布自幼相识，情同手足。他是吕布在并州边军中最原始的班底，不擅统兵大略，却是天下最顶尖的护卫与刺客。衣谷三国编创人物。" />
+  <Hero id="lord_gulinyuan" faction="Faction.clan_chengong" text="{=lord_gulinyuan_intro}一位游历过天下的寒门士子，被吕布天下无双的武勇所吸引，认为这是乱世中最极致的“力”之美。他并非传统的忠臣，而是将吕布视为一件完美的“艺术品”和实现自己抱负的“利刃”。衣谷三国编创人物。" />
+  <Hero id="lord_shili" faction="Faction.clan_chengong" text="{=lord_shili_intro}来自河套地区的匈奴别部勇士，仰慕“飞将”吕布的威名，率领本族数百勇士前来投效。他凶悍嗜血，不通文墨，只信奉强者。衣谷三国编创人物。" />
+  <Hero id="lord_chenglian" faction="Faction.clan_chenglian" text="{=lord_chenglian_intro}成廉，吕布麾下武将，八健将之一，因其作战勇猛被誉为骁将。跟随吕布、魏越等数十骑讨张燕，陷锋突阵，立下战功。建安三年（198年），曹操攻下邳，布自将骑逆击。操大破之，被俘。" />
+  <Hero id="lord_xuelan" faction="Faction.clan_chenglian" text="{=lord_xuelan_intro}与李封守兖州。钜野之战轻敌出战，为典韦双戟斩杀。其部溃散，致吕布失屯粮要地。临终悔叹：恨不听公台言！" />
+  <Hero id="lord_lifeng" faction="Faction.clan_chenglian" text="{=lord_lifeng_intro}薛兰副将。钜野之战欲救薛兰，被乐进一箭穿喉。拄骨朵立而不倒，瞠目骂曹，声震四野。" />
+  <Hero id="lord_xuwang" faction="Faction.clan_chenglian" text="{=lord_xuwang_intro}吕布谋士。献辕门射戟策解刘备之围。下邳城破前劝吕布结袁术，布不听。后降曹操任谏议大夫。著《吕布起居注》，为后世考据吕布集团重要史料。" />
+  <Hero id="lord_wangkai" faction="Faction.clan_chenglian" text="{=lord_wangkai_intro}与许汜共劝吕布联袁术。奉命求援，突破曹营八重围。术虚应之，楷泣返下邳：天亡将军！城破为乱兵所杀。生前整理吕布文书，今存《温侯令》残卷。" />
+  <Hero id="lord_zhangmiao" faction="Faction.clan_zhangmiao" text="{=lord_zhangmiao_intro}字孟卓，东平人。原为曹操至交，因陈宫说反叛。迎吕布为兖州牧，兵败投袁术途中为部将所杀。曹操闻讯叹：邈非常人也，然其志难测。兖州士族因其败亡渐衰。" />
+  <Hero id="lord_wuzi" faction="Faction.clan_zhangmiao" text="{=lord_wuzi_intro}守兖州治所廪丘。吕布败走后独守孤城，粮尽援绝降曹。后任梁国相，筑陂塘、通沟渠，民立吴公渠颂德。正始五年卒，遗言：勿立碑，但植柳。" />
+  <Hero id="lord_yuanhuan" faction="Faction.clan_zhangmiao" text="{=lord_yuanhuan_intro}字曜卿，陈郡人。被吕布强征为官，拒骂刘备。布诛，归曹操。谏止屠城，制《屯田令》。官至郎中令，卒无余财。曹操赞：清行贞固，可仪百僚。" />
+  <Hero id="lord_zhangchao" faction="Faction.clan_zhangmiao" text="{=lord_zhangchao_intro}广陵太守，张邈之弟。守雍丘，城破前托袁涣于曹操：吾兄罪重，然涣国士，请活之。自刎殉节。其忠烈激励兖州士人，后成反曹暗流。" />
+  <Hero id="lord_lijue" faction="Faction.clan_lijue" text="{=lord_lijue_intro}李傕(jué)，字稚然，凉州北地郡泥阳县人。本为董卓部将，受命于牛辅。董卓死后自立后用贾诩计，联合郭汜起兵攻讨长安，先后败吕布，杀王允，把持朝政。后诸将不和，催杀樊稠，又与郭汜在长安争霸，导致皇帝东逃洛阳为曹操所挟。曹操以天子之名讨伐李傕，建安三年（198年）李傕为梁兴、张横等击败并斩首，朝廷遂下令夷其三族。" />
+  <Hero id="lord_lixian" faction="Faction.clan_lijue" text="{=lord_lixian_intro}李暹，凉州北地郡人，权臣李傕兄长之子。兴平二年（195年），李傕与郭汜相争于长安。郭汜谋图挟汉帝幸其营中，李傕则遣李暹率数千兵马同虎贲王曹所率三百人包围皇宫，用三辆轺车迎汉帝至李傕营中。建安三年（198年），李傕兵败被杀，朝廷遂下令夷其三族，李暹亦未能幸免。" />
+  <Hero id="lord_limeng" faction="Faction.clan_lijue" text="{=lord_limeng_intro}李蒙，凉州人，董卓麾下部将。初平元年（190年）冬，李蒙会徐荣率军迎击反董联军于梁县之东，联军大败，孙坚引兵而还。初平三年（192年），蒙为李傕部下，率军攻破长安。蒙任抚军中郎将。兴平二年（195年），李蒙与樊稠在宴上为胡封所杖杀。" />
+  <Hero id="lord_lishishi" faction="Faction.clan_lijue" text="{=lord_lishishi_intro}李师师，凉州北地郡泥阳县人，李傕之妹，衣谷三国编创人物。" />
+  <Hero id="lord_wangfang" faction="Faction.clan_lijue" text="{=lord_wangfang_intro}王方，董卓麾下部将。方与樊稠、李蒙等合兵归于李傕，率军攻破长安。李傕表奏李蒙、王方等各为校尉。后马腾与韩遂起兵举义，王方、李蒙二将请缨出击。王方与马超跃马相战不到数合，便被马超刺于马下。" />
+  <Hero id="lord_fanchou" faction="Faction.clan_fanchou" text="{=lord_fanchou_intro}樊稠，凉州（九州春秋仅云与韩遂同为凉州人，无金城人之记载）人。董卓麾下部将，及卓死后，同李傕、郭汜一同作乱攻取长安，后拜为右将军，封万年侯。马腾与李傕有隙，腾欲联韩遂举兵进攻，傕派樊稠、郭汜等与其交战，大破马腾于长平关下。稠追至陈仓，因与遂有同乡之谊罢兵折返，渐为傕所疑。兴平二年（195年），傕忌稠深得人心，又为韩遂之事耿耿于怀，乃命其甥胡封设宴杖杀樊稠。" />
+  <Hero id="lord_jusheng" faction="Faction.clan_fanchou" text="{=lord_jusheng_intro}东汉末年凉州地区动乱的早期参与者之一。无详细史料。" />
+  <Hero id="lord_ehe" faction="Faction.clan_fanchou" text="{=lord_ehe_intro}无详细史料。" />
+  <Hero id="lord_guosi" faction="Faction.clan_guosi" spouse="Hero.lord_guoliu" text="{=lord_guosi_intro}郭汜（si），本名郭多，凉州张掖郡人。马贼出身，后投靠董卓，因善于用兵，在牛辅部下任校尉。后董卓伏诛，纳贾诩之谋，联合李傕，以“复仇”之名起事，杀奔长安。攻取长安后，诛杀王允等公卿并挟持朝廷，自号扬烈将军。初平三年（192年），又进后将军，封美阳县侯。后与李傕反目，于长安城中大战。护献帝东归洛阳，加号车骑将军。建安二年（197年），被部将伍习所杀。" />
+  <Hero id="lord_wuxi" faction="Faction.clan_guosi" text="{=lord_wuxi_intro}伍习，又名五习，原为郭汜麾下部将，兴平二年（195年），郭汜望劫持汉帝，习奉汜之命焚学舍以逼天子。建安二年（197年），伍习反叛，欲郿县袭杀郭汜，此后不见史载。" />
+  <Hero id="lord_guowu" faction="Faction.clan_guosi" text="{=lord_guowu_intro}郭梧，凉州张掖郡人，郭汜之妹，衣谷三国编创人物。" />
+  <Hero id="lord_guoliu" faction="Faction.clan_guosi" spouse="Hero.lord_guosi" text="{=lord_guoliu_intro}郭柳，凉州张掖郡人，郭汜之妹，衣谷三国编创人物。" />
+  <Hero id="lord_zhangji" faction="Faction.clan_zhangji" spouse="Hero.lord_zoushi" text="{=lord_zhangji_intro}武威豪帅，董卓旧部。与李傕共掌朝政，后出屯弘农。建安元年因粮尽攻穰城，中流矢而亡。其侄张绣继统其众，成就宛城一段传奇。" />
+  <Hero id="lord_zhangxiu" faction="Faction.clan_zhangxiu" text="{=lord_zhangxiu_intro}张绣，凉州武威郡祖厉县人，骠骑将军张济之侄。建安元年（196年），张济中矢而死，绣遂承受其部众，屯宛城。次年，曹操南征，绣从贾诩计，降。因曹操纳其婶邹氏，深恨之，引军夜袭，败曹军，典韦、操长子昂、操侄安民皆死。后绣复降曹操，封扬武将军。" />
+  <Hero id="lord_hucheer" faction="Faction.clan_zhangxiu" text="{=lord_hucheer_intro}胡车儿，初从张绣，绣视其为心腹猛将，膂力过人，勇冠三军，与贾诩交情甚佳。张绣降曹后，曹操甚爱胡车儿之骁勇，以黄金相与之。后张绣欲反，暗与胡车儿串通，令其夜盗典韦双戟并刺杀之。" />
+  <Hero id="lord_zoushi" faction="Faction.clan_zhangxiu" spouse="Hero.lord_zhangji" text="{=lord_zoushi_intro}邹氏，凉州武威郡姑臧县人，张济之妻、张绣之婶。其夫张济死后，投奔其侄张绣。后曹操收张绣，曹操因邹氏美色而纳之，绣遂怀恨，以致起兵反叛。" />
+  <Hero id="lord_jiaxu" faction="Faction.clan_jiaxu" text="{=lord_jiaxu_intro}贾诩(xǔ)，字文和，凉州姑臧郡人。先从董卓为其部将，董卓死后又献计郭汜、李傕攻取长安。李傕既没，又为张绣所用，后又劝其主张绣投降后再次反叛曹操，致使宛城之乱。降曹后，屡为曹操献计。诩助曹丕夺嫡上位，以其为心腹爪牙，后封其太尉、魏寿亭侯。黄初四年（223年），贾诩去世，终年七十七岁，谥号肃侯。" />
+  <Hero id="lord_weiyi" faction="Faction.clan_jiaxu" text="{=lord_weiyi_intro}出身关中没落士族，文笔华美，精通典章制度。他并非李傕心腹，而是被胁迫或为保全家族而留在朝中的官员。衣谷三国编创人物。" />
+  <Hero id="lord_huli" faction="Faction.clan_jiaxu" text="{=lord_huli_intro}凉州本土的胥吏出身，精通算学与刑名，是李傕从底层提拔的纯粹技术官僚。他没有道德包袱，一切以效率和完成李傕下达的指标为先。他负责为李傕的军队筹措粮饷，手段直接而残酷。衣谷三国编创人物。" />
+  <Hero id="lord_liuxie" faction="Faction.clan_liuxie" text="{=lord_liuxie_intro}刘协，字伯和，汉灵帝中子。初封陈留王，董卓废少帝后立其为帝。一生辗转于权臣之手，先后被董卓、李傕、曹操操控。建安五年（200年）密授衣带诏予董承诛曹，事败后遭软禁。曹丕篡汉后降为山阳公，终老封地。" />
+  <Hero id="lord_huangfusong" faction="Faction.clan_huangfusong" text="{=lord_huangfusong_intro}皇莆嵩，字义真。凉州安定郡朝那县人，将门世家出身。黄巾起义爆发，任左中郎将持节，率军镇压黄巾军，战后拜左车骑将军、领冀州牧，封槐里侯。后复起为左将军，破叛匪王国贼众。后董卓专权，征皇甫嵩入朝任城门校尉，因与卓有隙而含冤下狱，幸得其子皇甫坚寿求情得以保全。及卓死，李傕欲拜其为太尉，后因天有异象未果。兴平二年（195年）卒，追赠骠骑将军。" />
+  <Hero id="lord_caiyong" faction="Faction.clan_huangfusong" text="{=lord_caiyong_intro}蔡邕(yōng)，字伯喈，兖州陈留郡圉县人，文学家、书法家。曾续《东观汉记》及刻印熹平石经。时董卓掌权，强召其为祭酒。及卓诛，因在王允座上感叹而下狱，后瘐死狱中，时六十岁。据载其通晓音律，才华横溢，尤精妙于书法，擅篆、隶书，独创“飞白”书体。" />
+  <Hero id="lord_dongcheng" faction="Faction.clan_dongcheng" text="{=lord_dongcheng_intro}董承，冀州河间国人，汉灵帝生母董太后之侄，汉帝刘协妃嫔董贵人之父。初为牛辅部曲，李傕郭汜之乱后护卫汉帝东归洛阳，因功征拜卫将军，受封列侯。建安四年（199年），升任车骑将军。同年，董承称领受汉帝衣带血诏，与刘备、种辑、吴子兰、王子服等密谋诛曹。然事泄，董承、种辑、吴子兰、王子服以及董贵人等皆为曹操所杀。" />
+  <Hero id="lord_jiping" faction="Faction.clan_dongcheng" text="{=lord_jiping_intro}吉平又名吉本，字称平，司隶河南郡洛阳人，汉朝太医。董承受汉帝衣带血诏，与吉平等人共谋曹操。吉平本欲趁为曹操治病之际投毒杀之，却因有人告发而为曹操所知，遂将吉平下狱并施以酷刑，终不屈自尽。" />
+  <Hero id="lord_fushou" faction="Faction.clan_dongcheng" father="Hero.lord_fuwan" text="{=lord_fushou_intro}伏寿，徐州琅邪郡东武县人，伏完之女，刘协之妻，汉皇后。初平元年（190年）随汉帝入长安，旋封贵人。兴平二年（195年），册立为后。时曹操外擅威权，帝为傀儡。伏后忧，求父诛曹以正社稷。完惧而不敢发。建安十九年（214年）事泄，曹操逼帝废后，遂勒兵入宫收之，加以幽囚，后杀之。所生两皇子皆鸩杀之。" />
+  <Hero id="lord_dongguiren" faction="Faction.clan_dongcheng" father="Hero.lord_dongcheng" text="{=lord_dongguiren_intro}董贵人，冀州河间国人，董承之女，汉献帝刘协妃嫔之一。董承密谋反曹，后败露问斩，董氏受其牵连，为曹操缢杀，腹中皇嗣亦不能幸免。" />
+  <Hero id="lord_fuwan" faction="Faction.clan_fuwan" text="{=lord_fuwan_intro}伏完，徐州琅邪郡东武人，伏皇后之父。出生显贵，历官辅国将军、中散大夫、屯骑校尉。建安五年（200年），因董承等图谋诛曹失败被杀，伏皇后密令伏完密图之，遂不敢有所动。建安十四年（209年），伏完逝世。" />
+  <Hero id="lord_weiqian" faction="Faction.clan_fuwan" text="{=lord_weiqian_intro}三朝老臣，官至尚书令，是东汉官僚体系的活化石。他性格刚直不阿，即使在曹操面前也竭力维护朝廷礼仪与皇帝的最后尊严。他是刘协在朝堂上最坚定的精神支柱。衣谷三国编创人物。" />
+  <Hero id="lord_shisunrui" faction="Faction.clan_shisunrui" text="{=lord_shisunrui_intro}士孙瑞，字君荣，司隶扶风郡平陵县人。出身显贵，知识博达 ，早年为梁冀属官。与司徒王允、吕布共谋诛卓。卓既诛，迁大司农，为国三老。值李、郭作乱长安，汉帝欲东归洛阳，瑞随之，然终为乱兵所害。" />
+  <Hero id="lord_yuanwan" faction="Faction.clan_shisunrui" text="{=lord_yuanwan_intro}汝南袁氏的旁支，但与袁绍、袁术不同，他这一支世代忠于汉室。他的存在本身，就象征着天下仍有高门士族心向刘氏，是连接刘协与外部潜在盟友的活招牌。衣谷三国编创人物。" />
+  <Hero id="lord_richeng" faction="Faction.clan_shisunrui" text="{=lord_richeng_intro}孔融之侄，与其叔一样耿介而充满理想。他年轻气盛，善于文章辞令，常在士林中宣扬皇权正统，是刘协在年轻士子中的“话筒”，负责凝聚人心、制造舆论。衣谷三国编创人物。" />
+  <Hero id="lord_zhaowen" faction="Faction.clan_zhaowen" text="{=lord_zhaowen_intro}字子柔，蜀郡成都（今四川成都）人。东汉末年大臣，官至司徒、录尚书事，封江南亭侯。他出身名门，其家族“成都赵氏”是当地显赫的世族。" />
+  <Hero id="lord_fuyin" faction="Faction.clan_zhaowen" text="{=lord_fuyin_intro}伏完族侄，皇后伏寿的亲戚。他比伏完更具冒险精神，暗中为刘协传递消息，联络董承等外戚势力，是刘协伸向宫外的隐形之手。衣谷三国编创人物。" />
+  <Hero id="lord_zhangshu" faction="Faction.clan_zhaowen" text="{=lord_zhangshu_intro}世代为皇室管理田庄、账目的家族出身。他精于算学，不关心政治斗争，只忠于皇帝本人，负责为刘协管理那些尚未被曹操完全控制的皇室私产，悄悄积攒微薄的复国资本。衣谷三国编创人物。" />
+  <Hero id="lord_zhongji" faction="Faction.clan_zhongji" text="{=lord_zhongji_intro}东汉末年大臣、将领。他在历史上留下的最浓重一笔，便是作为汉献帝“衣带诏”密谋集团的核心成员之一，最终事败被杀。" />
+  <Hero id="lord_liqian" faction="Faction.clan_zhongji" text="{=lord_liqian_intro}掌管宫廷印信、档案的小官。职位不高，却至关重要。他确保皇帝的诏书能用上正确的印玺，并偷偷记录下曹操僭越的种种罪证，以期将来昭告天下。衣谷三国编创人物。" />
+  <Hero id="lord_wangan" faction="Faction.clan_zhongji" text="{=lord_wangan_intro}本是洛阳游侠头目，董卓之乱后誓死效忠汉室。他在暗处为刘效效力，组建了一张秘密的情报网，专门负责监视百官、收集反臣集团的劣迹与把柄。衣谷三国编创人物。" />
+  <Hero id="lord_wuzilan" faction="Faction.clan_wuzilan" text="{=lord_wuzilan_intro}东汉末年将领。他与种辑一样，是汉献帝“衣带诏”密谋集团的核心成员，因事泄而被曹操诛杀。" />
+  <Hero id="lord_dongyuan" faction="Faction.clan_wuzilan" text="{=lord_dongyuan_intro}董承的远房子侄，是其家族武装的实际管理者。在董承忙于周旋于台前时，他负责在幕后训练少量绝对忠诚于皇帝的私兵死士，并秘密与对反臣不满的将领进行接触。衣谷三国编创人物。" />
+  <Hero id="lord_gongsunzan" faction="Faction.clan_gongsunzan" text="{=lord_gongsunzan_intro}公孙瓒字伯珪，辽西令支人。骁勇善战，率白马义从威震塞外。初平二年大破青州黄巾，拜奋武将军。与幽州牧刘虞政见不合，杀虞夺其地。建安四年界桥之战败于袁绍，退守易京，终自焚而死。" />
+  <Hero id="lord_gongsunxu" faction="Faction.clan_gongsunzan" father="Hero.lord_gongsunzan" text="{=lord_gongsunxu_intro}公孙瓒长子。建安四年奉父命求援黑山军，率张燕部驰援易京。未至而城陷，父自焚。后率残部转战并州，为高干所杀。" />
+  <Hero id="lord_guanjing" faction="Faction.clan_gongsunzan" text="{=lord_guanjing_intro}公孙瓒首席谋士，任长史。性刚直，屡谏瓒结好刘虞不从。建安四年易京陷落时慨然曰：吾闻君子陷人于危，必同其难，岂可独生！策马冲入敌阵战死。" />
+  <Hero id="lord_gongsunli" faction="Faction.clan_gongsunzan" father="Hero.lord_gongsunzan" text="{=lord_gongsunli_intro}公孙离，幽州辽西郡令支县人，公孙瓒之女，公孙续之妹。自幼有恣仪，尚武好学，自习兵书，天资聪慧，深得其父喜爱。金钗之年便善骑射，常随父兄游猎，枪不离身，枪术深得瓒之真传。年稍长，欲从军，瓒以其武艺未足为由不许，离自此愈加奋进，常与其兄切磋，未尝一败。公孙瓒易京兵败时，尽杀姐妹妻小，独遣亲卫护公孙离突围而出，衣谷三国编创人物。" />
+  <Hero id="lord_zoujing" faction="Faction.clan_gongsunzan" text="{=lord_zoujing_intro}幽州旧将，初平元年率刘备破青州黄巾。后归公孙瓒，守右北平。善抚士卒，每战身先士卒。建安三年战死于鲍丘水。" />
+  <Hero id="lord_gongsunfan" faction="Faction.clan_gongsunfan" text="{=lord_gongsunfan_intro}公孙瓒从弟，任渤海太守。界桥之战率骑兵迂回敌后，火烧袁军粮草。建安五年守南皮城，粮尽援绝，坠城殉节。" />
+  <Hero id="lord_shanjing" faction="Faction.clan_gongsunfan" text="{=lord_shanjing_intro}幽州骁将，善骑射。初平三年率三千弩骑大破乌桓峭王部，斩首两千级。建安四年于巨马水阻击袁军，中伏战死。" />
+  <Hero id="lord_zoudan" faction="Faction.clan_gongsunfan" text="{=lord_zoudan_intro}白马义从副统领，与公孙瓒同乡。每战白袍银甲冲锋在前，人称玉面修罗。建安四年守涿郡，以八百骑破袁军五千，终力竭而亡。" />
+  <Hero id="lord_gongsunchangchun" faction="Faction.clan_gongsunfan" father="Hero.lord_gongsunfan" text="{=lord_gongsunchangchun_intro}公孙长春，幽州辽西郡令支县人，公孙范之女。出身将门，相貌端庄，与公孙离自幼交好，情同姐妹。曾与离同习武艺，然资质平平效果不佳。颇通文墨，与离一文一武，相得益彰。逢易京丧乱后失踪，疑为公孙离所救，衣谷三国编创人物。" />
+  <Hero id="lord_gongsunyue" faction="Faction.clan_gongsunyue" text="{=lord_gongsunyue_intro}公孙瓒从弟，初为袁术部将。初平二年奉兄命助术抗曹，战死于阳城。善训弓骑，所部银翼骑百步穿杨。" />
+  <Hero id="lord_yangang_01" faction="Faction.clan_gongsunyue" text="{=lord_yangang_01_intro}白马义从统领，界桥之战率精骑突击袁军大戟士，中伏殁于阵。其雪地奔袭战术后世奉为经典。" />
+  <Hero id="lord_jiyong" faction="Faction.clan_gongsunyue" text="{=lord_jiyong_intro}原鄃县令，叛袁绍归瓒。建安元年守鄃县，以三百骑破袁军千人。次年城陷被俘，拒降车裂而死。" />
+  <Hero id="lord_zhaoyun" faction="Faction.clan_zhaoyun" text="{=lord_zhaoyun_intro}常山真定人，初属公孙瓒。长坂坡单骑救主，汉水偃旗退曹，被赞一身是胆。建兴七年卒，谥顺平侯。" />
+  <Hero id="lord_xiahoulan" faction="Faction.clan_zhaoyun" text="{=lord_xiahoulan_intro}精通律法，博闻强识。博望坡之战被赵云所擒，备荐为军正。后随诸葛亮治蜀，制《蜀科》奠定法治。" />
+  <Hero id="lord_zhaoyu" faction="Faction.clan_zhaoyun" text="{=lord_zhaoyu_intro}赵雨，冀州常山郡真定县人，赵云之妹。姿色艳丽，明眸皓齿。长兄去世后跟随赵云，好习武，常受赵云指点，故弓马娴熟，善枪剑，衣谷三国编创人物。" />
+  <Hero id="lord_zhaochu" faction="Faction.clan_zhaoyun" text="{=lord_zhaochu_intro}赵氏，青州人，少逢家难，为童颜氏收养。童颜渊见其骨质紧实，体态轻盈，便收其为徒。赵初聪慧，日练武事，夜通书文，未有懈怠，或有闲暇，与渊弟子云者善，并结为义亲。笄礼后又积年，武艺军略皆精，渊赞其才，允其出师。遂去，未复得其踪也，衣谷三国编创人物。" />
+  <Hero id="lord_gongsunji" faction="Faction.clan_gongsunji" text="{=lord_gongsunji_intro}原刘虞从事，暗通公孙瓒致虞败亡。性多疑，建安二年因谤言杀魏攸，次年被徐邈鸩杀。" />
+  <Hero id="lord_xumiao" faction="Faction.clan_gongsunji" text="{=lord_xumiao_intro}燕国名士，任幽州典农校尉。暗中庇护刘虞旧部，建安三年鸩杀公孙纪为虞复仇，后隐遁辽东。" />
+  <Hero id="lord_chengxu" faction="Faction.clan_gongsunji" text="{=lord_chengxu_intro}刘虞死谏之臣，冒死收虞遗骸。后被公孙纪囚禁，建安四年绝食殉主。著《幽燕风土志》传世。" />
+  <Hero id="lord_weiyou" faction="Faction.clan_gongsunji" text="{=lord_weiyou_intro}刘虞首席谋士，力主安抚胡族。被囚后假意归顺公孙纪，建安二年因泄密被杀。临终血书幽州当和。" />
+  <Hero id="lord_yuanshao" faction="Faction.clan_yuanshao" spouse="Hero.lord_liufuren" text="{=lord_yuanshao_intro}字本初，汝南汝阳人。四世三公，初为司隶校尉。诛宦官、讨董卓、灭公孙，雄踞河北。建安五年官渡兵败，两年后呕血而亡。性矜愎自高，短于从善。" />
+  <Hero id="lord_jiangqi" faction="Faction.clan_yuanshao" text="{=lord_jiangqi_intro}冀州骁将，官渡之战率偏师护粮。乌巢告急时谏言分兵救应未纳，后于黎阳阻击曹军战死。" />
+  <Hero id="lord_xuyou" faction="Faction.clan_yuanshao" text="{=lord_xuyou_intro}字子远，南阳人。献奇计破公孙瓒，官渡时叛投曹操献火烧乌巢策。恃功骄横，建安七年被许褚所杀。" />
+  <Hero id="lord_liufuren" faction="Faction.clan_yuanshao" spouse="Hero.lord_yuanshao" text="{=lord_liufuren_intro}袁绍继室，性妒忌。袁绍死后虐杀其宠妾五人，又劝袁尚杀袁谭。邺城破时被曹丕所俘。" />
+  <Hero id="lord_yanliang" faction="Faction.clan_yanliang" text="{=lord_yanliang_intro}河北四庭柱之首，万军斩将如探囊。白马之战连斩宋宪魏续，轻敌中关羽突袭阵亡。" />
+  <Hero id="lord_chunyurui" faction="Faction.clan_yanliang" text="{=lord_chunyurui_intro}出身河北骑术世家淳于氏的旁支，与颜良有旧谊。他不仅武艺精湛，更难得的是比颜良多了一份战场上的机敏与洞察力，自幼研习骑射与奔袭战术。" />
+  <Hero id="lord_cuiyan" faction="Faction.clan_yanliang" text="{=lord_cuiyan_intro}字季珪，清河东武城人。声姿高畅，眉目疏朗。总冀州户籍得三十万众，后因眉目顾盼案被曹操赐死。" />
+  <Hero id="lord_wenchou" faction="Faction.clan_wenchou" text="{=lord_wenchou_intro}与颜良齐名，悍勇冠三军。延津之战独战张辽徐晃不败，乱军中遇关羽突袭而亡。" />
+  <Hero id="lord_zhangshuo" faction="Faction.clan_wenchou" text="{=lord_zhangshuo_intro}幽州广阳人，边地良家子出身，自幼与胡儿杂处，练就了精湛的骑射本领。他慕文丑“河北第一猛将”之名，率领家乡百余善射骑士前来投效。衣谷三国编创人物。" />
+  <Hero id="lord_chenhan" faction="Faction.clan_wenchou" text="{=lord_chenhan_intro}冀州钜鹿人，出身地方豪强，是文丑在军中最坚定的拥护者和竞争者。他同样力大无比，性情鲁直，唯文丑马首是瞻，常与文丑争为先锋。衣谷三国编创人物。" />
+  <Hero id="lord_zhanghe" faction="Faction.clan_zhanghe" text="{=lord_zhanghe_intro}字儁乂，河间鄚人。原属韩馥，归袁后破公孙瓒有功。官渡降曹，后为魏五子良将。街亭大破马谡，太和五年中箭亡。" />
+  <Hero id="lord_yanrou" faction="Faction.clan_zhanghe" text="{=lord_yanrou_intro}鲜卑抚养之汉人，任护乌桓校尉。联结鲜卑破公孙瓒，曹操取河北后仍镇北疆，封度辽将军。" />
+  <Hero id="lord_chenlin" faction="Faction.clan_zhanghe" text="{=lord_chenlin_intro}字孔璋，建安七子之一。所作《为袁绍檄豫州文》令曹操头风顿愈。归曹后任司空军师祭酒。" />
+  <Hero id="lord_tianfeng" faction="Faction.clan_zhanghe" text="{=lord_tianfeng_intro}字元皓，钜鹿人。刚而犯上，力谏袁绍缓战曹操。官渡前被囚，闻败讯自刎狱中。" />
+  <Hero id="lord_gaolan" faction="Faction.clan_gaolan" text="{=lord_gaolan_intro}河北四庭柱，与张郃并称哼哈二将。官渡降曹，后随张辽守合肥。逍遥津之战断后殉国。" />
+  <Hero id="lord_lifu" faction="Faction.clan_gaolan" text="{=lord_lifu_intro}字子宪，阳平人。曾化装入邺城传递军情，官渡后隐遁山林。曹丕称帝时出仕，任清河太守。" />
+  <Hero id="lord_hangheng" faction="Faction.clan_gaolan" text="{=lord_hangheng_intro}字子佩，代郡人。袁熙败亡时独不降曹，曰：吾受袁公父子厚恩，义不辱节！归乡耕读终老。" />
+  <Hero id="lord_gaogan" faction="Faction.clan_gaolan" text="{=lord_gaogan_intro}袁绍外甥，并州刺史。守壶关拒曹军半年，城破投匈奴。建安十一年南返劫掠，被王琰所杀。" />
+  <Hero id="lord_yuanshang" faction="Faction.clan_yuanshang" father="Hero.lord_yuanshao" mother="Hero.lord_liufuren" text="{=lord_yuanshang_intro}字显甫，袁绍幼子。邺城被围时射伤张辽，建安十年奔乌桓。白狼山之战后投辽东，被公孙康所杀。" />
+  <Hero id="lord_fengji" faction="Faction.clan_yuanshang" text="{=lord_fengji_intro}字元图，南阳人。助袁尚夺嗣，献诈降计破曹操。建安九年邺城破，拒降自刎。" />
+  <Hero id="lord_shenpei" faction="Faction.clan_yuanshang" text="{=lord_shenpei_intro}字正南，魏郡人。邺城守备总指挥，以弩砲退曹军。城破面北受刑，叹：吾主在北方！" />
+  <Hero id="lord_qianzhao" faction="Faction.clan_yuanshang" text="{=lord_qianzhao_intro}字子经，安平观津人。袁尚败亡后归曹，镇守北疆二十载，边境称牵公蹈泉感其德。" />
+  <Hero id="lord_guoyuan" faction="Faction.clan_yuanshang" text="{=lord_guoyuan_intro}袁尚部将，河东之战溺毙汾水。其首级被庞德所获，钟繇恸哭收葬（援乃繇甥）。" />
+  <Hero id="lord_yuantan" faction="Faction.clan_yuantan" father="Hero.lord_yuanshao" text="{=lord_yuantan_intro}字显思，袁绍长子。青州刺史，与弟尚争冀州引曹操为援。建安十年被曹纯虎豹骑斩杀于南皮。" />
+  <Hero id="lord_xinping" faction="Faction.clan_yuantan" text="{=lord_xinping_intro}字仲治，颍川人。力主袁谭继位，邺城破时弟毗降曹。拒曹操征召，绝食而死。" />
+  <Hero id="lord_wangxiu" faction="Faction.clan_yuantan" text="{=lord_wangxiu_intro}字叔治，北海人。哭谏袁谭止兄弟相争，后归曹操。任魏郡太守，路拾遗金悬于道旁，世称王公金。" />
+  <Hero id="lord_zhangnan" faction="Faction.clan_yuantan" text="{=lord_zhangnan_intro}字文进，涿郡人。原为袁谭先锋，降曹后随征荆州。夷陵之战率军突入蜀阵，战死猇亭。" />
+  <Hero id="lord_guotu" faction="Faction.clan_yuantan" text="{=lord_guotu_intro}字公则，颍川人。献计奇袭许都，诬陷张郃致官渡败局。城破时欲焚宫室，被乐进射杀。" />
+  <Hero id="lord_yuanxi" faction="Faction.clan_yuanxi" father="Hero.lord_yuanshao" text="{=lord_yuanxi_intro}字显奕，幽州刺史。性懦弱，妻甄宓被曹丕所夺。建安十二年与弟尚逃辽东，被公孙康诱杀。" />
+  <Hero id="lord_zhenmi" faction="Faction.clan_yuanxi" text="{=lord_zhenmi_intro}中山无极人，袁熙妻。邺城破归曹丕，立为皇后。因作《塘上行》被赐死，殡时以发覆面。" />
+  <Hero id="lord_jiaochu" faction="Faction.clan_yuanxi" text="{=lord_jiaochu_intro}原袁熙部将，叛主降曹。说降涿郡功封列侯，后随曹真征汉中，被黄忠斩于定军山。" />
+  <Hero id="lord_chunyuqiong" faction="Faction.clan_chunyuqiong" text="{=lord_chunyuqiong_intro}字仲简，颍川人。原西园八校尉，守乌巢醉酒误事。被俘后拒降，割耳鼻而亡。" />
+  <Hero id="lord_jushou" faction="Faction.clan_chunyuqiong" text="{=lord_jushou_intro}字公与，广平人。献三年疲曹之策，官渡被俘。夜盗马欲归袁，曹操叹而杀之。" />
+  <Hero id="lord_chunyuliang" faction="Faction.clan_chunyuqiong" father="Hero.lord_chunyuqiong" text="{=lord_chunyuliang_intro}淳于琼之子，乌巢副将。火起时护父突围，身中十二箭殁。" />
+  <Hero id="lord_juyi" faction="Faction.clan_juyi" text="{=lord_juyi_intro}西凉骁将，训八百先登死士。界桥之战大破白马义从，功高震主被袁绍诛杀。" />
+  <Hero id="lord_guantong" faction="Faction.clan_juyi" text="{=lord_guantong_intro}东莱人，守乐安抗袁谭。闻鞠义死讯，率三十骑突袭谭营，伤重投海。" />
+  <Hero id="lord_suyou" faction="Faction.clan_juyi" text="{=lord_suyou_intro}邺城守将，密降曹操事发。逃至壶关投高干，建安十一年守城战死。" />
+  <Hero id="lord_juli" faction="Faction.clan_juyi" father="Hero.lord_juyi" text="{=lord_juli_intro}麹礼，凉州西平郡人，麹义之女，衣谷三国编创人物。" />
+  <Hero id="lord_hanmeng" faction="Faction.clan_hanmeng" text="{=lord_hanmeng_intro}字若山，河内人。乌巢护粮官，遭徐晃夜袭失粮。后守黎阳，被于禁水淹七军俘杀。" />
+  <Hero id="lord_mayan" faction="Faction.clan_hanmeng" text="{=lord_mayan_intro}袁尚部曲督，降曹后为先锋。长坂坡追刘备被赵云刺死。" />
+  <Hero id="lord_liuxun_1" faction="Faction.clan_hanmeng" text="{=lord_liuxun_1_intro}颍川名士，任阳安都尉。叛袁投曹后任九江太守，治水患修芍陂，民立刘公祠。" />
+  <Hero id="lord_mengdai" faction="Faction.clan_hanmeng" text="{=lord_mengdai_intro}诬告审配谋反致邺城动荡，官渡后投曹操。任琅邪相，贪贿被满宠弹劾，自缢狱中。" />
+  <Hero id="lord_liubei" faction="Faction.clan_liubei" spouse="Hero.lord_mifuren" text="{=lord_liubei_intro}刘备，字玄德，幽州涿郡涿县人，孝景皇帝之子中山靖王刘胜之苗裔，汉帝按宗谱称其皇叔。早年颠沛流离，备尝艰辛，辗转诸侯间为客将，以仁义立业，曹操称其为天下英雄。建安十三年（208年）赤壁之战，与孙权盟，大败曹操，后按诸葛之谋先趁势夺荆州，后取益州。蜀汉章武元年（221年），在成都称帝，国号汉，史称季汉。蜀汉章武元年（223年），殂于白帝城，终年六十三岁，谥号昭烈皇帝。" />
+  <Hero id="lord_chendao" faction="Faction.clan_liubei" text="{=lord_chendao_intro}陈到，字叔至，豫州汝南郡人。刘备麾下武将，以统领刘备帐下白耗精兵而闻名，以忠勇著称。章武元年（221年）七月，刘备大败于夷陵，陈到率白耳兵七百断后，拒全综、李异，朱恒、朱然攻势，由此闻名。蜀汉建兴年间，任征西将军、永安都督，封亭侯。" />
+  <Hero id="lord_sunqian" faction="Faction.clan_liubei" text="{=lord_sunqian_intro}孙乾字公祐，青州北海人。刘备早期重要谋士，任从事中郎。辩才出众，多次为刘备出使诸侯：说退袁术追兵，劝刘表接纳刘备，促成孙刘联盟。为人谨慎周密，刘备称其应变将略非其所长，然外交斡旋之功冠绝当世。定益州后拜秉忠将军，与糜竺同列，位亚诸葛亮。" />
+  <Hero id="lord_jianyong" faction="Faction.clan_liubei" text="{=lord_jianyong_intro}简雍字宪和，幽州涿郡人，刘备同乡发小。性傲诞放达，善辩论讽谏。随刘备辗转诸侯，常为使节。取成都时单骑入城说降刘璋。刘备称帝后拜昭德将军，位列九卿。其谏言多寓庄于谐，曾以人欲酿酒喻禁酒令弊端，刘备大笑纳谏。" />
+  <Hero id="lord_guanyu" faction="Faction.clan_guanyu" text="{=lord_guanyu_intro}关羽，字云长，并州河东郡解县人，刘备麾下武将，五虎将之一。早期与刘备、张飞桃园结义，结为兄弟，追随刘备涿郡起兵立业，后随军辗转各地，因作战勇猛，忠肝义胆为天下诸侯闻名。后备入益州，命羽镇守荆州。建安二十四年（219年），羽围襄樊，曹操遂遣于禁督七军救樊城。关羽用计，水淹七军，生擒于禁，斩杀庞德，史称“威震华夏”，后吕蒙白衣渡江，公安、江陵皆为东吴所得，而羽又败徐晃，无奈退往麦城，突围失败为东吴擒杀。" />
+  <Hero id="lord_guanping" faction="Faction.clan_guanyu" father="Hero.lord_guanyu" text="{=lord_guanping_intro}关平，关羽长子（演义为义子）。随父镇守荆州，屡立战功。樊城之战与庞德大战三十回合不分胜负，水淹七军时擒于禁。麦城突围时保护关羽力战至死，时年四十二。其忠勇颇肖其父，民间尊为关平太子。" />
+  <Hero id="lord_zhoucang" faction="Faction.clan_guanyu" text="{=lord_zhoucang_intro}周仓原为黄巾将领，后投关羽任贴身护卫。力大无穷，水性极佳，曾水中生擒庞德。忠心耿耿，为关羽持青龙偃月刀。关羽败走麦城后自刎殉主。民间传说其魂灵被封铁甲将军，永世守护关帝。" />
+  <Hero id="lord_liaohua" faction="Faction.clan_guanyu" text="{=lord_liaohua_intro}廖化字元俭，荆州襄阳人。原为黄巾军，后归关羽任主簿。历经蜀汉兴亡全过程，以蜀中无大将，廖化作先锋闻名。随姜维北伐屡建奇功，蜀亡后忧愤而卒。其人生跨度从黄巾起义至三国归晋，堪称三国活史书。" />
+  <Hero id="lord_zhangfei" faction="Faction.clan_zhangfei" text="{=lord_zhangfei_intro}张飞，字翼德，幽州涿郡人，刘备麾下武将，五虎将之一。初与刘备、关羽桃园结义，随刘备涿郡起兵立业结为兄弟，后随刘备起兵立业，屡立战功。因其勇猛善战，粗中有细为备所倚重。后随诸葛亮、赵云扫荡西川，履立大功。建安二十年（215年）汉中之战，大败张郃于宕渠，巴西郡自此获安。蜀汉既建，官至车骑将军、领司隶校尉，封西乡侯。后因酒后鞭打范强、张达，为二人所怨，范张遂趁夜刺飞于大帐之中。" />
+  <Hero id="lord_xiahoujuan" faction="Faction.clan_zhangfei" text="{=lord_xiahoujuan_intro}夏侯涓（夏侯霸从妹），豫州沛国人。13岁采樵时被张飞所俘，纳为妻室。生二女皆为刘禅皇后。其特殊身份成为夏侯渊家族与蜀汉的纽带。夏侯霸降蜀后得她庇护。性情温婉，调和张飞暴烈性格，使其晚年稍敛锋芒。" />
+  <Hero id="lord_chenqun" faction="Faction.clan_zhangfei" text="{=lord_chenqun_intro}陈群字长文，豫州颍川人。曹魏重臣，九品中正制创立者。早年随刘备任豫州刺史，后归曹操。其法治思想深刻影响魏晋南北朝，所著《魏律》开唐律先河。与张飞有惺惺相惜之谊，曾评：张将军暴而无恩，然国士之风不让古人。" />
+  <Hero id="lord_duyou" faction="Faction.clan_zhangfei" text="{=lord_duyou_intro}无名督邮，冀州安喜县监察官。因勒索刘备遭张飞鞭笞。后调任他郡仍不改贪鄙，终因受贿下狱。其遭遇成为汉末吏治腐败的缩影，衬托出刘备早期仕途坎坷。" />
+  <Hero id="lord_liufeng" faction="Faction.clan_liubei" father="Hero.lord_liubei" text="{=lord_liufeng_intro}刘封，刘备养子。勇武过人，随诸葛亮入川屡立战功。汉中之战统孟达取上庸。因拒援关羽致其败亡，又欺凌孟达致其降魏。诸葛亮虑其刚猛难制，劝刘备赐死。临刑叹：恨不用孟子度（孟达）之言！" />
+  <Hero id="lord_wangfu" faction="Faction.clan_liubei" text="{=lord_wangfu_intro}王甫字国山，益州广汉人。荆州从事，随关羽守荆州。曾谏言沿江设烽火台防吕蒙，未被采纳。荆州陷落后投刘封。上庸兵变时力战而死。善相马，时人称国山策马，伯乐复生。" />
+  <Hero id="lord_futong" faction="Faction.clan_liubei" text="{=lord_futong_intro}傅彤，荆州义阳人。原为刘封部将，夷陵之战任护军。刘备败退时率三百死士断后，身被数十创仍力战，吴将劝降，彤叱曰：吴狗！安有汉将军降者！战至流尽最后一滴血。其子傅佥后为蜀汉殉国，父子并称蜀中双烈。" />
+  <Hero id="lord_mizhu" faction="Faction.clan_mizhu" text="{=lord_mizhu_intro}糜竺字子仲，徐州东海人。富甲天下的巨商，倾家产助刘备起兵。妹嫁刘备，拜安汉将军，位在诸葛亮之上。雍容敦雅，然乏谋略。弟糜芳叛变后自缚请罪，刘备慰谕不问，惭愧病卒。其诚信经商之道被奉为商贾典范。" />
+  <Hero id="lord_mifuren" faction="Faction.clan_mizhu" spouse="Hero.lord_liubei" text="{=lord_mifuren_intro}糜夫人，糜竺之妹。刘备困守广陵时，糜竺献妹为夫人。长坂坡之战为护幼子阿斗，投井自尽前托孤赵云。其舍生取义之举成就赵子龙单骑救主传奇，被后世赞为烈女。" />
+  <Hero id="lord_mifang" faction="Faction.clan_mizhu" text="{=lord_mifang_intro}糜芳字子方，糜竺弟。随刘备转战多年，任南郡太守。因粮草失火惧关羽责罚，叛投东吴致荆州陷落。兄糜竺自缚请罪，芳在吴屡遭羞辱。后欲返蜀，事泄被杀。其叛变成为蜀汉由盛转衰关键节点。" />
+  <Hero id="lord_tianyu" faction="Faction.clan_tianyu" text="{=lord_tianyu_intro}田豫字国让，幽州渔阳人。少从刘备，后归曹操镇守北疆。离间乌桓、大破轲比能，胡人闻田豫之名不敢南犯。用兵奇变如神，尤善山地作战。官至太中大夫，封长乐亭侯。其分兵疑敌战术被收入《魏晋兵略》。" />
+  <Hero id="lord_chendeng" faction="Faction.clan_tianyu" text="{=lord_chendeng_intro}陈登字元龙，徐州下邳人。智谋超群，助曹操灭吕布任广陵太守。开陂塘溉农田，江淮称颂。善治水军，曾以寡兵破孙策。好食生鱼，因寄生虫病早卒。刘备赞其文武胆志当求之古耳，造次难得比也。" />
+  <Hero id="lord_caobao" faction="Faction.clan_tianyu" text="{=lord_caobao_intro}曹豹，徐州牧陶谦旧将。吕布袭徐州时为内应，女嫁吕布。下邳之战被张飞阵斩。其反复无常成为吕布集团缩影，陈登讥其豹变之姿，终类犬羊。" />
+  <Hero id="lord_caocao" faction="Faction.clan_caocao" spouse="Hero.lord_bianfuren" text="{=lord_caocao_intro}字孟德，沛国谯人。挟天子以令诸侯，统一北方。精通兵法，善诗文。任人唯才，屯田制奠定基业。赤壁败后仍为三国最强势力奠基者。" />
+  <Hero id="lord_bianfuren" faction="Faction.clan_caocao" spouse="Hero.lord_caocao" text="{=lord_bianfuren_intro}曹操正室，倡家出身。性俭约，明事理。吕布袭兖州时镇定安抚人心，曹丕继位后尊为太后。" />
+  <Hero id="lord_caozhen" faction="Faction.clan_caocao" text="{=lord_caozhen_intro}字子丹，曹操族子（一说原姓秦），其父战死后，曹操收为养子。沛国谯县（今安徽省亳州市）人，三国时期曹魏名将。" />
+  <Hero id="lord_caoxiu" faction="Faction.clan_caocao" text="{=lord_caoxiu_intro}字文烈。沛国谯（治今安徽亳州）人。 曹操族子。 三国时期曹魏的重要将领。" />
+  <Hero id="lord_dianwei" faction="Faction.clan_dianwei" text="{=lord_dianwei_intro}陈留人，力大无穷。宛城之战独守辕门，身中数十创死战护主。曹操泣曰：吾折长子、爱侄，俱无深痛，独号泣典韦也！" />
+  <Hero id="lord_chenmang" faction="Faction.clan_dianwei" text="{=lord_chenmang_intro}陈留己吾人，典韦的同乡好友。当年典韦为友报仇后，是他协助典韦逃亡，后一同投奔曹操。他深知典韦的脾性与本事，是典韦在军中唯一能放心托付后背的人。衣谷三国编创人物。" />
+  <Hero id="lord_hanlie" faction="Faction.clan_dianwei" text="{=lord_hanlie_intro}本是兖州一带的游侠头目，以手狠义气闻名。他慕“古之恶来”典韦的威名，率一众轻生死的兄弟前来投效，不求官职，只愿在典韦麾下做一名马前卒。衣谷三国编创人物。" />
+  <Hero id="lord_xuchu" faction="Faction.clan_xuchu" text="{=lord_xuchu_intro}谯国人，号虎痴。渭水护曹吓退马超。性谨慎寡言，忠心不二，曹丕称其此吾樊哙也。" />
+  <Hero id="lord_xupan" faction="Faction.clan_xuchu" text="{=lord_xupan_intro}许褚的堂弟，自少年时代便与许褚一同练武、筑壁御寇。他性格如同其名“磐石”般沉稳坚毅，是许褚最信任的兄弟和副手。衣谷三国编创人物。" />
+  <Hero id="lord_dingheng" faction="Faction.clan_xuchu" text="{=lord_dingheng_intro}沛国谯县人，与许褚是同乡。他本是当地一名轻财重义的侠客，麾下有一批擅长骑射的游侠儿。他深深折服于许褚“曳牛逆行”的豪勇，遂率众来投，自愿成为许褚的部曲。衣谷三国编创人物。" />
+  <Hero id="lord_caoang" faction="Faction.clan_caoang" father="Hero.lord_caocao" text="{=lord_caoang_intro}曹操长子，谦和仁孝。宛城之战让马救父，被张绣所杀。曹操终生悔恨，卞夫人言不能以我代汝兄乎？" />
+  <Hero id="lord_caoanmin" faction="Faction.clan_caoang" text="{=lord_caoanmin_intro}曹操侄，宛城同曹昂战死。性豪爽，善交际，常为曹操处理宗族事务。" />
+  <Hero id="lord_liangxi" faction="Faction.clan_caoang" text="{=lord_liangxi_intro}陈郡人，任并州刺史二十年。怀柔匈奴，兴农强兵，边境安定。曹操赞曰：边境肃清，百姓布野，勤劝农桑，令行禁止。" />
+  <Hero id="lord_hanhao" faction="Faction.clan_caoang" text="{=lord_hanhao_intro}河内人，首创屯田制。濮阳护夏侯惇抗吕布，官渡守粮道。性刚直，曹操言卿忠至矣，吾岂可无义？" />
+  <Hero id="lord_yujin" faction="Faction.clan_yujin" text="{=lord_yujin_intro}曹操五子良将之首，以治军严整著称。宛城之战整肃青州兵，汉水之战坚守营垒。晚年降关羽败走麦城，归魏后惭恨而终。" />
+  <Hero id="lord_chengyu" faction="Faction.clan_yujin" text="{=lord_chengyu_intro}曹操首席谋士之一，性刚戾多谋。守东阿抗吕布，献计挟天子。晚年位至卫尉，九十而终。" />
+  <Hero id="lord_zhaoyan" faction="Faction.clan_yujin" text="{=lord_zhaoyan_intro}抚民良吏，督护诸将协调四方。汉中之战调停张辽乐进矛盾，晚年官至司空。" />
+  <Hero id="lord_yuejin" faction="Faction.clan_yuejin" text="{=lord_yuejin_intro}五子良将之一，每战先登陷阵。合肥之战与张辽共破孙权，官至右将军。" />
+  <Hero id="lord_lidian" faction="Faction.clan_yuejin" text="{=lord_lidian_intro}儒将风范，合肥之战识破孙权计谋助张辽破敌。早逝未及封侯。" />
+  <Hero id="lord_xiahoushang" faction="Faction.clan_yuejin" father="Hero.lord_xiahouyuan" text="{=lord_xiahoushang_intro}夏侯渊从子，与曹真、曹休并为曹丕腹心。建安二十三年（218年）随曹彰讨乌桓，建安二十五年（220年）率诸军取上庸降刘封。黄初三年（222年）破吴将诸葛瑾于江陵，筑浮桥渡江克百里洲。宠妾被曹丕绞杀后病狂，携妾棺木示爱遭弹劾。黄初六年（225年）病笃，曹丕执其手涕泣而卒。" />
+  <Hero id="lord_xiahoudun" faction="Faction.clan_xiahoudun" text="{=lord_xiahoudun_intro}曹魏元勋，沛国谯人。建安三年（198年）征吕布时为流矢伤左目，军称盲夏侯。虽为武将，亲背土修陂塘，率将士种稻。建安二十一年（216年）督二十六军屯居巢，得曹操同载殊遇。曹丕拜大将军，卒谥忠侯。性清俭有余财辄以分施，死后家无余财。其拔矢啖睛典故载《三国演义》，然正史仅记伤目。" />
+  <Hero id="lord_manchong" faction="Faction.clan_xiahoudun" text="{=lord_manchong_intro}刚正执法之臣，昌邑人。任许令时拷杀曹洪宾客，曹操赞当官如是。建安十三年（208年）守樊城拒关羽，沉白马誓死战。黄初五年（224年）督扬州诸军，识破吴军伪退计。青龙二年（234年）合肥之战以火船焚吴军攻城车。景初二年（238年）拜太尉，嗜酒而治军严整。正始三年（242年）卒，谥景侯。" />
+  <Hero id="lord_shihuan" faction="Faction.clan_xiahoudun" text="{=lord_shihuan_intro}曹操中军校尉，掌禁军精锐。建安四年（199年）与徐晃渡河破眭固于射犬，建安五年（200年）官渡之战率奇兵截袁绍粮车千余辆。建安十六年（211年）督韩浩守险隘破张鲁。为人忠直，曹操称诸将莫及。建安二十年（215年）征张鲁时卒于道。" />
+  <Hero id="lord_yangxiu" faction="Faction.clan_xiahoudun" text="{=lord_yangxiu_intro}弘农杨氏嫡子，建安中举孝廉任主簿。才思敏捷，尝解曹操黄绢幼妇谜。曹植党羽，建安二十四年（219年）泄鸡肋军机被诛。其一合酥门阔梦等轶事载《世说新语》，然正史仅记前后漏泄言教。死前叹我固自以死之晚也，暗指参与夺嫡。" />
+  <Hero id="lord_xiahouyuan" faction="Faction.clan_xiahouyuan" text="{=lord_xiahouyuan_intro}虎步关右之名将，三日五百六日一千的行军纪录保持者。建安十七年（212年）破马超于渭南，建安十九年（214年）灭枹罕宋建。建安二十三年（218年）守汉中，张郃劝分兵拒险不听，亲率精兵修鹿角遭黄忠突袭，战前犹食炙肉。谥愍侯。其白地将军评语实为曹操诫诸将为将当有怯弱时之例证。" />
+  <Hero id="lord_lvqian" faction="Faction.clan_xiahouyuan" text="{=lord_lvqian_intro}泰山守将，建安六年（201年）献曹操三公刀。督青州诸郡兵破黄巾，选强壮补兵户开屯田。迁徐州刺史时置楼船遏寇盗，凿渠通漕运。魏明帝时封万年亭侯，卒谥景侯。王祥曾为其别驾，解衣覆冰求鲤孝母故事即在其任内。" />
+  <Hero id="lord_zhangji_1" faction="Faction.clan_xiahouyuan" text="{=lord_zhangji_1_intro}凉州能吏，冯翊高陵人。建安十六年（211年）说马腾击韩遂，建安十九年（214年）定酒泉。延康元年（220年）平麴演叛乱，徙氐族万余户充关中。首创金城方略抚羌胡，通河西走廊商道。黄初四年（223年）病逝任上，西域诸戎会葬。" />
+  <Hero id="lord_luzhao" faction="Faction.clan_xiahouyuan" text="{=lord_luzhao_intro}建安四年（199年）与朱灵随刘备截击袁术，术病死后退还徐州。后事迹不显，仅《三国志》注引路中大夫疑为其族。景元元年（260年）有路蕃任尚书，或为其子嗣。" />
+  <Hero id="lord_caoren" faction="Faction.clan_caoren" text="{=lord_caoren_intro}曹操从弟，善守能攻之天人将军。建安十三年（208年）守江陵拒周瑜年余，建安二十四年（219年）守樊城挡关羽洪水围困。黄初二年（221年）破吴将牛渚，火烧徐陵。性奢侈好巫妓，曹丕遣巫察其宅，仁惊怖而卒。其辕门射戟救牛金事载《魏略》，显爱将之心。" />
+  <Hero id="lord_litong" faction="Faction.clan_caoren" text="{=lord_litong_intro}江夏太守，建安二年（197年）破张绣于穰县。建安十四年（209年）守汝南时，关羽绝北道阻援樊城。率众死战拔鹿角入围，创甚薨于军。谥刚侯。其妻伯父陈恭被族弟陈郃所杀，通隐忍三年终杀郃祭坟，时称义士。" />
+  <Hero id="lord_maojie" faction="Faction.clan_caoren" text="{=lord_maojie_intro}清公素臣，建安十三年（208年）任东曹掾掌选举，倡节俭治国罢浮华。崔琰死后讥天不雨讽刑戮过重，下狱赖桓阶营救免死。晚年布衣蔬食，谥敬侯。其乞留清白吏奏疏开魏晋风骨先声。" />
+  <Hero id="lord_xunyu" faction="Faction.clan_xunyu" text="{=lord_xunyu_intro}王佐之才，建安元年（196年）定迎献帝都许策。建安五年（200年）守鄄城供官渡军需，建安十二年（207年）谏止复九州制。建安十七年（212年）反对曹操进魏公，以君子爱人以德拒饮毒药。卒年五十，次年曹操始称魏公。其焚香薰衣雅癖开魏晋风仪。" />
+  <Hero id="lord_xunyou" faction="Faction.clan_xunyu" mother="Hero.lord_xunyu" text="{=lord_xunyou_intro}荀彧从子，建安三年（198年）献水淹下邳计擒吕布。建安五年（200年）官渡之战献奇策十二，斩颜文烧乌巢。建安十九年（214年）征孙权时薨于道。曹操称荀军师去恶不去善，临终托曹丕荀公达人之师表也" />
+  <Hero id="lord_duji" faction="Faction.clan_xunyu" text="{=lord_duji_intro}河东太守，建安十一年（206年）单车入安邑降卫固。在任十六年课民畜牸牛草马，开绛道通盐铁。建安二十一年（216年）监造御楼船，试航遇风溺亡。其常为天下最政绩成曹魏地方治理典范。" />
+  <Hero id="lord_guojia" faction="Faction.clan_guojia" text="{=lord_guojia_intro}鬼才祭酒，建安三年（198年）献十胜十败论。建安七年（202年）料袁谭袁尚急之则相持，建安十二年（207年）言遗计定辽东。征乌桓时病卒柳城，曹操哭哀哉奉孝！痛哉奉孝！。其不治行检遭陈群纠劾，反得曹操特赦" />
+  <Hero id="lord_renjun" faction="Faction.clan_guojia" text="{=lord_renjun_intro}典农中郎将，建安元年（196年）首行屯田制。置典农官募民许下垦田，岁得谷百万斛。官渡之战督运粮车数千乘，创任峻式十驾牛车运具。建安九年（204年）卒，曹操流涕三日。" />
+  <Hero id="lord_xizhizhi" faction="Faction.clan_guojia" text="{=lord_xizhizhi_intro}颍川奇士，建安初为曹操谋主。早卒无传，唯《三国志》载太祖与彧书：自志才亡后，莫可与计事者。裴松之注引其三策平兖州遗策，为曹操破吕布张邈所本。" />
+  <Hero id="lord_sunce" faction="Faction.clan_sunce" spouse="Hero.lord_daqiao" text="{=lord_sunce_intro}江东小霸王，弱冠之年定六郡。建安元年（196年）渡江破刘繇，牛渚营夺粮械，神亭岭战太史慈。建安四年（199年）雪夜袭皖城纳大乔，次年剿严白虎诛许贡。性烈如火，尝挟死一将喝死一将。建安五年（200年）猎虎遇刺，临终托权举贤任能。陈寿评英气杰济，猛锐冠世。" />
+  <Hero id="lord_daqiao" faction="Faction.clan_sunce" father="Hero.lord_qiaorui" spouse="Hero.lord_sunce" text="{=lord_daqiao_intro}庐江乔公长女，建安四年（199年）皖城归孙策。策卒后携幼子孙绍退隐椒丘，谢绝曹操铜雀春深之召。创流云袖剑舞传于江东女卫，建安十三年（208年）赤壁战时亲督粮船。晚年修道于茅山，遗训女子当以才德立世。" />
+  <Hero id="lord_chenwu" faction="Faction.clan_sunce" text="{=lord_chenwu_intro}庐江豪侠，十八从孙策平江东。所部青巾军皆绿林骁锐，建安五年（200年）伐黄祖时先登夏口城。建安十三年（208年）合淝护孙权断后，身被数创犹吼江东男儿死战！。卒后孙权哭祭孤失甘兴霸矣，实为张辽所杀。" />
+  <Hero id="lord_dongxi" faction="Faction.clan_sunce" text="{=lord_dongxi_intro}会稽巨汉，身长八尺力扛楼船。建安元年（196年）率百人凿沉严白虎粮船，建安十三年（208年）征黄祖时斩两蒙冲督。建安十八年（213年）濡须口风暴中船覆，拒解甲胄曰受将军命守此船，溺亡前高歌江涛如雷亦何惧。" />
+  <Hero id="lord_sunquan" faction="Faction.clan_sunce" text="{=lord_sunquan_intro}碧眼紫髯，建安五年（200年）继业时据三州而虎视。建安十三年（208年）纳鲁肃榻上策，联刘破曹于赤壁。黄武元年（222年）石亭设伏大破曹休。性多疑，晚年二宫构争诛陆逊。尝乘马射虎于庱亭，创吴钩制式刀传世。临终托孤诸葛恪，谥大皇帝。" />
+  <Hero id="lord_guyong" faction="Faction.clan_zhoutai" text="{=lord_guyong_intro}东吴首辅，师从蔡邕创吴书字体。黄武元年（222年）推行世袭领兵制固士族。每议政持默然，孙权称顾公在座使人不乐。尝以棋局谏止废太子，饮宴时碎酒杯止孙权狂饮。赤乌六年（243年）卒前焚私人奏章，遗训勿令至尊见罪咎。" />
+  <Hero id="lord_jiangqin" faction="Faction.clan_zhoutai" text="{=lord_jiangqin_intro}水贼出身，建安五年（200年）率锦帆归孙。建安十九年（214年）伐皖城先登，缴获曹操万军剑献孙权。性俭约，孙权赐衣拒受锦缎。建安二十四年（219年）从吕蒙袭荆州，暴病卒于归途。" />
+  <Hero id="lord_zhoutai" faction="Faction.clan_zhoutai" text="{=lord_zhoutai_intro}宣城护主身中十二创，孙权赐青罗伞彰其功。建安十八年（213年）濡须血战，裸身救徐盛破曹军。身如刻画，宴饮时解衣示诸将刀痕皆战功。黄武四年（225年）守汉津时创连环舟御敌。" />
+  <Hero id="lord_jiangshan" faction="Faction.clan_zhoutai" text="{=lord_jiangshan_intro}九江郡人，与周泰是同乡，早年便一同在江上讨生活，后一起投奔孙策。他见证了周泰每一次为孙权挡下刀剑的瞬间，并总是站在周泰的身侧，共同构成保护主君的“血肉壁垒”。衣谷三国编创人物。" />
+  <Hero id="lord_wulie" faction="Faction.clan_zhoutai" text="{=lord_wulie_intro}本为宣城一带的山越宗帅，凶悍善斗。当年周泰在宣城舍命保护孙权，身被数十创仍死战不退的景象，深深震撼了他。他慕此悍勇，遂率本部山越勇士下山归顺，指名愿在周泰麾下效力。衣谷三国编创人物。" />
+  <Hero id="lord_sunshangxiang" faction="Faction.clan_sunce" text="{=lord_sunshangxiang_intro}枭姬郡主，嫁刘备时携百名持刀婢。建安十六年（211年）欲携阿斗归吴，被赵云截江夺回。归吴后筑织娘坞训女兵，黄武二年（223年）闻刘备死讯投江未遂，晚年创白鹤剑舞传世。" />
+  <Hero id="lord_luqingjun" faction="Faction.clan_sunce" text="{=lord_luqingjun_intro}出身吴郡四大家族之一的陆氏旁支，是陆逊的族妹。她代表了江东本土士族与孙氏家族的深度绑定。通晓诗书，更因家族尚武之风，练就了一手精湛的剑术，是士族中少有的文武双全之才。衣谷三国编创人物。" />
+  <Hero id="lord_lingyue" faction="Faction.clan_sunce" text="{=lord_lingyue_intro}出身于长江水贼与渔家，自幼在风浪中长大，水性极佳，熟知江湖门道。因其身手不凡被江东水军将领凌统赏识并收留，后因其野性难驯，被派去陪伴同样不拘礼法的孙尚香，二人意气相投。衣谷三国编创人物。" />
+  <Hero id="lord_sunjing" faction="Faction.clan_sunjing" text="{=lord_sunjing_intro}孙坚季弟，建安元年（196年）献计夜袭会稽王朗。守富春期间筑孙洲屯田，收山越精兵三千。建安八年（203年）拒曹操征召，称保境安民乃本分。创鱼鳞阵教子弟，孙权称叔父乃江东砥柱。" />
+  <Hero id="lord_lingtong" faction="Faction.clan_sunjing" father="Hero.lord_lingcao" text="{=lord_lingtong_intro}十五斩仇敌报父仇，建安十三年（208年）江夏斩黄祖将张硕。合淝之战三百死士护孙权突围，身中数枪血染战袍。与甘宁杀父之仇和解后结生死交，创鸳鸯阵训部曲。建安二十二年（217年）早卒，孙权扶棺哭此乃断孤一臂。" />
+  <Hero id="lord_lingcao" faction="Faction.clan_sunjing" text="{=lord_lingcao_intro}吴郡豪侠，建安元年（196年）率部曲投孙策。伐黄祖时先登夏口，轻舟断敌浮桥。建安八年（203年）沙羡之战遭甘宁射杀，临终托刀于凌统。孙权追赠破贼校尉。" />
+  <Hero id="lord_sunyu" faction="Faction.clan_sunjing" father="Hero.lord_sunjing" text="{=lord_sunyu_intro}丹阳太守，建安十一年（206年）纳鲁肃谏抚山越。建安十九年（214年）督水军助吕蒙取长沙，创楼船蒙冲制式。好典籍，军中设讲武堂授《左传》。黄初二年（221年）早卒，遗言勿废讲学。" />
+  <Hero id="lord_zhouyu" faction="Faction.clan_zhouyu" text="{=lord_zhouyu_intro}江东美周郎，建安五年（200年）曲有误周郎顾。建安十三年（208年）赤壁火攻破曹操，南郡中箭取江陵。创周氏鼓谱三阙克曹军士气。临终上疏刘备寄寓有似养虎，遗言天命不在瑜耳。孙权哭公瑾雄烈胆略兼人。" />
+  <Hero id="lord_xiaoqiao" faction="Faction.clan_zhouyu" father="Hero.lord_qiaorui" text="{=lord_xiaoqiao_intro}精琴艺通医术，赤壁战时携医女营救伤员。建安十五年（210年）周瑜卒后绝食五日，制长河吟琴曲传世。黄武元年（222年）石亭之战组织民妇制金疮药。晚年隐居于舒城，以针灸救治山越妇孺，创九针疗法载《吴普本草》。" />
+  <Hero id="lord_lvmeng" faction="Faction.clan_zhouyu" text="{=lord_lvmeng_intro}吴下阿蒙苦读成将，建安十九年（214年）濡须破曹操前锋。建安二十四年（219年）白衣渡江袭荆州，雪夜追擒关羽。创缩地阵惑敌，临终前将孙权所赐千金尽付军库。" />
+  <Hero id="lord_chengpu" faction="Faction.clan_chengpu" text="{=lord_chengpu_intro}三朝老将，随孙坚破华雄。赤壁之战任副都督，与周瑜不和仍戮力破曹。建安十五年（210年）救甘宁于夷陵，创九节鞭阵破曹仁。性刚毅好音律，军中称程公鼓。黄武元年（222年）卒，遗言葬吾于江畔听涛声。" />
+  <Hero id="lord_huanggai" faction="Faction.clan_chengpu" text="{=lord_huanggai_intro}建安五年（200年）平山越断双足筋腱仍征战。赤壁献苦肉计，火船撞阵时中箭落江，被韩当救起时高呼斩贼！。守武陵时九败山越，创钩镰枪破藤甲兵。" />
+  <Hero id="lord_handang" faction="Faction.clan_chengpu" text="{=lord_handang_intro}善骑射膂力过人，建安十三年（208年）赤壁射杀张南。建安二十四年（219年）守宜都，以五十骑退刘备先锋。创连珠箭训部曲，军中称韩氏飞羽。" />
+  <Hero id="lord_zhuzhi" faction="Faction.clan_chengpu" text="{=lord_zhuzhi_intro}建安元年（196年）献强本弱枝策助孙氏立基。督娄县时教民稻麦轮作，吴郡称朱公田。黄武二年（223年）献家财充军资，孙权赐田宅自便不受。" />
+  <Hero id="lord_zhangzhao" faction="Faction.clan_zhangzhao" text="{=lord_zhangzhao_intro}江东仲父，建安五年（200年）扶孙权佩印绶。建安十三年（208年）力主降曹遭鲁肃驳，赤壁后自请归宅。黄龙元年（229年）拒为孙权相，以老病辞。著《春秋左氏传解》，临终命以素棺布衣葬。" />
+  <Hero id="lord_zhanghong" faction="Faction.clan_zhangzhao" text="{=lord_zhanghong_intro}建安四年（199年）谏孙策勿轻出猎未果。建安七年（202年）使许昌求广陵太守，曹操畏其才留任侍御史。建安十七年（212年）献秣陵王气说定都建业。临终上《临困授笺》谏孙权缓刑弛禁。" />
+  <Hero id="lord_lvfan" faction="Faction.clan_zhangzhao" text="{=lord_lvfan_intro}孙策微时旧友，建安元年（196年）掌财计创鱼鳞册。建安二十四年（219年）算定关羽必败，督粮助吕蒙袭荆州。性奢靡而公私有别，孙权称吕衡州虽奢，然以公济私不足损。" />
+  <Hero id="lord_wujing" faction="Faction.clan_wujing" text="{=lord_wujing_intro}孙坚妻弟，建安元年（196年）助孙策渡江。任丹阳太守时收周泰、蒋钦。建安五年（200年）拒袁术称帝，断其粮道。晚年归富春督造孙氏海舶，创曲辕犁江东推行。" />
+  <Hero id="lord_sunben" faction="Faction.clan_wujing" text="{=lord_sunben_intro}孙坚侄，建安四年（199年）破刘勋于彭泽。任豫章太守时平宗贼，纳诸葛亮兄诸葛瑾。建安二十四年（219年）拒曹操密召，封都亭侯。" />
+  <Hero id="lord_sunfu" faction="Faction.clan_wujing" text="{=lord_sunfu_intro}建安五年（200年）密通曹操被软禁，后戴罪征交州。建安十五年（210年）定郁林郡，获象三十头献孙权。创藤牌阵御南蛮毒箭。" />
+  <Hero id="lord_sunhe" faction="Faction.clan_wujing" text="{=lord_sunhe_intro}本姓俞，孙策赐姓。建安五年（200年）守乌程，夜袭严白虎斩其弟严舆。建安九年（204年）平妫览之乱时中伏，被断手足犹骂贼而死。" />
+  <Hero id="lord_yuanshu" faction="Faction.clan_yuanshu" spouse="Hero.lord_fengfuren" text="{=lord_yuanshu_intro}袁术字公路，汝南汝阳人。四世三公嫡子，初为虎贲中郎将。董卓乱政后割据淮南，建安二年僭号仲氏皇帝。性骄奢残暴，横征暴敛致民不聊生。联吕布抗曹操失败，欲投袁绍途中呕血而亡。" />
+  <Hero id="lord_lianggang" faction="Faction.clan_yuanshu" text="{=lord_lianggang_intro}袁术麾下猛将，善统骑兵。建安二年随术征吕布，后守寿春抗曹军。城破被俘，拒降遭斩。性烈如火，作战勇猛但少谋略。" />
+  <Hero id="lord_fengfuren" faction="Faction.clan_yuanshu" spouse="Hero.lord_yuanshu" text="{=lord_fengfuren_intro}袁术正妻，袁耀生母。淮南名门之女，助术管理内务。术称帝后册为皇后，善交际笼络将领家眷。术死后携子投庐江刘勋。" />
+  <Hero id="lord_jiling" faction="Faction.clan_jiling" text="{=lord_jiling_intro}袁术帐下第一猛将，使五十斤三尖刀。奉术命征刘备，与关羽大战三十合。吕布辕门射戟解其危。性忠勇但刚愎，终战死于吕布之手。" />
+  <Hero id="lord_yanxiang" faction="Faction.clan_jiling" text="{=lord_yanxiang_intro}袁术首席谋士，主簿。屡谏术勿僭帝位，术不听。淮南大旱时献策赈灾被拒。城破后隐遁江淮，著《淮南论》讽术之失。" />
+  <Hero id="lord_jiyi" faction="Faction.clan_jiling" father="Hero.lord_jiling" text="{=lord_jiyi_intro}纪灵之妹，擅剑术。随兄征战淮南，掌女营护卫。吕布破寿春时率女兵巷战断后，掩护阎象等文臣撤离。" />
+  <Hero id="lord_yuejiu" faction="Faction.clan_yuejiu" text="{=lord_yuejiu_intro}袁术帐下骁将，守下邳时抗刘备。性暴烈嗜杀，克城必屠。曹操征淮南时死守蕲阳，粮尽烹人为食，城破自焚。" />
+  <Hero id="lord_chenlan" faction="Faction.clan_yuejiu" text="{=lord_chenlan_intro}原为山贼，投袁术后守庐江。善游击骑战，劫曹军粮道屡得手。术败后与雷薄据天柱山复叛，被张辽剿灭。" />
+  <Hero id="lord_leibo" faction="Faction.clan_yuejiu" text="{=lord_leibo_intro}与陈兰同叛袁术夺粮草，后归降。守六安时暴雨毁营，弃城遭术斥责。复叛后据险劫掠，终被张辽所斩。" />
+  <Hero id="lord_zhangxun" faction="Faction.clan_zhangxun" text="{=lord_zhangxun_intro}袁术军元帅，统七路征吕布。刚愎轻敌致大败。守寿春时聚珍宝自守不援友军。城破降曹，拒为官归隐。" />
+  <Hero id="lord_hanyin" faction="Faction.clan_zhangxun" text="{=lord_hanyin_intro}术之谋士，使吕布结姻被陈珪识破。囚许都时诈降曹操，暗通袁绍事泄遭斩。善辞令而少远谋。" />
+  <Hero id="lord_lifeng_1" faction="Faction.clan_lifeng" text="{=lord_lifeng_1_intro}袁术帐下骁将，守寿春时战关羽三合被斩。性鲁莽轻敌，好逞血气之勇。" />
+  <Hero id="lord_xunzheng" faction="Faction.clan_lifeng" text="{=lord_xunzheng_intro}纪灵副将，挑衅关羽被一刀斩。性狂妄无知，常辱士卒致军心离散。" />
+  <Hero id="lord_qiaorui" faction="Faction.clan_qiaorui" text="{=lord_qiaorui_intro}袁术麾下善守之将，守蕲阳抗曹军百日。暴雨毁城后率残兵巷战，中箭不退，遗言不负仲氏。" />
+  <Hero id="lord_yushe" faction="Faction.clan_qiaorui" text="{=lord_yushe_intro}骁勇小将，讨董时请战华雄，三合被斩。性烈如火，轻敌冒进。" />
+  <Hero id="lord_yuanyin" faction="Faction.clan_qiaorui" text="{=lord_yuanyin_intro}袁术从弟，丹阳太守。术败后携家眷奔庐江，被徐璆夺玺献曹。性懦弱，献玺求生仍遭流放。" />
+  <Hero id="lord_qiaowei" faction="Faction.clan_qiaorui" father="Hero.lord_qiaorui" text="{=lord_qiaowei_intro}桥蔚，桥蕤之女，擅琴棋书画，知诗词歌赋，知书达理，气质如兰，衣谷三国编创人物。" />
+  <Hero id="lord_yuanyao" faction="Faction.clan_yuanshu" father="Hero.lord_yuanshu" text="{=lord_yuanyao_intro}袁术嫡子，术称帝立为太子。性懦弱奢靡，术死后投刘勋，后归曹操。封郎中，终日饮酒怀淮南旧事。" />
+  <Hero id="lord_yanghong" faction="Faction.clan_yuanshu" text="{=lord_yanghong_intro}袁术长史，淮南政事实际操持者。劝术缓称帝不听，暗通曹操献城图。术败后降曹，任沛相有政声。" />
+  <Hero id="lord_liye" faction="Faction.clan_yuanshu" text="{=lord_liye_intro}原兖州刺史，拒让位曹操投袁术。献联吕抗曹之策，吕布败后劝术归帝号。郁郁病亡。" />
+  <Hero id="lord_jinshang" faction="Faction.clan_jinshang" text="{=lord_jinshang_intro}汉室钦定兖州刺史，被曹操驱逐。投袁术任太尉，屡谏术尊汉室。术称帝后绝食死，遗表汉臣不事二主。" />
+  <Hero id="lord_chenji" faction="Faction.clan_jinshang" text="{=lord_chenji_intro}袁术治中，掌淮南屯田。大旱时私开粮仓赈灾被囚。曹操破寿春后启用，任豫州典农校尉。" />
+  <Hero id="lord_shixie" faction="Faction.clan_shixie" spouse="Hero.lord_luo_xifen" text="{=lord_shixie_intro}字威彦，交趾太守。统领交州四十年，发展经济兴办学堂，引进中原文化。建安十五年归附孙权仍掌实权。深谙怀柔之道，民称士王。" />
+  <Hero id="lord_shiyi" faction="Faction.clan_shixie" text="{=lord_shiyi_intro}士燮三弟，合浦太守。善理民政通商南海，建珠市引番商。性宽厚，调解部落纠纷甚得民心。" />
+  <Hero id="lord_shiwu" faction="Faction.clan_shixie" text="{=lord_shiwu_intro}士燮四弟，南海都尉。率水军平海寇，造楼船控航道。精象阵，驯战象百余头威震南疆。" />
+  <Hero id="lord_shizhi" faction="Faction.clan_shixie" father="Hero.lord_shixie" text="{=lord_shizhi_intro}士燮长子，九真太守。精丛林战，训俚兵善毒箭。筑要塞抗山越，后因叛孙权被诛。" />
+  <Hero id="lord_shihui" faction="Faction.clan_shixie" father="Hero.lord_shixie" text="{=lord_shihui_intro}士燮次子，交趾太守。继位后抗孙权，驱象阵破吴军。后中诈降计被斩，象兵遂绝。" />
+  <Hero id="lord_luo_xifen" faction="Faction.clan_shixie" spouse="Hero.lord_shixie" text="{=lord_luo_xifen_intro}俚族酋长之女，精草药通各族语言。助士燮调和汉俚矛盾，创五色米贸易体系。" />
+  <Hero id="lord_zhangjin" faction="Faction.clan_zhangjin" spouse="Hero.lord_shi_liyan" text="{=lord_zhangjin_intro}交州刺史，好鬼神常裹红巾施法。欲伐士燮反被所败，部将区景叛变杀之献首。" />
+  <Hero id="lord_qujing" faction="Faction.clan_zhangjin" text="{=lord_qujing_intro}张津部将，因克扣军饷被责，夜袭大帐斩张津降士燮。后守郁林被吴巨所杀。" />
+  <Hero id="lord_qianbo" faction="Faction.clan_zhangjin" text="{=lord_qianbo_intro}交州治中，掌财赋二十年。创海贝钱流通南疆，暗通士燮献粮草图。" />
+  <Hero id="lord_yiliao" faction="Faction.clan_zhangjin" text="{=lord_yiliao_intro}俚人渠帅，率山民助张津。津死后遁入山林，常劫官道，称雾中君。" />
+  <Hero id="lord_shi_liyan" faction="Faction.clan_zhangjin" father="Hero.lord_shixie" spouse="Hero.lord_zhangjin" text="{=lord_shi_liyan_intro}士莉艳，交州苍梧郡广信县人，士燮之女，张津之妻，衣谷三国编创人物。" />
+  <Hero id="lord_zhufu" faction="Faction.clan_zhufu" spouse="Hero.lord_shi_lijia" text="{=lord_zhufu_intro}交州刺史，横征暴敛致民变。遣张旻镇压反被杀，逃亡中被俚人割首。" />
+  <Hero id="lord_shi_lijia" faction="Faction.clan_zhufu" father="Hero.lord_shixie" spouse="Hero.lord_zhufu" text="{=lord_shi_lijia_intro}士莉佳，交州苍梧郡广信县人，士燮之女，朱符之妻，衣谷三国编创人物。" />
+  <Hero id="lord_zhangmin" faction="Faction.clan_zhufu" text="{=lord_zhangmin_intro}朱符部将，镇压民变时屠村激民愤。被山民诱入峡谷，落石毙命。" />
+  <Hero id="lord_huanzhi" faction="Faction.clan_zhufu" text="{=lord_huanzhi_intro}俚人祭司，煽动抗朱符赋税。借山神怒聚万众，后归顺士燮任巫官。" />
+  <Hero id="lord_liubiao" faction="Faction.clan_liubiao" spouse="Hero.lord_caifuren" text="{=lord_liubiao_intro}字景升，鲁恭王后裔。单骑入荆州平乱，联蒯蔡制衡豪族。开立学宫聚儒士，保境安民拒孙坚。性外宽内忌，致嗣子相争。" />
+  <Hero id="lord_kuailiang" faction="Faction.clan_liubiao" text="{=lord_kuailiang_intro}字子柔，荆州谋主。献仁义安荆策，定刘表基业。创屯田制，修水利增仓储。性清高拒曹操征召，退隐著《安民策》。" />
+  <Hero id="lord_kuaivue" faction="Faction.clan_liubiao" text="{=lord_kuaivue_intro}字异度，诛宗帅定荆州。设伏杀孙坚，联曹操制袁术。掌谍报网控江南，性机变善权谋，曹操誉不喜得荆州，喜得蒯异度。" />
+  <Hero id="lord_caifuren" faction="Faction.clan_liubiao" spouse="Hero.lord_liubiao" text="{=lord_caifuren_intro}蔡瑁之妹，刘表继室。为扶亲子刘琮继位，屏画密室听政，阻刘备见表。曹操入荆州后随子北迁。" />
+  <Hero id="lord_ganning" faction="Faction.clan_ganning" text="{=lord_ganning_intro}字兴霸，巴郡豪侠。初投刘表不见用，转黄祖仍遭轻。射杀凌操投孙权，百骑劫曹营。性奢豪重义气，锦帆贼首出身。" />
+  <Hero id="lord_lvgong" faction="Faction.clan_ganning" text="{=lord_lvgong_intro}黄祖部将，岘山伏击射杀孙坚。善设陷阱，后守石阳被程普斩。性阴狠，常以俘卒为饵。" />
+  <Hero id="lord_wuju" faction="Faction.clan_ganning" text="{=lord_wuju_intro}苍梧太守，与甘宁同奔荆州。后据交州抗孙权，联士燮守广信。性反复，终为吕岱所诛。" />
+  <Hero id="lord_huangzhong" faction="Faction.clan_huangzhong" text="{=lord_huangzhong_intro}字汉升，南阳猛将。守长沙时年六旬仍开三石弓，定军山斩夏侯渊。重信义，常叹请与关君侯再战。" />
+  <Hero id="lord_liupan" faction="Faction.clan_huangzhong" text="{=lord_liupan_intro}刘表从子，守攸县抗孙策。与黄忠并称荆南双壁，夜袭太史慈营。后随刘琮降曹。" />
+  <Hero id="lord_huangxu" faction="Faction.clan_huangzhong" father="Hero.lord_huangzhong" text="{=lord_huangxu_intro}黄忠独子，少病弱得华佗救治。承父弓术，创连弩七发。守江陵时箭退吕蒙先锋。" />
+  <Hero id="lord_weiyan" faction="Faction.clan_weiyan" text="{=lord_weiyan_intro}字文长，义阳豪杰。守长沙时欲献城刘备遭拒。后随刘备入川多立战功，子午谷奇谋未用。性矜高，终因将相失和被杀。" />
+  <Hero id="lord_xianglang" faction="Faction.clan_weiyan" text="{=lord_xianglang_intro}字巨达，襄阳名士。刘表时掌秭归，后归刘备。通经籍聚藏书万卷，调解魏延杨仪之争未果。" />
+  <Hero id="lord_yiji" faction="Faction.clan_weiyan" text="{=lord_yiji_intro}字机伯，山阳使臣。暗通刘备献荆州虚实，博闻强记过目不忘。创速记密符传谍报。" />
+  <Hero id="lord_liuqi" faction="Faction.clan_liuqi" father="Hero.lord_liubiao" text="{=lord_liuqi_intro}刘表长子，出镇江夏避祸。纳诸葛亮重耳在外计，收容刘备抗曹。早逝前托孤孔明。" />
+  <Hero id="lord_wangwei" faction="Faction.clan_liuqi" text="{=lord_wangwei_intro}刘琦亲卫将，长坂坡断后战死。创钩镰阵破骑，性忠烈，拒降高呼不负公子。" />
+  <Hero id="lord_pangji" faction="Faction.clan_liuqi" text="{=lord_pangji_intro}襄阳望族，说张虎陈生降刘表。精天文，观星谏北客将主荆州。后随刘琦守夏口。" />
+  <Hero id="lord_liucong" faction="Faction.clan_liubiao" father="Hero.lord_liubiao" mother="Hero.lord_caifuren" text="{=lord_liucong_intro}刘表次子，母蔡氏。幼主继位听蔡瑁降曹，封青州刺史。徙邺城后作《思荆州赋》郁郁而终。" />
+  <Hero id="lord_wenpin" faction="Faction.clan_liuqi" text="{=lord_wenpin_intro}字仲业，南阳宿将。降曹后守江夏拒关羽，石阳破孙权。创钩镰枪破骑阵，曹丕誉江表虎臣。" />
+  <Hero id="lord_caimao" faction="Faction.clan_liuqi" text="{=lord_caimao_intro}字德珪，襄阳豪族。统荆州水师，造蒙冲斗舰。献州降曹任长水校尉，作《水战法》传世。性骄狂妒贤。" />
+  <Hero id="lord_huangzu" faction="Faction.clan_huangzu" text="{=lord_huangzu_intro}江夏太守，射杀孙坚结仇江东。八年间三拒孙权，终因轻敌城破。性暴虐，常沉俘于江。" />
+  <Hero id="lord_sufei" faction="Faction.clan_huangzu" text="{=lord_sufei_intro}黄祖都尉，暗助甘宁出逃。守邾城被俘，孙权因甘宁求情赦之。后任蕲春太守抚山越。" />
+  <Hero id="lord_denglong" faction="Faction.clan_huangzu" text="{=lord_denglong_intro}黄祖水将，守沙羡被周瑜破。焚战船阻追兵，溺亡于江。性凶悍，屠鄱阳船民致怨沸。" />
+  <Hero id="lord_chenjiu" faction="Faction.clan_huangzu" text="{=lord_chenjiu_intro}黄祖督造，制毒龙筒喷毒雾。守樊口焚民船阻敌，城破被吕蒙斩。" />
+  <Hero id="lord_huangshe" faction="Faction.clan_huangzu" father="Hero.lord_huangzu" text="{=lord_huangshe_intro}黄祖长子，章陵太守。敬名士，庇护祢衡仍遭杀。治郡重文教，建章陵书院聚流士。" />
+  <Hero id="lord_huojun" faction="Faction.clan_huojun" text="{=lord_huojun_intro}字仲邈，南郡将才。守葭萌抗刘璋万军，创悬灯疑兵计。后归刘备，守关头呕血亡。" />
+  <Hero id="lord_hansong" faction="Faction.clan_huojun" text="{=lord_hansong_intro}字德高，义阳名士。使许都观曹操，谏刘表归朝廷被囚。曹取荆州释之，任大鸿胪。" />
+  <Hero id="lord_fuxun" faction="Faction.clan_huojun" text="{=lord_fuxun_intro}字公悌，北地名士。劝刘琮降曹，言逆顺有大体，强弱有定势。后任侍中，制《九品官议》。" />
+  <Hero id="lord_yanbaihu" faction="Faction.clan_yanbaihu" text="{=lord_yanbaihu_intro}吴郡豪帅，自称东吴德王。聚众万余割据吴郡，孙策渡江时联合王朗、刘繇抵抗。建安二年遣弟严舆求和，孙策席间飞戟杀舆。退守余杭被董袭攻破，乱军中坠崖而亡。其部散入山越，继续抗孙十年。" />
+  <Hero id="lord_pengshi" faction="Faction.clan_yanbaihu" text="{=lord_pengshi_intro}严白虎麾下的步兵头领，出身贫寒，但意志如铁。曾在守城战中身被十余创仍死战不退，被誉为“严家之盾”。他对严白虎有知遇之恩，忠诚度极高，是势力中最可靠的防御核心。衣谷三国编创人物。" />
+  <Hero id="lord_xugong" faction="Faction.clan_yanbaihu" text="{=lord_xugong_intro}字文休。东汉末年至三国时期蜀汉时期重臣、名士、评论家。" />
+  <Hero id="lord_taocheng" faction="Faction.clan_yanbaihu" text="{=lord_taocheng_intro}吴郡本地猎户首领，世代居于山林，以射术闻名。因官府加重猎户赋税，被严白虎带头反抗的事迹所感召，率乡里子弟投奔。他代表了严白虎势力中来自底层自由民的支持。衣谷三国编创人物。" />
+  <Hero id="lord_yanyu" faction="Faction.clan_yanyu" text="{=lord_yanyu_intro}东汉末年盘踞吴郡一带的地方豪帅，山贼出身。严舆之兄。" />
+  <Hero id="lord_chenlie" faction="Faction.clan_yanyu" text="{=lord_chenlie_intro}吴郡本地豪强，与严白虎是结拜兄弟。本是长江上的盐枭首领，精通水战，为人仗义疏财，但因官府压迫，遂与严白虎一同起事。他代表了严白虎势力中的水贼和江湖好汉成分。衣谷三国编创人物。" />
+  <Hero id="lord_wuli" faction="Faction.clan_yanyu" text="{=lord_wuli_intro}吴郡山中最强大的山越部落首领，与严白虎是歃血为盟的兄弟。其部落战士悍勇无比，是严白虎陆军的中坚力量。衣谷三国编创人物。" />
+  <Hero id="lord_linghuan" faction="Faction.clan_yanyu" text="{=lord_linghuan_intro}江东本地的巫觋，自称能沟通鬼神，在山越和底层民众中颇有声望。他宣称严白虎有“虎神”庇佑，为其统治提供神秘主义合法性。衣谷三国编创人物。" />
+  <Hero id="lord_zhoujing" faction="Faction.clan_zhoujing" text="{=lord_zhoujing_intro}太湖上的水贼首领，以船头常挂彩色锦帆为号，故得此名。与严白虎是旧识，虽不直接听命，但承认严白虎在江东绿林中的“盟主”地位，接受其钱粮资助，并在军事上协同行动。衣谷三国编创人物。" />
+  <Hero id="lord_xuyao" faction="Faction.clan_zhoujing" text="{=lord_xuyao_intro}吴郡许氏的旁支，家族没落，因不满陆、顾等大士族垄断官场，转而投靠地方实力派严白虎，希望能另辟蹊径，一展抱负。衣谷三国编创人物。" />
+  <Hero id="lord_zhuchen" faction="Faction.clan_zhoujing" text="{=lord_zhuchen_intro}吴郡朱氏的旁支远亲，在大家族中不受重视，转而投靠地方实力派严白虎，希望做出一番事业。他精通算术和商贸，是势力的大管家。衣谷三国编创人物。" />
+  <Hero id="lord_zhugai" faction="Faction.clan_zhoujing" text="{=lord_zhugai_intro}原为扬州刺史刘繇麾下的一名书佐，因运送的粮草被劫怕被问罪，索性带着机密情报投靠了严白虎。衣谷三国编创人物。" />
+  <Hero id="lord_guping" faction="Faction.clan_guping" text="{=lord_guping_intro}吴郡小吏出身，精通农桑水利、户籍管理，是典型的实务型人才。因不满大族把持官场晋升无望，又见严白虎治下民众竟能安居，便转而效力，希望通过自己的努力将这块地盘治理得更好。衣谷三国编创人物。" />
+  <Hero id="lord_hangxing" faction="Faction.clan_guping" text="{=lord_hangxing_intro}吴郡的商人，长期为严白虎销赃、采购物资。看中严白虎的潜力，决定带着全部家当前来投资，谋求一个官身。衣谷三国编创人物。" />
+  <Hero id="lord_tengqing" faction="Faction.clan_guping" text="{=lord_tengqing_intro}原吴郡郡兵的一名低级军官，因得罪上官遭迫害，被严白虎所救后誓死效忠。是势力中少有的受过正规军事训练的将领。衣谷三国编创人物。" />
+  <Hero id="lord_shenhong" faction="Faction.clan_guping" text="{=lord_shenhong_intro}原本是游历四方、兜售谋略的寒门士人，因其言论不被袁术、刘繇等大诸侯重视，郁郁不得志。后听闻严白虎敢与孙策争锋，认为此乃“奇货可居”，遂前来投靠，以求证明自己的价值。衣谷三国编创人物。" />
+  <Hero id="lord_liuyou" faction="Faction.clan_liuyou" text="{=lord_liuyou_intro}字正礼，齐孝王后裔。任扬州刺史拒袁术，迁曲阿抗孙策。重用太史慈却败于牛渚，南奔豫章卒。其子刘基后为吴光禄勋，家族融于江东士族。为人清正善识人，然拙于军略。" />
+  <Hero id="lord_zhouyi" faction="Faction.clan_liuyou" text="{=lord_zhouyi_intro}世居丹阳的军吏家族子弟，精通水战，对长江下游水文了如指掌。他仰慕刘繇的朝廷正统身份，率家族私兵投效，被任命为水军司马。衣谷三国编创人物。" />
+  <Hero id="lord_zhangze" faction="Faction.clan_liuyou" text="{=lord_zhangze_intro}原为洛阳北军的一名骑兵军官，董卓之乱后南逃至扬州。他带来了宝贵的骑兵训练与作战经验，一心想着辅佐刘繇，有朝一日能北返中原，光复汉室。衣谷三国编创人物。" />
+  <Hero id="lord_shiyi_1" faction="Faction.clan_liuyou" text="{=lord_shiyi_1_intro}字子羽，原本姓“氏”，因被孔融嘲弄“氏”字是“民”字无上，所以改为“是”。三国时期北海营陵（今山东省昌乐县）人，官至尚书仆射。原本效力于刘繇，后来成为孙吴的重臣。以忠诚、清廉、正直著称。" />
+  <Hero id="lord_taishici" faction="Faction.clan_taishici" text="{=lord_taishici_intro}东莱神箭手，北海救孔融单骑透围。神亭岭与孙策酣战百合，归降后请期收刘繇余部。建安四年（199年）制衡江东诸将，建安八年（203年）守海昏拒刘磐。尝言大丈夫当带三尺剑立不世之功。建安十一年（206年）卒，遗言恨不遇明主。孙权厚葬于北固山。" />
+  <Hero id="lord_zhukui" faction="Faction.clan_taishici" text="{=lord_zhukui_intro}丹阳本地豪强，掌管宗族部曲。刘繇入主曲阿后，他代表本地势力向刘繇效忠，其麾下的丹阳兵成为刘繇陆军的中坚力量。衣谷三国编创人物。" />
+  <Hero id="lord_wanggong" faction="Faction.clan_taishici" text="{=lord_wanggong_intro}刘繇的旧部，从兖州时期便追随左右，绝对忠诚但能力平庸。刘繇念其旧情，授予校尉之职，常令其护卫中军或守备粮草。衣谷三国编创人物。" />
+  <Hero id="lord_guwen" faction="Faction.clan_taishici" text="{=lord_guwen_intro}吴郡顾氏的旁支子弟，虽有才学但因非嫡出而在家族中不受重视。他看重刘繇的宗亲身份和朝廷大义，出仕其麾下，希望借此振兴自家门楣。衣谷三国编创人物。" />
+  <Hero id="lord_zhangying" faction="Faction.clan_zhangying" text="{=lord_zhangying_intro}东汉末扬州刺史刘繇属将。屯当利口以拒袁术，术遣孙贲、吴景击之，未能拔。后为孙策所破。" />
+  <Hero id="lord_chenheng" faction="Faction.clan_zhangying" text="{=lord_chenheng_intro}扬州刺史刘繇的部将。与薛礼、张英一起守卫秣陵（建业），後来被前来进攻的孙策麾下大将．蒋钦射杀。" />
+  <Hero id="lord_xucheng" faction="Faction.clan_zhangying" text="{=lord_xucheng_intro}为避袁术之祸而从淮南逃至江东的寒门士人。他洞悉袁术与徐州的虚实，为刘繇带来了宝贵的情报。他擅长战略布局，但因其寒门出身，建议常不被刘繇核心圈完全采纳。衣谷三国编创人物。" />
+  <Hero id="lord_zerong" faction="Faction.clan_zhangying" text="{=lord_zerong_intro}一个非常复杂的人物。他投靠刘繇，但拥兵自重，是佛教史上的重要人物（广建佛寺），但同时残暴好杀。后来他杀死了刘繇派去豫章的太守朱皓，与刘繇决裂。聚众数百投奔同郡徐州牧陶谦。" />
+  <Hero id="lord_fanneng" faction="Faction.clan_fanneng" text="{=lord_fanneng_intro}刘繇配下将领。与于糜一同驻扎于长江的横江津，与驻扎于当利的同僚张英连动，以防止有势力扩张企图的袁术。" />
+  <Hero id="lord_yumi" faction="Faction.clan_fanneng" text="{=lord_yumi_intro}与樊能齐名，曾奋力抵抗来犯的 孙策，但不出三回合便被生擒。并被 孙策夹在腋下归营，最后被其怪力绞杀而亡。" />
+  <Hero id="lord_sunshao" faction="Faction.clan_fanneng" text="{=lord_sunshao_intro}字长绪，原为北海相孔融的功曹，被孔融称赞为可任朝廷要职的人才，后随刘繇到达江东，继而辅佐孙权。孙权称吴王后，孙邵成为吴国首任丞相，数年后病逝。" />
+  <Hero id="lord_luming" faction="Faction.clan_fanneng" text="{=lord_luming_intro}一心复兴儒学的老学士，被刘繇设立学校、招揽名士的举措所吸引。他不通军务，只关心教化百姓、整理典籍，是刘繇政权“文治”的象征。衣谷三国编创人物。" />
+  <Hero id="lord_wanglang" faction="Faction.clan_wanglang" text="{=lord_wanglang_intro}字景兴，经学大家。任会稽太守抗孙策，败降后归曹。魏国司徒，与诸葛亮有阵前论战佳话。注《易传》《春秋》流传后世，开魏晋玄学先声。治郡宽惠，深得民心。" />
+  <Hero id="lord_wangsheng" faction="Faction.clan_wanglang" text="{=lord_wangsheng_intro}东汉末年聚众割据江东，为孙策所破。（无史料）" />
+  <Hero id="lord_zhangmin_1" faction="Faction.clan_wanglang" text="{=lord_zhangmin_1_intro}随王朗一同南下的江北士人，忠心耿耿，办事稳妥。被王朗任命为会稽郡丞，是处理日常政务的实际操盘手，深得王朗信任。衣谷三国编创人物。" />
+  <Hero id="lord_yufan" faction="Faction.clan_yufan" text="{=lord_yufan_intro}字仲翔，日南太守虞歆之子。三国时期吴国学者、官员。他不仅是谋士，还精通医卜星相，并且有一定的武力（善用长矛）。" />
+  <Hero id="lord_hejing" faction="Faction.clan_yufan" text="{=lord_hejing_intro}会稽郡本土豪强出身，其家族在地方颇有声望。王朗入主会稽后，为稳定地方，征辟贺景为郡都尉，统领会稽郡兵。他熟悉当地地形与民情，是王朗在军事上最为依赖的本土将领。衣谷三国编创人物。" />
+  <Hero id="lord_zhoufeng" faction="Faction.clan_yufan" text="{=lord_zhoufeng_intro}原为活跃于东海之上的船主，亦商亦盗，熟悉沿海航道。王朗为保障海上安全并开辟财源，对其加以招抚，任命其统管会稽水军。衣谷三国编创人物。" />
+  <Hero id="lord_zouta" faction="Faction.clan_zouta" text="{=lord_zouta_intro}东汉末年聚众割据江东，为孙策所破。" />
+  <Hero id="lord_qiantong" faction="Faction.clan_zouta" text="{=lord_qiantong_intro}东汉末年聚众割据江东，为孙策所破。（无史料）" />
+  <Hero id="lord_zhubi" faction="Faction.clan_zouta" text="{=lord_zhubi_intro}吴郡朱氏的旁支，因仰慕王朗的经学大家身份而前来投靠。他致力于在会稽兴办学校，传播儒学，是王朗“文治”的坚定支持者和执行者。衣谷三国编创人物。" />
+  <Hero id="lord_zhanglu" faction="Faction.clan_zhanglu" text="{=lord_zhanglu_intro}字公祺，天师道第三代天师。割据汉中三十年，设义舍行仁政。降曹后封镇南将军，五斗米道北传。创政教合一体系，其祭酒治民模式影响深远。" />
+  <Hero id="lord_yangren" faction="Faction.clan_zhanglu" text="{=lord_yangren_intro}曹操攻伐汉中时，他奉命与杨昂一同镇守阳平关，后来杨昂出关战曹操，阵亡，他同逃回汉中报告张鲁。曹操攻取阳平关后，他自告奋勇出战，不幸被曹操部将夏侯渊用拖刀计斩于马下。" />
+  <Hero id="lord_yanpu" faction="Faction.clan_zhanglu" text="{=lord_yanpu_intro}担任张鲁的参谋，多次为张鲁提出关键战略建议，如劝张鲁不要自称“汉宁王”，以及在投降曹操时保全了家族。张鲁投降曹操后，被封为列侯。" />
+  <Hero id="lord_qiangqu" faction="Faction.clan_zhanglu" text="{=lord_qiangqu_intro}汉中西北白马羌部落的年轻酋长，被张鲁“义舍”政策和宗教魅力所折服，率全部落归附，立誓守护“天师”。其部落骑兵骁勇善战。衣谷三国编创人物。" />
+  <Hero id="lord_zhangwei" faction="Faction.clan_zhangwei" text="{=lord_zhangwei_intro}字公则。汉宁太守张鲁弟、南郡太守张愧兄（《汉天师世家》）。建安二十年（215），投降曹操后，张卫被封为昭义将军。因笃信道教，弃官回家，（《汉天师世家》），后死于家中。" />
+  <Hero id="lord_lifu_1" faction="Faction.clan_zhangwei" text="{=lord_lifu_1_intro}五斗米道的虔诚信徒，原为汉中郡兵低级军官，后成为“鬼卒”（道教军队）的最高军事教官。他精通阵法，善于将宗教狂热转化为战场纪律。衣谷三国编创人物。" />
+  <Hero id="lord_fanjiang" faction="Faction.clan_zhangwei" text="{=lord_fanjiang_intro}世代镇守阳平关的副将，对汉中地形了如指掌。张鲁入主后，他钦佩张鲁的治理，遂真心归顺，成为阳平关的实际守备官。衣谷三国编创人物。" />
+  <Hero id="lord_lixiu" faction="Faction.clan_zhangwei" text="{=lord_lixiu_intro}张鲁麾下掌管一方教区的“治头大祭酒”之首，负责解读教义、主持大型祭祀，并利用宗教律法审理案件，是教权方面的二号人物。衣谷三国编创人物。" />
+  <Hero id="lord_zhangkui" faction="Faction.clan_zhangkui" text="{=lord_zhangkui_intro}字公仁，一作张傀。张鲁、张卫之弟，随张鲁一起投降曹操，任南郡太守。" />
+  <Hero id="lord_shendan" faction="Faction.clan_zhangkui" text="{=lord_shendan_intro}西城县（汉中东部）的地方豪强，控制着通往荆州的要道。他首鼠两端，既服从张鲁的统治以保全家族，又暗中与刘表、曹操联络。是一个需要小心驾驭的双刃剑。衣谷三国编创人物。" />
+  <Hero id="lord_zhaosong" faction="Faction.clan_zhangkui" text="{=lord_zhaosong_intro}原为关中流民首领，被张鲁“义舍”所救，死心塌地留下效忠。如今被张鲁任命为掌管全境“义舍”的官员，负责赈济、医疗与情报收集。衣谷三国编创人物。" />
+  <Hero id="lord_jiangyin" faction="Faction.clan_zhangkui" text="{=lord_jiangyin_intro}汉中本地隐士，精通医术与草药种植，在秦岭南坡开辟巨大药圃，为张鲁的“鬼卒”提供疗伤丹药，也被教民奉为“活神仙”。衣谷三国编创人物。" />
+  <Hero id="lord_yangang" faction="Faction.clan_yangang" text="{=lord_yangang_intro}张鲁麾下的主要战将之一，多次带兵作战。历史上曾击败过刘璋的军队，并在阳平关与曹操军交战。" />
+  <Hero id="lord_qinyu" faction="Faction.clan_yangang" text="{=lord_qinyu_intro}世代生活在秦岭南坡的猎户与山民首领，其家族世代守护着数条不为人知的秦岭古道。张鲁入主汉中后，对其部落以礼相待，并授予官职。秦峪感其恩义，率山民归附，成为张鲁军在秦岭山脉中的眼睛和利刃。衣谷三国编创人物。" />
+  <Hero id="lord_duhuo" faction="Faction.clan_yangang" text="{=lord_duhuo_intro}巴西郡賨人部落的首领，与张鲁结盟通好。他常驻南郑，代表賨人利益，同时也将賨人特有的战舞、铜鼓文化带入汉中，负责文化与外交事务。衣谷三国编创人物。" />
+  <Hero id="lord_hezong" faction="Faction.clan_yangang" text="{=lord_hezong_intro}原为益州刘璋麾下的低级幕僚，因敏锐地预见到张鲁与刘璋必将决裂，多次进言而未受采纳。他深感刘璋暗弱，遂北上汉中，投奔他认为更能保全一方的张鲁。他带来了关于益州内部虚实的第一手情报，并精于在复杂地形中规划粮草运输。衣谷三国编创人物。" />
+  <Hero id="lord_hansui" faction="Faction.clan_hansui" text="{=lord_hansui_intro}字文约，西凉枭雄。联马腾称雄关陇，后杀腾妻儿降曹。建安二十年被夏侯渊击溃，遭部将麴演蒋石枭首献曹，首级传示诸羌。" />
+  <Hero id="lord_chengying" faction="Faction.clan_hansui" text="{=lord_chengying_intro}韩遂心腹谋主，献计大破夏侯渊。主公死后率羌部归曹，官至西平太守。精通羌俗善用巫术，征张掖时以血祭祈风雪破敌。" />
+  <Hero id="lord_jiangshi" faction="Faction.clan_hansui" text="{=lord_jiangshi_intro}韩遂部曲督，建安二十年与麴演共斩韩遂降曹。后任羌骑校尉镇压河首平汉王，嗜杀成性终被羌人刺杀祭天。" />
+  <Hero id="lord_quyan" faction="Faction.clan_hansui" text="{=lord_quyan_intro}与蒋石共谋弑主，献韩遂首级降曹。任张掖太守时苛待羌民，建安二十三年被暴动羌胡乱刀分尸悬首寨门。" />
+  <Hero id="lord_mawan" faction="Faction.clan_mawan" text="{=lord_mawan_intro}割据陇西，反复于曹马之间。建安十六年降曹献陇关，致马超腹背受敌。次年因私通韩遂被钟繇设计诛杀，头颅制为酒器。" />
+  <Hero id="lord_yangqiu" faction="Faction.clan_mawan" text="{=lord_yangqiu_intro}唯一善终的陇西军阀。降曹后任安定太守，调和羌汉矛盾。诸葛亮北伐时献屯田策，使曹魏西线粮秣无忧。正始五年无疾而终。" />
+  <Hero id="lord_chengyi" faction="Faction.clan_mawan" text="{=lord_chengyi_intro}渭南神射手，曾箭伤张郃。建安十七年青石隘设伏，被夏侯渊亲率虎豹骑反包围，乱箭穿身犹引弓毙三骑。" />
+  <Hero id="lord_liangxing" faction="Faction.clan_mawan" text="{=lord_liangxing_intro}马玩麾下猛将，劫掠三辅十余年。建安十八年黑山之战，被夏侯渊五百精骑突袭，身被数十创仍搏杀七人方亡。" />
+  <Hero id="lord_houxuan" faction="Faction.clan_houxuan" text="{=lord_houxuan_intro}渭南流寇之首，建安十六年附马超反曹。渭水之战被许褚阵斩，所部遭虎豹骑屠戮殆尽。劫掠雍凉二十载，民间传宁遇豺狼，莫逢候郎。" />
+  <Hero id="lord_zhangheng" faction="Faction.clan_houxuan" text="{=lord_zhangheng_intro}候选帐下先锋，潼关斩曹将史涣。后因分赃不均叛投韩遂，建安十九年被夏侯渊枭首，首级传示凉州诸县。" />
+  <Hero id="lord_chengyin" faction="Faction.clan_houxuan" text="{=lord_chengyin_intro}候选副手，精于骑袭。渭南之战率死士夜袭曹营，中张辽埋伏身中二十六箭而亡，尸身倒立辕门三日不倒。" />
+  <Hero id="lord_likan" faction="Faction.clan_houxuan" text="{=lord_likan_intro}渭北响马，善使飞石。潼关之战以飞石伤徐晃，后遭于禁弩阵射杀。其部被收编为泰山营，成曹军精锐弩骑。" />
+  <Hero id="lord_yanxing" faction="Faction.clan_yanxing" text="{=lord_yanxing_intro}字彦明，曾突阵刺马超矛折。韩遂女婿，潼关之战暗降曹操。后引曹军破兴国城，屠阿贵、千万诸羌，羌人称折矛阎罗。" />
+  <Hero id="lord_bianyuan" faction="Faction.clan_yanxing" text="{=lord_bianyuan_intro}凉州本地的落魄文士，精通律法与权谋，心性狠辣。他认为乱世中仁义无用，唯有利益至上，因此与韩遂的理念不谋而合。衣谷三国编创人物。" />
+  <Hero id="lord_jumang" faction="Faction.clan_yanxing" text="{=lord_jumang_intro}汉羌混血的巨汉，出身卑贱，以纯粹的残暴和勇力在乱军中爬上高位。他并非将才，而是纯粹的斗将，嗜血好杀，对韩遂的知遇之恩怀有野兽般的忠诚。衣谷三国编创人物。" />
+  <Hero id="lord_midangbaishi" faction="Faction.clan_yanxing" text="{=lord_midangbaishi_intro}“迷当”是羌族大姓，“白石”代表其部落对白石的崇拜。他是河西走廊一带强大的白山羌首领之子，被派到韩遂军中作为联络官和人质，同时也代表羌族的利益。衣谷三国编创人物。" />
+  <Hero id="lord_gongsundu" faction="Faction.clan_gongsundu" text="{=lord_gongsundu_intro}字升济，辽东霸主。东伐高句丽，西击乌桓，跨海取胶东。设平州自领牧，使辽东成乱世桃源。临终嘱子保境安民，奠定公孙氏五十年基业。" />
+  <Hero id="lord_liuyi" faction="Faction.clan_gongsundu" text="{=lord_liuyi_intro}汉末公孙度的亲信将领，骁勇善战足智多谋，后在公孙度与曹魏交战的时候被张辽打败。" />
+  <Hero id="lord_yangyi" faction="Faction.clan_gongsundu" text="{=lord_yangyi_intro}公孙度的核心亲信，参与初平元年（190年）自立为王的重大决策，被公孙度视为三公为辅的象征性辅政力量。" />
+  <Hero id="lord_liangmao" faction="Faction.clan_gongsundu" text="{=lord_liangmao_intro}曹魏重臣，太子四友之一。以清高的品德与卓越的见识闻名于世。曾于危局中稳定军心，更在辽东凭一番慷慨陈词，慑服枭雄公孙度，使其不敢称王。是历事曹操、曹丕、曹彰三代，深受信赖的治国能臣与帝王之师。" />
+  <Hero id="lord_gongsunkang" faction="Faction.clan_gongsunkang" father="Hero.lord_gongsundu" text="{=lord_gongsunkang_intro}东汉末年辽东地区割据军阀，辽东太守公孙度长子。建安十二年（207年），擒斩图谋不轨的袁尚、袁熙兄弟，将其首级献予曹操，被拜为左将军，封襄平侯。" />
+  <Hero id="lord_wanglie" faction="Faction.clan_gongsunkang" text="{=lord_wanglie_intro}字彦方，三国第一高士，德行感天之楷模。避乱辽东，以一己之力教化民众，使之地几无讼事。曾以匹布感化盗贼，使其终成拾金不昧之君子。曹操屡征不仕，其德望超越政治，为乱世中独一无二的道德丰碑。" />
+  <Hero id="lord_guanning" faction="Faction.clan_gongsunkang" text="{=lord_guanning_intro}字幼安。 三国时期隐士。" />
+  <Hero id="lord_wuwei" faction="Faction.clan_gongsunkang" text="{=lord_wuwei_intro}原为玄菟郡以北一个鲜卑部落的勇士，在与公孙度军的冲突中被俘。他折服于公孙度的威望与气度，率本部族人归降，被授予官职，其部众被编为“义从胡骑”，成为公孙度军中一支重要的机动力量。衣谷三国编创人物。" />
+  <Hero id="lord_gongsungong" faction="Faction.clan_gongsungong" father="Hero.lord_gongsundu" text="{=lord_gongsungong_intro}三国时辽东地方割据军阀，官至辽东太守、车骑将军。辽东太守公孙度次子，左将军公孙康之弟。" />
+  <Hero id="lord_bingyuan" faction="Faction.clan_gongsungong" text="{=lord_bingyuan_intro}字根矩，东汉末年名士、大臣。邴原与管宁、华歆并称建安一龙。" />
+  <Hero id="lord_wangsi" faction="Faction.clan_gongsungong" text="{=lord_wangsi_intro}辽东本地的船匠与海商世家出身，熟悉渤海、黄海水文。他被公孙度任命组建和统领水军，不仅负责辽东与山东半岛之间的海上联络与贸易，更肩负着沿海防御、甚至跨海出击的重任。衣谷三国编创人物。" />
+  <Hero id="lord_nongyin" faction="Faction.clan_gongsungong" text="{=lord_nongyin_intro}从中原避祸至辽东的流民领袖，因其组织能力被公孙度赏识。他被委以重任，专门负责安置从中原涌来的流民，分发土地、农具，组织他们屯田垦荒，是公孙度政权人口和粮食增长的关键人物。衣谷三国编创人物。" />
+  <Hero id="lord_kongrong" faction="Faction.clan_kongrong" text="{=lord_kongrong_intro}字文举，孔子二十世孙。北海相抗黄巾，门客太史慈突围求援。性刚直屡忤曹操，建安十三年全家诛。让梨典故传世，然治郡宽柔，终难御乱世。" />
+  <Hero id="lord_chunyushun" faction="Faction.clan_kongrong" text="{=lord_chunyushun_intro}北海国本地的武吏世家出身，其家族世代在北海担任郡尉、县尉等职，深得本地民众信赖。他敬重孔融的仁德，被委以统领北海国郡兵的重任，是孔融麾下少数精通军务、熟悉地形的可靠将领。衣谷三国编创人物。" />
+  <Hero id="lord_sunqian_1" faction="Faction.clan_kongrong" text="{=lord_sunqian_1_intro}北海本地的年轻名士，师从大儒郑玄，以能言善辩、学识渊博著称。他钦佩孔融的学问与名望，出仕其麾下，主要负责外交与招揽人才。衣谷三国编创人物。" />
+  <Hero id="lord_wuanguo" faction="Faction.clan_wuanguo" text="{=lord_wuanguo_intro}在虎牢关之战中，作为北海太守孔融的部将迎战吕布，被吕布一戟斩断手腕，随后被八路诸侯救下。出自演义。" />
+  <Hero id="lord_wangshe" faction="Faction.clan_wuanguo" text="{=lord_wangshe_intro}北海国本土的农耕世家家主，一生钻研农桑水利，是齐鲁一带著名的农学实践家。他深受孔融“仁政爱民”理念的感召，出仕担任“劝农令”，专门负责督导全境的农业生产、兴修水利，是孔融政权粮食安全的保障。衣谷三国编创人物。" />
+  <Hero id="lord_zongbao" faction="Faction.clan_wuanguo" text="{=lord_zongbao_intro}北海相孔融部将。黄巾余党管亥引兵困北海，与融要粮，融斥之。亥大怒，拍马舞刀，直取融，融将宝挺枪出马；战不数合，被管亥一刀，砍宗宝于马下。" />
+  <Hero id="lord_miheng" faction="Faction.clan_miheng" text="{=lord_miheng_intro}字正平，东汉末年名士、文学家。他以惊世的才华和极致的狂傲留名青史，其生平短暂而激烈，是汉末士人傲岸不屈的一个极端典型。" />
+  <Hero id="lord_wangwenyuan" faction="Faction.clan_miheng" text="{=lord_wangwenyuan_intro}北海名士王文渊，乃孔文举之高足。其人风姿特秀，善清谈，通经义，有匡扶社稷之志。然其长于庙堂之论，短于军旅之谋，是孔融座下彰显仁义、招揽贤才的一面旗帜。" />
+  <Hero id="lord_zhenshouzhuo" faction="Faction.clan_miheng" text="{=lord_zhenshouzhuo_intro}北海干吏郑守拙，出身微末而长于政事。为人木讷寡言，不慕虚名，唯以安民垦荒、充实府库为己任。孔融能于乱世中保全北海，享清谈之盛名，多赖此君于幕后勉力支撑。衣谷三国编创人物。" />
+  <Hero id="lord_zangba" faction="Faction.clan_zangba" text="{=lord_zangba_intro}字宣高，泰山豪帅。助吕布破萧关，后降曹操。镇青徐三十年，海贼敛迹。黄初四年卒，谥威侯。其部泰山兵威震江淮，曹操赞：臧霸镇东土，吾无后顾忧。" />
+  <Hero id="lord_wudun" faction="Faction.clan_zangba" text="{=lord_wudun_intro}一名黯奴，泰山（今山东泰安）人。东汉末年曹操帐下武将。最初与臧霸、孙观等各聚众，并帮助吕布对抗曹操，在吕布败亡后投降曹操，被任命为利城太守。" />
+  <Hero id="lord_yinli" faction="Faction.clan_zangba" text="{=lord_yinli_intro}一名卢儿，泰山郡人，汉末三国时期人物。原本与臧霸、孙观等各聚众，并帮助吕布对抗曹操，在吕布败亡后投降曹操，被曹操任命为东莞郡太守。 后跟随臧霸袭攻徐陵，被吴将全琮、徐盛追斩。" />
+  <Hero id="lord_sunguan" faction="Faction.clan_sunguan" text="{=lord_sunguan_intro}臧霸副将，号孙婴子。随吕布战曹操，中矢失左目仍酣战不退。后降曹官至青州刺史。每战先登，创裂而亡，谥愍侯。" />
+  <Hero id="lord_changxi" faction="Faction.clan_sunguan" text="{=lord_changxi_intro}东汉末年泰山群寇之一 。初与臧霸、孙观等聚众泰山，初平年间率军攻徐州彭城国，迫彭城王刘和避乱。建安年间三度反叛曹操" />
+  <Hero id="lord_xuwenqian" faction="Faction.clan_sunguan" text="{=lord_xuwenqian_intro}字子和，琅琊阳都人。少通经术，尤善权衡。时臧宣高（臧霸）聚泰山之雄，据开阳而虎视，然内部诸将，号令不一。文谦往投之，为之规划制度，调和诸将，通商宽农，遂成青徐一方之强藩。衣谷三国编创人物。" />
+  <Hero id="lord_sunkang" faction="Faction.clan_sunkang" text="{=lord_sunkang_intro}泰山寇孙观之兄，在吕布败亡后与孙观为臧霸所召而归顺曹操，被任命为城阳太守，后封为列侯。" />
+  <Hero id="lord_xiaojian" faction="Faction.clan_sunkang" text="{=lord_xiaojian_intro}从青州流亡至徐州的寒门士人，洞察时局，口才出众。他主动投靠臧霸，为其分析曹操、吕布、刘备等周边势力的利害关系，是臧霸在复杂诸侯关系中保持平衡的关键谋士。" />
+  <Hero id="lord_chenjiao" faction="Faction.clan_sunkang" text="{=lord_chenjiao_intro}徐州本地的底层小吏，因战乱频繁，对流民的安置与管理颇有心得。他被臧霸任用，专门负责招揽流民、开垦荒地、恢复生产，为臧霸的军队提供稳定的兵源与粮草。" />
+  <Hero id="lord_liuchong" faction="Faction.clan_liuchong" text="{=lord_liuchong_intro}陈孝王曾孙，骁勇善弩。黄巾乱时率众守国，十万流民来附。建安二年被袁术遣张闿刺杀，国相骆俊同死。陈地遂衰，其弩兵技法传入曹军。" />
+  <Hero id="lord_zhangxiao" faction="Faction.clan_liuchong" text="{=lord_zhangxiao_intro}字伯威，陈国人也。少以勇力闻，尤善射，能贯札。陈王宠治国有威，骁倾心附之，以为爪牙。宠以强弩称雄于豫州，骁实为其练卒统军者。衣谷三国编创人物。" />
+  <Hero id="lord_hangang" faction="Faction.clan_liuchong" text="{=lord_hangang_intro}原为何进部曲骑兵，京师大乱后流落至陈国，被刘宠收留。他为陈国带来了宝贵的骑兵训练与作战经验。衣谷三国编创人物。" />
+  <Hero id="lord_chenyuan" faction="Faction.clan_liuchong" text="{=lord_chenyuan_intro}刘宠的族妹，聪慧过人，有很强的政治嗅觉。她不仅管理王府内务，还时常为刘宠分析天下大势，是刘宠重要的私人顾问。衣谷三国编创人物。" />
+  <Hero id="lord_luojun" faction="Faction.clan_luojun" text="{=lord_luojun_intro}字孝远，汉灵帝时出任陈国相。 在任期间励精图治，尽力赈济灾民，深得民众爱戴。建安二年（197年），因拒绝借粮给僭号军阀袁术而遭其派遣的张闿所暗杀。" />
+  <Hero id="lord_zhangchao_1" faction="Faction.clan_luojun" text="{=lord_zhangchao_1_intro}从颍川郡前来投奔的义勇军首领，仰慕刘宠贤名。其所部士卒训练有素，尤其擅长弓弩，极大地增强了陈国的远程力量。衣谷三国编创人物。" />
+  <Hero id="lord_zhenhun" faction="Faction.clan_luojun" text="{=lord_zhenhun_intro}从颍川避难而来的名士，深受儒家思想影响，致力于在陈国兴办教育、整饬风俗，是刘宠“文治”的象征。衣谷三国编创人物。" />
+  <Hero id="lord_zhongxi" faction="Faction.clan_luojun" text="{=lord_zhongxi_intro}精通律法的寒门士人，他为陈国制定了一套简明公正的律法体系，使境内诉讼清明，狱中几无冤案。衣谷三国编创人物。" />
+  <Hero id="lord_liuchong_1" faction="Faction.clan_liuchong_1" text="{=lord_liuchong_1_intro}刘宠的族侄，自幼与刘宠一同习武，忠心不二。被任命为陈国都尉，统领全国兵马，是刘宠军事上的左膀右臂。衣谷三国编创人物。" />
+  <Hero id="lord_lvyan" faction="Faction.clan_liuchong_1" text="{=lord_lvyan_intro}刘宠的王府侍卫长，出身于陈国卫士世家，三代护卫刘氏。他武艺高强，沉默寡言，只听从刘宠一人的命令。衣谷三国编创人物。" />
+  <Hero id="lord_jiashi" faction="Faction.clan_liuchong_1" text="{=lord_jiashi_intro}原为洛阳宫中的女官，精通算术与仓储管理。董卓之乱后流落至陈国，被刘宠任用，将陈国的粮仓与府库打理得井井有条。衣谷三国编创人物。" />
+  <Hero id="lord_xintao" faction="Faction.clan_liuchong_1" text="{=lord_xintao_intro}陈国本地的农耕专家，他督导百姓兴修水利，引进新式农具，使陈国虽小，却粮食充盈，成为乱世中的一片乐土。衣谷三国编创人物。" />
+  <Hero id="lord_weijian" faction="Faction.clan_weijian" text="{=lord_weijian_intro}陈国本土的寒门军官，凭借战功一步步晋升。他熟知陈国每一寸土地，是城防体系的实际构建者。衣谷三国编创人物。" />
+  <Hero id="lord_pengyue" faction="Faction.clan_weijian" text="{=lord_pengyue_intro}熟悉陈国周边水文的本地人，组建了一支内河舰队，负责巡防河界、运输粮草，保障陈国水上的安全。衣谷三国编创人物。" />
+  <Hero id="lord_wangxin" faction="Faction.clan_weijian" text="{=lord_wangxin_intro}能言善辩的士人，负责与曹操、袁术、陶谦等周边诸侯打交道，在强敌环伺的环境中，为陈国争取生存空间。衣谷三国编创人物。" />
+  <Hero id="lord_xiarong" faction="Faction.clan_weijian" text="{=lord_xiarong_intro}陈国本土医学世家的当代家主，其家族世代为陈国百姓看病。刘宠主政后，非常重视他的才能，任命他为“医正”，总管陈国医药卫生事务，并建立了一套有效的疫病防治体系。他代表了刘宠对本土人才的任用和对民生健康的关切。衣谷三国编创人物。" />
+  <Hero id="lord_zhangyan" faction="Faction.clan_zhangyan" text="{=lord_zhangyan_intro}本名褚燕，黑山军帅。聚众百万活动河北，与公孙瓒结盟抗袁绍。建安十年降曹，封安国亭侯。善山地游击，其部飞燕军日行百里，袁绍叹：燕不除，河北不宁。" />
+  <Hero id="lord_suigu" faction="Faction.clan_zhangyan" text="{=lord_suigu_intro}字白兔，东汉末年黑山军首领。黄巾之乱后，与于毒、白绕等聚众起兵于山谷间。初平二年（191年）率众十余万攻魏郡、东郡，败于曹操。" />
+  <Hero id="lord_guodaxian" faction="Faction.clan_zhangyan" text="{=lord_guodaxian_intro}黄巾起义时，他怀着对“黄天”盛世的热忱投入其中。起义失败后，他并未投降，而是率领一部分残部遁入太行山，与张燕等人的黑山军遥相呼应。无史料。" />
+  <Hero id="lord_lidamu" faction="Faction.clan_zhangyan" text="{=lord_lidamu_intro}李大目与郭大贤同为黄巾渠帅，但二人风格迥异。他并非传统的步战豪杰，而是黄巾军中极为少见的、擅长骑术与机动作战的将领。相传他天生目力超人，能于百步之外察敌虚实，因此在军中担任侦察与先锋之职。无史料。" />
+  <Hero id="lord_yudu" faction="Faction.clan_yudu" text="{=lord_yudu_intro}东汉末年黄巾农民起义军黑山分军首领。先是与白绕、眭固等攻略魏郡、东郡，被曹操击败。后与大陆各地的其他叛乱军联手，对袁绍的本据地——邺城展开袭击，虽然造成一时威胁，但仍不敌袁绍军队的猛烈反击，最终败北。" />
+  <Hero id="lord_qingniujiao" faction="Faction.clan_yudu" text="{=lord_qingniujiao_intro}本是一名山中力士，因臂力过人且常以青牛角饰于盔上，故得此名。黄巾事起，天下大乱，他聚拢乡民，凭借勇力在黑山军中崭露头角。无史料。" />
+  <Hero id="lord_liushi" faction="Faction.clan_yudu" text="{=lord_liushi_intro}东汉末年黄巾起义时的人物。无史料" />
+  <Hero id="lord_zuozizhangba" faction="Faction.clan_yudu" text="{=lord_zuozizhangba_intro}东汉末年黑山军首领，三十六渠帅之一。张角去世后，与于毒，左校，郭大贤等在河北转战多年。" />
+  <Hero id="lord_bairao" faction="Faction.clan_bairao" text="{=lord_bairao_intro}东汉末年黑山军首领之一，初平二年（191年），白绕与于毒、眭固等黑山军首领合兵十余万，攻略魏郡、东郡地区，东郡太守王肱无力抵御。" />
+  <Hero id="lord_taosheng" faction="Faction.clan_bairao" text="{=lord_taosheng_intro}原为黑山贼之一，自称“平汉将军”故别号“平汉”。后投靠袁绍，封为建义中郎将。" />
+  <Hero id="lord_sunqing" faction="Faction.clan_bairao" text="{=lord_sunqing_intro}东汉末年黑山军重要将领，与王当共同率部响应张燕起事 。其所属部众活跃于常山、赵郡、中山等地山谷，构成张燕百万规模军事集团的核心力量 。" />
+  <Hero id="lord_wangdang" faction="Faction.clan_bairao" text="{=lord_wangdang_intro}黑山起义军张燕部下小帅。" />
+  <Hero id="lord_yangfeng" faction="Faction.clan_yangfeng" text="{=lord_yangfeng_intro}颍川黄巾帅，围皇甫嵩于长社。因结草营遭火攻败亡，然其部将赵弘等复占宛城。首创流民军结寨战术，后为黑山、白波诸军效仿。" />
+  <Hero id="lord_hucai" faction="Faction.clan_yangfeng" text="{=lord_hucai_intro}历史上作为白波帅之一，曾与李乐、韩暹等人联合救驾汉献帝，后活跃于河东地区并与南匈奴关系密切。" />
+  <Hero id="lord_weizhen" faction="Faction.clan_yangfeng" text="{=lord_weizhen_intro}河东士族旁支，在战乱中家道中落，被迫依附杨奉以求生存。他精通文书律例，是杨奉军中少有的能处理日常政务的人才。衣谷三国编创人物。" />
+  <Hero id="lord_hanxian" faction="Faction.clan_yangfeng" text="{=lord_hanxian_intro}东汉末年将领。初为黄巾起义军余部白波军将领，后受原白波军将领的兴义将军杨奉招纳，引军前来护卫汉献帝东归雒阳，因功受任大将军，领司隶校尉。" />
+  <Hero id="lord_liyue" faction="Faction.clan_liyue" text="{=lord_liyue_intro}东汉末年人物，原为白波帅，献帝东归遭李傕追击之时受杨奉委托前去救驾，护送献帝逃到河东，被拜为征北将军（一作征西）。" />
+  <Hero id="lord_zhaizhao" faction="Faction.clan_liyue" text="{=lord_zhaizhao_intro}杨奉在白波军中的老兄弟，资历极深，作战勇猛，但匪性难改，贪恋财货。他统领着杨奉军中最核心的白波军老兵。衣谷三国编创人物。" />
+  <Hero id="lord_liuqubei" faction="Faction.clan_liyue" text="{=lord_liuqubei_intro}南匈奴右贤王去卑的同族，率领一支数百人的匈奴骑兵依附杨奉，寻求在汉地获取财富。他们骁勇善射，是杨奉军中重要的机动力量。衣谷三国编创人物。" />
+  <Hero id="lord_dongzhao" faction="Faction.clan_liyue" text="{=lord_dongzhao_intro}原为曹操派往洛阳的使者，见杨奉势大且护驾有功，便暂时留下充当谋士，实则首鼠两端，为自己谋取出路。他提供战略建议，但随时可能倒戈。衣谷三国编创人物。" />
+  <Hero id="lord_xuhuang" faction="Faction.clan_xuhuang" text="{=lord_xuhuang_intro}字公明，河东郡杨县（今山西省洪洞县）人。三国时期曹魏大臣、名将。以其治军严整、作战勇猛、长于战术而著称，被曹操赞为“有周亚夫之风”。他是曹魏阵营中不可或缺的顶尖帅才。" />
+  <Hero id="lord_huangyan" faction="Faction.clan_xuhuang" text="{=lord_huangyan_intro}原为河内郡一带的水贼头目，被杨奉收编。他熟悉黄河与支流水文，负责为杨奉控制水路、运输物资和人员。衣谷三国编创人物。" />
+  <Hero id="lord_zhangyan_1" faction="Faction.clan_xuhuang" text="{=lord_zhangyan_1_intro}杨奉在白波军中最信任的副手，资历与杨奉相当。与徐晃不同，他并非以严整著称，而是以勇猛和江湖义气凝聚部队。他是杨奉白波军根基的真正代表，对杨奉个人极度忠诚，但对“朝廷”和“正规化”嗤之以鼻。衣谷三国编创人物。" />
+  <Hero id="lord_duxi" faction="Faction.clan_xuhuang" text="{=lord_duxi_intro}杨奉军中负责管理随军流民和家属的官员。他设法组织流民进行屯垦、搬运，为军队提供最低限度的后勤支持。衣谷三国编创人物。" />
+</Heroes>

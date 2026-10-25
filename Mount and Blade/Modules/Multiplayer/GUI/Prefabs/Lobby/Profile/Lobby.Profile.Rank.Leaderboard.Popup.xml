@@ -1,0 +1,209 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.7">
+      <Children>
+				<NavigationForcedScopeCollectionTargeter CollectionID="LobbyLeaderboardCollection" CollectionParent="..\." CollectionOrder="99" />
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="900" HorizontalAlignment="Center" Sprite="flat_panel_9" >
+          <Children>
+            <!-- Title  -->
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="20" Brush="MPLobby.PlayerProfile.Title.Text" Brush.FontSize="52" Text="@TitleText" />
+            
+            <!-- Separator -->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="20" MarginTop="90" MarginLeft="60" MarginRight="60" Sprite="MPLobby\Matchmaking\information_panel_header" />
+
+            <!-- Players  List -->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="50" MarginRight="50" MarginTop="130" MarginBottom="180" >
+              <Children>
+
+                <ScrollablePanel Id="RankLeaderboardPlayersScrollablePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginRight="15" AutoHideScrollBars="true" ClipRect="RankLeaderboardPlayersRect" InnerPanel="RankLeaderboardPlayersRect\RankLeaderboardPlayersListPanel" MouseScrollAxis="Vertical" VerticalScrollbar="..\RankLeaderboardPlayersScrollbar">
+                  <Children>
+										<NavigationScopeTargeter ScopeID="LobbyLeaderboardListScope" ScopeParent="..\RankLeaderboardPlayersRect" ScopeMovements="Vertical" />
+                    <Widget Id="RankLeaderboardPlayersRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                      <Children>
+                        <NavigatableListPanel Id="RankLeaderboardPlayersListPanel" DataSource="{LeaderboardPlayers}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <ItemTemplate>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" >
+                              <Children>
+
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="65" SuggestedHeight="50"  MarginLeft="35" VerticalAlignment="Center">
+                                  <Children>
+                                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Profile.Rank.Title.Text" Brush.FontSize="42" IntText="@Rank" />
+                                  </Children>
+                                </Widget>
+
+                                <!-- Single Player Item -->
+																<NavigationTargetSwitcher FromTarget="..\." ToTarget="..\Button" />
+                                <ButtonWidget Id="Button" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="80" MarginLeft="110" MarginRight="0" MarginTop="8" MarginBottom="8" Command.Click="ExecuteActivatePlayerActions" >
+                                  <Children>
+                                    <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="72" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.Clan.Roster.ListMemberItemBg"  />
+
+                                    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                      <Children>
+                                        <!-- Avatar -->
+                                        <ImageIdentifierWidget DataSource="{Avatar}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="80" SuggestedHeight="80" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="5" ImageId="@Id" AdditionalArgs="@AdditionalArgs" TextureProviderName="@TextureProviderName" />
+                                        <!-- Name -->
+                                        <ScrollingRichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="20" Brush="MPLobby.Clan.Name.Text" Brush.TextHorizontalAlignment="Left" Brush.FontSize="28" Text="@Name" DefaultTextHorizontalAlignment="Left" />
+                                        
+                                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="100" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                          <Children>
+                                            <!-- Rank -->
+                                            <MultiplayerLobbyRankItemButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="80" SuggestedHeight="80" MarginLeft="10" HorizontalAlignment="Center" VerticalAlignment="Center" RankID="@RatingID" />
+                                            <!-- Rating -->
+                                            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="160" Brush="MPLobby.Clan.Name.Text" Brush.TextHorizontalAlignment="Left" Brush.FontSize="32" IntText="@Rating" />
+                                          </Children>
+                                        </ListPanel>
+                                        
+                                      </Children>
+                                    </ListPanel>
+                                  </Children>
+                                </ButtonWidget>
+
+                              </Children>
+                            </Widget>
+                            
+                          </ItemTemplate>
+                        </NavigatableListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <ScrollbarWidget Id="RankLeaderboardPlayersScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="6" MarginBottom="10" MarginRight="40" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0" >
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#5A4033FF" AlphaFactor="0.2" />
+                    <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                  </Children>
+                </ScrollbarWidget>
+
+              </Children>
+            </ListPanel>
+
+            <!-- Players List (Loading) -->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="50" MarginRight="50" MarginTop="110" MarginBottom="100" IsVisible="@IsDataLoading">
+              <Children>
+                <MultiplayerCircleLoading HorizontalAlignment="Center" VerticalAlignment="Center" Parameter.IsEnabled="true" />
+              </Children>
+            </Widget>
+
+            <!-- Players List (No Data Available) -->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="50" MarginRight="50" MarginTop="110" MarginBottom="100" IsHidden="@HasData">
+              <Children>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="@IsDataLoading">
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush.FontSize="32" Text="@NoDataAvailableText" />
+                  </Children>
+                </Widget>
+              </Children>
+            </Widget>
+
+            <!--First/Previous/Next/Last Page Buttons-->
+            <NavigationScopeTargeter ScopeID="PageButtonsScope" ScopeParent="..\PageButtons" ScopeMovements="Horizontal" />
+            <ListPanel Id="PageButtons" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="125" StackLayout.LayoutMethod="HorizontalLeftToRight" IsVisible="@HasData">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" VerticalAlignment="Center">
+                  <Children>
+                    <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Profile.Badge.Progression.Button.First" Command.Click="ExecuteLoadFirstPage" IsEnabled="@IsPreviousPageAvailable" GamepadNavigationIndex="0">
+                      <Children>
+                        <HintWidget DataSource="{FirstPageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsPreviousPageAvailable">
+                          <Children>
+                            <InputKeyVisualWidget DataSource="{FirstInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" HorizontalAlignment="Left" VerticalAlignment="Top" PositionYOffset="-20" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                    <HintWidget DataSource="{FirstPageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </Widget>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" MarginLeft="10" VerticalAlignment="Center">
+                  <Children>
+                    <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Profile.Badge.Progression.Button.Previous" Command.Click="ExecuteLoadPreviousPage" IsEnabled="@IsPreviousPageAvailable" GamepadNavigationIndex="1">
+                      <Children>
+                        <HintWidget DataSource="{PreviousPageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsPreviousPageAvailable">
+                          <Children>
+                            <InputKeyVisualWidget DataSource="{PreviousInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" HorizontalAlignment="Left" VerticalAlignment="Top" PositionYOffset="-20" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                    <HintWidget DataSource="{PreviousPageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </Widget>
+                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="175" SuggestedHeight="40" VerticalAlignment="Center" MarginLeft="25" MarginRight="25" Text="@CurrentPageText"/>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" MarginRight="10" VerticalAlignment="Center">
+                  <Children>
+                    <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Profile.Badge.Progression.Button.Next" Command.Click="ExecuteLoadNextPage" IsEnabled="@IsNextPageAvailable" GamepadNavigationIndex="2">
+                      <Children>
+                        <HintWidget DataSource="{NextPageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsNextPageAvailable">
+                          <Children>
+                            <InputKeyVisualWidget DataSource="{NextInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" HorizontalAlignment="Right" VerticalAlignment="Top" PositionYOffset="-20" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                    <HintWidget DataSource="{NextPageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </Widget>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" VerticalAlignment="Center">
+                  <Children>
+                    <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Profile.Badge.Progression.Button.Last" Command.Click="ExecuteLoadLastPage" IsEnabled="@IsNextPageAvailable" GamepadNavigationIndex="3">
+                      <Children>
+                        <HintWidget DataSource="{LastPageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsNextPageAvailable">
+                          <Children>
+                            <InputKeyVisualWidget DataSource="{LastInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" HorizontalAlignment="Right" VerticalAlignment="Top" PositionYOffset="-20" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                    <HintWidget DataSource="{LastPageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </Widget>
+              </Children>
+            </ListPanel>
+
+            <!-- Close Popup Button -->
+						<NavigationScopeTargeter ScopeID="LobbyLeaderboardCloseButtonScope" ScopeParent="..\CloseButton" />
+            <ButtonWidget Id="CloseButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="25" Brush="WideButton.Flat" Command.Click="ExecuteClosePopup" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" GamepadNavigationIndex="0">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="MPLobby.PlayButton.Text" Brush.FontSize="28" Brush.TextVerticalAlignment="Center" Text="@CloseText">
+                  <Children>
+                    <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                  </Children>
+                </TextWidget>
+              </Children>
+            </ButtonWidget>             
+
+          </Children>
+        </Widget>
+
+        <!--Player Actions Context Menu-->
+        <ContextMenuBrushWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsActivated="@IsPlayerActionsActive" IsVisible="false" ActionListPanel="ActionListPanel" Brush="Scoreboard.ContextMenu.Background" UpdateChildrenStates="true">
+          <Children>
+						<NavigationScopeTargeter ScopeID="LobbyLeaderboardPlayerActionsScope" ScopeParent="..\ActionListPanel" ScopeMovements="Vertical" />
+            <NavigatableListPanel Id="ActionListPanel" DataSource="{PlayerActions}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" UpdateChildrenStates="true">
+              <ItemTemplate>
+                <ContextMenuItemWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="35" TypeIconWidget="TypeIconWidget" ActionButtonWidget="ButtonDimensionsSyncWidget\ActionButtonWidget" TypeIconState="@Value" CanBeUsed="@IsEnabled">
+                  <Children>
+										<NavigationTargetSwitcher FromTarget="..\." ToTarget="..\ButtonDimensionsSyncWidget\ActionButtonWidget" />
+                    <BrushWidget Id="TypeIconWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="23" SuggestedHeight="23" Brush="Scoreboard.ContextMenu.Icon" VerticalAlignment="Center" MarginLeft="2"/>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Text="@Definition" Brush="Scoreboard.ContextMenu.ItemText" VerticalAlignment="Center" MarginLeft="30" MarginRight="10" />
+                    <DimensionSyncWidget Id="ButtonDimensionsSyncWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" DimensionToSync="Horizontal" WidgetToCopyHeightFrom="..\..\..\ActionListPanel" UpdateChildrenStates="true">
+                      <Children>
+                        <HintWidget DoNotAcceptEvents="@IsEnabled" DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                        <ButtonWidget CanAcceptEvents="@IsEnabled" Id="ActionButtonWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left" Command.Click="ExecuteAction" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" Brush="MPLobby.Matchmaking.Region.DropdownItem"/>
+                      </Children>
+                    </DimensionSyncWidget>
+                  </Children>
+                </ContextMenuItemWidget>
+              </ItemTemplate>
+            </NavigatableListPanel>
+          </Children>
+        </ContextMenuBrushWidget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

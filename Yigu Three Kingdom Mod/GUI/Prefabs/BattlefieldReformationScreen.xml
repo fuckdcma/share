@@ -1,0 +1,71 @@
+<Prefab>
+	<Window>
+	    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsEnabled">
+			<Children>
+		<!--   -->
+				<Widget Id="BandageInfo" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="60" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Sprite="bandageUI" MarginRight="100" MarginBottom="200"  IsVisible="@BandageIsEnabled">
+					<Children>	
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="20">
+							<Children>				
+								<TextWidget Text="@BandageInfoText" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Bandage.Info.Text" Brush.FontColor="@Color"/>			
+							</Children>	
+						</ListPanel>
+					</Children>	
+				</Widget>
+			
+			
+				<!-- <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"  VerticalAlignment="Center"   > -->
+					<!-- <Children>	 -->
+						<!-- <Widget  DataSource="{SkillIconList}" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" > -->
+							<!-- <ItemTemplate>				 -->
+								<!-- <SkillIconWidget Sprite="@SkillSprite" CooldownTime="@CooldownTime" IsCooldown="@IsCooldown" StateControl="@SkillState" WidthSizePolicy="60" HeightSizePolicy="60" HorizontalAlignment="Center" VerticalAlignment="Center"  AlphaFeadSpeed="1" >			 -->
+									<!-- <Children>	 -->
+										<!-- <TextWidget  WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Bottom" Brush="Bandage.Info.Text"  Brush.FontSize="30"  />	 -->
+									<!-- </Children>	 -->
+								<!-- </SkillIconWidget> -->
+							<!-- </ItemTemplate>	 -->
+						<!-- </Widget>												 -->
+					<!-- </Children>	 -->
+				<!-- </Widget> -->
+			
+			
+				 <SkillIconWidget Sprite="Skill_Scatter"  StateControl="@SkillState" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="85" SuggestedHeight="85" HorizontalAlignment="Center"  VerticalAlignment="Bottom" IsVisible="@SalvoIsEnabled">
+					<Children>	
+						<TextWidget Text="@SalvoCount" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Bottom" Brush="Bandage.Info.Text"  Brush.FontSize="30"  />	
+					</Children>	
+				</SkillIconWidget>
+				
+				<SpriteAnimationWidget  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SpriteName="killingEffect" 
+				SuggestedWidth="280" SuggestedHeight="240" 
+				HorizontalAlignment="Left"  VerticalAlignment="Bottom"
+				MarginLeft="180"  MarginBottom="280" AnimationSpeed="2"
+				 IsPlaying="@IsPlaying"  />
+				
+				<!--  治疗 -->
+				<BuffIconWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" Sprite="Curebuff"  StateControl="@CureBuffState"  HorizontalAlignment="Right"  VerticalAlignment="Bottom" MarginRight="310" 	MarginBottom="120" ScaleSpeed="0.3" />
+				<!--  流血 -->
+				<BuffIconWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" Sprite="Bleedbuff"  StateControl="@BleedBuffState"  HorizontalAlignment="Right"  VerticalAlignment="Bottom" MarginRight="310" 	MarginBottom="170" ScaleSpeed="0.3" />
+				<!--  中毒 -->
+				<BuffIconWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" Sprite="Poisonbuff"  StateControl="@PoisonBuffState"  HorizontalAlignment="Right"  VerticalAlignment="Bottom" MarginRight="320" 	MarginBottom="70" ScaleSpeed="0.3" />			
+				<!--  战马加速 -->
+				<BuffIconWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" Sprite="HorseAccelerate"  StateControl="@HorseAccelerateBuffState"  HorizontalAlignment="Right"  VerticalAlignment="Bottom" MarginRight="300" 	MarginBottom="20" ScaleSpeed="0.25" />
+			
+				<!-- <SpriteAnimationWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SpriteName="SpeedLine" HorizontalAlignment="Center"  VerticalAlignment="Center"/> -->
+						
+				<Widget Id="BandageCureHint"  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="60" HorizontalAlignment="Right"  VerticalAlignment="Bottom" MarginRight="320" 	MarginBottom="100"   >
+					<Children>	
+						<Widget DataSource="{BuffDamageList}" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  >
+							<ItemTemplate>				
+								<BuffHintWidget Text="@CureValue" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Bandage.Info.Text" Brush.FontColor="@CureColor" Brush.FontSize="@CureSize" DurationTime="@DurationTime" DefaultSize="@DefaultSize" YOffectSpeed="@YOffectSpeed" AlphaFeadSpeed="0.8"  IsVisible="@CureIsEnabled"/>			
+							</ItemTemplate>	
+						</Widget>												
+					</Children>	
+				</Widget>
+				
+
+
+				
+			</Children>
+		</Widget>		
+	</Window>
+</Prefab>

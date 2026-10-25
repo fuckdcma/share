@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="module_sound">
+  <module_sounds>
+
+  <!-- 通用男性 -->
+    <module_sound name="event:/event:/voice/combat/male/04/mp/help" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/male/04/mp/spot" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/male/04/mp/thanks" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/male/04/mp/sorry" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/male/04/mp/affirmative" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/male/04/mp/negative" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/male/04/mp/regroup" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/male/04/mp/defend" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/male/04/mp/attack" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+
+  <!-- 男A -->
+    <!-- 杂项声音 -->
+    <!-- Grunt -->
+    <module_sound name="event:/voice/combat/male/01/grunt" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/01/grunt.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Jump --> 
+    <module_sound name="event:/voice/combat/male/01/jump" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/01/grunt.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Yell -->
+    <module_sound name="event:/sg_m_combat_yell_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_combat_yell_1A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_2A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_3A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_4A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_5A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_6A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_7A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_8A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_9A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_yell_10A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Pain -->
+    <module_sound name="event:/sg_m_combat_pain_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1" >
+      <variation path="sg_m_combat_pain_1A.wav" weight ="2.0" />
+      <variation path="sg_m_combat_pain_2A.wav" weight ="2.0" />
+      <variation path="sg_m_combat_pain_3A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Death -->
+    <module_sound name="event:/sg_m_combat_death_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.8" max_pitch_multiplier="1" >
+      <variation path="sg_m_combat_death_1A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_death_2A.wav" weight ="2.0" />
+      <variation path="sg_m_combat_death_3A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_death_4A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_death_5A.wav" weight ="2.0" />
+      <variation path="sg_m_combat_death_6A.wav" weight ="2.0" />
+      <variation path="sg_m_combat_death_7A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_death_8A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Stun -->
+    <module_sound name="event:/voice/combat/male/01/stun" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/01/stun.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Victory -->
+    <module_sound name="event:/sg_m_combat_victory_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_combat_victory_1A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_victory_2A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_victory_3A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_victory_4A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Climb -->
+    <module_sound name="event:/voice/combat/male/01/climb" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/01/climb.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Focus -->
+    <module_sound name="event:/voice/combat/male/01/focus" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/01/focus.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Debacle -->
+    <module_sound name="event:/sg_m_combat_debacle_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_combat_debacle_1A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_debacle_2A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_debacle_3A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_debacle_4A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_debacle_5A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_debacle_6A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_debacle_7A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- HorseRally -->
+    <module_sound name="event:/sg_m_combat_horserally_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_combat_horserally_1A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_horserally_2A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_horserally_3A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_horserally_4A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_horserally_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- HorseStop -->
+    <module_sound name="event:/sg_m_order_horse_stop_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_horse_stop_1A.wav" weight ="1.0" />
+      <variation path="sg_m_order_horse_stop_2A.wav" weight ="1.0" />
+      <variation path="sg_m_order_horse_stop_3A.wav" weight ="1.0" />
+      <variation path="sg_m_order_horse_stop_4A.wav" weight ="1.0" />
+      <variation path="sg_m_order_horse_stop_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Death -->
+    <module_sound name="event:/sg_m_combat_fear_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_combat_fear_1A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_fear_2A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_fear_3A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_fear_4A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_fear_5A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_fear_6A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_fear_7A.wav" weight ="1.0" />
+      <variation path="sg_m_combat_fear_8A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- 选中步兵 -->
+    <module_sound name="event:/sg_m_ord_id_infantry_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中弓兵 -->
+    <module_sound name="event:/sg_m_ord_id_archers_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_archers_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中骑兵 -->
+    <module_sound name="event:/sg_m_ord_id_cavalry_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_cavalry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中弓骑兵 -->
+    <module_sound name="event:/sg_m_ord_id_horsearchers_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_horsearchers_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中混组士兵 -->
+    <module_sound name="event:/sg_m_ord_id_everyone_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_everyone_1A.wav" weight ="1.0" />
+      <variation path="sg_m_ord_id_everyone_2A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中所有士兵 -->
+    <module_sound name="event:/sg_m_ord_id_everyone_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_id_everyone_1A.wav" weight ="1.0" />
+      <variation path="sg_m_ord_id_everyone_2A.wav" weight ="1.0" />
+      <variation path="sg_m_ord_id_everyone_3A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- F1 F1 就位-->
+    <module_sound name="event:/sg_m_order_id_move_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_move_1A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_move_2A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_move_3A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F2 跟随 -->
+    <module_sound name="event:/sg_m_order_id_follow_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_follow_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F3 冲锋 -->
+    <module_sound name="event:/sg_m_order_id_attack_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_attack_1A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_attack_2A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_attack_3A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F4 开战 -->
+    <module_sound name="event:/sg_m_order_id_advance_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_advance_1A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_advance_2A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F5 后退 -->
+    <module_sound name="event:/sg_m_order_id_fall_back_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_fall_back_1A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_fall_back_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F1 F6 立定 -->
+    <module_sound name="event:/sg_m_order_id_stop_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_stop_1A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_stop_2A.wav" weight ="0.75" />
+      <variation path="sg_m_order_id_stop_3A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F1 F7 撤退 -->
+    <module_sound name="event:/sg_m_order_id_retreat_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_retreat_1A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_retreat_2A.wav" weight ="0.75" />
+      <variation path="sg_m_order_id_retreat_3A.wav" weight ="0.75" />
+    </module_sound>
+  
+    <!-- F2 F1 线阵 -->
+    <module_sound name="event:/sg_m_ord_form_id_line_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_form_id_line_1A.wav" weight ="1.0" />
+      <variation path="sg_m_ord_form_id_line_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F2 盾墙 -->
+    <module_sound name="event:/sg_m_ord_form_id_shieldwall_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_form_id_shieldwall_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F3 散阵  -->
+    <module_sound name="event:/sg_m_ord_form_id_Loose_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_form_id_Loose_1A.wav" weight ="1.0" />
+      <variation path="sg_m_ord_form_id_Loose_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F4 圆阵 -->
+    <module_sound name="event:/sg_m_ord_form_id_circle_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_form_id_circle_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F5 方阵 -->
+    <module_sound name="event:/sg_m_ord_form_id_square_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_form_id_square_1A.wav" weight ="1.0" />
+      <variation path="sg_m_ord_form_id_square_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F6 楔阵 -->
+    <module_sound name="event:/sg_m_ord_form_id_wedge_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_form_id_wedge_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F7 竖阵 -->
+    <module_sound name="event:/sg_m_ord_form_id_column_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_form_id_column_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F8 乱阵 -->
+    <module_sound name="event:/sg_m_ord_form_id_scatter_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_ord_form_id_scatter_1A.wav" weight ="1.0" />
+    </module_sound>
+
+
+    <!-- PickSpears -->
+    <module_sound name="event:/voice/combat/male/04/commands/pick_spears" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/04/commands/pick_spears.wav" weight ="1.0" />
+    </module_sound>
+    <!-- PickDefault -->
+    <module_sound name="event:/voice/combat/male/04/commands/pick_default" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/04/commands/pick_default.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F1 面向敌人 -->
+    <module_sound name="event:/sg_m_order_id_faceenemy_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_faceenemy_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F1 朝向指定方向 -->
+    <module_sound name="event:/sg_m_order_id_facedirection_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_facedirection_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F2 停止射击 -->
+    <module_sound name="event:/sg_m_order_id_holdfire_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_holdfire_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F2 随意射击-->
+    <module_sound name="event:/sg_m_order_id_fireatwill_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_fireatwill_2A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F3 上马 -->
+    <module_sound name="event:/sg_m_order_id_horsemount_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_horsemount_1A.wav" weight ="1.0" />
+      <variation path="sg_m_order_id_horsemount_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F3 F3 下马 -->
+    <module_sound name="event:/sg_m_order_id_dismount_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_dismount_1A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- AttackGate -->
+    <module_sound name="event:/voice/combat/male/04/commands/attack_gate" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/04/commands/attack_gate.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- UseSiegeWeapon -->
+    <module_sound name="event:/voice/combat/male/04/commands/use_siege_weapon" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/male/04/commands/use_siege_weapon.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- UseLadders -->
+    <module_sound name="event:/voice/combat/male/04/commands/delegate" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_delegate_1A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- F3 F4 开启委托指挥 -->
+    <module_sound name="event:/sg_m_order_id_delegate_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_delegate_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F4 关闭委托指挥 -->
+    <module_sound name="event:/sg_m_order_id_undelegate_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_m_order_id_undelegate_1A.wav" weight ="1.0" />s
+    </module_sound>
+
+<!-- ############################################################################################# -->
+<!-- ############################################################################################# -->
+<!-- ############################################################################################# -->
+<!-- ############################################################################################# -->
+<!-- ############################################################################################# -->
+<!-- ############################################################################################# -->
+<!-- ############################################################################################# -->
+<!-- ############################################################################################# -->
+
+  <!-- 通用女性 -->
+    <module_sound name="event:/voice/combat/female/04/mp/help" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/help.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/female/04/mp/spot" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/spot.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/female/04/mp/thanks" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/thanks.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/female/04/mp/sorry" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/sorry.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/female/04/mp/affirmative" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/affirmativ.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/female/04/mp/negative" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/negative.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/female/04/mp/regroup" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/regroup.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/female/04/mp/defend" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/defend.wav" weight ="1.0" />
+    </module_sound>
+    <module_sound name="event:/voice/combat/female/04/mp/attack" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/mp/attack.wav" weight ="1.0" />
+    </module_sound>
+    
+  <!-- 女A -->
+    <!-- 杂项声音 -->
+    <!-- Grunt -->
+    <module_sound name="event:/voice/combat/female/01/grunt" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/grunt.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Jump --> 
+    <module_sound name="event:/voice/combat/female/01/jump" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/grunt.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Yell -->
+    <module_sound name="event:/sg_f_combat_yell_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_yell_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_5A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_6A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Pain -->
+    <module_sound name="event:/sg_f_combat_pain_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_pain_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_pain_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_pain_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_pain_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_pain_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Death -->
+    <module_sound name="event:/sg_f_combat_death_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_death_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_death_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_death_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_death_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_death_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Stun -->
+    <module_sound name="event:/voice/combat/female/01/stun" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/stun.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Victory -->
+    <module_sound name="event:/sg_f_combat_victory_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_victory_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_victory_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_victory_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_victory_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_victory_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Climb -->
+    <module_sound name="event:/voice/combat/female/01/climb" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/climb.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Focus -->
+    <module_sound name="event:/voice/combat/female/01/focus" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/focus.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Debacle -->
+    <module_sound name="event:/sg_f_combat_debacle_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_debacle_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_5A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_6A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- HorseRally -->
+    <module_sound name="event:/sg_f_combat_horserally_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_horserally_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_5A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_6A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_7A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- HorseStop -->
+    <module_sound name="event:/sg_f_order_horse_stop_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_horse_stop_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_horse_stop_2A.wav" weight ="1.0" />
+      <variation path="sg_f_order_horse_stop_3A.wav" weight ="1.0" />
+      <variation path="sg_f_order_horse_stop_4A.wav" weight ="1.0" />
+      <variation path="sg_f_order_horse_stop_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- fear -->
+    <module_sound name="event:/sg_f_combat_fear_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_fear_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_5A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_6A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- 选中步兵 -->
+    <module_sound name="event:/sg_f_ord_id_infantry_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中弓兵 -->
+    <module_sound name="event:/sg_f_ord_id_archers_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_archers_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中骑兵 -->
+    <module_sound name="event:/sg_f_ord_id_cavalry_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_cavalry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中弓骑兵 -->
+    <module_sound name="event:/sg_f_ord_id_horsearchers_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_horsearchers_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中混组士兵 -->
+    <module_sound name="event:/sg_f_ord_id_everyone_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_everyone_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中所有士兵 -->
+    <module_sound name="event:/sg_f_ord_id_everyone_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_everyone_1A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- F1 F1 就位-->
+    <module_sound name="event:/sg_f_order_id_move_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_move_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_move_2A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F2 跟随 -->
+    <module_sound name="event:/sg_f_order_id_follow_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_follow_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F3 冲锋 -->
+    <module_sound name="event:/sg_f_order_id_attack_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_attack_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_attack_2A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_attack_3A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_attack_4A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F4 开战 -->
+    <module_sound name="event:/sg_f_order_id_advance_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_advance_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_advance_2A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F5 后退 -->
+    <module_sound name="event:/sg_f_order_id_fall_back_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_fall_back_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F6 立定 -->
+    <module_sound name="event:/sg_f_order_id_stop_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_stop_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F7 撤退 -->
+    <module_sound name="event:/sg_f_order_id_retreat_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_retreat_1A.wav" weight ="1.0" />
+    </module_sound>
+  
+    <!-- F2 F1 线阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_line_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_line_1A.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_line_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F2 盾墙 -->
+    <module_sound name="event:/sg_f_ord_form_id_shieldwall_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_shieldwall_1A.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_shieldwall_2A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F3 散阵  -->
+    <module_sound name="event:/sg_f_ord_form_id_Loose_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_Loose_1A.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_Loose_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F4 圆阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_circle_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_circle_1A.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_circle_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F5 方阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_square_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_square_1A.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_square_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F6 楔阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_wedge_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_wedge_1A.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_wedge_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F7 竖阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_column_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_column_1A.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_column_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F8 乱阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_scatter_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_scatter_1A.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_scatter_2A.wav" weight ="0.75" />
+    </module_sound>
+
+
+    <!-- PickSpears -->
+    <module_sound name="event:/voice/combat/female/04/commands/pick_spears" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/commands/pick_spears.wav" weight ="1.0" />
+    </module_sound>
+    <!-- PickDefault -->
+    <module_sound name="event:/voice/combat/female/04/commands/pick_default" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/commands/pick_default.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F1 面向敌人 -->
+    <module_sound name="event:/sg_f_order_id_faceenemy_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_faceenemy_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F1 朝向指定方向 -->
+    <module_sound name="event:/sg_f_order_id_facedirection_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_faceenemy_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F2 停止射击 -->
+    <module_sound name="event:/sg_f_order_id_holdfire_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_holdfire_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_holdfire_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F3 F2 随意射击-->
+    <module_sound name="event:/sg_f_order_id_fireatwill_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_fireatwill_2A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_fireatwill_3A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F3 F3 上马 -->
+    <module_sound name="event:/sg_f_order_id_horsemount_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_horsemount_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_horsemount_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F3 F3 下马 -->
+    <module_sound name="event:/sg_f_order_id_dismount_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_dismount_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_dismount_2A.wav" weight ="0.75" />
+    </module_sound>
+
+    <!-- AttackGate -->
+    <module_sound name="event:/voice/combat/female/04/commands/attack_gate" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/commands/attack_gate.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- UseSiegeWeapon -->
+    <module_sound name="event:/voice/combat/female/04/commands/use_siege_weapon" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/commands/use_siege_weapon.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- UseLadders -->
+    <module_sound name="event:/voice/combat/female/04/commands/delegate" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_delegate_1A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- F3 F4 开启委托指挥 -->
+    <module_sound name="event:/sg_f_order_id_delegate_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_delegate_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_delegate_2A.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F3 F4 关闭委托指挥 -->
+    <module_sound name="event:/sg_f_order_id_undelegate_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_undelegate_1A.wav" weight ="1.0" />s
+    </module_sound>
+  <!-- 女B -->
+    <!-- 杂项声音 -->
+    <!-- Grunt -->
+    <module_sound name="event:/voice/combat/female/01/grunt" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/grunt.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Jump --> 
+    <module_sound name="event:/voice/combat/female/01/jump" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/grunt.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Yell -->
+    <module_sound name="event:/sg_f_combat_yell_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_yell_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_5A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_yell_6A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Pain -->
+    <module_sound name="event:/sg_f_combat_pain_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_pain_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_pain_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_pain_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_pain_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_pain_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Death -->
+    <module_sound name="event:/sg_f_combat_death_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_death_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_death_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_death_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_death_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_death_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Stun -->
+    <module_sound name="event:/voice/combat/female/01/stun" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/stun.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Victory -->
+    <module_sound name="event:/sg_f_combat_victory_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_victory_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_victory_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_victory_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_victory_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_victory_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Climb -->
+    <module_sound name="event:/voice/combat/female/01/climb" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/climb.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Focus -->
+    <module_sound name="event:/voice/combat/female/01/focus" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/01/focus.wav" weight ="1.0" />
+    </module_sound>
+    <!-- Debacle -->
+    <module_sound name="event:/sg_f_combat_debacle_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_debacle_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_5A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_debacle_6A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- HorseRally -->
+    <module_sound name="event:/sg_f_combat_horserally_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_horserally_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_5A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_6A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_horserally_7A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- HorseStop -->
+    <module_sound name="event:/sg_f_order_horse_stop_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_horse_stop_1A.wav" weight ="1.0" />
+      <variation path="sg_f_order_horse_stop_2A.wav" weight ="1.0" />
+      <variation path="sg_f_order_horse_stop_3A.wav" weight ="1.0" />
+      <variation path="sg_f_order_horse_stop_4A.wav" weight ="1.0" />
+      <variation path="sg_f_order_horse_stop_5A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- fear -->
+    <module_sound name="event:/sg_f_combat_fear_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_combat_fear_1A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_2A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_3A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_4A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_5A.wav" weight ="1.0" />
+      <variation path="sg_f_combat_fear_6A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- 选中步兵 -->
+    <module_sound name="event:/sg_f_ord_id_infantry_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_infantry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中弓兵 -->
+    <module_sound name="event:/sg_f_ord_id_archers_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_archers_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中骑兵 -->
+    <module_sound name="event:/sg_f_ord_id_cavalry_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_cavalry_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中弓骑兵 -->
+    <module_sound name="event:/sg_f_ord_id_horsearchers_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_horsearchers_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中混组士兵 -->
+    <module_sound name="event:/sg_f_ord_id_everyone_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_everyone_1A.wav" weight ="1.0" />
+    </module_sound>
+    <!-- 选中所有士兵 -->
+    <module_sound name="event:/sg_f_ord_id_everyone_1A" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_id_everyone_1A.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- F1 F1 就位-->
+    <module_sound name="event:/sg_f_order_id_move_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_move_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_move_2B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_move_3B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_move_4B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_move_5B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F2 跟随 -->
+    <module_sound name="event:/sg_f_order_id_follow_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_follow_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_follow_2B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F3 冲锋 -->
+    <module_sound name="event:/sg_f_order_id_attack_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_attack_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_attack_2B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_attack_3B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_attack_4B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_attack_5B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F4 开战 -->
+    <module_sound name="event:/sg_f_order_id_advance_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_advance_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_advance_2B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_advance_3B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F5 后退 -->
+    <module_sound name="event:/sg_f_order_id_fall_back_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_fall_back_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_fall_back_2B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F6 立定 -->
+    <module_sound name="event:/sg_f_order_id_stop_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_stop_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_stop_2B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_stop_3B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_stop_4B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_stop_5B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F1 F7 撤退 -->
+    <module_sound name="event:/sg_f_order_id_retreat_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_retreat_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_retreat_2B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_retreat_3B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_retreat_4B.wav" weight ="1.0" />
+    </module_sound>
+  
+    <!-- F2 F1 线阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_line_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_line_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F2 盾墙 -->
+    <module_sound name="event:/sg_f_ord_form_id_shieldwall_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_shieldwall_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F3 散阵  -->
+    <module_sound name="event:/sg_f_ord_form_id_Loose_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_Loose_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F4 圆阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_circle_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_circle_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F5 方阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_square_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_square_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F6 楔阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_wedge_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_wedge_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F2 F7 竖阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_column_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_column_1B.wav" weight ="1.0" />
+      <variation path="sg_f_ord_form_id_column_2B.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F2 F8 乱阵 -->
+    <module_sound name="event:/sg_f_ord_form_id_scatter_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_ord_form_id_scatter_1B.wav" weight ="1.0" />
+    </module_sound>
+
+
+    <!-- PickSpears -->
+    <module_sound name="event:/voice/combat/female/04/commands/pick_spears" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/commands/pick_spears.wav" weight ="1.0" />
+    </module_sound>
+    <!-- PickDefault -->
+    <module_sound name="event:/voice/combat/female/04/commands/pick_default" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/commands/pick_default.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F1 面向敌人 -->
+    <module_sound name="event:/sg_f_order_id_faceenemy_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_faceenemy_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F1 朝向指定方向 -->
+    <module_sound name="event:/sg_f_order_id_facedirection_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_faceenemy_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F2 停止射击 -->
+    <module_sound name="event:/sg_f_order_id_holdfire_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_holdfire_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_holdfire_2B.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F3 F2 随意射击-->
+    <module_sound name="event:/sg_f_order_id_fireatwill_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_fireatwill_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_fireatwill_2B.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F3 F3 上马 -->
+    <module_sound name="event:/sg_f_order_id_horsemount_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_horsemount_1B.wav" weight ="1.0" />
+    </module_sound>
+    <!-- F3 F3 下马 -->
+    <module_sound name="event:/sg_f_order_id_dismount_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_dismount_1B.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- AttackGate -->
+    <module_sound name="event:/voice/combat/female/04/commands/attack_gate" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/commands/attack_gate.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- UseSiegeWeapon -->
+    <module_sound name="event:/voice/combat/female/04/commands/use_siege_weapon" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="event:/voice/combat/female/04/commands/use_siege_weapon.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- UseLadders -->
+    <module_sound name="event:/voice/combat/female/04/commands/delegate" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_delegate_1B.wav" weight ="1.0" />
+    </module_sound>
+
+    <!-- F3 F4 开启委托指挥 -->
+    <module_sound name="event:/sg_f_order_id_delegate_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_delegate_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_delegate_2B.wav" weight ="0.75" />
+    </module_sound>
+    <!-- F3 F4 关闭委托指挥 -->
+    <module_sound name="event:/sg_f_order_id_undelegate_1B" is_2d="true" sound_category="mission_voice_shout" min_pitch_multiplier="0.9" max_pitch_multiplier="1.1" >
+      <variation path="sg_f_order_id_undelegate_1B.wav" weight ="1.0" />
+      <variation path="sg_f_order_id_undelegate_2B.wav" weight ="1.0" />
+    </module_sound>
+
+
+
+
+  
+  </module_sounds>
+</base>
+

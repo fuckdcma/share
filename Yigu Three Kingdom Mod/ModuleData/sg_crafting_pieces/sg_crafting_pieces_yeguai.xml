@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CraftingPieces>
+  <CraftingPiece id="lz_yeguaige_blade"
+                 name="{=*}【腐朽】前朝旧式锈蚀车战长戈"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_014"
+                 length="17.6"
+                 weight="3.2"
+                 is_hidden="true">
+    <BuildData piece_offset="-1.5" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="0.26" />
+      <Swing damage_type="Cut" damage_factor="0.26" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_yeguaige_handle"
+                 name="{=*}【腐朽】前朝旧式锈蚀车战长戈"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="sg_spear_handle_001_d"
+                 length="250"
+                 is_hidden="true"
+                 weight="2.41">
+		<BuildData piece_offset="52.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_yeguaisha_blade"
+                 name="{=*}【腐朽】汉武库前朝汉铩"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_021"
+                 excluded_item_usage_features="swing"
+                 length="32.6"
+                 weight="3.46"
+                 is_hidden="true">
+    <BuildData piece_offset="-0.5" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="0.36" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_yeguaisha_handle"
+                 name="{=*}【腐朽】汉武库前朝汉铩"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="sg_spear_handle_001_d"
+                 length="250"
+                 is_hidden="true"
+                 weight="2.41">
+		<BuildData piece_offset="42.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+
+
+
+
+
+</CraftingPieces>

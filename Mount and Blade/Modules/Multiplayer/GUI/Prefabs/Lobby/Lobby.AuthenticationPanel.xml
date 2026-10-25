@@ -1,0 +1,77 @@
+<Prefab>
+  <Constants>
+    <Constant Name="ButtonBrush.Width" BrushLayer="Default" BrushName="ButtonBrush4" BrushValueType="Width" />
+    <Constant Name="ButtonBrush.Height" BrushLayer="Default" BrushName="ButtonBrush4" BrushValueType="Height" />
+
+    <Constant Name="LoginButton.Width" BrushLayer="Default" BrushName="MPLobby.LoginButton.Flat" BrushValueType="Width" />
+    <Constant Name="LoginButton.Height" BrushLayer="Default" BrushName="MPLobby.LoginButton.Flat" BrushValueType="Height" />
+
+    <Constant Name="LeaveButton.Width" BrushLayer="Default" BrushName="MPLobby.LeaveButton.Flat" BrushValueType="Width" />
+    <Constant Name="LeaveButton.Height" BrushLayer="Default" BrushName="MPLobby.LeaveButton.Flat" BrushValueType="Height" />
+  </Constants>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+
+        <Standard.Background />
+
+        <!--Center Panel!-->
+        <BrushWidget Id="DebugPanel" DataSource="{AuthenticationDebug}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="600" SuggestedHeight="165" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="Frame1Brush" Brush.GlobalAlphaFactor="0.75" IsVisible="@IsEnabled">
+          <Children>
+
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="250" SuggestedHeight="40" HorizontalAlignment="Center" MarginTop="5" Text="@TitleText" />
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="40" MarginTop="50" Text="@UsernameText" />
+
+            <EditableTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="40" HorizontalAlignment="Left" MarginLeft="200" MarginTop="50" Sprite="StdAssets\tabbar_long_namebox" Brush.TextHorizontalAlignment="Left" Text="@Username" />
+
+            <Standard.Button HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="20" Command.Click="ExecuteLogin" IsDisabled="@IsLoginRequestActive" Parameter.Text="@LoginText" />
+
+          </Children>
+        </BrushWidget>
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="150" MarginRight="150" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <Children>
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="10" Brush="MPLobby.Popup.HeaderText" Text="@TitleText" />
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="25" Brush="MPLobby.Popup.MessageText" Text="@MessageText" />
+                <NavigationScopeTargeter ScopeID="AuthorizationPanelScope" ScopeParent="..\AuthControls" ScopeMovements="Horizontal" />
+                <ListPanel Id="AuthControls" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center">
+                  <Children>
+                    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!LoginButton.Width" SuggestedHeight="!LoginButton.Height" HorizontalAlignment="Center" MarginRight="15" Brush="MPLobby.LoginButton.Flat" Command.Click="ExecuteLogin" IsEnabled="@CanTryLogin" UpdateChildrenStates="true" GamepadNavigationIndex="0">
+                      <Children>
+                        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="!LoginButton.Height" Brush="MPLobby.Matchmaking.CircleButtonText" Text="@LoginText" />
+                        <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="70" IsVisible="@CanTryLogin">
+                          <Children>
+                            <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!LeaveButton.Width" SuggestedHeight="!LeaveButton.Height" HorizontalAlignment="Center" MarginLeft="15" Brush="MPLobby.LeaveButton.Flat" Command.Click="ExecuteExit" IsDisabled="@IsLoginRequestActive" UpdateChildrenStates="true" GamepadNavigationIndex="1">
+                      <Children>
+                        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="!LeaveButton.Height" Brush="MPLobby.Matchmaking.CircleButtonText" Text="@ExitText" />
+                        <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="70" IsHidden="@IsLoginRequestActive">
+                          <Children>
+                            <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                  </Children>
+                </ListPanel>
+              </Children>
+            </ListPanel>
+          </Children>
+        </ListPanel>
+
+        <Standard.CircleLoadingWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="360" Parameter.Period="0.5" IsVisible="@IsLoginRequestActive" />
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

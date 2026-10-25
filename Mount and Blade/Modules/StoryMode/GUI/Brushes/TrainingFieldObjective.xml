@@ -1,0 +1,189 @@
+<Brushes>
+  <Brush Name="Objective.Completion" >
+    <Layers>
+      <BrushLayer Name="Default" Sprite="BlankWhiteCircle" AlphaFactor="0.7" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" >
+        <BrushLayer Name="Default" Color="#F4E1C4FF"/>
+      </Style>
+      <Style Name="Selected">
+        <BrushLayer Name="Default" Color="#F39C12FF" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" Color="#2ECC71FF" />
+      </Style>
+    </Styles>
+  </Brush>
+
+  <Brush Name="TrainingField.Move" >
+    <Layers>
+      <BrushLayer Name="Default" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" >
+        <BrushLayer Name="Default" />
+      </Style>
+      <Style Name="Right" AnimationToPlayOnBegin="MoveRightAnimation">
+        <BrushLayer Name="Default" />
+      </Style>
+      <Style Name="Left" AnimationToPlayOnBegin="MoveLeftAnimation">
+        <BrushLayer Name="Default" />
+      </Style>
+      <Style Name="Up" AnimationToPlayOnBegin="MoveUpAnimation">
+        <BrushLayer Name="Default" />
+      </Style>
+      <Style Name="Down" AnimationToPlayOnBegin="MoveDownAnimation">
+        <BrushLayer Name="Default" />
+      </Style>
+    </Styles>
+    <Animations>
+      <Animation Name="MoveRightAnimation" Duration="2" Loop="true">
+        <AnimationProperty PropertyName="XOffset" LayerName="Default">
+          <KeyFrame Time="0.0" Value="0" />
+          <KeyFrame Time="2" Value="35" />
+        </AnimationProperty>
+      </Animation>
+
+      <Animation Name="MoveLeftAnimation" Duration="2" Loop="true">
+        <AnimationProperty PropertyName="XOffset" LayerName="Default">
+          <KeyFrame Time="0.0" Value="0" />
+          <KeyFrame Time="2" Value="-35" />
+        </AnimationProperty>
+      </Animation>
+
+      <Animation Name="MoveUpAnimation" Duration="2" Loop="true">
+        <AnimationProperty PropertyName="YOffset" LayerName="Default">
+          <KeyFrame Time="0.0" Value="10" />
+          <KeyFrame Time="2" Value="-25" />
+        </AnimationProperty>
+      </Animation>
+
+      <Animation Name="MoveDownAnimation" Duration="2" Loop="true">
+        <AnimationProperty PropertyName="YOffset" LayerName="Default">
+          <KeyFrame Time="0.0" Value="-10" />
+          <KeyFrame Time="2" Value="25" />
+        </AnimationProperty>
+      </Animation>
+    </Animations>
+  </Brush>
+  
+  <Brush Name="TrainingField.Mouse.Move" BaseBrush="TrainingField.Move">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="General\Mouse\mouse_body" />
+    </Layers>
+  </Brush>
+  
+  <Brush Name="TrainingField.Mouse.Button" BaseBrush="TrainingField.Move">
+    <Layers>
+      <BrushLayer Name="Default" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" AnimationToPlayOnBegin="BlinkAnimation" >
+        <BrushLayer Name="Default" />
+      </Style>
+    </Styles>
+    <Animations>
+      <Animation Name="BlinkAnimation" Duration="2" Loop="true">
+        <AnimationProperty PropertyName="AlphaFactor" LayerName="Default">
+          <KeyFrame Time="0.0" Value="0" />
+          <KeyFrame Time="1" Value="1" />
+          <KeyFrame Time="2" Value="1" />
+        </AnimationProperty>
+      </Animation>
+    </Animations>
+  </Brush>
+  
+  <Brush Name="TrainingField.Mouse.Button.Left" BaseBrush="TrainingField.Mouse.Button">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="General\Mouse\mouse_left_click" />
+    </Layers>
+  </Brush>
+  
+  <Brush Name="TrainingField.Mouse.Button.Right" BaseBrush="TrainingField.Mouse.Button">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="General\Mouse\mouse_left_click" HorizontalFlip="true" />
+    </Layers>
+  </Brush>
+  
+  <Brush Name="TrainingField.Mouse.Button.Middle" BaseBrush="TrainingField.Mouse.Button">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="General\Mouse\mouse_mid_click" />
+    </Layers>
+  </Brush>
+  
+  <Brush Name="TrainingField.Key.Press.Widget">
+    <Layers>
+      <BrushLayer Name="Default" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" AnimationToPlayOnBegin="PressAnimation">
+        <BrushLayer Name="Default" />
+      </Style>
+    </Styles>
+    <Animations>
+      <Animation Name="PressAnimation" Duration="1" Loop="true">
+        <AnimationProperty PropertyName="XOffset" LayerName="Default">
+          <KeyFrame Time="0.0" Value="0" />
+          <KeyFrame Time="1" Value="512" />
+        </AnimationProperty>
+      </Animation>
+    </Animations>
+  </Brush>
+
+  <Brush Name="TrainingField.DirectionArrow.Horizontal">
+    <Layers>
+      <BrushLayer Name="HorizontalArrow" Sprite="crosshair_arrow"/>
+    </Layers>
+    <Styles>
+      <Style Name="Default" >
+        <BrushLayer Name="HorizontalArrow" IsHidden="true"/>
+      </Style>
+      <Style Name="Left" >
+        <BrushLayer Name="HorizontalArrow" HorizontalFlip="true"/>
+      </Style>
+      <Style Name="Right" >
+        <BrushLayer Name="HorizontalArrow" />
+      </Style>
+    </Styles>
+  </Brush>
+  
+  <Brush Name="TrainingField.DirectionArrow.Vertical">
+    <Layers>
+      <BrushLayer Name="VerticalArrow" Sprite="crosshair_arrow_vertical"/>
+    </Layers>
+    <Styles>
+      <Style Name="Default" >
+        <BrushLayer Name="VerticalArrow" IsHidden="true"/>
+      </Style>
+      <Style Name="Up">
+        <BrushLayer Name="VerticalArrow" VerticalFlip="true"/>
+      </Style>
+      <Style Name="Down">
+        <BrushLayer Name="VerticalArrow" />
+      </Style>
+    </Styles>
+  </Brush>
+  
+  <Brush Name="Objective.Text" Font="FiraSansExtraCondensed-Light" TextHorizontalAlignment="Left" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontSize="24" FontColor="#F4E1C4FF" TextOutlineColor="#00000000" TextBlur="0.1" TextOutlineAmount="0" TextGlowRadius="0.1"/>
+      <Style Name="Selected" FontSize="24" FontColor="#F39C12FF" TextOutlineColor="#00000000" TextBlur="0.1" TextOutlineAmount="0" TextGlowRadius="0.1"/>
+      <Style Name="Disabled" FontSize="24" FontColor="#2ECC71FF" TextOutlineColor="#00000000" TextBlur="0.1" TextOutlineAmount="0" TextGlowRadius="0.1"/>
+    </Styles>
+  </Brush>
+
+  <Brush Name="Objective.Text.WithOutline" Font="FiraSansExtraCondensed-Light" TextHorizontalAlignment="Left" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontSize="24" FontColor="#F4E1C4FF" TextOutlineColor="#000000FF" TextBlur="0.5" TextOutlineAmount="0.01" TextGlowRadius="0.1"/>
+    </Styles>
+  </Brush>
+
+
+  <Brush Name="Training.Main.Text" Font="Galahad" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontSize="42" FontColor="#F4E1C4FF" TextOutlineColor="#00000000" TextBlur="0.7" TextOutlineAmount="0.1" TextGlowRadius="0.1"/>
+    </Styles>
+  </Brush>
+
+</Brushes>

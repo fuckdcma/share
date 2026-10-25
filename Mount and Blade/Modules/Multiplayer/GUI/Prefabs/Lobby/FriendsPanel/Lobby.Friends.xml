@@ -1,0 +1,186 @@
+<Prefab>
+	<Constants>
+		<Constant Name="FriendsPanel.UserProfileFrame.Width" BrushName="MPLobby.FriendsPanel.UserProfileFrame" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="FriendsPanel.UserProfileFrame.Height" BrushName="MPLobby.FriendsPanel.UserProfileFrame" BrushLayer="Default" BrushValueType="Height"/>
+
+		<Constant Name="FriendsPanel.ShowListButton.Width" BrushName="MPLobby.FriendsPanel.ShowListButton" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="FriendsPanel.ShowListButton.Height" BrushName="MPLobby.FriendsPanel.ShowListButton" BrushLayer="Default" BrushValueType="Height"/>
+
+		<Constant Name="FriendsPanel.SlotButton.Width" BrushName="MPLobby.FriendsPanel.SlotButton" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="FriendsPanel.SlotButton.Height" BrushName="MPLobby.FriendsPanel.SlotButton" BrushLayer="Default" BrushValueType="Height"/>
+
+		<Constant Name="FriendsPanel.ExtensionTop.Width" BrushName="MPLobby.FriendsPanel.ExtensionTop" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="FriendsPanel.ExtensionTop.Height" BrushName="MPLobby.FriendsPanel.ExtensionTop" BrushLayer="Default" BrushValueType="Height"/>
+	</Constants>
+	<Window>
+		<MultiplayerLobbyFriendsPanelWidget Id="FriendsPanel" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" MarginTop="130" HorizontalAlignment="Right" VerticalAlignment="Top" FriendsListPanel="FriendsList" ShowListToggle="ButtonsPanel\ShowListToggle">
+			<Children>
+        <NavigationForcedScopeCollectionTargeter DataSource="{..}" CollectionID="LobbyFriendsScope" CollectionParent="..\." CollectionOrder="-1" IsCollectionEnabled="@IsArmoryActive" />
+
+        <Widget Id="FriendsList" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="390" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="25" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.95" >
+					<Children>
+						<BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FriendsPanel.ExtensionTop.Width" SuggestedHeight="!FriendsPanel.ExtensionTop.Height" HorizontalAlignment="Center" PositionYOffset="-5" Brush="MPLobby.FriendsPanel.ExtensionTop">
+							<Children>
+								<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="10" Brush="MPLobby.FriendsPanel.HeaderText" Text="@TitleText" />
+							</Children>
+						</BrushWidget>
+
+						<ListPanel UpdateChildrenStates="true" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" MarginTop="60" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom" >
+							<Children>
+
+                <NavigationScopeTargeter ScopeID="LobbyFriendsPlatformSelectionScope" ScopeParent="..\." ScopeMovements="Horizontal" />
+								<NavigatableListPanel StackLayout.LayoutMethod="HorizontalLeftToRight" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  HorizontalAlignment="Center" MinIndex="0" MaxIndex="2">
+									<Children>
+										<ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="30" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Progression.Button.Previous" Command.Click="ExecuteSwitchToPreviousService" />
+										<Lobby.Friends.ServiceTabItem DataSource="{ActiveService}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true"/>
+										<ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="30" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Progression.Button.Next" Command.Click="ExecuteSwitchToNextService" />
+									</Children>
+								</NavigatableListPanel>
+
+								<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="BlankWhiteSquare_9" Color="#462719FF" MarginTop="10"/>
+
+							</Children>
+						</ListPanel>
+
+						<ScrollablePanel Id="ScrollablePanel" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" InnerPanel="MyClipRect\InnerPanel" ClipRect="MyClipRect" MarginTop="130" MarginBottom="80" MarginLeft="10" MarginRight="10" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalScrollbar="..\ScrollbarContainer\Scrollbar" AutoHideScrollBars="true">
+							<Children>
+								<Widget Id="MyClipRect" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" HorizontalAlignment="Center" ClipContents="true" AlphaFactor="0.75">
+									<Children>
+										<Widget Id="InnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+											<Children>
+
+												<Widget DataSource="{ActiveService}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="0">
+													<Children>
+
+														<ListPanel StackLayout.LayoutMethod="VerticalTopToBottom" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+															<Children>
+																<Widget Id="FriendRequestsParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" IsVisible="@GotAnyFriendRequests">
+																	<Children>
+																		<Lobby.FriendGroup Id="FriendRequests" DataSource="{FriendRequests}" Parameter.TitleBrush="MPLobby.FriendsPanel.GroupText.InGame" Parameter.StatusBrush="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.InGame" />
+																	</Children>
+																</Widget>
+																<Widget Id="PendingRequestsParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" IsVisible="@GotAnyPendingRequests">
+																	<Children>
+																		<Lobby.FriendGroup Id="PendingRequests" DataSource="{PendingRequests}" Parameter.TitleBrush="MPLobby.FriendsPanel.GroupText.InGame" Parameter.StatusBrush="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.InGame" />
+																	</Children>
+																</Widget>
+																<Widget Id="InGameFriendsParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" IsVisible="@IsInGameStatusActive">
+																	<Children>
+																		<Lobby.FriendGroup Id="InGameFriends" DataSource="{InGameFriends}" Parameter.TitleBrush="MPLobby.FriendsPanel.GroupText.InGame" Parameter.StatusBrush="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.InGame" />
+																	</Children>
+																</Widget>
+																<Widget Id="OnlineFriendsParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+																	<Children>
+																		<Lobby.FriendGroup Id="OnlineFriends" DataSource="{OnlineFriends}" Parameter.TitleBrush="MPLobby.FriendsPanel.GroupText.Online" Parameter.StatusBrush="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.Online" />
+																	</Children>
+																</Widget>
+																<Lobby.FriendGroup Id="OfflineFriends" DataSource="{OfflineFriends}" Parameter.TitleBrush="MPLobby.FriendsPanel.GroupText.Offline" Parameter.StatusBrush="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.Offline" Parameter.InitialClosedState="true" />
+															</Children>
+														</ListPanel>
+
+													</Children>
+												</Widget>
+											</Children>
+										</Widget>
+
+									</Children>
+
+								</Widget>
+							</Children>
+						</ScrollablePanel>
+
+						<Widget Id="ScrollbarContainer" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="20" SuggestedHeight="800" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginTop="150" MarginBottom="100" MarginRight="2">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="friends_list_slider_bed_9" AlphaFactor="0.2" />
+								<ScrollbarWidget Id="Scrollbar" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"  AlignmentAxis="Vertical" Handle="ScrollbarHandle" MaxValue="100" MinValue="0" UpdateChildrenStates="true">
+									<Children>
+										<ImageWidget Id="ScrollbarHandle" WidthSizePolicy="Fixed" SuggestedWidth="4" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="MPLobby.FriendsPanel.ScrollHandle" MinHeight="50" />
+									</Children>
+								</ScrollbarWidget>
+							</Children>
+						</Widget>
+
+					</Children>
+				</Widget>
+
+				<Widget Id="ButtonsPanel" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="!FriendsPanel.UserProfileFrame.Height" HorizontalAlignment="Right" MarginRight="25" VerticalAlignment="Bottom">
+					<Children>
+						<ToggleStateButtonWidget Id="ShowListToggle" IsSelected="@IsListEnabled" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FriendsPanel.ShowListButton.Width" SuggestedHeight="!FriendsPanel.ShowListButton.Height" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.FriendsPanel.ShowListButton">
+							<Children>
+								<InputKeyVisualWidget DataSource="{ToggleInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" HorizontalAlignment="Right" VerticalAlignment="Top" PositionYOffset="-5" PositionXOffset="5" KeyID="@KeyID" IsVisible="@IsVisible"/>
+
+								<HintWidget DataSource="{FriendListHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+								<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="22" VerticalAlignment="Bottom" MarginBottom="12" MarginRight="16" IntText="@TotalOnlineFriendCount" Brush="MPLobby.FriendsPanel.FriendCountText" />
+
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="21" SuggestedWidth="21" HorizontalAlignment="Left" VerticalAlignment="Top" PositionYOffset="5" PositionXOffset="5" Sprite="BlankWhiteCircle" Color="#FF4800FF" IsVisible="@HasNotification" >
+									<Children>
+										<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPHUD.UserProfile.NameText" Brush.FontSize="14" PositionYOffset="1" IntText="@NotificationCount"/>
+									</Children>
+								</Widget>
+
+							</Children>
+						</ToggleStateButtonWidget>
+						<Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" MarginRight="65" IsVisible="@IsInParty">
+							<Children>
+								<ButtonWidget DataSource="{Player}" DoNotPassEventsToChildren="true" Command.Click="ExecuteActivatePlayerActions" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FriendsPanel.UserProfileFrame.Width" SuggestedHeight="!FriendsPanel.UserProfileFrame.Height" Brush="MPLobby.FriendsPanel.UserProfileFrame">
+									<Children>
+										<ImageIdentifierWidget DoNotAcceptEvents="true" DataSource="{Avatar}" ImageId="@Id" AdditionalArgs="@AdditionalArgs" IsVisible="@IsValid" TextureProviderName="@TextureProviderName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="76" SuggestedHeight="76" VerticalAlignment="Bottom" HorizontalAlignment="Center" MaterialAlphaFactor="0.8"/>
+										<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="16" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="5" MarginTop="5" Sprite="MPLobby\Generic\party_leader" Color="#FEC157FF"  IsVisible="@IsPartyLeader"/>
+									</Children>
+								</ButtonWidget>
+							</Children>
+						</Widget>
+
+						<ListPanel Id="PartyFriends" StackLayout.LayoutMethod="HorizontalRightToLeft" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="!FriendsPanel.SlotButton.Height" HorizontalAlignment="Right" MarginRight="150">
+							<Children>
+								<ListPanel Id="SlotList" DataSource="{PartyFriends}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="!FriendsPanel.SlotButton.Height" HorizontalAlignment="Right">
+									<ItemTemplate>
+										<ButtonWidget Command.Click="ExecuteActivatePlayerActions" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FriendsPanel.SlotButton.Width" SuggestedHeight="!FriendsPanel.SlotButton.Height" HorizontalAlignment="Right" Brush="MPLobby.FriendsPanel.FilledSlotBackground">
+											<Children>
+												<Widget IsEnabled="false" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+													<Children>
+														<HintWidget DataSource="{NameHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+														<ImageIdentifierWidget DoNotAcceptEvents="true" DataSource="{Avatar}" ImageId="@Id" AdditionalArgs="@AdditionalArgs" IsVisible="@IsValid" TextureProviderName="@TextureProviderName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="58" SuggestedHeight="58" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="3" MaterialAlphaFactor="0.8"/>
+														<Widget IsVisible="@IsWaitingConfirmation" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="4" MarginRight="4" MarginTop="14" MarginBottom="7" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.4">
+															<Children>
+                                <Standard.CircleLoadingWidget Id="LoadingAnimation" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Parameter.Period="0.5" Parameter.Radius="11" />
+															</Children>
+														</Widget>
+													</Children>
+												</Widget>
+												<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="15" SuggestedHeight="12" HorizontalAlignment="Left" VerticalAlignment="Top" MarginLeft="5" MarginTop="15" Sprite="MPLobby\Generic\party_leader" Color="#FEC157FF" IsVisible="@IsPartyLeader"  IsEnabled="false"/>
+											</Children>
+										</ButtonWidget>
+									</ItemTemplate>
+								</ListPanel>
+							</Children>
+						</ListPanel>
+					</Children>
+				</Widget>
+
+				<!--Player Actions Context Menu-->
+				<ContextMenuBrushWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsActivated="@IsPlayerActionsActive" IsVisible="false" ActionListPanel="ActionListPanel" Brush="Scoreboard.ContextMenu.Background" UpdateChildrenStates="true">
+					<Children>
+						<ListPanel Id="ActionListPanel" DataSource="{PlayerActions}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" UpdateChildrenStates="true">
+							<ItemTemplate>
+								<ContextMenuItemWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="35" TypeIconWidget="TypeIconWidget" ActionButtonWidget="ButtonDimensionsSyncWidget\ActionButtonWidget" TypeIconState="@Value" CanBeUsed="@IsEnabled">
+									<Children>
+										<BrushWidget Id="TypeIconWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="23" SuggestedHeight="23" Brush="Scoreboard.ContextMenu.Icon" VerticalAlignment="Center" MarginLeft="2"/>
+										<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Text="@Definition" Brush="Scoreboard.ContextMenu.ItemText" VerticalAlignment="Center" MarginLeft="30" MarginRight="10" />
+										<DimensionSyncWidget Id="ButtonDimensionsSyncWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" DimensionToSync="Horizontal" WidgetToCopyHeightFrom="..\..\..\ActionListPanel" UpdateChildrenStates="true">
+											<Children>
+												<HintWidget DoNotAcceptEvents="@IsEnabled" DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+												<ButtonWidget CanAcceptEvents="@IsEnabled" Id="ActionButtonWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left" Command.Click="ExecuteAction" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" Brush="MPLobby.Matchmaking.Region.DropdownItem"/>
+											</Children>
+										</DimensionSyncWidget>
+									</Children>
+								</ContextMenuItemWidget>
+							</ItemTemplate>
+						</ListPanel>
+					</Children>
+				</ContextMenuBrushWidget>
+
+			</Children>
+		</MultiplayerLobbyFriendsPanelWidget>
+	</Window>
+</Prefab>

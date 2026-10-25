@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CraftingPieces>
+  <!-- 废弃武器，待删除 -->
+
+    <CraftingPiece id="sg_sword_blade_002_2h"
+                 name="{=*}斩马刀刃"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_sword_blade_002_2h"
+                 length="106.88"
+                 weight="0.88">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_sword_one_handed">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags" />
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_guard_002"
+                 name="{=*}椭圆刀格"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_sword_guard_002"
+                 length="3.99"
+                 weight="0.097">
+    <BuildData next_piece_offset="0.0" />
+    <StatContributions armor_bonus="4" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_002_2h"
+                 name="{=*}扁圆红绳长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_002_2h"
+                 length="49.96"
+                 weight="0.1">
+    <BuildData piece_offset="-9.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_002"
+                 name="{=*}梯形刀首"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_002"
+                 length="5.9"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_blade_004_1h"
+                 name="{=*}环首刀曲刃"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_sword_blade_004_1h"
+                 length="73.82"
+                 weight="0.88">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_sword_one_handed">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags" />
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_guard_004"
+                 name="{=*}灰色一字刀格"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_sword_guard_004"
+                 length="1.09"
+                 weight="0.097">
+    <BuildData next_piece_offset="0.0" />
+    <StatContributions armor_bonus="4" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_004_1h"
+                 name="{=*}灰色短刀柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_004_1h"
+                 length="17.21"
+                 weight="0.1">
+    <BuildData piece_offset="-1.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_004"
+                 name="{=*}斜环首"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_004"
+                 length="4.84"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_blade_007_a_1h"
+                 name="{=*}环首刀刃"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_sword_blade_007_a_1h"
+                 length="54.89"
+                 weight="0.88">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_sword_one_handed">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags" />
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3" />
+    </Materials>
+  </CraftingPiece>
+   <CraftingPiece id="sg_sword_grip_007_a_1h"
+                 name="{=*}红绳短柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_007_a_1h"
+                 length="17"
+                 weight="0.1">
+    <BuildData piece_offset="-0.5"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_007_a"
+                 name="{=*}铁质环首"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_007_a"
+                 length="5.79"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_007_b"
+                 name="{=*}铁质环首2"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_007_b"
+                 length="5.79"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_007_c"
+                 name="{=*}铁质环首3"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_007_c"
+                 length="5.93"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_blade_008_both"
+                 name="{=*}弯刃"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_sword_blade_008_both"
+                 length="74.4"
+                 weight="0.88">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_sword_one_handed">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags" />
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_guard_008"
+                 name="{=*}扁形刀格"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_sword_guard_008"
+                 length="1.28"
+                 weight="0.097">
+    <BuildData next_piece_offset="0.0" />
+    <StatContributions armor_bonus="4" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_008_1h"
+                 name="{=*}黑绳短刀柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_008_1h"
+                 length="14"
+                 weight="0.1">
+    <BuildData piece_offset="-1.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_008"
+                 name="{=*}铜质环首2"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_008"
+                 length="7.31"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_blade_009_both"
+                 name="{=*}剑刃"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_sword_blade_009_both"
+                 length="75.84"
+                 weight="0.88">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_sword_one_handed"
+               holster_mesh="sg_sword_blade_009_both_scabbard">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags" />
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_guard_009"
+                 name="{=*}铜质扁圆剑格"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_sword_guard_009"
+                 length="3.319"
+                 weight="0.097">
+    <BuildData next_piece_offset="0.0" />
+    <StatContributions armor_bonus="4" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_009_1h"
+                 name="{=*}红绳短柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_009_1h"
+                 length="15"
+                 weight="0.1">
+    <BuildData piece_offset="-1.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_009"
+                 name="{=*}铜质纹路环首"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_009"
+                 length="9.83"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_blade_011_2h"
+                 name="{=*}盾谭刀刃"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_sword_blade_011_2h"
+                 length="122.15"
+                 weight="0.88">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_sword_one_handed">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags" />
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_011_2h"
+                 name="{=*}盾谭长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_011_2h"
+                 length="56.42"
+                 weight="0.1">
+    <BuildData piece_offset="-8.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_blade_018_both"
+                 name="{=*}刀刃"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_sword_blade_018_both"
+                 length="66.12"
+                 weight="0.88">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_sword_one_handed">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags" />
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_guard_018"
+                 name="{=*}圆形刀格"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_sword_guard_018"
+                 length="4.44"
+                 weight="0.097">
+    <BuildData next_piece_offset="0.0" />
+    <StatContributions armor_bonus="4" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_018_2h"
+                 name="{=*}灰色木质长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_018_2h"
+                 length="44.59"
+                 weight="0.1">
+    <BuildData piece_offset="-8.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_018"
+                 name="{=*}红色裹布环首"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_018"
+                 length="6.22"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_blade_019_a_1h"
+                 name="{=*}刀刃"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_sword_blade_019_a_1h"
+                 length="73.5"
+                 weight="0.88">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_sword_one_handed">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags" />
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_guard_019_a"
+                 name="{=*}黑色吞刃剑格"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_sword_guard_019_a"
+                 length="3.28"
+                 weight="0.097">
+    <BuildData next_piece_offset="0.0" />
+    <StatContributions armor_bonus="4" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_guard_019_b"
+                 name="{=*}铜色吞刃剑格"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_sword_guard_019_b"
+                 length="3.28"
+                 weight="0.097">
+    <BuildData next_piece_offset="0.0" />
+    <StatContributions armor_bonus="4" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_guard_019_c"
+                 name="{=*}灰色吞刃剑格"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_sword_guard_019_c"
+                 length="3.28"
+                 weight="0.097">
+    <BuildData next_piece_offset="0.0" />
+    <StatContributions armor_bonus="4" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_019_a_1h"
+                 name="{=*}黑绳包尾短柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_019_a_1h"
+                 length="20.9"
+                 weight="0.1">
+    <BuildData piece_offset="-2.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_019_b_1h"
+                 name="{=*}红绳包尾短柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_019_b_1h"
+                 length="20.9"
+                 weight="0.1">
+    <BuildData piece_offset="-2.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_grip_019_c_1h"
+                 name="{=*}蓝绳包尾短柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_sword_grip_019_c_1h"
+                 length="20.9"
+                 weight="0.1">
+    <BuildData piece_offset="-2.0"
+               previous_piece_offset="0.0"
+               next_piece_offset="0.0" />
+    <Materials>
+      <Material id="Wood" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_019_a"
+                 name="{=*}黑色纹路环首"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_019_a"
+                 length="6.11"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_019_b"
+                 name="{=*}红色纹路环首"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_019_b"
+                 length="6.11"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_sword_pommel_019_c"
+                 name="{=*}灰色纹路环首"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_sword_pommel_019_c"
+                 length="6.11"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_head_001_both"
+                 name="{=*}金瓜锤头"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_mace_head_001_both"
+                 length="25.88"
+                 weight="1"
+                 full_scale="true"
+                 excluded_item_usage_features="thrust"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_mace_a">
+      <Swing damage_type="Blunt"
+             damage_factor="2.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron3"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_001_1h"
+                 name="{=*}金瓜锤柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_001_1h"
+                 length="59.98"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="16.6" />
+    <Materials>
+      <Material id="Wood"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_pommel_001_both"
+                 name="{=*}金瓜锤配重"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_mace_pommel_001_both"
+                 culture="Culture.battania"
+                 length="5.79"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2"
+                count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_head_002_both"
+                 name="{=*}石锤头"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_mace_head_002_both"
+                 length="10.01"
+                 weight="1"
+                 full_scale="true"
+                 excluded_item_usage_features="thrust"
+                 is_default="true">
+		<BuildData piece_offset="-11" next_piece_offset="0" />
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_mace_a">
+      <Swing damage_type="Blunt"
+             damage_factor="2" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron3"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_002_1h"
+                 name="{=*}树枝柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_002_1h"
+                 length="59.43"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="15" />
+    <Materials>
+      <Material id="Wood"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_head_003_both"
+                 name="{=*}骨朵头"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_mace_head_003_both"
+                 length="9.47"
+                 weight="1"
+                 full_scale="true"
+                 excluded_item_usage_features="thrust"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_mace_a">
+      <Swing damage_type="Blunt"
+             damage_factor="2.3" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron3"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_head_004_1h"
+                 name="{=*}锏头"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_mace_head_004_1h"
+                 length="60.95"
+                 weight="1"
+                 full_scale="true"
+                 excluded_item_usage_features="thrust"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_mace_a">
+      <Swing damage_type="Blunt"
+             damage_factor="2.3" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron3"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_head_005_both"
+                 name="{=*}狼牙头"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_mace_head_005_both"
+                 length="22.37"
+                 weight="1"
+                 full_scale="true"
+                 excluded_item_usage_features="thrust"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_mace_a">
+      <Swing damage_type="Blunt"
+             damage_factor="2.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron3"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_head_006_both"
+                 name="{=*}铲头"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_mace_head_006_both"
+                 length="25"
+                 weight="1"
+                 full_scale="true"
+                 excluded_item_usage_features="thrust"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_mace_a">
+      <Swing damage_type="Pierce"
+             damage_factor="2" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron3"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_004_1h"
+                 name="{=*}锏柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_004_1h"
+                 length="38.99"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="-2" />
+    <Materials>
+      <Material id="Wood"
+                count="2" />
+    </Materials>
+  </CraftingPiece>
+
+  <CraftingPiece id="sg_mace_handle_001_a"
+                 name="{=*}白木单手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_001_a"
+                 length="45"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="14" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_001_b"
+                 name="{=*}白木单手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_001_b"
+                 length="60"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="15" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_001_c"
+                 name="{=*}白木单手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_001_c"
+                 length="80"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="13.7" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_001_d"
+                 name="{=*}白木双手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_001_d"
+                 length="125"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="10" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_001_e"
+                 name="{=*}白木双手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_001_e"
+                 length="140"
+                 weight="0.420"
+                 item_holster_pos_shift="0,0,-0.05"
+                 CraftingCost="75">
+    <BuildData piece_offset="22" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_001_f"
+                 name="{=*}白木双手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_001_f"
+                 length="155"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="20" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_002_a"
+                 name="{=*}黄木单手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_002_a"
+                 length="45"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="14" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_002_b"
+                 name="{=*}黄木单手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_002_b"
+                 length="60"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="15" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_002_c"
+                 name="{=*}黄木单手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_002_c"
+                 length="80"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="13.7" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_002_d"
+                 name="{=*}黄木双手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_002_d"
+                 length="125"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="10" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_002_e"
+                 name="{=*}黄木双手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_002_e"
+                 length="140"
+                 weight="0.420"
+                 item_holster_pos_shift="0,0,-0.05"
+                 CraftingCost="75">
+    <BuildData piece_offset="22" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_002_f"
+                 name="{=*}黄木双手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_002_f"
+                 length="155"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="20" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_003_a"
+                 name="{=*}棕木单手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_003_a"
+                 length="45"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="14" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_003_b"
+                 name="{=*}棕木单手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_003_b"
+                 length="60"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="15" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_003_c"
+                 name="{=*}棕木单手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_003_c"
+                 length="80"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="13.7" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_003_d"
+                 name="{=*}棕木双手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_003_d"
+                 length="125"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="10" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_003_e"
+                 name="{=*}棕木双手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_003_e"
+                 length="140"
+                 weight="0.420"
+                 item_holster_pos_shift="0,0,-0.05"
+                 CraftingCost="75">
+    <BuildData piece_offset="22" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_003_f"
+                 name="{=*}棕木双手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_003_f"
+                 length="155"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="20" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_004_a"
+                 name="{=*}深木单手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_004_a"
+                 length="45"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="14" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_004_b"
+                 name="{=*}深木单手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_004_b"
+                 length="60"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="15" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_004_c"
+                 name="{=*}深木单手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_004_c"
+                 length="80"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="13.7" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_004_d"
+                 name="{=*}深木双手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_004_d"
+                 length="125"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="10" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_004_e"
+                 name="{=*}深木双手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_004_e"
+                 length="140"
+                 weight="0.420"
+                 item_holster_pos_shift="0,0,-0.05"
+                 CraftingCost="75">
+    <BuildData piece_offset="22" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_004_f"
+                 name="{=*}深木双手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_004_f"
+                 length="155"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="20" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_005_a"
+                 name="{=*}红木单手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_005_a"
+                 length="45"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="14" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_005_b"
+                 name="{=*}红木单手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_005_b"
+                 length="60"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="15" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_005_c"
+                 name="{=*}红木单手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_005_c"
+                 length="80"
+                 weight="0.420"
+                 CraftingCost="75"
+                 item_holster_pos_shift="0,0,0.05">
+    <BuildData piece_offset="13.7" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_005_d"
+                 name="{=*}红木双手杖柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_005_d"
+                 length="125"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="10" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_005_e"
+                 name="{=*}红木双手杖中柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_005_e"
+                 length="140"
+                 weight="0.420"
+                 item_holster_pos_shift="0,0,-0.05"
+                 CraftingCost="75">
+    <BuildData piece_offset="22" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_handle_005_f"
+                 name="{=*}红木双手杖长柄"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Handle"
+                 mesh="sg_mace_handle_005_f"
+                 length="155"
+                 weight="0.420"
+                 CraftingCost="75">
+    <BuildData piece_offset="20" />
+    <Materials>
+      <Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_mace_pommel_005_both"
+                 name="{=*}固尾配重"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_mace_pommel_005_both"
+                 culture="Culture.battania"
+                 length="0.84"
+                 weight="0.2">
+    <Materials>
+      <Material id="Iron2"
+                count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_001"
+                 name="{=*}枪刃1"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_001"
+                 length="34.65"
+                 weight="0.5">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_guard_001"
+                 name="{=*}枪护手1"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_spear_guard_001"
+                 length="30.9"
+                 weight="0">
+    <BuildData next_piece_offset="1.5" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_guard_002"
+                 name="{=*}枪护手2"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_spear_guard_002"
+                 length="4.88"
+                 weight="0">
+    <BuildData next_piece_offset="2" />
+    <Materials>
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_001"
+                 name="{=*}枪配重1"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_001"
+                 length="22.5"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_003"
+                 name="{=*}枪刃3"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_003"
+                 length="26.59"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_002"
+                 name="{=*}枪刃2"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_002"
+                 length="42.43"
+                 weight="0.5">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_002"
+                 name="{=*}枪配重2"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_002"
+                 length="7.8"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_005"
+                 name="{=*}枪刃5"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_005"
+                 length="47.99"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_005"
+                 name="{=*}枪配重5"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_005"
+                 length="5.43"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_006"
+                 name="{=*}枪刃6"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_006"
+                 length="53.43"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_guard_006"
+                 name="{=*}枪旗帜6"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Guard"
+                 mesh="sg_spear_guard_006"
+                 culture="Culture.neutral_culture"
+                 length="22.37"
+                 weight="0">
+    <BuildData next_piece_offset="1.0" previous_piece_offset="20" />
+    <Materials>
+      <Material id="Iron4" count="0" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_006"
+                 name="{=*}枪配重6"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_006"
+                 length="11.54"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_007"
+                 name="{=*}枪刃7"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_007"
+                 length="39.54"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_008"
+                 name="{=*}枪刃8"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_008"
+                 length="30.53"
+                 weight="0.2"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.2" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_009"
+                 name="{=*}枪刃9"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_009"
+                 length="46.29"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_009"
+                 name="{=*}枪配重9"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_009"
+                 length="12.71"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_010"
+                 name="{=*}枪刃10"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_010"
+                 length="31.58"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_011"
+                 name="{=*}枪刃11"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_011"
+                 length="54.45"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_011"
+                 name="{=*}枪配重11"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_011"
+                 length="18.45"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_015"
+                 name="{=*}枪刃15"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_015"
+                 length="73.42"
+                 weight="0.5">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_015"
+                 name="{=*}枪配重15"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_015"
+                 length="16.48"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_019"
+                 name="{=*}枪刃19"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_019"
+                 length="73.87"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_019"
+                 name="{=*}枪配重19"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_019"
+                 length="5.85"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_020"
+                 name="{=*}枪刃20"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_020"
+                 length="88.51"
+                 weight="0.5"
+                 excluded_item_usage_features="swing">
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_026"
+                 name="{=*}枪刃26"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_026"
+                 length="31.05"
+                 weight="0.5">
+    <BuildData piece_offset="-17" />
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.2" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_027"
+                 name="{=*}枪刃27"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_027"
+                 length="15.65"
+                 weight="0.5"
+                 excluded_item_usage_features="shield:thrust">
+    <BuildData piece_offset="-16" />
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Swing damage_type="Pierce" damage_factor="2.8" />
+    </BladeData>
+		<Flags>
+			<Flag name="CanHook" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_028"
+                 name="{=*}枪刃28"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_028"
+                 length="59.16"
+                 weight="0.5"
+                 excluded_item_usage_features="shield:thrust">
+    <BuildData piece_offset="-36" />
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Swing damage_type="Cut" damage_factor="1.3" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_028"
+                 name="{=*}枪配重28"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_028"
+                 length="6.09"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_030"
+                 name="{=*}枪刃30"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_030"
+                 length="58.29"
+                 weight="0.5">
+    <BuildData piece_offset="-33" />
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_030"
+                 name="{=*}枪配重30"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_030"
+                 length="7.9"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_031"
+                 name="{=*}枪刃31"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_031"
+                 length="71.06"
+                 weight="0.5">
+    <BuildData piece_offset="-35" />
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_pommel_031"
+                 name="{=*}枪配重31"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Pommel"
+                 mesh="sg_spear_pommel_031"
+                 length="7.37"
+                 weight="0">
+    <Materials>
+      <Material id="Iron2" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_blade_032"
+                 name="{=*}枪刃30"
+                 tier="1"
+                 is_hidden="true"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_032"
+                 length="40.45"
+                 weight="0.5">
+    <BuildData piece_offset="-20" />
+    <BladeData stack_amount="3"
+               physics_material="wood_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_spear_guard_012"
+                 name="{=*}枪旗帜12"
+                 tier="4"
+                 piece_type="Guard"
+                 mesh="sg_spear_guard_012"
+                 culture="Culture.neutral_culture"
+                 length="19.47"
+                 weight="0">
+    <BuildData next_piece_offset="1.0" previous_piece_offset="19.5" />
+    <Materials>
+      <Material id="Iron4" count="0" />
+    </Materials>
+  </CraftingPiece>
+</CraftingPieces>

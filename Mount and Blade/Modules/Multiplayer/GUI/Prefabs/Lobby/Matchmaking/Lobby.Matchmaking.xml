@@ -1,0 +1,238 @@
+<Prefab>
+  <Constants>
+    <Constant Name="TopHeader.Height" BrushName="MPLobby.TopHeader.Background" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Region.Icon.Width" BrushName="MPLobby.Matchmaking.Region.Icon" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Region.Icon.Height" BrushName="MPLobby.Matchmaking.Region.Icon" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Region.DropdownHeader.Width" BrushName="MPLobby.Matchmaking.Region.DropdownHeader" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Region.DropdownHeader.Height" BrushName="MPLobby.Matchmaking.Region.DropdownHeader" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="PlayButton.Width" BrushName="MPLobby.PlayButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayButton.Height" BrushName="MPLobby.PlayButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="CasualButton.Width" BrushName="MPLobby.Matchmaking.CasualButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CasualButton.Height" BrushName="MPLobby.Matchmaking.CasualButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="RankedButton.Width" BrushName="MPLobby.Matchmaking.RankedButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="RankedButton.Height" BrushName="MPLobby.Matchmaking.RankedButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="GameTypeInfo.Seperator.Width" BrushName="MPLobby.Matchmaking.GameTypeInfo.Seperator" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="GameTypeInfo.Seperator.Height" BrushName="MPLobby.Matchmaking.GameTypeInfo.Seperator" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="CustomizeCharacterButton.Width" BrushName="WideButton.Flat" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CustomizeCharacterButton.Height" BrushName="WideButton.Flat" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <Window>
+    <MultiplayerLobbyMatchmakingScreenWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="!TopHeader.Height" DoNotAcceptEvents="true" FindGameButton="FindGameButton" SelectionInfo="SelectionInfo" SelectedModeIndex="@SelectedSubPageIndex" IsCustomGameFindEnabled="@IsCustomGameStageFindEnabled" IsMatchFindPossible="@IsMatchFindPossible" CustomServerParentWidget="CenterPanelParent\CustomGameListParentVisibilityWidget\CustomServer" PremadeMatchesParentWidget="CenterPanelParent\PremadeMatchesListParentVisiblityWidget\PremadeMatches">
+      <Children>
+
+        <!--Left Menu-->
+        <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="295" HorizontalAlignment="Left" LayoutMethod.LayoutMethod="VerticalTopToBottom" MarginTop="40">
+          <Children>
+
+            <!--Filter List-->
+            <NavigationScopeTargeter ScopeID="LobbyMatchmakingFilterListScope" ScopeParent="..\FiltersParent" ScopeMovements="Vertical" ExtendDiscoveryAreaTop="-50"/>
+            <ListPanel Id="FiltersParent" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="295" StackLayout.LayoutMethod="HorizontalLeftToRight" >
+              <Children>
+                <NavigationScopeTargeter ScopeID="LobbyMatchmakingFiltersScope" ScopeParent="..\Filters" ScopeMovements="Vertical" />
+                <ListPanel Id="Filters" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="250" MarginLeft="50" StackLayout.LayoutMethod="VerticalTopToBottom" MarginTop="45" IntValue="@SelectedSubPageIndex">
+                  <Children>
+
+                    <!--Quick Play-->
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Command.Click="ExecuteChangeEnabledSubPage" CommandParameter.Click="0" IsEnabled="@IsQuickplayGamesEnabled" >
+                      <Children>
+                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true" StackLayout.LayoutMethod="VerticalTopToBottom" HorizontalAlignment="Center">
+                          <Children>
+                            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="97" SuggestedHeight="74" HorizontalAlignment="Center" PositionYOffset="15" Brush="MPLobby.Matchmaking.QuickPlayButton" GamepadNavigationIndex="0"/>
+                            <TextWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" Text="@QuickPlayText" HorizontalAlignment="Center"  Brush="MPLobby.Matchmaking.LeftMenuText"  />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+
+                    <!--Custom Game-->
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Command.Click="ExecuteChangeEnabledSubPage" CommandParameter.Click="1" IsEnabled="@IsCustomGamesEnabled" IsVisible="@IsCustomServerFeatureSupported">
+                      <Children>
+                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="5" UpdateChildrenStates="true" StackLayout.LayoutMethod="VerticalTopToBottom" HorizontalAlignment="Center">
+                          <Children>
+                            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"  SuggestedWidth="97" SuggestedHeight="74" HorizontalAlignment="Center" PositionYOffset="15" Brush="MPLobby.Matchmaking.CustomGameButton" GamepadNavigationIndex="2"/>
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" Text="@CustomGameText" HorizontalAlignment="Center" Brush="MPLobby.Matchmaking.LeftMenuText" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+
+                    <!--Custom Game List-->
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Command.Click="ExecuteChangeEnabledSubPage" CommandParameter.Click="2" IsEnabled="@IsCustomServerListEnabled" IsVisible="@IsCustomServerFeatureSupported">
+                      <Children>
+                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="5" UpdateChildrenStates="true" StackLayout.LayoutMethod="VerticalTopToBottom" HorizontalAlignment="Center">
+                          <Children>
+                            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="97" SuggestedHeight="74" HorizontalAlignment="Center" PositionYOffset="15" Brush="MPLobby.Matchmaking.CustomGameListButton" GamepadNavigationIndex="3" />
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" Text="@CustomServerListText" HorizontalAlignment="Center" Brush="MPLobby.Matchmaking.LeftMenuText" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+
+                    <!--Premade Matches-->
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" HorizontalAlignment="Center" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Command.Click="ExecuteChangeEnabledSubPage" CommandParameter.Click="3" IsEnabled="@IsPremadeGamesEnabled" IsVisible="@IsClansFeatureSupported">
+                      <Children>
+                        <ListPanel UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="5" StackLayout.LayoutMethod="VerticalTopToBottom" HorizontalAlignment="Center">
+                          <Children>
+                            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="97" SuggestedHeight="74" HorizontalAlignment="Center" PositionYOffset="15" Brush="MPLobby.Matchmaking.PremadeMatchesButton" GamepadNavigationIndex="4" />
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" HorizontalAlignment="Center" Brush="MPLobby.Matchmaking.LeftMenuText" Text="@TeamMatchesText"/>
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+					
+                  </Children>
+                </ListPanel>
+
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="49" Sprite="MPLobby\Matchmaking\left_menu_indicator" Color="#FEC157FF" MarginTop="85" MarginLeft="25" DoNotAcceptEvents="true" IsVisible="false"/>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="5" SuggestedHeight="701" Sprite="MPLobby\Matchmaking\left_menu_divider"   Color="#D5A272FF" MarginLeft="25" DoNotAcceptEvents="true"/>
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+
+        <Widget Id="CenterPanelParent" DoNotAcceptEvents="true" DoNotPassEventsToChildren="@IsFindingMatch" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="30" MarginBottom="50" >
+          <Children>
+
+            <!--Quick Play Cards-->
+            <ValueBasedVisibilityWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IndexToWatch="@SelectedSubPageIndex" IndexToBeVisible="0" MarginTop="100" HorizontalAlignment="Center" >
+              <Children>
+                <MultiplayerLobbyGameTypeCardListPanel DataSource="{QuickplayGameTypes}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" >
+                  <ItemTemplate>
+                    <Lobby.Matchmaking.GameCard />
+                  </ItemTemplate>
+                </MultiplayerLobbyGameTypeCardListPanel>
+              </Children>
+            </ValueBasedVisibilityWidget>
+
+            <!--Custom Game Cards-->
+            <ValueBasedVisibilityWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  IndexToWatch="@SelectedSubPageIndex" IndexToBeVisible="1" MarginTop="100" HorizontalAlignment="Center">
+              <Children>
+                <MultiplayerLobbyGameTypeCardListPanel DataSource="{CustomGameTypes}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" >
+                  <ItemTemplate>
+                    <Lobby.Matchmaking.GameCard />
+                  </ItemTemplate>
+                </MultiplayerLobbyGameTypeCardListPanel>
+              </Children>
+            </ValueBasedVisibilityWidget>
+
+            <!--Custom Game List-->
+            <ValueBasedVisibilityWidget Id="CustomGameListParentVisibilityWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="350" IndexToWatch="@SelectedSubPageIndex" IndexToBeVisible="2">
+              <Children>
+                <Lobby.CustomServer Id="CustomServer" DataSource="{CustomServer}"/>
+              </Children>
+            </ValueBasedVisibilityWidget>
+
+            <!--Premade Matches List-->
+            <ValueBasedVisibilityWidget Id="PremadeMatchesListParentVisiblityWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="350" IndexToWatch="@SelectedSubPageIndex" IndexToBeVisible="3">
+              <Children>
+                <Lobby.CustomServer Id="PremadeMatches" DataSource="{PremadeMatches}"/>
+              </Children>
+            </ValueBasedVisibilityWidget>
+            
+            <!--Region-->
+            <NavigationScopeTargeter ScopeID="LobbyMatchmakingRegionSelectionScope" ScopeParent="..\DropdownParent" />
+            <ListPanelDropdownWidget DataSource="{Regions}" Id="DropdownParent" WidthSizePolicy="Fixed" HeightSizePolicy ="CoverChildren" SuggestedWidth="234" MarginLeft="50" DoNotHandleDropdownListPanel="true" CurrentSelectedIndex="@SelectedIndex" Button="DropdownButton" ListPanelContainer="ListContainer" ListPanel="ListContainer\PrimaryUsageSelectorList" TextWidget="DropdownButton\Container\SelectedTextWidget" GamepadNavigationIndex="0">
+              <Children>
+                <ButtonWidget Id="DropdownButton" DataSource="{..}" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Center" VerticalAlignment="Top" IsDisabled="@HasUnofficialModulesLoaded" >
+                  <Children>
+                    <ListPanel Id="Container" UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center">
+                      <Children>
+                        <ImageWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Region.Icon.Width" SuggestedHeight="!Region.Icon.Height" Brush="MPLobby.Matchmaking.Region.Icon" />
+                        <TextWidget Id="SelectedTextWidget" Text=" " WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="10" Brush="MPLobby.Matchmaking.Region.Text" />
+                      </Children>
+                    </ListPanel>
+                    <HintWidget DataSource="{RegionsHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="234" SuggestedHeight="40" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                  </Children>
+                </ButtonWidget>
+                <Widget Id="ListContainer" IsVisible="false" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="40" MarginLeft="8" MarginRight="8" Sprite="region_combobox_bg_9" Color="#000000FF" AlphaFactor="0.9">
+                  <Children>
+                    <ListPanel Id="PrimaryUsageSelectorList" DataSource="{ItemList}" IsVisible="false" StackLayout.LayoutMethod="VerticalTopToBottom" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" HorizontalAlignment="Left" MarginTop="20" MarginBottom="10">
+                      <ItemTemplate>
+                        <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy ="Fixed" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" ButtonType="Radio" Brush="MPLobby.Matchmaking.Region.DropdownItem" IsHidden="@IsRegionNone">
+                          <Children>
+                            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="10" MarginRight="10">
+                              <Children>
+                                <TextWidget Text="@StringItem" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Matchmaking.Region.ItemText"/>
+                              </Children>
+                            </ListPanel>
+                          </Children>
+                        </ButtonWidget>
+                      </ItemTemplate>
+                    </ListPanel>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Region.DropdownHeader.Width" SuggestedHeight="!Region.DropdownHeader.Height" HorizontalAlignment="Center" PositionYOffset="-3" Sprite="MPLobby\Matchmaking\region_combobox_header" />
+                  </Children>
+                </Widget>
+              </Children>
+            </ListPanelDropdownWidget>
+
+          </Children>
+        </Widget>
+
+        <!--Game Details-->
+        <Widget DataSource="{SelectionInfo}" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="441" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="25" IsVisible="@IsEnabled">
+          <Children>
+            <Widget RenderLate="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="430" SuggestedHeight="14" HorizontalAlignment="Center" Sprite="MPLobby\Matchmaking\information_panel_header" />
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="400" SuggestedHeight="570" HorizontalAlignment="Center" MarginTop="4" Sprite="information_panel_body_9" Color="#000000FF" AlphaFactor="0.5" >
+              <Children>
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="20" MarginLeft="22" MarginRight="22" StackLayout.LayoutMethod="VerticalTopToBottom">
+                  <Children>
+                    <TextWidget Text="@Name" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="42" Brush="MPLobby.Matchmaking.GameTypeInfo.Header" />
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!GameTypeInfo.Seperator.Width" SuggestedHeight="!GameTypeInfo.Seperator.Height" HorizontalAlignment="Center" MarginTop="5" Sprite="MPLobby\Matchmaking\information_panel_separator" Color="#E09E48FF" />
+                    <TextWidget Text="@Description" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MinHeight="115" MarginTop="15" MarginLeft="5" MarginRight="5" MarginBottom="15" Brush="MPLobby.Matchmaking.GameTypeInfo.Text" Brush.TextHorizontalAlignment="Left"/>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" MarginTop="5" Sprite="BlankWhiteSquare_9" Color="#E09E48FF" />
+                    <ListPanel StackLayout.LayoutMethod="VerticalTopToBottom" DataSource="{ExtraInfos}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" MarginTop="15" MarginBottom="15" MarginLeft="5" MarginRight="5">
+                      <ItemTemplate>
+                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                          <Children>
+                            <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="120">
+                              <Children>
+                                <TextWidget Text="@Definition" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Matchmaking.GameTypeInfo.Text" Brush.TextHorizontalAlignment="Left" />
+                                <TextWidget Text=":" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.Matchmaking.GameTypeInfo.Text" />
+                              </Children>
+                            </ListPanel>
+                            <TextWidget Text="@Value" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="10" Brush="MPLobby.Matchmaking.GameTypeInfo.Text" Brush.TextHorizontalAlignment="Left" />
+                          </Children>
+                        </ListPanel>
+                      </ItemTemplate>
+                    </ListPanel>
+
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!GameTypeInfo.Seperator.Width" SuggestedHeight="!GameTypeInfo.Seperator.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="22" Sprite="MPLobby\Matchmaking\information_panel_separator" Color="#E09E48FF" VerticalFlip="true"/>
+                  </Children>
+                </ListPanel>
+              </Children>
+            </Widget>
+          </Children>
+        </Widget>
+
+        <NavigationScopeTargeter ScopeID="LobbyMatchmakingFindGameButtonScope" ScopeParent="..\FindGameButton" />
+        <ButtonWidget Id="FindGameButton" Command.Click="ExecuteFindGame" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayButton.Width" SuggestedHeight="!PlayButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="100" Brush="MPLobby.PlayButton" FrictionEnabled="false" GamepadNavigationIndex="0">
+          <Children>
+            <ValueBasedVisibilityWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" WatchType="NotEqual" IndexToBeVisible="1" IndexToWatch="@SelectedSubPageIndex" HorizontalAlignment="Center">
+              <Children>
+            <TextWidget IsVisible="@IsMatchFindPossible" Text="@PlayText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PositionYOffset="0" Brush="MPLobby.PlayButton.Text"/>
+            <TextWidget IsHidden="@IsMatchFindPossible" IsDisabled="true" Text="@MatchFindNotPossibleText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PositionYOffset="5" Brush="MPLobby.PlayButton.Text"/>
+          </Children>
+            </ValueBasedVisibilityWidget>
+            <ValueBasedVisibilityWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"  IndexToBeVisible="1" IndexToWatch="@SelectedSubPageIndex" HorizontalAlignment="Center">
+              <Children>
+                <TextWidget IsVisible="@IsCustomGameStageFindEnabled" Text="@AutoFindText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PositionYOffset="5" Brush="MPLobby.PlayButton.Text"/>
+                <TextWidget IsHidden="@IsCustomGameStageFindEnabled" IsDisabled="true" Text="@MatchFindNotPossibleText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PositionYOffset="5" Brush="MPLobby.PlayButton.Text"/>
+              </Children>
+            </ValueBasedVisibilityWidget>
+          </Children>
+        </ButtonWidget>
+
+        <TextWidget Id="SelectionInfo" Text="@SelectionInfoText" IsDisabled="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="30" Brush="MPLobby.Matchmaking.SelectionInfoText"/>
+
+      </Children>
+    </MultiplayerLobbyMatchmakingScreenWidget>
+  </Window>
+</Prefab>

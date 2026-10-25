@@ -1,0 +1,4238 @@
+<prefabs>
+	<game_entity name="sp_merchant_notary_talking_set" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<children>
+			<game_entity name="sp_npc_wait" old_prefab_name="" guid="{DDEE3D20-70FB-4FB9-A123-B648C4FC324F}">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="sp_notable_merchant"/>
+				</tags>
+				<transform position="-0.713, -0.013, 0.000" rotation_euler="0.000, 0.000, -1.552" scale="0.750, 0.750, 1.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" guid="{CBE11D3E-7340-4E4B-B8AF-C528D3EBD737}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<physics mass="1.000"/>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_stand_1"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{7BB3E93E-E5D1-4946-B2EE-83788C581BBD}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="sp_npc_wait" old_prefab_name="" guid="{7BB3E93E-E5D1-4946-B2EE-83788C581BBD}">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="sp_merchant_notary"/>
+				</tags>
+				<transform position="0.500, 0.010, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.750, 0.750, 1.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" guid="{22AFF893-C7FE-4021-B911-9435EE531BD0}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<physics mass="1.000"/>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_stand_1"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{DDEE3D20-70FB-4FB9-A123-B648C4FC324F}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+		</children>
+		<levels>
+			<level name="base"/>
+		</levels>
+		<additional_features>
+			<feature name="apply_factor_color_to_all_components" value="false"/>
+		</additional_features>
+	</game_entity>
+	<game_entity name="sp_gangleader_sitting_and_talking_with_guards_set" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<children>
+			<game_entity name="sp_npc_idle_passive_guard" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sp_gangleader_bodyguard"/>
+				</tags>
+				<transform position="1.206, 0.947, 0.000" rotation_euler="0.000, 0.000, 2.714" scale="0.750, 0.750, 1.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<physics mass="1.000"/>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_stand_1"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{2E4348EF-3D6E-44C8-9B30-0D35DACDBE36}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value="Wall"/>
+									<variable name="ActionMessage" value="Lean"/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="sp_npc_reporter_guard" old_prefab_name="" guid="{09178AF6-21B1-4764-872A-35EF35E8B62B}">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sp_gangleader_bodyguard"/>
+				</tags>
+				<transform position="-0.755, -0.294, 0.000" rotation_euler="0.000, 0.000, -0.748" scale="0.750, 0.750, 1.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" guid="{A63350CC-41AC-438A-BB59-7397AB5BE6F2}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<physics mass="1.000"/>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_stand_1"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{C6D892A9-8F01-42A0-8D20-CD6BD14DF214}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value="Wall"/>
+									<variable name="ActionMessage" value="Lean"/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="bd_chair_b" old_prefab_name="" guid="{C6D892A9-8F01-42A0-8D20-CD6BD14DF214}">
+				<tags>
+					<tag name="sp_notable_gangleader"/>
+				</tags>
+				<transform position="0.037, 0.954, 0.000"/>
+				<physics shape="bo_bd_chair_b" override_material="wood" mass="1.000"/>
+				<components>
+					<meta_mesh_component name="bd_chair_b"/>
+				</components>
+				<scripts>
+					<script name="Chair">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="chair_sit_position_right" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="alternative"/>
+						</tags>
+						<transform position="-0.650, 0.033, 0.000" rotation_euler="0.000, 0.000, -3.142" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_right"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value="act_stand_up_to_right"/>
+									<variable name="GroupId" value="1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{09178AF6-21B1-4764-872A-35EF35E8B62B}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="chair_sit_position_left" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="alternative"/>
+						</tags>
+						<transform position="0.586, 0.003, 0.000" rotation_euler="0.000, 0.000, -3.142" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_left"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value="act_stand_up_to_left"/>
+									<variable name="GroupId" value="1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{A63350CC-41AC-438A-BB59-7397AB5BE6F2}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="chair_sit_position_front" old_prefab_name="" guid="{2E4348EF-3D6E-44C8-9B30-0D35DACDBE36}">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="alternative"/>
+						</tags>
+						<transform position="0.000, -0.547, 0.000" rotation_euler="0.000, 0.000, -3.142" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_front"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value="act_stand_up_to_front"/>
+									<variable name="GroupId" value="1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{A63350CC-41AC-438A-BB59-7397AB5BE6F2}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+		</children>
+		<levels>
+			<level name="base"/>
+		</levels>
+		<additional_features>
+			<feature name="apply_factor_color_to_all_components" value="false"/>
+		</additional_features>
+	</game_entity>
+	<game_entity name="sp_preacher_notary_talking_set" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<children>
+			<game_entity name="sp_npc_wait" old_prefab_name="" guid="{A29BB882-EE39-4EDD-BE86-D650E863B6B7}">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="sp_notable_preacher"/>
+				</tags>
+				<transform position="-0.713, -0.013, 0.000" rotation_euler="0.000, 0.000, -1.552" scale="0.750, 0.750, 1.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" guid="{0466CF41-A6FB-48CF-B88A-7B2735FBBA93}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<physics mass="1.000"/>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_stand_1"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{4542D159-6E07-4F71-AC7E-F758B5A98AF5}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="sp_npc_wait" old_prefab_name="" guid="{4542D159-6E07-4F71-AC7E-F758B5A98AF5}">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="sp_merchant_notary"/>
+				</tags>
+				<transform position="0.500, 0.010, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.750, 0.750, 1.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" guid="{F20150F2-3175-4FC3-900B-41CF941D4D44}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<physics mass="1.000"/>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_stand_1"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{A29BB882-EE39-4EDD-BE86-D650E863B6B7}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+		</children>
+		<levels>
+			<level name="base"/>
+		</levels>
+		<additional_features>
+			<feature name="apply_factor_color_to_all_components" value="false"/>
+		</additional_features>
+	</game_entity>
+	<game_entity name="sp_notables_parent" old_prefab_name="">
+		<tags>
+			<tag name="sp_notables_parent"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<children>
+			<game_entity name="sp_merchant_notary_talking_set" old_prefab_name="">
+				<tags>
+					<tag name="merchant_notary_talking_set"/>
+				</tags>
+				<transform position="0.050, 0.119, 0.000"/>
+				<physics mass="1.000"/>
+				<children>
+					<game_entity name="sp_merchant" old_prefab_name="" guid="{C27E2982-5C30-4A00-A2C2-5EAA49FB830C}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_notable_merchant"/>
+							<tag name="hold_tag_always"/>
+						</tags>
+						<transform position="-0.713, -0.013, 0.000" rotation_euler="0.000, 0.000, -1.552" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{4215C7CB-A511-4FDB-9DE3-315E70800950}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{2C165EE2-400E-4FC5-94B8-C67829EC7BB3}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="sp_merchant_notary" old_prefab_name="" guid="{2C165EE2-400E-4FC5-94B8-C67829EC7BB3}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_merchant_notary"/>
+							<tag name="unaffected_by_area"/>
+						</tags>
+						<transform position="0.500, 0.010, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{9BE1BF61-DB22-4691-832E-26CB8532CC38}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{C27E2982-5C30-4A00-A2C2-5EAA49FB830C}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="sp_preacher_notary_talking_set" old_prefab_name="">
+				<tags>
+					<tag name="preacher_notary_talking_set"/>
+				</tags>
+				<transform position="0.050, 0.142, 0.000"/>
+				<physics mass="1.000"/>
+				<children>
+					<game_entity name="sp_preacher" old_prefab_name="" guid="{E54B7F4E-2853-45B5-A055-5C62E822490A}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_notable_preacher"/>
+							<tag name="hold_tag_always"/>
+						</tags>
+						<transform position="-0.713, -0.013, 0.000" rotation_euler="0.000, 0.000, -1.552" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{BC3422E9-F578-4BEB-8B72-69D324F7314A}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{D260351C-82C8-4B51-A768-0D92235655BA}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="sp_preacher_notary" old_prefab_name="" guid="{D260351C-82C8-4B51-A768-0D92235655BA}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_preacher_notary"/>
+							<tag name="unaffected_by_area"/>
+						</tags>
+						<transform position="0.500, 0.010, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{11773AF1-6C98-4EBE-AF36-4896B97A29B5}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{E54B7F4E-2853-45B5-A055-5C62E822490A}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="sp_gangleader_sitting_and_talking_with_guards_set" old_prefab_name="">
+				<tags>
+					<tag name="gangleader_sitting_and_talking_with_guards_set"/>
+				</tags>
+				<transform position="-0.293, -0.725, 0.000"/>
+				<physics mass="1.000"/>
+				<children>
+					<game_entity name="sp_npc_idle_passive_guard" old_prefab_name="">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_gangleader_bodyguard"/>
+							<tag name="unaffected_by_area"/>
+						</tags>
+						<transform position="1.189, 0.787, 0.000" rotation_euler="0.000, 0.000, 2.714" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{779E53AE-DBAB-4A34-BF54-567F6BD764F3}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value="Wall"/>
+											<variable name="ActionMessage" value="Lean"/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="sp_npc_reporter_guard" old_prefab_name="" guid="{C4AA6F2D-AD00-4B76-BA1D-1295E5E90996}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_gangleader_bodyguard"/>
+							<tag name="unaffected_by_area"/>
+						</tags>
+						<transform position="-1.240, 0.653, 0.000" rotation_euler="0.000, 0.000, -2.571" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{AFCF4734-9146-443C-8B31-C5DB96F17333}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{FF03B661-78B7-47B9-BBFE-CEC7991AE36D}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value="Wall"/>
+											<variable name="ActionMessage" value="Lean"/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="bd_chair_b" old_prefab_name="" guid="{FF03B661-78B7-47B9-BBFE-CEC7991AE36D}">
+						<tags>
+							<tag name="sp_notable_gangleader"/>
+							<tag name="hold_tag_always"/>
+						</tags>
+						<transform position="0.037, 0.954, 0.000"/>
+						<physics shape="bo_bd_chair_b" override_material="wood" mass="1.000"/>
+						<components>
+							<meta_mesh_component name="bd_chair_b"/>
+						</components>
+						<scripts>
+							<script name="Chair">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="chair_sit_position_right" old_prefab_name="">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="alternative"/>
+								</tags>
+								<transform position="-0.650, 0.033, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+								<physics mass="1.000"/>
+								<components>
+									<meta_mesh_component name="animation_stand_arrow_blue"/>
+								</components>
+								<scripts>
+									<script name="ChairUsePoint">
+										<variables>
+											<variable name="NearTable" value="false"/>
+											<variable name="NearTableLoopAction" value=""/>
+											<variable name="NearTablePairLoopAction" value=""/>
+											<variable name="Drink" value="false"/>
+											<variable name="DrinkLoopAction" value=""/>
+											<variable name="DrinkPairLoopAction" value=""/>
+											<variable name="DrinkRightHandItem" value=""/>
+											<variable name="DrinkLeftHandItem" value=""/>
+											<variable name="Eat" value="false"/>
+											<variable name="EatLoopAction" value=""/>
+											<variable name="EatPairLoopAction" value=""/>
+											<variable name="EatRightHandItem" value=""/>
+											<variable name="EatLeftHandItem" value=""/>
+											<variable name="ArriveAction" value="act_sit_down_from_right"/>
+											<variable name="LoopStartAction" value="act_sit_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value="act_stand_up_to_right"/>
+											<variable name="GroupId" value="1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{C4AA6F2D-AD00-4B76-BA1D-1295E5E90996}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+							<game_entity name="chair_sit_position_left" old_prefab_name="">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="alternative"/>
+								</tags>
+								<transform position="0.586, 0.003, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+								<physics mass="1.000"/>
+								<components>
+									<meta_mesh_component name="animation_stand_arrow_blue"/>
+								</components>
+								<scripts>
+									<script name="ChairUsePoint">
+										<variables>
+											<variable name="NearTable" value="false"/>
+											<variable name="NearTableLoopAction" value=""/>
+											<variable name="NearTablePairLoopAction" value=""/>
+											<variable name="Drink" value="false"/>
+											<variable name="DrinkLoopAction" value=""/>
+											<variable name="DrinkPairLoopAction" value=""/>
+											<variable name="DrinkRightHandItem" value=""/>
+											<variable name="DrinkLeftHandItem" value=""/>
+											<variable name="Eat" value="false"/>
+											<variable name="EatLoopAction" value=""/>
+											<variable name="EatPairLoopAction" value=""/>
+											<variable name="EatRightHandItem" value=""/>
+											<variable name="EatLeftHandItem" value=""/>
+											<variable name="ArriveAction" value="act_sit_down_from_left"/>
+											<variable name="LoopStartAction" value="act_sit_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value="act_stand_up_to_left"/>
+											<variable name="GroupId" value="1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{C4AA6F2D-AD00-4B76-BA1D-1295E5E90996}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+							<game_entity name="chair_sit_position_front" old_prefab_name="" guid="{779E53AE-DBAB-4A34-BF54-567F6BD764F3}">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="alternative"/>
+								</tags>
+								<transform position="0.000, -0.585, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="0.750, 0.750, 1.000"/>
+								<physics mass="1.000"/>
+								<components>
+									<meta_mesh_component name="animation_stand_arrow_blue"/>
+								</components>
+								<scripts>
+									<script name="ChairUsePoint">
+										<variables>
+											<variable name="NearTable" value="false"/>
+											<variable name="NearTableLoopAction" value=""/>
+											<variable name="NearTablePairLoopAction" value=""/>
+											<variable name="Drink" value="false"/>
+											<variable name="DrinkLoopAction" value=""/>
+											<variable name="DrinkPairLoopAction" value=""/>
+											<variable name="DrinkRightHandItem" value=""/>
+											<variable name="DrinkLeftHandItem" value=""/>
+											<variable name="Eat" value="false"/>
+											<variable name="EatLoopAction" value=""/>
+											<variable name="EatPairLoopAction" value=""/>
+											<variable name="EatRightHandItem" value=""/>
+											<variable name="EatLeftHandItem" value=""/>
+											<variable name="ArriveAction" value="act_sit_down_from_front"/>
+											<variable name="LoopStartAction" value="act_sit_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value="act_stand_up_to_front"/>
+											<variable name="GroupId" value="1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{C4AA6F2D-AD00-4B76-BA1D-1295E5E90996}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="sp_artisan_notary_talking_set" old_prefab_name="">
+				<tags>
+					<tag name="sp_artisan_notary_talking_set"/>
+				</tags>
+				<transform position="0.050, 0.142, 0.000"/>
+				<physics mass="1.000"/>
+				<children>
+					<game_entity name="sp_artisan" old_prefab_name="" guid="{96203D01-8C76-4483-9C43-B149754A6ADF}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_notable_artisan"/>
+							<tag name="hold_tag_always"/>
+						</tags>
+						<transform position="-0.713, -0.013, 0.000" rotation_euler="0.000, 0.000, -1.552" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{7D9F560C-4D4A-43BF-A180-DC08631EF4D9}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{B8F13D86-3A4E-4EDE-99E6-ED65DC879E23}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="sp_artisan_notary" old_prefab_name="" guid="{B8F13D86-3A4E-4EDE-99E6-ED65DC879E23}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_artisan_notary"/>
+							<tag name="unaffected_by_area"/>
+						</tags>
+						<transform position="0.500, 0.010, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{A2684E87-6BE5-4326-9D11-F0F094DBA8FB}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{96203D01-8C76-4483-9C43-B149754A6ADF}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="sp_ruralnotable_notary_talking_set" old_prefab_name="">
+				<tags>
+					<tag name="sp_ruralnotable_notary_talking_set"/>
+				</tags>
+				<transform position="0.050, 0.142, 0.000"/>
+				<physics mass="1.000"/>
+				<children>
+					<game_entity name="sp_rural_notable" old_prefab_name="" guid="{84999FB7-B8EB-4419-A3C0-69223CF6A39F}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_notable_rural_notable"/>
+							<tag name="hold_tag_always"/>
+						</tags>
+						<transform position="-0.713, -0.013, 0.000" rotation_euler="0.000, 0.000, -1.552" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{B4809827-950E-4BDE-BE12-C08D82E7E535}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{799E084B-9F11-4704-976C-7596D48BD449}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="sp_rural_notable_notary" old_prefab_name="" guid="{799E084B-9F11-4704-976C-7596D48BD449}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="sp_rural_notable_notary"/>
+							<tag name="unaffected_by_area"/>
+						</tags>
+						<transform position="0.500, 0.010, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" guid="{319E101D-29CA-437F-B309-CF5934DE38B7}">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<physics mass="1.000"/>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_stand_1"/>
+											<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{84999FB7-B8EB-4419-A3C0-69223CF6A39F}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="DescriptionMessage" value=""/>
+											<variable name="ActionMessage" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+								<additional_features>
+									<feature name="apply_factor_color_to_all_components" value="false"/>
+								</additional_features>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+		</children>
+		<levels>
+			<level name="base"/>
+		</levels>
+		<additional_features>
+			<feature name="apply_factor_color_to_all_components" value="false"/>
+		</additional_features>
+	</game_entity>
+	<game_entity name="bd_chair_c_tavern_set_with_tavern_wench" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics mass="1.000"/>
+		<children>
+			<game_entity name="bd_chair_c_right" old_prefab_name="" guid="{E7321F7E-C380-4D60-99EB-594DF8AA53AD}">
+				<tags>
+					<tag name="npc_wait"/>
+					<tag name="npc_common"/>
+					<tag name="npc_hangout"/>
+					<tag name="sp_notable"/>
+				</tags>
+				<transform position="0.650, 0.000, 0.000"/>
+				<physics shape="bo_bd_chair_c" override_material="wood" mass="1.000"/>
+				<components>
+					<meta_mesh_component name="bd_chair_c"/>
+				</components>
+				<scripts>
+					<script name="Chair">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="chair_sit_position_right" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="alternative"/>
+						</tags>
+						<transform position="0.600, -0.100, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_right"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value="act_sit_talk_to_barmaid_right"/>
+									<variable name="LeaveAction" value="act_stand_up_to_right"/>
+									<variable name="GroupId" value="1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{7C099BB4-B7AA-42FA-8A18-5301D0E184D8}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="chair_sit_position_left" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="alternative"/>
+						</tags>
+						<transform position="-0.600, -0.100, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_left"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value="act_sit_talk_to_barmaid_right"/>
+									<variable name="LeaveAction" value="act_stand_up_to_left"/>
+									<variable name="GroupId" value="1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{7C099BB4-B7AA-42FA-8A18-5301D0E184D8}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="chair_sit_position_front" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="alternative"/>
+						</tags>
+						<transform position="0.000, 0.517, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_front"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value="act_sit_talk_to_barmaid_right"/>
+									<variable name="LeaveAction" value="act_stand_up_to_front"/>
+									<variable name="GroupId" value="1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{7C099BB4-B7AA-42FA-8A18-5301D0E184D8}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+					<game_entity name="chair_sit_position_back" old_prefab_name="">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="alternative"/>
+						</tags>
+						<transform position="0.000, -0.600, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.750, 0.750, 1.000"/>
+						<physics mass="1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_sit_down_from_back"/>
+									<variable name="LoopStartAction" value="act_sit_1"/>
+									<variable name="PairLoopStartAction" value="act_sit_talk_to_barmaid_right"/>
+									<variable name="LeaveAction" value="act_stand_up_to_back"/>
+									<variable name="GroupId" value="1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{7C099BB4-B7AA-42FA-8A18-5301D0E184D8}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+			<game_entity name="tavern_wench" old_prefab_name="" guid="{CB6F5590-8F7B-47FD-A119-9E102726874B}">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sp_tavern_wench"/>
+				</tags>
+				<transform position="1.641, 0.641, 0.000" rotation_euler="0.000, 0.000, 1.611" scale="0.750, 0.750, 1.000"/>
+				<physics mass="1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" guid="{7C099BB4-B7AA-42FA-8A18-5301D0E184D8}">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<physics mass="1.000"/>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value="act_greeting_left_1"/>
+									<variable name="LoopStartAction" value="act_stand_1"/>
+									<variable name="PairLoopStartAction" value="act_barmaid_serve_and_talk_to_customer_right"/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="PairEntity" value="{E7321F7E-C380-4D60-99EB-594DF8AA53AD}"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="30.000"/>
+									<variable name="MaxWaitInSeconds" value="120.000"/>
+									<variable name="WaypointTag" value="aiwaypoint"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="DescriptionMessage" value=""/>
+									<variable name="ActionMessage" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<levels>
+							<level name="base"/>
+						</levels>
+						<additional_features>
+							<feature name="apply_factor_color_to_all_components" value="false"/>
+						</additional_features>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="base"/>
+				</levels>
+				<additional_features>
+					<feature name="apply_factor_color_to_all_components" value="false"/>
+				</additional_features>
+			</game_entity>
+		</children>
+		<levels>
+			<level name="base"/>
+		</levels>
+		<additional_features>
+			<feature name="apply_factor_color_to_all_components" value="false"/>
+		</additional_features>
+	</game_entity>
+	<game_entity name="sp_npc_musicians_a" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="MusicianGroup">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="musicians" old_prefab_name="" mobility="1">
+				<transform position="0.028, 0.027, -0.001" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+				<physics>
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<children>
+					<game_entity name="sp_standing_musician" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="musician"/>
+							<tag name="npc_wait"/>
+						</tags>
+						<transform position="1.668, 0.562, 0.002" rotation_euler="0.000, 0.000, 0.292" scale="2.000, 2.000, 2.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="play_music_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_play_dombra_stand"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="-1.000"/>
+											<variable name="MaxWaitInSeconds" value="-1.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="bd_chair_b_musician" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="musician"/>
+						</tags>
+						<transform position="-1.428, 0.711, 0.000" rotation_euler="0.000, 0.000, 2.976" scale="2.000, 2.000, 2.000"/>
+						<physics shape="bo_bd_chair_b" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_chair_b"/>
+						</components>
+						<scripts>
+							<script name="Chair">
+								<variables>
+									<variable name="ChairType" value="Chair"/>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="chair_sit_position_front" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="alternative"/>
+								</tags>
+								<transform position="0.040, -0.500, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+								<components>
+									<meta_mesh_component name="animation_stand_arrow_blue"/>
+								</components>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="ArriveAction" value="act_sit_down_from_front"/>
+											<variable name="LoopStartAction" value="act_play_bodhran_sitting"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value="act_stand_up_to_front"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="180.000"/>
+											<variable name="MaxWaitInSeconds" value="420.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="audience" old_prefab_name="" mobility="1">
+				<transform position="1.530, 2.211, 0.287" rotation_euler="0.000, 0.000, 0.332"/>
+				<children>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-4.131, 0.030, -0.287" rotation_euler="0.000, 0.000, -0.815" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-1.792, 1.578, -0.287" rotation_euler="0.000, 0.000, -3.126" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value="act_greeting_front_2"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="0.876, 0.309, -0.287" rotation_euler="0.000, 0.000, 2.418" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value="act_greeting_front_2"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+							<tag name="sp_notable"/>
+						</tags>
+						<transform position="0.719, -4.182, -0.287" rotation_euler="0.000, 0.000, -0.098" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-0.152, -2.913, -0.287" rotation_euler="0.000, 0.000, 0.171" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_npc_musicians_b" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="MusicianGroup">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="musicians" old_prefab_name="" mobility="1">
+				<transform position="0.028, 0.027, -0.001" rotation_euler="0.000, 0.000, -0.002" scale="0.500, 0.500, 0.500"/>
+				<physics>
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<children>
+					<game_entity name="sp_standing_musician" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="musician"/>
+							<tag name="npc_wait"/>
+						</tags>
+						<transform position="1.723, 0.285, 0.002" rotation_euler="0.000, 0.000, 0.292" scale="2.000, 2.000, 2.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="play_music_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="LoopAction" value="act_play_guitar_play"/>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_play_dombra_stand"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="-1.000"/>
+											<variable name="MaxWaitInSeconds" value="-1.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_standing_musician" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="musician"/>
+							<tag name="npc_wait"/>
+						</tags>
+						<transform position="-1.555, 0.328, 0.002" rotation_euler="0.000, 0.000, -0.036" scale="2.000, 2.000, 2.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="play_music_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="LoopAction" value="act_play_guitar_play"/>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_play_dombra_stand"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="-1.000"/>
+											<variable name="MaxWaitInSeconds" value="-1.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="audience" old_prefab_name="" mobility="1">
+				<transform position="1.479, 2.213, 0.287" rotation_euler="0.000, 0.000, 0.332"/>
+				<children>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-3.599, 0.808, -0.287" rotation_euler="0.000, 0.000, -2.655" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{66A2B325-4121-4948-B0A1-5CE64B8CB9E4}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-2.847, 1.598, -0.287" rotation_euler="0.000, 0.000, -2.808" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value="act_greeting_front_2"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{66A2B325-4121-4948-B0A1-5CE64B8CB9E4}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-0.956, 1.307, -0.287" rotation_euler="0.000, 0.000, 2.775" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value="act_greeting_front_2"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{66A2B325-4121-4948-B0A1-5CE64B8CB9E4}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+							<tag name="sp_notable"/>
+						</tags>
+						<transform position="0.514, -0.537, -0.287" rotation_euler="0.000, 0.000, 1.900" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{66A2B325-4121-4948-B0A1-5CE64B8CB9E4}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-0.078, 0.758, -0.287" rotation_euler="0.000, 0.000, 2.308" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="PairEntity" value="{66A2B325-4121-4948-B0A1-5CE64B8CB9E4}"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_npc_musicians_c" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="MusicianGroup">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="musicians" old_prefab_name="" mobility="1">
+				<transform position="0.028, 0.027, -0.001" rotation_euler="0.000, 0.000, 0.000" scale="0.500, 0.500, 0.500"/>
+				<physics>
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<children>
+					<game_entity name="bd_chair_b_musician" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="musician"/>
+						</tags>
+						<transform position="-1.634, 0.503, 0.002" rotation_euler="0.000, 0.000, 2.976" scale="2.000, 2.000, 2.000"/>
+						<physics shape="bo_bd_chair_b" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_chair_b"/>
+						</components>
+						<scripts>
+							<script name="Chair">
+								<variables>
+									<variable name="ChairType" value="Chair"/>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="chair_sit_position_front" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="alternative"/>
+								</tags>
+								<transform position="0.030, -0.500, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+								<components>
+									<meta_mesh_component name="animation_stand_arrow_blue"/>
+								</components>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="ArriveAction" value="act_sit_down_from_front"/>
+											<variable name="LoopStartAction" value="act_play_flute_sitting"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value="act_stand_up_to_front"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="180.000"/>
+											<variable name="MaxWaitInSeconds" value="420.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="bd_chair_b_musician" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="musician"/>
+						</tags>
+						<transform position="1.655, 0.487, 0.002" rotation_euler="0.000, 0.000, -2.869" scale="2.000, 2.000, 2.000"/>
+						<physics shape="bo_bd_chair_b" override_material="wood"/>
+						<components>
+							<meta_mesh_component name="bd_chair_b"/>
+						</components>
+						<scripts>
+							<script name="Chair">
+								<variables>
+									<variable name="ChairType" value="Chair"/>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="chair_sit_position_front" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="alternative"/>
+								</tags>
+								<transform position="0.000, -0.500, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+								<components>
+									<meta_mesh_component name="animation_stand_arrow_blue"/>
+								</components>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="ArriveAction" value="act_sit_down_from_front"/>
+											<variable name="LoopStartAction" value="act_play_bodhran_sitting"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value="act_stand_up_to_front"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="180.000"/>
+											<variable name="MaxWaitInSeconds" value="420.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="audience" old_prefab_name="" mobility="1">
+				<transform position="1.427, 2.104, 0.287" rotation_euler="0.000, 0.000, 0.332"/>
+				<children>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-3.599, 0.808, -0.287" rotation_euler="0.000, 0.000, -2.655" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-2.847, 1.598, -0.287" rotation_euler="0.000, 0.000, -2.808" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value="act_greeting_front_2"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-0.956, 1.307, -0.287" rotation_euler="0.000, 0.000, 2.775" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value="act_greeting_front_2"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+							<tag name="sp_notable"/>
+						</tags>
+						<transform position="0.514, -0.537, -0.287" rotation_euler="0.000, 0.000, 1.900" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-0.078, 0.758, -0.287" rotation_euler="0.000, 0.000, 2.308" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="RightHandItemBone" value="ItemR"/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="LeftHandItemBone" value="ItemL"/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="KeepOldVisibility" value="false"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_npc_musicians_d" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="MusicianGroup">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="musicians" old_prefab_name="" mobility="1">
+				<transform position="0.028, 0.027, -0.001" rotation_euler="0.000, 0.000, -0.002" scale="0.500, 0.500, 0.500"/>
+				<physics>
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<children>
+					<game_entity name="sp_standing_musician" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="musician"/>
+							<tag name="npc_wait"/>
+						</tags>
+						<transform position="0.450, 0.000, 0.002" rotation_euler="0.000, 0.000, 0.056" scale="2.000, 2.000, 2.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="play_music_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="LoopAction" value="act_play_guitar_play"/>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_play_dombra_stand"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="-1.000"/>
+											<variable name="MaxWaitInSeconds" value="-1.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_standing_musician" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="musician"/>
+							<tag name="npc_wait"/>
+						</tags>
+						<transform position="-3.080, 0.625, 0.002" rotation_euler="0.000, 0.000, -0.235" scale="2.000, 2.000, 2.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="play_music_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="LoopAction" value="act_play_guitar_play"/>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_play_dombra_stand"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="-1.000"/>
+											<variable name="MaxWaitInSeconds" value="-1.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_standing_musician" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="musician"/>
+							<tag name="npc_wait"/>
+						</tags>
+						<transform position="3.558, 1.268, 0.002" rotation_euler="0.000, 0.000, 0.354" scale="2.000, 2.000, 2.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="play_music_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="LoopAction" value="act_play_guitar_play"/>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_play_dombra_stand"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="-1.000"/>
+											<variable name="MaxWaitInSeconds" value="-1.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_dancer" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_dancer"/>
+						</tags>
+						<transform position="0.170, 3.728, 0.002" rotation_euler="0.000, 0.000, -0.069" scale="1.500, 1.500, 2.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="play_music_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="PlayMusicPoint">
+										<variables>
+											<variable name="LoopAction" value="act_dance_norse"/>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_dance_norse"/>
+											<variable name="PairLoopStartAction" value=""/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="-1.000"/>
+											<variable name="MaxWaitInSeconds" value="-1.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="audience" old_prefab_name="" mobility="1">
+				<transform position="1.517, 3.706, 0.287" rotation_euler="0.000, 0.000, 0.332"/>
+				<children>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-3.599, 0.808, -0.287" rotation_euler="0.000, 0.000, -2.655" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-2.847, 1.598, -0.287" rotation_euler="0.000, 0.000, -2.808" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value="act_greeting_front_2"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-0.956, 1.307, -0.287" rotation_euler="0.000, 0.000, 2.775" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value="act_greeting_front_2"/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+							<tag name="sp_notable"/>
+						</tags>
+						<transform position="0.196, -0.530, -0.287" rotation_euler="0.000, 0.000, 1.870" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-0.184, 0.481, -0.287" rotation_euler="-0.024, 0.028, 2.346" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-1.967, 1.517, -0.287" rotation_euler="0.000, 0.000, -3.016" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<transform position="-4.717, 0.817, -0.287" rotation_euler="0.000, 0.000, -2.421" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="sp_npc_applauder" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+							<tag name="sp_notable"/>
+						</tags>
+						<transform position="0.777, -1.388, -0.287" rotation_euler="0.000, 0.000, 1.900" scale="0.750, 0.750, 1.000"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<scripts>
+							<script name="UsablePlace">
+								<variables>
+									<variable name="PilotStandingPointTag" value="Pilot"/>
+									<variable name="AmmoPickUpTag" value="ammopickup"/>
+									<variable name="WaitStandingPointTag" value="Wait"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="animation_point" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<scripts>
+									<script name="AnimationPoint">
+										<variables>
+											<variable name="ArriveAction" value=""/>
+											<variable name="LoopStartAction" value="act_applaud_1"/>
+											<variable name="PairLoopStartAction" value="act_applaud_1"/>
+											<variable name="LeaveAction" value=""/>
+											<variable name="GroupId" value="-1"/>
+											<variable name="RightHandItem" value=""/>
+											<variable name="LeftHandItem" value=""/>
+											<variable name="MinUserToStartInteraction" value="1"/>
+											<variable name="ActivatePairs" value="false"/>
+											<variable name="MinWaitinSeconds" value="30.000"/>
+											<variable name="MaxWaitInSeconds" value="120.000"/>
+											<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+											<variable name="SideDistanceToPivotPoint" value="0.000"/>
+											<variable name="WaypointTag" value="aiwaypoint"/>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

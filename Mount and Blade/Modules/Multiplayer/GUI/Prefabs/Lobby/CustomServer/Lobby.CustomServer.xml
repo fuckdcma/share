@@ -1,0 +1,431 @@
+<Prefab>
+  <Constants>
+    <Constant Name="TopHeader.Width" Value="1481" />
+    <Constant Name="TopHeader.Height" BrushName="MPLobby.TopHeader.Background" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="PlayButton.Width" BrushName="MPLobby.PlayButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayButton.Height" BrushName="MPLobby.PlayButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="RefreshButton.Width" BrushName="RefreshButton.Flat" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="RefreshButton.Height" BrushName="RefreshButton.Flat" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="FavoriteButton.Width" BrushName="MPLobby.CustomServer.FavoriteButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FavoriteButton.Height" BrushName="MPLobby.CustomServer.FavoriteButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="CreateGameButton.Width" BrushName="MPLobby.CustomServer.CreateGameButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CreateGameButton.Height" BrushName="MPLobby.CustomServer.CreateGameButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="CloseButton.Width" BrushName="MPLobby.CustomServer.CloseButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CloseButton.Height" BrushName="MPLobby.CustomServer.CloseButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="CreateGamePanel.Divider.Width" BrushName="MPLobby.CustomServer.CreateGamePanel.Divider" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CreateGamePanel.Divider.Height" BrushName="MPLobby.CustomServer.CreateGamePanel.Divider" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="CreateGamePanel.TextInputBackground.Width" BrushName="MPLobby.CustomServer.CreateGamePanel.TextInputBackground" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CreateGamePanel.TextInputBackground.Height" BrushName="MPLobby.CustomServer.CreateGamePanel.TextInputBackground" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="CreateGamePanel.DropdownButton.Width" BrushName="MPLobby.CustomServer.CreateGamePanel.DropdownButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CreateGamePanel.DropdownButton.Height" BrushName="MPLobby.CustomServer.CreateGamePanel.DropdownButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="FiltersPanel.Background.Width" BrushName="MPLobby.CustomServer.FiltersPanel.Background" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FiltersPanel.Background.Height" BrushName="MPLobby.CustomServer.FiltersPanel.Background" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="FiltersPanel.SearchBarBackground.Width" BrushName="MPLobby.CustomServer.FiltersPanel.SearchBarBackground" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FiltersPanel.SearchBarBackground.Height" BrushName="MPLobby.CustomServer.FiltersPanel.SearchBarBackground" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Columns.Favorites.Width" Value="50"/>
+    <Constant Name="Columns.Password.Width" Value="60"/>
+    <Constant Name="Columns.HostName.Width" Value="300"/>
+    <Constant Name="Columns.GameType.Width" Value="251"/>
+    <Constant Name="Columns.Faction.Width" Value="130"/>
+    <Constant Name="Columns.Players.Width" Value="125"/>
+    <Constant Name="Columns.Ping.Width" Value="80"/>
+    <Constant Name="Columns.PremadeMatchType.Width" Value="125"/>
+
+    <Constant Name="Columns.Horizontal.Margin" Value="2"/>
+
+    <Constant Name="Rows.Header.Height" Value="40" />
+    <Constant Name="Rows.Header.Text.MarginLeft" Value="10" />
+    <Constant Name="Rows.Header.Text.PositionYOffset" Value="0" />
+    <Constant Name="Rows.Item.Height" Value="34" />
+    <Constant Name="Rows.Item.Text.PositionYOffset" Value="0" />
+  </Constants>
+  <VisualDefinitions>
+    <VisualDefinition Name="FiltersPanel" TransitionDuration="0.15">
+      <VisualState PositionXOffset="0" State="Default" />
+      <VisualState PositionXOffset="!FiltersPanel.Background.Width" State="Disabled" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+    <MultiplayerLobbyCustomServerScreenWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" DoNotAcceptEvents="true" IsInParty="@IsInParty" IsPartyLeader="@IsPartyLeader" >
+      <Children>
+        <!--Center Panel!-->
+        <Widget Id="CenterPanel" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" SuggestedWidth="1508" SuggestedHeight="700" MarginTop="0" MarginRight="30" Sprite="server_browser_canvas_9" ExtendTop="37" ExtendBottom="37" DoNotUseCustomScaleAndChildren="true">
+          <Children>
+            <Widget Id="JoinGamePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsHidden="@IsCreateGamePanelActive">
+              <Children>
+
+                <!--Headers-->
+                <NavigationScopeTargeter ScopeID="LobbyCustomServerSortControllersScope" ScopeParent="..\SortController" ScopeMovements="Horizontal" />
+                <NavigatableListPanel DataSource="{SortController}" Id="SortController" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="12" MarginLeft="11" MarginRight="23" RenderLate="true">
+                  <Children>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.Favorites.Width" SuggestedHeight="!Rows.Header.Height" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByFavorites" IsSelected="@IsFavoritesSelected" SortState="@CurrentSortState" SortVisualWidget="FavoriteSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" MarginRight="5" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.Favorite.Filter" />
+                        <BrushWidget Id="FavoriteSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.Password.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="5" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByPassword" IsSelected="@IsPasswordSelected" SortState="@CurrentSortState" SortVisualWidget="PasswordSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.Lock" />
+                        <BrushWidget Id="PasswordSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget IsHidden="@IsPremadeMatchesList" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.HostName.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByHost" IsSelected="@IsHostSelected" SortState="@CurrentSortState" SortVisualWidget="HostNameSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <BrushWidget Id="HostNameSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@HostText" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByServerName" IsSelected="@IsServerNameSelected" SortState="@CurrentSortState" SortVisualWidget="ServerNameSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@ServerNameText" />
+                        <BrushWidget Id="ServerNameSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget IsVisible="@IsPremadeMatchesList" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.Faction.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByFirstFaction" IsSelected="@IsFirstFactionSelected" SortState="@CurrentSortState" SortVisualWidget="FirstFactionSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@FirstFactionText" />
+                        <BrushWidget Id="FirstFactionSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget IsVisible="@IsPremadeMatchesList" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.Faction.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortBySecondFaction" IsSelected="@IsSecondFactionSelected" SortState="@CurrentSortState" SortVisualWidget="SecondFactionSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@SecondFactionText" />
+                        <BrushWidget Id="SecondFactionSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget IsVisible="@IsPremadeMatchesList" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.Faction.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByRegion" IsSelected="@IsRegionSelected" SortState="@CurrentSortState" SortVisualWidget="RegionSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@RegionText" />
+                        <BrushWidget Id="RegionSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.GameType.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByGameType" IsSelected="@IsGameTypeSelected" SortState="@CurrentSortState" SortVisualWidget="GameTypeSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@GameTypeText" />
+                        <BrushWidget Id="GameTypeSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget IsHidden="@IsPremadeMatchesList" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.Players.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByPlayerCount" IsSelected="@IsPlayerCountSelected" SortState="@CurrentSortState" SortVisualWidget="PlayerCountSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <BrushWidget Id="PlayerCountSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@PlayerCountText" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget IsVisible="@IsPingInfoAvailable" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.Ping.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByPing" IsSelected="@IsPingSelected" SortState="@CurrentSortState" SortVisualWidget="PingSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <BrushWidget Id="PingSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@PingText" />
+                      </Children>
+                    </SortButtonWidget>
+
+                    <SortButtonWidget IsVisible="@IsPremadeMatchesList" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.PremadeMatchType.Width" SuggestedHeight="!Rows.Header.Height" MarginLeft="2" MarginRight="2" Brush="MPLobby.CustomServer.ServerList.TopHeader" Command.Click="ExecuteSortByPremadeMatchType" IsSelected="@IsPremadeMatchTypeSelected" SortState="@CurrentSortState" SortVisualWidget="PremadeMatchTypeSortVisualWidget" UpdateChildrenStates="true">
+                      <Children>
+                        <BrushWidget Id="PremadeMatchTypeSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.CustomServer.SortArrow" />
+                        <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.CustomServer.ServerList.TopHeaderText" ClipContents="false" MarginTop="5" Text="@PremadeMatchTypeText" />
+                      </Children>
+                    </SortButtonWidget>
+
+                  </Children>
+                </NavigatableListPanel>
+
+                <!--List Of Games-->
+                <ScrollablePanel Id="ScrollablePanel" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" InnerPanel="MyClipRect\InnerPanel" ClipRect="MyClipRect" MarginTop="57" MarginBottom="12" MarginRight="22" MarginLeft="11" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalScrollbar="..\ScrollbarContainer\Scrollbar" AutoHideScrollBars="true">
+                  <Children>
+                    <NavigationScopeTargeter ScopeID="LobbyCustomServerGamesScope" ScopeParent="..\MyClipRect" ScopeMovements="Vertical" />
+                    <Widget Id="MyClipRect" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" HorizontalAlignment="Center" ClipContents="true" AlphaFactor="0.75">
+                      <Children>
+                        <NavigatableListPanel Id="InnerPanel" DataSource="{GameList}" StackLayout.LayoutMethod = "VerticalTopToBottom" WidthSizePolicy = "StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" HorizontalAlignment="Center" MarginRight="1" >
+                          <ItemTemplate>
+                            <ButtonWidget Id="GameItemTuple" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" IsSelected="@IsSelected">
+                              <Children>
+
+                                <ButtonWidget Id="FavoritesButton" ClipContents="true" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Columns.Favorites.Width" SuggestedHeight="!Rows.Item.Height" HorizontalAlignment="Left" VerticalAlignment="Center" MarginBottom="5" Command.Click="ExecuteFavorite" DominantSelectedState="false" IsSelected="@IsSelected" >
+                                  <Children>
+                                    <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!TopHeader.Width" Brush="MPLobby.CustomServer.ServerList.ItemBg"  />
+                                    <BoolBrushChangerBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" HorizontalAlignment="Center" VerticalAlignment="Center" FalseBrush="MPLobby.CustomServer.ServerList.Favorite" TrueBrush="MPLobby.CustomServer.ServerList.Favorite.Filled" BooleanCheck="@IsFavorite"/>
+                                  </Children>
+                                </ButtonWidget>
+                                
+                                <ToggleStateButtonWidget ButtonType="Toggle" UpdateChildrenStates="true" AllowSwitchOff="false" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="!Rows.Item.Height" MarginLeft="55" MarginBottom="5" Command.Click="ExecuteSelect" Command.DoubleClick="ExecuteJoin" Command.AlternateClick="ExecuteViewHostOptions" DoNotUseCustomScaleAndChildren="true" IsSelected="@IsSelected" >
+                                  <Children>
+                                    <HintWidget DataSource="{LoadedModulesHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+
+                                    <ListPanel Id="ListPanel" DoNotPassEventsToChildren="true" DoNotAcceptEvents="true" UpdateChildrenStates="true" StackLayout.LayoutMethod="HorizontalLeftToRight" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+                                      <Children>
+
+                                        <BrushWidget Id="PasswordButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Password.Width" >
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!TopHeader.Width" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <ImageWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" VerticalAlignment="Center" HorizontalAlignment="Center" PositionYOffset="!Rows.Header.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.Lock" IsVisible="@IsPasswordProtected"/>
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget IsHidden="@IsClanMatchItem" Id="HostNameButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.HostName.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!TopHeader.Width" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="22" MarginLeft="9" VerticalAlignment="Center" Sprite="MPLobby\CustomServer\official_server" IsVisible="@IsOfficialServer" />
+                                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="22" MarginLeft="9" VerticalAlignment="Center" Sprite="MPLobby\CustomServer\community_server" IsVisible="@IsCommunityServer" />
+                                            <OnlineImageTextureWidget ImageSizePolicy="OriginalSize" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="32" SuggestedHeight="32" MarginLeft="9" VerticalAlignment="Center" OnlineImageSourceUrl="https://cdn.taleworlds.com/bannerlord-ingame/server_provider.png" IsVisible="@IsByOfficialServerProvider" />
+                                            <TextWidget Text="@HostText" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="225" HorizontalAlignment="Center" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText"/>
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget Id="ServerNameButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true"  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" PositionXOffset="-45" SuggestedWidth="!TopHeader.Width" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight" UpdateChildrenStates="true">
+                                              <Children>
+                                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="30" SuggestedWidth="30" IsVisible="@IsAntiCheatEnabled" Sprite="MPLobby\CustomServer\battleye_icon"/>
+                                                <ScrollingTextWidget Text="@NameText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginRight="!Columns.Horizontal.Margin" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText.ServerName" ScrollOnHoverWidget="..\..\..\..\.\" IsAutoScrolling="false"/>
+                                              </Children>
+                                            </ListPanel>
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget IsVisible="@IsClanMatchItem" Id="FirstFactionButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true"  WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Faction.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" PositionXOffset="-45" SuggestedWidth="!TopHeader.Width" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <ScrollingTextWidget Text="@FirstFactionName" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Faction.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText" ScrollOnHoverWidget="..\..\..\.\" IsAutoScrolling="false"/>
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget IsVisible="@IsClanMatchItem" Id="SecondFactionSortButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Faction.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" PositionXOffset="-45" SuggestedWidth="!TopHeader.Width" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <ScrollingTextWidget  Text="@SecondFactionName" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Faction.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText" ScrollOnHoverWidget="..\..\..\.\" IsAutoScrolling="false"/>
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget IsVisible="@IsClanMatchItem" Id="RegionSortButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Faction.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" PositionXOffset="-45" SuggestedWidth="!TopHeader.Width" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <ScrollingTextWidget  Text="@RegionName" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Faction.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText" ScrollOnHoverWidget="..\..\..\.\" IsAutoScrolling="false"/>
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget Id="GameTypeSortButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.GameType.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!TopHeader.Width" PositionXOffset="-649" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <ScrollingTextWidget Text="@GameTypeText" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.GameType.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText" ScrollOnHoverWidget="..\..\..\.\" IsAutoScrolling="false"/>
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget IsHidden="@IsClanMatchItem" Id="PlayerCountButton"  ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true"   WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Players.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!TopHeader.Width" PositionXOffset="-1210" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <TextWidget Text="@PlayerCountText" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Players.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText" />
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget IsVisible="@IsPingInfoAvailable" Id="PingSortButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Ping.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!TopHeader.Width" PositionXOffset="-1210" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <TextWidget Text="@PingText" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Ping.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText" />
+                                          </Children>
+                                        </BrushWidget>
+
+                                        <BrushWidget IsVisible="@IsClanMatchItem" Id="PremadeMatchTypeSortButton" ClipContents="true" DominantSelectedState="false" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.PremadeMatchType.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin">
+                                          <Children>
+                                            <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" PositionXOffset="-45" SuggestedWidth="!TopHeader.Width" Brush="MPLobby.CustomServer.ServerList.ItemBg" />
+                                            <TextWidget  Text="@PremadeMatchTypeText" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!Columns.Faction.Width" MarginRight="!Columns.Horizontal.Margin" MarginLeft="!Columns.Horizontal.Margin" PositionYOffset="!Rows.Item.Text.PositionYOffset" Brush="MPLobby.CustomServer.ServerList.ItemText" />
+                                          </Children>
+                                        </BrushWidget>
+
+                                      </Children>
+                                    </ListPanel>
+
+                                  </Children>
+                                </ToggleStateButtonWidget>
+                                
+                              </Children>
+                            </ButtonWidget>
+                            
+                          </ItemTemplate>
+                        </NavigatableListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <!--Scrollbar-->
+                <Widget Id="ScrollbarContainer" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="20" SuggestedHeight="800" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginTop="57" MarginBottom="13" MarginRight="8" >
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="lobby_slider_bed_9" AlphaFactor="0.2" />
+                    <ScrollbarWidget Id="Scrollbar" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AlignmentAxis="Vertical" Handle="ScrollbarHandle" MaxValue="100" MinValue="0" UpdateChildrenStates="true">
+                      <Children>
+                        <ImageWidget Id="ScrollbarHandle" WidthSizePolicy="Fixed" SuggestedWidth="12" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="MPLobby.CustomServer.ScrollHandle" MinHeight="50" />
+                      </Children>
+                    </ScrollbarWidget>
+                  </Children>
+                </Widget>
+
+              </Children>
+            </Widget>
+
+            <Widget Id="CreateGamePanel" IsVisible="@IsCreateGamePanelActive" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+              <Children>
+
+                <ScrollablePanel Id="ScrollablePanel" DataSource="{HostGame}" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" InnerPanel="MyClipRect\InnerPanel" ClipRect="MyClipRect" MarginTop="15" MarginBottom="12" MarginRight="32" MarginLeft="12" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalScrollbar="..\ScrollbarContainer\Scrollbar" AutoHideScrollBars="true">
+                  <Children>
+                    <NavigationScopeTargeter ScopeID="LobbyCustomServerOptionsScope" ScopeParent="..\MyClipRect" ScopeMovements="Vertical"/>
+                    <Widget Id="MyClipRect" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" HorizontalAlignment="Center" ClipContents="true" AlphaFactor="0.75">
+                      <Children>
+                        <NavigatableListPanel Id="InnerPanel" DataSource="{HostGameOptions\GeneralOptions}" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="1000" PositionXOffset="-85" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <ItemTemplate>
+                            <Lobby.CustomServer.HostGame />
+                          </ItemTemplate>
+                        </NavigatableListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <Widget Id="ScrollbarContainer" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="20" SuggestedHeight="800" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginTop="15" MarginBottom="13" MarginRight="8" >
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="lobby_slider_bed_9" AlphaFactor="0.2" />
+                    <ScrollbarWidget Id="Scrollbar" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AlignmentAxis="Vertical" Handle="ScrollbarHandle" MaxValue="100" MinValue="0" UpdateChildrenStates="true">
+                      <Children>
+                        <ImageWidget Id="ScrollbarHandle" WidthSizePolicy="Fixed" SuggestedWidth="12" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="MPLobby.CustomServer.ScrollHandle" MinHeight="50" />
+                      </Children>
+                    </ScrollbarWidget>
+                  </Children>
+                </Widget>
+
+              </Children>
+            </Widget>
+
+          </Children>
+        </Widget>
+
+        <Widget Id="FiltersPanel" DataSource="{FiltersData}" VisualDefinition="FiltersPanel" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FiltersPanel.Background.Width" SuggestedHeight="!FiltersPanel.Background.Height" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginBottom="35" Sprite="MPLobby\CustomServer\filters_canvas" AlphaFactor="0.6">
+          <Children>
+            <BoolStateChangerWidget DataSource="{..}" BooleanCheck="@IsCreateGamePanelActive" TrueState="Disabled" FalseState="Default" TargetWidget="..\."/>
+            
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="20" MarginTop="10" MarginLeft="10" MarginRight="10">
+              <Children>
+                <TextWidget Text="@TitleText" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginRight="7" Brush="MPLobby.CustomServer.FiltersPanel.HeaderText" />
+              </Children>
+            </ListPanel>
+
+            <NavigationScopeTargeter DataSource="{..}" ScopeID="LobbyCustomServerFiltersSearchBarScope" ScopeParent="..\SearchBarParent" IsScopeDisabled="@IsCreateGamePanelActive" />
+            <ButtonWidget Id="SearchBarParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FiltersPanel.SearchBarBackground.Width" SuggestedHeight="!FiltersPanel.SearchBarBackground.Height" HorizontalAlignment="Center" MarginTop="35" Brush="MPLobby.CustomServer.FiltersPanel.SearchBarBackground" GamepadNavigationIndex="0">
+              <Children>
+                <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" VerticalAlignment="Center" MarginLeft="5" PositionYOffset="1" Brush="MPLobby.CustomServer.FiltersPanel.SearchIcon"/>
+                <EditableTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="30" MarginRight="10" Brush="MPLobby.CustomServer.FiltersPanel.SearchText" Text="@SearchText"/>
+              </Children>
+            </ButtonWidget>
+
+            <NavigationScopeTargeter DataSource="{..}" ScopeID="LobbyCustomServerFilterItemsScope" ScopeParent="..\FilterItems" ScopeMovements="Horizontal" AlternateScopeMovements="Vertical" AlternateMovementStepSize="3" IsScopeDisabled="@IsCreateGamePanelActive" />
+            <NavigatableGridWidget DataSource="{Items}" Id="FilterItems" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="60" VerticalAlignment="Bottom" MarginBottom="10" MarginLeft="10" MarginRight="10" RowCount="2" ColumnCount="3" DefaultCellHeight="30" >
+              <ItemTemplate>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+                  <Children>
+                    <ButtonWidget IsSelected ="@IsSelected" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedWidth="17" SuggestedHeight="17" VerticalAlignment="Center" ToggleIndicator="Button\ToggleIndicator" ButtonType="Toggle">
+                      <Children>
+                        <NavigationTargetSwitcher FromTarget="..\..\." ToTarget="..\Button" />
+                        <ImageWidget Id="Button" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="17" SuggestedHeight="17" Brush="MPLobby.CustomServer.FilterToggle">
+                          <Children>
+                            <Widget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="StdAssets\filters_checkbox_full" IsDisabled="true"/>
+                          </Children>
+                        </ImageWidget>
+                        <TextWidget Text="@Description" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="22" Brush="MPLobby.CustomServer.FiltersPanel.ToggleText" />
+                      </Children>
+                    </ButtonWidget>
+                  </Children>
+                </Widget>
+              </ItemTemplate>
+            </NavigatableGridWidget>
+
+          </Children>
+        </Widget>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" DoNotAcceptEvents="true" IsHidden="@IsCreateGamePanelActive">
+          <Children>
+            <NavigationScopeTargeter ScopeID="CustomServerRefreshButtonScope" ScopeParent="..\RefreshButton" NavigateFromScopeEdges="true"/>
+            <ButtonWidget Id="RefreshButton" Command.Click="ExecuteRefresh" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!RefreshButton.Width" SuggestedHeight="!RefreshButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="48" PositionXOffset="150" Brush="RefreshButton.Flat" GamepadNavigationIndex="0" IsDisabled="@IsRefreshing">
+              <Children>
+                <TextWidget Text="@RefreshText" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="24" Brush="MPLobby.Matchmaking.CircleButtonText" />
+                <InputKeyVisualWidget DoNotReceiveEvents="true" DataSource="{RefreshInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="-30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+              </Children>
+            </ButtonWidget>
+
+            <NavigationScopeTargeter ScopeID="CustomServerCreateGameButtonScope" ScopeParent="..\CreateGameButton" NavigateFromScopeEdges="true"/>
+            <ButtonWidget Id="CreateGameButton" IsVisible="@CanPlayerCreateGame" Command.Click="ExecuteOpenCreateGamePanel" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!RefreshButton.Width" SuggestedHeight="!RefreshButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="48" PositionXOffset="-500" Brush="CreateGameButton.Flat" GamepadNavigationIndex="0" >
+              <Children>
+                <TextWidget Text="@CreateServerText" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="!RefreshButton.Height" Brush="MPLobby.Matchmaking.CircleButtonText" ClipContents="false"/>
+              </Children>
+            </ButtonWidget>
+
+            <NavigationScopeTargeter ScopeID="CustomServerJoinServerButtonScope" ScopeParent="..\JoinServerButton" NavigateFromScopeEdges="true"/>
+            <ButtonWidget Id="JoinServerButton" IsEnabled="@IsJoinEnabled" Command.Click="ExecuteJoinSelectedGame" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayButton.Width" SuggestedHeight="!PlayButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="50" PositionXOffset="-175" Brush="MPLobby.PlayButton" GamepadNavigationIndex="0" >
+              <Children>
+                <TextWidget Text="@JoinText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.PlayButton.Text"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </Widget>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" DoNotAcceptEvents="true" IsVisible="@IsCreateGamePanelActive">
+          <Children>
+            <NavigationScopeTargeter ScopeID="CustomServerCloseCreatePanelButtonScope" ScopeParent="..\CloseCreatePanelButton" NavigateFromScopeEdges="true"/>
+            <ButtonWidget Id="CloseCreatePanelButton" Command.Click="ExecuteCloseCreateGamePanel" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!RefreshButton.Width" SuggestedHeight="!RefreshButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="48" PositionXOffset="-500" Brush="JoinGameButton.Flat" GamepadNavigationIndex="0" >
+              <Children>
+                <TextWidget Text="@CloseText" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="!RefreshButton.Height" Brush="MPLobby.Matchmaking.CircleButtonText" ClipContents="false"/>
+              </Children>
+            </ButtonWidget>
+
+            <NavigationScopeTargeter ScopeID="CustomServerHostServerButtonScope" ScopeParent="..\HostServerButton" NavigateFromScopeEdges="true"/>
+            <ButtonWidget Id="HostServerButton" DataSource="{HostGame}" Command.Click="ExecuteStart" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayButton.Width" SuggestedHeight="!PlayButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="50" PositionXOffset="-175" Brush="MPLobby.PlayButton" GamepadNavigationIndex="0" >
+              <Children>
+                <TextWidget Text="@CreateText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PositionYOffset="0" Brush="MPLobby.PlayButton.Text"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </Widget>
+
+        <ContextMenuBrushWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsActivated="@IsCustomServerActionsActive" IsVisible="false" ActionListPanel="ActionListPanel" Brush="Scoreboard.ContextMenu.Background" UpdateChildrenStates="true">
+          <Children>
+            <ListPanel Id="ActionListPanel" DataSource="{CustomServerActionsList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" UpdateChildrenStates="true">
+              <ItemTemplate>
+                <ContextMenuItemWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="35" TypeIconWidget="TypeIconWidget" ActionButtonWidget="ButtonDimensionsSyncWidget\ActionButtonWidget" TypeIconState="@Value" CanBeUsed="@IsEnabled">
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Text="@Definition" Brush="Scoreboard.ContextMenu.ItemText" VerticalAlignment="Center" MarginLeft="10" MarginRight="10" />
+                    <DimensionSyncWidget Id="ButtonDimensionsSyncWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" DimensionToSync="Horizontal" WidgetToCopyHeightFrom="..\..\..\ActionListPanel" UpdateChildrenStates="true">
+                      <Children>
+                        <ButtonWidget CanAcceptEvents="@IsEnabled" Id="ActionButtonWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left" Command.Click="ExecuteAction" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" Brush="MPLobby.Matchmaking.Region.DropdownItem"/>
+                      </Children>
+                    </DimensionSyncWidget>
+                  </Children>
+                </ContextMenuItemWidget>
+              </ItemTemplate>
+            </ListPanel>
+          </Children>
+        </ContextMenuBrushWidget>
+
+
+      </Children>
+    </MultiplayerLobbyCustomServerScreenWidget>
+  </Window>
+</Prefab>

@@ -1,0 +1,20 @@
+<prefabs>
+	<game_entity name="stealth_indoor_lighting_area" old_prefab_name="" mobility="1">
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="editor_cube"/>
+		</components>
+		<scripts>
+			<script name="StealthIndoorLightingArea">
+				<variables>
+					<variable name="AmbientLightStrength" value="0.000"/>
+					<variable name="SunMoonLightStrength" value="0.000"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>

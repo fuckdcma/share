@@ -1,0 +1,10 @@
+<Prefab>
+  <Window>
+    <Widget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.7" IsVisible="@IsEnabled">
+      <Children>
+        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="50" Brush="MPLobby.StateBlocker.Text" Text="@Description" />
+        <MultiplayerCircleLoading Parameter.IsEnabled="true" MarginTop="50" />
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

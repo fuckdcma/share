@@ -1,0 +1,993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EquipmentRosters>
+<!-- 文化相关 -->
+  <!-- 居民 -->
+    <EquipmentRoster
+      id="sg_npc_juming_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Body"
+          id="Item.sg_cl_c02_s1001_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_cl_c01_s2001_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_juming_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Body"
+          id="Item.sg_cl_c02_s1001_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_cl_c01_s2001_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 城市居民 -->
+    <EquipmentRoster
+      id="sg_npc_chengshijuming_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment slot="Item0" id="Item.sg_t1_ht_sword_002" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_cl_c01_s2001_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_chengshijuming_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_ar_c02_s2001_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 商队护卫 -->
+    <EquipmentRoster
+      id="sg_npc_shangduihuwei_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment slot="Item0" id="Item.sg_spear_whole_002" />
+        <Equipment slot="Item1" id="Item.sg_t1_ht_sword_002" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_merchant_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_cl_c01_s2001_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment slot="Item0" id="Item.sg_spear_whole_002" />
+        <Equipment slot="Item1" id="Item.sg_t1_ht_sword_002" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_merchant_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_cl_c01_s2001_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 高级护卫 -->
+    <EquipmentRoster
+      id="sg_npc_gaojihuwei_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment slot="Item0" id="Item.sg_t1_ht_sword_002" />
+        <Equipment slot="Item1" id="Item.sg_shortbow_001" />
+        <Equipment slot="Item2" id="Item.bodkin_arrows_a" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_guard_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_guard_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_guard_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_guard_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_gaojihuwei_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_guard_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_guard_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_guard_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_guard_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 酒馆店主 -->
+    <EquipmentRoster
+      id="sg_npc_jiudiandianzhu_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_bartender_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_bartender_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_bartender_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+        id="sg_npc_jiudiandianzhu_equipment_civilian_template_yanzhou"
+        culture="Culture.yanzhou">
+        <EquipmentSet
+          civilian="true">
+          <Equipment
+            slot="Head"
+            id="Item.sg_npc_bartender_head" />
+          <Equipment
+            slot="Body"
+            id="Item.sg_npc_bartender_body" />
+          <Equipment
+            slot="Leg"
+            id="Item.sg_npc_bartender_leg" />
+        </EquipmentSet>
+        <Flags
+          IsCombatantTemplate="true"
+          IsNobleTemplate="true"
+          IsCivilianTemplate="true" />
+      </EquipmentRoster>
+  <!-- 店员 -->
+    <EquipmentRoster
+      id="sg_npc_dianyuan_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_clerk_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_clerk_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_bartender_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+        id="sg_npc_dianyuan_equipment_civilian_template_yanzhou"
+        culture="Culture.yanzhou">
+        <EquipmentSet
+          civilian="true">
+          <Equipment
+            slot="Head"
+            id="Item.sg_npc_cityresident_head" />
+          <Equipment
+            slot="Body"
+            id="Item.sg_npc_cityresident_body" />
+          <Equipment
+            slot="Leg"
+            id="Item.sg_ar_c02_s2001_leg" />
+        </EquipmentSet>
+        <Flags
+          IsCombatantTemplate="true"
+          IsNobleTemplate="true"
+          IsCivilianTemplate="true" />
+      </EquipmentRoster>
+  <!-- 侍女 -->
+    <EquipmentRoster
+      id="sg_npc_shinv_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_maid_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_maid_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+        id="sg_npc_shinv_equipment_civilian_template_yanzhou"
+        culture="Culture.yanzhou">
+        <EquipmentSet
+          civilian="true">
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_maid_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_maid_leg" />
+        </EquipmentSet>
+        <Flags
+          IsCombatantTemplate="true"
+          IsNobleTemplate="true"
+          IsCivilianTemplate="true" />
+      </EquipmentRoster>
+  <!-- 说书人 -->
+    <EquipmentRoster
+      id="sg_npc_dushuren_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_booksellers_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_booksellers_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_dushuren_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_booksellers_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_booksellers_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 舞女 -->
+    <EquipmentRoster
+      id="sg_npc_wunv_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_booksellers_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_booksellers_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+   <EquipmentRoster
+      id="sg_npc_wunv_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_ar_c02_s2001_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 马匹贩子 -->
+     <EquipmentRoster
+      id="sg_npc_mapifanzi_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_ar_c02_s2001_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_mapifanzi_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_ar_c02_s2001_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 理发师 -->
+    <EquipmentRoster
+      id="sg_npc_lifashi_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_barber_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_barber_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_lifashi_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_barber_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_barber_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 商贩 -->
+    <EquipmentRoster
+      id="sg_npc_shangfan_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_peddler_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_peddler_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_peddler_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_shangfan_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_peddler_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_peddler_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_peddler_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 流氓 -->
+    <EquipmentRoster
+      id="sg_npc_liumang_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_liumang_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_cityresident_body" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 竞技场老板 -->
+    <EquipmentRoster
+      id="sg_npc_jingjichanglaoban_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_gladiator_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_gladiator_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_gladiator_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_gladiator_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_jingjichanglaoban_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_gladiator_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_gladiator_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_gladiator_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_gladiator_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 通用基础战斗装备 -->
+      <EquipmentRoster
+        id="sg_npc_common_war_equipment_template"
+        culture="Culture.yanzhou">
+        <EquipmentSet>
+          <Equipment slot="Item0" id="Item.sg_sword_001_b_1h" />
+          <Equipment
+            slot="Head"
+            id="Item.sg_npc_cityresident_head" />
+          <Equipment
+            slot="Body"
+            id="Item.sg_npc_cityresident_body" />
+          <Equipment
+            slot="Leg"
+            id="Item.sg_cl_c01_s2001_leg" />
+        </EquipmentSet>
+      </EquipmentRoster>
+  <!-- 通用基础民用装备 -->
+      <EquipmentRoster
+        id="sg_npc_common_equipment_template"
+        culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+          <Equipment
+            slot="Head"
+            id="Item.sg_npc_cityresident_head" />
+          <Equipment
+            slot="Body"
+            id="Item.sg_npc_cityresident_body" />
+          <Equipment
+            slot="Leg"
+            id="Item.sg_cl_c01_s2001_leg" />
+        </EquipmentSet>
+      </EquipmentRoster>
+  <!-- 名人装备 -->
+    <EquipmentRoster
+      id="sg_npc_yaoren_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_guard_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_cl_c04_s1001_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_merchant_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_cl_c07_s1001_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_s001_head_a" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_cl_c04_s1001_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_merchant_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_cl_c07_s1001_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_bartender_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_cl_c04_s1001_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_merchant_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_cl_c07_s1001_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_barber_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_barber_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_ar_c03_s5004_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_bartender_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_barber_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_ar_c03_s5004_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_bartender_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_peddler_head" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_peddler_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_peddler_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_desert_cap" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_clerk_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_bartender_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_booksellers_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_clerk_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_barber_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_clerk_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_cityresident_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_clerk_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_bartender_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_clerk_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_s001_head_a" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_clerk_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_cl_c06_s3002_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_cl_c03_s1001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_clerk_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_booksellers_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_npc_gladiator_head" />
+        <Equipment
+          slot="Cape"
+          id="Item.sg_ar_c03_s3001_shoulder" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_gladiator_body" />
+        <Equipment
+          slot="Gloves"
+          id="Item.sg_npc_merchant_arm" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_ar_c02_s2001_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_yaoren_woman_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment slot="Item0" id="Item.sg_sword_001_c_1h" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_g015_hair_old" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_ar_c01_g016_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.mp_leather_shoes" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment slot="Item0" id="Item.sg_sword_001_c_1h" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_g015_hair_old" />
+        <Equipment
+          slot="Body"
+          id="Item.aserai_female_civil_a" />
+        <Equipment
+          slot="Leg"
+          id="Item.mp_leather_shoes" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment slot="Item0" id="Item.sg_sword_008_1h" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_g015_head_old_a" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_cl_c10_s2001_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.mp_leather_shoes" />
+      </EquipmentSet>
+       <EquipmentSet
+        civilian="true">
+        <Equipment slot="Item0" id="Item.sg_sword_008_1h" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_g015_hair_old" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_barber_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment slot="Item0" id="Item.sg_sword_001_b_1h" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_g015_hair_old" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_barber_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment slot="Item0" id="Item.sg_sword_008_1h" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_g015_hair_old" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_barber_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+      <EquipmentSet
+        civilian="true">
+        <Equipment slot="Item0" id="Item.sg_sword_001_c_1h" />
+        <Equipment
+          slot="Head"
+          id="Item.sg_ar_c01_g015_head_old_a" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_maid_body" />
+        <Equipment
+          slot="Leg"
+          id="Item.sg_npc_maid_leg" />
+      </EquipmentSet>
+
+
+
+    </EquipmentRoster>
+
+
+
+
+
+
+
+
+  <!-- 乞丐 -->
+    <EquipmentRoster
+      id="sg_npc_qigai_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Body"
+          id="Item.sg_cl_com_body_0004" />
+         <Equipment
+          slot="Leg"
+          id="Item.sg_cl_com_leg_0001" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_qigai_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Body"
+          id="Item.sg_cl_com_body_0004" />
+         <Equipment
+          slot="Leg"
+          id="Item.sg_cl_com_leg_0001" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 铁匠 -->
+    <EquipmentRoster
+      id="sg_npc_tiejiang_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_S_SOL00001_Tk" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_gladiator_body" />
+         <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_tiejiang_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_S_SOL00001_Tk" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_gladiator_body" />
+         <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 武器匠 -->
+    <EquipmentRoster
+      id="sg_npc_wuqijiang_equipment_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet>
+        <Equipment
+          slot="Head"
+          id="Item.sg_S_SOL00001_Tk" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_gladiator_body" />
+         <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+    </EquipmentRoster>
+    <EquipmentRoster
+      id="sg_npc_wuqijiang_equipment_civilian_template_yanzhou"
+      culture="Culture.yanzhou">
+      <EquipmentSet
+        civilian="true">
+        <Equipment
+          slot="Head"
+          id="Item.sg_S_SOL00001_Tk" />
+        <Equipment
+          slot="Body"
+          id="Item.sg_npc_gladiator_body" />
+         <Equipment
+          slot="Leg"
+          id="Item.sg_npc_barber_leg" />
+      </EquipmentSet>
+      <Flags
+        IsCombatantTemplate="true"
+        IsNobleTemplate="true"
+        IsCivilianTemplate="true" />
+    </EquipmentRoster>
+  <!-- 赎金经纪人 -->
+  <!-- 乞丐 -->
+  <!-- 帮派头目保镖\里正 -->
+  <!-- 公證商人\乡绅 -->
+  <!-- 公证匠人\匠人 -->
+  <!-- 公证传教士\布道 -->
+  <!-- 乡间公证人 -->
+  <!-- 赌徒 -->
+  <!-- 盔甲匠 -->
+
+
+</EquipmentRosters>

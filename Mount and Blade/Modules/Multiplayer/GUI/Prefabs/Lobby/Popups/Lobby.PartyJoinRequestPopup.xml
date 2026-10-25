@@ -1,0 +1,81 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Divider.Width" BrushName="MPEscapeMenu.Divider" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Divider.Height" BrushName="MPEscapeMenu.Divider" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+	<Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.7">
+      <Children>
+
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="382" Sprite="escape_menu_gradient_9" />
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="382" HorizontalAlignment="Right" Sprite="escape_menu_gradient_9" HorizontalFlip="true" />
+        
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="632" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="flat_panel_9">
+          <Children>
+
+            <Widget ClipContents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="533" MarginLeft="60" MarginRight="60" VerticalAlignment="Bottom">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1377" Sprite="StdAssets\flat_panel_texture" />
+              </Children>
+            </Widget>
+
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="30" VerticalAlignment="Top" StackLayout.LayoutMethod="VerticalTopToBottom">
+              <Children>
+                <!--Title-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" MarginBottom="15" Brush="MPLobby.Popup.Title" Text="@TitleText"/>
+
+                <!--Separator-->
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="20" Sprite="MPLobby\Matchmaking\information_panel_header" MarginLeft="60" MarginRight="60" MarginBottom="20"/>
+
+                <!--Your Friends Want You To Invite-->
+                <RichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="80" MarginRight="80" MarginBottom="20" Brush="MPLobby.Popup.SubTitle" Text="@JoiningPlayerText" DoNotAcceptEvents="true"/>
+
+                <!-- Joining Player Info -->
+                <ListPanel DataSource="{JoiningPlayer}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+                  <Children>
+
+                    <!--Joining Player's Profile Picture-->
+                    <ImageIdentifierWidget DoNotAcceptEvents="true" DataSource="{Avatar}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center" MarginBottom="15" ImageId="@Id" TextureProviderName="@TextureProviderName" AdditionalArgs="@AdditionalArgs" />
+
+                    <!--Joining Player's Name-->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="15" Brush="MPLobby.Popup.JoiningPlayerName.Text" Text="@Name"/>
+
+                  </Children>
+                </ListPanel>
+
+                <!--Do You Want To Invite-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="80" MarginRight="80" MarginBottom="30" Brush="MPLobby.Popup.SubTitle" Text="@AcceptJoinRequestText"/>
+
+				<!--Timer-->
+				<FillBarWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="10" HorizontalAlignment="Center" MarginBottom="15" FillWidget="FillWidget" Sprite="BlankWhiteSquare_9" Color="#555555FF" MaxAmountAsFloat="@MaxAnswerDuration" InitialAmountAsFloat="@RemainingAnswerDuration">
+			      <Children>
+					<Widget Id="FillWidget" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#F2AF48FF"/>
+			      </Children>
+				</FillBarWidget>
+
+                <!--Action Buttons-->
+                <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="250" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalSpaced">
+                  <Children>
+
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="99" SuggestedHeight="99" Brush="MPLobby.Popup.DoneButton" IsEnabled="true" Command.Click="ExecuteAcceptJoinRequest" />
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="99" SuggestedHeight="99" Brush="MPLobby.Popup.CloseButton" IsEnabled="true" Command.Click="ExecuteDeclineJoinRequest" />
+
+                  </Children>
+                </ListPanel>
+                
+              </Children>
+            </ListPanel>
+
+            <Widget ClipContents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="120" MarginLeft="60" MarginRight="60" VerticalAlignment="Top">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Divider.Width" SuggestedHeight="!Divider.Height" HorizontalAlignment="Center" Sprite="MPTeamSelection\divider_notched" />
+              </Children>
+            </Widget>
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </Widget>
+	</Window>
+</Prefab>

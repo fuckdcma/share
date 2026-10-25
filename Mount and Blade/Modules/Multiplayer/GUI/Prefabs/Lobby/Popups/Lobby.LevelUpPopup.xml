@@ -1,0 +1,70 @@
+<Prefab>
+  <Constants>
+    <Constant Name="ParallaxDuration" Value="6"/>
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <!--Background-->
+        <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteClose" DoNotPassEventsToChildren="true" >
+          <Children>
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.8" />
+          </Children>
+        </ButtonWidget>
+
+        <Widget Id="PopupArea" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="900" VerticalAlignment="Center" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true">
+          <Children>
+
+            <!--Popup Background-->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalTopToBottom">
+              <Children>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="221" Sprite="MPLobby\Popup\level_progress_popup_glow" HorizontalAlignment="Center" />
+                    <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="200" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="-70" InitialDirection="Right" IsEaseInOutEnabled="true" VerticalAlignment="Bottom">
+                      <Children>
+                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="mp_popup_particle" HorizontalAlignment="Center"  />
+                      </Children>
+                    </ParallaxItemBrushWidget>
+                  </Children>
+                </Widget>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="popup_gradient_background_9" Color="#3B1C09FF" AlphaFactor="0.9" ColorFactor="0.8" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="221" Sprite="MPLobby\Popup\level_progress_popup_glow" HorizontalAlignment="Center" VerticalFlip="true" />
+                    <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="200" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="70" InitialDirection="Right" IsEaseInOutEnabled="true" VerticalAlignment="Bottom" >
+                      <Children>
+                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="mp_popup_particle" HorizontalAlignment="Center" PositionYOffset="-22" VerticalFlip="true" />
+                      </Children>
+                    </ParallaxItemBrushWidget>
+                  </Children>
+                </Widget>
+              </Children>
+            </ListPanel>
+
+            <Widget Id="ContentContainer"  WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="800" MarginTop="225" MarginBottom="275" HorizontalAlignment="Center" >
+              <Children>
+                <!--Title-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.AfterBattle.Popup.Header.Text" MarginTop="25" Text="@TitleText" />
+
+                <!--New Level-->
+                <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedWidth="598" SuggestedHeight="248" MarginTop="50" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPLobby\Popup\current_level_popper">
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center"  Brush="MPLobby.LevelUp.CurrentLevel.Text" PositionYOffset="15" MarginLeft="200" MarginRight="200" Text="@LevelText" />
+                    <!--If we write the level text as only number that'd look better i guess-->
+                  </Children>
+                </Widget>
+              </Children>
+            </Widget>
+          </Children>
+        </Widget>
+
+        <!--Click to Continue Text-->
+        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" HorizontalAlignment="Center" MarginBottom="200"  Brush="MPLobby.Profile.Popup.SubTitle.Text" Text="@ClickToContinueText" />
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

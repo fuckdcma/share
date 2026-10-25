@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+-->
+<strings>
+  <!-- 三国纪年 -->
+  <string id="str_yigu_date_format" text="{=strYiguDateFormat}{SEASON} {DAY}, Jian'an {YEAR}" />
+  <string id="str_yigu_date_season_Spring" text="{=strYiguDateSeason0}Spring" />
+  <string id="str_yigu_date_season_Summer" text="{=strYiguDateSeason1}Summer" />
+  <string id="str_yigu_date_season_Autumn" text="{=strYiguDateSeason2}Autumn" />
+  <string id="str_yigu_date_season_Winter" text="{=strYiguDateSeason3}Winter" />
+
+  <string id="str_formation_ai_behavior_text.BehaviorInfantryLaneFight" text="{=strAIBehaviorLaneFight}{TROOP_NAMES_BEGIN}{?IS_PLURAL} and {?}{\?}{TROOP_NAMES_END} {?IS_PLURAL}are{?}is{\?} lane fighting." />
+  <string id="str_formation_ai_behavior_text.BehaviorRangedLaneFight" text="{=strAIBehaviorLaneFight}{TROOP_NAMES_BEGIN}{?IS_PLURAL} and {?}{\?}{TROOP_NAMES_END} {?IS_PLURAL}are{?}is{\?} lane fighting." />
+
+  <!-- 三国功能 -->
+  <string id="str_officialposition_authority_InfluenceNotQualified" text="{=*}当前官职并无朝堂议政权力。" />
+  <string id="str_officialposition_character_ChuanLing" text="{=*}传令使" />
+  <string id="str_officialposition_group" text="{=*}官职" />
+
+  <!-- ThreeKingdoms Hero Title-->
+  <string id="sg_notable" text="大人" />
+  <string id="sg_general" text="将军" />
+  <string id="sg_kingdom_region_governor" text="都督" />
+  <string id="sg_kingdom_leader" text="主公" />
+
+  <!-- ThreeKingdoms Official Position related -->
+  <string id="tkcore00" text="{HERO_NAME}获得功勋{MERIT_CHANGE}点。" />
+  <string id="tkcore01" text="{HERO_NAME}被扣除功勋{MERIT_CHANGE}点。" />
+
+  <!-- In Camp - Encounter - Menu Title -->
+  <string id="tkice000" text="负责断后" />
+  <string id="tkice001" text="束手就擒" />
+
+  <!-- In Camp - Battle End - Menu Title -->
+  <string id="tkyyyy11" text="我等死战，堪堪获胜，只是我军也是伤亡惨重...&#xA;&#xA;{PLAYER_BATTLE_RECORD}" />
+  <string id="tkyyyy12" text="此战我等险胜，然敌军困兽之斗，我方伤亡不小...&#xA;&#xA;{PLAYER_BATTLE_RECORD}" />
+  <string id="tkyyyy13" text="我军大破敌军！&#xA;&#xA;{PLAYER_BATTLE_RECORD}" />
+  <string id="tkyyyy14" text="我等以少击多，死战获胜！&#xA;&#xA;{PLAYER_BATTLE_RECORD}" />
+  <string id="tkyyyy15" text="我等以少击多，竟获全胜！&#xA;&#xA;{PLAYER_BATTLE_RECORD}" />
+
+  <!-- In Camp - Battle End - Battle Record -->
+  <string id="tkyyyy61" text="你在{BATTLE_INDEX}{BATTLE_TYPE}中的战功如下：" />
+  <string id="tkyyyy62" text="阵斩敌方{GENERAL_NAME_WITH_TITLE}" />
+  <string id="tkyyyy63" text="杀退敌方{GENERAL_NAME_WITH_TITLE}" />
+  <string id="tkyyyy64" text="斩首{ENEMY_SOLDIER}{KILL_NUMBER}人，杀伤击退{WOUND_NUMBER}人。" />
+  <string id="tkyyyy65" text="斩首{ENEMY_SOLDIER}{KILL_NUMBER}人。" />
+  <string id="tkyyyy66" text="杀伤击退{ENEMY_SOLDIER}{WOUND_NUMBER}人。" />
+  <string id="tkyyyy67" text="共计战功{BATTLE_MERIT}点。" />
+
+  <!-- In Camp - Battle End - Menu Options -->
+  <string id="tkyyyy21" text="率领小队。继续狩猎。" />
+  <string id="tkyyyy31" text="继续帮助修理与打造军需武备。" />
+  <string id="tkyyyy41" text="打扫战场，归营包扎伤口。" />
+
+  <!-- In Camp - Player Promoted after Battle - Dialogue -->
+  <string id="tkyyyy51" text="{PLAYER_NAME}，足下自从军以来，作战勇猛，提振士气，颇有功劳。{LEADER_TITLE}看重你的才能，欲擢尔为{PROMO_OP}，你可愿意？" />
+  <string id="tkyyyy52" text="为图{LEADER_TITLE}之志，{PLAYER_NAME}愿效犬马之劳！多谢主公抬爱。" />
+  <string id="tkyyyy53" text="很好！且放心，我会带为致谢，相信{LEADER_TITLE}也会进一步期待你日后的表现的！" />
+  <string id="tkyyyy54" text="多谢{LEADER_TITLE}赏识...只不过我如今尚缺历练，请代为转达，在下想在现在的职位上继续磨砺！" />
+  <string id="tkyyyy55" text="既然如此，我会如实禀报{LEADER_TITLE}。等你准备好担任更高的军中职位时，再过来找我吧。" />
+  <string id="tkyyyy56" text="现被拔擢为：{NEW_MILITARY_OP}" />
+
+  <!-- In Camp - JunSiMa - Menu Title -->
+  <string id="tkjsm001" text="你来到了军司马所在的营帐，他似乎正在与归营的哨骑确认细节。" />
+  <string id="tkjsm002" text="你来到了军司马所在的营帐，他似乎正在整理新近入伍的兵员名册。" />
+  <string id="tkjsm003" text="你来到了军司马所在的营帐，他正在训斥上次操练中未能达成训练目标的士卒。" />
+  <string id="tkjsm004" text="你来到了军司马所在的营帐，他正在处罚几名有违军法的士卒。" />
+  <string id="tkjsm005" text="你来到了军司马所在的营帐，他正在打盹..." />
+
+  <!-- In Camp - JunSiMa - Menu Options -->
+  <string id="tkjsm010" text="面见司马" />
+  <string id="tkjsm011" text="请求分配士卒" />
+  <string id="tkjsm012" text="请求担任哨骑" />
+  <string id="tkjsm013" text="营中操练" />
+  <string id="tkjsm014" text="返回中军校场" />
+
+  <!-- In Camp - JunSiMa - Dialogue Intro -->
+  <string id="tkjsm100" text="{PLAYER_NAME}，所为何事？" />
+  <string id="tkjsm101" text="告辞" />
+
+  <!-- In Camp - JunSiMa - Dialogue - Ask for Promotion -->
+  <string id="tkjsm200" text="司马大人，关于在下军中职位变更一事..." />
+  <string id="tkjsm201" text="嗯，军中大小战功均有记载，待我翻看查阅..." />
+  <string id="tkjsm202" text="你现在可以升迁至这些官职..." />
+  <string id="tkjsm203" text="看起来，想要升迁至更高阶的军职，你还欠缺些军功。" />
+  <string id="tkjsm204" text="以阁下现在的军中职务，想要进一步获得升迁，就不是我能够決定的了。请与{LEADER_TITLE}大人商议此事。" />
+  <string id="tkjsm205" text="其他可升迁军职..." />
+  <string id="tkjsm206" text="多谢司马查阅，容我再做思量，告退。" />
+  <string id="tkjsm207" text="领取升迁赏赐" />
+
+  <!-- In Camp - JunSiMa - Dialogue - Ask for Retirement -->
+  <string id="tkjsm300" text="司马大人，今日特来请辞。" />
+  <string id="tkjsm301" text="哦？汝可确认要离伍归乡？" />
+  <string id="tkjsm302" text="正是。" />
+  <string id="tkjsm303" text="容属下再做思量..." />
+  <string id="tkjsm304" text="也罢，军旅劳苦，厮杀凶险，若说是想要解甲归田，也是正理。" />
+  <string id="tkjsm305" text="你也算追随{LEADER_TITLE}大人多日...&#xA;&#xA;待我查阅军记..." />
+  <string id="tkjsm306" text="嗯...到今日为止，你尚有军功{REMAINING_MERIT}。&#xA;这里是钱{MERIT_TO_GOLD}，权且当做汝归乡的路资。你小心收好，这就收拾行李，离营去罢！" />
+  <string id="tkjsm307" text="多谢司马！在此拜别。" />
+
+  <!-- In Camp - JunSiMa - Menu - Sentry -->
+  <string id="tkjsm400" text="司马有令，命你带领小队在军队周围逡巡警戒，勘察情报。" />
+  <string id="tkjsm401" text="归营述职" />
+  <string id="tkjsm402" text="此刻大军行进，我等小股哨骑，并不足用。" />
+  <string id="tkjsm403" text="将军有令" />
+  <string id="tkjsm404" text="将军听闻我等哨骑在与敌军的作战中损失颇重，特调拨军中士卒重振军势！" />
+  <string id="tkjsm405" text="{ENEMY_PARTY_NAME}所部哨骑" />
+  <string id="tkjsm406" text="将军所调拨之军士" />
+
+  <!-- In Camp - JunSiMa - Menu - Start Battle as Sentry -->
+  <string id="tkjsm500" text="我等与敌方哨骑相遇！" />
+  <string id="tkjsm501" text="拔刀迎敌！" />
+  <string id="tkjsm502" text="林间匪盗，竟敢犯冲！" />
+  <string id="tkjsm503" text="杀了他们！" />
+  <string id="tkjsm504" text="偶遇流匪，请下令！" />
+  <string id="tkjsm505" text="放他们离去。" />
+
+  <!-- In Camp - JunSiMa - Menu - Win Battle -->
+  <string id="tkjsm600" text="我等大胜！&#xA;&#xA;{PLAYER_BATTLE_RECORD}" />
+  <string id="tkjsm601" text="遣使归营述职，继续勘察情报" />
+  <string id="tkjsm602" text="打扫战场，归营述职" />
+
+  <!-- In Camp - JunSiMa - Menu - Fail Battle -->
+  <string id="tkjsm700" text="我等败绩，幸得将军及时派军接应...&#xA;&#xA;{PLAYER_BATTLE_RECORD}" />
+  <string id="tkjsm701" text="归营养伤..." />
+
+  <!-- In Camp - JunSiMa - Menu - Select Training -->
+  <string id="tkjsm900" text="今日想要操练：" />
+  <string id="tkjsm901" text="剑盾搏杀" />
+  <string id="tkjsm902" text="双手技击" />
+  <string id="tkjsm903" text="长矛刺击" />
+  <string id="tkjsm904" text="射术" />
+  <string id="tkjsm905" text="硬弩操控" />
+  <string id="tkjsm906" text="投掷技巧" />
+  <string id="tkjsm907" text="骑术" />
+  <string id="tkjsm908" text="体魄" />
+  <string id="tkjsm909" text="还是暂且作罢吧..." />
+
+  <!-- In Camp - JunSiMa - Menu - Training -->
+  <string id="tkjsm800" text="正在营中操练..." />
+  <string id="tkjsm801" text="回帐歇息" />
+  <string id="tkjsm802" text="操练完成" />
+
+  <!-- In Camp - JunSiMa - Menu - Ask for more Soldier -->
+  <string id="tkjsma00" text="军职等阶不足，无法要求分配士卒。" />
+  <string id="tkjsma01" text="中军力量薄弱，无力调拨士卒填补我部。" />
+  <string id="tkjsma02" text="我等已不再隶属将军本部，是时候独立成军并招募勇士了！" />
+  <string id="tkjsma03" text="中军尚未招募足够的士卒，无力调拨士卒填补我部。" />
+  <string id="tkjsma04" text="本次最多调拨{MAX_ALLOWED_DISTRIBUTED_SOLDIER_NUMBER}名士卒。" />
+  <string id="tkjsma05" text="不允许將同伴交付将军本部。" />
+  <string id="tkjsma06" text="中军大营" />
+
+
+  <string id="str_options_type_BattleSize_0" text="{=RBSG9oAjFL7}Very Low (100)" />
+  <string id="str_options_type_BattleSize_1" text="{=RBSIam02fhz}Low (400)" />
+  <string id="str_options_type_BattleSize_2" text="{=RBSX1nFnomy}Medium (800)" />
+  <string id="str_options_type_BattleSize_3" text="{=RBSkNpWwJcc}High (1000)" />
+  <string id="str_options_type_BattleSize_4" text="{=RBSG17kWzwi}Very High (1400)" />
+  <string id="str_options_type_BattleSize_5" text="{=RBSQfsXhxOI}Ultra (1800)" />
+  <string id="str_options_type_BattleSize_6" text="{=RBSdV5ar9eP}Max (2000)" />
+
+  <string id="str_Tactical" text="{=TACTICAL}Tactical" />
+  <string id="str_start_ambush" text="{=TACTICALSTARTAMBUSH}{ATTACKER} Start Ambush"/>
+  <string id="str_stop_ambush" text="{=TACTICALSTOPAMBUSH}{ATTACKER} Stop Ambush"/>
+  <string id="str_many_enemy" text="{=TACTICALMANYENEMY}There are too many enemies near {ATTACKER}"/>
+  <string id="str_ambush_attack" text="{=TACTICALAMBUSHATK}The {ATTACKER} ambushed the {DEFENDER}"/>
+  <string id="str_ambush_fail" text="{=TACTICALAMBUSHFAIL}The {ATTACKER} plan was discovered by the {DEFENDER}"/>
+  <string id="str_start_lure" text="{=TACTICALSTARTLURE}{ATTACKER} are seducing the enemy near {AMBUSHER}"/>
+  <string id="str_stop_lure" text="{=TACTICALSTOPLURE}{ATTACKER} stop lure"/>
+  <string id="str_ambush_interrupt" text="{=TACTICALAMBUSHINT}The {DEFENDER} troops suddenly interrupted {ATTACKER} ambush "/>
+  <string id="str_attack" text="Attack"/>
+  <string id="str_let_them_go" text="Let them go"/>
+  <string id="str_leave" text="Leave..."/>
+
+  <string id="str_sg_friendlyduel_dialog_nohorse" text="{=sg_friendlyduel_dialog_nohorse}步战"/>
+  <string id="str_sg_friendlyduel_dialog_horse" text="{=sg_friendlyduel_dialog_horse}马战"/>
+
+  <!-- 史书 -->
+  <string id="tk_historical_records" text="史书" />
+  <string id="tk_historical_records_desc" text="东汉末年，天下纷乱，刺史州牧据州郡而争雄。有史官著《汉末列国志》以载群雄兴废、疆土更迭之事，以明治乱之道。" />
+  <string id="tk_historical_records_by_year" text="编年" />
+  <string id="tk_historical_records_by_kingdom" text="列国志" />
+
+
+
+  <!-- 单挑 -->
+  <string id="sg_friendlyduel_request_option" text="常言道：“文无第一，武无第二。”今愿与君一试高下，可否赏脸赐教？" />
+  <string id="sg_friendlyduel_request_refuse" text="匹夫之勇，恕不奉陪。" />
+  <string id="sg_friendlyduel_request_accept" text="正有此意，放马过来！" />
+  <string id="sg_friendlyduel_request_won" text="阁下武艺精妙绝伦，今日得以一战，实乃三生有幸。" />
+  <string id="sg_friendlyduel_request_lose" text="承让承让，今日侥幸获胜，实乃英雄手下留情。" />
+  <string id="sg_friendlyduel_dialog_title" text="比试：" />
+  <string id="sg_friendlyduel_dialog_desc" text="请选择比试方式：" />
+  <string id="sg_friendlyduel_dialog_nohorse" text="步战" />
+  <string id="sg_friendlyduel_dialog_horse" text="马战" />
+  <string id="sg_friendlyduel_result_won" text="你赢得了与{ENEMY_NAME}的比试。" />
+  <string id="sg_friendlyduel_result_lose" text="你输掉了与{ENEMY_NAME}的比试。" />
+
+</strings>
+<!--
+</base>
+-->

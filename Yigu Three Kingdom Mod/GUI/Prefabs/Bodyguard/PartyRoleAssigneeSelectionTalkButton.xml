@@ -1,0 +1,11 @@
+﻿<!--Talk Button-->
+<Widget Id="ExtendedTalkButtonWrapper" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="54" SuggestedHeight="43" MarginRight="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+	<Children>
+		<ButtonWidget Id="ExtendedTalkButton" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Party.TalkSlot.Background" Command.Click="ExecuteTalk" IsVisible="@IsTalkButtonVisible" IsEnabled="@IsTalkButtonEnabled" GamepadNavigationIndex="0">
+			<Children>
+				<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="31" SuggestedHeight="27" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="PartyScreen\talk_icon" HueFactor="10" SaturationFactor="60" ValueFactor="20" />
+			</Children>
+		</ButtonWidget>
+		<HintWidget DataSource="{TalkNotEnabledHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+	</Children>
+</Widget>

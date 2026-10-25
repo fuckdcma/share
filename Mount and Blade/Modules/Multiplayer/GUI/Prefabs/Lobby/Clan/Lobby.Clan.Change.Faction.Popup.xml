@@ -1,0 +1,59 @@
+<Prefab>
+	<Window>
+		<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="790" SuggestedHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="50" MarginBottom="300" IsVisible="@IsSelected" >
+			<Children>
+				<NavigationForcedScopeCollectionTargeter CollectionID="LobbyClanFactionSelectionCollection" CollectionParent="..\." />
+				<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Report.Popup.Frame" >
+					<Children>
+
+						<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15" MarginLeft="25" MarginRight="25" StackLayout.LayoutMethod="VerticalTopToBottom">
+							<Children>
+
+								<!--Title and Close Button-->
+								<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="140" StackLayout.LayoutMethod="HorizontalLeftToRight" >
+									<Children>
+										<!--Title-->
+										<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Text="@TitleText" />
+
+										<!--Close Button-->
+										<ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="22" HorizontalAlignment="Right" Command.Click="ExecuteClosePopup">
+											<Children>
+												<!--Icon-->
+												<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.CustomServer.CloseButton" />
+                        <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-40" KeyID="@KeyID" IsVisible="@IsVisible"/>
+											</Children>
+										</ButtonWidget>
+
+									</Children>
+								</ListPanel>
+
+								<!--Faction Selection-->
+								<NavigationScopeTargeter ScopeID="LobbyClanFactionSelectionPopupFactionsScope" ScopeParent="..\FactionsList" ScopeMovements="Horizontal" />
+								<NavigatableListPanel Id="FactionsList" DataSource="{FactionsList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginBottom="10">
+									<ItemTemplate>
+										<MultiplayerLobbyClassFilterFactionItemButtonWidget ButtonType="Radio" IsSelected="@IsSelected" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="75" MarginLeft="25" MarginRight="25" Command.Click="ExecuteSelection" Culture="@CultureCode" Brush="MPLobby.ClassFilter.FactionButton.Empire">
+											<Children>
+												<HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+											</Children>
+										</MultiplayerLobbyClassFilterFactionItemButtonWidget>
+									</ItemTemplate>
+								</NavigatableListPanel>
+
+							</Children>
+						</ListPanel>
+
+						<!--Apply Button-->
+						<NavigationScopeTargeter ScopeID="LobbyClanFactionSelectionPopupApplyButtonScope" ScopeParent="..\ApplyButton" />
+						<ButtonWidget Id="ApplyButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginBottom="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="WideButton.Flat" Command.Click="ExecuteChangeFaction" IsEnabled="@CanChangeFaction" GamepadNavigationIndex="0">
+							<Children>
+								<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Clan.CreateButton.Text" Text="@ApplyText" />
+                <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+							</Children>
+						</ButtonWidget>
+
+					</Children>
+				</BrushWidget>
+			</Children>
+		</Widget>
+	</Window>
+</Prefab>

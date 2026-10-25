@@ -1,0 +1,698 @@
+<prefabs>
+	<game_entity name="cutscene_agent_template" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="npc_wait"/>
+			<tag name="spawnpoint_player_4"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<skeleton skeleton_model="human_skeleton">
+			<components>
+				<meta_mesh_component name="arrow_new_icon"/>
+			</components>
+		</skeleton>
+		<scripts>
+			<script name="PopupSceneSpawnPoint">
+				<variables>
+					<variable name="InitialAction" value="mainstory_cutscene_conspiracy_walk_1"/>
+					<variable name="PositiveAction" value="mainstory_cutscene_conspiracy_talk_1"/>
+					<variable name="NegativeAction" value=""/>
+					<variable name="InitialFaceAnimCode" value=""/>
+					<variable name="PositiveFaceAnimCode" value=""/>
+					<variable name="NegativeFaceAnimCode" value=""/>
+					<variable name="RightHandWieldedItem" value=""/>
+					<variable name="PrefabItem" value=""/>
+					<variable name="PrefabBone" value="ItemR"/>
+				</variables>
+			</script>
+			<script name="animation_instance">
+				<variables>
+					<variable name="Skeleton Name" value="human_skeleton"/>
+					<variable name="Animation Name" value="mainstory_cutscene_conspiracy_walk_1"/>
+					<variable name="Morph Animation Name" value=""/>
+					<variable name="Speed Multiplier" value="1.000000"/>
+					<variable name="Animation Phase" value="0.000000"/>
+					<variable name="Morph Animation Phase" value="0.000000"/>
+					<variable name="Freeze Animation" value="false"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="npc_wait"/>
+					<tag name="npc_common"/>
+				</tags>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="mainstory_cutscene_conspiracy_walk_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="WaypointTag" value="aiwaypoint"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+		<levels>
+			<level name="level_1"/>
+			<level name="level_2"/>
+			<level name="level_3"/>
+		</levels>
+	</game_entity>
+	<game_entity name="conspiracy_letter" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="1.571, -3.142, -3.142" scale="0.400, 0.400, 0.400"/>
+		<components>
+			<meta_mesh_component name="lib_scroll_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="Spear_Prop" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 1.690"/>
+		<components>
+			<meta_mesh_component name="spear_handle_16"/>
+		</components>
+		<children>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="0.000, 0.002, 1.030" rotation_euler="0.000, 0.000, 0.000" scale="1.000, 1.000, 0.592"/>
+				<components>
+					<meta_mesh_component name="spear_blade_1"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="conspiracy_letter_open" old_prefab_name="">
+		<transform position="-0.101, -0.026, 0.000" rotation_euler="1.571, -2.711, -3.142"/>
+		<children>
+			<game_entity name="conspiracy_letter" old_prefab_name="">
+				<components>
+					<meta_mesh_component name="lib_scroll_f"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="camera_parent" old_prefab_name="">
+		<transform position="7.055, 5.879, -0.005" rotation_euler="0.000, 0.000, -3.142"/>
+		<children>
+			<game_entity name="camera_static" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="customcamera"/>
+					<tag name="camera_instance"/>
+				</tags>
+				<transform position="0.919, -2.735, 2.784" rotation_euler="1.278, 0.000, 0.320"/>
+				<skeleton skeleton_model="skeleton_camera"/>
+				<scripts>
+					<script name="camera_instance">
+						<variables>
+							<variable name="FOV(Degrees)" value="50.000000"/>
+							<variable name="Width" value="1300"/>
+							<variable name="Height" value="700"/>
+							<variable name="Downscale Width" value="1300"/>
+							<variable name="Near" value="0.100000"/>
+							<variable name="Far" value="1500.000000"/>
+							<variable name="DOF Focus Start" value="0.000000"/>
+							<variable name="DOF Focus" value="0.000000"/>
+							<variable name="DOF Focus End" value="0.000000"/>
+							<variable name="Background Color" value="0.000, 0.000, 0.000, 1.000"/>
+							<variable name="Render Skybox" value="false"/>
+						</variables>
+					</script>
+					<script name="PopupSceneCameraPath">
+						<variables>
+							<variable name="LookAtEntity" value=""/>
+							<variable name="SkeletonName" value="skeleton_camera"/>
+							<variable name="BoneIndex" value="0"/>
+							<variable name="AttachmentOffset" value="0.000, 0.000, 0.000, -1.000"/>
+							<variable name="InitialPath" value=""/>
+							<variable name="InitialAnimationClip" value="conspiracy_supports_camera_anim"/>
+							<variable name="InitialSound" value=""/>
+							<variable name="InitialPathStartTime" value="0.000"/>
+							<variable name="InitialPathDuration" value="1.000"/>
+							<variable name="InitialInterpolation" value="Linear"/>
+							<variable name="InitialFadeOut" value="false"/>
+							<variable name="PositivePath" value=""/>
+							<variable name="PositiveAnimationClip" value=""/>
+							<variable name="PositiveSound" value=""/>
+							<variable name="PositivePathStartTime" value="0.000"/>
+							<variable name="PositivePathDuration" value="1.000"/>
+							<variable name="PositiveInterpolation" value="Linear"/>
+							<variable name="PositiveFadeOut" value="false"/>
+							<variable name="NegativePath" value=""/>
+							<variable name="NegativeAnimationClip" value=""/>
+							<variable name="NegativeSound" value=""/>
+							<variable name="NegativePathStartTime" value="0.000"/>
+							<variable name="NegativePathDuration" value="1.000"/>
+							<variable name="NegativeInterpolation" value="Linear"/>
+							<variable name="NegativeFadeOut" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="camera_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="-1.571, -3.142, 3.139"/>
+						<components>
+							<meta_mesh_component name="icon_camera"/>
+						</components>
+					</game_entity>
+					<game_entity name="editor_cube" old_prefab_name="" visible="false" mobility="1">
+						<physics shape="bo_editor_cube"/>
+						<components>
+							<meta_mesh_component name="editor_cube">
+								<mesh name="editor_cube" argument="1.000, 0.000, 0.000, 0.000"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="dragon_banner_sim_item" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="dragon_banner_sim" old_prefab_name="">
+				<transform position="0.000, 0.000, -0.535"/>
+				<components>
+					<meta_mesh_component name="dragon_banner_body">
+						<mesh name="dragon_banner_body" argument="1.500, 1.500, 0.310, 0.110"/>
+					</meta_mesh_component>
+				</components>
+				<children>
+					<game_entity name="dragon_banner_body_cloth" old_prefab_name="">
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="dragon_banner_body_cloth"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+					<game_entity name="dragon_banner_head_cloth" old_prefab_name="">
+						<components>
+							<cloth_simulator>
+								<meta_mesh_component name="dragon_banner_head_cloth"/>
+							</cloth_simulator>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cutscene_female_anim" old_prefab_name="">
+		<transform position="54.008, 55.350, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="camera_cut_object_1" old_prefab_name="">
+				<transform position="5.090, -2.974, -11.776" rotation_euler="0.000, 0.000, 0.000" scale="0.700, 0.700, 0.700"/>
+				<physics shape="bo_roman_column_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="roman_column_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="father_character" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_player_1"/>
+				</tags>
+				<transform position="1.376, -2.058, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<skeleton skeleton_model="human_skeleton">
+					<components>
+						<meta_mesh_component name="arrow_new_icon"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="PopupSceneSpawnPoint">
+						<variables>
+							<variable name="InitialAction" value="act_cutscene_heir_coming_of_age_father"/>
+							<variable name="PositiveAction" value=""/>
+							<variable name="NegativeAction" value=""/>
+							<variable name="InitialFaceAnimCode" value=""/>
+							<variable name="PositiveFaceAnimCode" value=""/>
+							<variable name="NegativeFaceAnimCode" value=""/>
+							<variable name="RightHandWieldedItem" value=""/>
+							<variable name="LeftHandWieldedItem" value=""/>
+							<variable name="BannerTagToUseForAddedPrefab" value=""/>
+							<variable name="StartWithRandomProgress" value="false"/>
+							<variable name="AttachedPrefabOffset" value="0.000, 0.000, 0.000, -1.000"/>
+							<variable name="UseHorse" value="false"/>
+							<variable name="PrefabItem" value=""/>
+							<variable name="PrefabBone" value="ItemR"/>
+						</variables>
+					</script>
+					<script name="animation_instance">
+						<variables>
+							<variable name="Skeleton Name" value="human_skeleton"/>
+							<variable name="Animation Name" value="act_cutscene_heir_coming_of_age_father"/>
+							<variable name="Morph Animation Name" value=""/>
+							<variable name="Speed Multiplier" value="1.000000"/>
+							<variable name="Animation Phase" value="0.000000"/>
+							<variable name="Morph Animation Phase" value="0.000000"/>
+							<variable name="Freeze Animation" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_cutscene_heir_coming_of_age_father"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="level_2"/>
+					<level name="level_3"/>
+				</levels>
+			</game_entity>
+			<game_entity name="heir_character_stage_1" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_player_2"/>
+				</tags>
+				<transform position="0.063, -1.306, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<skeleton skeleton_model="human_skeleton">
+					<components>
+						<meta_mesh_component name="arrow_new_icon"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="PopupSceneSpawnPoint">
+						<variables>
+							<variable name="InitialAction" value="act_cutscene_heir_coming_of_age_heir_stage_1"/>
+							<variable name="PositiveAction" value=""/>
+							<variable name="NegativeAction" value=""/>
+							<variable name="InitialFaceAnimCode" value=""/>
+							<variable name="PositiveFaceAnimCode" value=""/>
+							<variable name="NegativeFaceAnimCode" value=""/>
+							<variable name="RightHandWieldedItem" value=""/>
+							<variable name="LeftHandWieldedItem" value=""/>
+							<variable name="BannerTagToUseForAddedPrefab" value=""/>
+							<variable name="StartWithRandomProgress" value="false"/>
+							<variable name="AttachedPrefabOffset" value="0.000, 0.000, 0.000, -1.000"/>
+							<variable name="UseHorse" value="false"/>
+							<variable name="PrefabItem" value=""/>
+							<variable name="PrefabBone" value="ItemR"/>
+						</variables>
+					</script>
+					<script name="animation_instance">
+						<variables>
+							<variable name="Skeleton Name" value="human_skeleton"/>
+							<variable name="Animation Name" value="act_cutscene_heir_coming_of_age_heir_stage_1"/>
+							<variable name="Morph Animation Name" value=""/>
+							<variable name="Speed Multiplier" value="1.000000"/>
+							<variable name="Animation Phase" value="0.000000"/>
+							<variable name="Morph Animation Phase" value="0.000000"/>
+							<variable name="Freeze Animation" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_cutscene_heir_coming_of_age_heir_stage_1"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="level_2"/>
+					<level name="level_3"/>
+				</levels>
+			</game_entity>
+			<game_entity name="heir_character_stage_2" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_player_3"/>
+				</tags>
+				<transform position="-1.290, -1.775, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+				<skeleton skeleton_model="human_skeleton">
+					<components>
+						<meta_mesh_component name="arrow_new_icon"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="PopupSceneSpawnPoint">
+						<variables>
+							<variable name="InitialAction" value="act_cutscene_heir_coming_of_age_heir_stage_2_girl"/>
+							<variable name="PositiveAction" value=""/>
+							<variable name="NegativeAction" value=""/>
+							<variable name="InitialFaceAnimCode" value=""/>
+							<variable name="PositiveFaceAnimCode" value=""/>
+							<variable name="NegativeFaceAnimCode" value=""/>
+							<variable name="RightHandWieldedItem" value=""/>
+							<variable name="LeftHandWieldedItem" value=""/>
+							<variable name="BannerTagToUseForAddedPrefab" value=""/>
+							<variable name="StartWithRandomProgress" value="false"/>
+							<variable name="AttachedPrefabOffset" value="0.000, 0.000, 0.000, -1.000"/>
+							<variable name="UseHorse" value="false"/>
+							<variable name="PrefabItem" value=""/>
+							<variable name="PrefabBone" value="ItemR"/>
+						</variables>
+					</script>
+					<script name="animation_instance">
+						<variables>
+							<variable name="Skeleton Name" value="human_skeleton"/>
+							<variable name="Animation Name" value="act_cutscene_heir_coming_of_age_heir_stage_2_girl"/>
+							<variable name="Morph Animation Name" value=""/>
+							<variable name="Speed Multiplier" value="1.000000"/>
+							<variable name="Animation Phase" value="0.000000"/>
+							<variable name="Morph Animation Phase" value="0.000000"/>
+							<variable name="Freeze Animation" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_cutscene_heir_coming_of_age_heir_stage_2_girl"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="level_2"/>
+					<level name="level_3"/>
+				</levels>
+			</game_entity>
+			<game_entity name="Camera_parent" old_prefab_name="">
+				<transform position="3.906, -1.468, 0.813"/>
+				<children>
+					<game_entity name="camera_static" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="customcamera"/>
+							<tag name="camera_instance"/>
+						</tags>
+						<transform position="-14.686, -7.336, 0.698" rotation_euler="1.568, -0.018, -0.988"/>
+						<skeleton skeleton_model="skeleton_camera"/>
+						<scripts>
+							<script name="camera_instance">
+								<variables>
+									<variable name="FOV(Degrees)" value="22.000000"/>
+									<variable name="Width" value="1300"/>
+									<variable name="Height" value="700"/>
+									<variable name="Downscale Width" value="1300"/>
+									<variable name="Near" value="0.010000"/>
+									<variable name="Far" value="1000.000000"/>
+									<variable name="DOF Focus Start" value="0.000000"/>
+									<variable name="DOF Focus" value="0.000000"/>
+									<variable name="DOF Focus End" value="0.000000"/>
+									<variable name="Background Color" value="1.000, 0.000, 1.000, 1.000"/>
+									<variable name="Render Skybox" value="true"/>
+								</variables>
+							</script>
+							<script name="PopupSceneCameraPath">
+								<variables>
+									<variable name="LookAtEntity" value=""/>
+									<variable name="SkeletonName" value="skeleton_camera"/>
+									<variable name="BoneIndex" value="0"/>
+									<variable name="AttachmentOffset" value="0.000, 0.000, 0.000, -1.000"/>
+									<variable name="InitialPath" value=""/>
+									<variable name="InitialAnimationClip" value="cutscene_heir_coming_of_age_camera"/>
+									<variable name="InitialSound" value="event:/mission/siege/siegetower/doorland"/>
+									<variable name="InitialPathStartTime" value="40.000"/>
+									<variable name="InitialPathDuration" value="5.000"/>
+									<variable name="InitialInterpolation" value="Linear"/>
+									<variable name="InitialFadeOut" value="true"/>
+									<variable name="PositivePath" value=""/>
+									<variable name="PositiveAnimationClip" value="cutscene_heir_coming_of_age_camera"/>
+									<variable name="PositiveSound" value=""/>
+									<variable name="PositivePathStartTime" value="0.000"/>
+									<variable name="PositivePathDuration" value="1.000"/>
+									<variable name="PositiveInterpolation" value="Linear"/>
+									<variable name="PositiveFadeOut" value="false"/>
+									<variable name="NegativePath" value=""/>
+									<variable name="NegativeAnimationClip" value=""/>
+									<variable name="NegativeSound" value=""/>
+									<variable name="NegativePathStartTime" value="0.000"/>
+									<variable name="NegativePathDuration" value="1.000"/>
+									<variable name="NegativeInterpolation" value="Linear"/>
+									<variable name="NegativeFadeOut" value="false"/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="camera_icon" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.000, 0.000, 1.000" rotation_euler="-1.571, 0.000, 0.000"/>
+								<components>
+									<meta_mesh_component name="icon_camera"/>
+								</components>
+							</game_entity>
+							<game_entity name="editor_cube" old_prefab_name="" mobility="1">
+								<transform position="0.000, 0.307, 1.019"/>
+								<physics shape="bo_editor_cube"/>
+								<components>
+									<meta_mesh_component name="editor_cube"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="camera_cut_object_2" old_prefab_name="">
+				<transform position="-6.169, -5.842, -11.664" rotation_euler="0.000, 0.000, 0.000" scale="0.700, 0.700, 0.700"/>
+				<physics shape="bo_roman_column_d" override_material="stone"/>
+				<components>
+					<meta_mesh_component name="roman_column_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="heir_character_stage_3" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="spawnpoint_player_4"/>
+				</tags>
+				<transform position="0.759, -2.052, 0.000" rotation_euler="0.000, 0.000, 1.571"/>
+				<skeleton skeleton_model="human_skeleton">
+					<components>
+						<meta_mesh_component name="arrow_new_icon"/>
+					</components>
+				</skeleton>
+				<scripts>
+					<script name="PopupSceneSpawnPoint">
+						<variables>
+							<variable name="InitialAction" value="act_cutscene_heir_coming_of_age_heir_stage_3_girl"/>
+							<variable name="PositiveAction" value=""/>
+							<variable name="NegativeAction" value=""/>
+							<variable name="InitialFaceAnimCode" value=""/>
+							<variable name="PositiveFaceAnimCode" value=""/>
+							<variable name="NegativeFaceAnimCode" value=""/>
+							<variable name="RightHandWieldedItem" value=""/>
+							<variable name="LeftHandWieldedItem" value=""/>
+							<variable name="BannerTagToUseForAddedPrefab" value=""/>
+							<variable name="StartWithRandomProgress" value="false"/>
+							<variable name="AttachedPrefabOffset" value="0.000, 0.000, 0.000, -1.000"/>
+							<variable name="UseHorse" value="false"/>
+							<variable name="PrefabItem" value=""/>
+							<variable name="PrefabBone" value="ItemR"/>
+						</variables>
+					</script>
+					<script name="animation_instance">
+						<variables>
+							<variable name="Skeleton Name" value="human_skeleton"/>
+							<variable name="Animation Name" value="act_cutscene_heir_coming_of_age_heir_stage_3_girl"/>
+							<variable name="Morph Animation Name" value=""/>
+							<variable name="Speed Multiplier" value="1.000000"/>
+							<variable name="Animation Phase" value="0.000000"/>
+							<variable name="Morph Animation Phase" value="0.000000"/>
+							<variable name="Freeze Animation" value="false"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="npc_wait"/>
+							<tag name="npc_common"/>
+						</tags>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_cutscene_heir_coming_of_age_heir_stage_3_girl"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="level_2"/>
+					<level name="level_3"/>
+				</levels>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

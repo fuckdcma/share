@@ -1,0 +1,44 @@
+<DiscardedRoot>
+	<NavigationScopeTargeter ScopeID="ClanPartyExtendRoleSelectionScope" ScopeParent="..\ExtendRoleSelectionList" ScopeMovements="Vertical" IsScopeEnabled="@HasCompanion" RightNavigationScope="None" ExtendDiscoveryAreaRight="200" />
+	<NavigatableListPanel Id="ExtendRoleSelectionList" DoNotAcceptEvents="true" DataSource="{ExtendedRoles}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="227.5" MarginLeft="85" MarginRight="63" StackLayout.LayoutMethod="VerticalBottomToTop" UpdateChildrenStates="true">
+		<ItemTemplate>
+			<ListPanel DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="47" MarginTop="5" MarginBottom="5" UpdateChildrenStates="true">
+				<Children>
+					<TextWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left" Brush="Clan.Role.Title.Text" Brush.TextHorizontalAlignment="Left" Brush.TextVerticalAlignment="Center" Text="@Name"/>
+					<!--Talk Button-->
+					<Widget Id="ExtendedTalkButtonWrapper" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="54" SuggestedHeight="43" MarginRight="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+						<Children>
+							<ButtonWidget Id="ExtendedTalkButton" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Party.TalkSlot.Background" Command.Click="ExecuteTalk" IsVisible="@IsTalkButtonVisible" IsEnabled="@IsTalkButtonEnabled" GamepadNavigationIndex="0">
+								<Children>
+									<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="31" SuggestedHeight="27" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="PartyScreen\talk_icon" HueFactor="10" SaturationFactor="60" ValueFactor="20" />
+								</Children>
+							</ButtonWidget>
+							<HintWidget DataSource="{TalkNotEnabledHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+						</Children>
+					</Widget>
+					<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="70" MarginRight="5">
+						<Children>
+							<NavigationTargetSwitcher FromTarget="..\..\." ToTarget="..\ExtendSelectionToggle" />
+							<ClanPartyRoleSelectionToggleWidget Id="ExtendSelectionToggle" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteToggleRoleSelection" Popup="..\..\..\..\..\..\..\..\..\..\..\..\..\ExtendedPartyRoleSelectionWidget" UpdateChildrenStates="true" IsEnabled="@IsEnabled">
+								<Children>
+									<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="SPClan.RoleSelectionButton.GoldFrame" />
+									<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="TownManagement.GovernorPopup.Governor.Background" />
+									<ImageIdentifierWidget DataSource="{EffectiveOwner\Member\Visual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="44" HorizontalAlignment="Center" VerticalAlignment="Center" AdditionalArgs="@AdditionalArgs" ImageId="@Id" ImageTypeCode="@ImageTypeCode" />
+									<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare" Color="#00000099" IsVisible="@IsNotAssigned"/>
+									<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="22" MarginRight="22" MarginTop="10" MarginBottom="10" Brush="SPClan.RoleSelectionButton.ReplaceIcon" />
+								</Children>
+							</ClanPartyRoleSelectionToggleWidget>
+							<HintWidget DataSource="{DisabledHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true"/>
+						</Children>
+					</Widget>
+					<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="19" SuggestedHeight="12" VerticalAlignment="Center" IsEnabled="@IsNotAssigned" UpdateChildrenStates="true" DoNotPassEventsToChildren="true">
+						<Children>
+							<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" VerticalAlignment="Center" Sprite="Clan\party_leader_crown" IsVisible="@IsNotAssigned" Color="#FEC157FF"/>
+							<HintWidget DataSource="{NotAssignedHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+						</Children>
+					</Widget>
+				</Children>
+			</ListPanel>
+		</ItemTemplate>
+	</NavigatableListPanel>
+</DiscardedRoot>

@@ -1,0 +1,8 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="IsEnabled" DefaultValue="false" />
+  </Parameters>
+  <Window>
+    <Standard.CircleLoadingWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Parameter.Period="0.5" IsVisible="*IsEnabled" />
+  </Window>
+</Prefab>

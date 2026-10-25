@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <!-- 士兵 -->
+	<NPCCharacter id="yuanshao_sol_000"
+		default_group="Infantry"
+		level="14"
+		name="袁绍氏卒"
+		is_female="false"
+    is_basic_troop="true"
+		occupation="Soldier"
+		culture="Culture.jizhou">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="75"/>
+			<skill id="Riding" value="5"/>
+			<skill id="OneHanded" value="105"/>
+			<skill id="TwoHanded" value="10"/>
+			<skill id="Polearm" value="65"/>
+			<skill id="Bow" value="5"/>
+			<skill id="Crossbow" value="5"/>
+			<skill id="Throwing" value="10"/>
+		</skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_001" />
+      <upgrade_target id="NPCCharacter.yuanshao_sol_002" />
+    </upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_02"/>
+				<equipment slot="Item1" id="Item.sg_shield_002"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s009_head"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s009_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c02_s2001_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s002_leg"/>
+			</EquipmentRoster>
+
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_001" default_group="Infantry" level="16" name="{=*}河朔郡兵" occupation="Soldier" upgrade_requires="ItemCategory.soldier_level_3" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="105" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="10" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="40" />
+      <skill id="Riding" value="10" />
+      <skill id="Athletics" value="120" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_003" />
+      <upgrade_target id="NPCCharacter.yuanshao_sol_004" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ji_jizhou_01" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s3001_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s2001_leg" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s2001_arm" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s3001_head" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_002" default_group="Ranged" level="16" name="{=*}河朔弩手" occupation="Soldier" upgrade_requires="ItemCategory.soldier_level_3" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="90" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="120" />
+      <skill id="Throwing" value="40" />
+      <skill id="Riding" value="10" />
+      <skill id="Athletics" value="90" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_005" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_xbow_jizhou_01" />
+        <equipment slot="Item1" id="Item.lz_bolt_jizhou_01" />
+        <equipment slot="Item2" id="Item.lz_hsd_jizhou_01" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s3002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s3002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s3002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_003" default_group="Cavalry" level="21" name="{=*}河朔轻骑兵" upgrade_requires="ItemCategory.soldier_level_4" occupation="Soldier" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="85" />
+      <skill id="TwoHanded" value="35" />
+      <skill id="Polearm" value="185" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="30" />
+      <skill id="Riding" value="130" />
+      <skill id="Athletics" value="40" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_006" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_spear_jizhou_01" />
+        <equipment slot="Item1" id="Item.lz_hsd_jizhou_04" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s4003_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s3002_leg" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s4001_head" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s5003_shoulder" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+      <equipment slot="Horse" id="Item.empire_horse" />
+      <equipment slot="HorseHarness" id="Item.sg_hh_c05_001_a" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_004" default_group="Infantry" level="21" name="{=*}河朔军士" upgrade_requires="ItemCategory.soldier_level_4" occupation="Soldier" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="135" />
+      <skill id="TwoHanded" value="35" />
+      <skill id="Polearm" value="85" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="70" />
+      <skill id="Riding" value="20" />
+      <skill id="Athletics" value="135" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_007" />
+      <upgrade_target id="NPCCharacter.yuanshao_sol_008" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ji_jizhou_02" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s4003_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s3002_leg" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s4002_head" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s5003_shoulder" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_005" default_group="Ranged" level="21" name="{=*}河朔臂张士" upgrade_requires="ItemCategory.soldier_level_4" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="120" />
+      <skill id="TwoHanded" value="25" />
+      <skill id="Polearm" value="35" />
+      <skill id="Bow" value="25" />
+      <skill id="Crossbow" value="170" />
+      <skill id="Throwing" value="45" />
+      <skill id="Riding" value="20" />
+      <skill id="Athletics" value="110" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_009" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_xbow_jizhou_02" />
+        <equipment slot="Item1" id="Item.lz_bolt_jizhou_01" />
+        <equipment slot="Item2" id="Item.lz_bolt_jizhou_01" />
+        <equipment slot="Item3" id="Item.lz_hsd_jizhou_03" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s3002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s4003_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s3002_leg" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s5003_shoulder" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_006" default_group="Cavalry" level="26" name="{=*}河朔阵骑" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="90" />
+      <skill id="TwoHanded" value="45" />
+      <skill id="Polearm" value="230" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="35" />
+      <skill id="Riding" value="165" />
+      <skill id="Athletics" value="45" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ji_jizhou_01" />
+        <equipment slot="Item1" id="Item.lz_shield_jizhou_01" />
+        <equipment slot="Item2" id="Item.lz_hsd_jizhou_06" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s5003_body" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s7001_shoulder" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s5001_head" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+      <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanma" />
+      <equipment slot="HorseHarness" id="Item.sg_hh_c05_001_c" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_007" default_group="Infantry" level="26" name="{=*}河朔奋武卫" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="175" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="95" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="90" />
+      <skill id="Riding" value="25" />
+      <skill id="Athletics" value="155" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jizhou_07" />
+        <equipment slot="Item1" id="Item.lz_shield_jizhou_01" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s5003_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s5003_shoulder" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s5003_head" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_008" default_group="Infantry" level="26" name="{=*}河朔持戟锐士" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="115" />
+      <skill id="TwoHanded" value="45" />
+      <skill id="Polearm" value="250" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="40" />
+      <skill id="Riding" value="25" />
+      <skill id="Athletics" value="195" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_010" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ji_jizhou_02" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s5003_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s5003_shoulder" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s5003_head" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_009" default_group="Ranged" level="26" name="{=*}河朔蹶张士" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="150" />
+      <skill id="TwoHanded" value="35" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="40" />
+      <skill id="Crossbow" value="205" />
+      <skill id="Throwing" value="55" />
+      <skill id="Riding" value="30" />
+      <skill id="Athletics" value="145" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_011" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_xbow_jizhou_03" />
+        <equipment slot="Item1" id="Item.lz_bolt_jizhou_01" />
+        <equipment slot="Item2" id="Item.lz_bolt_jizhou_01" />
+        <equipment slot="Item3" id="Item.lz_hsd_jizhou_06" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s5004_head" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s5003_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s5003_shoulder" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_010" default_group="Infantry" level="31" name="{=*}河朔重甲戟士" upgrade_requires="ItemCategory.soldier_level_6" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="135" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="285" />
+      <skill id="Bow" value="25" />
+      <skill id="Crossbow" value="25" />
+      <skill id="Throwing" value="45" />
+      <skill id="Riding" value="30" />
+      <skill id="Athletics" value="205" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_012" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ji_jizhou_02" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s6001_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s6001_shoulder" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s6001_head" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_011" default_group="Ranged" level="31" name="{=*}河朔射声蹶张士" upgrade_requires="ItemCategory.soldier_level_6" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="175" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="45" />
+      <skill id="Bow" value="50" />
+      <skill id="Crossbow" value="235" />
+      <skill id="Throwing" value="55" />
+      <skill id="Riding" value="35" />
+      <skill id="Athletics" value="160" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yuanshao_sol_013" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_xbow_jizhou_03" />
+        <equipment slot="Item1" id="Item.lz_bolt_jizhou_02" />
+        <equipment slot="Item2" id="Item.lz_bolt_jizhou_02" />
+        <equipment slot="Item3" id="Item.lz_hsd_jizhou_06" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s6002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s6001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s6001_shoulder" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_012" default_group="Infantry" level="36" name="{=*}重装大戟士" upgrade_requires="ItemCategory.soldier_level_7" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="150" />
+      <skill id="TwoHanded" value="55" />
+      <skill id="Polearm" value="315" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="50" />
+      <skill id="Riding" value="35" />
+      <skill id="Athletics" value="215" />
+    </skills>
+    <upgrade_targets>
+        <upgrade_target id="NPCCharacter.dajishi_elite" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ji_jizhou_03" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s7001_head" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s7001_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s7001_shoulder" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yuanshao_sol_013" default_group="Ranged" level="36" name="{=*}先登死士" upgrade_requires="ItemCategory.soldier_level_7" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="195" />
+      <skill id="TwoHanded" value="45" />
+      <skill id="Polearm" value="50" />
+      <skill id="Bow" value="55" />
+      <skill id="Crossbow" value="255" />
+      <skill id="Throwing" value="60" />
+      <skill id="Riding" value="40" />
+      <skill id="Athletics" value="180" />
+    </skills>
+    <upgrade_targets>
+        <upgrade_target id="NPCCharacter.xiandengsishi_elite" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jizhou_08" />
+        <equipment slot="Item1" id="Item.lz_shield_jizhou_01" />
+        <equipment slot="Item2" id="Item.lz_xbow_jizhou_04" />
+        <equipment slot="Item3" id="Item.lz_bolt_jizhou_02" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s7002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s7001_body" />
+        <equipment slot="Cape" id="Item.sg_ar_c05_s7001_shoulder" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

@@ -1,0 +1,1752 @@
+<prefabs>
+	<game_entity name="ShipControl" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_editor_cube">
+			<body_flags>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="editor_cube">
+				<mesh name="editor_cube" material="plain_white" argument="2.000, 0.000, 0.000, 0.000"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="ShipControllerMachine">
+				<variables>
+					<variable name="_cameraOffset" value="0.000, -18.000, 5.000, 340282346638528859811704183484516925440.000"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="use_reload_fire_l" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="-1.058, -0.138, 0.000" rotation_euler="0.000, 0.000, -1.571"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="true"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="floater_volume" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="editor_cube"/>
+		</components>
+	</game_entity>
+	<game_entity name="pulling_machine" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_editor_cube">
+			<body_flags>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="editor_cube">
+				<mesh name="editor_cube" material="plain_white" argument="2.000, 0.000, 0.000, 0.000"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="ShipPullingMachine">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="chair_sit_position_front" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="0.000, -0.750, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_usage_ballista_idle"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="true"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pull_point" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="ShipPullPoint"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="trajectory_sphere"/>
+		</components>
+	</game_entity>
+	<game_entity name="ship_connection_nav_mesh_plank" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics>
+			<body_flags>
+				<body_flag name="moveable"/>
+				<body_flag name="agent_only"/>
+			</body_flags>
+		</physics>
+		<children>
+			<game_entity name="navmesh_holder" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="navmesh_holder"/>
+				</tags>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ship_climber" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_arabian_platform_wooden_a" override_material="wood">
+			<body_flags>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="arabian_platform_wooden_a"/>
+		</components>
+		<scripts>
+			<script name="ClimbingMachine">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="banner_empire_keep" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="climb_begin"/>
+				</tags>
+				<transform position="-0.104, 0.327, 0.588"/>
+				<components>
+					<meta_mesh_component name="banner_empire_keep"/>
+				</components>
+			</game_entity>
+			<game_entity name="banner_empire_keep" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="climb_end"/>
+				</tags>
+				<transform position="-0.134, -0.446, 11.251"/>
+				<physics shape="bo_banner_empire_keep">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="banner_empire_keep"/>
+				</components>
+			</game_entity>
+			<game_entity name="mp_spawnpoint" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="pilot"/>
+				</tags>
+				<transform position="-0.155, -0.677, 0.588"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="StandingPointWithSwimmingLimit">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="true"/>
+							<variable name="_customPlayerInteractionDistance" value="3.0"/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="longboat_climber_test_fine_tuned" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics>
+			<body_flags>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<scripts>
+			<script name="ClimbingMachine">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="fishnet_d" old_prefab_name="" mobility="1">
+				<transform position="-0.200, 0.000, -4.700" rotation_euler="0.000, 0.000, 1.571" scale="1.000, 1.000, 2.000"/>
+				<physics shape="bo_fishnet_d">
+					<body_flags>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="fishnet_d"/>
+				</components>
+			</game_entity>
+			<game_entity name="standing_point" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="0.000, 0.000, -5.200" rotation_euler="0.000, 0.000, 1.571"/>
+				<scripts>
+					<script name="StandingPointWithSwimmingLimit">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="true"/>
+							<variable name="_customPlayerInteractionDistance" value="3.0"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="end_position" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="climb_end"/>
+				</tags>
+				<transform rotation_euler="0.000, 0.000, 1.571"/>
+			</game_entity>
+			<game_entity name="climb_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-0.700, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.100, 0.100, 0.100"/>
+				<physics>
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="editor_cube">
+						<mesh name="editor_cube" material="plain_white" argument="2.000, 0.000, 0.000, 0.000"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="rope_pile_baked" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="ropepiletestmesh">
+				<mesh name="ropepiletestmesh" material="rope_pile_baked_material"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="RopePileBaked">
+				<variables>
+					<variable name="Position1" value="0.000, 0.000, 0.000, 0.000"/>
+					<variable name="Position2" value="7.000, 7.000, 0.000, 340282346638528859811704183484516925440.000"/>
+					<variable name="Progress" value="0.500"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="ShipOarRight_6m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipOarMachine">
+				<variables>
+					<variable name="_rowIdleAction" value="act_usage_row_idle_right"/>
+					<variable name="_rowLoopAction" value="act_usage_row_loop_right"/>
+					<variable name="_rowDeathAction" value="act_row_death_right"/>
+					<variable name="_rowSitDownAction" value="act_row_sit_down_right"/>
+					<variable name="_rowStandUpAction" value="act_row_stand_up_right"/>
+					<variable name="_requiresAgent" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pilot" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="-1.473, 0.510, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="true"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_right"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_6m"/>
+				</components>
+				<children>
+					<game_entity name="hand_position" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.844, 0.000"/>
+					</game_entity>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, 1.571, 1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, 0.100, 0.000" rotation_euler="-1.222, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_6m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLeft_6m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipOarMachine">
+				<variables>
+					<variable name="_rowIdleAction" value="act_usage_row_idle_left"/>
+					<variable name="_rowLoopAction" value="act_usage_row_loop_left"/>
+					<variable name="_rowDeathAction" value="act_row_death_left"/>
+					<variable name="_rowSitDownAction" value="act_row_sit_down_left"/>
+					<variable name="_rowStandUpAction" value="act_row_stand_up_left"/>
+					<variable name="_requiresAgent" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pilot" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="1.472, 0.510, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="true"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_left"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_6m"/>
+				</components>
+				<children>
+					<game_entity name="hand_position" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.837, 0.000"/>
+					</game_entity>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, -1.571, -1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, 0.100, 0.000" rotation_euler="-1.222, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_6m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarRight_4m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipOarMachine">
+				<variables>
+					<variable name="_rowIdleAction" value="act_usage_row_idle_right"/>
+					<variable name="_rowLoopAction" value="act_usage_row_loop_right"/>
+					<variable name="_rowDeathAction" value="act_row_death_right"/>
+					<variable name="_rowSitDownAction" value="act_row_sit_down_right"/>
+					<variable name="_rowStandUpAction" value="act_row_stand_up_right"/>
+					<variable name="_requiresAgent" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pilot" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="-1.473, 0.510, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="true"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_right"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_4m"/>
+				</components>
+				<children>
+					<game_entity name="hand_position" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.844, 0.000"/>
+					</game_entity>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, 1.571, 1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, 0.100, 0.000" rotation_euler="-1.222, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_4m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLeft_4m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipOarMachine">
+				<variables>
+					<variable name="_rowIdleAction" value="act_usage_row_idle_left"/>
+					<variable name="_rowLoopAction" value="act_usage_row_loop_left"/>
+					<variable name="_rowDeathAction" value="act_row_death_left"/>
+					<variable name="_rowSitDownAction" value="act_row_sit_down_left"/>
+					<variable name="_rowStandUpAction" value="act_row_stand_up_left"/>
+					<variable name="_requiresAgent" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pilot" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="1.472, 0.510, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="true"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_left"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_4m"/>
+				</components>
+				<children>
+					<game_entity name="hand_position" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.837, 0.000"/>
+					</game_entity>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, -1.571, -1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, 0.100, 0.000" rotation_euler="-1.222, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_4m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLeft_8m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipOarMachine">
+				<variables>
+					<variable name="_rowIdleAction" value="act_usage_row_idle_left"/>
+					<variable name="_rowLoopAction" value="act_usage_row_loop_left"/>
+					<variable name="_rowDeathAction" value="act_row_death_left"/>
+					<variable name="_rowSitDownAction" value="act_row_sit_down_left"/>
+					<variable name="_rowStandUpAction" value="act_row_stand_up_left"/>
+					<variable name="_requiresAgent" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pilot" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="1.472, 0.510, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="true"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_left"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_8m"/>
+				</components>
+				<children>
+					<game_entity name="hand_position" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.837, 0.000"/>
+					</game_entity>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, -1.571, -1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, 0.100, 0.000" rotation_euler="-1.222, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_8m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarRight_8m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipOarMachine">
+				<variables>
+					<variable name="_rowIdleAction" value="act_usage_row_idle_right"/>
+					<variable name="_rowLoopAction" value="act_usage_row_loop_right"/>
+					<variable name="_rowDeathAction" value="act_row_death_right"/>
+					<variable name="_rowSitDownAction" value="act_row_sit_down_right"/>
+					<variable name="_rowStandUpAction" value="act_row_stand_up_right"/>
+					<variable name="_requiresAgent" value="false"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="pilot" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="Pilot"/>
+				</tags>
+				<transform position="-1.473, 0.510, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="icon_man"/>
+				</components>
+				<scripts>
+					<script name="StandingPoint">
+						<variables>
+							<variable name="AutoSheathWeapons" value="true"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="true"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_right"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_8m"/>
+				</components>
+				<children>
+					<game_entity name="hand_position" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.844, 0.000"/>
+					</game_entity>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, 1.571, 1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, 0.100, 0.000" rotation_euler="-1.222, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_8m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLowDeckRight_4m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipUnmannedOar"/>
+		</scripts>
+		<children>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_right"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_4m"/>
+				</components>
+				<children>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, 1.571, 1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, -1.200, -0.230" rotation_euler="0.175, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_4m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLowDeckRight_6m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipUnmannedOar"/>
+		</scripts>
+		<children>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_right"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_6m"/>
+				</components>
+				<children>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, 1.571, 1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, -3.000, -0.550" rotation_euler="0.175, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_6m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLowDeckLeft_8m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipUnmannedOar"/>
+		</scripts>
+		<children>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_left"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_8m"/>
+				</components>
+				<children>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, -1.571, -1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, -5.000, -0.900" rotation_euler="0.175, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_8m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLowDeckLeft_4m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipUnmannedOar"/>
+		</scripts>
+		<children>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_left"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_4m"/>
+				</components>
+				<children>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, -1.571, -1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, -1.200, -0.230" rotation_euler="0.175, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_4m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLowDeckRight_8m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipUnmannedOar"/>
+		</scripts>
+		<children>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_right"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_8m"/>
+				</components>
+				<children>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, 1.571, 1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, -5.000, -0.900" rotation_euler="0.175, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_8m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ShipOarLowDeckLeft_6m" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipUnmannedOar"/>
+		</scripts>
+		<children>
+			<game_entity name="oar" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="does_not_affect_parents_local_bb" value="true"/>
+				</flags>
+				<tags>
+					<tag name="oar_gate_left"/>
+				</tags>
+				<transform position="0.000, 0.000, 0.700" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_oar_6m">
+					<body_flags>
+						<body_flag name="dont_collide_with_camera"/>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+						<body_flag name="missile_only"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="oar_single_6m"/>
+				</components>
+				<children>
+					<game_entity name="gate_icon" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform rotation_euler="0.000, -1.571, -1.571"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_yellow"/>
+						</components>
+					</game_entity>
+					<game_entity name="retracted_frame" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="0.000, -3.000, -0.550" rotation_euler="0.175, 0.000, 0.000"/>
+						<components>
+							<meta_mesh_component name="oar_single_6m"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="oar_deck" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipOarDeck">
+				<variables>
+					<variable name="VerticalBaseAngle" value="15.000"/>
+					<variable name="LateralBaseAngle" value="0.000"/>
+					<variable name="VerticalRotationAngle" value="10.000"/>
+					<variable name="LateralRotationAngle" value="17.200"/>
+					<variable name="VerticalNoisePercentage" value="0.300"/>
+					<variable name="LateralNoisePercentage" value="0.050"/>
+					<variable name="OarLength" value="4.000"/>
+					<variable name="LeftOarMachinePrefab" value="ShipOarLeft"/>
+					<variable name="RightOarMachinePrefab" value="ShipOarRight"/>
+					<variable name="OarCountOneSide" value="15"/>
+					<variable name="OarSpan" value="1.410"/>
+					<variable name="OarGateOffsetSide" value="3.400"/>
+					<variable name="OarGateOffsetBackward" value="10.300"/>
+					<variable name="OarGateOffsetUp" value="1.280"/>
+					<variable name="RetractedFrameOffset" value="0.100"/>
+					<variable name="RetractedFrameAngle" value="70.000"/>
+					<variable name="UseExistingOarMachineFrames" value="false"/>
+					<variable name="ShowDebugPreview" value="false"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="right_oar_machines" old_prefab_name="" mobility="1"/>
+			<game_entity name="left_oar_machines" old_prefab_name="" mobility="1"/>
+		</children>
+	</game_entity>
+	<game_entity name="ship_crate_chair_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="ship_crate_chair_a">
+				<mesh name="ship_crate_chair_a.0" factor="4287252777"/>
+				<mesh name="ship_crate_chair_a.2" material="galley_ship_metal_01"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="ship_crate_chair_b" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="ship_crate_chair_b">
+				<mesh name="ship_crate_chair_b.0" material="bw_oar_wood_a" factor="4287252777"/>
+				<mesh name="ship_crate_chair_b.2" material="galley_ship_metal_01"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="mangonel_c" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+			<flag name="hide_in_prefab_editors" value="true"/>
+		</flags>
+		<tags>
+			<tag name="machine_parent"/>
+			<tag name="mangonel_c"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="SynchedMissionObject">
+				<variables>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="mangonel_b_body" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="destroyed"/>
+							<variable name="DestroyedByStoneOnly" value="false"/>
+							<variable name="CanBeDestroyedInitially" value="false"/>
+							<variable name="MaxHitPoint" value="900.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value=""/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value="event:/mission/siege/mangonel/break"/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="Defender"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+					<script name="ShipMangonel">
+						<variables>
+							<variable name="MangonelBodySkeleton" value="mangonel_b_skeleton"/>
+							<variable name="MangonelBodyFire" value="mangonel_b_fire"/>
+							<variable name="MangonelBodyReload" value="mangonel_b_set_up"/>
+							<variable name="MangonelRopeFire" value="mangonel_b_holder_fire"/>
+							<variable name="MangonelRopeReload" value="mangonel_b_holder_set_up"/>
+							<variable name="MangonelAimAnimation" value="mangonel_b_anglearm_state"/>
+							<variable name="ProjectileBoneName" value="bn_projectile_holder"/>
+							<variable name="IdleActionName" value="act_usage_mangonel_idle"/>
+							<variable name="ShootActionName" value="act_usage_mangonel_shoot"/>
+							<variable name="Reload1ActionName" value="act_usage_mangonel_reload"/>
+							<variable name="Reload2ActionName" value="act_usage_mangonel_reload_2"/>
+							<variable name="RotateLeftActionName" value="act_usage_mangonel_rotate_left"/>
+							<variable name="RotateRightActionName" value="act_usage_mangonel_rotate_right"/>
+							<variable name="LoadAmmoBeginActionName" value="act_usage_mangonel_load_ammo_begin"/>
+							<variable name="LoadAmmoEndActionName" value="act_usage_mangonel_load_ammo_end"/>
+							<variable name="Reload2IdleActionName" value="act_usage_mangonel_reload_2_idle"/>
+							<variable name="ProjectileSpeed" value="40.000"/>
+							<variable name="MissileItemID" value="boulder"/>
+							<variable name="MultipleProjectileCount" value="5"/>
+							<variable name="Focus" value="Troops"/>
+							<variable name="StartingAmmoCount" value="20"/>
+							<variable name="TopReleaseAngleRestriction" value="0.700"/>
+							<variable name="BottomReleaseAngleRestriction" value="-0.200"/>
+							<variable name="RemoveOnDeployTag" value=""/>
+							<variable name="AddOnDeployTag" value=""/>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value="mangonel_b_dnm"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="clean" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<tags>
+							<tag name="body"/>
+							<tag name="operational"/>
+						</tags>
+						<physics shape="bo_mangonel_b_body" override_material="wood_nonstick">
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+						<skeleton skeleton_model="mangonel_b_skeleton">
+							<components>
+								<meta_mesh_component name="mangonel_b_body"/>
+							</components>
+						</skeleton>
+						<scripts>
+							<script name="SynchedMissionObject">
+								<variables>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="angle_meter" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<tags>
+									<tag name="vertical_adjuster"/>
+								</tags>
+								<skeleton skeleton_model="mangonel_b_aim_skeleton">
+									<components>
+										<meta_mesh_component name="mangonel_b_aimbar"/>
+									</components>
+								</skeleton>
+								<scripts>
+									<script name="SynchedMissionObject">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="projectile_boulder" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<tags>
+									<tag name="projectile"/>
+									<tag name="boulder"/>
+								</tags>
+								<transform position="-0.002, -0.193, 2.502" rotation_euler="0.000, 0.000, -3.135"/>
+								<components>
+									<meta_mesh_component name="projectile_rock"/>
+								</components>
+								<scripts>
+									<script name="SynchedMissionObject">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="use_reload_fire" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="Pilot"/>
+									<tag name="reload"/>
+									<tag name="can_pick_up_ammo"/>
+								</tags>
+								<transform position="1.027, 2.367, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+								<components>
+									<meta_mesh_component name="icon_man"/>
+								</components>
+								<scripts>
+									<script name="StandingPoint">
+										<variables>
+											<variable name="AutoSheathWeapons" value="true"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="use_reload" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="reload"/>
+									<tag name="can_pick_up_ammo"/>
+								</tags>
+								<transform position="-1.099, 2.459, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+								<components>
+									<meta_mesh_component name="icon_man"/>
+								</components>
+								<scripts>
+									<script name="StandingPoint">
+										<variables>
+											<variable name="AutoSheathWeapons" value="true"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="use_load" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="ammoload"/>
+								</tags>
+								<transform position="0.000, 2.456, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+								<components>
+									<meta_mesh_component name="icon_man"/>
+								</components>
+								<scripts>
+									<script name="StandingPointWithWeaponRequirement">
+										<variables>
+											<variable name="AutoSheathWeapons" value="false"/>
+											<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+											<variable name="AutoWieldWeapons" value="false"/>
+											<variable name="TranslateUser" value="true"/>
+											<variable name="HasRecentlyBeenRechecked" value="false"/>
+											<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+											<variable name="_customPlayerInteractionDistance" value="0.000"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="mangonel_rope" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<tags>
+									<tag name="rope"/>
+								</tags>
+								<skeleton skeleton_model="mangonel_b_rope_skeleton">
+									<components>
+										<meta_mesh_component name="mangonel_b_rope"/>
+									</components>
+								</skeleton>
+								<scripts>
+									<script name="SynchedMissionObject">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="targeting_volume" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<tags>
+									<tag name="targeting_entity"/>
+								</tags>
+								<transform position="0.008, -0.488, 0.957" rotation_euler="0.000, 0.000, 0.000" scale="4.000, 4.000, 4.000"/>
+								<components>
+									<meta_mesh_component name="barrier_sphere">
+										<mesh name="barrier_sphere" material="volume_box"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+							<game_entity name="projectile_leaving_position" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.150, 2.500"/>
+							</game_entity>
+							<game_entity name="projectile_pot" old_prefab_name="" visible="false" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<tags>
+									<tag name="projectile"/>
+									<tag name="pot"/>
+								</tags>
+								<transform position="0.000, -0.190, 2.500" rotation_euler="1.117, 0.000, 0.000"/>
+								<components>
+									<meta_mesh_component name="projectile_pot"/>
+								</components>
+								<scripts>
+									<script name="SynchedMissionObject">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="projectile_grapeshot_fire" old_prefab_name="" visible="false" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<tags>
+									<tag name="projectile"/>
+									<tag name="grapeshot_fire_stack"/>
+								</tags>
+								<transform position="0.000, -0.190, 2.500" rotation_euler="1.117, 0.000, 0.000"/>
+								<components>
+									<meta_mesh_component name="grapeshot_ready_fire"/>
+								</components>
+								<scripts>
+									<script name="SynchedMissionObject">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="projectile_grapeshot" old_prefab_name="" visible="false" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<tags>
+									<tag name="projectile"/>
+									<tag name="grapeshot_stack"/>
+								</tags>
+								<transform position="0.000, -0.190, 2.500" rotation_euler="1.117, 0.000, 0.000"/>
+								<components>
+									<meta_mesh_component name="grapeshot_ready"/>
+								</components>
+								<scripts>
+									<script name="SynchedMissionObject">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="agent_collider" old_prefab_name="" mobility="1">
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.000, -0.100, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="1.862, 3.405, 3.501"/>
+								<physics shape="bo_editor_cube">
+									<body_flags>
+										<body_flag name="moveable"/>
+										<body_flag name="agent_only"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="editor_cube">
+										<mesh name="editor_cube" material="editor_fresnel_alpha" argument="0.500, 1.000, 0.000, 0.000"/>
+									</meta_mesh_component>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="destroyed" old_prefab_name="" visible="false" mobility="1">
+						<physics shape="bo_mangonel_b_destroyed_part1">
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+						<components>
+							<meta_mesh_component name="mangonel_b_destroyed_part1"/>
+						</components>
+						<children>
+							<game_entity name="part_3" old_prefab_name="" mobility="1">
+								<transform position="0.013, 0.386, 2.037" rotation_euler="0.000, -1.341, 1.590"/>
+								<physics shape="bo_composite_mangonel_b_destroyed_part4">
+									<body_flags>
+										<body_flag name="dynamic"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="mangonel_b_destroyed_part4"/>
+								</components>
+							</game_entity>
+							<game_entity name="part_2" old_prefab_name="" mobility="1">
+								<transform position="0.045, -0.119, 0.528" rotation_euler="-0.233, -1.581, -0.002"/>
+								<physics shape="bo_composite_mangonel_b_destroyed_part3">
+									<body_flags>
+										<body_flag name="dynamic"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="mangonel_b_destroyed_part3"/>
+								</components>
+							</game_entity>
+							<game_entity name="part_1" old_prefab_name="" mobility="1">
+								<transform position="-0.148, -0.415, 1.778"/>
+								<physics shape="bo_composite_mangonel_b_destroyed_part2">
+									<body_flags>
+										<body_flag name="dynamic"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="mangonel_b_destroyed_part2"/>
+								</components>
+							</game_entity>
+							<game_entity name="part_4" old_prefab_name="" mobility="1">
+								<transform position="1.006, -0.485, 1.767"/>
+								<physics shape="bo_composite_mangonel_b_destroyed_part5">
+									<body_flags>
+										<body_flag name="dynamic"/>
+									</body_flags>
+								</physics>
+								<components>
+									<meta_mesh_component name="mangonel_b_destroyed_part5"/>
+								</components>
+							</game_entity>
+							<game_entity name="particles" old_prefab_name="" mobility="1">
+								<components>
+									<particle_system_instanced_component>
+										<effect_ref base_effect="{58113213-4BC5-47E8-9570-FAFCED52D372}"/>
+									</particle_system_instanced_component>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="projectile_pile" old_prefab_name="" mobility="1">
+				<transform position="0.010, 0.730, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 0.600"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="mangonel_rock_pile"/>
+				</components>
+				<scripts>
+					<script name="SiegeMachineStonePile">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value="projectile_pile_a_blocker_dnm"/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="ammo_pos_h" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="ammopickup"/>
+						</tags>
+						<transform position="1.650, 2.770, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="icon_man"/>
+						</components>
+						<scripts>
+							<script name="StandingPointWithWeaponRequirement">
+								<variables>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+									<variable name="_customPlayerInteractionDistance" value="0.000"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="pile_collider" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="pile_collider"/>
+						</tags>
+						<physics shape="bo_mangonel_rock_pile" override_material="stone">
+							<body_flags>
+								<body_flag name="moveable"/>
+							</body_flags>
+						</physics>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

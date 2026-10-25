@@ -1,0 +1,107 @@
+<prefabs>
+	<game_entity name="pulling_machine_visual" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_editor_cube">
+			<body_flags>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="editor_cube">
+				<mesh name="editor_cube" material="plain_white" argument="2.000, 0.000, 0.000, 0.000"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="attachment_machine_visual" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_empire_lord_pot_e">
+			<body_flags>
+				<body_flag name="only_collide_with_raycast"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="amphora_slim"/>
+		</components>
+	</game_entity>
+	<game_entity name="ShipControl_visual" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_editor_cube"/>
+		<components>
+			<meta_mesh_component name="editor_cube">
+				<mesh name="editor_cube" material="plain_white" argument="2.000, 0.000, 0.000, 0.000"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="ship_climber_visual" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_arabian_platform_wooden_a" override_material="wood"/>
+		<components>
+			<meta_mesh_component name="arabian_platform_wooden_a"/>
+		</components>
+		<children>
+			<game_entity name="banner_empire_keep" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="climb_begin"/>
+				</tags>
+				<transform position="-0.104, 0.327, 0.588"/>
+				<components>
+					<meta_mesh_component name="banner_empire_keep"/>
+				</components>
+			</game_entity>
+			<game_entity name="banner_empire_keep" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="climb_end"/>
+				</tags>
+				<transform position="-0.134, -0.446, 11.251"/>
+				<physics shape="bo_banner_empire_keep"/>
+				<components>
+					<meta_mesh_component name="banner_empire_keep"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="longboat_climber_test_fine_tuned_visual" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics>
+			<body_flags>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<children>
+			<game_entity name="fishnet_d" old_prefab_name="" mobility="1">
+				<transform position="-0.340, -0.010, -2.300" rotation_euler="0.109, 0.000, 1.607"/>
+				<physics shape="bo_fishnet_d">
+					<body_flags>
+						<body_flag name="moveable"/>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="fishnet_d"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="pull_point_visual" old_prefab_name="">
+		<tags>
+			<tag name="ShipPullPoint"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="trajectory_sphere"/>
+		</components>
+	</game_entity>
+</prefabs>
+

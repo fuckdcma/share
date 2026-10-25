@@ -1,0 +1,35 @@
+<prefabs>
+	<game_entity name="burning_bolt" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="bolt_bl_fire_a"/>
+		</components>
+		<children>
+			<game_entity name="psys_game_burning_missile" old_prefab_name="">
+				<transform position="0.000, 0.000, 0.309"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FC2F9943-5469-4F43-B862-3CBF683A354C}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="burning_arrow" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="arrow_bl_fire_a"/>
+		</components>
+		<children>
+			<game_entity name="psys_game_burning_missile" old_prefab_name="">
+				<transform position="0.000, 0.000, 0.920"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FC2F9943-5469-4F43-B862-3CBF683A354C}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

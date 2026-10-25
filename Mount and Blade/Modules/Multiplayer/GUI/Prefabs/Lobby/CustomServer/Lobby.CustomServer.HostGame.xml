@@ -1,0 +1,91 @@
+<Prefab>
+	<Constants>
+		<Constant Name="ButtonBrush.Width" BrushName="ButtonBrush4" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="ButtonBrush.Height" BrushName="ButtonBrush4" BrushLayer="Default" BrushValueType="Height"/>
+		
+		<Constant Name="CreateGamePanel.TextInputBackground.Width" BrushName="MPLobby.CustomServer.CreateGamePanel.TextInputBackground" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="CreateGamePanel.TextInputBackground.Height" BrushName="MPLobby.CustomServer.CreateGamePanel.TextInputBackground" BrushLayer="Default" BrushValueType="Height"/>
+		
+		<Constant Name="CreateGamePanel.DropdownButton.Width" BrushName="MPLobby.CustomServer.CreateGamePanel.DropdownButton" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="CreateGamePanel.DropdownButton.Height" BrushName="MPLobby.CustomServer.CreateGamePanel.DropdownButton" BrushLayer="Default" BrushValueType="Height"/>
+		
+		<Constant Name="CreateGamePanel.SliderHandle.Width" BrushName="MPLobby.CustomServer.CreateGamePanel.SliderHandle" BrushLayer="Default" BrushValueType="Width"/>
+		<Constant Name="CreateGamePanel.SliderHandle.Height" BrushName="MPLobby.CustomServer.CreateGamePanel.SliderHandle" BrushLayer="Default" BrushValueType="Height"/>
+	</Constants>
+	<Window>
+		<OptionsItemWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" BooleanOption="ListPanel\Option\BooleanOption" BooleanToggleButtonWidget="ListPanel\Option\BooleanOption\BoolButton" NumericOption="ListPanel\Option\NumericOption" StringOption="ListPanel\Option\StringOption" DropdownWidget="ListPanel\Option\StringOption\DropdownParent" GameKeyOption="ListPanel\Option\GameKeyOption" InputOption="ListPanel\Option\InputOption" OptionTypeID="@Category" IsOptionEnabled="@IsEnabled">
+			<Children>
+				<ListPanel Id="ListPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight" >
+					<Children>
+						<TextWidget Text="@Name" WidthSizePolicy="Fixed" SuggestedWidth="500" HeightSizePolicy="Fixed" SuggestedHeight="30" VerticalAlignment="Center" PositionYOffset="2" Brush="MPLobby.CustomServer.CreateGamePanel.SubDescription"/>
+						<Widget Id="Option" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="25" MarginRight="40">
+							<Children>
+
+								<Widget IsVisible="false" Id="BooleanOption" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+									<Children>
+
+										<NavigationTargetSwitcher FromTarget="..\." ToTarget="..\BoolButton" />
+										<NavigationAutoScrollWidget TrackedWidget="..\BoolButton" AutoScrollTopOffset="70" AutoScrollBottomOffset="70" />
+										
+										<ButtonWidget Id="BoolButton" IsSelected ="@IsSelected" DoNotPassEventsToChildren="true" HeightSizePolicy ="Fixed" WidthSizePolicy="Fixed" SuggestedWidth="42" SuggestedHeight="42" VerticalAlignment="Center" ToggleIndicator="ToggleIndicator" ButtonType="Toggle" Brush="MPLobby.CustomServer.CreateGamePanel.Toggle" >
+											<Children>
+												<Widget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="StdAssets\create_server_checkbox_full" IsDisabled="true"/>
+											</Children>
+										</ButtonWidget>
+									</Children>
+								</Widget>
+
+								<Widget IsVisible="false" Id="NumericOption" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" PositionXOffset="8">
+									<Children>
+
+										<NavigationTargetSwitcher FromTarget="..\." ToTarget="..\SliderParent\Slider\SliderHandle" />
+										<NavigationAutoScrollWidget TrackedWidget="..\SliderParent\Slider\SliderHandle" AutoScrollTopOffset="70" AutoScrollBottomOffset="70" />
+										
+										<ListPanel Id="SliderParent" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent">
+											<Children>
+												<SliderWidget Id="Slider" DoNotUpdateHandleSize="true" IsDiscrete="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="390" SuggestedHeight="25" HorizontalAlignment="Left" VerticalAlignment="Center" MinValueInt="@Min" MaxValueInt="@Max" ValueInt="@Value" Handle="SliderHandle" Filler="Filler">
+													<Children>
+														<Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="402" SuggestedHeight="25" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPLobby\CustomServer\create_server_slider_bed"/>
+														<Widget Id="Filler" ClipContents="true" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="23" VerticalAlignment="Center">
+															<Children>
+																<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="396" PositionXOffset="-3" Sprite="create_server_slider_fill_9"/>
+																<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="250" SuggestedHeight="17" HorizontalAlignment="Right" VerticalAlignment="Center" Sprite="MPLobby\CustomServer\create_server_slider_fill_glow"/>
+															</Children>
+														</Widget>
+														<ImageWidget Id="SliderHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CreateGamePanel.SliderHandle.Width" SuggestedHeight="!CreateGamePanel.SliderHandle.Height" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="MPLobby.CustomServer.CreateGamePanel.SliderHandle" />
+													</Children>
+												</SliderWidget>
+												<TextWidget Text="@ValueAsString" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" SuggestedWidth="40" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="15" PositionYOffset="3" Brush="MPLobby.CustomServer.CreateGamePanel.SliderText"/>
+											</Children>
+										</ListPanel>
+									</Children>
+								</Widget>
+
+								<Standard.DropdownWithHorizontalControl Id="StringOption" VerticalAlignment="Center" MarginLeft="3" IsVisible="false" Parameter.IsFlatDesign="true" Parameter.ShowNextAndPrevious="false" Parameter.SelectorDataSource="{Selector}">
+									<Children>
+										<NavigationTargetSwitcher FromTarget="..\." ToTarget="..\DropdownParent" />
+										<NavigationAutoScrollWidget TrackedWidget="..\DropdownParent" AutoScrollTopOffset="70" AutoScrollBottomOffset="70" />
+									</Children>
+								</Standard.DropdownWithHorizontalControl>
+
+								<Widget IsVisible="false" Id="GameKeyOption" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+									<Children>
+
+									</Children>
+								</Widget>
+
+								<NavigationAutoScrollWidget TrackedWidget="..\InputOption" AutoScrollTopOffset="70" AutoScrollBottomOffset="70" />
+								<ImageWidget IsVisible="false" Id="InputOption" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CreateGamePanel.TextInputBackground.Width" SuggestedHeight="!CreateGamePanel.TextInputBackground.Height" VerticalAlignment="Center" MarginLeft="4" Brush="MPLobby.CustomServer.CreateGamePanel.TextInputBackground">
+									<Children>
+										<EditableTextWidget Text="@Text" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left" MarginLeft="10" MarginRight="10" PositionYOffset="2" Brush="MPLobby.CustomServer.CreateGamePanel.InputText" Brush.FontSize="20"/>
+									</Children>
+								</ImageWidget>
+
+							</Children>
+						</Widget>
+					</Children>
+				</ListPanel>
+			</Children>
+		</OptionsItemWidget>
+	</Window>
+</Prefab>

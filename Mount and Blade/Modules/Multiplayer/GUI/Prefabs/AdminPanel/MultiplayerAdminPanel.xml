@@ -1,0 +1,171 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Background.Frame.Extend" Value="18" />
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.5">
+      <Children>
+
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="382" Sprite="escape_menu_gradient_9" />
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="382" HorizontalAlignment="Right" Sprite="escape_menu_gradient_9" HorizontalFlip="true" />
+        
+        <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="800" VerticalAlignment="Center" HorizontalAlignment="Center" Sprite="flat_panel_9" AlphaFactor="0.90" ExtendLeft="50" ExtendRight="50" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <Children>
+
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="25" MarginBottom="10" Text="@TitleText" Brush="MPAdminPanel.Title.Text"/>
+
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" MarginTop="2" Sprite="MPTeamSelection\divider" />
+
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+              <Children>
+                
+                <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginRight="5" AutoHideScrollBars="true" ClipRect="ClipRect" InnerPanel="ClipRect\OptionGroups" VerticalScrollbar="..\VerticalScrollbar">
+                  <Children>
+                    <Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="15" MarginTop="15" MarginRight="15" MarginBottom="15" ClipContents="true">
+                      <Children>
+                        <ListPanel Id="OptionGroups" DataSource="{OptionGroups}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" ClipContents="true" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <ItemTemplate>
+
+                            <ListPanel Id="OptionGroup" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="25" StackLayout.LayoutMethod="VerticalTopToBottom">
+                              <Children>
+
+                                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="25" MarginBottom="5">
+                                  <Children>
+
+                                    <!-- Requires Restart Icon -->
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" VerticalAlignment="Center">
+                                      <Children>
+                                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPGeneral\MPScoreboard\report_icon" Color="#DB4040FF" IsVisible="@RequiresRestart">
+                                          <Children>
+                                            <HintWidget DataSource="{RequiresRestartHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                                          </Children>
+                                        </Widget>
+                                      </Children>
+                                    </Widget>
+                                    
+                                    <!-- Name -->
+                                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Text="@GroupName" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="MPAdminPanel.OptionGroup.Title.Text" />
+
+                                  </Children>
+                                </ListPanel>
+
+                                <ListPanel Id="OptionItems" DataSource="{Options}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" ClipContents="true" StackLayout.LayoutMethod="VerticalTopToBottom">
+                                  <ItemTemplate>
+                                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" IsHidden="@IsFilteredOut">
+                                      <Children>
+
+                                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" StackLayout.LayoutMethod="HorizontalRightToLeft">
+                                          <Children>
+
+                                            <!-- Dirty Icon -->
+                                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center" >
+                                              <Children>
+                                                <ButtonWidget UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteRevertChanges" IsVisible="@IsDirty">
+                                                  <Children>
+                                                    <BrushWidget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="15" SuggestedHeight="15" VerticalAlignment="Center" HorizontalAlignment="Center" Brush="MPAdminPanel.Option.Revert.Button" />
+                                                    <HintWidget DataSource="{IsDirtyHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                                                  </Children>
+                                                </ButtonWidget>
+                                              </Children>
+                                            </Widget>
+
+
+                                            <!-- Requires Restart Icon -->
+                                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center">
+                                              <Children>
+                                                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPGeneral\MPScoreboard\report_icon" Color="#DB4040FF" IsVisible="@RequiresRestart">
+                                                  <Children>
+                                                    <HintWidget DataSource="{RequiresRestartHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                                                  </Children>
+                                                </Widget>
+                                              </Children>
+                                            </Widget>
+
+
+                                          </Children>
+                                        </ListPanel>
+
+
+                                        <!-- Option Item -->
+                                        <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="5" MarginTop="2" MarginBottom="2">
+                                          <Children>
+                                            <MultiplayerAdminPanelActionItem IsVisible="@IsActionOption" MarginBottom="5" MarginTop="5"/>
+                                            <MultiplayerAdminPanelMultiSelectionItem IsVisible="@IsMultiSelectionOption" />
+                                            <MultiplayerAdminPanelNumericItem IsVisible="@IsNumericOption" />
+                                            <MultiplayerAdminPanelStringItem IsVisible="@IsStringOption" />
+                                            <MultiplayerAdminPanelToggleItem IsVisible="@IsToggleOption" />
+                                          </Children>
+                                        </Widget>
+
+                                        <!-- Restore To Defaults Button -->
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" VerticalAlignment="Center" MarginLeft="2">
+                                          <Children>
+                                            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPAdminPanel.Option.Reset.Button" Command.Click="ExecuteRestoreDefaults" IsVisible="@CanResetToDefault">
+                                              <Children>
+                                                <HintWidget DataSource="{RestoreToDefaultsHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                                              </Children>
+                                            </ButtonWidget>
+                                          </Children>
+                                        </Widget>
+
+
+                                      </Children>
+                                    </ListPanel>
+                                    
+                                  </ItemTemplate>
+                                </ListPanel>
+
+                              </Children>
+                            </ListPanel>
+
+                          </ItemTemplate>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="6" HorizontalAlignment="Right" MarginRight="8" MarginTop="20" Brush="MPClassLoadout.Scrollbar.Bed" AlignmentAxis="Vertical" DoNotUpdateHandleSize="true" Handle="ScrollbarHandle" MaxValue="100" MinValue="0">
+                  <Children>
+                    <ImageWidget Id="ScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="10" SuggestedHeight="250" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="MPClassLoadout.Scrollbar.Handle" />
+                  </Children>
+                </ScrollbarWidget>
+                
+              </Children>
+            </Widget>
+
+
+            <!-- Divider -->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" MarginTop="2" Sprite="MPTeamSelection\divider" />
+
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="30" MarginBottom="30">
+              <Children>
+
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="55" VerticalAlignment="Bottom" HorizontalAlignment="Center" PositionXOffset="-160" Command.Click="ExecuteCancel" Brush="WideButton.Flat">
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@CancelText" Brush="MPAdminPanel.Option.Button.Text"/>
+                  </Children>
+                </ButtonWidget>
+
+                <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" HorizontalAlignment="Center" PositionXOffset="160">
+                  <Children>
+                    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="55" Command.Click="ExecuteApplyChanges" Brush="WideButton.Flat" IsDisabled="@IsApplyDisabled">
+                      <Children>
+                        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@ApplyText" Brush="MPAdminPanel.Option.Button.Text"/>
+                      </Children>
+                    </ButtonWidget>
+                    
+                    <HintWidget DataSource="{ApplyDisabledHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                  </Children>
+                </Widget>
+
+
+              </Children>
+            </Widget>
+            
+          </Children>
+        </ListPanel>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

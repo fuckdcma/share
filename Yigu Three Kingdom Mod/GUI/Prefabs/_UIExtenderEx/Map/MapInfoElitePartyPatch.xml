@@ -1,0 +1,14 @@
+<HintWidget DataSource="{EliteTroopsHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="4" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="3">
+	<Children>
+		<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+			<Children>
+				<Widget DataSource="{..}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="@TroopIcon" />
+				<MapBarCustomValueTextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" MinWidth="17" MaxWidth="57" SuggestedHeight="50" VerticalAlignment="Center" PositionYOffset="2" Brush="MapTextBrushWithAnim" MarginLeft="5" Brush.FontSize="20" Brush.TextHorizontalAlignment="Left" IsWarning="@IsAvailableTroopsTooltipWarning" NormalColor="!NormalMapBarTextColor" Text="@AvailableTroopsText" ValueAsInt="@TotalTroops" WarningColor="!WarningMapBarTextColor" >
+					<Children>
+						<!--<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="45" Sprite="BlankWhiteSquare_9"></Widget>-->
+					</Children>
+				</MapBarCustomValueTextWidget>
+			</Children>
+		</ListPanel>
+	</Children>
+</HintWidget>

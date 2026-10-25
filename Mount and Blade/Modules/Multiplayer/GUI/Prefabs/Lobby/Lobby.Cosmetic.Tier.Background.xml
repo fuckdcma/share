@@ -1,0 +1,43 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="CosmeticDataSource" DefaultValue="" />
+  </Parameters>
+  <Constants>
+    <Constant Name="AlphaChangeTimeMin" Value="1.5"/>
+    <Constant Name="AlphaChangeTimeMax" Value="2.5"/>
+    <Constant Name="LowAlphaMin" Value="0.3"/>
+    <Constant Name="LowAlphaMax" Value="0.6"/>
+    <Constant Name="HighAlphaMin" Value="0.6"/>
+    <Constant Name="HighAlphaMax" Value="1.0"/>
+    <Constant Name="CommonColor" Value="#7B5C3CFF"/>
+    <Constant Name="RareColor" Value="#0059B7FF"/>
+    <Constant Name="UniqueColor" Value="#B300B7FF"/>
+  </Constants>
+	<Window>
+    <MultiplayerLobbyCosmeticAnimationControllerWidget DataSource="*CosmeticDataSource" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" CosmeticRarity="@Rarity" AnimationPartContainer="AnimationPartContainer" MinAlphaChangeDuration="!AlphaChangeTimeMin" MaxAlphaChangeDuration="!AlphaChangeTimeMax" MinAlphaLowerBound="!LowAlphaMin" MinAlphaUpperBound="!LowAlphaMax" MaxAlphaLowerBound="!HighAlphaMin" MaxAlphaUpperBound="!HighAlphaMax" RarityCommonColor="!CommonColor" RarityRareColor="!RareColor" RarityUniqueColor="!UniqueColor">
+      <Children>
+
+        <!-- Only add widgets of type **MultiplayerLobbyCosmeticAnimationPartWidget** under this container!!! -->
+        <BasicContainer Id="AnimationPartContainer" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1164" SuggestedHeight="964" HorizontalAlignment="Center" VerticalAlignment="Center">
+          <Children>
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_1" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_2" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_3" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_4" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_5" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_6" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_7" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_8" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_9" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_10" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_11" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_12" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_13" />
+            <MultiplayerLobbyCosmeticAnimationPartWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\flare_14" />
+          </Children>
+        </BasicContainer>
+
+      </Children>
+    </MultiplayerLobbyCosmeticAnimationControllerWidget>
+	</Window>
+</Prefab>

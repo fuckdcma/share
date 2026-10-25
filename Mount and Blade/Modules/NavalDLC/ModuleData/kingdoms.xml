@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Kingdoms>
+	<!--TODO_DESIGN_NAVAL-->
+	<Kingdom
+		id="nord"
+		initial_home_settlement="Settlement.castle_EN2"
+		owner="Hero.lord_7_1"
+		banner_key="11.218.218.4345.4345.764.764.1.0.0.175.219.219.512.512.764.764.1.0.0"
+		primary_banner_color="0xff202931"
+		secondary_banner_color="0xffb7623c"
+		color="FF202931"
+		color2="FFb7623c"
+		culture="Culture.nord"
+		settlement_banner_mesh="encounter_flag_a"
+		flag_mesh="info_screen_flags_b"
+		name="{=sYFaoW7G}Nord"
+		short_name="{=bpYLTRTL}Nords"
+		title="{=hvcyO1P4}Kingdom of the Nordvyg"
+		ruler_title="{=hwnp9abW}King"
+		text="{=m6ZgnpN9}The wealth of the Nordvyg comes from the sea. The longships sail south bearing walrus ivory, whale oil, and fish to sell - then return to the fjords laden with plunder and captives. Until recently, southerners could take comfort that the half-dozen so-called &quot;kings&quot; of the Nordvyg each controlled little more than a shrine or slave market surrounded by a wooden palisade. A generation ago, however, Volbjorn the Hungry returned from a decade in the empire's Vaegar Guard with riches that he used to bend the northland to his will, forcing its chieftains to pledge themselves as his jarls. Today his sons rule, and though the bond holding this new realm together are weak, they may strengthen them by turning their vassals' attentions to conquest.">
+		<relationships>
+			<relationship
+				kingdom="Kingdom.vlandia"
+				value="-1"
+				isAtWar="true" />
+		</relationships>
+		<policies>
+			<policy
+				id="policy_feudal_inheritance" />
+		</policies>
+	</Kingdom>
+</Kingdoms>

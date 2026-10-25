@@ -1,0 +1,25 @@
+<Prefab>
+  <Constants>
+    <Constant Name="CardWidth" Value="190" />
+	<Constant Name="CardHeight" Value="295" />
+  </Constants>
+  <Window>
+	<!-- 卡牌点击 -->					
+	<ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CardWidth" SuggestedHeight="!CardHeight" HorizontalAlignment="Center" VerticalAlignment="Center"  Brush="Card.Board" IsVisible="true"
+	Command.Click="OnClickBoard"
+	>
+	  <Children>	  
+	   <!-- 卡牌图片 -->	
+		<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"  MarginTop="10" MarginBottom="10" >			
+			<Children>
+				<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="CardSelected_02\CardSelected02_00000"  IsVisible="@HaveCard">			
+				<Children>
+				<CardPage id="CardItem" DataSource="{CardVm}" />	
+				</Children>
+				</Widget>
+			</Children>
+			</Widget>
+		</Children>
+	</ButtonWidget>		
+  </Window>
+</Prefab>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<partyTemplates>
+<!-- 劫匪 -->
+	<MBPartyTemplate id="jiefei_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sg_luanjun_cav01" />
+			<PartyTemplateStack min_value="12" max_value="46" troop="NPCCharacter.sg_luanjun_inf01" />
+			<PartyTemplateStack min_value="3" max_value="7" troop="NPCCharacter.sg_luanjun_arc01" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="jiefei_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sg_luanjun_cav01" />
+			<PartyTemplateStack min_value="12" max_value="46" troop="NPCCharacter.sg_luanjun_inf01" />
+			<PartyTemplateStack min_value="3" max_value="7" troop="NPCCharacter.sg_luanjun_arc01" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 刑徒 -->
+	<MBPartyTemplate id="xingtu_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="5" max_value="40" troop="NPCCharacter.sg_xingtu_bandit" />
+			<PartyTemplateStack min_value="1" max_value="20" troop="NPCCharacter.sg_xingtu_raider" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sg_xingtu_boss" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="xingtu_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="40" troop="NPCCharacter.sg_xingtu_bandit" />
+			<PartyTemplateStack min_value="1" max_value="20" troop="NPCCharacter.sg_xingtu_raider" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sg_xingtu_boss" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 水匪 -->
+	<MBPartyTemplate id="shuizei_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="50" troop="NPCCharacter.sg_sea_raiders_bandit" />
+			<PartyTemplateStack min_value="1" max_value="25" troop="NPCCharacter.sg_sea_raiders_raider" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.sg_sea_raiders_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="shuizei_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="50" troop="NPCCharacter.sg_sea_raiders_bandit" />
+			<PartyTemplateStack min_value="1" max_value="25" troop="NPCCharacter.sg_sea_raiders_raider" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.sg_sea_raiders_chief" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 海寇 -->
+	<MBPartyTemplate id="haikou_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="38" troop="NPCCharacter.sg_sea_raiders_bandit" />
+			<PartyTemplateStack min_value="1" max_value="6" troop="NPCCharacter.sg_sea_raiders_raider" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.sg_sea_raiders_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="haikou_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="38" troop="NPCCharacter.sg_sea_raiders_bandit" />
+			<PartyTemplateStack min_value="1" max_value="6" troop="NPCCharacter.sg_sea_raiders_raider" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.sg_sea_raiders_chief" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 绿林 -->
+	<MBPartyTemplate id="lvlin_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="34" troop="NPCCharacter.sg_forest_bandits_bandit" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.sg_forest_bandits_bandit" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.sg_forest_bandits_raider" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="lvlin_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="34" troop="NPCCharacter.sg_forest_bandits_bandit" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sg_forest_bandits_bandit" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sg_forest_bandits_raider" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 河西马贼 -->
+	<MBPartyTemplate id="xiangma_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="10" max_value="50" troop="NPCCharacter.sg_heximazei_bandit" />
+			<PartyTemplateStack min_value="1" max_value="20" troop="NPCCharacter.sg_heximazei_raider" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.sg_heximazei_chief" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="xiangma_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="10" max_value="50" troop="NPCCharacter.sg_heximazei_bandit" />
+			<PartyTemplateStack min_value="1" max_value="20" troop="NPCCharacter.sg_heximazei_raider" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.sg_heximazei_chief" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 黄巾 -->
+	<MBPartyTemplate id="huangjin_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="15" max_value="58" troop="NPCCharacter.huangjin_sol_1001" />
+			<PartyTemplateStack min_value="2" max_value="6" troop="NPCCharacter.sg_heximazei_raider" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.huangjin_sol_boss" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="huangjin_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="15" max_value="58" troop="NPCCharacter.huangjin_sol_1001" />
+			<PartyTemplateStack min_value="2" max_value="6" troop="NPCCharacter.huangjin_sol_1002" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.huangjin_sol_boss" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 北方氏族 -->
+	<MBPartyTemplate id="beifangshizu_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.beifangshizu_sol_3001" />
+			<PartyTemplateStack min_value="3" max_value="20" troop="NPCCharacter.beifangshizu_sol_5002" />
+			<PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.beifangshizu_sol_5001" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="beifangshizu_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.beifangshizu_sol_4001" />
+			<PartyTemplateStack min_value="3" max_value="20" troop="NPCCharacter.beifangshizu_sol_5002" />
+			<PartyTemplateStack min_value="2" max_value="8" troop="NPCCharacter.beifangshizu_sol_6001" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 蛮族 -->
+	<MBPartyTemplate id="manzu_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="38" troop="NPCCharacter.manzu_sol_1001" />
+			<PartyTemplateStack min_value="0" max_value="6" troop="NPCCharacter.manzu_sol_2001" />
+			<PartyTemplateStack min_value="0" max_value="3" troop="NPCCharacter.manzu_sol_3001" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="manzu_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="34" troop="NPCCharacter.manzu_sol_3001" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.manzu_sol_4001" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.manzu_sol_5001" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 山越 -->
+	<MBPartyTemplate id="shanyue_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="38" troop="NPCCharacter.shanyue_sol_1001" />
+			<PartyTemplateStack min_value="0" max_value="6" troop="NPCCharacter.shanyue_sol_2001" />
+			<PartyTemplateStack min_value="0" max_value="3" troop="NPCCharacter.shanyue_sol_3001" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="shanyue_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="34" troop="NPCCharacter.shanyue_sol_3001" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.shanyue_sol_4001" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.shanyue_sol_5001" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 羌族 -->
+	<MBPartyTemplate id="qiangzu_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="38" troop="NPCCharacter.qiangzu_sol_1001" />
+			<PartyTemplateStack min_value="0" max_value="6" troop="NPCCharacter.qiangzu_sol_2001" />
+			<PartyTemplateStack min_value="0" max_value="3" troop="NPCCharacter.qiangzu_sol_3001" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="qiangzu_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="2" max_value="4" troop="NPCCharacter.qiangzu_sol_3001" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.qiangzu_sol_4001" />
+			<PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.qiangzu_sol_5001" />
+		</stacks>
+	</MBPartyTemplate>
+<!-- 匈奴 -->
+	<MBPartyTemplate id="xiongnu_bandits_template">
+		<stacks>
+			<PartyTemplateStack min_value="10" max_value="50" troop="NPCCharacter.xiongnu_sol_002" />
+			<PartyTemplateStack min_value="5" max_value="20" troop="NPCCharacter.xiongnu_sol_004" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.xiongnu_sol_006" />
+		</stacks>
+	</MBPartyTemplate>
+	<MBPartyTemplate id="xiongnu_bandits_boss_party_template">
+		<stacks>
+			<PartyTemplateStack min_value="10" max_value="50" troop="NPCCharacter.xiongnu_sol_002" />
+			<PartyTemplateStack min_value="5" max_value="20" troop="NPCCharacter.xiongnu_sol_004" />
+			<PartyTemplateStack min_value="1" max_value="3" troop="NPCCharacter.xiongnu_sol_006" />
+		</stacks>
+	</MBPartyTemplate>
+</partyTemplates>
+

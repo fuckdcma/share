@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Category 主要类别，橙色文字
+	Section 次要类别，亮色文字
+	Entry 制作人员，暗淡文字
+	EmptyLine 空行
+	LoadFromFile 额外嵌入XML内容, 可以插入在 Credits 或者 Category 内部。
+		- Name XML 文件名
+		- PlatformSpecific 区分平台（会在文件名后面追加 PC 或者 Console）
+	<LoadFromFile Name="CreditsExternalPartners" ConsoleSpecific="true" />
+
+	使用例子
+	(1): 
+	<Category Text="{=!}主要部门">
+		<Entry Text="张三" />
+		<Entry Text="李四" />
+	</Category>
+
+	(2):
+	<Category Text="{=!}程序部门">
+		<Section Text="{=!}引擎开发">
+			<Entry Text="张三" />
+			<Entry Text="李四" />
+		</Section>
+		<EmptyLine />
+		<Section Text="{=!}游戏开发">
+			<Entry Text="王五" />
+		</Section>
+	</Category>
+
+	英文翻译在 ModuleData/Languages/EN/CreditEN.xml
+-->
+
+<Credits>
+	<Category Text="{=6e635942}导演">
+		<Entry Text="{=aae588c0}Aeworlri" />
+	</Category>
+	<Category Text="{=747abfae}程序开发">
+		<Entry Text="{=6e3b4a67}一介書生" />
+		<Entry Text="{=a7ee1d16}潜水咸鱼丶" />
+	</Category>
+		<EmptyLine />	
+	<Category Text="{=a1166a92}管理协作">
+		<Entry Text="{=7b6edc2a}Oliver" />
+		<Entry Text="{=aae588c0}Aeworlri" />
+		<Entry Text="{=a7ee1d16}潜水咸鱼丶" />
+		<Entry Text="{=4273effb}疾风SHawk" />
+		<Entry Text="{=0de197cd}牛图图" />
+		<Entry Text="{=0de197cd}祖传大眼袋" />
+		<Entry Text="{=35ded5f0}杨浩杰" />
+		<Entry Text="{=35ded5f0}五月星河" />
+		<Entry Text="{=0f6a1f66}惟愿君如瑶台花上蝶" />
+	</Category>
+		<EmptyLine />	
+	<Category Text="{=e28544b8}游戏策划">
+		<Entry Text="{=6e3b4a67}一介書生" />
+		<Entry Text="{=0f6a1f66}五月星河" />
+		<Entry Text="{=7b6edc2a}祖传大眼袋" />
+		<Entry Text="{=7b6edc2a}张翼" />
+		<Entry Text="{=fe7ca905}老赵" />
+		<Entry Text="{=35ded5f0}暴龙兽" />
+		<Entry Text="{=aae588c0}Eternity" />
+		<Entry Text="{=c16d3889}小晴" />		
+		<Entry Text="{=aae588c0}燕麦" />
+	</Category>
+		<EmptyLine />	
+	<Category Text="{=da0b6542}音乐制作">
+		<Entry Text="{=c16d3889}木又寸" />
+		<Entry Text="{=35ded5f0}AGS子夜-刘一宁" />
+	</Category>
+		<EmptyLine />	
+	<Category Text="{=d9b45ee3}游戏美术">
+		<Section Text="{=21d942e3}动画制作">
+			<Entry Text="{=ad728d3c}大的榔头" />
+			<Entry Text="{=aae588c0}Aeworlri" />
+		</Section>
+		<EmptyLine />		
+		<Section
+			Text="{=42e69e7a}2D美术">
+			<Entry Text="{=4273effb}疾风SHawk" />
+			<Entry Text="{=81fae17c}叉叉" />
+			<Entry Text="{=8c04720c}古墓丽影孙殿英" />
+		</Section>
+		<EmptyLine />
+		<EmptyLine />
+		<Section Text="{=94b9d06f}3D美术">
+			<Entry Text="{=27f335f1}魏文肆" />
+			<Entry Text="{=1a122115}九和大神" />
+			<Entry Text="{=aae588c0}Aeworlri" />
+			<Entry Text="{=8d10c0cd}Xx晓晓" />
+			<Entry Text="{=9464c6aa}YLLLz" />
+			<Entry Text="{=e2de18a9}橘鱼金猫" />
+			<Entry Text="{=4273effb}闵珏" />
+			<Entry Text="{=81fae17c}徐贵立" />
+			<Entry Text="{=38585871}杨浩杰" />
+			<Entry Text="{=4273effb}怪人" />
+			<Entry Text="{=8be8c491}谢开" />
+			<Entry Text="{=aae588c0}姜童源" />
+			<Entry Text="{=aae588c0}黄川珂" />
+			<Entry Text="{=b6abae11}富源" />
+			<Entry Text="{=b6abae11}白金C" />
+		</Section>
+	</Category>
+	<Category Text="{=15788f1b}游戏场景">
+		<Section Text="{=d3004a39}地编LA">
+			<Entry Text="{=b1b89b76}shadow" />
+			<Entry Text="{=4273effb}疾风SHawk" />
+			<Entry Text="{=aae588c0}Aeworlri" />
+			<Entry Text="{=a7ee1d16}潜水咸鱼丶" />
+		</Section>
+	</Category>
+	<EmptyLine />
+	<EmptyLine />
+	<EmptyLine />
+	<EmptyLine />
+	<EmptyLine />
+	</Category>
+	<Category Text="{=957dc35d}鸣谢">
+		<Section Text="{=167e20c3}公司及工作室及UP">
+			<Entry Text="{=*}感谢所有帮助过我们的人，很抱歉对你们造成麻烦" />
+		</Section>
+	</Category>
+</Credits>

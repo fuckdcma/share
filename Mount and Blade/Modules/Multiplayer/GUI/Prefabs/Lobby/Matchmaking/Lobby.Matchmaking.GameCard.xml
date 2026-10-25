@@ -1,0 +1,43 @@
+<Prefab>
+  <Constants>
+    <Constant Name="CardButton.HeaderIndicator.Width" BrushName="MPLobby.Matchmaking.CardButton.HeaderIndicator.Left" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CardButton.HeaderIndicator.Height" BrushName="MPLobby.Matchmaking.CardButton.HeaderIndicator.Left" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="CardButton.Checkbox.Width" BrushName="MPLobby.Matchmaking.CardButton.Checkbox" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="CardButton.Checkbox.Height" BrushName="MPLobby.Matchmaking.CardButton.Checkbox" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <Window>
+    <MultiplayerLobbyGameTypeCardButtonWidget IsSelected="@IsSelected" IsEnabled="@IsAvailable" Command.HoverBegin="ExecuteSetFocusItem" Command.HoverEnd="ExecuteRemoveFocus" ButtonType="Toggle" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy ="Fixed" SuggestedWidth="350" SuggestedHeight="570" MarginLeft="0" MarginRight="0" GameTypeId="@Type" GameTypeImageWidget="GameTypeImage" CheckboxWidget="Checkbox" FrictionEnabled="false" GamepadNavigationIndex="0">
+      <Children>
+        <NavigationScopeTargeter ScopeID="LobbyMatchmakingCardScope" ScopeParent="..\." />
+
+        <ListPanel UpdateChildrenStates="true" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="60">
+          <Children>
+
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+
+            <ListPanel UpdateChildrenStates="true" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="60" MarginTop="15" HorizontalAlignment="Center">
+              <Children>
+                <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CardButton.HeaderIndicator.Width" SuggestedHeight="!CardButton.HeaderIndicator.Height" VerticalAlignment="Bottom" Brush="MPLobby.Matchmaking.CardButton.HeaderIndicator.Left" />
+                <TextWidget Text="@Name" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="177" SuggestedHeight="50" VerticalAlignment="Bottom" PositionYOffset="-5" Brush="MPLobby.Matchmaking.CardButtonText" ClipContents="false" Brush.TextVerticalAlignment="Bottom"/>
+                <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CardButton.HeaderIndicator.Width" SuggestedHeight="!CardButton.HeaderIndicator.Height" VerticalAlignment="Bottom" Brush="MPLobby.Matchmaking.CardButton.HeaderIndicator.Right" />
+              </Children>
+            </ListPanel>
+
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+
+          </Children>
+        </ListPanel>
+
+
+        <!--Image-->
+        <BrushWidget Id="GameTypeImage" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="256" SuggestedHeight="429" VerticalAlignment="Center" HorizontalAlignment="Center" MarginTop="60" Brush="MPLobby.Matchmaking.CardButton.Image" />
+
+        <ImageWidget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="292" SuggestedHeight="465" VerticalAlignment="Center" HorizontalAlignment="Center" MarginTop="60" Brush="MPLobby.Matchmaking.CardButton"/>
+
+        <BrushWidget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="68" SuggestedHeight="67" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="18" Brush="MPLobby.Matchmaking.CardButton.Checkmark"/>
+
+      </Children>
+    </MultiplayerLobbyGameTypeCardButtonWidget>
+  </Window>
+</Prefab>

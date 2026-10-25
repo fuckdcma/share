@@ -1,0 +1,54 @@
+<Prefab>
+	<Window>
+		<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="100" MarginBottom="200" IsVisible="@IsSelected">
+			<Children>
+				<NavigationForcedScopeCollectionTargeter CollectionID="LobbySendPostCollection" CollectionParent="..\." CollectionOrder="1000"/>
+				<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Report.Popup.Frame" >
+					<Children>
+
+						<NavigationScopeTargeter ScopeID="SendPostControlsScope" ScopeParent="..\SendPostControls" ScopeMovements="Vertical" />
+						<ListPanel Id="SendPostControls" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15" MarginLeft="50" MarginRight="15" StackLayout.LayoutMethod="VerticalTopToBottom">
+							<Children>
+
+								<!--Title and Close Button-->
+								<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="25" StackLayout.LayoutMethod="HorizontalLeftToRight" >
+									<Children>
+										<!--Title-->
+										<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Text="@TitleText" />
+
+										<!--Close Button-->
+										<ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="22" HorizontalAlignment="Right" Command.Click="ExecuteClosePopup">
+											<Children>
+												<!--Icon-->
+												<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.CustomServer.CloseButton" />
+                        <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-40" KeyID="@KeyID" IsVisible="@IsVisible"/>
+											</Children>
+										</ButtonWidget>
+
+									</Children>
+								</ListPanel>
+
+								<!--Text Input-->
+								<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginRight="35" MarginBottom="10" Sprite="BlankWhiteSquare_9" Color="#382921FF">
+									<Children>
+										<EditableTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginTop="5" Brush="MP.ChatLog.Text" Brush.TextVerticalAlignment="Top" Text="@PostData" GamepadNavigationIndex="0"/>
+									</Children>
+								</Widget>
+
+								<!--Send Button-->
+								<ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginTop="25" MarginBottom="25" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="WideButton.Flat" Command.Click="ExecuteSend" GamepadNavigationIndex="1">
+									<Children>
+										<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Clan.CreateButton.Text" Text="@SendText" />
+                    <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+									</Children>
+								</ButtonWidget>
+
+							</Children>
+						</ListPanel>
+
+					</Children>
+				</BrushWidget>
+			</Children>
+		</Widget>
+	</Window>
+</Prefab>

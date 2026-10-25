@@ -1,0 +1,84 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Card.Width" BrushLayer="Default" BrushName="ButtonBrush4" BrushValueType="Width" />
+    <Constant Name="Card.Height" BrushLayer="Default" BrushName="ButtonBrush4" BrushValueType="Height" />
+
+  </Constants>
+  <Window>
+
+
+    <!-- 卡牌点击 -->
+    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="190" 
+                  SuggestedHeight="295" HorizontalAlignment="Center" VerticalAlignment="Center"  Brush="Card.Click" IsVisible="true"
+                Command.Click="OnSelectCard"
+    >
+      <Children>
+
+      <Card IsVisible="@IsShow" />
+
+      <ListPlane Id="Effect" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"  
+                >
+        <Children>
+
+          <!--升级特效--><!--
+          <SpriteAnimationWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SpriteName="CardUpLevelEffect"
+                                  MarginLeft="-15"  MarginRight="-15" MarginTop="-30" MarginBottom="-30" AnimationSpeed="2"
+                                  HorizontalAlignment="Center"  VerticalAlignment="Center" IsPlaying="@PlayUpLevelEffect"  />-->
+          <!--升级提示-->
+          <SpriteAnimationWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SpriteName="CardSelected_01/CardSelected01"
+                                  MarginLeft="-10"  MarginRight="-10" MarginTop="-10" MarginBottom="-10"  AnimationSpeed="1.5"
+                                  HorizontalAlignment="Center"  VerticalAlignment="Center" IsPlaying="@IsCanUpLevel" IsLoop="true"  />
+
+          <!--升级特效-->
+          <SpriteAnimationWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SpriteName="UplevelEffect"
+                                  MarginLeft="-125"  MarginRight="-160" MarginTop="-245" MarginBottom="-190"
+                                  AnimationSpeed="1.5"
+                                  HorizontalAlignment="Center"  VerticalAlignment="Center" IsPlaying="@PlayUpLevelEffect"  />
+        </Children>
+      </ListPlane>
+
+
+      <!--触发技能特效-->
+      <SpriteAnimationWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SpriteName="CardSkillTrigger_01\CardSkillTrigger01"
+      MarginLeft="-70"  MarginRight="-70" MarginTop="-125" MarginBottom="-125" AnimationSpeed="2"
+      HorizontalAlignment="Center"  VerticalAlignment="Center" IsPlaying="@IsTriggerSkill" IsVisible="false" />
+	  
+      <!--<SpriteAnimationWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SpriteName="CardSkillTrigger_01\CardSkillTrigger01"
+      MarginLeft="-155"  MarginRight="-155" MarginTop="-210" MarginBottom="-210" AnimationSpeed="1.25"
+      HorizontalAlignment="Center"  VerticalAlignment="Center" IsPlaying="@IsTriggerSkill" IsVisible="false" />-->
+
+
+      <!--已经在卡组-->
+      <TextWidget
+        WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"
+        HorizontalAlignment="Left" VerticalAlignment="Bottom"
+        MaxWidth="50" Brush="Card.Equip.Text" MarginTop="15" MarginLeft="5"
+        Brush.FontSize="25" Brush.TextVerticalAlignment="Top"
+        Text="@IsDeckInfo"
+      />
+
+      <!--已经选中-->
+      <TextWidget
+        WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"
+        HorizontalAlignment="Left" VerticalAlignment="Top"
+        MaxWidth="50" Brush="Card.Equip.Text" MarginTop="15" MarginLeft="5"
+        Brush.FontSize="25" Brush.TextVerticalAlignment="Top"
+        Text="@SelectInfo" Brush.FontColor="#DC143CFF"
+      />
+
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="CardBack" IsVisible="@IsCardBack" />
+
+       <!--<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="CardSelect" IsVisible="@IsSelected" />-->
+	   
+	             <!--升级提示-->
+        <SpriteAnimationWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SpriteName="CardSelected_04\CardSelected04"
+                                   AnimationSpeed="1.5" HorizontalAlignment="Center"  VerticalAlignment="Center" IsPlaying="true" IsVisible="@IsSelected" IsLoop="true"  />
+
+      <HintWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="OnEnterCard" Command.HoverEnd="OnExitCard" IsDisabled="true"/>
+
+		  </Children>
+		</ButtonWidget>		
+
+  </Window>
+</Prefab>

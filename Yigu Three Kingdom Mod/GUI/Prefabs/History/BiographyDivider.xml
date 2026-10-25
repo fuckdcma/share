@@ -1,0 +1,14 @@
+﻿<DiscardedRoot>
+	<!--Biography Info Text-->
+	<EncyclopediaDivider MarginTop="20" Parameter.ItemList="..\BiographyContainer" Parameter.Title="传记" />
+	<NavigationScopeTargeter ScopeID="EncyclopediaHeroBiographyScope" ScopeParent="..\BiographyContainer" ScopeMovements="Horizontal" />
+	<ListPanel DataSource="{BiographyItems}" HeightSizePolicy="CoverChildren" WidthSizePolicy="StretchToParent" Id="BiographyContainer" MarginLeft="35" IsVisible="false" StackLayout.LayoutMethod="VerticalBottomToTop">
+		<ItemTemplate>
+			<Widget HeightSizePolicy="CoverChildren" WidthSizePolicy="StretchToParent" VerticalAlignment="Center">
+				<Children>
+					<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" MarginTop="15" Brush="Encyclopedia.SubPage.Info.Text" Sprite="CardFrame" Brush.FontSize="22" Brush.FontColor="#b52a1dFF" Text="@BiographyText" />
+				</Children>
+			</Widget>
+		</ItemTemplate>
+	</ListPanel>
+</DiscardedRoot>

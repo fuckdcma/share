@@ -1,0 +1,166 @@
+<Prefab>
+	<Constants>
+		<Constant Name="MapDialog.Background.Width" BrushLayer="Default"
+		  BrushName="DialogPopup\dialog_background" BrushValueType="Width" MultiplyResult="0.9" />
+		<Constant Name="MapDialog.Background.Height" BrushLayer="Default"
+		  BrushName="DialogPopup\dialog_background" BrushValueType="Height" MultiplyResult="0.9" />
+		<Constant Name="MapDialog.Frame.Width" BrushLayer="Default"
+		  BrushName="DialogPopup\dialog_background_frame" BrushValueType="Width" MultiplyResult="0.9" />
+		<Constant Name="MapDialog.Frame.Height" BrushLayer="Default"
+		  BrushName="DialogPopup\dialog_background_frame" BrushValueType="Height" MultiplyResult="0.9" />
+		<Constant Name="MapDialog.Avatar.Width" BrushLayer="Default"
+		  BrushName="DialogPopup\dialog_avatar_pane" BrushValueType="Width" MultiplyResult="0.9" />
+		<Constant Name="MapDialog.Avatar.Height" BrushLayer="Default"
+		  BrushName="DialogPopup\dialog_avatar_pane" BrushValueType="Height" MultiplyResult="0.9" />
+		<Constant Name="MapDialog.NamePane.Height" BrushLayer="Default"
+		  BrushName="DialogPopup\dialog_name_pane" BrushValueType="Height" MultiplyResult="0.9" />
+		<Constant Name="EventImage.Width" Value="950" />
+		<Constant Name="EventImage.Height" Value="700" />
+		<Constant Name="EventImage.Frame.Width" Value="600" />
+		<Constant Name="EventImage.Frame.Height" Value="600" />
+	</Constants>
+	<VisualDefinitions>
+	</VisualDefinitions>
+	<Window>
+
+		<Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"
+		  HorizontalAlignment="Center"
+		  VerticalAlignment="Center">
+			<Children>
+				<!-- 旁白/NPC对话框。（包含过渡逻辑）-->
+				<MapPopupWidget Id="DialogPopup" MapPopupType="Dialog"
+				  WidthSizePolicy="Fixed"
+				  HeightSizePolicy="Fixed"
+				  SuggestedWidth="!MapDialog.Background.Width"
+				  SuggestedHeight="!MapDialog.Background.Height"
+				  HorizontalAlignment="Center"
+				  VerticalAlignment="Center"
+				  Brush="DialogPopup\dialog_background"
+				  MarginTop="700" AlphaFactor="0"
+				  NotificationId="@NotificationId"
+				  PrevDialogItemExist="@PrevDialogItemExist"
+				  PrevEventImageExist="@PrevEventImageExist"
+				  CurrentDialogItemExist="@CurrentDialogItemExist"
+				  CurrentEventImageExist="@CurrentEventImageExist"
+				  BeginClose="@BeginClose"
+				  TextWidget="LayoutListPanel\TextWidget"
+				  AnnouncerImageIdentifier="LayoutListPanel\AnnouncerImageIdentifier"
+				  RampUpInSeconds="0.5" RampDownInSeconds="0.3">
+					<Children>
+						<!-- 旁白/NPC对话框。（不包含过渡逻辑，纯内容显示）-->
+						<ListPanel Id="LayoutListPanel" WidthSizePolicy="StretchToParent"
+						  HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+							<Children>
+								<!-- NPC头像与名字框。-->
+								<BrushWidget
+								  WidthSizePolicy="Fixed" SuggestedWidth="!MapDialog.Avatar.Width"
+								  HeightSizePolicy="StretchToParent"
+								  HorizontalAlignment="Left" VerticalAlignment="Center"
+								  Brush="DialogPopup\dialog_avatar_pane">
+									<Children>
+										<Widget Id="AnnouncerSpriteIdentifier"
+										  DataSource="{CurrentNotification}"
+										  WidthSizePolicy="StretchToParent"
+										  HeightSizePolicy="StretchToParent"
+										  HorizontalAlignment="Center" VerticalAlignment="Top"
+										  Sprite="@AnnouncerSpriteName" IsDisabled="true">
+										</Widget>
+										<ListPanel Id="LayoutSpriteAndAvatarAndName" WidthSizePolicy="StretchToParent"
+										  HeightSizePolicy="StretchToParent"
+										  StackLayout.LayoutMethod="VerticalBottomToTop">
+											<Children>
+												<ListPanel Id="LayoutAvatarAndName" WidthSizePolicy="StretchToParent"
+												  HeightSizePolicy="StretchToParent"
+												  StackLayout.LayoutMethod="VerticalBottomToTop">
+													<Children>
+														<ImageIdentifierWidget Id="AnnouncerImageIdentifier"
+														  HideWhenNull="false"
+														  DataSource="{CurrentNotification\Announcer}"
+														  WidthSizePolicy="StretchToParent"
+														  HeightSizePolicy="StretchToParent"
+														  HorizontalAlignment="Center" VerticalAlignment="Top"
+														  AdditionalArgs="@AdditionalArgs"
+														  ImageId="@Id" ImageTypeCode="@ImageTypeCode" IsDisabled="true">
+														</ImageIdentifierWidget>
+														<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed"
+														  SuggestedHeight="!MapDialog.NamePane.Height"
+														  HorizontalAlignment="Center"
+														  VerticalAlignment="Bottom" Brush="DialogPopup\dialog_name_bg_2">
+															<Children>
+																<RichTextWidget DataSource="{CurrentNotification}"
+																  HideWhenNull="true"
+																  WidthSizePolicy="StretchToParent"
+																  HeightSizePolicy="StretchToParent"
+																  HorizontalAlignment="Center" VerticalAlignment="Center"
+																  Text="@CharacterNameText"
+																  Brush.Color="#D8CCC9FF" Brush.FontSize="20" />
+															</Children>
+														</BrushWidget>
+													</Children>
+												</ListPanel>
+											</Children>
+										</ListPanel>
+									</Children>
+								</BrushWidget>
+								<!-- 旁白/NPC对话文本。-->
+								<RichTextWidget Id="TextWidget" DataSource="{CurrentNotification}"
+								  HideWhenNull="true"
+								  WidthSizePolicy="StretchToParent"
+								  HeightSizePolicy="StretchToParent"
+								  HorizontalAlignment="Center" VerticalAlignment="Center"
+								  MarginTop="25" MarginLeft="15"
+								  Brush.Color="#D8CCC9FF" Brush.TextVerticalAlignment="Top"
+								  Brush.TextHorizontalAlignment="Left" Brush.FontSize="26"
+								  Text="@GameNotificationText" />
+							</Children>
+						</ListPanel>
+						<!-- 旁白/NPC对话边框。-->
+						<BrushWidget WidthSizePolicy="Fixed"
+						  HeightSizePolicy="Fixed"
+						  SuggestedWidth="!MapDialog.Frame.Width"
+						  SuggestedHeight="!MapDialog.Frame.Height"
+						  HorizontalAlignment="Center" VerticalAlignment="Center"
+						  Brush="DialogPopup\dialog_background_frame">
+						</BrushWidget>
+						<!-- 对话框过渡按钮（不可见）-->
+						<ButtonWidget Id="FastForwardButton" WidthSizePolicy="StretchToParent"
+						  HeightSizePolicy="StretchToParent"
+						  HorizontalAlignment="Center" VerticalAlignment="Center"
+						  Command.Click="ExecuteNextDialogItem" />
+						<!-- 对话框强制关闭按钮 -->
+						<ButtonWidget Id="CloseButton" Brush="Popup.CloseButton" WidthSizePolicy="Fixed"
+						  HeightSizePolicy="Fixed" SuggestedWidth="65" SuggestedHeight="65" PositionXOffset="32"
+						  PositionYOffset="-32"
+						  HorizontalAlignment="Right" VerticalAlignment="Top"
+						  Command.Click="ExecuteClosePopup" />
+					</Children>
+				</MapPopupWidget>
+				<!-- 过场图片。-->
+				<MapPopupWidget Id="EventImagePopup" MapPopupType="EventImage"
+				  TotalTime="1.3"
+				  WidthSizePolicy="Fixed"
+				  HeightSizePolicy="Fixed"
+				  EventImageBrush="@EventImageCode"
+				  PrevDialogItemExist="@PrevDialogItemExist"
+				  PrevEventImageExist="@PrevEventImageExist"
+				  CurrentDialogItemExist="@CurrentDialogItemExist"
+				  CurrentEventImageExist="@CurrentEventImageExist"
+				  BeginClose="@BeginClose"
+				  SuggestedWidth="!EventImage.Frame.Width"
+				  SuggestedHeight="!EventImage.Frame.Height"
+				  HorizontalAlignment="Center"
+				  VerticalAlignment="Top" MarginTop="30" Brush="Frame1Canvas" AlphaFactor="0"
+				  RampUpInSeconds="0.5" RampDownInSeconds="0.3">
+					<Children>
+						<BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+						  SuggestedWidth="!EventImage.Width"
+						  SuggestedHeight="!EventImage.Height" HorizontalAlignment="Center"
+						  VerticalAlignment="Center">
+						</BrushWidget>
+					</Children>
+				</MapPopupWidget>
+			</Children>
+		</Widget>
+
+	</Window>
+</Prefab>

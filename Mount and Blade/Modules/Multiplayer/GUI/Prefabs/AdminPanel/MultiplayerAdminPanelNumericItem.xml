@@ -1,0 +1,33 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" HorizontalAlignment="Center">
+      <Children>
+        
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight" IsDisabled="@IsDisabled">
+          <Children>
+
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" VerticalAlignment="Center" Brush="MPAdminPanel.Option.Title.Text" Text="@OptionTitle">
+              <Children>
+                <HintWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{DescriptionHint}" IsDisabled="true"/>
+              </Children>
+            </TextWidget>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="30" MarginLeft="5" VerticalAlignment="Center" HorizontalAlignment="Center" >
+              <Children>
+                <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="0" MarginRight="100" Brush="MPAdminPanel.Option.Numeric.Input.Frame">
+                  <Children>
+                    <IntegerInputTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginRight="5" IntText="@IntValue" EnableClamp="true" MinInt="@MinValueInt" MaxInt="@MaxValueInt" Brush="MPAdminPanel.Option.Value.Text" />
+                  </Children>
+                </BrushWidget>
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+
+        <HintWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{DisabledHint}" IsDisabled="true"/>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

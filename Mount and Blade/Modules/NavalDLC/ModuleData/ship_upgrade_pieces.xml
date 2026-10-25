@@ -1,0 +1,1417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ShipUpgradePieces>
+	<!--Fore Slot-->
+	<ShipUpgradePiece
+		id="fore_ballista"
+		name="{=abbALYlp}Ballista"
+		description="{=lyzxIvjW}Throws a wooden bolt, effective against crews and deals light damage to ships."
+		slot_prefab_child_id="ballista_c"
+		light_value="2350"
+		medium_value="2600"
+		heavy_value="2900"
+		siege_engine="SiegeEngineType.fore_ballista"
+		required_port_level="1"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_ballista_fire"
+		name="{=fireBoltBallista}Fire Ballista"
+		description="{=sNjfE4JG}Throws a burning wooden bolt, effective against crews. Fire damage can burn sails and light ships."
+		slot_prefab_child_id="ballista_c_fire"
+		light_value="2350"
+		medium_value="2600"
+		heavy_value="2900"
+		siege_engine="SiegeEngineType.fore_ballista_fire"
+		required_port_level="2"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_heavy_ballista_stone"
+		name="{=tskdF6xb}Heavy Stone Ballista"
+		description="{=4Rzfyg2U}Throws a heavy stone shot, very good at dealing damage to ships."
+		slot_prefab_child_id="ballista_c_stone"
+		light_value="5850"
+		medium_value="6450"
+		heavy_value="7200"
+		siege_engine="SiegeEngineType.fore_heavy_ballista_stone"
+		required_port_level="2"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_heavy_ballista_pot"
+		name="{=rG8HZLzb}Fire Pot Ballista"
+		description="{=aLHULy5J}Throws a large fire pot, dealing large amount fire damage burning ships and sails. Very effective against crews."
+		slot_prefab_child_id="ballista_c_explosive"
+		light_value="5850"
+		medium_value="6450"
+		heavy_value="7200"
+		siege_engine="SiegeEngineType.fore_heavy_ballista_pot"
+		required_port_level="3"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_heavy_ballista_iron"
+		name="{=Kj2k14Qh}Heavy Iron Ballista"
+		description="{=Qq87oaQG}Throws a heavy iron shot, excellent at dealing damage to ships."
+		slot_prefab_child_id="ballista_c_iron"
+		light_value="12850"
+		medium_value="14250"
+		heavy_value="15850"
+		siege_engine="SiegeEngineType.fore_heavy_ballista_iron"
+		required_port_level="3"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_multi_ballista_stone"
+		name="{=EZpYtFHi}Grapeshot Ballista"
+		description="{=LyUH5toR}Throws multiple small stones, very effective againts crews."
+		slot_prefab_child_id="ballista_c_grapeshot"
+		light_value="6350"
+		medium_value="7000"
+		heavy_value="7800"
+		siege_engine="SiegeEngineType.fore_multi_ballista_stone"
+		required_port_level="2"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_multi_ballista_fire"
+		name="{=LEMmWkGU}Fire Grapeshot Ballista"
+		description="{=l2r6vryW}Throws multiple small burning stones, very effective againts crews. Fire damage can burn sails and light ships."
+		slot_prefab_child_id="ballista_c_grapeshot_fire"
+		light_value="13850"
+		medium_value="15400"
+		heavy_value="17100"
+		siege_engine="SiegeEngineType.fore_multi_ballista_fire"
+		required_port_level="3"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_mangonel"
+		name="{=!}TEMP"
+		description="{=!}TEMP"
+		slot_prefab_child_id="mangonel_c"
+		not_merchandise="true"
+		light_value="100"
+		medium_value="100"
+		heavy_value="100"
+		siege_engine="SiegeEngineType.fore_mangonel"
+		required_port_level="3"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_battlement_lvl1"
+		name="{=hHHEW1HN}Battlements"
+		description="{=2PEa9Y22}Forecastle protects troops and strengthens the hull, at a cost of additional weight."
+		slot_prefab_child_id="merlon1Fore"
+		light_value="500"
+		medium_value="1150"
+		heavy_value="2200"
+		required_port_level="1"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.empire"
+		combat_factor_bonus_multiplier="0.05"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_battlement_lvl2_wbarracks"
+		name="{=a2tTEEaP}Battlements with Barracks"
+		description="{=ytI4mcLe}Forecastle protects troops and strengthens the hull, at a cost of additional weight. Barracks allows more crew on board."
+		slot_prefab_child_id="merlon2Fore"
+		light_value="1400"
+		medium_value="3200"
+		heavy_value="6350"
+		required_port_level="2"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.empire"
+		crew_capacity_bonus_multiplier="0.06"
+		combat_factor_bonus_multiplier="0.05"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_battlement_lvl3_wbarracks"
+		name="{=v8pxCsQM}Reinforced Battlements with Barracks"
+		description="{=wZlre7yX}Reinforced forecastle protects troops and strengthens the hull, at a cost of additional weight. Barracks allows more crew on board."
+		slot_prefab_child_id="merlon3Fore"
+		light_value="3050"
+		medium_value="7050"
+		heavy_value="13950"
+		required_port_level="3"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.empire"
+		crew_capacity_bonus_multiplier="0.1"
+		combat_factor_bonus_multiplier="0.05"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_battlement_lvl2_wstones"
+		name="{=!}TEMP"
+		description="{=!}TEMP"
+		slot_prefab_child_id="merlon4Fore"
+		not_merchandise="true"
+		light_value="1300"
+		medium_value="3000"
+		heavy_value="5900"
+		required_port_level="2"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.aserai"
+		combat_factor_bonus_multiplier="0.08"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_battlement_lvl3_wstones"
+		name="{=!}TEMP"
+		description="{=!}TEMP"
+		slot_prefab_child_id="merlon5Fore"
+		not_merchandise="true"
+		light_value="2850"
+		medium_value="6650"
+		heavy_value="13000"
+		required_port_level="3"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.aserai"
+		combat_factor_bonus_multiplier="0.1"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="fore_battlement_lvl2_wrudder"
+		name="{=!}TEMP"
+		description="{=!}TEMP"
+		slot_prefab_child_id="merlon6Fore"
+		not_merchandise="true"
+		light_value="100"
+		medium_value="100"
+		heavy_value="100"
+		required_port_level="2"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.aserai"
+		combat_factor_bonus_multiplier="0.05"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="fore" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<!--Aft Slot-->
+	<ShipUpgradePiece
+		id="aft_battlement_lvl1"
+		name="{=hHHEW1HN}Battlements"
+		description="{=CHINRDlF}Aftcastle protects troops and strengthens the hull, at a cost of additional weight."
+		slot_prefab_child_id="merlon1Aft"
+		light_value="500"
+		medium_value="1150"
+		heavy_value="2200"
+		required_port_level="1"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.empire"
+		combat_factor_bonus_multiplier="0.05"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.03">
+		<TargetSlots>
+			<ShipSlot
+				id="aft" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="aft_battlement_lvl2_wbarracks"
+		name="{=a2tTEEaP}Battlements with Barracks"
+		description="{=flympyDQ}Aftcastle protects troops and strengthens the hull, at a cost of additional weight. Barracks allows more troops on board."
+		slot_prefab_child_id="merlon2Aft"
+		light_value="1400"
+		medium_value="3200"
+		heavy_value="6350"
+		required_port_level="2"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.empire"
+		crew_capacity_bonus_multiplier="0.06"
+		combat_factor_bonus_multiplier="0.05"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="aft" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="aft_battlement_lvl3_wbarracks"
+		name="{=v8pxCsQM}Reinforced Battlements with Barracks"
+		description="{=p3clx5iE}Reinforced aftcastle protects troops and strengthens the hull, at a cost of additional weight. Barracks allows more troops on board."
+		slot_prefab_child_id="merlon3Aft"
+		light_value="3050"
+		medium_value="7050"
+		heavy_value="13950"
+		required_port_level="3"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.empire"
+		crew_capacity_bonus_multiplier="0.1"
+		combat_factor_bonus_multiplier="0.05"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="aft" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="aft_battlement_lvl2_wstones"
+		name="{=!}TEMP"
+		description="{=!}TEMP"
+		slot_prefab_child_id="merlon4Aft"
+		not_merchandise="true"
+		light_value="1300"
+		medium_value="3000"
+		heavy_value="5900"
+		required_port_level="2"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.aserai"
+		combat_factor_bonus_multiplier="0.08"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="aft" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="aft_battlement_lvl3_wstones"
+		name="{=!}TEMP"
+		description="{=!}TEMP"
+		slot_prefab_child_id="merlon5Aft"
+		not_merchandise="true"
+		light_value="2850"
+		medium_value="6550"
+		heavy_value="13000"
+		required_port_level="3"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.aserai"
+		combat_factor_bonus_multiplier="0.1"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="aft" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="aft_battlement_lvl2_wrudder"
+		name="{=XmtpyDlg}Battlements with Improved Rudder"
+		description="{=ml8iT1KL}Aftcastle protects troops and strengthens the hull, at a cost of additional weight. Improved rudder increases maneuverability."
+		slot_prefab_child_id="merlon6Aft"
+		light_value="1200"
+		medium_value="2800"
+		heavy_value="5500"
+		required_port_level="2"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.aserai"
+		combat_factor_bonus_multiplier="0.05"
+		rudder_surface_area_bonus_multiplier="0.1"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="aft" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="aft_battlement_lvl3_wrudder"
+		name="{=sfxxVabq}Reinforced Battlements with Improved Rudder"
+		description="{=S3H3lsTM}Reinforced aftcastle protects troops and strengthens the hull, at a cost of additional weight. Improved rudder increases maneuverability."
+		light_value="2650"
+		medium_value="6100"
+		heavy_value="12050"
+		required_port_level="3"
+		required_culture_1_id="Culture.vlandia"
+		required_culture_2_id="Culture.aserai"
+		combat_factor_bonus_multiplier="0.05"
+		rudder_surface_area_bonus_multiplier="0.1"
+		max_rudder_force_bonus_multiplier="0.05"
+		ship_weight_bonus_multiplier="0.03"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="aft" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<!--Bow Slot-->
+	<ShipUpgradePiece
+		id="bow_ram_lvl1"
+		name="{=shipUpgradeRam}Ram"
+		description="{=WfqYcZ5Y}Ram can deal damaging blows enemy ships and demoralize their crews, at a cost of additional weight."
+		slot_prefab_child_id="ram_01"
+		light_value="350"
+		medium_value="700"
+		heavy_value="1400"
+		siege_engine="SiegeEngineType.bow_ram_lvl1"
+		required_port_level="1"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.aserai"
+		ship_weight_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="bow" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="bow_reinforced_ram_lvl2"
+		name="{=FFCYoMIq}Reinforced Ram"
+		description="{=lSRz4e57}Heavy ram can deal devastating blows enemy ships and demoralize their crews, at a cost of additional weight."
+		slot_prefab_child_id="ram_02"
+		light_value="800"
+		medium_value="1750"
+		heavy_value="3500"
+		siege_engine="SiegeEngineType.bow_reinforced_ram_lvl2"
+		required_port_level="2"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.sturgia"
+		ship_weight_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="bow" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="bow_reinforced_ram_lvl3"
+		name="{=j6U3sIMN}Heavy Reinforced Ram"
+		description="{=7Qq8U6zc}Reinforced heavy ram strengthens the hull and can deal devastating blows enemy ships and demoralize their crews, at a cost of additional weight."
+		slot_prefab_child_id="ram_03"
+		light_value="1700"
+		medium_value="3850"
+		heavy_value="7600"
+		siege_engine="SiegeEngineType.bow_reinforced_ram_lvl3"
+		required_port_level="3"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.sturgia"
+		ship_weight_bonus_multiplier="0.1"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="bow" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="bow_wavebreaker_ram_lvl2"
+		name="{=bjqLG5GA}Wavebreaker Ram"
+		description="{=r7R5ehGR}Wavebreaker ram can deal heavy blows to enemy ships, demoralize their crews while improving speed, at a cost of additional weight."
+		slot_prefab_child_id="ram_04"
+		light_value="900"
+		medium_value="2050"
+		heavy_value="4050"
+		siege_engine="SiegeEngineType.bow_wavebreaker_ram_lvl2"
+		required_port_level="2"
+		required_culture_1_id="Culture.khuzait"
+		required_culture_2_id="Culture.aserai"
+		ship_weight_bonus_multiplier="0.05"
+		decrease_forward_drag_multiplier="0.05"
+		campaign_speed_bonus_multiplier="0.02">
+		<TargetSlots>
+			<ShipSlot
+				id="bow" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="bow_wavebreaker_ram_lvl3"
+		name="{=oPweDBbx}Reinforced Wavebreaker Ram"
+		description="{=hXurnyko}Reinforced wavebreaker ram strengthens the hull and can deal heavy blows to enemy ships, demoralize their crews while improving speed, at a cost of aditional weight."
+		slot_prefab_child_id="ram_05"
+		light_value="1950"
+		medium_value="4450"
+		heavy_value="8850"
+		siege_engine="SiegeEngineType.bow_wavebreaker_ram_lvl3"
+		required_port_level="3"
+		required_culture_1_id="Culture.khuzait"
+		required_culture_2_id="Culture.aserai"
+		ship_weight_bonus_multiplier="0.05"
+		decrease_forward_drag_multiplier="0.05"
+		max_hit_points_bonus_multiplier="0.05"
+		campaign_speed_bonus_multiplier="0.02">
+		<TargetSlots>
+			<ShipSlot
+				id="bow" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="bow_northern_ram_lvl1"
+		name="{=shipUpgradeRam}Ram"
+		description="{=WfqYcZ5Y}Ram can deal damaging blows enemy ships and demoralize their crews, at a cost of additional weight."
+		slot_prefab_child_id="ram_06"
+		light_value="350"
+		medium_value="800"
+		heavy_value="1500"
+		required_port_level="1"
+		required_culture_1_id="Culture.sturgia"
+		required_culture_2_id="Culture.sturgia"
+		ship_weight_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="bow" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="bow_northern_reinforced_ram_lvl2"
+		name="{=FFCYoMIq}Reinforced Ram"
+		description="{=lSRz4e57}Heavy ram can deal devastating blows enemy ships and demoralize their crews, at a cost of additional weight."
+		slot_prefab_child_id="ram_07"
+		light_value="850"
+		medium_value="1900"
+		heavy_value="3750"
+		required_port_level="2"
+		required_culture_1_id="Culture.sturgia"
+		required_culture_2_id="Culture.sturgia"
+		ship_weight_bonus_multiplier="0.05"
+		max_hit_points_bonus_multiplier="0.03">
+		<TargetSlots>
+			<ShipSlot
+				id="bow" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="bow_northern_reinforced_ram_lvl3"
+		name="{=j6U3sIMN}Heavy Reinforced Ram"
+		description="{=7Qq8U6zc}Reinforced heavy ram strengthens the hull and can deal devastating blows enemy ships and demoralize their crews, at a cost of additional weight."
+		slot_prefab_child_id="ram_08"
+		light_value="1800"
+		medium_value="4150"
+		heavy_value="8250"
+		required_port_level="3"
+		required_culture_1_id="Culture.sturgia"
+		required_culture_2_id="Culture.sturgia"
+		ship_weight_bonus_multiplier="0.05"
+		max_hit_points_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="bow" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<!--Hull Slot-->
+	<ShipUpgradePiece
+		id="hull_lead_lvl1"
+		name="{=DPQdOfq9}Lead Sheathing"
+		description="{=iZK1a9ta}Protects the hull from elements, at a cost of additional weight."
+		slot_prefab_child_id="hull_lead_lvl1"
+		light_value="550"
+		medium_value="1200"
+		heavy_value="2350"
+		required_port_level="1"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.vlandia"
+		ship_weight_bonus_multiplier="0.1"
+		sea_worthiness_bonus="10">
+		<TargetSlots>
+			<ShipSlot
+				id="hull" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="hull_bronze_lvl2"
+		name="{=ytMC7JP1}Bronze Sheathing"
+		description="{=eMyfa0LQ}Strengthens the hull and protects it from elements, at a cost of additional weight."
+		slot_prefab_child_id="hull_bronze_lvl2"
+		light_value="1500"
+		medium_value="3400"
+		heavy_value="6700"
+		required_port_level="2"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire"
+		ship_weight_bonus_multiplier="0.1"
+		max_hit_points_bonus_multiplier="0.05"
+		sea_worthiness_bonus="10">
+		<TargetSlots>
+			<ShipSlot
+				id="hull" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="hull_bronze_lvl3"
+		name="{=R8aYgKWq}Reinforced Bronze Sheathing"
+		description="{=Pn6K653A}Strengthens the hull and provide excellent protection against elements, at a cost of additional weight."
+		slot_prefab_child_id="hull_bronze_lvl3"
+		light_value="3200"
+		medium_value="7450"
+		heavy_value="14700"
+		required_port_level="3"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire"
+		ship_weight_bonus_multiplier="0.1"
+		max_hit_points_bonus_multiplier="0.1"
+		sea_worthiness_bonus="10">
+		<TargetSlots>
+			<ShipSlot
+				id="hull" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="hull_copper_lvl2"
+		name="{=Itaeqof5}Copper Sheathing"
+		description="{=MkvlY07D}Provides excellent protection against elements, at a cost of a small additonal weight."
+		slot_prefab_child_id="hull_copper_lvl2"
+		light_value="1300"
+		medium_value="2950"
+		heavy_value="5800"
+		required_port_level="2"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai"
+		ship_weight_bonus_multiplier="0.05"
+		sea_worthiness_bonus="15">
+		<TargetSlots>
+			<ShipSlot
+				id="hull" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="hull_copper_lvl3"
+		name="{=kuIQENds}Reinforced Copper Sheathing"
+		description="{=jVBqP8ys}Provides excellent protection against elements and improves ship speed, at cost of a small additonal weight."
+		slot_prefab_child_id="hull_copper_lvl3"
+		light_value="2800"
+		medium_value="6400"
+		heavy_value="12700"
+		required_port_level="3"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai"
+		ship_weight_bonus_multiplier="0.05"
+		decrease_forward_drag_multiplier="0.05"
+		sea_worthiness_bonus="15">
+		<TargetSlots>
+			<ShipSlot
+				id="hull" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<!--Side Slot-->
+	<ShipUpgradePiece
+		id="side_northern_shields_lvl1"
+		name="{=NUk79U2j}Northern Shields"
+		description="{=PMscHQY5}Placed at sides of the ship, provides cover and some protection from arrows"
+		slot_prefab_child_id="north_lvl1"
+		light_value="450"
+		medium_value="950"
+		heavy_value="1850"
+		required_port_level="1"
+		required_culture_1_id="Culture.nord"
+		required_culture_2_id="Culture.sturgia"
+		crew_shield_hit_points_bonus_multiplier="0.2"
+		combat_factor_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="side" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="side_northern_shields_lvl2"
+		name="{=N4ixStKi}Stout Northern Shields"
+		description="{=01LkhkAV}Placed at sides of the ship, provides cover and moderate protection from arrows"
+		slot_prefab_child_id="north_lvl2"
+		light_value="1050"
+		medium_value="2350"
+		heavy_value="4650"
+		required_port_level="2"
+		required_culture_1_id="Culture.nord"
+		required_culture_2_id="Culture.sturgia"
+		crew_shield_hit_points_bonus_multiplier="0.35"
+		combat_factor_bonus_multiplier="0.08">
+		<TargetSlots>
+			<ShipSlot
+				id="side" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="side_northern_shields_lvl3"
+		name="{=OqVRSwHa}Reinforced Northern Shields"
+		description="{=CLHAK9te}Placed at sides of the ship, provides cover and excellent protection from arrows"
+		slot_prefab_child_id="north_lvl3"
+		light_value="2250"
+		medium_value="5150"
+		heavy_value="10150"
+		required_port_level="3"
+		required_culture_1_id="Culture.nord"
+		required_culture_2_id="Culture.sturgia"
+		crew_shield_hit_points_bonus_multiplier="0.5"
+		combat_factor_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="side" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="side_southern_shields_lvl1"
+		name="{=PbblzgGJ}Southern Shields"
+		description="{=PMscHQY5}Placed at sides of the ship, provides cover and some protection from arrows"
+		slot_prefab_child_id="south_lvl1"
+		light_value="450"
+		medium_value="950"
+		heavy_value="1850"
+		required_port_level="1"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.empire"
+		crew_shield_hit_points_bonus_multiplier="0.2"
+		combat_factor_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="side" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="side_southern_shields_lvl2"
+		name="{=jJ0f2oIp}Thick Southern Shields"
+		description="{=01LkhkAV}Placed at sides of the ship, provides cover and moderate protection from arrows"
+		slot_prefab_child_id="south_lvl2"
+		light_value="1050"
+		medium_value="2350"
+		heavy_value="4650"
+		required_port_level="2"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.empire"
+		crew_shield_hit_points_bonus_multiplier="0.35"
+		combat_factor_bonus_multiplier="0.08">
+		<TargetSlots>
+			<ShipSlot
+				id="side" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="side_southern_shields_lvl3"
+		name="{=kJRaZZUU}Reinforced Southern Shields"
+		description="{=CLHAK9te}Placed at sides of the ship, provides cover and excellent protection from arrows"
+		slot_prefab_child_id="south_lvl3"
+		light_value="2250"
+		medium_value="5150"
+		heavy_value="10150"
+		required_port_level="3"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.empire"
+		crew_shield_hit_points_bonus_multiplier="0.5"
+		combat_factor_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="side" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="side_brazier"
+		name="{=xjIj36Zr}Arrow Brazier"
+		description="{=sLMR3aNv}Supplies crew with fire arrows, dealing fire damage to enemy ships and sails."
+		slot_prefab_child_id="brazier"
+		light_value="800"
+		medium_value="1800"
+		heavy_value="3550"
+		required_port_level="3"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.empire"
+		combat_factor_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="side" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<!--Deck Slot-->
+	<ShipUpgradePiece
+		id="deck_tent_lvl1"
+		name="{=xv4troLC}Deck Tent"
+		description="{=SJIXW12z}Stores small amount of additional cargo on deck."
+		slot_prefab_child_id="deck_tent_lvl1"
+		light_value="450"
+		medium_value="950"
+		heavy_value="1850"
+		required_port_level="1"
+		required_culture_1_id="Culture.battania"
+		required_culture_2_id="Culture.khuzait"
+		sea_worthiness_bonus="5"
+		inventory_capacity_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_tent_lvl2"
+		name="{=Jbx5eDsm}Cargo Tent"
+		description="{=pvCgujaA}Stores additional cargo on deck."
+		slot_prefab_child_id="deck_tent_lvl2"
+		light_value="1150"
+		medium_value="2600"
+		heavy_value="5200"
+		required_port_level="2"
+		required_culture_1_id="Culture.battania"
+		required_culture_2_id="Culture.aserai"
+		sea_worthiness_bonus="5"
+		inventory_capacity_bonus_multiplier="0.2">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_tent_lvl3"
+		name="{=tEOyEOgo}Large Cargo Tent"
+		description="{=R2Knra58}Stores large amount of additional cargo on deck."
+		slot_prefab_child_id="deck_tent_lvl3"
+		light_value="2500"
+		medium_value="5750"
+		heavy_value="11350"
+		required_port_level="3"
+		required_culture_1_id="Culture.battania"
+		required_culture_2_id="Culture.aserai"
+		sea_worthiness_bonus="5"
+		inventory_capacity_bonus_multiplier="0.3">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_storm_cover_lvl2"
+		name="{=vaVZphmq}Storm Cover"
+		description="{=9JFGsrLN}Protects the ship against elements, and stores small mount of additional cargo."
+		light_value="1050"
+		medium_value="2350"
+		heavy_value="4650"
+		required_port_level="2"
+		required_culture_1_id="Culture.nord"
+		required_culture_2_id="Culture.sturgia"
+		sea_worthiness_bonus="10"
+		inventory_capacity_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_heavy_storm_cover_lvl3"
+		name="{=hcRabdNj}Heavy Storm Cover"
+		description="{=LXnFcgLp}Excellent at protecting the ship against elements, and stores small mount of additional cargo."
+		light_value="2250"
+		medium_value="5150"
+		heavy_value="10150"
+		required_port_level="3"
+		required_culture_1_id="Culture.nord"
+		required_culture_2_id="Culture.sturgia"
+		sea_worthiness_bonus="15"
+		inventory_capacity_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_boarding_weapons_lvl1"
+		name="{=6xzmyqiF}Boarding Weapons"
+		description="{=6mx5bMqr}Weapons and tools to improve crew in melee combat."
+		light_value="450"
+		medium_value="1000"
+		heavy_value="2000"
+		required_port_level="1"
+		required_culture_1_id="Culture.battania"
+		required_culture_2_id="Culture.sturgia"
+		crew_melee_damage_bonus_multiplier="0.05"
+		combat_factor_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_boarding_weapons_lvl2"
+		name="{=66kA1zoe}Sharpened Boarding Weapons"
+		description="{=RBawv2mx}Sharpened weapons and tools to improve crew in melee combat."
+		light_value="1100"
+		medium_value="2500"
+		heavy_value="4900"
+		required_port_level="2"
+		required_culture_1_id="Culture.battania"
+		required_culture_2_id="Culture.sturgia"
+		crew_melee_damage_bonus_multiplier="0.08"
+		combat_factor_bonus_multiplier="0.08">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_boarding_weapons_lvl3"
+		name="{=XwiUjhAX}Fine Honed Boarding Weapons"
+		description="{=OU5MQV43}Fine honed weapons and tools to improve crew in melee combat."
+		light_value="2350"
+		medium_value="5450"
+		heavy_value="10800"
+		required_port_level="3"
+		required_culture_1_id="Culture.battania"
+		required_culture_2_id="Culture.sturgia"
+		crew_melee_damage_bonus_multiplier="0.1"
+		combat_factor_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_ammo_bins_lvl1"
+		name="{=i9pgCW6U}Arrow Bins"
+		description="{=KMS3Fku8}Small barrels filled with arrows and bolts to restock archers during battles."
+		light_value="400"
+		medium_value="900"
+		heavy_value="1750"
+		required_port_level="1"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.aserai"
+		archer_quiver_bonus="1"
+		combat_factor_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_ammo_crates_lvl2"
+		name="{=resMgRrf}Arrow Crates"
+		description="{=1Jpk0u7h}Crates filled with arrows and bolts to restock archers during battles."
+		light_value="950"
+		medium_value="2200"
+		heavy_value="4350"
+		required_port_level="2"
+		required_culture_1_id="Culture.khuzait"
+		required_culture_2_id="Culture.aserai"
+		archer_quiver_bonus="2"
+		combat_factor_bonus_multiplier="0.08">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_large_ammo_crates_lvl3"
+		name="{=W3gBTYFb}Large Arrow Crates"
+		description="{=x95P6Cyn}Large crates filled with arrows and bolts to restock archers during battles."
+		light_value="2100"
+		medium_value="4800"
+		heavy_value="9500"
+		required_port_level="3"
+		required_culture_1_id="Culture.khuzait"
+		required_culture_2_id="Culture.aserai"
+		archer_quiver_bonus="3"
+		combat_factor_bonus_multiplier="0.08">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_arrow_and_javelin_crates_lvl2"
+		name="{=9U9Mkxdt}Arrow and Javelin Bins"
+		description="{=IKaDAiw8}Small barrels filled with quivers and throwing weapons to restock crew during battles."
+		light_value="1100"
+		medium_value="2550"
+		heavy_value="5050"
+		required_port_level="2"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.nord"
+		archer_quiver_bonus="1"
+		throwing_weapon_stack_bonus="1"
+		combat_factor_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="deck_large_arrow_and_javelin_crates_lvl3"
+		name="{=yaELTN3F}Large Arrow and Javelin Crates"
+		description="{=NN5bDb1l}Large crates filled with quivers and throwing weapons to restock crew during battles."
+		light_value="2400"
+		medium_value="5600"
+		heavy_value="11050"
+		required_port_level="3"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.nord"
+		archer_quiver_bonus="2"
+		throwing_weapon_stack_bonus="2"
+		combat_factor_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="deck" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<!--Oars Slot-->
+	<ShipUpgradePiece
+		id="oars_light_lvl1"
+		name="{=Lk1H5hzq}Light Oars"
+		description="{=HzbmRFaZ}Light oars can be rowed faster, increasing top oar speed."
+		slot_prefab_child_id="light_lvl1"
+		light_value="600"
+		medium_value="1300"
+		heavy_value="2250"
+		required_port_level="1"
+		required_culture_1_id="Culture.nord"
+		required_culture_2_id="Culture.battania"
+		max_oar_power_bonus_multiplier="0.05"
+		campaign_speed_bonus_multiplier="0.02">
+		<TargetSlots>
+			<ShipSlot
+				id="oars" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="oars_light_lvl2"
+		name="{=mL8DF6i4}Aspen Light Oars"
+		description="{=ayATS5rF}Aspen light oars can be rowed faster, increasing top oar speed."
+		slot_prefab_child_id="light_lvl2"
+		light_value="1400"
+		medium_value="3200"
+		heavy_value="6350"
+		required_port_level="2"
+		required_culture_1_id="Culture.nord"
+		required_culture_2_id="Culture.battania"
+		max_oar_power_bonus_multiplier="0.1"
+		campaign_speed_bonus_multiplier="0.04">
+		<TargetSlots>
+			<ShipSlot
+				id="oars" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="oars_light_lvl3"
+		name="{=6reJ8WNm}Ash Light Oars"
+		description="{=DHFlfl34}Ash light oars can be rowed faster, increasing top oar speed."
+		slot_prefab_child_id="light_lvl3"
+		light_value="3050"
+		medium_value="7050"
+		heavy_value="13950"
+		required_port_level="3"
+		required_culture_1_id="Culture.nord"
+		required_culture_2_id="Culture.battania"
+		max_oar_power_bonus_multiplier="0.15"
+		campaign_speed_bonus_multiplier="0.06">
+		<TargetSlots>
+			<ShipSlot
+				id="oars" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="oars_wide_lvl1"
+		name="{=35fubNrV}Wide Oars"
+		description="{=zGyGB0gh}Wide oars provide more force with each pull, improving maneuverability."
+		slot_prefab_child_id="wide_lvl1"
+		light_value="450"
+		medium_value="1000"
+		heavy_value="2000"
+		required_port_level="1"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.sturgia"
+		max_oar_force_bonus_multiplier="0.05">
+		<TargetSlots>
+			<ShipSlot
+				id="oars" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="oars_wide_lvl2"
+		name="{=J5csAfJ5}Birch Wide Oars"
+		description="{=WWRKa2A4}Birch wide oars provide more force with each pull, improving maneuverability."
+		slot_prefab_child_id="wide_lvl2"
+		light_value="1100"
+		medium_value="2500"
+		heavy_value="4900"
+		required_port_level="2"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.sturgia"
+		max_oar_force_bonus_multiplier="0.1">
+		<TargetSlots>
+			<ShipSlot
+				id="oars" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="oars_wide_lvl3"
+		name="{=KauBX0VP}Oaken Wide Oars"
+		description="{=r2MjCJcL}Oaken wide oars provide more force with each pull, improving maneuverability."
+		slot_prefab_child_id="wide_lvl3"
+		light_value="2350"
+		medium_value="5450"
+		heavy_value="10800"
+		required_port_level="3"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.sturgia"
+		max_oar_force_bonus_multiplier="0.15">
+		<TargetSlots>
+			<ShipSlot
+				id="oars" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<!--Sail Slot-->
+	<!--ShipUpgradePiece
+		id="sail_lvl1"
+		name="{=!}TEMP"
+		description="{=!}TEMP"
+		light_value="600"
+		medium_value="1350"
+		heavy_value="2650"
+		required_port_level="1"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.empire"
+		sail_rotation_speed_bonus_multiplier="0.1"
+		furl_unfurl_speed_bonus_multipler="0.1"
+		campaign_speed_bonus_multiplier="0.02">
+		<TargetSlots>
+			<ShipSlot
+				id="sail" />
+		</TargetSlots>
+	</ShipUpgradePiece-->
+	<ShipUpgradePiece
+		id="sails_lvl2"
+		name="{=KPbFW81g}Linen Sails"
+		description="{=BcxuZsz7}Linen sails provide higher sail power, they are also lighter and easier to work."
+		slot_prefab_child_id="lvl2"
+		light_value="1450"
+		medium_value="3350"
+		heavy_value="6650"
+		required_port_level="2"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.empire"
+		sail_rotation_speed_bonus_multiplier="0.2"
+		furl_unfurl_speed_bonus_multipler="0.2"
+		campaign_speed_bonus_multiplier="0.04">
+		<TargetSlots>
+			<ShipSlot
+				id="sail" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="sails_lvl3"
+		name="{=7bof5oS9}Cotton Sails"
+		description="{=2AZCigI3}Cotton sails have greater sail power, they are also lighter and easier to work."
+		slot_prefab_child_id="lvl3"
+		light_value="3200"
+		medium_value="7350"
+		heavy_value="14550"
+		required_port_level="3"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.empire"
+		sail_rotation_speed_bonus_multiplier="0.3"
+		furl_unfurl_speed_bonus_multipler="0.3"
+		campaign_speed_bonus_multiplier="0.08">
+		<TargetSlots>
+			<ShipSlot
+				id="sail" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<!--<ShipUpgradePiece
+		id="wood_front_mangonel"
+		name="{=!}TEMP"
+		description="{=!}TEMP"
+		light_value="5000"
+		medium_value="100"
+		heavy_value="100"
+		required_port_level="3">
+
+		<TargetSlots>
+			<ShipSlot id="rudder"/>
+		</TargetSlots>
+		<RequiredCultures>
+			<Culture required_culture_id="Culture.sturgia"/>
+			<Culture required_culture_id="Culture.battania"/>
+		</RequiredCultures>
+	</ShipUpgradePiece>-->
+	<ShipUpgradePiece
+		id="roof_0"
+		name="{=WgnMnUkw}Imperial Basic Pavilion"
+		description=""
+		slot_prefab_child_id="roof_0"
+		light_value="100"
+		medium_value="1000"
+		heavy_value="2000"
+		required_port_level="1"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_1"
+		name="{=uFFMBwEi}Imperial Ornate Pavilion"
+		description=""
+		slot_prefab_child_id="roof_1"
+		light_value="100"
+		medium_value="2000"
+		heavy_value="4000"
+		required_port_level="2"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_2"
+		name="{=VFhByivP}Imperial Exquisite Pavilion"
+		description=""
+		slot_prefab_child_id="roof_2"
+		light_value="100"
+		medium_value="3000"
+		heavy_value="6000"
+		required_port_level="3"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_3"
+		name="{=7GAvgFDG}Imperial Basic Canopy"
+		description=""
+		slot_prefab_child_id="roof_3"
+		light_value="100"
+		medium_value="1000"
+		heavy_value="2000"
+		required_port_level="1"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_4"
+		name="{=Jo302wOR}Imperial Ornate Canopy"
+		description=""
+		slot_prefab_child_id="roof_4"
+		light_value="100"
+		medium_value="2000"
+		heavy_value="4000"
+		required_port_level="2"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_5"
+		name="{=7bEbxJKu}Imperial Exquisite Canopy"
+		description=""
+		slot_prefab_child_id="roof_5"
+		light_value="100"
+		medium_value="3000"
+		heavy_value="6000"
+		required_port_level="3"
+		required_culture_1_id="Culture.empire"
+		required_culture_2_id="Culture.empire">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_6"
+		name="{=3gvQBRZJ}Eastern Basic Tent"
+		description=""
+		slot_prefab_child_id="roof_6"
+		light_value="100"
+		medium_value="1000"
+		heavy_value="2000"
+		required_port_level="1"
+		required_culture_1_id="Culture.khuzait"
+		required_culture_2_id="Culture.khuzait">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_7"
+		name="{=I0pFMzKQ}Eastern Ornate Tent"
+		description=""
+		slot_prefab_child_id="roof_7"
+		light_value="100"
+		medium_value="2000"
+		heavy_value="4000"
+		required_port_level="2"
+		required_culture_1_id="Culture.khuzait"
+		required_culture_2_id="Culture.khuzait">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_8"
+		name="{=GMJZWxrG}Eastern Exquisite Tent"
+		description=""
+		slot_prefab_child_id="roof_8"
+		light_value="100"
+		medium_value="3000"
+		heavy_value="6000"
+		required_port_level="3"
+		required_culture_1_id="Culture.khuzait"
+		required_culture_2_id="Culture.khuzait">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_9"
+		name="{=s0ARz4YZ}Southern Basic Awning"
+		description=""
+		slot_prefab_child_id="roof_9"
+		light_value="100"
+		medium_value="1000"
+		heavy_value="2000"
+		required_port_level="1"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_10"
+		name="{=fTkIYJLc}Southern Ornate Awning"
+		description=""
+		slot_prefab_child_id="roof_10"
+		light_value="100"
+		medium_value="2000"
+		heavy_value="4000"
+		required_port_level="2"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_11"
+		name="{=NbpMco63}Southern Exquisite Awning"
+		description=""
+		slot_prefab_child_id="roof_11"
+		light_value="100"
+		medium_value="3000"
+		heavy_value="6000"
+		required_port_level="3"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_12"
+		name="{=ZrBkK5eR}Southern Basic Covers"
+		description=""
+		slot_prefab_child_id="roof_12"
+		light_value="100"
+		medium_value="1000"
+		heavy_value="2000"
+		required_port_level="1"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_13"
+		name="{=wINSs3qw}Southern Ornate Covers"
+		description=""
+		slot_prefab_child_id="roof_13"
+		light_value="100"
+		medium_value="2000"
+		heavy_value="4000"
+		required_port_level="2"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+	<ShipUpgradePiece
+		id="roof_14"
+		name="{=6VbXdYBk}Southern Exquisite Covers"
+		description=""
+		slot_prefab_child_id="roof_14"
+		light_value="100"
+		medium_value="3000"
+		heavy_value="4000"
+		required_port_level="3"
+		required_culture_1_id="Culture.aserai"
+		required_culture_2_id="Culture.aserai">
+		<TargetSlots>
+			<ShipSlot
+				id="roof" />
+		</TargetSlots>
+	</ShipUpgradePiece>
+</ShipUpgradePieces>

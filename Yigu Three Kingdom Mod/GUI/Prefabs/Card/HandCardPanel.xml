@@ -1,0 +1,39 @@
+<Prefab>
+  <Constants>
+  <Constant Name="CardWidth" Value="190" />
+  <Constant Name="CardHeight" Value="295" />
+  </Constants>
+  <Window>
+  
+    <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="310"  HorizontalAlignment="Center" Sprite="scrollable_field_9">
+		<Children>
+	<!--- 建立玩家列表面板 -->
+		<!-- 建立滚动条 -->
+			<ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Bottom" AutoHideScrollBars="true" ClipRect="ClipRect" InnerPanel="ClipRect\InquiryElementsList" VerticalScrollbar="..\VerticalScrollbar">
+				<Children>			 
+					<!-- 卡牌显示面板外面板 -->
+					<CardHoldPanelWidget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="5" MarginBottom="5"
+								 ClipContents="true" >
+						<Children>
+							<!-- 卡牌列表内面板 -->
+							<ListPanel Id="InquiryElementsList" DataSource="{CardList}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalBottomToTop">
+							  <ItemTemplate>													
+								<CardPage id="CardItem" />																		
+							  </ItemTemplate>
+							</ListPanel>
+						</Children>
+					</CardHoldPanelWidget>				
+				</Children>
+			</ScrollablePanel>
+			
+			<ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Center" MarginTop="20" MarginBottom="20" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0">
+				<Children>
+					<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="MPLobby\CustomServer\lobby_slider_bed" AlphaFactor="0.4" />
+					<ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="8" SuggestedHeight="10" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+				</Children>
+		   </ScrollbarWidget>
+
+    </Children>
+	</ListPanel>
+  </Window>
+</Prefab>

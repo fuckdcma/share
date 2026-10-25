@@ -1,0 +1,383 @@
+<Prefab>
+  <Constants>
+    <Constant Name="CultureButton.Size" Value="60" />
+    <Constant Name="CultureButton.Margin" Value="10" />
+    <Constant Name="ParallaxDuration" Value="10"/>
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <NavigationForcedScopeCollectionTargeter CollectionID="ObtainPopupCollection" CollectionParent="..\." CollectionOrder="100"/>
+
+        <MultiplayerLobbyArmoryCosmeticObtainPopupWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ObtainState="@ObtainState" CancelButtonWidget="CancelButton" ItemPreviewListPanel="PopupArea\PopupContent\Content\ContentList\ItemPreview" ActionButtonWidget="PopupArea\PopupContent\Content\ContentList\ItemPreview\ActionButton" ResultSuccessfulIconWidget="PopupArea\PopupContent\Content\ContentList\ResultSuccessfulIcon" ResultFailedIconWidget="PopupArea\PopupContent\Content\ContentList\ResultFailedIcon" ResultTextWidget="PopupArea\PopupContent\Content\ContentList\ResultText" LoadingAnimationWidget="PopupArea\PopupContent\Content\ContentList\LoadingAnimation" IsVisible="@IsOpenedWithClothingItem">
+          <Children>
+
+            <ButtonWidget Id="CancelButton" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare" Brush.Color="#000000FF" Brush.AlphaFactor="0.8" Command.Click="ExecuteClosePopup"/>
+
+            <!--Cosmetics Item Popup-->
+            <ListPanel Id="PopupArea" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="700" VerticalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom" IsVisible="@IsOpenedWithClothingItem">
+              <Children>
+
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+
+                <!--Popup Content-->
+                <MultiplayerLobbyArmoryCosmeticTierVisualBrushWidget Id="PopupContent" DataSource="{Item}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Armory.ObtainPopup.Background" VerticalAlignment="Center" Rarity="@Rarity">
+                  <Children>
+
+                    <Widget Id="Content" DataSource="{..}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" >
+                      <Children>
+
+                        <!-- Tier Color For Armory Item -->
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="850" SuggestedHeight="650" HorizontalAlignment="Center" VerticalAlignment="Center" IsVisible="@IsOpenedWithClothingItem">
+                          <Children>
+                            <Lobby.Cosmetic.Tier.Background Parameter.CosmeticDataSource="{Item}" />
+                          </Children>
+                        </Widget>
+
+                        <!-- Particles -->
+                        <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="898" SuggestedHeight="538" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="-70" InitialDirection="Right" IsEaseInOutEnabled="true" VerticalAlignment="Center">
+                          <Children>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\particles1" AlphaFactor="0.3" HorizontalAlignment="Center"  />
+                          </Children>
+                        </ParallaxItemBrushWidget>
+
+                        <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="898" SuggestedHeight="538" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="-70" InitialDirection="Left" IsEaseInOutEnabled="true" VerticalAlignment="Center">
+                          <Children>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\particles2" AlphaFactor="0.5" HorizontalAlignment="Center"  />
+                          </Children>
+                        </ParallaxItemBrushWidget>
+
+                        <Widget Id="ContentList" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" >
+                          <Children>
+
+                            <ListPanel Id="ItemPreview" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalTopToBottom" MarginTop="10" MarginBottom="0" DoNotAcceptEvents="true">
+                              <Children>
+
+                                <!-- Title -->
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Armory.Cosmetic.Popup.ItemName.Text" Brush.FontSize="36" Text="@ObtainDescriptionText" />
+
+                                <!-- Name -->
+                                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="20" MarginLeft="10" MarginRight="10" IsVisible="@IsOpenedWithClothingItem">
+                                  <Children>
+                                    <TextWidget DataSource="{Item}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Text="@Name" Brush="MPLobby.Armory.Cosmetic.Name.Text" Brush.FontSize="28" />
+                                  </Children>
+                                </Widget>
+
+                                <!-- Item Visual -->
+                                <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="475" SuggestedHeight="400" HorizontalAlignment="Center" IsSelected="true">
+                                  <Children>
+
+                                    <!-- Item Visual -->
+                                    <ItemTableauWidget DataSource="{ItemVisual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="475" SuggestedHeight="475" VerticalAlignment="Center" MarginTop="0" ItemModifierId="@ItemModifierId" StringId="@StringId" BannerCode="@BannerCode" InitialPanRotation="@InitialPanRotation"/>
+                                  </Children>
+                                </ButtonWidget>
+
+                                <!-- Action Button -->
+                                <NavigationScopeTargeter ScopeID="ObtainArmoryItemButtonScope" ScopeParent="..\ActionButton" />
+                                <ButtonWidget DoNotPassEventsToChildren="true" Id="ActionButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginTop="25" Brush="MPLobby.Cosmetic.Obtain.Button" Command.Click="ExecuteAction" IsEnabled="@CanObtain" GamepadNavigationIndex="0" >
+                                  <Children>
+                                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight" IsVisible="@CanObtain">
+                                      <Children>
+                                        <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Report.Button.Text" Text="@ContinueText"/>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" IsHidden="@IsObtainSuccessful" />
+                                      </Children>
+                                    </ListPanel>
+
+                                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight" IsHidden="@CanObtain">
+                                      <Children>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Report.Button.Text" Text="@NotEnoughLootText"/>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" />
+                                      </Children>
+                                    </ListPanel>
+                                  </Children>
+                                </ButtonWidget>
+
+                                <!-- Current Loot Amount-->
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="0" Brush="MPLobby.Armory.Cosmetic.LootAmount.Text" Text="@CurrentLootText" Brush.FontSize="24" />
+
+                              </Children>
+                            </ListPanel>
+
+                            <Widget Id="@ResultSuccessfulIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="200" Sprite="MPLobby\Generic\succeed_icon" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="0" MarginBottom="0" Color="#F4E1C4FF"/>
+                            <Widget Id="@ResultFailedIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="200" Sprite="MPLobby\Generic\failed_icon" Color="#FF0000FF" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="0" MarginBottom="0"/>
+                            <TextWidget Id="ResultText" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="220" Text="@ObtainResultText" Brush="MPLobby.Cosmetic.Obtain.Result.Text" />
+
+                            <Standard.CircleLoadingWidget Id="LoadingAnimation" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" SuggestedWidth="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="40" Parameter.Period="0.5" />
+
+                          </Children>
+                        </Widget>
+
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </MultiplayerLobbyArmoryCosmeticTierVisualBrushWidget>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+
+                <!--Click to Continue Text-->
+                <NavigationScopeTargeter ScopeID="ClickToContinueButtonScope" ScopeParent="..\ClickToContinueButton" ExtendChildrenCursorAreaLeft="10" ExtendChildrenCursorAreaRight="10" ExtendChildrenCursorAreaTop="10" ExtendChildrenCursorAreaBottom="10" />
+                <TextWidget Id="ClickToContinueButton" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15"  Brush="MPLobby.Profile.Popup.SubTitle.Text" Text="@ClickToCloseText" GamepadNavigationIndex="0" />
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </MultiplayerLobbyArmoryCosmeticObtainPopupWidget>
+
+        <!--Sigil Popup-->
+        <MultiplayerLobbyArmoryCosmeticObtainPopupWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ObtainState="@ObtainState" CancelButtonWidget="CancelButton" ItemPreviewListPanel="SigilPopupArea\SigilPopupContent\Content\SigilPopupContentList\SigilPopupItemPreview" ActionButtonWidget="SigilPopupArea\SigilPopupContent\Content\SigilPopupContentList\SigilPopupItemPreview\SigilPopupActionButton" ResultSuccessfulIconWidget="SigilPopupArea\SigilPopupContent\Content\SigilPopupContentList\SigilPopupResultSuccessfulIcon" ResultFailedIconWidget="SigilPopupArea\SigilPopupContent\Content\SigilPopupContentList\SigilPopupResultFailedIcon" ResultTextWidget="SigilPopupArea\SigilPopupContent\Content\SigilPopupContentList\SigilPopupResultText" LoadingAnimationWidget="SigilPopupArea\SigilPopupContent\Content\SigilPopupContentList\SigilPopupLoadingAnimation" IsVisible="@IsOpenedWithSigilItem" >
+          <Children>
+
+            <ButtonWidget Id="CancelButton" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare" Brush.Color="#000000FF" Brush.AlphaFactor="0.8" Command.Click="ExecuteClosePopup"/>
+
+            <ListPanel Id="SigilPopupArea" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="700" VerticalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom" >
+              <Children>
+
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+
+                <!--Popup Content-->
+                <MultiplayerLobbyArmoryCosmeticTierVisualBrushWidget Id="SigilPopupContent" DataSource="{SigilItem}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Armory.ObtainPopup.Background" VerticalAlignment="Center" Rarity="@Rarity">
+                  <Children>
+
+                    <Widget Id="Content" DataSource="{..}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" >
+                      <Children>
+
+                        <!-- Tier Color For Armory Item -->
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="850" SuggestedHeight="650" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="50">
+                          <Children>
+                            <Lobby.Cosmetic.Tier.Background Parameter.CosmeticDataSource="{SigilItem}" />
+                          </Children>
+                        </Widget>
+
+                        <!-- Particles -->
+                        <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="898" SuggestedHeight="538" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="-70" InitialDirection="Right" IsEaseInOutEnabled="true" VerticalAlignment="Center">
+                          <Children>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\particles1" AlphaFactor="0.2" HorizontalAlignment="Center"  />
+                          </Children>
+                        </ParallaxItemBrushWidget>
+
+                        <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="898" SuggestedHeight="538" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="-70" InitialDirection="Left" IsEaseInOutEnabled="true" VerticalAlignment="Center">
+                          <Children>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\particles2" AlphaFactor="0.4" HorizontalAlignment="Center"  />
+                          </Children>
+                        </ParallaxItemBrushWidget>
+
+                        <Widget Id="SigilPopupContentList" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" >
+                          <Children>
+
+                            <ListPanel Id="SigilPopupItemPreview" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalTopToBottom" MarginTop="10" MarginBottom="0" DoNotAcceptEvents="true">
+                              <Children>
+
+                                <!-- Title -->
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Armory.Cosmetic.Popup.ItemName.Text" Brush.FontSize="36" Text="@ObtainDescriptionText" />
+
+                                <!-- Culture Selection -->
+                                <NavigationScopeTargeter ScopeID="ObtainSigilCultureSelectionScope" ScopeParent="..\CultureSelection" ScopeMovements="Horizontal" />
+                                <NavigatableListPanel Id="CultureSelection" DataSource="{Cultures}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15" IsVisible="@IsOpenedWithSigilItem">
+                                  <ItemTemplate>
+                                    <MultiplayerLobbyClassFilterFactionItemButtonWidget ButtonType="Radio" IsSelected="@IsSelected" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CultureButton.Size" SuggestedHeight="!CultureButton.Size" MarginLeft="!CultureButton.Margin" MarginRight="!CultureButton.Margin" Command.Click="ExecuteSelection" Culture="@CultureCode" Brush="MPLobby.ClassFilter.FactionButton.Empire">
+                                      <Children>
+                                        <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                                      </Children>
+                                    </MultiplayerLobbyClassFilterFactionItemButtonWidget>
+                                  </ItemTemplate>
+                                </NavigatableListPanel>
+
+                                <!-- Item Visual -->
+                                <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="425" SuggestedHeight="425" HorizontalAlignment="Center" MarginTop="0" IsSelected="true">
+                                  <Children>
+                                    <!-- Item Visual -->
+                                    <ItemTableauWidget DataSource="{ItemVisual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"  VerticalAlignment="Center" ItemModifierId="@ItemModifierId" StringId="@StringId" BannerCode="@BannerCode" InitialPanRotation="@InitialPanRotation"/>
+                                  </Children>
+                                </ButtonWidget>
+
+                                <!-- Action Button -->
+                                <NavigationScopeTargeter ScopeID="ObtainSigilItemButtonScope" ScopeParent="..\SigilPopupActionButton" />
+                                <ButtonWidget DoNotPassEventsToChildren="true" Id="SigilPopupActionButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="MPLobby.Cosmetic.Obtain.Button" Command.Click="ExecuteAction" IsEnabled="@CanObtain" GamepadNavigationIndex="0" >
+                                  <Children>
+                                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight" IsVisible="@CanObtain">
+                                      <Children>
+                                        <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Report.Button.Text" Text="@ContinueText"/>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" IsHidden="@IsObtainSuccessful" />
+                                      </Children>
+                                    </ListPanel>
+
+                                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight" IsHidden="@CanObtain">
+                                      <Children>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Report.Button.Text" Text="@NotEnoughLootText"/>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" />
+                                      </Children>
+                                    </ListPanel>
+                                  </Children>
+                                </ButtonWidget>
+
+                                <!-- Current Loot Amount-->
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="0" Brush="MPLobby.Armory.Cosmetic.LootAmount.Text" Text="@CurrentLootText" Brush.FontSize="24" />
+
+                              </Children>
+                            </ListPanel>
+
+                            <Widget Id="@SigilPopupResultSuccessfulIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="200" Sprite="MPLobby\Generic\succeed_icon" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="0" MarginBottom="0" Color="#F4E1C4FF"/>
+                            <Widget Id="@SigilPopupResultFailedIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="200" Sprite="MPLobby\Generic\failed_icon" Color="#FF0000FF" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="0" MarginBottom="0"/>
+                            <TextWidget Id="SigilPopupResultText" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="220" Text="@ObtainResultText" Brush="MPLobby.Cosmetic.Obtain.Result.Text" />
+
+                            <Standard.CircleLoadingWidget Id="SigilPopupLoadingAnimation" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" SuggestedWidth="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="40" Parameter.Period="0.5" />
+
+                          </Children>
+                        </Widget>
+
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </MultiplayerLobbyArmoryCosmeticTierVisualBrushWidget>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+
+                <!--Click to Continue Text-->
+                <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15"  Brush="MPLobby.Profile.Popup.SubTitle.Text" Text="@ClickToCloseText" />
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </MultiplayerLobbyArmoryCosmeticObtainPopupWidget>
+
+        <!-- Taunt Popup -->
+        <MultiplayerLobbyArmoryCosmeticObtainPopupWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ObtainState="@ObtainState" CancelButtonWidget="CancelButton" ItemPreviewListPanel="TauntPopupArea\TauntPopupContent\Content\TauntPopupContentList\TauntPopupItemPreview" ActionButtonWidget="TauntPopupArea\TauntPopupContent\Content\TauntPopupContentList\TauntPopupItemPreview\TauntPopupActionButton" ResultSuccessfulIconWidget="TauntPopupArea\TauntPopupContent\Content\TauntPopupContentList\TauntPopupResultSuccessfulIcon" ResultFailedIconWidget="TauntPopupArea\TauntPopupContent\Content\TauntPopupContentList\TauntPopupResultFailedIcon" ResultTextWidget="TauntPopupArea\TauntPopupContent\Content\TauntPopupContentList\TauntPopupResultText" LoadingAnimationWidget="TauntPopupArea\TauntPopupContent\Content\TauntPopupContentList\TauntPopupLoadingAnimation" IsVisible="@IsOpenedWithTauntItem" >
+          <Children>
+
+            <ButtonWidget Id="CancelButton" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare" Brush.Color="#000000FF" Brush.AlphaFactor="0.8" Command.Click="ExecuteClosePopup"/>
+
+            <ListPanel Id="TauntPopupArea" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="700" VerticalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom" >
+              <Children>
+
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+
+                <!--Popup Content-->
+                <MultiplayerLobbyArmoryCosmeticTierVisualBrushWidget Id="TauntPopupContent" DataSource="{TauntItem}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Armory.ObtainPopup.Background" VerticalAlignment="Center" Rarity="@Rarity">
+                  <Children>
+
+                    <Widget DataSource="{..}" Id="Content" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" >
+                      <Children>
+                        <NavigationScopeTargeter ScopeID="TauntObtainResultScope" ScopeParent="..\ObtainSuccessfulNavTarget" IsEnabled="@IsObtainSuccessful"/>
+                        <Widget Id="ObtainSuccessfulNavTarget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" GamepadNavigationIndex="0" IsVisible="@IsObtainSuccessful" />
+
+                        <!-- Tier Color For Armory Item -->
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="850" SuggestedHeight="650" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="50">
+                          <Children>
+                            <Lobby.Cosmetic.Tier.Background Parameter.CosmeticDataSource="{TauntItem}" />
+                          </Children>
+                        </Widget>
+
+                        <!-- Particles -->
+                        <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="898" SuggestedHeight="538" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="-70" InitialDirection="Right" IsEaseInOutEnabled="true" VerticalAlignment="Center">
+                          <Children>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\particles1" AlphaFactor="0.2" HorizontalAlignment="Center"  />
+                          </Children>
+                        </ParallaxItemBrushWidget>
+
+                        <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="898" SuggestedHeight="538" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="-70" InitialDirection="Left" IsEaseInOutEnabled="true" VerticalAlignment="Center">
+                          <Children>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Effects\particles2" AlphaFactor="0.4" HorizontalAlignment="Center"  />
+                          </Children>
+                        </ParallaxItemBrushWidget>
+
+                        <Widget Id="TauntPopupContentList" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" >
+                          <Children>
+
+                            <!-- Character Visual -->
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1500" SuggestedHeight="650" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="-30" IsHidden="@IsObtainSuccessful">
+                              <Children>
+                                <CharacterTableauWidget DataSource="{CharacterVisual}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" BannerCodeText="@BannerCodeText" BodyProperties="@BodyProperties" CharStringId="@CharStringId" EquipmentCode="@EquipmentCode" IsFemale="@IsFemale" MountCreationKey="@MountCreationKey" IdleAction="@IdleAction" StanceIndex="@StanceIndex" ArmorColor1="@ArmorColor1" Race="@Race" ArmorColor2="@ArmorColor2" IsPlayingCustomAnimations="@IsPlayingCustomAnimations" ShouldLoopCustomAnimation="@ShouldLoopCustomAnimation" CustomAnimationWaitDuration="@CustomAnimationWaitDuration" CustomAnimation="@CustomAnimation" LeftHandWieldedEquipmentIndex="@LeftHandWieldedEquipmentIndex" RightHandWieldedEquipmentIndex="@RightHandWieldedEquipmentIndex" DoNotUseCustomScale="true"/>
+                              </Children>
+                            </Widget>
+                            
+                            <!-- Usage Icons -->
+                            <NavigationScopeTargeter ScopeID="TauntObtainPopupUsageIconsScope" ScopeParent="..\UsageIcons" ScopeMovements="Horizontal" />
+                            <ListPanel Id="UsageIcons" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" MarginTop="40" IsHidden="@IsObtainSuccessful">
+                              <Children>
+                                <NavigatableListPanel DataSource="{TauntItem\TauntUsages}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" >
+                                  <ItemTemplate>
+                                    <DefaultLayerSpriteChangerBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="47" SuggestedHeight="57" Brush="Taunt.Obtain.Equipment.Usage" SpriteBrush="Taunt.Obtain.Equipment.Usage.Icons" SpriteBrushLayerName="@ActionText">
+                                      <Children>
+                                        <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                                      </Children>
+                                    </DefaultLayerSpriteChangerBrushWidget>
+                                  </ItemTemplate>
+                                </NavigatableListPanel>
+
+                                <BrushWidget DataSource="{TauntItem}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="44" SuggestedHeight="30" VerticalAlignment="Center" MarginTop="18" MarginRight="18" Brush="Taunt.Item.RequiresOnFoot.Icon" IsVisible="@RequiresOnFoot" GamepadNavigationIndex="100">
+                                  <Children>
+                                    <HintWidget DataSource="{BlocksMovementOnUsageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true"></HintWidget>
+                                  </Children>
+                                </BrushWidget>
+                              </Children>
+                            </ListPanel>
+
+
+                            <ListPanel Id="TauntPopupItemPreview" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalTopToBottom" MarginTop="10" MarginBottom="0" DoNotAcceptEvents="true" >
+                              <Children>
+
+                                <!-- Title -->
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Armory.Cosmetic.Popup.ItemName.Text" Brush.FontSize="36" Text="@ObtainDescriptionText" />
+
+                                <!-- Offset -->
+                                <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="485" />
+
+                                <!-- Action Button -->
+                                <NavigationScopeTargeter ScopeID="ObtainTauntItemButtonScope" ScopeParent="..\TauntPopupActionButton" />
+                                <ButtonWidget DoNotPassEventsToChildren="true" Id="TauntPopupActionButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="MPLobby.Cosmetic.Obtain.Button" Command.Click="ExecuteAction" IsEnabled="@CanObtain" GamepadNavigationIndex="0" >
+                                  <Children>
+                                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight" IsVisible="@CanObtain">
+                                      <Children>
+                                        <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Report.Button.Text" Text="@ContinueText"/>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" IsHidden="@IsObtainSuccessful" />
+                                      </Children>
+                                    </ListPanel>
+
+                                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight" IsHidden="@CanObtain">
+                                      <Children>
+                                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="Report.Button.Text" Text="@NotEnoughLootText"/>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" VerticalAlignment="Center" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" />
+                                      </Children>
+                                    </ListPanel>
+                                  </Children>
+                                </ButtonWidget>
+
+                                <!-- Current Loot Amount-->
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="0" Brush="MPLobby.Armory.Cosmetic.LootAmount.Text" Text="@CurrentLootText" Brush.FontSize="24" />
+
+                              </Children>
+                            </ListPanel>
+
+                            <Widget Id="TauntPopupResultSuccessfulIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="200" Sprite="MPLobby\Generic\succeed_icon" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="0" MarginBottom="0" Color="#F4E1C4FF"/>
+                            <Widget Id="TauntPopupResultFailedIcon" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="200" Sprite="MPLobby\Generic\failed_icon" Color="#b00808ff" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="0" MarginBottom="0"/>
+                            <TextWidget Id="TauntPopupResultText" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="220" Text="@ObtainResultText" Brush="MPLobby.Cosmetic.Obtain.Result.Text" />
+
+                            <Standard.CircleLoadingWidget Id="TauntPopupLoadingAnimation" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" SuggestedWidth="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="40" Parameter.Period="0.5" />
+
+                          </Children>
+                        </Widget>
+
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </MultiplayerLobbyArmoryCosmeticTierVisualBrushWidget>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+
+                <!--Click to Continue Text-->
+                <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15"  Brush="MPLobby.Profile.Popup.SubTitle.Text" Text="@ClickToCloseText" />
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </MultiplayerLobbyArmoryCosmeticObtainPopupWidget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

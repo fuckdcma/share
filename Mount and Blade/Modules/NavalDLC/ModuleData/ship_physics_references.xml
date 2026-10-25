@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ShipPhysicsReferences>
+	<ShipPhysicsReference
+		id="big_ship_physics"
+		reference_mass="220000"
+		reference_inertia="56448850, 4269093, 55743780">
+		<linear_drag_term
+			right="196077.8769"
+			left="196077.8769"
+			forward="214.8681"
+			backward="726.5955"
+			up="17754.6437"
+			down="177546.434" />
+		<linear_damping_term
+			right="63318.78263"
+			left="63318.78263"
+			forward="572.9818"
+			backward="1937.5879"
+			up="47345.7164"
+			down="473457.1574" />
+		<constant_linear_damping_term
+			right="10000"
+			left="10000"
+			forward="40000"
+			backward="60000"
+			up="10000"
+			down="10000" />
+	</ShipPhysicsReference>
+</ShipPhysicsReferences>

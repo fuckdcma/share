@@ -1,0 +1,1892 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<NPCCharacters>
+<!-- 给子孙找师傅 以下依次排序： 1.教头 2.管家 3.工匠 4.学者 5.猎人 6.诗人 -->
+	<!--兖州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_yanzhou"
+				  name = "{=!}stage_2_page_0_branch_0_yanzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yanzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_yanzhou"
+				  name = "{=!}stage_2_page_0_branch_1_yanzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yanzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_yanzhou"
+				  name = "{=!}stage_2_page_0_branch_2_yanzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yanzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_yanzhou"
+				  name = "{=!}stage_2_page_0_branch_3_yanzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yanzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_yanzhou"
+				  name = "{=!}stage_2_page_0_branch_4_yanzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yanzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_yanzhou"
+				  name = "{=!}stage_2_page_0_branch_5_yanzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yanzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--冀州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_jizhou"
+				  name = "{=!}stage_2_page_0_branch_0_jizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_jizhou"
+				  name = "{=!}stage_2_page_0_branch_1_jizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_jizhou"
+				  name = "{=!}stage_2_page_0_branch_2_jizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_jizhou"
+				  name = "{=!}stage_2_page_0_branch_3_jizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_jizhou"
+				  name = "{=!}stage_2_page_0_branch_4_jizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_jizhou"
+				  name = "{=!}stage_2_page_0_branch_5_jizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--幽州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_youzhou"
+				  name = "{=!}stage_2_page_0_branch_0_youzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.youzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_youzhou"
+				  name = "{=!}stage_2_page_0_branch_1_youzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.youzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_youzhou"
+				  name = "{=!}stage_2_page_0_branch_2_youzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.youzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_youzhou"
+				  name = "{=!}stage_2_page_0_branch_3_youzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.youzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_youzhou"
+				  name = "{=!}stage_2_page_0_branch_4_youzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.youzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_youzhou"
+				  name = "{=!}stage_2_page_0_branch_5_youzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.youzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--青州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_qingzhou"
+				  name = "{=!}stage_2_page_0_branch_0_qingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.qingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_qingzhou"
+				  name = "{=!}stage_2_page_0_branch_1_qingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.qingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_qingzhou"
+				  name = "{=!}stage_2_page_0_branch_2_qingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.qingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_qingzhou"
+				  name = "{=!}stage_2_page_0_branch_3_qingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.qingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_qingzhou"
+				  name = "{=!}stage_2_page_0_branch_4_qingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.qingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_qingzhou"
+				  name = "{=!}stage_2_page_0_branch_5_qingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.qingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--徐州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_xuzhou"
+				  name = "{=!}stage_2_page_0_branch_0_xuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.xuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_xuzhou"
+				  name = "{=!}stage_2_page_0_branch_1_xuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.xuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_xuzhou"
+				  name = "{=!}stage_2_page_0_branch_2_xuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.xuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_xuzhou"
+				  name = "{=!}stage_2_page_0_branch_3_xuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.xuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_xuzhou"
+				  name = "{=!}stage_2_page_0_branch_4_xuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.xuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_xuzhou"
+				  name = "{=!}stage_2_page_0_branch_5_xuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.xuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--雍凉-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_yongliang"
+				  name = "{=!}stage_2_page_0_branch_0_yongliang"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yongliang"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_yongliang"
+				  name = "{=!}stage_2_page_0_branch_1_yongliang"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yongliang"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_yongliang"
+				  name = "{=!}stage_2_page_0_branch_2_yongliang"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yongliang"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_yongliang"
+				  name = "{=!}stage_2_page_0_branch_3_yongliang"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yongliang"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_yongliang"
+				  name = "{=!}stage_2_page_0_branch_4_yongliang"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yongliang"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_yongliang"
+				  name = "{=!}stage_2_page_0_branch_5_yongliang"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yongliang"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--交州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_jiaozhou"
+				  name = "{=!}stage_2_page_0_branch_0_jiaozhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jiaozhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_jiaozhou"
+				  name = "{=!}stage_2_page_0_branch_1_jiaozhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jiaozhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_jiaozhou"
+				  name = "{=!}stage_2_page_0_branch_2_jiaozhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jiaozhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_jiaozhou"
+				  name = "{=!}stage_2_page_0_branch_3_jiaozhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jiaozhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_jiaozhou"
+				  name = "{=!}stage_2_page_0_branch_4_jiaozhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jiaozhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_jiaozhou"
+				  name = "{=!}stage_2_page_0_branch_5_jiaozhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jiaozhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--豫州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_yuzhou"
+				  name = "{=!}stage_2_page_0_branch_0_yuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_yuzhou"
+				  name = "{=!}stage_2_page_0_branch_1_yuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_yuzhou"
+				  name = "{=!}stage_2_page_0_branch_2_yuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_yuzhou"
+				  name = "{=!}stage_2_page_0_branch_3_yuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_yuzhou"
+				  name = "{=!}stage_2_page_0_branch_4_yuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_yuzhou"
+				  name = "{=!}stage_2_page_0_branch_5_yuzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yuzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+
+	<!--益州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_yizhou"
+				  name = "{=!}stage_2_page_0_branch_0_yizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_yizhou"
+				  name = "{=!}stage_2_page_0_branch_1_yizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_yizhou"
+				  name = "{=!}stage_2_page_0_branch_2_yizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_yizhou"
+				  name = "{=!}stage_2_page_0_branch_3_yizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_yizhou"
+				  name = "{=!}stage_2_page_0_branch_4_yizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_yizhou"
+				  name = "{=!}stage_2_page_0_branch_5_yizhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yizhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--荆州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_jingzhou"
+				  name = "{=!}stage_2_page_0_branch_0_jingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentSet civilian="true" id="sg_npc_jingjichanglaoban_equipment_civilian_template_yanzhou" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_jingzhou"
+				  name = "{=!}stage_2_page_0_branch_1_jingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentSet civilian="true" id="sg_npc_jingjichanglaoban_equipment_civilian_template_yanzhou" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_jingzhou"
+				  name = "{=!}stage_2_page_0_branch_2_jingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_ar_c02_s5001_head" />
+        <equipment slot="Body" id="Item.sg_ar_c02_s6001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c02_s8001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s3001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_jingzhou"
+				  name = "{=!}stage_2_page_0_branch_3_jingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_ar_c02_s5001_head" />
+        <equipment slot="Body" id="Item.sg_ar_c02_s6001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c02_s8001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s3001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_jingzhou"
+				  name = "{=!}stage_2_page_0_branch_4_jingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_jingzhou"
+				  name = "{=!}stage_2_page_0_branch_5_jingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.jingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_ar_c02_s5001_head" />
+        <equipment slot="Body" id="Item.sg_ar_c02_s6001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c02_s8001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s3001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--并州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_bingzhou"
+				  name = "{=!}stage_2_page_0_branch_0_bingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.bingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_bingzhou"
+				  name = "{=!}stage_2_page_0_branch_1_bingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.bingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_bingzhou"
+				  name = "{=!}stage_2_page_0_branch_2_bingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.bingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_bingzhou"
+				  name = "{=!}stage_2_page_0_branch_3_bingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.bingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_bingzhou"
+				  name = "{=!}stage_2_page_0_branch_4_bingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.bingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_bingzhou"
+				  name = "{=!}stage_2_page_0_branch_5_bingzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.bingzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--扬州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_yangzhou"
+				  name = "{=!}stage_2_page_0_branch_0_yangzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yangzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_yangzhou"
+				  name = "{=!}stage_2_page_0_branch_1_yangzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yangzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_yangzhou"
+				  name = "{=!}stage_2_page_0_branch_2_yangzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yangzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_yangzhou"
+				  name = "{=!}stage_2_page_0_branch_3_yangzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yangzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_npc_wenguan_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_yangzhou"
+				  name = "{=!}stage_2_page_0_branch_4_yangzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yangzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />	
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_yangzhou"
+				  name = "{=!}stage_2_page_0_branch_5_yangzhou"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.yangzhou"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<!--司州-->
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_0_sili"
+				  name = "{=!}stage_2_page_0_branch_0_sili"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.sili"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+			<equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+			<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+			<equipment slot="Leg" id="Item.sg_npc_bartender_leg" /> 		
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_1_sili"
+				  name = "{=!}stage_2_page_0_branch_1_sili"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.sili"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_npc_cityresident_head" />
+        <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+        <equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_2_sili"
+				  name = "{=!}stage_2_page_0_branch_2_sili"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.sili"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+        <equipment slot="Head" id="Item.sg_S_SOL00001_Tk" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s2001_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_3_sili"
+				  name = "{=!}stage_2_page_0_branch_3_sili"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.sili"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_01" />
+				<equipment slot="Item1" id="Item.sg_shortbow_002" />
+				<equipment slot="Item2" id="Item.sg_arrows_001" />
+        		<equipment slot="Head" id="Item.sg_npc_barber_head" />
+				<equipment slot="Body" id="Item.sg_npc_barber_body" />
+				<equipment slot="Cape" id="Item.sg_ar_c01_g015_shoulder_old" />
+				<equipment slot="Gloves" id="Item.sg_npc_merchant_arm" />
+				<equipment slot="Leg" id="Item.sg_npc_bartender_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_4_sili"
+				  name = "{=!}stage_2_page_0_branch_4_sili"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.sili"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id= "child_education_templates_stage_2_page_0_branch_5_sili"
+				  name = "{=!}stage_2_page_0_branch_5_sili"
+				  age = "45"
+				  default_group = "Infantry"
+				  is_hero = "false"
+				  occupation = "Lord"
+				  culture = "Culture.sili"
+				  skill_template = "SkillSet.infantry_heavyinfantry_level1_template_skills"
+				  is_template="true">
+		<face>
+			<face_key_template value = "BodyProperty.villager_yongliang" />
+		</face>
+		<skills/>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Head" id="Item.sg_ar_c05_g008_head" />
+				<equipment slot="Body" id="Item.sg_ar_c05_g009_body" />
+			
+				<equipment slot="Leg" id="Item.sg_ar_c01_g011_leg" />
+			</EquipmentRoster>
+			<EquipmentRoster
+				civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+</NPCCharacters>

@@ -1,0 +1,79 @@
+<Prefab>
+  <Constants>
+    <Constant Name="CardWidth" Value="190" />
+    <Constant Name="CardHeight" Value="295" />
+  </Constants>
+  <Window>
+
+    <!--说明面板-->
+    <!--Descriptions Right Panel-->
+    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="350" IsVisible="@IsVisible">
+      <Children>
+
+        <ListPanel Id="DescriptionsListPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="10" MarginRight="10"  MarginBottom="250" LayoutImp.LayoutMethod="VerticalBottomToTop">
+          <Children>
+            <!--<Widget Id="CurrentOptionImageWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CardWidth" SuggestedHeight="!CardHeight" MarginTop="20" />-->
+            <Card DataSource="{CardVm}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CardWidth" HorizontalAlignment="Center" SuggestedHeight="!CardHeight" MarginTop="30" IsVisible="true"/>
+
+
+            <RichTextWidget Id="CardNameWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush.TextHorizontalAlignment="Center" Brush="SPOptions.Description.Title.Text" Text="@CardName" MarginTop="20"/>
+            <!--Level Progress Bar-->
+            <ListPanel  WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  MarginTop="10" HorizontalAlignment="Center" >
+              <Children>
+                <TextWidget  DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginRight="10" MarginTop="25" Brush="Clan.Renown.Text" IntText="@CurrentTier" ClipContents="false" />
+
+                <!--Renown Progress Bar-->
+                <FillBarWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="166" SuggestedHeight="17" HorizontalAlignment="Center" VerticalAlignment="Center" ContainerWidget="ContainerWidget" 
+                               FillWidget="FillBarParent\FillWidget" InitialAmount="@CurrentExp" MaxAmount="@NextTierExp">
+                  <Children>
+
+                    <Widget Id="FillBarParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="14" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="13" MarginRight="14">
+                      <Children>
+
+                        <!--Fill-->
+                        <Widget Id="FillWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="14" Sprite="Clan\progress_bar">
+                          <Children>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" Sprite="expFillBar" />
+                          </Children>
+                        </Widget>
+
+                      </Children>
+                    </Widget>
+
+                    <!--Container-->
+                    <Widget Id="ContainerWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="expFillBarFrame" />
+
+                  </Children>
+                </FillBarWidget>
+
+                <AutoHideZeroTextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="10" MarginTop="5" Brush="Clan.Renown.Text" IntText="@NextTier" ClipContents="false" />
+              </Children>
+            </ListPanel>
+
+            <ListPanel DataSource="{CardSkillDecList}"  WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="25" 
+                     LayoutImp.LayoutMethod="VerticalBottomToTop">
+              <ItemTemplate>
+
+                <RichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren"
+                                MarginTop="5" Brush="SPOptions.Description.Text" Text="@CardDec" >
+                  <Children>
+                    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="45"
+                                HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="Popup.Cancel.Button" MarginBottom="-30"
+                                Command.Click="OnClickSkill" IsVisible="@IsUse">
+                    <Children>
+                      <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Brush.FontSize="15" Text="使用" />
+                    </Children>
+                  </ButtonWidget>
+
+                </Children>
+              </RichTextWidget>
+
+            </ItemTemplate>	
+            </ListPanel>
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

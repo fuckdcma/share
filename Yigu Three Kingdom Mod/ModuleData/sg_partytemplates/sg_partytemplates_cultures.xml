@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<partyTemplates>
+<!-- 雍凉 -->
+  <MBPartyTemplate id="villager_yongliang_template" >
+    <stacks>
+      <PartyTemplateStack min_value="45" max_value="60" troop="NPCCharacter.villager_yongliang" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_yongliang_template" >
+    <stacks>
+      <PartyTemplateStack min_value="30" max_value="70" troop="NPCCharacter.yongliang_sol_1001" />
+      <PartyTemplateStack min_value="30" max_value="40" troop="NPCCharacter.yongliang_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_yongliang" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yongliang" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_yongliang" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_yongliang" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_yongliang" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yongliang" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_yongliang" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_yongliang" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_yongliang" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_yongliang_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yongliang_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yongliang_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_yongliang_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yongliang_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_yongliang" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yongliang_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.yongliang_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+<!-- 兖州 -->
+  <MBPartyTemplate id="villager_yanzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="45" max_value="70" troop="NPCCharacter.villager_yanzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_yanzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="30" max_value="90" troop="NPCCharacter.yanzhou_sol_1001" />
+      <PartyTemplateStack min_value="30" max_value="80" troop="NPCCharacter.yanzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_yanzhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yanzhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_yanzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_yanzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_yanzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yanzhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_yanzhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_yanzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_yanzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_yanzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="5" max_value="7" troop="NPCCharacter.yanzhou_sol_1001" />
+      <PartyTemplateStack min_value="4" max_value="6" troop="NPCCharacter.yanzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_yanzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yanzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_yanzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="5" max_value="7" troop="NPCCharacter.yanzhou_sol_1001" />
+      <PartyTemplateStack min_value="4" max_value="6" troop="NPCCharacter.yanzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+<!-- 益州 -->
+  <MBPartyTemplate id="villager_yizhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="45" max_value="70" troop="NPCCharacter.villager_yizhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_yizhou_template" >
+    <stacks>
+      <!-- 步兵 -->
+      <PartyTemplateStack min_value="50" max_value="120" troop="NPCCharacter.yizhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="100" troop="NPCCharacter.yizhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_yizhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yizhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_yizhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_yizhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_yizhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yizhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_yizhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_yizhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_yizhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_yizhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="3" max_value="5" troop="NPCCharacter.yizhou_sol_1001" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.yizhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_yizhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yizhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_yizhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yizhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.yizhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+<!-- 扬州 -->
+  <MBPartyTemplate id="villager_yangzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="45" max_value="80" troop="NPCCharacter.villager_yangzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_yangzhou_template" >
+    <stacks>
+      <!-- 步兵 -->
+      <PartyTemplateStack min_value="50" max_value="90" troop="NPCCharacter.yangzhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="80" troop="NPCCharacter.yangzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_yangzhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yangzhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_yangzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_yangzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_yangzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yangzhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_yangzhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_yangzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_yangzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_yangzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yangzhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yangzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_yangzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yangzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_yangzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yangzhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.yangzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+<!-- 冀州 -->
+  <MBPartyTemplate id="villager_jizhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="45" max_value="60" troop="NPCCharacter.villager_jizhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_jizhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="50" max_value="110" troop="NPCCharacter.jizhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="100" troop="NPCCharacter.jizhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_jizhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_jizhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_jizhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_jizhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_jizhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_jizhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_jizhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_jizhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_jizhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_jizhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jizhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jizhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_jizhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jizhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_jizhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jizhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.jizhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+<!-- 幽州 -->
+  <MBPartyTemplate id="villager_youzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="45" max_value="50" troop="NPCCharacter.villager_youzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_youzhou_template" >
+    <stacks>
+      <!-- 步兵 -->
+      <PartyTemplateStack min_value="50" max_value="80" troop="NPCCharacter.youzhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="80" troop="NPCCharacter.youzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_youzhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_youzhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_youzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_youzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_youzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_youzhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_youzhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_youzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_youzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_youzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.youzhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.youzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_youzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.youzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_youzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.youzhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.youzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+<!-- 豫州 -->
+  <MBPartyTemplate id="villager_yuzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.villager_yuzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_yuzhou_template" >
+    <stacks>
+       <!-- 步兵 -->
+      <PartyTemplateStack min_value="50" max_value="130" troop="NPCCharacter.yuzhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="110" troop="NPCCharacter.yuzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_yuzhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yuzhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_yuzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_yuzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_yuzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_yuzhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_yuzhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_yuzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_yuzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_yuzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yuzhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yuzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_yuzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yuzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_yuzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yuzhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.yuzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+<!-- 荆州 -->
+  <MBPartyTemplate id="villager_jingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.villager_jingzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_jingzhou_template" >
+    <stacks>
+       <!-- 步兵 -->
+      <PartyTemplateStack min_value="50" max_value="100" troop="NPCCharacter.jingzhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="90" troop="NPCCharacter.jingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_jingzhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_jingzhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_jingzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_jingzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_jingzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_jingzhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_jingzhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_jingzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_jingzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_jingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jingzhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_jingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_jingzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jingzhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.jingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+<!-- 交州 -->
+  <MBPartyTemplate id="villager_jiaozhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.villager_jiaozhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_jiaozhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="40" max_value="60" troop="NPCCharacter.jiaozhou_sol_1001" />
+      <PartyTemplateStack min_value="40" max_value="60" troop="NPCCharacter.jiaozhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_jiaozhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_jiaozhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_jiaozhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_jiaozhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_jiaozhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_jiaozhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_jiaozhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_jiaozhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_jiaozhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_jiaozhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.jiaozhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jiaozhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_jiaozhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jiaozhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_jiaozhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.jiaozhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.jiaozhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+<!-- 司州 -->
+  <MBPartyTemplate id="villager_sili_template" >
+    <stacks>
+      <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.villager_sili" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_sili_template" >
+    <stacks>
+      <PartyTemplateStack min_value="70" max_value="122" troop="NPCCharacter.sili_sol_1001" />
+      <PartyTemplateStack min_value="60" max_value="110" troop="NPCCharacter.sili_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_sili" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_sili" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_sili" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_sili" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_sili" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_sili" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_sili" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_sili" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_sili" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_sili_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.sili_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sili_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_sili_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sili_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_sili" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.sili_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.sili_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+<!-- 青州 -->
+  <MBPartyTemplate id="villager_qingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.villager_qingzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_qingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="50" max_value="100" troop="NPCCharacter.qingzhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="80" troop="NPCCharacter.qingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_qingzhou" >
+    <stacks>
+     <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_qingzhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_qingzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_qingzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_qingzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_qingzhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_qingzhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_qingzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_qingzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_qingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.qingzhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.qingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_qingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.qingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_qingzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.qingzhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.qingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+<!-- 徐州 -->
+  <MBPartyTemplate id="villager_xuzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.villager_xuzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_xuzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="50" max_value="100" troop="NPCCharacter.xuzhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="80" troop="NPCCharacter.xuzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_xuzhou" >
+    <stacks>
+      <PartyTemplateStack  min_value="8" max_value="8" troop="NPCCharacter.armed_trader_xuzhou" />
+      <PartyTemplateStack min_value="4" max_value="4" troop="NPCCharacter.caravan_guard_xuzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.veteran_caravan_guard_xuzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_xuzhou" >
+    <stacks>
+     <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_xuzhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_xuzhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_xuzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_xuzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_xuzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.xuzhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.xuzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_xuzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.xuzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_xuzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.xuzhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.xuzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+<!-- 并州 -->
+  <MBPartyTemplate id="villager_bingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="15" max_value="30" troop="NPCCharacter.villager_bingzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="kingdom_hero_party_bingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="50" max_value="80" troop="NPCCharacter.bingzhou_sol_1001" />
+      <PartyTemplateStack min_value="50" max_value="80" troop="NPCCharacter.bingzhou_sol_1001" />
+
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="caravan_template_bingzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="3" max_value="5" troop="NPCCharacter.bingzhou_sol_1001" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.bingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="elite_caravan_template_bingzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.armed_trader_bingzhou" />
+      <PartyTemplateStack min_value="7" max_value="7" troop="NPCCharacter.caravan_guard_bingzhou" />
+      <PartyTemplateStack min_value="8" max_value="8" troop="NPCCharacter.veteran_caravan_guard_bingzhou" />
+      <PartyTemplateStack min_value="2" max_value="2" troop="NPCCharacter.caravan_master_bingzhou" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="militia_bingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="2" troop="NPCCharacter.bingzhou_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.bingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="rebels_bingzhou_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.bingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+  <MBPartyTemplate id="vassal_reward_troops_bingzhou" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.bingzhou_sol_1001" />
+      <PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.bingzhou_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+</partyTemplates>

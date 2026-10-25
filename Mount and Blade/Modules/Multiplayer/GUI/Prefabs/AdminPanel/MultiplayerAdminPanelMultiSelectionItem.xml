@@ -1,0 +1,22 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Center" HorizontalAlignment="Center">
+      <Children>
+
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight" IsDisabled="@IsDisabled">
+          <Children>
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="200" Brush="MPAdminPanel.Option.Title.Text" Text="@OptionTitle">
+              <Children>
+                <HintWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{DescriptionHint}" IsDisabled="true"/>
+              </Children>
+            </TextWidget>
+            <Standard.DropdownWithHorizontalControl Parameter.IsCustomWidth="true" Parameter.CustomWidth="320" MarginLeft="5" VerticalAlignment="Center" HorizontalAlignment="Center" Parameter.IsEnabled="@IsEnabled" Parameter.IsFlatDesign="true" Parameter.SelectorDataSource="{MultiSelectionOptions}" />
+          </Children>
+        </ListPanel>
+
+        <HintWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{DisabledHint}" IsDisabled="true"/>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

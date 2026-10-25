@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<CraftedItem
+		id="lz_guanyu_01_xw"
+		name="{=*}【神兵I】屯骑校尉雕纹偃月刀"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_guanyu_blade_xw"
+				Type="Blade"
+				scale_factor="170" />
+			<Piece
+				id="sg_t5_spear_guard_019"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_guanyu_handle_xw"
+				Type="Handle"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_lvbu_01_xw"
+		name="{=*}【神兵I】中垒校尉方天戟"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_lvbu_blade_xw"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="sg_t5_spear_guard_019"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_lvbu_handle_xw"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_lvwen_01_xw"
+		name="{=*}【神兵I】中垒校尉方天短戟"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_lvbu_blade_xw"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_019"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_lvbu_handle_xw"
+				Type="Handle"
+				scale_factor="90" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_huangzhong_01_xw"
+		name="{=*}【神兵I】步兵校尉长柄偃月刀"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_huangzhong_blade_xw"
+				Type="Blade"
+				scale_factor="150" />
+			<Piece
+				id="sg_t5_spear_guard_022"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_huangzhong_handle_xw"
+				Type="Handle"
+				scale_factor="110" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<Item
+		id="lz_bow_jiang_xw"
+		name="{=*}【神兵I】射声校尉八石铁胎弓"
+		body_name="bo_sg_longbow_003"
+		mesh="sg_longbow_003"
+		weight="0.45"
+		difficulty="70"
+		appearance="0.1"
+		value="13500"
+		Type="Bow"
+		item_holsters="bow_hip:bow_hip_2:bow_back:bow_back_2">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Bow"
+				ammo_class="Arrow"
+				ammo_limit="1"
+				thrust_speed="60"
+				speed_rating="65"
+				missile_speed="104"
+				weapon_length="113"
+				accuracy="110"
+				thrust_damage="98"
+				thrust_damage_type="Pierce"
+				item_usage="bow"
+				physics_material="wood_weapon"
+				center_of_mass="0.1,0,-0.15"
+				modifier_group="bow">
+				<WeaponFlags
+					RangedWeapon="true"
+					HasString="true"
+					StringHeldByHand="true"
+					NotUsableWithOneHand="true"
+					TwoHandIdleOnMount="true"
+					AutoReload="true"
+					UnloadWhenSheathed="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+	<Item
+		id="lz_arrow_jiang_xw"
+		name="{=*}【神兵I】射声校尉令箭"
+		body_name="bo_capsule_arrow"
+		holster_body_name="bo_axe_short"
+		mesh="arrow_bl_a"
+		holster_mesh="arrow_bl_a_quiver"
+		holster_mesh_with_weapon="arrow_bl_a_quiver"
+		subtype="arrows"
+		flying_mesh="arrow_bl_flying"
+		weight="0.2"
+		is_merchandise="true"
+		difficulty="90"
+		appearance="0.1"
+		value="12000"
+		Type="Arrows"
+		item_holsters="quiver_back_top:quiver_back_top_2"
+		holster_position_shift="0,0,0.15">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Arrow"
+				stack_amount="5"
+				thrust_speed="0"
+				speed_rating="0"
+				physics_material="missile"
+				missile_speed="10"
+				weapon_length="97"
+				thrust_damage="50"
+				thrust_damage_type="Pierce"
+				item_usage="arrow_top"
+				passby_sound_code="event:/mission/combat/missile/passby"
+				rotation="0, -80, 25"
+				sticking_position="0,-0.97,0"
+				sticking_rotation="90,0,0"
+				center_of_mass="0,0.0,-0.13"
+				modifier_group="arrow">
+				<WeaponFlags
+					Consumable="true"
+					AmmoSticksWhenShot="true"
+					CanKnockDown="true"
+					CanPenetrateShield="true"
+					MultiplePenetration="true"
+					AmmoBreaksOnBounceBack="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<CraftedItem
+		id="lz_zhaoyun_01_xw"
+		name="{=*}【神兵I】屯骑校尉精钢长枪"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_zhaoyun_blade_xw"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="120" />
+			<Piece
+				id="lz_zhaoyun_handle_xw"
+				Type="Handle"
+				scale_factor="190" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_machao_01_xw"
+		name="{=*}【神兵I】虎贲校尉精钢长枪"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_machao_blade_xw"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_013"
+				Type="Guard"
+				scale_factor="95" />
+			<Piece
+				id="lz_machao_handle_xw"
+				Type="Handle"
+				scale_factor="180" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_zhangfei_01_xw"
+		name="{=*}【神兵I】越骑校尉长刃矛"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_zhangfei_blade_xw"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="120" />
+			<Piece
+				id="lz_zhangfei_handle_xw"
+				Type="Handle"
+				scale_factor="150" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_gongsunzan_01_xw"
+		name="{=*}【神兵I】长水校尉突将铁矛"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_gongsunzan_blade_xw"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="120" />
+			<Piece
+				id="lz_gongsunzan_handle_xw"
+				Type="Handle"
+				scale_factor="170" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_xuhuang_01_xw"
+		name="{=*}【神兵I】胡骑校尉长柄斧"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_xuhuang_blade_xw"
+				Type="Blade"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_spear_guard_022"
+				Type="Guard"
+				scale_factor="150" />
+			<Piece
+				id="lz_xuhuang_handle_xw"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_sunce_01_xw"
+		name="{=*}【神兵I】上军校尉长枪"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_sunce_blade_xw"
+				Type="Blade"
+				scale_factor="140" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_sunce_handle_xw"
+				Type="Handle"
+				scale_factor="130" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_chengpu_01_xw"
+		name="{=*}【神兵I】中军校尉铁蛇矛"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_chengpu_blade_xw"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_chengpu_handle_xw"
+				Type="Handle"
+				scale_factor="130" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_dadao_01_xw"
+		name="{=*}【神兵I】下军校尉大刀"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_dadao01_blade_xw"
+				Type="Blade"
+				scale_factor="150" />
+			<Piece
+				id="sg_t5_spear_guard_022"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_dadao01_handle_xw"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_changqiang_01_xw"
+		name="{=*}【神兵I】典军校尉长枪"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_changqiang01_blade_xw"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_changqiang01_handle_xw"
+				Type="Handle"
+				scale_factor="130" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_sanlianji_01_xw"
+		name="{=*}【神兵I】西园左校尉三联戟"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_sanlianji01_blade_xw"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_sanlianji01_handle_xw"
+				Type="Handle"
+				scale_factor="140" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_changji_01_xw"
+		name="{=*}【神兵I】西园右校尉长戟"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_changji01_blade_xw"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_changji01_handle_xw"
+				Type="Handle"
+				scale_factor="130" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_danbianhuaji_01_xw"
+		name="{=*}【神兵I】西园左校尉单边画戟"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_danbianhuaji01_blade_xw"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_danbianhuaji01_handle_xw"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_shuangbianhuaji_01_xw"
+		name="{=*}【神兵I】西园右校尉方天戟"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="13500"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_shuangbianhuaji01_blade_xw"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_shuangbianhuaji01_blade_xw"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<Item
+		id="lz_horse_zhaoyun_xw"
+		name="【神兵I】乌孙白骏马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="120"
+		appearance="1"
+		value="5000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="66"
+				speed="65"
+				charge_damage="21"
+				body_length="112"
+				is_mountable="true"
+				extra_health="200"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_youzhou_xw"
+		name="【神兵I】西园禁军马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="120"
+		appearance="1"
+		value="5000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="63"
+				speed="63"
+				charge_damage="19"
+				body_length="110"
+				is_mountable="true"
+				extra_health="200"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_dilu_xw"
+		name="【神兵I】屯骑营马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="120"
+		appearance="1"
+		value="5000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="62"
+				speed="69"
+				charge_damage="23"
+				body_length="110"
+				is_mountable="true"
+				extra_health="200"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_dilu_2_xw"
+		name="【神兵I】虎贲营马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="120"
+		appearance="1"
+		value="5000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="68"
+				speed="63"
+				charge_damage="23"
+				body_length="110"
+				is_mountable="true"
+				extra_health="200"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_yizhou_xw"
+		name="【神兵I】南军掖门官马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="120"
+		appearance="1"
+		value="5000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="69"
+				speed="64"
+				charge_damage="16"
+				body_length="110"
+				is_mountable="true"
+				extra_health="190"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_lvbu_xw"
+		name="【神兵I】大宛马"
+		mesh="horse_brown"
+		item_category="noble_horse"
+		culture="Culture.yongliang"
+		is_merchandise="true"
+		subtype="horse"
+		weight="570"
+		difficulty="120"
+		appearance="1"
+		value="5000"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="70"
+				speed="68"
+				charge_damage="26"
+				body_length="119"
+				is_mountable="true"
+				extra_health="200"
+				modifier_group="horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_brown_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_jingzhou_01_xw"
+		name="【神兵I】宣曲营马"
+		mesh="horse_brown"
+		is_merchandise="true"
+		item_category="noble_horse"
+		subtype="horse"
+		culture="Culture.yongliang"
+		weight="550"
+		value="5000"
+		difficulty="120"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="60"
+				speed="63"
+				charge_damage="21"
+				body_length="106"
+				is_mountable="true"
+				extra_health="200"
+				modifier_group="horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="steppe_horse">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_zhongyuan_01_xw"
+		name="【神兵I】北军中垒营马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		is_merchandise="true"
+		culture="Culture.yanzhou"
+		weight="520"
+		difficulty="120"
+		appearance="1"
+		value="5000"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="58"
+				speed="70"
+				charge_damage="15"
+				body_length="116"
+				is_mountable="true"
+				extra_health="200"
+				skeleton_scale="empire_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_brown_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_jizhou_01_xw"
+		name="【神兵I】北军屯骑营马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		is_merchandise="true"
+		culture="Culture.yanzhou"
+		weight="520"
+		difficulty="120"
+		appearance="1"
+		value="5000"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="55"
+				speed="65"
+				charge_damage="25"
+				body_length="116"
+				is_mountable="true"
+				extra_health="200"
+				skeleton_scale="empire_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_brown_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_southwest_01_xw"
+		name="【神兵I】西南黄骠马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		value="5000"
+		difficulty="120"
+		appearance="1"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="70"
+				speed="68"
+				charge_damage="20"
+				body_length="120"
+				is_mountable="true"
+				extra_health="200"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_yongliang_01_xw"
+		name="【神兵I】北军上林苑御马"
+		mesh="horse_brown"
+		is_merchandise="true"
+		item_category="noble_horse"
+		subtype="horse"
+		culture="Culture.yongliang"
+		weight="550"
+		value="5000"
+		difficulty="120"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="58"
+				speed="72"
+				charge_damage="26"
+				body_length="116"
+				is_mountable="true"
+				extra_health="200"
+				modifier_group="horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="steppe_horse">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+    <Item id="sg_ar_c08_s7002_head_xw"
+        name="{=*}【武库】荆州校尉盔"
+        subtype="head_armor"
+        mesh="ar_c08_s7002_head"
+        culture="Culture.jingzhou"
+        weight="3.6"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="58"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s7001_head_xw"
+        name="{=*}【武库】荆州校尉盔"
+        subtype="head_armor"
+        mesh="ar_c08_s7001_head"
+        culture="Culture.jingzhou"
+        weight="3.6"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="57"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s7001_body_xw" 
+        name="{=*}【武库】荆州校尉甲" 
+        mesh="ar_c08_s7001_body" 
+        culture="Culture.jingzhou" 
+        weight="12.9" 
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="55" 
+             leg_armor="38" 
+             arm_armor="37" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_ar_c03_s7002_head_xw"
+        name="{=*}【武库】益州校尉盔"
+        subtype="head_armor"
+        mesh="ar_c03_s7002_head"
+        culture="Culture.yizhou"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="58"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s6002_body_xw" 
+        name="{=*}【武库】益州校尉甲" 
+        mesh="ar_c03_s6002_body" 
+        culture="Culture.yizhou" 
+        weight="13.8" 
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="68"
+				     leg_armor="47"
+				     arm_armor="45"
+				     covers_body="false"
+                     modifier_group="chain" 
+                     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s7002_head_xw"
+        name="{=*}【武库】扬州校尉盔"
+        subtype="head_armor"
+        mesh="ar_c04_s7002_head"
+        culture="Culture.yangzhou"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="56"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+    <Item id="sg_ar_c04_s7002_body_xw" 
+        name="{=*}【武库】扬州校尉甲" 
+        mesh="ar_c04_s7002_body" 
+        culture="Culture.yangzhou" 
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="55" 
+             leg_armor="36" 
+             arm_armor="34" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s7003_head_xw"
+        name="{=*}【武库】雍凉校尉盔"
+        subtype="head_armor"
+        mesh="ar_c01_s7003_head"
+        culture="Culture.yongliang"
+        weight="3.2"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="58"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+    <Item id="sg_ar_c01_s7003_body_xw" 
+        name="{=*}【武库】雍凉校尉甲" 
+        mesh="ar_c01_s7003_body" 
+        culture="Culture.yongliang" 
+        weight="22.4" 
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="53"
+				     leg_armor="37"
+				     arm_armor="35"
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s7001_head_xw"
+        name="{=*}【武库】兖州校尉盔"
+        subtype="head_armor"
+        mesh="ar_c02_s7001_head"
+        culture="Culture.yanzhou"
+        weight="3.3"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="59"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c02_s6002_body_xw" 
+        name="{=*}【武库】兖州校尉甲" 
+        mesh="ar_c02_s6002_body" 
+        culture="Culture.yanzhou" 
+        weight="18.8" 
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="57" 
+             leg_armor="35" 
+             arm_armor="37" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_s7001_head_xw"
+        name="{=*}【武库】幽州校尉盔"
+        subtype="head_armor"
+        mesh="ar_c06_s7001_head"
+        culture="Culture.youzhou"
+        weight="3.1"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="58"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+    <Item id="sg_ar_c06_s7001_body_xw" 
+        name="{=*}【武库】幽州校尉甲" 
+        mesh="ar_c06_s7001_body" 
+        culture="Culture.youzhou" 
+        weight="16.4" 
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="52"
+				     leg_armor="47"
+				     arm_armor="38"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s7001_head_xw"
+        name="{=*}【武库】冀州校尉盔"
+        subtype="head_armor"
+        mesh="ar_c05_s7001_head"
+        culture="Culture.jizhou"
+        weight="4.3"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="58"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s7001_body_xw" 
+        name="{=*}【武库】冀州校尉铠" 
+        mesh="ar_c05_s7001_body" 
+        culture="Culture.jizhou" 
+        weight="14.2" 
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="61"
+				     leg_armor="38"
+				     arm_armor="47"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s7001_head_xw"
+        name="{=*}【武库】豫州校尉盔"
+        subtype="head_armor"
+        mesh="ar_c07_s7001_head"
+        culture="Culture.yuzhou"
+        weight="3.2"
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="61"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+    <Item id="sg_ar_c07_s7001_body_xw" 
+        name="{=*}【武库】豫州校尉铠" 
+        mesh="ar_c07_s7001_body" 
+        culture="Culture.youzhou" 
+        weight="20.3" 
+        difficulty="120" 
+		value="13500"
+		is_merchandise="true"
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="57"
+				     leg_armor="38"
+				     arm_armor="31"
+                     head_armor="2"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+
+
+</Items>

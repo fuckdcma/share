@@ -1,0 +1,2220 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CraftingTemplates>
+  <CraftingTemplate id="SG_Mace"
+                    item_type="OneHandedWeapon"
+                    modifier_group="mace"
+                    item_holsters="mace_right_hip:axe_right_hip_2:axe_right_hip:axe_back"
+                    default_item_holster_position_offset="0,0,-0.40"
+                    use_weapon_as_holster_mesh="true">
+    <PieceDatas>
+      <PieceData piece_type="Handle"
+                 build_order="0" />
+      <PieceData piece_type="Blade"
+                 build_order="1" />
+      <PieceData piece_type="Pommel"
+                 build_order="-1" />
+    </PieceDatas>
+    <WeaponDescriptions>
+      <WeaponDescription id="SG_Mace" />
+    </WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight"
+                max_value="7.0" />
+      <StatData stat_type="WeaponReach"
+                max_value="300" />
+      <StatData stat_type="ThrustSpeed"
+                max_value="200" />
+      <StatData stat_type="SwingSpeed"
+                max_value="200" />
+      <StatData stat_type="ThrustDamage"
+                max_value="500" />
+      <StatData stat_type="SwingDamage"
+                max_value="500" />
+      <StatData stat_type="Handling"
+                max_value="200" />
+      <!--<StatData stat_type="FollowUp" max_value="200" />-->
+    </StatsData>
+    <UsablePieces>
+      <UsablePiece piece_id="default_polearm_pommel"/>
+
+      <UsablePiece piece_id="sg_mace_head_001_both"/>
+      <UsablePiece piece_id="sg_mace_head_002_both"/>
+      <UsablePiece piece_id="sg_mace_head_003_both"/>
+      <UsablePiece piece_id="sg_mace_head_005_both"/>
+      <UsablePiece piece_id="sg_mace_head_006_both"/>
+      <UsablePiece piece_id="sg_mace_pommel_001_both"/>
+      <UsablePiece piece_id="sg_mace_pommel_005_both"/>
+
+      <UsablePiece piece_id="sg_mace_head_004_1h"/>
+      <UsablePiece piece_id="sg_mace_handle_001_1h"/>
+      <UsablePiece piece_id="sg_mace_handle_002_1h"/>
+      <UsablePiece piece_id="sg_mace_handle_004_1h"/>
+
+      <UsablePiece piece_id="sg_mace_handle_001_a"/>
+      <UsablePiece piece_id="sg_mace_handle_001_b"/>
+      <UsablePiece piece_id="sg_mace_handle_001_c"/>
+      <UsablePiece piece_id="sg_mace_handle_002_a"/>
+      <UsablePiece piece_id="sg_mace_handle_002_b"/>
+      <UsablePiece piece_id="sg_mace_handle_002_c"/>
+      <UsablePiece piece_id="sg_mace_handle_003_a"/>
+      <UsablePiece piece_id="sg_mace_handle_003_b"/>
+      <UsablePiece piece_id="sg_mace_handle_003_c"/>
+      <UsablePiece piece_id="sg_mace_handle_004_a"/>
+      <UsablePiece piece_id="sg_mace_handle_004_b"/>
+      <UsablePiece piece_id="sg_mace_handle_004_c"/>
+      <UsablePiece piece_id="sg_mace_handle_005_a"/>
+      <UsablePiece piece_id="sg_mace_handle_005_b"/>
+      <UsablePiece piece_id="sg_mace_handle_005_c"/>
+
+      <UsablePiece piece_id="sg_mace_whole_002_head"/>
+      <UsablePiece piece_id="sg_mace_whole_002_handle"/>
+
+
+
+
+
+      <UsablePiece piece_id="sg_t1_mace_head_001" />
+      <UsablePiece piece_id="sg_t1_mace_head_002" />
+      <UsablePiece piece_id="sg_t1_mace_head_003" />
+      <UsablePiece piece_id="sg_t2_mace_head_001" />
+      <UsablePiece piece_id="sg_t2_mace_head_002" />
+      <UsablePiece piece_id="sg_t2_mace_head_003" />
+      <UsablePiece piece_id="sg_t3_mace_head_001" />
+      <UsablePiece piece_id="sg_t3_mace_head_002" />
+      <UsablePiece piece_id="sg_t3_mace_head_003" />
+      <UsablePiece piece_id="sg_t3_mace_head_004" />
+      <UsablePiece piece_id="sg_t4_mace_head_001" />
+      <UsablePiece piece_id="sg_t4_mace_head_002" />
+      <UsablePiece piece_id="sg_t4_mace_head_003" />
+      <UsablePiece piece_id="sg_t4_mace_head_004" />
+      <UsablePiece piece_id="sg_t4_mace_head_005" />
+      <UsablePiece piece_id="sg_t5_mace_head_001" />
+      <UsablePiece piece_id="sg_t5_mace_head_002" />
+      <UsablePiece piece_id="sg_t5_mace_head_003" />
+      <UsablePiece piece_id="sg_t5_mace_head_004" />
+      <UsablePiece piece_id="sg_t1_mace_handle_001_a" />
+      <UsablePiece piece_id="sg_t1_mace_handle_001_b" />
+      <UsablePiece piece_id="sg_t1_mace_handle_002_a" />
+      <UsablePiece piece_id="sg_t1_mace_handle_002_b" />
+      <UsablePiece piece_id="sg_t1_mace_handle_003_a" />
+      <UsablePiece piece_id="sg_t1_mace_handle_003_b" />
+      <UsablePiece piece_id="sg_t2_mace_handle_001_a" />
+      <UsablePiece piece_id="sg_t2_mace_handle_001_b" />
+      <UsablePiece piece_id="sg_t2_mace_handle_002_a" />
+      <UsablePiece piece_id="sg_t2_mace_handle_002_b" />
+      <UsablePiece piece_id="sg_t2_mace_handle_003_a" />
+      <UsablePiece piece_id="sg_t2_mace_handle_003_b" />
+      <UsablePiece piece_id="sg_t2_mace_handle_004_a" />
+      <UsablePiece piece_id="sg_t2_mace_handle_004_b" />
+      <UsablePiece piece_id="sg_t2_mace_handle_005_a" />
+      <UsablePiece piece_id="sg_t2_mace_handle_005_b" />
+      <UsablePiece piece_id="sg_t3_mace_handle_001_a" />
+      <UsablePiece piece_id="sg_t3_mace_handle_001_b" />
+      <UsablePiece piece_id="sg_t3_mace_handle_002_a" />
+      <UsablePiece piece_id="sg_t3_mace_handle_002_b" />
+      <UsablePiece piece_id="sg_t3_mace_handle_003_a" />
+      <UsablePiece piece_id="sg_t3_mace_handle_003_b" />
+      <UsablePiece piece_id="sg_t3_mace_handle_004_a" />
+      <UsablePiece piece_id="sg_t3_mace_handle_004_b" />
+      <UsablePiece piece_id="sg_t4_mace_handle_001_a" />
+      <UsablePiece piece_id="sg_t4_mace_handle_001_b" />
+      <UsablePiece piece_id="sg_t4_mace_handle_002_a" />
+      <UsablePiece piece_id="sg_t4_mace_handle_002_b" />
+      <UsablePiece piece_id="sg_t4_mace_handle_003_a" />
+      <UsablePiece piece_id="sg_t4_mace_handle_003_b" />
+      <UsablePiece piece_id="sg_t5_mace_handle_003_a" />
+      <UsablePiece piece_id="sg_t5_mace_handle_003_b" />
+      <UsablePiece piece_id="sg_t5_mace_handle_004_a" />
+      <UsablePiece piece_id="sg_t5_mace_handle_004_b" />
+      <UsablePiece piece_id="sg_t1_pommel_a_001" />
+      <UsablePiece piece_id="sg_t1_pommel_a_002" />
+      <UsablePiece piece_id="sg_t1_pommel_a_003" />
+      <UsablePiece piece_id="sg_t1_pommel_a_004" />
+      <UsablePiece piece_id="sg_t1_pommel_a_005" />
+      <UsablePiece piece_id="sg_t1_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_001" />
+      <UsablePiece piece_id="sg_t2_pommel_a_002" />
+      <UsablePiece piece_id="sg_t2_pommel_a_003" />
+      <UsablePiece piece_id="sg_t2_pommel_a_004" />
+      <UsablePiece piece_id="sg_t2_pommel_a_005" />
+      <UsablePiece piece_id="sg_t2_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_007" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_005" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_001" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_003" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_005" />
+      <UsablePiece piece_id="sg_t4_pommel_a_006" />
+      <UsablePiece piece_id="sg_t5_pommel_a_001" />
+      <UsablePiece piece_id="sg_t5_pommel_a_002" />
+      <UsablePiece piece_id="sg_t5_pommel_a_003" />
+      <UsablePiece piece_id="sg_t5_pommel_a_004" />
+      <UsablePiece piece_id="sg_t5_pommel_a_005" />
+    </UsablePieces>
+  </CraftingTemplate>
+  <CraftingTemplate id="SG_TwoHandedMace"
+                    item_type="TwoHandedWeapon"
+                    modifier_group="mace"
+                    item_holsters="axe_back:axe_back_2:axe_back_3:axe_back_4"
+                    default_item_holster_position_offset="0,0,-0.75"
+                    use_weapon_as_holster_mesh="true">
+    <PieceDatas>
+      <PieceData piece_type="Handle"
+                 build_order="0" />
+      <PieceData piece_type="Blade"
+                 build_order="1" />
+      <PieceData piece_type="Pommel"
+                 build_order="-1" />
+    </PieceDatas>
+    <WeaponDescriptions>
+      <WeaponDescription id="SG_TwoHandedMace" />
+    </WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight"
+                max_value="7.0" />
+      <StatData stat_type="WeaponReach"
+                max_value="300" />
+      <StatData stat_type="ThrustSpeed"
+                max_value="200" />
+      <StatData stat_type="SwingSpeed"
+                max_value="200" />
+      <StatData stat_type="ThrustDamage"
+                max_value="500" />
+      <StatData stat_type="SwingDamage"
+                max_value="500" />
+      <StatData stat_type="Handling"
+                max_value="200" />
+      <!--<StatData stat_type="FollowUp" max_value="200" />-->
+    </StatsData>
+    <UsablePieces>
+      <UsablePiece piece_id="default_polearm_pommel"/>
+
+      <UsablePiece piece_id="sg_mace_head_001_both"/>
+      <UsablePiece piece_id="sg_mace_head_002_both"/>
+      <UsablePiece piece_id="sg_mace_head_003_both"/>
+      <UsablePiece piece_id="sg_mace_head_005_both"/>
+      <UsablePiece piece_id="sg_mace_head_006_both"/>
+      <UsablePiece piece_id="sg_mace_pommel_001_both"/>
+      <UsablePiece piece_id="sg_mace_pommel_005_both"/>
+
+      <UsablePiece piece_id="sg_mace_handle_001_d"/>
+      <UsablePiece piece_id="sg_mace_handle_001_e"/>
+      <UsablePiece piece_id="sg_mace_handle_001_f"/>
+      <UsablePiece piece_id="sg_mace_handle_002_d"/>
+      <UsablePiece piece_id="sg_mace_handle_002_e"/>
+      <UsablePiece piece_id="sg_mace_handle_002_f"/>
+      <UsablePiece piece_id="sg_mace_handle_003_d"/>
+      <UsablePiece piece_id="sg_mace_handle_003_e"/>
+      <UsablePiece piece_id="sg_mace_handle_003_f"/>
+      <UsablePiece piece_id="sg_mace_handle_004_d"/>
+      <UsablePiece piece_id="sg_mace_handle_004_e"/>
+      <UsablePiece piece_id="sg_mace_handle_004_f"/>
+      <UsablePiece piece_id="sg_mace_handle_005_d"/>
+      <UsablePiece piece_id="sg_mace_handle_005_e"/>
+      <UsablePiece piece_id="sg_mace_handle_005_f"/>
+
+      <UsablePiece piece_id="sg_mace_whole_001_head"/>
+      <UsablePiece piece_id="sg_mace_whole_001_handle"/>
+
+
+
+
+
+
+      <UsablePiece piece_id="sg_t1_mace_head_001" />
+      <UsablePiece piece_id="sg_t1_mace_head_002" />
+      <UsablePiece piece_id="sg_t1_mace_head_003" />
+      <UsablePiece piece_id="sg_t2_mace_head_001" />
+      <UsablePiece piece_id="sg_t2_mace_head_002" />
+      <UsablePiece piece_id="sg_t2_mace_head_003" />
+      <UsablePiece piece_id="sg_t3_mace_head_001" />
+      <UsablePiece piece_id="sg_t3_mace_head_002" />
+      <UsablePiece piece_id="sg_t3_mace_head_003" />
+      <UsablePiece piece_id="sg_t3_mace_head_004" />
+      <UsablePiece piece_id="sg_t4_mace_head_001" />
+      <UsablePiece piece_id="sg_t4_mace_head_002" />
+      <UsablePiece piece_id="sg_t4_mace_head_003" />
+      <UsablePiece piece_id="sg_t4_mace_head_004" />
+      <UsablePiece piece_id="sg_t4_mace_head_005" />
+      <UsablePiece piece_id="sg_t5_mace_head_001" />
+      <UsablePiece piece_id="sg_t5_mace_head_002" />
+      <UsablePiece piece_id="sg_t5_mace_head_003" />
+      <UsablePiece piece_id="sg_t5_mace_head_004" />
+      <UsablePiece piece_id="sg_t1_mace_handle_001_a" />
+      <UsablePiece piece_id="sg_t1_mace_handle_001_c" />
+      <UsablePiece piece_id="sg_t1_mace_handle_001_d" />
+      <UsablePiece piece_id="sg_t1_mace_handle_002_c" />
+      <UsablePiece piece_id="sg_t1_mace_handle_002_d" />
+      <UsablePiece piece_id="sg_t1_mace_handle_003_c" />
+      <UsablePiece piece_id="sg_t1_mace_handle_003_d" />
+      <UsablePiece piece_id="sg_t2_mace_handle_001_c" />
+      <UsablePiece piece_id="sg_t2_mace_handle_001_d" />
+      <UsablePiece piece_id="sg_t2_mace_handle_002_c" />
+      <UsablePiece piece_id="sg_t2_mace_handle_002_d" />
+      <UsablePiece piece_id="sg_t2_mace_handle_003_c" />
+      <UsablePiece piece_id="sg_t2_mace_handle_003_d" />
+      <UsablePiece piece_id="sg_t2_mace_handle_004_c" />
+      <UsablePiece piece_id="sg_t2_mace_handle_004_d" />
+      <UsablePiece piece_id="sg_t2_mace_handle_005_c" />
+      <UsablePiece piece_id="sg_t2_mace_handle_005_d" />
+      <UsablePiece piece_id="sg_t3_mace_handle_001_c" />
+      <UsablePiece piece_id="sg_t3_mace_handle_001_d" />
+      <UsablePiece piece_id="sg_t3_mace_handle_002_c" />
+      <UsablePiece piece_id="sg_t3_mace_handle_002_d" />
+      <UsablePiece piece_id="sg_t3_mace_handle_003_c" />
+      <UsablePiece piece_id="sg_t3_mace_handle_003_d" />
+      <UsablePiece piece_id="sg_t3_mace_handle_004_c" />
+      <UsablePiece piece_id="sg_t3_mace_handle_004_d" />
+      <UsablePiece piece_id="sg_t4_mace_handle_003_c" />
+      <UsablePiece piece_id="sg_t4_mace_handle_003_d" />
+      <UsablePiece piece_id="sg_t5_mace_handle_001_c" />
+      <UsablePiece piece_id="sg_t5_mace_handle_001_d" />
+      <UsablePiece piece_id="sg_t5_mace_handle_002_c" />
+      <UsablePiece piece_id="sg_t5_mace_handle_002_d" />
+      <UsablePiece piece_id="sg_t5_mace_handle_004_c" />
+      <UsablePiece piece_id="sg_t5_mace_handle_004_d" />
+      <UsablePiece piece_id="sg_t1_pommel_a_001" />
+      <UsablePiece piece_id="sg_t1_pommel_a_002" />
+      <UsablePiece piece_id="sg_t1_pommel_a_003" />
+      <UsablePiece piece_id="sg_t1_pommel_a_004" />
+      <UsablePiece piece_id="sg_t1_pommel_a_005" />
+      <UsablePiece piece_id="sg_t1_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_001" />
+      <UsablePiece piece_id="sg_t2_pommel_a_002" />
+      <UsablePiece piece_id="sg_t2_pommel_a_003" />
+      <UsablePiece piece_id="sg_t2_pommel_a_004" />
+      <UsablePiece piece_id="sg_t2_pommel_a_005" />
+      <UsablePiece piece_id="sg_t2_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_007" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_005" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_001" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_003" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_005" />
+      <UsablePiece piece_id="sg_t4_pommel_a_006" />
+      <UsablePiece piece_id="sg_t5_pommel_a_001" />
+      <UsablePiece piece_id="sg_t5_pommel_a_002" />
+      <UsablePiece piece_id="sg_t5_pommel_a_003" />
+      <UsablePiece piece_id="sg_t5_pommel_a_004" />
+      <UsablePiece piece_id="sg_t5_pommel_a_005" />
+    </UsablePieces>
+  </CraftingTemplate>
+  <CraftingTemplate id="SG_OneHandedSword"
+                    item_type="OneHandedWeapon"
+                    modifier_group="sword"
+                    item_holsters="sword_left_hip_3:sword_left_hip:sword_left_hip_2:sword_back"
+                    piece_type_to_scale_holster_with="Blade"
+                    hidden_piece_types_on_holster="Blade"
+                    default_item_holster_position_offset="0,0,-0.1">
+    <PieceDatas>
+      <PieceData piece_type="Handle"
+                 build_order="0" />
+      <PieceData piece_type="Guard"
+                 build_order="1" />
+      <PieceData piece_type="Blade"
+                 build_order="2" />
+      <PieceData piece_type="Pommel"
+                 build_order="-1" />
+    </PieceDatas>
+    <WeaponDescriptions>
+      <WeaponDescription id="SG_OneHandedSword" />
+    </WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight"
+                max_value="7.0" />
+      <StatData stat_type="WeaponReach"
+                max_value="300" />
+      <StatData stat_type="ThrustSpeed"
+                max_value="200" />
+      <StatData stat_type="SwingSpeed"
+                max_value="200" />
+      <StatData stat_type="ThrustDamage"
+                max_value="500" />
+      <StatData stat_type="SwingDamage"
+                max_value="500" />
+      <StatData stat_type="Handling"
+                max_value="200" />
+      <!--<StatData stat_type="FollowUp" max_value="200" />-->
+    </StatsData>
+    <UsablePieces>
+      <UsablePiece piece_id="default_polearm_guard"/>
+      <UsablePiece piece_id="default_polearm_pommel"/>
+
+      <UsablePiece piece_id="sg_sword_blade_001_a_both"/>
+      <UsablePiece piece_id="sg_sword_blade_001_b_both"/>
+      <UsablePiece piece_id="sg_sword_blade_001_c_both"/>
+      <UsablePiece piece_id="sg_sword_blade_008_both"/>
+      <UsablePiece piece_id="sg_sword_blade_009_both"/>
+      <UsablePiece piece_id="sg_sword_blade_018_both"/>
+      <UsablePiece piece_id="sg_sword_blade_021_both"/>
+      <UsablePiece piece_id="sg_sword_guard_001_a"/>
+      <UsablePiece piece_id="sg_sword_guard_001_c"/>
+      <UsablePiece piece_id="sg_sword_guard_002"/>
+      <UsablePiece piece_id="sg_sword_guard_003"/>
+      <UsablePiece piece_id="sg_sword_guard_004"/>
+      <UsablePiece piece_id="sg_sword_guard_008"/>
+      <UsablePiece piece_id="sg_sword_guard_009"/>
+      <UsablePiece piece_id="sg_sword_guard_010"/>
+      <UsablePiece piece_id="sg_sword_guard_012"/>
+      <UsablePiece piece_id="sg_sword_guard_013"/>
+      <UsablePiece piece_id="sg_sword_guard_014"/>
+      <UsablePiece piece_id="sg_sword_guard_015"/>
+      <UsablePiece piece_id="sg_sword_guard_016"/>
+      <UsablePiece piece_id="sg_sword_guard_017"/>
+      <UsablePiece piece_id="sg_sword_guard_018"/>
+      <UsablePiece piece_id="sg_sword_guard_019_a"/>
+      <UsablePiece piece_id="sg_sword_guard_019_b"/>
+      <UsablePiece piece_id="sg_sword_guard_019_c"/>
+      <UsablePiece piece_id="sg_sword_guard_021"/>
+      <UsablePiece piece_id="sg_sword_guard_022"/>
+
+      <UsablePiece piece_id="sg_sword_grip_001_a_both"/>
+      <UsablePiece piece_id="sg_sword_grip_001_b_both"/>
+      <UsablePiece piece_id="sg_sword_grip_001_c_both"/>
+      <UsablePiece piece_id="sg_sword_grip_021_both"/>
+
+      <UsablePiece piece_id="sg_sword_pommel_001_a"/>
+      <UsablePiece piece_id="sg_sword_pommel_001_c"/>
+      <UsablePiece piece_id="sg_sword_pommel_002"/>
+      <UsablePiece piece_id="sg_sword_pommel_003"/>
+      <UsablePiece piece_id="sg_sword_pommel_004"/>
+      <UsablePiece piece_id="sg_sword_pommel_005"/>
+      <UsablePiece piece_id="sg_sword_pommel_006"/>
+      <UsablePiece piece_id="sg_sword_pommel_007_a"/>
+      <UsablePiece piece_id="sg_sword_pommel_007_b"/>
+      <UsablePiece piece_id="sg_sword_pommel_007_c"/>
+      <UsablePiece piece_id="sg_sword_pommel_008"/>
+      <UsablePiece piece_id="sg_sword_pommel_009"/>
+      <UsablePiece piece_id="sg_sword_pommel_010"/>
+      <UsablePiece piece_id="sg_sword_pommel_014"/>
+      <UsablePiece piece_id="sg_sword_pommel_015"/>
+      <UsablePiece piece_id="sg_sword_pommel_016"/>
+      <UsablePiece piece_id="sg_sword_pommel_017"/>
+      <UsablePiece piece_id="sg_sword_pommel_018"/>
+      <UsablePiece piece_id="sg_sword_pommel_019_a"/>
+      <UsablePiece piece_id="sg_sword_pommel_019_b"/>
+      <UsablePiece piece_id="sg_sword_pommel_019_c"/>
+      <UsablePiece piece_id="sg_sword_pommel_021"/>
+      <UsablePiece piece_id="sg_sword_pommel_022"/>
+
+
+      <UsablePiece piece_id="sg_sword_blade_004_1h"/>
+      <UsablePiece piece_id="sg_sword_blade_005_1h"/>
+      <UsablePiece piece_id="sg_sword_blade_007_a_1h"/>
+      <UsablePiece piece_id="sg_sword_blade_014_1h"/>
+      <UsablePiece piece_id="sg_sword_blade_015_1h"/>
+      <UsablePiece piece_id="sg_sword_blade_019_a_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_004_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_005_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_007_a_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_007_b_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_008_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_009_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_014_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_015_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_019_a_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_019_b_1h"/>
+      <UsablePiece piece_id="sg_sword_grip_019_c_1h"/>
+
+      <UsablePiece piece_id="sg_sword_blade_020_a_s"/>
+      <UsablePiece piece_id="sg_sword_blade_020_a_l"/>
+      <UsablePiece piece_id="sg_sword_blade_020_b_s"/>
+      <UsablePiece piece_id="sg_sword_blade_020_b_l"/>
+      <UsablePiece piece_id="sg_sword_guard_020_a"/>
+      <UsablePiece piece_id="sg_sword_grip_020_a_s"/>
+      <UsablePiece piece_id="sg_sword_grip_020_b_s"/>
+      <UsablePiece piece_id="sg_sword_pommel_020_a"/>
+      <UsablePiece piece_id="sg_sword_pommel_020_b"/>
+
+      <UsablePiece piece_id="sg_sword_whole_001_blade"/>
+      <UsablePiece piece_id="sg_sword_whole_001_grip"/>
+
+
+
+
+      <UsablePiece piece_id="sg_t1_sword_blade_001_1h" />
+      <UsablePiece piece_id="sg_t1_sword_blade_002_1h" />
+      <UsablePiece piece_id="sg_t1_sword_blade_003_1h" />
+      <UsablePiece piece_id="sg_t1_sword_blade_004_1h" />
+      <UsablePiece piece_id="sg_t1_sword_blade_005_1h" />
+      <UsablePiece piece_id="sg_t2_sword_blade_001_both" />
+      <UsablePiece piece_id="sg_t2_sword_blade_002_1h" />
+      <UsablePiece piece_id="sg_t2_sword_blade_003_1h" />
+      <UsablePiece piece_id="sg_t2_sword_blade_004_1h" />
+      <UsablePiece piece_id="sg_t2_sword_blade_005_1h" />
+      <UsablePiece piece_id="sg_t2_sword_blade_006_1h" />
+      <UsablePiece piece_id="sg_t3_sword_blade_001_1h" />
+      <UsablePiece piece_id="sg_t3_sword_blade_002_1h" />
+      <UsablePiece piece_id="sg_t3_sword_blade_003_1h" />
+      <UsablePiece piece_id="sg_t3_sword_blade_004_both" />
+      <UsablePiece piece_id="sg_t3_sword_blade_005_both" />
+      <UsablePiece piece_id="sg_t3_sword_blade_006_both" />
+      <UsablePiece piece_id="sg_t4_sword_blade_001_1h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_002_1h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_003_1h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_004_1h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_005_1h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_006_both" />
+      <UsablePiece piece_id="sg_t4_sword_blade_007_1h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_008_1h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_001_1h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_002_1h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_003_1h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_004_1h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_005_1h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_006_both" />
+      <UsablePiece piece_id="sg_t5_sword_blade_007_1h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_008_1h" />
+
+      <UsablePiece piece_id="sg_t1_sword_guard_001" />
+      <UsablePiece piece_id="sg_t1_sword_guard_002" />
+      <UsablePiece piece_id="sg_t1_sword_guard_003" />
+      <UsablePiece piece_id="sg_t1_sword_guard_004" />
+      <UsablePiece piece_id="sg_t1_sword_guard_005" />
+      <UsablePiece piece_id="sg_t2_sword_guard_001" />
+      <UsablePiece piece_id="sg_t2_sword_guard_002" />
+      <UsablePiece piece_id="sg_t3_sword_guard_001" />
+      <UsablePiece piece_id="sg_t3_sword_guard_002" />
+      <UsablePiece piece_id="sg_t3_sword_guard_003" />
+      <UsablePiece piece_id="sg_t3_sword_guard_004" />
+      <UsablePiece piece_id="sg_t3_sword_guard_005" />
+      <UsablePiece piece_id="sg_t4_sword_guard_001" />
+      <UsablePiece piece_id="sg_t4_sword_guard_002" />
+      <UsablePiece piece_id="sg_t4_sword_guard_003" />
+      <UsablePiece piece_id="sg_t4_sword_guard_004" />
+      <UsablePiece piece_id="sg_t4_sword_guard_005" />
+      <UsablePiece piece_id="sg_t4_sword_guard_006" />
+      <UsablePiece piece_id="sg_t5_sword_guard_001" />
+      <UsablePiece piece_id="sg_t5_sword_guard_002" />
+      <UsablePiece piece_id="sg_t5_sword_guard_003" />
+      <UsablePiece piece_id="sg_t5_sword_guard_004" />
+      <UsablePiece piece_id="sg_t5_sword_guard_005" />
+      <UsablePiece piece_id="sg_t5_sword_guard_006" />
+      <UsablePiece piece_id="sg_t5_sword_guard_007" />
+
+      <UsablePiece piece_id="sg_t1_sword_grip_001_1h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_002_1h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_003_1h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_004_1h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_005_1h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_006_1h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_007_1h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_001_1h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_002_1h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_003_1h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_004_1h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_005_1h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_006_1h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_007_1h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_001_1h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_002_1h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_003_1h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_004_1h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_005_1h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_006_1h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_007_1h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_001_1h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_002_1h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_003_1h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_004_1h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_005_1h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_006_1h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_001_1h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_002_1h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_003_1h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_004_1h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_005_1h" />
+
+      <UsablePiece piece_id="sg_t1_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t1_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t1_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t1_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_005" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_005" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_006" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_005" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_006" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_007" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_008" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_005" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_006" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_007" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_008" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_009" />
+
+    </UsablePieces>
+  </CraftingTemplate>
+  <CraftingTemplate id="SG_TwoHandedSword"
+                    item_type="TwoHandedWeapon"
+                    modifier_group="sword"
+                    item_holsters="sword_back:sword_back_2:sword_back_3:sword_back_4"
+                    piece_type_to_scale_holster_with="Blade"
+                    hidden_piece_types_on_holster="Blade"
+                    default_item_holster_position_offset="0,0,-0.1">
+    <PieceDatas>
+      <PieceData piece_type="Handle"
+                 build_order="0" />
+      <PieceData piece_type="Guard"
+                 build_order="1" />
+      <PieceData piece_type="Blade"
+                 build_order="2" />
+      <PieceData piece_type="Pommel"
+                 build_order="-1" />
+    </PieceDatas>
+    <WeaponDescriptions>
+			<WeaponDescription id="OneHandedBastardSword" />
+			<WeaponDescription id="SG_TwoHandedSword" />
+			<WeaponDescription id="OneHandedBastardSwordAlternative" />
+    </WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight"
+                max_value="7.0" />
+      <StatData stat_type="WeaponReach"
+                max_value="300" />
+      <StatData stat_type="ThrustSpeed"
+                max_value="200" />
+      <StatData stat_type="SwingSpeed"
+                max_value="200" />
+      <StatData stat_type="ThrustDamage"
+                max_value="500" />
+      <StatData stat_type="SwingDamage"
+                max_value="500" />
+      <StatData stat_type="Handling"
+                max_value="200" />
+      <!--<StatData stat_type="FollowUp" max_value="200" />-->
+    </StatsData>
+    <UsablePieces>
+      <UsablePiece piece_id="default_polearm_guard"/>
+      <UsablePiece piece_id="default_polearm_pommel"/>
+
+      <UsablePiece piece_id="sg_sword_blade_001_a_both"/>
+      <UsablePiece piece_id="sg_sword_blade_001_b_both"/>
+      <UsablePiece piece_id="sg_sword_blade_001_c_both"/>
+      <UsablePiece piece_id="sg_sword_blade_008_both"/>
+      <UsablePiece piece_id="sg_sword_blade_009_both"/>
+      <UsablePiece piece_id="sg_sword_blade_018_both"/>
+      <UsablePiece piece_id="sg_sword_blade_021_both"/>
+      <UsablePiece piece_id="sg_sword_guard_001_a"/>
+      <UsablePiece piece_id="sg_sword_guard_001_c"/>
+      <UsablePiece piece_id="sg_sword_guard_002"/>
+      <UsablePiece piece_id="sg_sword_guard_003"/>
+      <UsablePiece piece_id="sg_sword_guard_004"/>
+      <UsablePiece piece_id="sg_sword_guard_008"/>
+      <UsablePiece piece_id="sg_sword_guard_009"/>
+      <UsablePiece piece_id="sg_sword_guard_010"/>
+      <UsablePiece piece_id="sg_sword_guard_012"/>
+      <UsablePiece piece_id="sg_sword_guard_013"/>
+      <UsablePiece piece_id="sg_sword_guard_014"/>
+      <UsablePiece piece_id="sg_sword_guard_015"/>
+      <UsablePiece piece_id="sg_sword_guard_016"/>
+      <UsablePiece piece_id="sg_sword_guard_017"/>
+      <UsablePiece piece_id="sg_sword_guard_018"/>
+      <UsablePiece piece_id="sg_sword_guard_019_a"/>
+      <UsablePiece piece_id="sg_sword_guard_019_b"/>
+      <UsablePiece piece_id="sg_sword_guard_019_c"/>
+      <UsablePiece piece_id="sg_sword_guard_021"/>
+      <UsablePiece piece_id="sg_sword_guard_022"/>
+
+      <UsablePiece piece_id="sg_sword_grip_001_a_both"/>
+      <UsablePiece piece_id="sg_sword_grip_001_b_both"/>
+      <UsablePiece piece_id="sg_sword_grip_001_c_both"/>
+      <UsablePiece piece_id="sg_sword_grip_021_both"/>
+
+      <UsablePiece piece_id="sg_sword_pommel_001_a"/>
+      <UsablePiece piece_id="sg_sword_pommel_001_c"/>
+      <UsablePiece piece_id="sg_sword_pommel_002"/>
+      <UsablePiece piece_id="sg_sword_pommel_003"/>
+      <UsablePiece piece_id="sg_sword_pommel_004"/>
+      <UsablePiece piece_id="sg_sword_pommel_005"/>
+      <UsablePiece piece_id="sg_sword_pommel_006"/>
+      <UsablePiece piece_id="sg_sword_pommel_007_a"/>
+      <UsablePiece piece_id="sg_sword_pommel_007_b"/>
+      <UsablePiece piece_id="sg_sword_pommel_007_c"/>
+      <UsablePiece piece_id="sg_sword_pommel_008"/>
+      <UsablePiece piece_id="sg_sword_pommel_009"/>
+      <UsablePiece piece_id="sg_sword_pommel_010"/>
+      <UsablePiece piece_id="sg_sword_pommel_014"/>
+      <UsablePiece piece_id="sg_sword_pommel_015"/>
+      <UsablePiece piece_id="sg_sword_pommel_016"/>
+      <UsablePiece piece_id="sg_sword_pommel_017"/>
+      <UsablePiece piece_id="sg_sword_pommel_018"/>
+      <UsablePiece piece_id="sg_sword_pommel_019_a"/>
+      <UsablePiece piece_id="sg_sword_pommel_019_b"/>
+      <UsablePiece piece_id="sg_sword_pommel_019_c"/>
+      <UsablePiece piece_id="sg_sword_pommel_021"/>
+      <UsablePiece piece_id="sg_sword_pommel_022"/>
+
+      <UsablePiece piece_id="sg_sword_blade_002_2h"/>
+      <UsablePiece piece_id="sg_sword_blade_003_2h"/>
+      <UsablePiece piece_id="sg_sword_blade_006_2h"/>
+      <UsablePiece piece_id="sg_sword_blade_010_2h"/>
+      <UsablePiece piece_id="sg_sword_blade_011_2h"/>
+      <UsablePiece piece_id="sg_sword_blade_012_2h"/>
+      <UsablePiece piece_id="sg_sword_blade_013_2h"/>
+      <UsablePiece piece_id="sg_sword_blade_016_2h"/>
+      <UsablePiece piece_id="sg_sword_blade_017_2h"/>
+
+      <UsablePiece piece_id="sg_sword_grip_002_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_003_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_006_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_010_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_011_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_012_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_013_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_016_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_017_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_018_2h"/>
+
+      <UsablePiece piece_id="sg_sword_blade_020_a_l"/>
+      <UsablePiece piece_id="sg_sword_blade_020_b_l"/>
+      <UsablePiece piece_id="sg_sword_guard_020_a"/>
+      <UsablePiece piece_id="sg_sword_grip_020_a_l"/>
+      <UsablePiece piece_id="sg_sword_grip_020_b_l"/>
+      <UsablePiece piece_id="sg_sword_pommel_020_a"/>
+      <UsablePiece piece_id="sg_sword_pommel_020_b"/>
+
+      <UsablePiece piece_id="sg_sword_blade_022_2h"/>
+      <UsablePiece piece_id="sg_sword_grip_022_2h"/>
+
+
+      <UsablePiece piece_id="sg_t1_sword_blade_001_2h" />
+      <UsablePiece piece_id="sg_t1_sword_blade_002_2h" />
+      <UsablePiece piece_id="sg_t1_sword_blade_003_2h" />
+      <UsablePiece piece_id="sg_t1_sword_blade_005_2h" />
+      <UsablePiece piece_id="sg_t2_sword_blade_001_both" />
+      <UsablePiece piece_id="sg_t2_sword_blade_004_2h" />
+      <UsablePiece piece_id="sg_t2_sword_blade_005_2h" />
+      <UsablePiece piece_id="sg_t3_sword_blade_001_2h" />
+      <UsablePiece piece_id="sg_t3_sword_blade_004_both" />
+      <UsablePiece piece_id="sg_t3_sword_blade_005_both" />
+      <UsablePiece piece_id="sg_t3_sword_blade_006_both" />
+      <UsablePiece piece_id="sg_t4_sword_blade_002_2h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_003_2h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_004_2h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_005_2h" />
+      <UsablePiece piece_id="sg_t4_sword_blade_006_both" />
+      <UsablePiece piece_id="sg_t5_sword_blade_001_2h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_002_2h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_003_2h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_004_2h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_005_2h" />
+      <UsablePiece piece_id="sg_t5_sword_blade_006_both" />
+      <UsablePiece piece_id="sg_t5_sword_blade_008_2h" />
+
+      <UsablePiece piece_id="sg_t1_sword_guard_001" />
+      <UsablePiece piece_id="sg_t1_sword_guard_002" />
+      <UsablePiece piece_id="sg_t1_sword_guard_003" />
+      <UsablePiece piece_id="sg_t1_sword_guard_004" />
+      <UsablePiece piece_id="sg_t1_sword_guard_005" />
+      <UsablePiece piece_id="sg_t2_sword_guard_001" />
+      <UsablePiece piece_id="sg_t2_sword_guard_002" />
+      <UsablePiece piece_id="sg_t3_sword_guard_001" />
+      <UsablePiece piece_id="sg_t3_sword_guard_002" />
+      <UsablePiece piece_id="sg_t3_sword_guard_003" />
+      <UsablePiece piece_id="sg_t3_sword_guard_004" />
+      <UsablePiece piece_id="sg_t3_sword_guard_005" />
+      <UsablePiece piece_id="sg_t4_sword_guard_001" />
+      <UsablePiece piece_id="sg_t4_sword_guard_002" />
+      <UsablePiece piece_id="sg_t4_sword_guard_003" />
+      <UsablePiece piece_id="sg_t4_sword_guard_004" />
+      <UsablePiece piece_id="sg_t4_sword_guard_005" />
+      <UsablePiece piece_id="sg_t4_sword_guard_006" />
+      <UsablePiece piece_id="sg_t5_sword_guard_001" />
+      <UsablePiece piece_id="sg_t5_sword_guard_002" />
+      <UsablePiece piece_id="sg_t5_sword_guard_003" />
+      <UsablePiece piece_id="sg_t5_sword_guard_004" />
+      <UsablePiece piece_id="sg_t5_sword_guard_005" />
+      <UsablePiece piece_id="sg_t5_sword_guard_006" />
+      <UsablePiece piece_id="sg_t5_sword_guard_007" />
+
+      <UsablePiece piece_id="sg_t1_sword_grip_001_2h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_002_2h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_003_2h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_004_2h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_005_2h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_006_2h" />
+      <UsablePiece piece_id="sg_t1_sword_grip_007_2h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_001_2h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_002_2h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_003_2h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_004_2h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_005_2h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_006_2h" />
+      <UsablePiece piece_id="sg_t2_sword_grip_007_2h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_001_2h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_002_2h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_003_2h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_004_2h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_005_2h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_006_2h" />
+      <UsablePiece piece_id="sg_t3_sword_grip_007_2h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_001_2h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_002_2h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_003_2h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_004_2h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_005_2h" />
+      <UsablePiece piece_id="sg_t4_sword_grip_006_2h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_001_2h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_002_2h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_003_2h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_004_2h" />
+      <UsablePiece piece_id="sg_t5_sword_grip_005_2h" />
+
+      <UsablePiece piece_id="sg_t1_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t1_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t1_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t1_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t2_sword_pommel_005" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_005" />
+      <UsablePiece piece_id="sg_t3_sword_pommel_006" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_005" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_006" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_007" />
+      <UsablePiece piece_id="sg_t4_sword_pommel_008" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_001" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_002" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_003" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_004" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_005" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_006" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_007" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_008" />
+      <UsablePiece piece_id="sg_t5_sword_pommel_009" />
+
+
+      <UsablePiece piece_id="sg_sword_blade_012_2h_special"/>
+    </UsablePieces>
+  </CraftingTemplate>
+
+  <CraftingTemplate id="SG_TwoHandedPolearm"
+                    item_type="Polearm"
+                    modifier_group="polearm"
+                    item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4"
+                    default_item_holster_position_offset="0,0,-0.30"
+                    use_weapon_as_holster_mesh="true">
+    <PieceDatas>
+      <PieceData piece_type="Handle"
+                 build_order="0" />
+      <PieceData piece_type="Guard"
+                 build_order="1" />
+      <PieceData piece_type="Blade"
+                 build_order="2" />
+      <PieceData piece_type="Pommel"
+                 build_order="-1" />
+    </PieceDatas>
+    <WeaponDescriptions>
+      <WeaponDescription id="SG_OneHandedPolearm" />
+      <WeaponDescription id="SG_TwoHandedPolearm" />
+      <WeaponDescription id="SG_TwoHandedPolearm_Couchable" />
+      <WeaponDescription id="SG_TwoHandedPolearm_Bracing" />
+      <WeaponDescription id="SG_TwoHandedPolearm_Thrown" />
+    </WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight"
+                max_value="7.0" />
+      <StatData stat_type="WeaponReach"
+                max_value="300" />
+      <StatData stat_type="ThrustSpeed"
+                max_value="200" />
+      <StatData stat_type="SwingSpeed"
+                max_value="200" />
+      <StatData stat_type="ThrustDamage"
+                max_value="500" />
+      <StatData stat_type="SwingDamage"
+                max_value="500" />
+      <StatData stat_type="Handling"
+                max_value="200" />
+      <!--<StatData stat_type="FollowUp" max_value="200" />-->
+    </StatsData>
+    <UsablePieces>
+      <UsablePiece piece_id="default_polearm_guard" />
+      <UsablePiece piece_id="default_polearm_pommel" />
+      <UsablePiece piece_id="lz_yeguaige_blade"/>
+      <UsablePiece piece_id="lz_yeguaige_handle"/>
+      <UsablePiece piece_id="sg_spear_blade_001"/>
+      <UsablePiece piece_id="sg_spear_blade_002"/>
+      <UsablePiece piece_id="sg_spear_blade_003"/>
+      <UsablePiece piece_id="sg_spear_blade_004"/>
+      <UsablePiece piece_id="sg_spear_blade_005"/>
+      <UsablePiece piece_id="sg_spear_blade_006"/>
+      <UsablePiece piece_id="sg_spear_blade_007"/>
+      <UsablePiece piece_id="sg_spear_blade_008"/>
+      <UsablePiece piece_id="sg_spear_blade_009"/>
+      <UsablePiece piece_id="sg_spear_blade_010"/>
+      <UsablePiece piece_id="sg_spear_blade_011"/>
+      <UsablePiece piece_id="sg_spear_blade_012_a"/>
+      <UsablePiece piece_id="sg_spear_blade_012_b"/>
+      <UsablePiece piece_id="sg_spear_blade_013_a"/>
+      <UsablePiece piece_id="sg_spear_blade_013_b"/>
+      <UsablePiece piece_id="sg_spear_blade_014"/>
+      <UsablePiece piece_id="sg_spear_blade_015"/>
+      <UsablePiece piece_id="sg_spear_blade_016"/>
+      <UsablePiece piece_id="sg_spear_blade_017"/>
+      <UsablePiece piece_id="sg_spear_blade_018"/>
+      <UsablePiece piece_id="sg_spear_blade_019"/>
+      <UsablePiece piece_id="sg_spear_blade_020"/>
+      <UsablePiece piece_id="sg_spear_blade_021"/>
+      <UsablePiece piece_id="sg_spear_blade_022"/>
+      <UsablePiece piece_id="sg_spear_blade_023"/>
+      <UsablePiece piece_id="sg_spear_blade_024"/>
+      <UsablePiece piece_id="sg_spear_blade_025"/>
+      <UsablePiece piece_id="sg_spear_blade_026"/>
+      <UsablePiece piece_id="sg_spear_blade_027"/>
+      <UsablePiece piece_id="sg_spear_blade_028"/>
+      <UsablePiece piece_id="sg_spear_blade_029"/>
+      <UsablePiece piece_id="sg_spear_blade_030"/>
+      <UsablePiece piece_id="sg_spear_blade_031"/>
+      <UsablePiece piece_id="sg_spear_blade_032"/>
+      <UsablePiece piece_id="lz_yeguaisha_blade"/>
+      <UsablePiece piece_id="lz_yeguaisha_handle"/>
+      <UsablePiece piece_id="sg_spear_handle_001_a" />
+      <UsablePiece piece_id="sg_spear_handle_001_b" />
+      <UsablePiece piece_id="sg_spear_handle_001_c" />
+      <UsablePiece piece_id="sg_spear_handle_001_d" />
+      <UsablePiece piece_id="sg_spear_handle_001_e" />
+      <UsablePiece piece_id="sg_spear_handle_002_a" />
+      <UsablePiece piece_id="sg_spear_handle_002_b" />
+      <UsablePiece piece_id="sg_spear_handle_002_c" />
+      <UsablePiece piece_id="sg_spear_handle_002_d" />
+      <UsablePiece piece_id="sg_spear_handle_002_e" />
+      <UsablePiece piece_id="sg_spear_handle_003_a" />
+      <UsablePiece piece_id="sg_spear_handle_003_b" />
+      <UsablePiece piece_id="sg_spear_handle_003_c" />
+      <UsablePiece piece_id="sg_spear_handle_003_d" />
+      <UsablePiece piece_id="sg_spear_handle_003_e" />
+      <UsablePiece piece_id="sg_spear_handle_004_a" />
+      <UsablePiece piece_id="sg_spear_handle_004_b" />
+      <UsablePiece piece_id="sg_spear_handle_004_c" />
+      <UsablePiece piece_id="sg_spear_handle_004_d" />
+      <UsablePiece piece_id="sg_spear_handle_004_e" />
+      <UsablePiece piece_id="sg_spear_handle_005_a" />
+      <UsablePiece piece_id="sg_spear_handle_005_b" />
+      <UsablePiece piece_id="sg_spear_handle_005_c" />
+      <UsablePiece piece_id="sg_spear_handle_005_d" />
+      <UsablePiece piece_id="sg_spear_handle_005_e" />
+
+      <UsablePiece piece_id="sg_spear_guard_001"/>
+      <UsablePiece piece_id="sg_spear_guard_002"/>
+      <UsablePiece piece_id="sg_spear_guard_004_a"/>
+      <UsablePiece piece_id="sg_spear_guard_004_b"/>
+
+      <UsablePiece piece_id="sg_spear_guard_006"/>
+      <UsablePiece piece_id="sg_spear_guard_012"/>
+      
+      <UsablePiece piece_id="sg_spear_pommel_001"/>
+      <UsablePiece piece_id="sg_spear_pommel_002"/>
+      <UsablePiece piece_id="sg_spear_pommel_004"/>
+      <UsablePiece piece_id="sg_spear_pommel_005"/>
+      <UsablePiece piece_id="sg_spear_pommel_006"/>
+      <UsablePiece piece_id="sg_spear_pommel_009"/>
+      <UsablePiece piece_id="sg_spear_pommel_011"/>
+      <UsablePiece piece_id="sg_spear_pommel_012"/>
+      <UsablePiece piece_id="sg_spear_pommel_013"/>
+      <UsablePiece piece_id="sg_spear_pommel_015"/>
+      <UsablePiece piece_id="sg_spear_pommel_016"/>
+      <UsablePiece piece_id="sg_spear_pommel_017"/>
+      <UsablePiece piece_id="sg_spear_pommel_019"/>
+      <UsablePiece piece_id="sg_spear_pommel_021"/>
+      <UsablePiece piece_id="sg_spear_pommel_022"/>
+      <UsablePiece piece_id="sg_spear_pommel_023"/>
+      <UsablePiece piece_id="sg_spear_pommel_024"/>
+      <UsablePiece piece_id="sg_spear_pommel_025"/>
+      <UsablePiece piece_id="sg_spear_pommel_028"/>
+      <UsablePiece piece_id="sg_spear_pommel_030"/>
+      <UsablePiece piece_id="sg_spear_pommel_031"/>
+      <UsablePiece piece_id="lz_spear_whole_601_blade"/>
+      <UsablePiece piece_id="lz_spear_whole_601_handle"/>
+      <UsablePiece piece_id="sg_spear_whole_001_blade"/>
+      <UsablePiece piece_id="sg_spear_whole_001_handle"/>
+      <UsablePiece piece_id="sg_spear_whole_002_blade"/>
+      <UsablePiece piece_id="sg_spear_whole_002_handle"/>
+      <UsablePiece piece_id="sg_spear_whole_003_blade"/>
+      <UsablePiece piece_id="sg_spear_whole_003_handle"/>
+      <UsablePiece piece_id="sg_spear_whole_004_blade"/>
+      <UsablePiece piece_id="sg_spear_whole_004_handle"/>
+      <UsablePiece piece_id="lz_guanyu_blade"/>
+      <UsablePiece piece_id="lz_guanyu_handle"/>
+      <UsablePiece piece_id="lz_lvbu_blade"/>
+      <UsablePiece piece_id="lz_lvbu_handle"/>
+      <UsablePiece piece_id="lz_huangzhong_blade"/>
+      <UsablePiece piece_id="lz_huangzhong_handle"/>
+      <UsablePiece piece_id="lz_zhaoyun_blade"/>
+      <UsablePiece piece_id="lz_zhaoyun_handle"/>
+      <UsablePiece piece_id="lz_machao_blade"/>
+      <UsablePiece piece_id="lz_machao_handle"/>
+      <UsablePiece piece_id="lz_zhangfei_blade"/>
+      <UsablePiece piece_id="lz_zhangfei_handle"/>
+      <UsablePiece piece_id="lz_gongsunzan_blade"/>
+      <UsablePiece piece_id="lz_gongsunzan_handle"/>
+      <UsablePiece piece_id="lz_xuhuang_blade"/>
+      <UsablePiece piece_id="lz_xuhuang_handle"/>
+      <UsablePiece piece_id="lz_sunce_blade"/>
+      <UsablePiece piece_id="lz_sunce_handle"/>
+      <UsablePiece piece_id="lz_chengpu_blade"/>
+      <UsablePiece piece_id="lz_chengpu_handle"/>
+      <UsablePiece piece_id="lz_dadao01_blade"/>
+      <UsablePiece piece_id="lz_dadao01_handle"/>
+      <UsablePiece piece_id="lz_changqiang01_blade"/>
+      <UsablePiece piece_id="lz_changqiang01_handle"/>
+      <UsablePiece piece_id="lz_sanlianji01_blade"/>
+      <UsablePiece piece_id="lz_sanlianji01_handle"/>
+      <UsablePiece piece_id="lz_changji01_blade"/>
+      <UsablePiece piece_id="lz_changji01_handle"/>
+      <UsablePiece piece_id="lz_danbianhuaji01_blade"/>
+      <UsablePiece piece_id="lz_danbianhuaji01_handle"/>
+      <UsablePiece piece_id="lz_shuangbianhuaji01_blade"/>
+      <UsablePiece piece_id="lz_shuangbianhuaji01_handle"/>
+      <UsablePiece piece_id="lz_guanyu_blade_xw"/>
+      <UsablePiece piece_id="lz_guanyu_handle_xw"/>
+      <UsablePiece piece_id="lz_lvbu_blade_xw"/>
+      <UsablePiece piece_id="lz_lvbu_handle_xw"/>
+      <UsablePiece piece_id="lz_huangzhong_blade_xw"/>
+      <UsablePiece piece_id="lz_huangzhong_handle_xw"/>
+      <UsablePiece piece_id="lz_zhaoyun_blade_xw"/>
+      <UsablePiece piece_id="lz_zhaoyun_handle_xw"/>
+      <UsablePiece piece_id="lz_machao_blade_xw"/>
+      <UsablePiece piece_id="lz_machao_handle_xw"/>
+      <UsablePiece piece_id="lz_zhangfei_blade_xw"/>
+      <UsablePiece piece_id="lz_zhangfei_handle_xw"/>
+      <UsablePiece piece_id="lz_gongsunzan_blade_xw"/>
+      <UsablePiece piece_id="lz_gongsunzan_handle_xw"/>
+      <UsablePiece piece_id="lz_xuhuang_blade_xw"/>
+      <UsablePiece piece_id="lz_xuhuang_handle_xw"/>
+      <UsablePiece piece_id="lz_sunce_blade_xw"/>
+      <UsablePiece piece_id="lz_sunce_handle_xw"/>
+      <UsablePiece piece_id="lz_chengpu_blade_xw"/>
+      <UsablePiece piece_id="lz_chengpu_handle_xw"/>
+      <UsablePiece piece_id="lz_dadao01_blade_xw"/>
+      <UsablePiece piece_id="lz_dadao01_handle_xw"/>
+      <UsablePiece piece_id="lz_changqiang01_blade_xw"/>
+      <UsablePiece piece_id="lz_changqiang01_handle_xw"/>
+      <UsablePiece piece_id="lz_sanlianji01_blade_xw"/>
+      <UsablePiece piece_id="lz_sanlianji01_handle_xw"/>
+      <UsablePiece piece_id="lz_changji01_blade_xw"/>
+      <UsablePiece piece_id="lz_changji01_handle_xw"/>
+      <UsablePiece piece_id="lz_danbianhuaji01_blade_xw"/>
+      <UsablePiece piece_id="lz_danbianhuaji01_handle_xw"/>
+      <UsablePiece piece_id="lz_shuangbianhuaji01_blade_xw"/>
+      <UsablePiece piece_id="lz_shuangbianhuaji01_handle_xw"/>
+
+      <UsablePiece piece_id="sg_t1_spear_blade_001" />
+      <UsablePiece piece_id="sg_t1_spear_blade_002" />
+      <UsablePiece piece_id="sg_t1_spear_blade_003" />
+      <UsablePiece piece_id="sg_t1_spear_blade_004" />
+      <UsablePiece piece_id="sg_t1_spear_blade_005" />
+      <UsablePiece piece_id="sg_t1_spear_blade_006" />
+      <UsablePiece piece_id="sg_t1_spear_blade_007" />
+      <UsablePiece piece_id="sg_t1_spear_blade_008" />
+      <UsablePiece piece_id="sg_t1_spear_blade_009" />
+      <UsablePiece piece_id="sg_t1_spear_blade_010" />
+      <UsablePiece piece_id="sg_t1_spear_blade_011" />
+      <UsablePiece piece_id="sg_t1_spear_blade_012" />
+      <UsablePiece piece_id="sg_t1_spear_blade_013" />
+      <UsablePiece piece_id="sg_t1_spear_blade_014" />
+      <UsablePiece piece_id="sg_t1_spear_blade_015" />
+      <UsablePiece piece_id="sg_t2_spear_blade_001" />
+      <UsablePiece piece_id="sg_t2_spear_blade_002" />
+      <UsablePiece piece_id="sg_t2_spear_blade_003" />
+      <UsablePiece piece_id="sg_t2_spear_blade_004" />
+      <UsablePiece piece_id="sg_t2_spear_blade_005" />
+      <UsablePiece piece_id="sg_t2_spear_blade_006" />
+      <UsablePiece piece_id="sg_t2_spear_blade_007" />
+      <UsablePiece piece_id="sg_t2_spear_blade_008" />
+      <UsablePiece piece_id="sg_t2_spear_blade_009" />
+      <UsablePiece piece_id="sg_t2_spear_blade_010" />
+      <UsablePiece piece_id="sg_t2_spear_blade_011" />
+      <UsablePiece piece_id="sg_t2_spear_blade_012" />
+      <UsablePiece piece_id="sg_t2_spear_blade_013" />
+      <UsablePiece piece_id="sg_t2_spear_blade_014" />
+      <UsablePiece piece_id="sg_t2_spear_blade_015" />
+      <UsablePiece piece_id="sg_t2_spear_blade_016" />
+      <UsablePiece piece_id="sg_t2_spear_blade_017" />
+      <UsablePiece piece_id="sg_t2_spear_blade_018" />
+      <UsablePiece piece_id="sg_t3_spear_blade_001" />
+      <UsablePiece piece_id="sg_t3_spear_blade_002" />
+      <UsablePiece piece_id="sg_t3_spear_blade_003" />
+      <UsablePiece piece_id="sg_t3_spear_blade_004" />
+      <UsablePiece piece_id="sg_t3_spear_blade_005" />
+      <UsablePiece piece_id="sg_t3_spear_blade_006" />
+      <UsablePiece piece_id="sg_t3_spear_blade_007" />
+      <UsablePiece piece_id="sg_t3_spear_blade_008" />
+      <UsablePiece piece_id="sg_t3_spear_blade_009" />
+      <UsablePiece piece_id="sg_t3_spear_blade_010" />
+      <UsablePiece piece_id="sg_t3_spear_blade_011" />
+      <UsablePiece piece_id="sg_t3_spear_blade_012" />
+      <UsablePiece piece_id="sg_t3_spear_blade_013" />
+      <UsablePiece piece_id="sg_t3_spear_blade_014" />
+      <UsablePiece piece_id="sg_t3_spear_blade_015" />
+      <UsablePiece piece_id="sg_t3_spear_blade_016" />
+      <UsablePiece piece_id="sg_t3_spear_blade_017" />
+      <UsablePiece piece_id="sg_t3_spear_blade_018" />
+      <UsablePiece piece_id="sg_t3_spear_blade_019" />
+      <UsablePiece piece_id="sg_t3_spear_blade_020" />
+      <UsablePiece piece_id="sg_t3_spear_blade_021" />
+      <UsablePiece piece_id="sg_t3_spear_blade_022" />
+      <UsablePiece piece_id="sg_t3_spear_blade_023" />
+      <UsablePiece piece_id="sg_t3_spear_blade_024" />
+      <UsablePiece piece_id="sg_t3_spear_blade_025" />
+      <UsablePiece piece_id="sg_t3_spear_blade_026" />
+      <UsablePiece piece_id="sg_t4_spear_blade_001" />
+      <UsablePiece piece_id="sg_t4_spear_blade_002" />
+      <UsablePiece piece_id="sg_t4_spear_blade_003" />
+      <UsablePiece piece_id="sg_t4_spear_blade_004" />
+      <UsablePiece piece_id="sg_t4_spear_blade_005" />
+      <UsablePiece piece_id="sg_t4_spear_blade_006" />
+      <UsablePiece piece_id="sg_t4_spear_blade_007" />
+      <UsablePiece piece_id="sg_t4_spear_blade_008" />
+      <UsablePiece piece_id="sg_t4_spear_blade_009" />
+      <UsablePiece piece_id="sg_t4_spear_blade_010" />
+      <UsablePiece piece_id="sg_t4_spear_blade_011" />
+      <UsablePiece piece_id="sg_t4_spear_blade_012" />
+      <UsablePiece piece_id="sg_t4_spear_blade_013" />
+      <UsablePiece piece_id="sg_t4_spear_blade_014" />
+      <UsablePiece piece_id="sg_t4_spear_blade_015" />
+      <UsablePiece piece_id="sg_t4_spear_blade_016" />
+      <UsablePiece piece_id="sg_t4_spear_blade_017" />
+      <UsablePiece piece_id="sg_t4_spear_blade_018" />
+      <UsablePiece piece_id="sg_t4_spear_blade_019" />
+      <UsablePiece piece_id="sg_t4_spear_blade_020" />
+      <UsablePiece piece_id="sg_t4_spear_blade_021" />
+      <UsablePiece piece_id="sg_t4_spear_blade_022" />
+      <UsablePiece piece_id="sg_t4_spear_blade_023" />
+      <UsablePiece piece_id="sg_t4_spear_blade_024" />
+      <UsablePiece piece_id="sg_t5_spear_blade_001" />
+      <UsablePiece piece_id="sg_t5_spear_blade_002" />
+      <UsablePiece piece_id="sg_t5_spear_blade_003" />
+      <UsablePiece piece_id="sg_t5_spear_blade_004" />
+      <UsablePiece piece_id="sg_t5_spear_blade_005" />
+      <UsablePiece piece_id="sg_t5_spear_blade_006" />
+      <UsablePiece piece_id="sg_t5_spear_blade_007" />
+      <UsablePiece piece_id="sg_t5_spear_blade_008" />
+      <UsablePiece piece_id="sg_t5_spear_blade_009" />
+      <UsablePiece piece_id="sg_t5_spear_blade_010" />
+      <UsablePiece piece_id="sg_t5_spear_blade_011" />
+      <UsablePiece piece_id="sg_t5_spear_blade_012" />
+      <UsablePiece piece_id="sg_t5_spear_blade_013" />
+      <UsablePiece piece_id="sg_t5_spear_blade_014" />
+      <UsablePiece piece_id="sg_t5_spear_blade_015" />
+      <UsablePiece piece_id="sg_t5_spear_blade_016" />
+      <UsablePiece piece_id="sg_t5_spear_blade_017" />
+      <UsablePiece piece_id="sg_t5_spear_blade_018" />
+
+      <UsablePiece piece_id="sg_t1_spear_guard_001" />
+      <UsablePiece piece_id="sg_t1_spear_guard_002" />
+      <UsablePiece piece_id="sg_t1_spear_guard_003" />
+      <UsablePiece piece_id="sg_t1_spear_guard_004" />
+      <UsablePiece piece_id="sg_t1_spear_guard_005" />
+      <UsablePiece piece_id="sg_t1_spear_guard_006" />
+      <UsablePiece piece_id="sg_t1_spear_guard_007" />
+      <UsablePiece piece_id="sg_t1_spear_guard_008" />
+      <UsablePiece piece_id="sg_t1_spear_guard_009" />
+      <UsablePiece piece_id="sg_t1_spear_guard_010" />
+      <UsablePiece piece_id="sg_t1_spear_guard_011" />
+      <UsablePiece piece_id="sg_t1_spear_guard_012" />
+      <UsablePiece piece_id="sg_t1_spear_guard_013" />
+      <UsablePiece piece_id="sg_t1_spear_guard_014" />
+      <UsablePiece piece_id="sg_t1_spear_guard_015" />
+      <UsablePiece piece_id="sg_t2_spear_guard_001" />
+      <UsablePiece piece_id="sg_t2_spear_guard_002" />
+      <UsablePiece piece_id="sg_t2_spear_guard_003" />
+      <UsablePiece piece_id="sg_t2_spear_guard_004" />
+      <UsablePiece piece_id="sg_t2_spear_guard_005" />
+      <UsablePiece piece_id="sg_t2_spear_guard_006" />
+      <UsablePiece piece_id="sg_t2_spear_guard_007" />
+      <UsablePiece piece_id="sg_t2_spear_guard_008" />
+      <UsablePiece piece_id="sg_t2_spear_guard_009" />
+      <UsablePiece piece_id="sg_t2_spear_guard_010" />
+      <UsablePiece piece_id="sg_t2_spear_guard_011" />
+      <UsablePiece piece_id="sg_t2_spear_guard_012" />
+      <UsablePiece piece_id="sg_t2_spear_guard_013" />
+      <UsablePiece piece_id="sg_t2_spear_guard_014" />
+      <UsablePiece piece_id="sg_t2_spear_guard_015" />
+      <UsablePiece piece_id="sg_t2_spear_guard_016" />
+      <UsablePiece piece_id="sg_t2_spear_guard_017" />
+      <UsablePiece piece_id="sg_t2_spear_guard_018" />
+      <UsablePiece piece_id="sg_t3_spear_guard_001" />
+      <UsablePiece piece_id="sg_t3_spear_guard_002" />
+      <UsablePiece piece_id="sg_t3_spear_guard_003" />
+      <UsablePiece piece_id="sg_t3_spear_guard_004" />
+      <UsablePiece piece_id="sg_t3_spear_guard_005" />
+      <UsablePiece piece_id="sg_t3_spear_guard_006" />
+      <UsablePiece piece_id="sg_t3_spear_guard_007" />
+      <UsablePiece piece_id="sg_t3_spear_guard_008" />
+      <UsablePiece piece_id="sg_t3_spear_guard_009" />
+      <UsablePiece piece_id="sg_t3_spear_guard_010" />
+      <UsablePiece piece_id="sg_t3_spear_guard_011" />
+      <UsablePiece piece_id="sg_t3_spear_guard_012" />
+      <UsablePiece piece_id="sg_t3_spear_guard_013" />
+      <UsablePiece piece_id="sg_t3_spear_guard_014" />
+      <UsablePiece piece_id="sg_t3_spear_guard_015" />
+      <UsablePiece piece_id="sg_t3_spear_guard_016" />
+      <UsablePiece piece_id="sg_t3_spear_guard_017" />
+      <UsablePiece piece_id="sg_t3_spear_guard_018" />
+      <UsablePiece piece_id="sg_t3_spear_guard_020" />
+      <UsablePiece piece_id="sg_t3_spear_guard_021" />
+      <UsablePiece piece_id="sg_t3_spear_guard_022" />
+      <UsablePiece piece_id="sg_t3_spear_guard_023" />
+      <UsablePiece piece_id="sg_t3_spear_guard_024" />
+      <UsablePiece piece_id="sg_t3_spear_guard_025" />
+      <UsablePiece piece_id="sg_t3_spear_guard_026" />
+      <UsablePiece piece_id="sg_t3_spear_guard_027" />
+      <UsablePiece piece_id="sg_t4_spear_guard_001" />
+      <UsablePiece piece_id="sg_t4_spear_guard_002" />
+      <UsablePiece piece_id="sg_t4_spear_guard_003" />
+      <UsablePiece piece_id="sg_t4_spear_guard_005" />
+      <UsablePiece piece_id="sg_t4_spear_guard_006" />
+      <UsablePiece piece_id="sg_t4_spear_guard_007" />
+      <UsablePiece piece_id="sg_t4_spear_guard_008" />
+      <UsablePiece piece_id="sg_t4_spear_guard_009" />
+      <UsablePiece piece_id="sg_t4_spear_guard_010" />
+      <UsablePiece piece_id="sg_t4_spear_guard_011" />
+      <UsablePiece piece_id="sg_t4_spear_guard_012" />
+      <UsablePiece piece_id="sg_t4_spear_guard_013" />
+      <UsablePiece piece_id="sg_t4_spear_guard_014" />
+      <UsablePiece piece_id="sg_t4_spear_guard_015" />
+      <UsablePiece piece_id="sg_t4_spear_guard_016" />
+      <UsablePiece piece_id="sg_t4_spear_guard_017" />
+      <UsablePiece piece_id="sg_t4_spear_guard_018" />
+      <UsablePiece piece_id="sg_t4_spear_guard_019" />
+      <UsablePiece piece_id="sg_t4_spear_guard_020" />
+      <UsablePiece piece_id="sg_t5_spear_guard_001" />
+      <UsablePiece piece_id="sg_t5_spear_guard_003" />
+      <UsablePiece piece_id="sg_t5_spear_guard_004" />
+      <UsablePiece piece_id="sg_t5_spear_guard_005" />
+      <UsablePiece piece_id="sg_t5_spear_guard_006" />
+      <UsablePiece piece_id="sg_t5_spear_guard_007" />
+      <UsablePiece piece_id="sg_t5_spear_guard_008" />
+      <UsablePiece piece_id="sg_t5_spear_guard_009" />
+      <UsablePiece piece_id="sg_t5_spear_guard_010" />
+      <UsablePiece piece_id="sg_t5_spear_guard_011" />
+      <UsablePiece piece_id="sg_t5_spear_guard_012" />
+      <UsablePiece piece_id="sg_t5_spear_guard_013" />
+      <UsablePiece piece_id="sg_t5_spear_guard_014" />
+      <UsablePiece piece_id="sg_t5_spear_guard_015" />
+      <UsablePiece piece_id="sg_t5_spear_guard_016" />
+      <UsablePiece piece_id="sg_t5_spear_guard_017" />
+      <UsablePiece piece_id="sg_t5_spear_guard_018" />
+      <UsablePiece piece_id="sg_t5_spear_guard_019" />
+      <UsablePiece piece_id="sg_t5_spear_guard_020" />
+      <UsablePiece piece_id="sg_t5_spear_guard_021" />
+      <UsablePiece piece_id="sg_t5_spear_guard_022" />
+
+      <UsablePiece piece_id="sg_t1_spear_handle_001_a" />
+      <UsablePiece piece_id="sg_t1_spear_handle_001_b" />
+      <UsablePiece piece_id="sg_t1_spear_handle_001_c" />
+      <UsablePiece piece_id="sg_t1_spear_handle_001_d" />
+      <UsablePiece piece_id="sg_t1_spear_handle_002_a" />
+      <UsablePiece piece_id="sg_t1_spear_handle_002_b" />
+      <UsablePiece piece_id="sg_t1_spear_handle_003_a" />
+      <UsablePiece piece_id="sg_t1_spear_handle_003_b" />
+      <UsablePiece piece_id="sg_t1_spear_handle_004_a" />
+      <UsablePiece piece_id="sg_t1_spear_handle_004_b" />
+      <UsablePiece piece_id="sg_t1_spear_handle_005_a" />
+      <UsablePiece piece_id="sg_t1_spear_handle_005_b" />
+      <UsablePiece piece_id="sg_t2_spear_handle_001_a" />
+      <UsablePiece piece_id="sg_t2_spear_handle_001_b" />
+      <UsablePiece piece_id="sg_t2_spear_handle_002_a" />
+      <UsablePiece piece_id="sg_t2_spear_handle_003_a" />
+      <UsablePiece piece_id="sg_t2_spear_handle_003_b" />
+      <UsablePiece piece_id="sg_t2_spear_handle_004_a" />
+      <UsablePiece piece_id="sg_t2_spear_handle_004_b" />
+      <UsablePiece piece_id="sg_t2_spear_handle_005_a" />
+      <UsablePiece piece_id="sg_t2_spear_handle_005_b" />
+      <UsablePiece piece_id="sg_t2_spear_handle_006_a" />
+      <UsablePiece piece_id="sg_t2_spear_handle_006_b" />
+      <UsablePiece piece_id="sg_t2_spear_handle_007_a" />
+      <UsablePiece piece_id="sg_t2_spear_handle_008_a" />
+      <UsablePiece piece_id="sg_t2_spear_handle_009_a" />
+      <UsablePiece piece_id="sg_t3_spear_handle_001_a" />
+      <UsablePiece piece_id="sg_t3_spear_handle_001_b" />
+      <UsablePiece piece_id="sg_t3_spear_handle_002_a" />
+      <UsablePiece piece_id="sg_t3_spear_handle_003_a" />
+      <UsablePiece piece_id="sg_t3_spear_handle_003_b" />
+      <UsablePiece piece_id="sg_t3_spear_handle_004_a" />
+      <UsablePiece piece_id="sg_t3_spear_handle_005_a" />
+      <UsablePiece piece_id="sg_t3_spear_handle_006_a" />
+      <UsablePiece piece_id="sg_t3_spear_handle_006_b" />
+      <UsablePiece piece_id="sg_t4_spear_handle_001_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_002_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_002_b" />
+      <UsablePiece piece_id="sg_t4_spear_handle_003_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_003_b" />
+      <UsablePiece piece_id="sg_t4_spear_handle_004_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_004_b" />
+      <UsablePiece piece_id="sg_t4_spear_handle_005_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_005_b" />
+      <UsablePiece piece_id="sg_t4_spear_handle_006_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_006_b" />
+      <UsablePiece piece_id="sg_t4_spear_handle_007_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_007_b" />
+      <UsablePiece piece_id="sg_t4_spear_handle_008_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_009_a" />
+      <UsablePiece piece_id="sg_t4_spear_handle_009_b" />
+      <UsablePiece piece_id="sg_t5_spear_handle_001_a" />
+      <UsablePiece piece_id="sg_t5_spear_handle_001_b" />
+      <UsablePiece piece_id="sg_t5_spear_handle_002_a" />
+      <UsablePiece piece_id="sg_t5_spear_handle_002_b" />
+      <UsablePiece piece_id="sg_t5_spear_handle_003_a" />
+      <UsablePiece piece_id="sg_t5_spear_handle_003_b" />
+      <UsablePiece piece_id="sg_t5_spear_handle_004_a" />
+      <UsablePiece piece_id="sg_t5_spear_handle_004_b" />
+      <UsablePiece piece_id="sg_t5_spear_handle_005_a" />
+      <UsablePiece piece_id="sg_t5_spear_handle_005_b" />
+      <UsablePiece piece_id="sg_t5_spear_handle_006_a" />
+      <UsablePiece piece_id="sg_t5_spear_handle_006_b" />
+      <UsablePiece piece_id="sg_t5_spear_handle_007_a" />
+      <UsablePiece piece_id="sg_t5_spear_handle_007_b" />
+
+      <UsablePiece piece_id="sg_t1_pommel_a_001" />
+      <UsablePiece piece_id="sg_t1_pommel_a_002" />
+      <UsablePiece piece_id="sg_t1_pommel_a_003" />
+      <UsablePiece piece_id="sg_t1_pommel_a_004" />
+      <UsablePiece piece_id="sg_t1_pommel_a_005" />
+      <UsablePiece piece_id="sg_t1_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_001" />
+      <UsablePiece piece_id="sg_t2_pommel_a_002" />
+      <UsablePiece piece_id="sg_t2_pommel_a_003" />
+      <UsablePiece piece_id="sg_t2_pommel_a_004" />
+      <UsablePiece piece_id="sg_t2_pommel_a_005" />
+      <UsablePiece piece_id="sg_t2_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_007" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_005" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_001" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_003" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_005" />
+      <UsablePiece piece_id="sg_t4_pommel_a_006" />
+      <UsablePiece piece_id="sg_t5_pommel_a_001" />
+      <UsablePiece piece_id="sg_t5_pommel_a_002" />
+      <UsablePiece piece_id="sg_t5_pommel_a_003" />
+      <UsablePiece piece_id="sg_t5_pommel_a_004" />
+      <UsablePiece piece_id="sg_t5_pommel_a_005" />
+    </UsablePieces>
+  </CraftingTemplate>
+
+  <CraftingTemplate id="SG_Pike"
+                    item_type="Polearm"
+                    modifier_group="polearm"
+                    item_holsters="polearm_back:polearm_back_2:polearm_back_3:polearm_back_4"
+                    default_item_holster_position_offset="0,0,-0.30"
+                    use_weapon_as_holster_mesh="true">
+    <PieceDatas>
+      <PieceData piece_type="Handle"
+                 build_order="0" />
+      <PieceData piece_type="Guard"
+                 build_order="1" />
+      <PieceData piece_type="Blade"
+                 build_order="2" />
+      <PieceData piece_type="Pommel"
+                 build_order="-1" />
+    </PieceDatas>
+    <WeaponDescriptions>
+      <WeaponDescription id="SG_TwoHandedPolearm_Pike" />
+      <WeaponDescription id="SG_TwoHandedPolearm_Bracing" />
+    </WeaponDescriptions>
+    <StatsData>
+      <StatData stat_type="Weight"
+                max_value="7.0" />
+      <StatData stat_type="WeaponReach"
+                max_value="300" />
+      <StatData stat_type="ThrustSpeed"
+                max_value="200" />
+      <StatData stat_type="SwingSpeed"
+                max_value="200" />
+      <StatData stat_type="ThrustDamage"
+                max_value="500" />
+      <StatData stat_type="SwingDamage"
+                max_value="500" />
+      <StatData stat_type="Handling"
+                max_value="200" />
+      <!--<StatData stat_type="FollowUp" max_value="200" />-->
+    </StatsData>
+    <UsablePieces>
+      <UsablePiece piece_id="default_polearm_guard" />
+      <UsablePiece piece_id="default_polearm_pommel" />
+      
+      <UsablePiece piece_id="sg_spear_blade_001"/>
+      <UsablePiece piece_id="sg_spear_blade_002"/>
+      <UsablePiece piece_id="sg_spear_blade_003"/>
+      <UsablePiece piece_id="sg_spear_blade_004"/>
+      <UsablePiece piece_id="sg_spear_blade_005"/>
+      <UsablePiece piece_id="sg_spear_blade_006"/>
+      <UsablePiece piece_id="sg_spear_blade_007"/>
+      <UsablePiece piece_id="sg_spear_blade_008"/>
+      <UsablePiece piece_id="sg_spear_blade_009"/>
+      <UsablePiece piece_id="sg_spear_blade_010"/>
+      <UsablePiece piece_id="sg_spear_blade_011"/>
+      <UsablePiece piece_id="sg_spear_blade_012_a"/>
+      <UsablePiece piece_id="sg_spear_blade_012_b"/>
+      <UsablePiece piece_id="sg_spear_blade_013_a"/>
+      <UsablePiece piece_id="sg_spear_blade_013_b"/>
+      <UsablePiece piece_id="sg_spear_blade_014"/>
+      <UsablePiece piece_id="sg_spear_blade_015"/>
+      <UsablePiece piece_id="sg_spear_blade_016"/>
+      <UsablePiece piece_id="sg_spear_blade_017"/>
+      <UsablePiece piece_id="sg_spear_blade_018"/>
+      <UsablePiece piece_id="sg_spear_blade_019"/>
+      <UsablePiece piece_id="sg_spear_blade_020"/>
+      <UsablePiece piece_id="sg_spear_blade_021"/>
+      <UsablePiece piece_id="sg_spear_blade_022"/>
+      <UsablePiece piece_id="sg_spear_blade_023"/>
+      <UsablePiece piece_id="sg_spear_blade_024"/>
+      <UsablePiece piece_id="sg_spear_blade_025"/>
+      <UsablePiece piece_id="sg_spear_blade_026"/>
+      <UsablePiece piece_id="sg_spear_blade_027"/>
+      <UsablePiece piece_id="sg_spear_blade_028"/>
+      <UsablePiece piece_id="sg_spear_blade_029"/>
+      <UsablePiece piece_id="sg_spear_blade_030"/>
+      <UsablePiece piece_id="sg_spear_blade_031"/>
+      <UsablePiece piece_id="sg_spear_blade_032"/>
+      <UsablePiece piece_id="sg_spear_whole_002_blade"/>
+      <UsablePiece piece_id="sg_spear_handle_001_e" />
+      <UsablePiece piece_id="sg_spear_handle_002_e" />
+      <UsablePiece piece_id="sg_spear_handle_003_e" />
+      <UsablePiece piece_id="sg_spear_handle_004_e" />
+      <UsablePiece piece_id="sg_spear_handle_005_e" />
+      <UsablePiece piece_id="lz_spear_whole_yl1_blade" />
+      <UsablePiece piece_id="lz_spear_whole_yl1_handle" />
+      <UsablePiece piece_id="lz_spear_whole_yl2_blade" />
+      <UsablePiece piece_id="lz_spear_whole_yl2_handle" />
+      <UsablePiece piece_id="lz_spear_whole_yl3_blade" />
+      <UsablePiece piece_id="lz_spear_whole_yl3_handle" />
+      <UsablePiece piece_id="lz_spear_whole_hs1_blade" />
+      <UsablePiece piece_id="lz_spear_whole_hs1_handle" />
+      <UsablePiece piece_id="lz_spear_whole_hs2_blade" />
+      <UsablePiece piece_id="lz_spear_whole_hs2_handle" />
+      <UsablePiece piece_id="lz_spear_whole_hs3_blade" />
+      <UsablePiece piece_id="lz_spear_whole_hs3_handle" />
+      <UsablePiece piece_id="sg_spear_pommel_001"/>
+      <UsablePiece piece_id="sg_spear_pommel_002"/>
+      <UsablePiece piece_id="sg_spear_pommel_004"/>
+      <UsablePiece piece_id="sg_spear_pommel_005"/>
+      <UsablePiece piece_id="sg_spear_pommel_006"/>
+      <UsablePiece piece_id="sg_spear_pommel_009"/>
+      <UsablePiece piece_id="sg_spear_pommel_011"/>
+      <UsablePiece piece_id="sg_spear_pommel_012"/>
+      <UsablePiece piece_id="sg_spear_pommel_013"/>
+      <UsablePiece piece_id="sg_spear_pommel_015"/>
+      <UsablePiece piece_id="sg_spear_pommel_016"/>
+      <UsablePiece piece_id="sg_spear_pommel_017"/>
+      <UsablePiece piece_id="sg_spear_pommel_019"/>
+      <UsablePiece piece_id="sg_spear_pommel_021"/>
+      <UsablePiece piece_id="sg_spear_pommel_022"/>
+      <UsablePiece piece_id="sg_spear_pommel_023"/>
+      <UsablePiece piece_id="sg_spear_pommel_024"/>
+      <UsablePiece piece_id="sg_spear_pommel_025"/>
+      <UsablePiece piece_id="sg_spear_pommel_028"/>
+      <UsablePiece piece_id="sg_spear_pommel_030"/>
+      <UsablePiece piece_id="sg_spear_pommel_031"/>
+      <UsablePiece piece_id="lz_spear_whole_601_blade"/>
+      <UsablePiece piece_id="lz_spear_whole_601_handle"/>
+
+
+
+      <UsablePiece piece_id="sg_t1_spear_blade_001" />
+      <UsablePiece piece_id="sg_t1_spear_blade_002" />
+      <UsablePiece piece_id="sg_t1_spear_blade_003" />
+      <UsablePiece piece_id="sg_t1_spear_blade_004" />
+      <UsablePiece piece_id="sg_t1_spear_blade_011" />
+      <UsablePiece piece_id="sg_t1_spear_blade_012" />
+      <UsablePiece piece_id="sg_t1_spear_blade_013" />
+      <UsablePiece piece_id="sg_t1_spear_blade_014" />
+      <UsablePiece piece_id="sg_t1_spear_blade_015" />
+      <UsablePiece piece_id="sg_t2_spear_blade_001" />
+      <UsablePiece piece_id="sg_t2_spear_blade_002" />
+      <UsablePiece piece_id="sg_t2_spear_blade_010" />
+      <UsablePiece piece_id="sg_t2_spear_blade_011" />
+      <UsablePiece piece_id="sg_t2_spear_blade_012" />
+      <UsablePiece piece_id="sg_t2_spear_blade_013" />
+      <UsablePiece piece_id="sg_t2_spear_blade_014" />
+      <UsablePiece piece_id="sg_t2_spear_blade_015" />
+      <UsablePiece piece_id="sg_t2_spear_blade_016" />
+      <UsablePiece piece_id="sg_t2_spear_blade_017" />
+      <UsablePiece piece_id="sg_t2_spear_blade_018" />
+      <UsablePiece piece_id="sg_t3_spear_blade_001" />
+      <UsablePiece piece_id="sg_t3_spear_blade_002" />
+      <UsablePiece piece_id="sg_t3_spear_blade_003" />
+      <UsablePiece piece_id="sg_t3_spear_blade_004" />
+      <UsablePiece piece_id="sg_t3_spear_blade_005" />
+      <UsablePiece piece_id="sg_t3_spear_blade_006" />
+      <UsablePiece piece_id="sg_t3_spear_blade_016" />
+      <UsablePiece piece_id="sg_t3_spear_blade_017" />
+      <UsablePiece piece_id="sg_t3_spear_blade_018" />
+      <UsablePiece piece_id="sg_t3_spear_blade_019" />
+      <UsablePiece piece_id="sg_t3_spear_blade_020" />
+      <UsablePiece piece_id="sg_t3_spear_blade_021" />
+      <UsablePiece piece_id="sg_t3_spear_blade_022" />
+      <UsablePiece piece_id="sg_t3_spear_blade_023" />
+      <UsablePiece piece_id="sg_t3_spear_blade_024" />
+      <UsablePiece piece_id="sg_t3_spear_blade_025" />
+      <UsablePiece piece_id="sg_t3_spear_blade_026" />
+      <UsablePiece piece_id="sg_t4_spear_blade_001" />
+      <UsablePiece piece_id="sg_t4_spear_blade_002" />
+      <UsablePiece piece_id="sg_t4_spear_blade_003" />
+      <UsablePiece piece_id="sg_t4_spear_blade_004" />
+      <UsablePiece piece_id="sg_t4_spear_blade_005" />
+      <UsablePiece piece_id="sg_t4_spear_blade_006" />
+      <UsablePiece piece_id="sg_t4_spear_blade_007" />
+      <UsablePiece piece_id="sg_t4_spear_blade_008" />
+      <UsablePiece piece_id="sg_t4_spear_blade_012" />
+      <UsablePiece piece_id="sg_t4_spear_blade_015" />
+      <UsablePiece piece_id="sg_t4_spear_blade_016" />
+      <UsablePiece piece_id="sg_t4_spear_blade_017" />
+      <UsablePiece piece_id="sg_t4_spear_blade_018" />
+      <UsablePiece piece_id="sg_t4_spear_blade_020" />
+      <UsablePiece piece_id="sg_t4_spear_blade_021" />
+      <UsablePiece piece_id="sg_t4_spear_blade_022" />
+      <UsablePiece piece_id="sg_t4_spear_blade_023" />
+      <UsablePiece piece_id="sg_t4_spear_blade_024" />
+      <UsablePiece piece_id="sg_t5_spear_blade_001" />
+      <UsablePiece piece_id="sg_t5_spear_blade_002" />
+      <UsablePiece piece_id="sg_t5_spear_blade_003" />
+      <UsablePiece piece_id="sg_t5_spear_blade_004" />
+      <UsablePiece piece_id="sg_t5_spear_blade_005" />
+      <UsablePiece piece_id="sg_t5_spear_blade_006" />
+      <UsablePiece piece_id="sg_t5_spear_blade_013" />
+      <UsablePiece piece_id="sg_t5_spear_blade_014" />
+      <UsablePiece piece_id="sg_t5_spear_blade_015" />
+      <UsablePiece piece_id="sg_t5_spear_blade_016" />
+      <UsablePiece piece_id="sg_t5_spear_blade_017" />
+      <UsablePiece piece_id="sg_t5_spear_blade_018" />
+
+      <UsablePiece piece_id="sg_t1_spear_guard_001" />
+      <UsablePiece piece_id="sg_t1_spear_guard_002" />
+      <UsablePiece piece_id="sg_t1_spear_guard_003" />
+      <UsablePiece piece_id="sg_t1_spear_guard_004" />
+      <UsablePiece piece_id="sg_t1_spear_guard_005" />
+      <UsablePiece piece_id="sg_t1_spear_guard_006" />
+      <UsablePiece piece_id="sg_t1_spear_guard_007" />
+      <UsablePiece piece_id="sg_t1_spear_guard_008" />
+      <UsablePiece piece_id="sg_t1_spear_guard_009" />
+      <UsablePiece piece_id="sg_t1_spear_guard_010" />
+      <UsablePiece piece_id="sg_t1_spear_guard_011" />
+      <UsablePiece piece_id="sg_t1_spear_guard_012" />
+      <UsablePiece piece_id="sg_t1_spear_guard_013" />
+      <UsablePiece piece_id="sg_t1_spear_guard_014" />
+      <UsablePiece piece_id="sg_t1_spear_guard_015" />
+      <UsablePiece piece_id="sg_t2_spear_guard_001" />
+      <UsablePiece piece_id="sg_t2_spear_guard_002" />
+      <UsablePiece piece_id="sg_t2_spear_guard_003" />
+      <UsablePiece piece_id="sg_t2_spear_guard_004" />
+      <UsablePiece piece_id="sg_t2_spear_guard_005" />
+      <UsablePiece piece_id="sg_t2_spear_guard_006" />
+      <UsablePiece piece_id="sg_t2_spear_guard_007" />
+      <UsablePiece piece_id="sg_t2_spear_guard_008" />
+      <UsablePiece piece_id="sg_t2_spear_guard_009" />
+      <UsablePiece piece_id="sg_t2_spear_guard_010" />
+      <UsablePiece piece_id="sg_t2_spear_guard_011" />
+      <UsablePiece piece_id="sg_t2_spear_guard_012" />
+      <UsablePiece piece_id="sg_t2_spear_guard_013" />
+      <UsablePiece piece_id="sg_t2_spear_guard_014" />
+      <UsablePiece piece_id="sg_t2_spear_guard_015" />
+      <UsablePiece piece_id="sg_t2_spear_guard_016" />
+      <UsablePiece piece_id="sg_t2_spear_guard_017" />
+      <UsablePiece piece_id="sg_t2_spear_guard_018" />
+      <UsablePiece piece_id="sg_t3_spear_guard_001" />
+      <UsablePiece piece_id="sg_t3_spear_guard_002" />
+      <UsablePiece piece_id="sg_t3_spear_guard_003" />
+      <UsablePiece piece_id="sg_t3_spear_guard_004" />
+      <UsablePiece piece_id="sg_t3_spear_guard_005" />
+      <UsablePiece piece_id="sg_t3_spear_guard_006" />
+      <UsablePiece piece_id="sg_t3_spear_guard_007" />
+      <UsablePiece piece_id="sg_t3_spear_guard_008" />
+      <UsablePiece piece_id="sg_t3_spear_guard_009" />
+      <UsablePiece piece_id="sg_t3_spear_guard_010" />
+      <UsablePiece piece_id="sg_t3_spear_guard_011" />
+      <UsablePiece piece_id="sg_t3_spear_guard_012" />
+      <UsablePiece piece_id="sg_t3_spear_guard_013" />
+      <UsablePiece piece_id="sg_t3_spear_guard_014" />
+      <UsablePiece piece_id="sg_t3_spear_guard_015" />
+      <UsablePiece piece_id="sg_t3_spear_guard_016" />
+      <UsablePiece piece_id="sg_t3_spear_guard_017" />
+      <UsablePiece piece_id="sg_t3_spear_guard_018" />
+      <UsablePiece piece_id="sg_t3_spear_guard_020" />
+      <UsablePiece piece_id="sg_t3_spear_guard_021" />
+      <UsablePiece piece_id="sg_t3_spear_guard_022" />
+      <UsablePiece piece_id="sg_t3_spear_guard_023" />
+      <UsablePiece piece_id="sg_t3_spear_guard_024" />
+      <UsablePiece piece_id="sg_t3_spear_guard_025" />
+      <UsablePiece piece_id="sg_t3_spear_guard_026" />
+      <UsablePiece piece_id="sg_t3_spear_guard_027" />
+      <UsablePiece piece_id="sg_t4_spear_guard_001" />
+      <UsablePiece piece_id="sg_t4_spear_guard_002" />
+      <UsablePiece piece_id="sg_t4_spear_guard_003" />
+      <UsablePiece piece_id="sg_t4_spear_guard_005" />
+      <UsablePiece piece_id="sg_t4_spear_guard_006" />
+      <UsablePiece piece_id="sg_t4_spear_guard_007" />
+      <UsablePiece piece_id="sg_t4_spear_guard_008" />
+      <UsablePiece piece_id="sg_t4_spear_guard_009" />
+      <UsablePiece piece_id="sg_t4_spear_guard_010" />
+      <UsablePiece piece_id="sg_t4_spear_guard_011" />
+      <UsablePiece piece_id="sg_t4_spear_guard_012" />
+      <UsablePiece piece_id="sg_t4_spear_guard_013" />
+      <UsablePiece piece_id="sg_t4_spear_guard_014" />
+      <UsablePiece piece_id="sg_t4_spear_guard_015" />
+      <UsablePiece piece_id="sg_t4_spear_guard_016" />
+      <UsablePiece piece_id="sg_t4_spear_guard_017" />
+      <UsablePiece piece_id="sg_t4_spear_guard_018" />
+      <UsablePiece piece_id="sg_t4_spear_guard_019" />
+      <UsablePiece piece_id="sg_t4_spear_guard_020" />
+      <UsablePiece piece_id="sg_t5_spear_guard_001" />
+      <UsablePiece piece_id="sg_t5_spear_guard_003" />
+      <UsablePiece piece_id="sg_t5_spear_guard_004" />
+      <UsablePiece piece_id="sg_t5_spear_guard_005" />
+      <UsablePiece piece_id="sg_t5_spear_guard_006" />
+      <UsablePiece piece_id="sg_t5_spear_guard_007" />
+      <UsablePiece piece_id="sg_t5_spear_guard_008" />
+      <UsablePiece piece_id="sg_t5_spear_guard_009" />
+      <UsablePiece piece_id="sg_t5_spear_guard_010" />
+      <UsablePiece piece_id="sg_t5_spear_guard_011" />
+      <UsablePiece piece_id="sg_t5_spear_guard_012" />
+      <UsablePiece piece_id="sg_t5_spear_guard_013" />
+      <UsablePiece piece_id="sg_t5_spear_guard_014" />
+      <UsablePiece piece_id="sg_t5_spear_guard_015" />
+      <UsablePiece piece_id="sg_t5_spear_guard_016" />
+      <UsablePiece piece_id="sg_t5_spear_guard_017" />
+      <UsablePiece piece_id="sg_t5_spear_guard_018" />
+      <UsablePiece piece_id="sg_t5_spear_guard_019" />
+      <UsablePiece piece_id="sg_t5_spear_guard_020" />
+      <UsablePiece piece_id="sg_t5_spear_guard_021" />
+      <UsablePiece piece_id="sg_t5_spear_guard_022" />
+
+      <UsablePiece piece_id="sg_t1_spear_handle_001_d" />
+      <UsablePiece piece_id="sg_t1_spear_handle_005_b" />
+      <UsablePiece piece_id="sg_t2_spear_handle_007_a" />
+      <UsablePiece piece_id="sg_t5_spear_handle_003_b" />
+      <UsablePiece piece_id="sg_spear_whole_002_handle"/>
+
+      <UsablePiece piece_id="sg_t1_pommel_a_001" />
+      <UsablePiece piece_id="sg_t1_pommel_a_002" />
+      <UsablePiece piece_id="sg_t1_pommel_a_003" />
+      <UsablePiece piece_id="sg_t1_pommel_a_004" />
+      <UsablePiece piece_id="sg_t1_pommel_a_005" />
+      <UsablePiece piece_id="sg_t1_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_001" />
+      <UsablePiece piece_id="sg_t2_pommel_a_002" />
+      <UsablePiece piece_id="sg_t2_pommel_a_003" />
+      <UsablePiece piece_id="sg_t2_pommel_a_004" />
+      <UsablePiece piece_id="sg_t2_pommel_a_005" />
+      <UsablePiece piece_id="sg_t2_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_007" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_b" />
+      <UsablePiece piece_id="sg_t3_pommel_a_005" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_001" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_003" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_b" />
+      <UsablePiece piece_id="sg_t4_pommel_a_005" />
+      <UsablePiece piece_id="sg_t4_pommel_a_006" />
+      <UsablePiece piece_id="sg_t5_pommel_a_001" />
+      <UsablePiece piece_id="sg_t5_pommel_a_002" />
+      <UsablePiece piece_id="sg_t5_pommel_a_003" />
+      <UsablePiece piece_id="sg_t5_pommel_a_004" />
+      <UsablePiece piece_id="sg_t5_pommel_a_005" />
+    </UsablePieces>
+  </CraftingTemplate>
+
+	<CraftingTemplate id="SG_ThrowingKnife"
+		                item_type="Thrown"
+		                modifier_group="knife_throwing"
+		                item_holsters="throwing_knife_2:throwing_knife:throwing_stone:throwing_stone_2"
+		                piece_type_to_scale_holster_with="Blade"
+		                default_item_holster_position_offset="0,0,-0.1"
+		                always_show_holster_with_weapon="true">
+		<PieceDatas>
+			<PieceData
+				piece_type="Handle"
+				build_order="0" />
+			<PieceData
+				piece_type="Guard"
+				build_order="1" />
+			<PieceData
+				piece_type="Blade"
+				build_order="2" />
+			<PieceData
+				piece_type="Pommel"
+				build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="SG_ThrowingKnife" />
+			<WeaponDescription id="Dagger" />
+		</WeaponDescriptions>
+		<StatsData weapon_description="SG_ThrowingKnife">
+			<StatData
+				stat_type="Weight"
+				max_value="2.0" />
+			<StatData
+				stat_type="WeaponReach"
+				max_value="100" />
+			<StatData
+				stat_type="MissileSpeed"
+				max_value="150" />
+			<StatData
+				stat_type="MissileDamage"
+				max_value="200" />
+			<StatData
+				stat_type="Accuracy"
+				max_value="100" />
+		</StatsData>
+		<StatsData
+			weapon_description="Dagger">
+			<StatData
+				stat_type="Weight"
+				max_value="7.0" />
+			<StatData
+				stat_type="WeaponReach"
+				max_value="300" />
+			<StatData
+				stat_type="ThrustSpeed"
+				max_value="200" />
+			<StatData
+				stat_type="SwingSpeed"
+				max_value="200" />
+			<StatData
+				stat_type="ThrustDamage"
+				max_value="500" />
+			<StatData
+				stat_type="SwingDamage"
+				max_value="500" />
+			<StatData
+				stat_type="Handling"
+				max_value="200" />
+			<!--<StatData stat_type="FollowUp" max_value="200" />-->
+		</StatsData>
+		<UsablePieces>
+      <UsablePiece piece_id="default_polearm_guard" />
+      <UsablePiece piece_id="default_polearm_pommel" />
+
+			<UsablePiece piece_id="sg_throwing_knife_blade_001" />
+			<UsablePiece piece_id="sg_throwing_knife_blade_002" />
+
+			<UsablePiece piece_id="sg_throwing_knife_guard_001" />
+			<UsablePiece piece_id="sg_throwing_knife_guard_002" />
+
+			<UsablePiece piece_id="sg_throwing_knife_grip_001" />
+			<UsablePiece piece_id="sg_throwing_knife_grip_002" />
+
+			<UsablePiece piece_id="sg_throwing_knife_pommel_001" />
+			<UsablePiece piece_id="sg_throwing_knife_pommel_002" />
+
+      <UsablePiece piece_id="sg_throwing_knife_whole_001_blade" />
+			<UsablePiece piece_id="sg_throwing_knife_whole_001_grip" />
+    </UsablePieces>
+	</CraftingTemplate>
+
+	<CraftingTemplate id="SG_Javelin"
+		                item_type="Thrown"
+		                modifier_group="spear_dart_throwing"
+		                item_holsters="javelins:javelins_2:bow_hip:bow_hip_2"
+		                default_item_holster_position_offset="0,0,-0.10"
+		                piece_type_to_scale_holster_with="Handle"
+		                hidden_piece_types_on_holster="Guard:Handle:Pommel"
+		                rotate_weapon_in_holster="true"
+		                always_show_holster_with_weapon="true">
+		<PieceDatas>
+			<PieceData
+				piece_type="Handle"
+				build_order="0" />
+			<PieceData
+				piece_type="Guard"
+				build_order="1" />
+			<PieceData
+				piece_type="Blade"
+				build_order="2" />
+			<PieceData
+				piece_type="Pommel"
+				build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription
+				id="SG_Javelin" />
+			<WeaponDescription
+				id="OneHandedPolearm_JavelinAlternative" />
+		</WeaponDescriptions>
+		<StatsData weapon_description="SG_Javelin">
+			<StatData
+				stat_type="Weight"
+				max_value="7.0" />
+			<StatData
+				stat_type="WeaponReach"
+				max_value="300" />
+			<StatData
+				stat_type="MissileDamage"
+				max_value="500" />
+			<StatData
+				stat_type="MissileSpeed"
+				max_value="200" />
+			<StatData
+				stat_type="Accuracy"
+				max_value="100" />
+			<StatData
+				stat_type="StackAmount"
+				max_value="5" />
+		</StatsData>
+		<StatsData weapon_description="OneHandedPolearm_JavelinAlternative">
+			<StatData
+				stat_type="Weight"
+				max_value="7.0" />
+			<StatData
+				stat_type="WeaponReach"
+				max_value="300" />
+			<StatData
+				stat_type="ThrustSpeed"
+				max_value="200" />
+			<StatData
+				stat_type="SwingSpeed"
+				max_value="200" />
+			<StatData
+				stat_type="ThrustDamage"
+				max_value="500" />
+			<StatData
+				stat_type="SwingDamage"
+				max_value="500" />
+			<StatData
+				stat_type="Handling"
+				max_value="200" />
+			<!--<StatData stat_type="FollowUp" max_value="200" />-->
+		</StatsData>
+		<UsablePieces>
+			<UsablePiece piece_id="default_polearm_guard" />
+			<UsablePiece piece_id="default_polearm_pommel" />
+
+      <UsablePiece piece_id="sg_javelin_blade_001" />
+
+      <UsablePiece piece_id="sg_javelin_handle_001" />
+      <UsablePiece piece_id="sg_javelin_handle_002" />
+      <UsablePiece piece_id="sg_javelin_handle_003" />
+      <UsablePiece piece_id="sg_javelin_handle_004" />
+      <UsablePiece piece_id="sg_javelin_handle_005" />
+
+      <UsablePiece piece_id="sg_javelin_pommel_001" />
+
+		</UsablePieces>
+	</CraftingTemplate>
+
+	<CraftingTemplate id="SG_OneHandedAxe"
+		                item_type="OneHandedWeapon"
+		                modifier_group="axe"
+		                item_holsters="axe_right_hip:axe_right_hip_2:mace_right_hip:axe_back"
+		                default_item_holster_position_offset="0,0,-0.45"
+		                use_weapon_as_holster_mesh="true">
+		<PieceDatas>
+			<PieceData piece_type="Handle" build_order="0" />
+			<PieceData piece_type="Blade" build_order="1" />
+			<PieceData piece_type="Pommel" build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="SG_OneHandedAxe" />
+		</WeaponDescriptions>
+		<StatsData>
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+			<!--<StatData stat_type="FollowUp" max_value="200" />-->
+		</StatsData>
+		<UsablePieces>
+			<UsablePiece piece_id="default_polearm_pommel" />
+      
+      <UsablePiece piece_id="sg_axe_whole_002_head" />
+      <UsablePiece piece_id="sg_axe_whole_002_a_handle" />
+      <UsablePiece piece_id="sg_axe_whole_002_b_handle" />
+      <UsablePiece piece_id="sg_axe_whole_003_head" />
+      <UsablePiece piece_id="sg_axe_whole_003_handle" />
+
+      <UsablePiece piece_id="sg_axe_head_001" />
+      <UsablePiece piece_id="sg_axe_head_002_a" />
+      <UsablePiece piece_id="sg_axe_head_002_b" />
+      <UsablePiece piece_id="sg_axe_head_003" />
+      <UsablePiece piece_id="sg_axe_head_004" />
+
+      <UsablePiece piece_id="sg_axe_pommel_002" />
+
+      <UsablePiece piece_id="sg_axe_handle_001_a" />
+      <UsablePiece piece_id="sg_axe_handle_001_b" />
+      <UsablePiece piece_id="sg_axe_handle_002_a" />
+      <UsablePiece piece_id="sg_axe_handle_002_b" />
+      <UsablePiece piece_id="sg_axe_handle_003_a" />
+      <UsablePiece piece_id="sg_axe_handle_003_b" />
+      <UsablePiece piece_id="sg_axe_handle_004_a" />
+      <UsablePiece piece_id="sg_axe_handle_004_b" />
+      <UsablePiece piece_id="sg_axe_handle_005_a" />
+      <UsablePiece piece_id="sg_axe_handle_005_b" />
+
+
+      <UsablePiece piece_id="sg_t1_axe_head_001" />
+      <UsablePiece piece_id="sg_t1_axe_head_002" />
+      <UsablePiece piece_id="sg_t1_axe_head_003" />
+      <UsablePiece piece_id="sg_t1_axe_head_004" />
+      <UsablePiece piece_id="sg_t2_axe_head_001" />
+      <UsablePiece piece_id="sg_t2_axe_head_002" />
+      <UsablePiece piece_id="sg_t2_axe_head_003" />
+      <UsablePiece piece_id="sg_t2_axe_head_004" />
+      <UsablePiece piece_id="sg_t2_axe_head_005" />
+      <UsablePiece piece_id="sg_t2_axe_head_006" />
+      <UsablePiece piece_id="sg_t3_axe_head_001" />
+      <UsablePiece piece_id="sg_t3_axe_head_002" />
+      <UsablePiece piece_id="sg_t3_axe_head_003" />
+      <UsablePiece piece_id="sg_t3_axe_head_004" />
+      <UsablePiece piece_id="sg_t3_axe_head_005" />
+      <UsablePiece piece_id="sg_t3_axe_head_006" />
+      <UsablePiece piece_id="sg_t4_axe_head_001" />
+      <UsablePiece piece_id="sg_t4_axe_head_002" />
+      <UsablePiece piece_id="sg_t4_axe_head_003" />
+      <UsablePiece piece_id="sg_t4_axe_head_004" />
+      <UsablePiece piece_id="sg_t4_axe_head_005" />
+      <UsablePiece piece_id="sg_t4_axe_head_006" />
+      <UsablePiece piece_id="sg_t5_axe_head_001" />
+      <UsablePiece piece_id="sg_t5_axe_head_002" />
+      <UsablePiece piece_id="sg_t5_axe_head_003" />
+      <UsablePiece piece_id="sg_t5_axe_head_004" />
+      <UsablePiece piece_id="sg_t5_axe_head_005" />
+      <UsablePiece piece_id="sg_t5_axe_head_006" />
+      <UsablePiece piece_id="sg_t5_axe_head_007" />
+      <UsablePiece piece_id="sg_t1_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t1_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t1_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_004_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_005_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_004_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_005_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_004_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_005_1h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_004_1h" />
+      <UsablePiece piece_id="sg_t1_pommel_a_001" />
+      <UsablePiece piece_id="sg_t1_pommel_a_002" />
+      <UsablePiece piece_id="sg_t1_pommel_a_003" />
+      <UsablePiece piece_id="sg_t1_pommel_a_004" />
+      <UsablePiece piece_id="sg_t2_pommel_a_001" />
+      <UsablePiece piece_id="sg_t2_pommel_a_002" />
+      <UsablePiece piece_id="sg_t2_pommel_a_003" />
+      <UsablePiece piece_id="sg_t2_pommel_a_004" />
+      <UsablePiece piece_id="sg_t2_pommel_a_005" />
+      <UsablePiece piece_id="sg_t2_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_007" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_005" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_001" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_003" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_005" />
+      <UsablePiece piece_id="sg_t4_pommel_a_006" />
+      <UsablePiece piece_id="sg_t5_pommel_a_001" />
+      <UsablePiece piece_id="sg_t5_pommel_a_002" />
+      <UsablePiece piece_id="sg_t5_pommel_a_003" />
+      <UsablePiece piece_id="sg_t5_pommel_a_004" />
+      <UsablePiece piece_id="sg_t5_pommel_a_005" />
+		</UsablePieces>
+	</CraftingTemplate>
+	<CraftingTemplate id="SG_TwoHandedAxe"
+                    item_type="TwoHandedWeapon"
+                    modifier_group="axe"
+                    item_holsters="axe_back:axe_back_2:axe_back_3:axe_back_4"
+                    default_item_holster_position_offset="0,0,-0.65"
+                    use_weapon_as_holster_mesh="true">
+		<PieceDatas>
+			<PieceData piece_type="Handle" build_order="0" />
+			<PieceData piece_type="Blade" build_order="1" />
+			<PieceData piece_type="Pommel" build_order="-1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="OneHandedBastardAxe" />
+			<WeaponDescription id="SG_TwoHandedAxe" />
+			<WeaponDescription id="OneHandedBastardAxeAlternative" />
+		</WeaponDescriptions>
+		<StatsData>
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+			<!--<StatData stat_type="FollowUp" max_value="200" />-->
+		</StatsData>
+		<UsablePieces>
+		  <UsablePiece piece_id="default_polearm_pommel" />
+      <UsablePiece piece_id="sg_axe_whole_001_head"/>
+      <UsablePiece piece_id="sg_axe_whole_001_handle"/>
+
+      <UsablePiece piece_id="sg_axe_head_001" />
+      <UsablePiece piece_id="sg_axe_head_002_a" />
+      <UsablePiece piece_id="sg_axe_head_002_b" />
+      <UsablePiece piece_id="sg_axe_head_003" />
+      <UsablePiece piece_id="sg_axe_head_004" />
+
+      <UsablePiece piece_id="sg_axe_pommel_002" />
+
+      <UsablePiece piece_id="sg_axe_handle_001_c" />
+      <UsablePiece piece_id="sg_axe_handle_001_d" />
+      <UsablePiece piece_id="sg_axe_handle_001_e" />
+      <UsablePiece piece_id="sg_axe_handle_002_c" />
+      <UsablePiece piece_id="sg_axe_handle_002_d" />
+      <UsablePiece piece_id="sg_axe_handle_002_e" />
+      <UsablePiece piece_id="sg_axe_handle_003_c" />
+      <UsablePiece piece_id="sg_axe_handle_003_d" />
+      <UsablePiece piece_id="sg_axe_handle_003_e" />
+      <UsablePiece piece_id="sg_axe_handle_004_c" />
+      <UsablePiece piece_id="sg_axe_handle_004_d" />
+      <UsablePiece piece_id="sg_axe_handle_004_e" />
+      <UsablePiece piece_id="sg_axe_handle_005_c" />
+      <UsablePiece piece_id="sg_axe_handle_005_d" />
+      <UsablePiece piece_id="sg_axe_handle_005_e" />
+
+
+      <UsablePiece piece_id="sg_t1_axe_head_001" />
+      <UsablePiece piece_id="sg_t1_axe_head_002" />
+      <UsablePiece piece_id="sg_t1_axe_head_003" />
+      <UsablePiece piece_id="sg_t1_axe_head_004" />
+      <UsablePiece piece_id="sg_t2_axe_head_001" />
+      <UsablePiece piece_id="sg_t2_axe_head_003" />
+      <UsablePiece piece_id="sg_t2_axe_head_005" />
+      <UsablePiece piece_id="sg_t2_axe_head_006" />
+      <UsablePiece piece_id="sg_t3_axe_head_002" />
+      <UsablePiece piece_id="sg_t3_axe_head_003" />
+      <UsablePiece piece_id="sg_t3_axe_head_004" />
+      <UsablePiece piece_id="sg_t3_axe_head_005" />
+      <UsablePiece piece_id="sg_t3_axe_head_006" />
+      <UsablePiece piece_id="sg_t4_axe_head_002" />
+      <UsablePiece piece_id="sg_t4_axe_head_003" />
+      <UsablePiece piece_id="sg_t4_axe_head_004" />
+      <UsablePiece piece_id="sg_t4_axe_head_005" />
+      <UsablePiece piece_id="sg_t4_axe_head_006" />
+      <UsablePiece piece_id="sg_t5_axe_head_001" />
+      <UsablePiece piece_id="sg_t5_axe_head_002" />
+      <UsablePiece piece_id="sg_t5_axe_head_004" />
+      <UsablePiece piece_id="sg_t5_axe_head_005" />
+      <UsablePiece piece_id="sg_t5_axe_head_006" />
+      <UsablePiece piece_id="sg_t5_axe_head_007" />
+      <UsablePiece piece_id="sg_t1_axe_handle_001_2h" />
+      <UsablePiece piece_id="sg_t1_axe_handle_002_2h" />
+      <UsablePiece piece_id="sg_t1_axe_handle_003_2h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_001_2h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_002_2h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_003_2h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_004_2h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_005_2h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_001_2h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_002_2h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_004_2h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_005_2h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_001_2h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_002_2h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_005_2h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_001_2h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_002_2h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_003_2h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_004_2h" />
+      <UsablePiece piece_id="sg_t1_pommel_a_001" />
+      <UsablePiece piece_id="sg_t1_pommel_a_002" />
+      <UsablePiece piece_id="sg_t1_pommel_a_003" />
+      <UsablePiece piece_id="sg_t1_pommel_a_004" />
+      <UsablePiece piece_id="sg_t2_pommel_a_001" />
+      <UsablePiece piece_id="sg_t2_pommel_a_002" />
+      <UsablePiece piece_id="sg_t2_pommel_a_003" />
+      <UsablePiece piece_id="sg_t2_pommel_a_004" />
+      <UsablePiece piece_id="sg_t2_pommel_a_005" />
+      <UsablePiece piece_id="sg_t2_pommel_a_006" />
+      <UsablePiece piece_id="sg_t2_pommel_a_007" />
+      <UsablePiece piece_id="sg_t3_pommel_a_001_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_003_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t3_pommel_a_005" />
+      <UsablePiece piece_id="sg_t3_pommel_a_006_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_001" />
+      <UsablePiece piece_id="sg_t4_pommel_a_002_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_003" />
+      <UsablePiece piece_id="sg_t4_pommel_a_004_a" />
+      <UsablePiece piece_id="sg_t4_pommel_a_005" />
+      <UsablePiece piece_id="sg_t4_pommel_a_006" />
+      <UsablePiece piece_id="sg_t5_pommel_a_001" />
+      <UsablePiece piece_id="sg_t5_pommel_a_002" />
+      <UsablePiece piece_id="sg_t5_pommel_a_003" />
+      <UsablePiece piece_id="sg_t5_pommel_a_004" />
+      <UsablePiece piece_id="sg_t5_pommel_a_005" />
+		</UsablePieces>
+	</CraftingTemplate>
+
+
+	<CraftingTemplate id="SG_ThrowingAxe"
+                    item_type="Thrown"
+		                modifier_group="axe_throwing"
+		                item_holsters="throwing_axe:throwing_axe_2:axe_right_hip_2:axe_back"
+		                default_item_holster_position_offset="0,0,0.05"
+		                always_show_holster_with_weapon="true">
+		<PieceDatas>
+			<PieceData piece_type="Handle" build_order="0" />
+			<PieceData piece_type="Blade" build_order="1" />
+		</PieceDatas>
+		<WeaponDescriptions>
+			<WeaponDescription id="SG_ThrowingAxe" />
+			<WeaponDescription id="SG_OneHandedAxe" />
+		</WeaponDescriptions>
+		<StatsData weapon_description="SG_ThrowingAxe">
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="MissileDamage" max_value="500" />
+			<StatData stat_type="MissileSpeed" max_value="200" />
+			<StatData stat_type="Accuracy" max_value="100" />
+		</StatsData>
+		<StatsData weapon_description="SG_OneHandedAxe">
+			<StatData stat_type="Weight" max_value="7.0" />
+			<StatData stat_type="WeaponReach" max_value="300" />
+			<StatData stat_type="ThrustSpeed" max_value="200" />
+			<StatData stat_type="SwingSpeed" max_value="200" />
+			<StatData stat_type="ThrustDamage" max_value="500" />
+			<StatData stat_type="SwingDamage" max_value="500" />
+			<StatData stat_type="Handling" max_value="200" />
+			<!--<StatData stat_type="FollowUp" max_value="200" />-->
+		</StatsData>
+		<UsablePieces>
+      <UsablePiece piece_id="sg_t1_throwing_axe_head_001" />
+      <UsablePiece piece_id="sg_t1_throwing_axe_head_002" />
+      <UsablePiece piece_id="sg_t1_throwing_axe_head_003" />
+      <UsablePiece piece_id="sg_t1_throwing_axe_head_004" />
+      <UsablePiece piece_id="sg_t2_throwing_axe_head_001" />
+      <UsablePiece piece_id="sg_t2_throwing_axe_head_002" />
+      <UsablePiece piece_id="sg_t2_throwing_axe_head_003" />
+      <UsablePiece piece_id="sg_t2_throwing_axe_head_004" />
+      <UsablePiece piece_id="sg_t2_throwing_axe_head_005" />
+      <UsablePiece piece_id="sg_t2_throwing_axe_head_006" />
+      <UsablePiece piece_id="sg_t3_throwing_axe_head_001" />
+      <UsablePiece piece_id="sg_t3_throwing_axe_head_002" />
+      <UsablePiece piece_id="sg_t3_throwing_axe_head_003" />
+      <UsablePiece piece_id="sg_t3_throwing_axe_head_004" />
+      <UsablePiece piece_id="sg_t3_throwing_axe_head_005" />
+      <UsablePiece piece_id="sg_t3_throwing_axe_head_006" />
+      <UsablePiece piece_id="sg_t4_throwing_axe_head_003" />
+      <UsablePiece piece_id="sg_t4_throwing_axe_head_004" />
+      <UsablePiece piece_id="sg_t4_throwing_axe_head_005" />
+      <UsablePiece piece_id="sg_t4_throwing_axe_head_006" />
+      <UsablePiece piece_id="sg_t5_throwing_axe_head_001" />
+      <UsablePiece piece_id="sg_t5_throwing_axe_head_003" />
+      <UsablePiece piece_id="sg_t5_throwing_axe_head_004" />
+      <UsablePiece piece_id="sg_t5_throwing_axe_head_005" />
+      <UsablePiece piece_id="sg_t5_throwing_axe_head_006" />
+      <UsablePiece piece_id="sg_t5_throwing_axe_head_007" />
+      <UsablePiece piece_id="sg_t1_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t1_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t1_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_004_1h" />
+      <UsablePiece piece_id="sg_t2_axe_handle_005_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_004_1h" />
+      <UsablePiece piece_id="sg_t3_axe_handle_005_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_004_1h" />
+      <UsablePiece piece_id="sg_t4_axe_handle_005_1h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_001_1h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_002_1h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_003_1h" />
+      <UsablePiece piece_id="sg_t5_axe_handle_004_1h" />
+		</UsablePieces>
+	</CraftingTemplate>
+</CraftingTemplates>

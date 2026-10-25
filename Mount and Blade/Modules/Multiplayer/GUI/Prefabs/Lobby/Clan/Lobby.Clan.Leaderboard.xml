@@ -1,0 +1,169 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"  Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.7">
+      <Children>
+
+        <NavigationForcedScopeCollectionTargeter CollectionID="LobbyClanLeaderboardCollection" CollectionParent="..\." />
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1100" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="flat_panel_9" >
+          <Children>
+
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="100" MarginRight="100" MarginTop="20" StackLayout.LayoutMethod="VerticalTopToBottom" IsHidden="@IsDataLoading">
+              <Children>
+                <!--Name-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginBottom="25" Brush="MPLobby.Clan.Title.Text" Text="@LeaderboardText" />
+
+                <!--Clans Leaderboard-->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+                  <Children>
+                    <!--Headers-->
+                    <NavigationScopeTargeter ScopeID="ClanLobbyLeaderboardSortButtonsScope" ScopeParent="..\SortButtonsParent" ScopeMovements="Horizontal" />
+                    <ListPanel Id="SortButtonsParent" DataSource="{SortController}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="180" MarginBottom="15" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <Children>
+
+                        <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Command.Click="ExecuteSortByName" IsSelected="@IsNameSelected" SortState="@NameState" SortVisualWidget="List\NameSortVisualWidget" UpdateChildrenStates="true" >
+                          <Children>
+                            <ListPanel UpdateChildrenStates="true" Id="List" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.Clan.Sort.Button.Text" Text="@NameText" GamepadNavigationIndex="0" />
+                                <BrushWidget Id="NameSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="9" SuggestedHeight="7" MarginLeft="5" VerticalAlignment="Center" Brush="MPLobby.Clan.Sort.ArrowBrush"  />
+                              </Children>
+                            </ListPanel>
+                          </Children>
+                        </SortButtonWidget>
+
+                        <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Command.Click="ExecuteSortByWin" IsSelected="@IsWinSelected" SortState="@WinState" SortVisualWidget="List\GamesWonSortVisualWidget" UpdateChildrenStates="true" >
+                          <Children>
+                            <ListPanel UpdateChildrenStates="true" Id="List" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.Clan.Sort.Button.Text" Text="@GamesWonText" GamepadNavigationIndex="1" />
+                                <BrushWidget Id="GamesWonSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="9" SuggestedHeight="7" MarginLeft="5" VerticalAlignment="Center" Brush="MPLobby.Clan.Sort.ArrowBrush"  />
+                              </Children>
+                            </ListPanel>
+                          </Children>
+                        </SortButtonWidget>
+
+                        <SortButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Command.Click="ExecuteSortByLoss" IsSelected="@IsLossSelected" SortState="@LossState" SortVisualWidget="List\GamesLostSortVisualWidget" UpdateChildrenStates="true">
+                          <Children>
+                            <ListPanel UpdateChildrenStates="true" Id="List" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.Clan.Sort.Button.Text" Text="@GamesLostText" GamepadNavigationIndex="2" />
+                                <BrushWidget Id="GamesLostSortVisualWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="9" SuggestedHeight="7" MarginLeft="5" VerticalAlignment="Center" Brush="MPLobby.Clan.Sort.ArrowBrush"  />
+                              </Children>
+                            </ListPanel>
+                          </Children>
+                        </SortButtonWidget>
+
+                      </Children>
+                    </ListPanel>
+
+                    <!--Separator-->
+                    <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" HorizontalAlignment="Center" MarginTop="5" Sprite="GradientDivider" Color="#F4E1C4FF" AlphaFactor="0.4" />            
+
+                    <!--Clans List-->
+                    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="750">
+                      <Children>
+
+                        <ScrollablePanel Id="ClansScrollablePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginRight="25" AutoHideScrollBars="true" ClipRect="ClansRect" InnerPanel="ClansRect\ClansListPanel" MouseScrollAxis="Vertical" VerticalScrollbar="..\ClansScrollbar">
+                          <Children>
+                            <NavigationScopeTargeter ScopeID="ClanLobbyLeaderboardClansScope" ScopeParent="..\ClansRect" ScopeMovements="Vertical" />
+                            <Widget Id="ClansRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                              <Children>
+                                <NavigatableListPanel Id="ClansListPanel" DataSource="{ClanItems}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom">
+                                  <ItemTemplate>
+                                    <!--Single Member Item-->
+                                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" MarginLeft="50" MarginRight="0" MarginTop="15" MarginBottom="15" >
+                                      <Children>
+                                        <BrushWidget IsHidden="@IsOwnClan" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="53" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.Clan.Leaderboard.ClanItem.Background" />
+                                        <BrushWidget IsVisible="@IsOwnClan" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="53" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.Clan.Leaderboard.ClanItem.Background" Brush.AlphaFactor="0.7" />
+                                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                          <Children>
+                                            <!--Position-->
+                                            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="40" Brush="MPLobby.Clan.Name.Text" Brush.TextHorizontalAlignment="Left" Brush.FontSize="24" MarginLeft="20" IntText="@Ranking" />
+                                            <!--Avatar-->
+                                            <ImageIdentifierWidget DataSource="{SigilImage}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="10" ImageId="@Id" AdditionalArgs="@AdditionalArgs" TextureProviderName="@TextureProviderName" />
+                                            <!--Name-->
+                                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SuggestedWidth="300" MarginLeft="20" Brush="MPLobby.Clan.Name.Text" Brush.TextHorizontalAlignment="Left" Text="@NameWithTag" />
+                                            <!--Games Won-->
+                                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Clan.Name.Text" Brush.TextHorizontalAlignment="Left" MarginLeft="20" IntText="@GamesWon" />
+                                            <!--Games Lost-->
+                                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Clan.Name.Text" Brush.TextHorizontalAlignment="Left" MarginLeft="25" IntText="@GamesLost" />
+                                          </Children>
+                                        </ListPanel>
+                                      </Children>
+                                    </Widget>
+                                  </ItemTemplate>
+                                </NavigatableListPanel>
+                              </Children>
+                            </Widget>
+                          </Children>
+                        </ScrollablePanel>
+
+                        <ScrollbarWidget Id="ClansScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="6" MarginBottom="10" PositionXOffset="0" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0" >
+                          <Children>
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#5A4033FF" AlphaFactor="0.2" />
+                            <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                          </Children>
+                        </ScrollbarWidget>
+
+                      </Children>
+                    </ListPanel>
+
+                  </Children>
+                </ListPanel>
+
+                <!--Separator-->
+                <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" HorizontalAlignment="Center" MarginTop="5" Sprite="GradientDivider" Color="#F4E1C4FF" AlphaFactor="0.4" />
+
+                <NavigationScopeTargeter ScopeID="ClanLobbyLeaderboardSwitchPagesButtonsScope" ScopeParent="..\ActionButtonsParent" ScopeMovements="Horizontal" />
+                <ListPanel Id="ActionButtonsParent" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                  <Children>
+
+                    <!-- Previous Page Button -->
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginRight="20" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <Children>
+                        <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.Click="ExecuteGoToPreviousPage" GamepadNavigationIndex="0">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.Profile.RecentGames.Pagination" Text="@PreviousText" />
+                          </Children>
+                        </ButtonWidget>
+                      </Children>
+                    </ListPanel>
+
+                    <!-- Next Page Button -->
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="20" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <Children>
+                        <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.Click="ExecuteGoToNextPage" GamepadNavigationIndex="1">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.Profile.RecentGames.Pagination" Text="@NextText" />
+                          </Children>
+                        </ButtonWidget>
+                      </Children>
+                    </ListPanel>
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+
+            <!-- Loading -->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="50" MarginRight="50" MarginTop="110" MarginBottom="100" IsVisible="@IsDataLoading">
+              <Children>
+                <MultiplayerCircleLoading HorizontalAlignment="Center" VerticalAlignment="Center" Parameter.IsEnabled="true" />
+              </Children>
+            </Widget>
+
+    			  <!-- Exit Button -->
+            <NavigationScopeTargeter ScopeID="LobbyClanLeaderboardCloseButtonScope" ScopeParent="..\CloseButton" />
+    			  <ButtonWidget Id="CloseButton" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginBottom="50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="WideButton.Flat" Command.Click="ExecuteClosePopup" GamepadNavigationIndex="0">
+    				  <Children>
+    					  <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="MPLobby.PlayButton.Text" Brush.FontSize="28" Brush.TextVerticalAlignment="Center" Text="@CloseText" />
+    				  </Children>
+    			  </ButtonWidget>
+
+          </Children>
+        </Widget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

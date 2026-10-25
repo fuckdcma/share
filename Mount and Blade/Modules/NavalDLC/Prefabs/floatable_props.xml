@@ -1,0 +1,1566 @@
+<prefabs>
+	<game_entity name="floatable_door_top" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_empire_keep_a_door_top" override_material="floatable_wood_debris" mass="20.000" gravity_disabled="true">
+			<body_flags>
+				<body_flag name="dynamic"/>
+				<body_flag name="dynamic_convex_hull"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="empire_keep_a_door_top"/>
+		</components>
+		<scripts>
+			<script name="Volume_generator">
+				<variables>
+					<variable name="Display floater volumes" value="false"/>
+					<variable name="Mock generation" value="false"/>
+					<variable name="Include all bodies while generating" value="false"/>
+					<variable name="Mock Volume Count" value="90"/>
+					<variable name="Volumes Center of Mass" value="0.000, 0.000, 0.130, 0.000"/>
+					<variable name="Floating Volume Size" value="0.180"/>
+					<variable name="Current Volume Count" value="90"/>
+				</variables>
+			</script>
+			<script name="NavalPhysics"/>
+			<script name="CustomNavalPhysicsParameters">
+				<variables>
+					<variable name="BehaveLikeShip" value="false"/>
+					<variable name="FloatingForceMultiplier" value="0.030"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="floater_volume_holder" old_prefab_name="" visible="false" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<children>
+					<game_entity name="floater_volume_000_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_001_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_002_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_003_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_004_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_005_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_006_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_007_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_008_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_009_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_010_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_011_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_012_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_013_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_014_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_015_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_016_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_017_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_018_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_019_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_020_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_021_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_022_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_023_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_024_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_025_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_026_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_027_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_028_v5" old_prefab_name="" mobility="1">
+						<transform position="0.180, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_029_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.180, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_030_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_031_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_032_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_033_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_034_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_035_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_036_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_037_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_038_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_039_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_040_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_041_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_042_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_043_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_044_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_045_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_046_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_047_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_048_v5" old_prefab_name="" mobility="1">
+						<transform position="0.360, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_049_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.360, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_050_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_051_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_052_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_053_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_054_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_055_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_056_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_057_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_058_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_059_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_060_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_061_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_062_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_063_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_064_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_065_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_066_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_067_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_068_v5" old_prefab_name="" mobility="1">
+						<transform position="0.540, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_069_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.540, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_070_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_071_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, 0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_072_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_073_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, -0.090, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_074_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_075_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, 0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_076_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_077_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, -0.270, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_078_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_079_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, 0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_080_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_081_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, -0.450, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_082_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_083_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, 0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_084_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_085_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, -0.630, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_086_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_087_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, 0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_088_v5" old_prefab_name="" mobility="1">
+						<transform position="0.720, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_089_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.720, -0.810, -0.064" rotation_euler="0.000, 0.000, 0.000" scale="0.180, 0.180, 0.388"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="floatable_barrel" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_bd_barrel_a" override_material="floatable_wood_debris" mass="262.000" center_of_mass="0.000, 0.000, 0.300" gravity_disabled="true">
+			<body_flags>
+				<body_flag name="dynamic"/>
+				<body_flag name="dynamic_convex_hull"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="bd_barrel_a"/>
+		</components>
+		<scripts>
+			<script name="Volume_generator">
+				<variables>
+					<variable name="Display floater volumes" value="false"/>
+					<variable name="Mock generation" value="false"/>
+					<variable name="Include all bodies while generating" value="false"/>
+					<variable name="Mock Volume Count" value="22"/>
+					<variable name="Volumes Center of Mass" value="0.000, 0.000, 0.680, 0.000"/>
+					<variable name="Floating Volume Size" value="0.190"/>
+					<variable name="Current Volume Count" value="22"/>
+				</variables>
+			</script>
+			<script name="NavalPhysics"/>
+			<script name="CustomNavalPhysicsParameters">
+				<variables>
+					<variable name="BehaveLikeShip" value="false"/>
+					<variable name="FloatingForceMultiplier" value="0.700"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="floater_volume_holder" old_prefab_name="" visible="false" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<children>
+					<game_entity name="floater_volume_000_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.095, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.158"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_001_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.095, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.158"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_002_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.285, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.158"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_003_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.285, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.158"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_004_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.475, 0.517" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.641"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_005_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.475, 0.532" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.626"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_006_v5" old_prefab_name="" mobility="1">
+						<transform position="0.190, 0.095, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.158"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_007_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.190, 0.095, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.158"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_008_v5" old_prefab_name="" mobility="1">
+						<transform position="0.190, -0.095, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.158"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_009_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.190, -0.095, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.158"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_010_v5" old_prefab_name="" mobility="1">
+						<transform position="0.190, 0.285, 0.018" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.139"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_011_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.190, 0.285, 0.018" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.139"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_012_v5" old_prefab_name="" mobility="1">
+						<transform position="0.190, -0.285, 0.033" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.125"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_013_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.190, -0.285, 0.033" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 1.125"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_014_v5" old_prefab_name="" mobility="1">
+						<transform position="0.380, 0.095, 0.263" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.895"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_015_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.380, 0.095, 0.263" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.895"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_016_v5" old_prefab_name="" mobility="1">
+						<transform position="0.380, -0.095, 0.269" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.889"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_017_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.380, -0.095, 0.269" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.889"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_018_v5" old_prefab_name="" mobility="1">
+						<transform position="0.380, 0.285, 0.575" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.583"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_019_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.380, 0.285, 0.575" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.583"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_020_v5" old_prefab_name="" mobility="1">
+						<transform position="0.380, -0.285, 0.546" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.612"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_021_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.380, -0.285, 0.546" rotation_euler="0.000, 0.000, 0.000" scale="0.190, 0.190, 0.612"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="floatable_aserai_castle_tower_roof_2" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_editor_cube" mass="150.000" gravity_disabled="true">
+			<body_flags>
+				<body_flag name="dynamic"/>
+				<body_flag name="dynamic_convex_hull"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<scripts>
+			<script name="NavalPhysics"/>
+			<script name="Volume_generator">
+				<variables>
+					<variable name="Display floater volumes" value="false"/>
+					<variable name="Mock generation" value="false"/>
+					<variable name="Include all bodies while generating" value="true"/>
+					<variable name="Mock Volume Count" value="52"/>
+					<variable name="Volumes Center of Mass" value="0.000, 0.000, 3.637, 0.000"/>
+					<variable name="Floating Volume Size" value="1.130"/>
+					<variable name="Current Volume Count" value="52"/>
+				</variables>
+			</script>
+			<script name="CustomNavalPhysicsParameters">
+				<variables>
+					<variable name="BehaveLikeShip" value="false"/>
+					<variable name="FloatingForceMultiplier" value="0.003"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="merlon_1" old_prefab_name="" mobility="1">
+				<physics shape="bo_aserai_castle_tower_roof_1">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_tower_roof_1"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="castle_wall_roof_aserai"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="1.934, -2.081, 3.071" rotation_euler="0.105, 0.000, 0.719" scale="1.300, 1.500, 1.300"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="merlon_2" old_prefab_name="" mobility="1">
+				<physics shape="bo_aserai_castle_tower_roof_2">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_tower_roof_2"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="castle_wall_roof_aserai"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-1.902, -2.304, 3.151" rotation_euler="0.105, 0.000, -0.778" scale="1.200, 1.500, 1.200"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="merlon_3" old_prefab_name="" mobility="1">
+				<physics shape="bo_aserai_castle_tower_roof_3">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_tower_roof_3"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="castle_wall_roof_aserai"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-2.044, 2.230, 2.982" rotation_euler="0.105, 0.000, -2.395" scale="1.200, 1.500, 1.200"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="merlon_4" old_prefab_name="" mobility="1">
+				<physics shape="bo_aserai_castle_tower_roof_4">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_tower_roof_4"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="castle_wall_roof_aserai"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="1.900, 2.134, 3.028" rotation_euler="0.105, 0.000, 2.360" scale="1.300, 1.500, 1.300"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="aserai_castle_tower_roof_5" old_prefab_name="" mobility="1">
+				<physics shape="bo_aserai_castle_tower_roof_5">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="aserai_castle_tower_roof_5"/>
+				</components>
+			</game_entity>
+			<game_entity name="floater_volume_holder" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<children>
+					<game_entity name="floater_volume_000_v5" old_prefab_name="" mobility="1">
+						<transform position="1.130, 0.565, 4.428" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.976"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_001_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.130, 0.565, 4.428" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.976"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_002_v5" old_prefab_name="" mobility="1">
+						<transform position="1.130, -0.565, 4.428" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.976"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_003_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.130, -0.565, 4.428" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.976"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_004_v5" old_prefab_name="" mobility="1">
+						<transform position="1.130, 1.695, 4.114" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.277"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_005_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.130, 1.695, 4.114" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.277"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_006_v5" old_prefab_name="" mobility="1">
+						<transform position="1.130, -1.695, 4.114" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.277"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_007_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.130, -1.695, 4.114" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.277"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_008_v5" old_prefab_name="" mobility="1">
+						<transform position="1.130, 2.825, 3.340" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.315"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_009_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.130, 2.825, 3.340" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.315"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_010_v5" old_prefab_name="" mobility="1">
+						<transform position="1.130, -2.825, 3.340" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.315"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_011_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.130, -2.825, 3.340" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.315"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_012_v5" old_prefab_name="" mobility="1">
+						<transform position="1.130, 3.955, 2.567" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.353"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_013_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.130, 3.955, 2.567" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.353"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_014_v5" old_prefab_name="" mobility="1">
+						<transform position="1.130, -3.955, 2.567" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.353"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_015_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.130, -3.955, 2.567" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.353"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_016_v5" old_prefab_name="" mobility="1">
+						<transform position="2.260, 0.565, 3.693" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.710"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_017_v5" old_prefab_name="" mobility="1">
+						<transform position="-2.260, 0.565, 3.693" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.710"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_018_v5" old_prefab_name="" mobility="1">
+						<transform position="2.260, -0.565, 3.693" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.710"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_019_v5" old_prefab_name="" mobility="1">
+						<transform position="-2.260, -0.565, 3.693" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.710"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_020_v5" old_prefab_name="" mobility="1">
+						<transform position="2.260, 1.695, 3.630" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.760"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_021_v5" old_prefab_name="" mobility="1">
+						<transform position="-2.260, 1.695, 3.630" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.760"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_022_v5" old_prefab_name="" mobility="1">
+						<transform position="2.260, -1.695, 3.630" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.760"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_023_v5" old_prefab_name="" mobility="1">
+						<transform position="-2.260, -1.695, 3.630" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.760"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_024_v5" old_prefab_name="" mobility="1">
+						<transform position="2.260, 2.825, 3.395" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.260"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_025_v5" old_prefab_name="" mobility="1">
+						<transform position="-2.260, 2.825, 3.395" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.260"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_026_v5" old_prefab_name="" mobility="1">
+						<transform position="2.260, -2.825, 3.395" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.260"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_027_v5" old_prefab_name="" mobility="1">
+						<transform position="-2.260, -2.825, 3.395" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.260"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_028_v5" old_prefab_name="" mobility="1">
+						<transform position="2.260, 3.955, 2.621" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.299"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_029_v5" old_prefab_name="" mobility="1">
+						<transform position="-2.260, 3.955, 2.621" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.299"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_030_v5" old_prefab_name="" mobility="1">
+						<transform position="2.260, -3.955, 2.621" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.299"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_031_v5" old_prefab_name="" mobility="1">
+						<transform position="-2.260, -3.955, 2.621" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.299"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_032_v5" old_prefab_name="" mobility="1">
+						<transform position="3.390, 0.565, 2.647" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 2.756"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_033_v5" old_prefab_name="" mobility="1">
+						<transform position="-3.390, 0.565, 2.647" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 2.756"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_034_v5" old_prefab_name="" mobility="1">
+						<transform position="3.390, -0.565, 2.647" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 2.756"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_035_v5" old_prefab_name="" mobility="1">
+						<transform position="-3.390, -0.565, 2.647" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 2.756"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_036_v5" old_prefab_name="" mobility="1">
+						<transform position="3.390, 1.695, 2.576" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.814"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_037_v5" old_prefab_name="" mobility="1">
+						<transform position="-3.390, 1.695, 2.576" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.814"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_038_v5" old_prefab_name="" mobility="1">
+						<transform position="3.390, -1.695, 2.576" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.814"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_039_v5" old_prefab_name="" mobility="1">
+						<transform position="-3.390, -1.695, 2.576" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.814"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_040_v5" old_prefab_name="" mobility="1">
+						<transform position="3.390, 2.825, 2.504" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.151"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_041_v5" old_prefab_name="" mobility="1">
+						<transform position="-3.390, 2.825, 2.504" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.151"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_042_v5" old_prefab_name="" mobility="1">
+						<transform position="3.390, -2.825, 2.504" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.151"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_043_v5" old_prefab_name="" mobility="1">
+						<transform position="-3.390, -2.825, 2.504" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 1.151"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_044_v5" old_prefab_name="" mobility="1">
+						<transform position="3.390, 3.955, 2.676" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.244"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_045_v5" old_prefab_name="" mobility="1">
+						<transform position="-3.390, 3.955, 2.676" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.244"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_046_v5" old_prefab_name="" mobility="1">
+						<transform position="3.390, -3.955, 2.676" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.244"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_047_v5" old_prefab_name="" mobility="1">
+						<transform position="-3.390, -3.955, 2.676" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 0.244"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_048_v5" old_prefab_name="" mobility="1">
+						<transform position="4.520, 0.565, 1.870" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 3.534"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_049_v5" old_prefab_name="" mobility="1">
+						<transform position="-4.520, 0.565, 1.870" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 3.534"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_050_v5" old_prefab_name="" mobility="1">
+						<transform position="4.520, -0.565, 1.870" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 3.534"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_051_v5" old_prefab_name="" mobility="1">
+						<transform position="-4.520, -0.565, 1.870" rotation_euler="0.000, 0.000, 0.000" scale="1.130, 1.130, 3.534"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="bd_planks_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_bd_planks_a" override_material="floatable_wood_debris"/>
+		<components>
+			<meta_mesh_component name="bd_planks_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="floatable_bd_planks_a" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_bd_planks_a" override_material="floatable_wood_debris" mass="35.000" gravity_disabled="true">
+			<body_flags>
+				<body_flag name="dynamic"/>
+				<body_flag name="dynamic_convex_hull"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="bd_planks_a"/>
+		</components>
+		<scripts>
+			<script name="Volume_generator">
+				<variables>
+					<variable name="Display floater volumes" value="false"/>
+					<variable name="Mock generation" value="false"/>
+					<variable name="Include all bodies while generating" value="false"/>
+					<variable name="Volumes Center of Mass" value="0.000, 0.000, 0.370, 0.000"/>
+					<variable name="Floating Volume Size" value="0.880"/>
+					<variable name="Minimum Volume Height Cutoff" value="0.200"/>
+					<variable name="Current Volume Count" value="10"/>
+				</variables>
+			</script>
+			<script name="NavalPhysics"/>
+			<script name="CustomNavalPhysicsParameters">
+				<variables>
+					<variable name="BehaveLikeShip" value="false"/>
+					<variable name="FloatingForceMultiplier" value="0.010"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="floater_volume_holder" old_prefab_name="" visible="false" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<children>
+					<game_entity name="floater_volume_000_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_001_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_002_v5" old_prefab_name="" mobility="1">
+						<transform position="0.880, 0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_003_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.880, 0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_004_v5" old_prefab_name="" mobility="1">
+						<transform position="0.880, -0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_005_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.880, -0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_006_v5" old_prefab_name="" mobility="1">
+						<transform position="1.760, 0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_007_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.760, 0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_008_v5" old_prefab_name="" mobility="1">
+						<transform position="1.760, -0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_009_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.760, -0.440, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.880, 0.880, 0.740"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="floatable_shop_prop_merchantwinery_c" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="shop_prop"/>
+			<tag name="c"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_shop_prop_merchantwinery_c" override_material="floatable_wood_debris" mass="1200.000" gravity_disabled="true">
+			<body_flags>
+				<body_flag name="dynamic"/>
+				<body_flag name="dynamic_convex_hull"/>
+				<body_flag name="moveable"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="shop_prop_merchantwinery_c"/>
+		</components>
+		<scripts>
+			<script name="NavalPhysics"/>
+			<script name="CustomNavalPhysicsParameters">
+				<variables>
+					<variable name="BehaveLikeShip" value="false"/>
+					<variable name="FloatingForceMultiplier" value="0.210"/>
+				</variables>
+			</script>
+			<script name="Volume_generator">
+				<variables>
+					<variable name="Display floater volumes" value="false"/>
+					<variable name="Mock generation" value="false"/>
+					<variable name="Include all bodies while generating" value="false"/>
+					<variable name="Mock Volume Count" value="20"/>
+					<variable name="Volumes Center of Mass" value="0.000, 0.000, 0.638, 0.000"/>
+					<variable name="Floating Volume Size" value="0.600"/>
+					<variable name="Current Volume Count" value="20"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="floater_volume_holder" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<children>
+					<game_entity name="floater_volume_000_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.275"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_001_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_002_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.269"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_003_v5" old_prefab_name="" mobility="1">
+						<transform position="0.000, -0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_004_v5" old_prefab_name="" mobility="1">
+						<transform position="0.600, 0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.275"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_005_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.600, 0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.275"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_006_v5" old_prefab_name="" mobility="1">
+						<transform position="0.600, -0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_007_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.600, -0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_008_v5" old_prefab_name="" mobility="1">
+						<transform position="0.600, 0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.269"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_009_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.600, 0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.269"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_010_v5" old_prefab_name="" mobility="1">
+						<transform position="0.600, -0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_011_v5" old_prefab_name="" mobility="1">
+						<transform position="-0.600, -0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_012_v5" old_prefab_name="" mobility="1">
+						<transform position="1.200, 0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.275"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_013_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.200, 0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.275"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_014_v5" old_prefab_name="" mobility="1">
+						<transform position="1.200, -0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_015_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.200, -0.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_016_v5" old_prefab_name="" mobility="1">
+						<transform position="1.200, 0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.269"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_017_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.200, 0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.269"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_018_v5" old_prefab_name="" mobility="1">
+						<transform position="1.200, -0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+					<game_entity name="floater_volume_019_v5" old_prefab_name="" mobility="1">
+						<transform position="-1.200, -0.900, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.600, 1.279"/>
+						<components>
+							<meta_mesh_component name="editor_cube"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

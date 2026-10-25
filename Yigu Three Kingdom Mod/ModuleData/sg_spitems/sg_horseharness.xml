@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item
+		id="sg_hh_camel_001"
+		name="骆驼鞍具"
+		mesh="camel_saddle1"
+		culture="Culture.aserai"
+		weight="130"
+		appearance="1"
+		Type="HorseHarness">
+		<ItemComponent>
+			<Armor
+				body_armor="10"
+				mane_cover_type="none"
+				family_type="2"
+				material_type="Leather" />
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+  <Item
+		multiplayer_item="false"
+		id="sg_hh_001"
+		name="条状皮革挽具"
+		mesh="horse_harness_imperial_a_clotest"
+		culture="Culture.sili"
+		subtype="body_armor"
+		weight="26"
+		difficulty="0"
+		appearance="1"
+		Type="HorseHarness">
+		<ItemComponent>
+			<Armor
+				body_armor="15"
+				mane_cover_type="none"
+				family_type="1"
+				reins_mesh="horse_harness_imperial_a_rein"
+				material_type="Leather" />
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="elephant_armor"
+		name="象铠"
+		is_merchandise="false"
+		mesh="elephant_armor"
+		culture="Culture.yizhou"
+		weight="350"
+		appearance="0"
+		Type="HorseHarness">
+		<ItemComponent>
+			<Armor
+				body_armor="175"
+				mane_cover_type="none"
+				family_type="2"
+				modifier_group="chain"
+        material_type="Chainmail" />
+		</ItemComponent>
+		<Flags
+			Civilian="false" />
+	</Item>
+  <Item id="sg_hh_c01_001_a"
+        name="{=*}凉州半身马铠"
+        mesh="hh_c01_001_a"
+        culture="Culture.yongliang"
+        weight="137"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="36"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c01_001_b"
+        name="{=*}凉州全身马铠"
+        mesh="hh_c01_001_b"
+        culture="Culture.yongliang"
+        weight="228"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="72"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c05_001_a"
+        name="{=*}冀州马鞍"
+        mesh="hh_c05_001_a"
+        culture="Culture.jizhou"
+        weight="68"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="36"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="none"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c05_001_b"
+        name="{=*}冀州轻装马铠"
+        mesh="hh_c05_001_b"
+        culture="Culture.jizhou"
+        weight="137"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="36"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c05_001_c"
+        name="{=*}冀州重装马铠"
+        mesh="hh_c05_001_c"
+        culture="Culture.jizhou"
+        weight="220"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="72"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c02_001_t1_a"
+        name="{=*}兖州马鞍"
+        mesh="hh_c02_001_t1_a"
+        culture="Culture.yanzhou"
+        weight="40"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="15"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c02_001_t1_b"
+        name="{=*}兖州披甲马鞍"
+        mesh="hh_c02_001_t1_b"
+        culture="Culture.yanzhou"
+        weight="75"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="35"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c02_001_t2"
+        name="{=*}兖州半身马铠"
+        mesh="hh_c02_001_t2"
+        culture="Culture.yanzhou"
+        weight="150"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="55"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c02_001_t3"
+        name="{=*}兖州重装马铠"
+        mesh="hh_c02_001_t3"
+        culture="Culture.yanzhou"
+        weight="195"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="70"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c08_001_t1_a"
+        name="{=*}荆州马鞍"
+        mesh="hh_c08_001_t1_a"
+        culture="Culture.jingzhou"
+        weight="40"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="15"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c08_001_t1_b"
+        name="{=*}荆州半裹马鞍"
+        mesh="hh_c08_001_t1_b"
+        culture="Culture.jingzhou"
+        weight="75"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="35"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c08_001_t2"
+        name="{=*}荆州全身马铠"
+        mesh="hh_c08_001_t2"
+        culture="Culture.jingzhou"
+        weight="100"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="55"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c08_001_t3"
+        name="{=*}荆州披甲马铠"
+        mesh="hh_c08_001_t3"
+        culture="Culture.jingzhou"
+        weight="140"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="65"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c07_001_t1"
+        name="{=*}豫州马鞍"
+        mesh="hh_c07_001_t1"
+        culture="Culture.yuzhou"
+        weight="40"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="20"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+  <Item id="sg_hh_c07_001_t2"
+        name="{=*}豫州披甲马铠"
+        mesh="hh_c07_001_t2"
+        culture="Culture.yuzhou"
+        weight="135"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="60"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+</Items>

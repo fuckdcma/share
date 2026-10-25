@@ -1,0 +1,31 @@
+<Prefab>
+  <Constants>
+
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+        <MultiplayerAdminMessageWidget DataSource="{MessageQueue}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="100">
+          <ItemTemplate>
+            <MultiplayerAdminMessageItemWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="50" MarginRight="50" IsVisible="false" Command.Remove="ExecuteAction">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="720" SuggestedHeight="220" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="popup_gradient_background_9" Color="#000000CC">
+                  <Children>
+                    <!--Separator-->
+                    <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" HorizontalAlignment="Center" VerticalAlignment="Top" Sprite="MPLobby\Profile\horizontal_gradient_divider" Color="#a76916ff" />
+
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPAdminMessage.Text" Text="@ActionText" />
+
+                    <!--Separator-->
+                    <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Sprite="MPLobby\Profile\horizontal_gradient_divider" Color="#a76916ff" />
+                  </Children>
+                </Widget>
+
+              </Children>
+            </MultiplayerAdminMessageItemWidget>
+          </ItemTemplate>
+        </MultiplayerAdminMessageWidget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

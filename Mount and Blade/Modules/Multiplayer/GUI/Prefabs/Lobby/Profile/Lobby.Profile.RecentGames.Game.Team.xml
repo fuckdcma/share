@@ -1,0 +1,77 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="ListDataSource" DefaultValue="PlayersA" />
+  </Parameters>
+  <Constants>
+    <Constant Name="FriendButton.Width" BrushName="MPLobby.FriendsPanel.FriendButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FriendButton.Height" BrushName="MPLobby.FriendsPanel.FriendButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="FriendButton.ProfileCanvas.Width" Value="60"/>
+    <Constant Name="FriendButton.ProfileCanvas.Height" Value="60"/>
+
+    <Constant Name="NameColumn.Width" Value="140" />
+    <Constant Name="StatColumn.Width" Value="60" />
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="415">
+      <Children>
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" MarginLeft="!FriendButton.ProfileCanvas.Width" StackLayout.LayoutMethod="HorizontalLeftToRight" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true">
+          <Children>
+            <!--Rank Placeholder-->
+            <Widget UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" HorizontalAlignment="Center" VerticalAlignment="Center" MarginRight="5" Sprite="BlankWhiteSquare_9" Color="#FF00FFFF" AlphaFactor="0" ExtendBottom="3" IsVisible="false"/>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!NameColumn.Width" SuggestedHeight="40" VerticalAlignment="Center">
+              <Children>
+                <ScrollingTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginRight="5" Brush="MPLobby.Profile.RecentGames.PlayerName" Brush.FontSize="16" Text="Name" DefaultTextHorizontalAlignment="Left" />
+              </Children>
+            </Widget>
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!StatColumn.Width" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.PlayerName" Brush.FontSize="16" Text="Kills" />
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!StatColumn.Width" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.PlayerName" Brush.FontSize="16" Text="Deaths" />
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!StatColumn.Width" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.PlayerName" Brush.FontSize="16" Text="Assists" />
+          </Children>
+        </ListPanel>
+				
+        <NavigatableListPanel Id="InnerPanel" DataSource="*ListDataSource" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="5" MarginTop="35" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <ItemTemplate>
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="5" MarginTop="5">
+              <Children>
+                <!--Rank-->
+                <Widget UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" HorizontalAlignment="Center" VerticalAlignment="Center" MarginRight="5" Sprite="BlankWhiteSquare_9" Color="#FF00FFFF" ExtendBottom="3" IsVisible="false"/>
+                
+                <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true" DoNotPassEventsToChildren="true" Command.Click="ExecuteActivatePlayerActions">
+                  <Children>
+                    <Widget UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FriendButton.ProfileCanvas.Width" SuggestedHeight="!FriendButton.ProfileCanvas.Height" Sprite="MPLobby\Generic\profile_canvas" Color="#90BA38FF" AlphaFactor="0.8" ExtendTop="3" ExtendBottom="3">
+                      <Children>
+                        <ImageIdentifierWidget DataSource="{Avatar}" ImageId="@Id" AdditionalArgs="@AdditionalArgs" IsVisible="@IsValid" TextureProviderName="@TextureProviderName" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MaterialAlphaFactor="0.75"/>
+                      </Children>
+                    </Widget>
+                    <ButtonWidget UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="50" VerticalAlignment="Center" MarginTop="5" MarginBottom="5" MarginLeft="!FriendButton.ProfileCanvas.Width" Brush="MPLobby.FriendsPanel.FriendButton">
+                      <Children>
+                        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                          <Children>
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!NameColumn.Width" SuggestedHeight="40" VerticalAlignment="Center">
+                              <Children>
+                                <ScrollingRichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginRight="5" Brush="MPLobby.Profile.RecentGames.PlayerName" Text="@Name" DefaultTextHorizontalAlignment="Left" />
+                              </Children>
+                            </Widget>
+                            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!StatColumn.Width" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.PlayerName" IntText="@KillCount" />
+                            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!StatColumn.Width" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.PlayerName" IntText="@DeathCount" />
+                            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="!StatColumn.Width" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.PlayerName" IntText="@AssistCount" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+          </ItemTemplate>
+        </NavigatableListPanel>
+
+      </Children>
+    </Widget>
+
+  </Window>
+</Prefab>

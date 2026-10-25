@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>  
+  <Item id="banner_big"
+        name="{=WePcpx0u}Big Banner"
+        body_name="bo_spear_b"
+        shield_body_name="bo_kite_shield_e"
+        recalculate_body="false"
+        mesh="campaign_flag"
+        using_tableau="true"
+        weight="4.0"
+        appearance="1"
+        Type="Shield"
+        item_holsters="polearm_back:polearm_back_2"
+        has_lower_holster_priority="true"
+		holster_position_shift="0,-0.035,-1.1">
+    <ItemComponent>
+      <Weapon weapon_class="LargeShield"
+              body_armor="1"
+              thrust_speed="82"
+              thrust_damage_type="Blunt"
+              speed_rating="82"
+              item_usage="banner"
+              position="0.0, 0.0, -0.80"
+              rotation="0.0, 0.0, 0.00"
+              physics_material="wood_shield"
+              weapon_length="300"
+              center_of_mass="0.0,0.1,0.1"
+              hit_points="50">
+        <WeaponFlags CanBlockRanged="false"
+                     HasHitPoints="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags WoodenParry="true"
+           HeldInOffHand="true"
+           ForceAttachOffHandPrimaryItemBone="true"
+		   HasToBeHeldUp="true"                     
+		   />
+  </Item>
+</Items>

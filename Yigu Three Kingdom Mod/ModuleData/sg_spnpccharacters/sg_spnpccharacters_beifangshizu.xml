@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+<!-- 东胡遗民-鲜卑乌桓 -->
+  <NPCCharacter id="beifangshizu_sol_1001" default_group="HorseArcher" level="6" name="{=*}东胡牧民" occupation="Bandit"  is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="35" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="30" />
+      <skill id="Athletics" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_2001" />
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_2002" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_youmu_01" />
+        <equipment slot="Item1" id="Item.lz_arrow_youmu_01" />
+        <equipment slot="Item2" id="Item.lz_dao_youmu_01" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_01" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_01" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_01" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_01" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_01" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_2001" default_group="HorseArcher" level="11" name="{=*}乌桓部落民" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="55" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="50" />
+      <skill id="Athletics" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_3001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_youmu_01" />
+        <equipment slot="Item1" id="Item.lz_arrow_youmu_01" />
+        <equipment slot="Item2" id="Item.lz_dao_youmu_02" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_02" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_02" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_01" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_02" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_01" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_2002" default_group="Cavalry" level="11" name="{=*}鲜卑部落民" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="75" />
+      <skill id="Bow" value="35" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="60" />
+      <skill id="Athletics" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_3002" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_spear_youmu_01" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_03" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_03" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_01" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_03" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_01" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_3001" default_group="HorseArcher" level="16" name="{=*}乌桓骑射手" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="80" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="125" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="90" />
+      <skill id="Athletics" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_4001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_youmu_02" />
+        <equipment slot="Item1" id="Item.lz_arrow_youmu_01" />
+        <equipment slot="Item2" id="Item.lz_dao_youmu_02" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_02" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_03" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_02" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_03" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_01" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_3002" default_group="Cavalry" level="16" name="{=*}鲜卑轻骑兵" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="60" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="125" />
+      <skill id="Bow" value="35" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="110" />
+      <skill id="Athletics" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_4002" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_spear_youmu_01" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_03" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_03" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_02" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_04" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_01" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_4001" default_group="HorseArcher" level="21" name="{=*}乌桓什骑长" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="90" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="30" />
+      <skill id="Bow" value="155" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="15" />
+      <skill id="Riding" value="110" />
+      <skill id="Athletics" value="30" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_5001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_youmu_03" />
+        <equipment slot="Item1" id="Item.lz_arrow_youmu_01" />
+        <equipment slot="Item2" id="Item.lz_arrow_youmu_01" />
+        <equipment slot="Item3" id="Item.lz_dao_youmu_02" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_02" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_03" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_02" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_03" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_01" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_4002" default_group="Cavalry" level="21" name="{=*}鲜卑精锐骑兵" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="85" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="150" />
+      <skill id="Bow" value="40" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="20" />
+      <skill id="Riding" value="130" />
+      <skill id="Athletics" value="35" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_5002" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_spear_youmu_01" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_03" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_05" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_02" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_04" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_02" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_5001" default_group="HorseArcher" level="26" name="{=*}乌桓百骑长" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="120" />
+      <skill id="TwoHanded" value="25" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="185" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="20" />
+      <skill id="Riding" value="145" />
+      <skill id="Athletics" value="50" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_youmu_04" />
+        <equipment slot="Item1" id="Item.lz_arrow_youmu_01" />
+        <equipment slot="Item2" id="Item.lz_arrow_youmu_01" />
+        <equipment slot="Item3" id="Item.lz_dao_youmu_02" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_02" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_04" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_02" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_04" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_01" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_5002" default_group="Cavalry" level="26" name="{=*}鲜卑重骑兵" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="105" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="190" />
+      <skill id="Bow" value="50" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="55" />
+      <skill id="Riding" value="150" />
+      <skill id="Athletics" value="65" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.beifangshizu_sol_6001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_spear_youmu_01" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_04" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_05" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_02" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_05" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_02" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beifangshizu_sol_6001" default_group="Cavalry" level="31" name="{=*}鲜卑单于亲兵" occupation="Bandit" is_basic_troop="true" culture="Culture.beifangshizu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="110" />
+      <skill id="TwoHanded" value="25" />
+      <skill id="Polearm" value="220" />
+      <skill id="Bow" value="50" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="70" />
+      <skill id="Riding" value="170" />
+      <skill id="Athletics" value="75" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_spear_youmu_02" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+        <equipment slot="Head" id="Item.lz_hat_youmu_04" />
+        <equipment slot="Body" id="Item.lz_cloth_youmu_05" />
+        <equipment slot="Leg" id="Item.lz_shoe_youmu_02" />
+        <equipment slot="Horse" id="Item.lz_horse_youmu_05" />
+        <equipment slot="HorseHarness" id="Item.lz_hh_youmu_02" />
+      </EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+<!-- 匈奴 -->
+	<NPCCharacter id="xiongnu_sol_001"
+		default_group="Ranged"
+		level="1"
+		is_basic_troop="true"
+		name="匈奴部落民"
+		is_female="false"
+		occupation="Soldier"
+		culture="Culture.xiongnu_bandits">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="50"/>
+			<skill id="Riding" value="0"/>
+			<skill id="OneHanded" value="20"/>
+			<skill id="TwoHanded" value="10"/>
+			<skill id="Polearm" value="20"/>
+			<skill id="Bow" value="60"/>
+			<skill id="Crossbow" value="5"/>
+			<skill id="Throwing" value="10"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.xiongnu_sol_002"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.sg_axe_whole_003_1h"/>
+				<equipment slot="Item1" id="Item.sg_shortbow_001"/>
+				<equipment slot="Item2" id="Item.sg_arrows_003"/>
+				<equipment slot="Head" id="Item.lz_hat_youmu_01"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s001_body_b"/>
+				<equipment slot="Leg" id="Item.xiongnu_bandits_horseman_boots"/>
+			</EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="xiongnu_sol_002"
+		default_group="HorseArcher"
+		level="6"
+		name="匈奴瓯脱斥候"
+		is_female="false"
+		occupation="Soldier"
+		culture="Culture.xiongnu_bandits">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="95"/>
+			<skill id="Riding" value="125"/>
+			<skill id="OneHanded" value="65"/>
+			<skill id="TwoHanded" value="20"/>
+			<skill id="Polearm" value="20"/>
+			<skill id="Bow" value="100"/>
+			<skill id="Crossbow" value="5"/>
+			<skill id="Throwing" value="10"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.xiongnu_sol_003"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.sg_mace_002_1h"/>
+				<equipment slot="Item1" id="Item.lz_bow_youmu_01"/>
+				<equipment slot="Item2" id="Item.sg_arrows_003"/>
+				<equipment slot="Item3" id="Item.sg_arrows_003"/>
+				<equipment slot="Head" id="Item.lz_hat_youmu_01"/>
+				<equipment slot="Body" id="Item.lz_cloth_youmu_02"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s003_leg_chushi"/>
+				<equipment slot="Horse" id="Item.sg_c06_horse_mengguma"/>
+				<equipment slot="HorseHarness" id="Item.bandit_saddle_steppe"/>
+			</EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="xiongnu_sol_003"
+		default_group="HorseArcher"
+		level="11"
+		name="匈奴控弦骑手"
+		is_female="false"
+		occupation="Soldier"
+		culture="Culture.xiongnu_bandits">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="100"/>
+			<skill id="Riding" value="140"/>
+			<skill id="OneHanded" value="110"/>
+			<skill id="TwoHanded" value="35"/>
+			<skill id="Polearm" value="45"/>
+			<skill id="Bow" value="160"/>
+			<skill id="Crossbow" value="15"/>
+			<skill id="Throwing" value="25"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.xiongnu_sol_004"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.sg_sword_whole_001_1h"/>
+				<equipment slot="Item1" id="Item.lz_bow_youmu_02"/>
+				<equipment slot="Item2" id="Item.sg_arrows_004"/>
+				<equipment slot="Item3" id="Item.sg_arrows_004"/>
+				<equipment slot="Head" id="Item.lz_hat_youmu_02"/>
+				<equipment slot="Body" id="Item.sg_yol002_xj003"/>
+				<equipment slot="Gloves" id="Item.sg_npc_guard_arm"/>
+				<equipment slot="Leg" id="Item.lz_shoe_youmu_02"/>
+				<equipment slot="Horse" id="Item.sg_c06_horse_caoyuanliema"/>
+				<equipment slot="HorseHarness" id="Item.steppe_harness"/>
+			</EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="xiongnu_sol_004"
+		default_group="HorseArcher"
+		level="16"
+		name="匈奴狼骑射手"
+		is_female="false"
+		occupation="Soldier"
+		culture="Culture.xiongnu_bandits">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="110"/>
+			<skill id="Riding" value="185"/>
+			<skill id="OneHanded" value="150"/>
+			<skill id="TwoHanded" value="55"/>
+			<skill id="Polearm" value="80"/>
+			<skill id="Bow" value="195"/>
+			<skill id="Crossbow" value="20"/>
+			<skill id="Throwing" value="40"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.xiongnu_sol_005"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_dao_youmu_01"/>
+				<equipment slot="Item1" id="Item.lz_bow_youmu_03"/>
+				<equipment slot="Item2" id="Item.lz_arrow_youmu_01"/>
+				<equipment slot="Item3" id="Item.lz_arrow_youmu_01"/>
+				<equipment slot="Head" id="Item.lz_hat_youmu_03"/>
+				<equipment slot="Body" id="Item.lz_cloth_youmu_04"/>
+				<equipment slot="Gloves" id="Item.sg_npc_guard_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s010_leg"/>
+				<equipment slot="Horse" id="Item.sg_c05_horse_beidizhanma"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c05_001_a"/>
+			</EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="xiongnu_sol_005"
+		default_group="HorseArcher"
+		level="21"
+		name="匈奴王庭赭羯"
+		is_female="false"
+		occupation="Soldier"
+		culture="Culture.xiongnu_bandits">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="120"/>
+			<skill id="Riding" value="225"/>
+			<skill id="OneHanded" value="170"/>
+			<skill id="TwoHanded" value="95"/>
+			<skill id="Polearm" value="100"/>
+			<skill id="Bow" value="225"/>
+			<skill id="Crossbow" value="25"/>
+			<skill id="Throwing" value="50"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.xiongnu_sol_006"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_dao_youmu_02"/>
+				<equipment slot="Item1" id="Item.sg_gong_006"/>
+				<equipment slot="Item2" id="Item.lz_arrow_youmu_01"/>
+				<equipment slot="Item3" id="Item.lz_arrow_youmu_01"/>
+				<equipment slot="Head" id="Item.sg_s_blw_6"/>
+				<equipment slot="Cape" id="Item.sg_xnxb_425_ht_max2014_jj"/>
+				<equipment slot="Body" id="Item.sg_yol002_xj005"/>
+				<equipment slot="Gloves" id="Item.sg_yol002_hw003"/>
+				<equipment slot="Leg" id="Item.sg_yol002_xz005"/>
+				<equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanma"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c05_001_b"/>
+			</EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="xiongnu_sol_006"
+		default_group="HorseArcher"
+		level="26"
+		name="苍狼白鹿胤裔"
+		is_female="false"
+		occupation="Soldier"
+		culture="Culture.xiongnu_bandits">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="130"/>
+			<skill id="Riding" value="270"/>
+			<skill id="OneHanded" value="185"/>
+			<skill id="TwoHanded" value="115"/>
+			<skill id="Polearm" value="210"/>
+			<skill id="Bow" value="270"/>
+			<skill id="Crossbow" value="30"/>
+			<skill id="Throwing" value="60"/>
+		</skills>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.sg_spear_whole_001"/>
+				<equipment slot="Item1" id="Item.sg_gong_007"/>
+				<equipment slot="Item2" id="Item.lz_arrow_youmu_01"/>
+				<equipment slot="Item3" id="Item.lz_arrow_youmu_01"/>
+				<equipment slot="Head" id="Item.sg_s_blw_2"/>
+				<equipment slot="Cape" id="Item.sg_yol002_jj004"/>
+				<equipment slot="Body" id="Item.sg_s_t1021_xj"/>
+				<equipment slot="Gloves" id="Item.sg_s_t1021_st"/>
+				<equipment slot="Leg" id="Item.sg_s_t1021_xiezi"/>
+				<equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanma"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c05_001_c"/>
+			</EquipmentRoster>
+			<EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+		</Equipments>
+	</NPCCharacter>
+
+</NPCCharacters>

@@ -1,0 +1,152 @@
+<!--_____Right Panel_______-->
+<MapInfoBarWidget VisualDefinition="InfoBar" DataSource="{MapInfo}" Id="InfoBarWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="541" SuggestedHeight="99" HorizontalAlignment="Right" VerticalAlignment="Bottom" PositionYOffset="49" Sprite="MapBar\mapbar_right_frame" ExtendButtonWidget="ExtendButtonWidget" IsInfoBarExtended="@IsInfoBarExtended" IsVisible="@IsInfoBarEnabled">
+	<Children>
+
+		<NavigationScopeTargeter ScopeID="MapBarRightPanelTopInfoBarScope" ScopeParent="..\TopInfoBar" ScopeMovements="Horizontal" ExtendDiscoveryAreaRight="-60" LeftNavigationScope="MapBarCenterPanelScope" NavigateFromScopeEdges="true" UseDiscoveryAreaAsScopeEdges="true" />
+		<ListPanel Id="TopInfoBar" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="510" SuggestedHeight="40" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="21" >
+			<Children>
+
+				<HintWidget DataSource="{DenarTooltip}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="15" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="0">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="General\Icons\Coin@2x" />
+								<MapBarCustomValueTextWidget DataSource="{..}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="62" SuggestedHeight="40" VerticalAlignment="Center" PositionYOffset="2" Brush="MapTextBrushWithAnim" Brush.FontSize="20" IsWarning="@IsDenarTooltipWarning" NormalColor="!NormalMapBarTextColor" Text="@DenarsWithAbbrText" ValueAsInt="@Denars" WarningColor="!WarningMapBarTextColor"/>
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+				<HintWidget DataSource="{MeritHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="15" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="1">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" PositionYOffset="1.5" VerticalAlignment="Center" Sprite="OfficialPosition\icon_merit" />
+								<MapBarCustomValueTextWidget DataSource="{..}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="62" SuggestedHeight="46" VerticalAlignment="Center" PositionXOffset="5" PositionYOffset="2" Brush="MapTextBrushWithAnim" Brush.FontSize="20" IsWarning="@IsMeritTooltipWarning" NormalColor="!NormalMapBarTextColor" Text="@MeritWithAbbrText" ValueAsInt="@Merit" WarningColor="!WarningMapBarTextColor"/>
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+				<HintWidget DataSource="{HealthHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginRight="20" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="2">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget DataSource="{..}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="General\Icons\Health@2x" IsHidden="@IsMainHeroSick"/>
+								<Widget DataSource="{..}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="General\Icons\Health_Sick@2x" IsVisible="@IsMainHeroSick"/>
+								<MapBarCustomValueTextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" MinWidth="20" HeightSizePolicy="Fixed" MaxWidth="55" SuggestedHeight="40" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="2" Brush="MapTextBrushWithAnim" Brush.FontSize="20" Brush.TextHorizontalAlignment="Left" IsWarning="@IsHealthTooltipWarning" NormalColor="!NormalMapBarTextColor" Text="@HealthTextWithPercentage" ValueAsInt="@Health" WarningColor="!WarningMapBarTextColor" />
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+				<HintWidget DataSource="{AvailableTroopsHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="5" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="3">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="General\Icons\Party@2x" />
+								<MapBarCustomValueTextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" MinWidth="17" MaxWidth="57" SuggestedHeight="50" VerticalAlignment="Center" PositionYOffset="2" Brush="MapTextBrushWithAnim" MarginLeft="5" Brush.FontSize="20" Brush.TextHorizontalAlignment="Left" IsWarning="@IsAvailableTroopsTooltipWarning" NormalColor="!NormalMapBarTextColor" Text="@AvailableTroopsText" ValueAsInt="@TotalTroops" WarningColor="!WarningMapBarTextColor" >
+									<Children>
+										<!--<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="45" Sprite="BlankWhiteSquare_9"></Widget>-->
+									</Children>
+								</MapBarCustomValueTextWidget>
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+				<HintWidget DataSource="{DailyConsumptionHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="15" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="4">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="General\Icons\Food@2x" />
+								<MapBarTextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" MinWidth="40" MaxWidth="55" SuggestedHeight="50" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="3" Brush="MapTextBrushWithAnim" Brush.FontSize="20" IntText="@TotalFood" IsWarning="@IsDailyConsumptionTooltipWarning" NormalColor="!NormalMapBarTextColor" WarningColor="!WarningMapBarTextColor" >
+									<Children>
+										<!--<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="45" Sprite="BlankWhiteSquare_9"></Widget>-->
+									</Children>
+								</MapBarTextWidget>
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+			</Children>
+		</ListPanel>
+
+		<NavigationScopeTargeter ScopeID="MapBarExtendButtonScope" ScopeParent="..\ExtendButtonWidget" ScopeMovements="Horizontal" FollowMobileTargets="true" LeftNavigationScope="MapBarRightPanelTopInfoBarScope" />
+		<ButtonWidget Id="ExtendButtonWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="41" SuggestedHeight="34" HorizontalAlignment="Right" MarginTop="22" Brush="MapInfoBarExtendButtonBrush" GamepadNavigationIndex="0">
+			<Children>
+				<HintWidget DataSource="{ExtendHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+			</Children>
+		</ButtonWidget>
+
+		<NavigationScopeTargeter ScopeID="MapBarRightPanelBottomInfoBarScope" ScopeParent="..\BottomInfoBar" ScopeMovements="Horizontal" IsScopeEnabled="@IsInfoBarExtended" />
+		<ListPanel Id="BottomInfoBar" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginTop="10">
+			<Children>
+
+				<HintWidget DataSource="{InfluenceHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="0">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="18" SuggestedHeight="33" VerticalAlignment="Center">
+									<Children>
+										<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="General\Icons\Influence@2x" />
+									</Children>
+								</Widget>
+								<MapBarCustomValueTextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" MinWidth="20" MaxWidth="55" SuggestedHeight="50" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="2" Brush="MapTextBrushWithAnim" Brush.FontSize="20" IsWarning="@IsInfluenceTooltipWarning" NormalColor="!NormalMapBarTextColor" Text="@InfluenceWithAbbrText" ValueAsInt="@Influence" WarningColor="!WarningMapBarTextColor" />
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+				<HintWidget DataSource="{MoraleHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="15" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="1">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="General\Icons\Morale@2x" />
+								<MapBarTextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="2" Brush="MapTextBrushWithAnim" Brush.FontSize="20" IntText="@Morale" IsWarning="@IsMoraleTooltipWarning" MinWidth="30" NormalColor="!NormalMapBarTextColor" WarningColor="!WarningMapBarTextColor" />
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+				<HintWidget Id="PartySpeedLabel" DataSource="{SpeedHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="40" SuggestedWidth="70" MarginLeft="15" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="2">
+					<Children>
+						<ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="40" SuggestedWidth="70" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="General\Icons\Speed@2x" />
+								<MapBarTextWidget DataSource="{..}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" MaxWidth="50" SuggestedWidth="40" SuggestedHeight="40" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="2" Brush="MapTextBrushWithAnim" Text="@Speed" />
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+				<HintWidget DataSource="{ViewDistanceHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="15" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="3">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="MapBar\monocular_icon" />
+								<MapBarTextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" MaxWidth="50" SuggestedHeight="40" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="2" Brush="MapTextBrushWithAnim" Text="@ViewDistance" />
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+				<HintWidget DataSource="{TroopWageHint}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="20" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" GamepadNavigationIndex="4">
+					<Children>
+						<ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsEnabled="false">
+							<Children>
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="33" VerticalAlignment="Center" Sprite="General\Icons\PartyCost@2x" />
+								<MapBarTextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" MaxWidth="65" SuggestedHeight="40" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="2" Brush="MapTextBrushWithAnim" Text="@TroopWage" />
+							</Children>
+						</ListPanel>
+					</Children>
+				</HintWidget>
+
+			</Children>
+		</ListPanel>
+
+		<MapInfoSilhouetteWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MapBar.Silhouette.Right" CurrentScreen="@CurrentScreen" IsEnabled="false" />
+
+	</Children>
+</MapInfoBarWidget>

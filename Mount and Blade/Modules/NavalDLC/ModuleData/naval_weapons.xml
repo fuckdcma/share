@@ -1,0 +1,1420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<!--<Item
+		id="northman_raider_weapon"
+		name="northman_raider_weapon"
+		mesh="northman_raider_armor"
+		culture="Culture.aserai"
+		weight="1.6"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor
+				body_armor="2"
+				leg_armor="2"
+				arm_armor="1"
+				has_gender_variations="true"
+				covers_body="true"
+				modifier_group="cloth_unarmoured"
+				material_type="Cloth" />
+		</ItemComponent>
+		<Flags
+			UseTeamColor="true"
+			Civilian="false" />
+	</Item>-->
+	<CraftedItem
+		id="berserkr_axe"
+		name="{=j18j5Qq6}Berserkr Axe"
+		crafting_template="TwoHandedAxe"
+		culture="Culture.nord"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="coh_axe_head_1"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle02"
+				Type="Handle"
+				scale_factor="110" />
+		</Pieces>
+		<!-- Length: 88 Weight: 0.93 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_long_two_handed_t6"
+		name="{=VAl57s9g}Swift Wing Axe"
+		crafting_template="TwoHandedAxe"
+		culture="Culture.nord"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_08_2"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="naval_axe_handle12_2"
+				Type="Handle"
+				scale_factor="110" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="nord_long_two_handed_t3"
+		name="{=cJ5LcMg5}Swift Short Axe"
+		crafting_template="OneHandedAxe"
+		culture="Culture.nord"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_08_3"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="axe_craft_20_handle_2"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="naval_one_handed_axe_t1"
+		name="{=SHawi5VS}Splitter Axe"
+		crafting_template="OneHandedAxe"
+		culture="Culture.nord"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="axe_craft_32_head"
+				Type="Blade" />
+			<Piece
+				id="axe_craft_20_handle"
+				Type="Handle" />
+		</Pieces>
+		<!-- Length: 61 Weight: 1.08 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_throwing_axe_1_t4"
+		name="{=N7raeGmP}Engraved Throwing Axe"
+		culture="Culture.nord"
+		crafting_template="ThrowingAxe"
+		modifier_group="axe_throwing">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_06"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="naval_axe_handle09_2"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 46 Weight: 0.82 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_throwing_axe_2_t4"
+		name="{=bJ62ET4v}Hidebound Nord Throwing Axe"
+		culture="Culture.nord"
+		crafting_template="ThrowingAxe"
+		modifier_group="axe_throwing">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_06"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="naval_axe_handle04_2"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 50 Weight: 0.83 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_throwing_axe_1_t5"
+		name="{=0jbO6asM}Balanced Engraved Throwing Axe"
+		culture="Culture.nord"
+		crafting_template="ThrowingAxe"
+		modifier_group="axe_throwing">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_13"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="naval_axe_handle09_2"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 46 Weight: 0.79 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_throwing_axe_2_t5"
+		name="{=3UBvbi2h}Balanced Nord Throwing Axe"
+		culture="Culture.nord"
+		crafting_template="ThrowingAxe"
+		modifier_group="axe_throwing">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_13"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle04_2"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 50 Weight: 0.85 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_throwing_axe_1_t3"
+		name="{=gqbjCBld}Northern Throwing Axe"
+		culture="Culture.nord"
+		crafting_template="ThrowingAxe"
+		modifier_group="axe_throwing">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_05"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle08_2"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 47 Weight: 1.16 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_throwing_axe_1_t2"
+		name="{=5JAR12rb}Nord Throwing Axe"
+		culture="Culture.nord"
+		crafting_template="ThrowingAxe"
+		modifier_group="axe_throwing">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_04_2"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle08_2"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 41 Weight: 1 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_twohanded_axe_1_t3"
+		name="{=BTjW1WU1}Nord Axe"
+		culture="Culture.nord"
+		crafting_template="TwoHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_03"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle12"
+				Type="Handle" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 100 Weight: 1.68 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_twohanded_axe_2_t4"
+		name="{=dQgzH73b}Hollowed Wing Axe"
+		culture="Culture.nord"
+		crafting_template="TwoHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_07"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle05"
+				Type="Handle" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 89 Weight: 1.48 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_twohanded_axe_3_t5"
+		name="{=qX8OuuUy}Reinforced Ravens Wing Axe"
+		culture="Culture.nord"
+		crafting_template="TwoHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_08"
+				Type="Blade" />
+			<Piece
+				id="axe_craft_4_handle"
+				Type="Handle" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 128 Weight: 1.35 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_twohanded_axe_4_t5"
+		name="{=CHIq1ODq}Ravens Wing Axe"
+		culture="Culture.nord"
+		crafting_template="TwoHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_08"
+				Type="Blade" />
+			<Piece
+				id="axe_craft_1_handle"
+				Type="Handle" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 129 Weight: 1.26 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_twohanded_axe_5_t4"
+		name="{=cQPMKMvU}Reinforced Hollowed Wing Axe"
+		culture="Culture.nord"
+		crafting_template="TwoHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_07"
+				Type="Blade" />
+			<Piece
+				id="axe_craft_10_handle"
+				Type="Handle" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 107 Weight: 1.46 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_twohanded_axe_6_t4"
+		name="{=qxDt8gnY}Reinforced Nord Axe"
+		culture="Culture.nord"
+		crafting_template="TwoHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_03"
+				Type="Blade" />
+			<Piece
+				id="axe_craft_4_handle"
+				Type="Handle" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 126 Weight: 1.54 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_battle_axe_1_t5"
+		name="{=YY2saHfd}Engraved Nord Battle Axe"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_10"
+				Type="Blade"
+				scale_factor="104" />
+			<Piece
+				id="naval_axe_handle09"
+				Type="Handle"
+				scale_factor="105" />
+			<Piece
+				id="naval_axe_pommel_06"
+				Type="Pommel"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 54 Weight: 1.29 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_battle_axe_2_t5"
+		name="{=qrYvaqWi}Nord Battle Axe"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_12"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle04"
+				Type="Handle" />
+			<Piece
+				id="spear_pommel_5"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 55 Weight: 1.29 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_battle_axe_3_t4"
+		name="{=UNqJ6cGH}Reinforced Leatherbound Battle Axe"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_11"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle02"
+				Type="Handle"
+				scale_factor="90" />
+			<Piece
+				id="spear_pommel_5"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 63 Weight: 1.22 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_battle_axe_4_t3"
+		name="{=vsbna9At}Leatherbound Hardened Battle Axe"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_01"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="naval_axe_handle03"
+				Type="Handle"
+				scale_factor="90" />
+			<Piece
+				id="naval_axe_pommel_02"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 63 Weight: 1.44 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_battle_axe_5_t3"
+		name="{=pgVdvzwq}Leatherbound Nord Battle Axe"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_01"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle06"
+				Type="Handle" />
+			<Piece
+				id="naval_axe_pommel_03"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 56 Weight: 1.42 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_battle_axe_6_t2"
+		name="{=HoMaQ6dN}Drengr Long Axe"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_02"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle07"
+				Type="Handle" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 70 Weight: 1.37 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_battle_axe_7_t2"
+		name="{=PCz9YN6I}Drengr Axe"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_02"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="naval_axe_handle01"
+				Type="Handle" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 61 Weight: 1.11 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_hatchett_1_t2"
+		name="{=wpUnYAKD}Nord Hatchett"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_04"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle10"
+				Type="Handle"
+				scale_factor="90" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 50 Weight: 1.02 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_hatchett_2_t2"
+		name="{=4GjEF7BD}Leatherbound Nord Hatchett"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_04"
+				Type="Blade"
+				scale_factor="96" />
+			<Piece
+				id="naval_axe_handle08"
+				Type="Handle"
+				scale_factor="105" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 47 Weight: 1.04 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_hatchett_3_t1"
+		name="{=p6Qcfrwq}Nord Work Hatchett"
+		culture="Culture.nord"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="axe_craft_32_head"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="naval_axe_handle08"
+				Type="Handle"
+				scale_factor="98" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 44 Weight: 1.1 -->
+	</CraftedItem>
+	<!-- NORD SWORD -->
+	<!-- NORD SWORD -->
+	<CraftedItem
+		id="nord_sword_1_t2"
+		name="{=sik8hNaJ}Ungmann Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_13"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_01"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_09"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_01"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 100 Weight: 1.38 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_1_t3"
+		name="{=C87U8HwK}Hirdmann Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_05"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_03"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_04"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_02"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 95 Weight: 1.1 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_2_t3"
+		name="{=cpB5VNjK}Striped Nord Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_12"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_04"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_06"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_04"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 104 Weight: 1.4 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_1_t4"
+		name="{=Pds2TJAU}Vargr Decorated Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_02"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_06"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_03"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_03"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 99 Weight: 1.25 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_2_t4"
+		name="{=vxO2Ndmn}Nord Decorated Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_03"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_05"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_02"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_05"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 100 Weight: 1.2 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_3_t4"
+		name="{=I5a7SGbS}Ulfhednar Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_08"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_07"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_06"
+				Type="Handle" />
+			<Piece
+				id="sturgian_noble_pommel_2"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 98 Weight: 1.15 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_4_t4"
+		name="{=smRZRR4f}Thegn Broadsword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_09"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_10"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_10"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_06"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 98 Weight: 1.16 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_1_t5"
+		name="{=Wa2UM4an}Berserkr Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		is_merchandise="false"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_11"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_08"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_08"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_08"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 113 Weight: 1.6 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_2_t5"
+		name="{=7UJtcxQL}Huscarl Runed Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_06"
+				Type="Blade"
+				scale_factor="102" />
+			<Piece
+				id="nord_sword_guard_09"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_08"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_09"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 89 Weight: 1.09 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_sword_3_t5"
+		name="{=PhdM4gka}Jarlsmenn Sword"
+		culture="Culture.nord"
+		crafting_template="OneHandedSword"
+		is_merchandise="false"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_07"
+				Type="Blade" />
+			<Piece
+				id="nord_sword_guard_09"
+				Type="Guard" />
+			<Piece
+				id="nord_sword_grip_07"
+				Type="Handle" />
+			<Piece
+				id="nord_sword_pommel_07"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 87 Weight: 1.08 -->
+	</CraftedItem>
+	<!-- NORD Spear -->
+	<!-- NORD Spear -->
+	<CraftedItem
+		id="nord_spear_1_t2"
+		name="{=ahLWzXL8}Knobbed Short Spear"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_10"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="spear_handle_3"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 154 Weight: 1.53 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_2_t2"
+		name="{=ksvfuLlS}Drilled Leaf Short Spear"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_11"
+				Type="Blade" />
+			<Piece
+				id="spear_handle_18"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 152 Weight: 1.74 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_javelin_1_t3"
+		name="{=yPv2NFcd}Nord Javelin"
+		culture="Culture.nord"
+		crafting_template="Javelin"
+		modifier_group="spear_dart_throwing">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_9"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="spear_handle_11"
+				Type="Handle" />
+		</Pieces>
+		<!-- Length: 84 Weight: 1.23 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_1_t3"
+		name="{=ZslvBWEf}Decorated Leaf Spear"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_3"
+				Type="Blade"
+				scale_factor="95" />
+			<Piece
+				id="nord_spear_guard_8"
+				Type="Guard"
+				scale_factor="90" />
+			<Piece
+				id="spear_handle_25"
+				Type="Handle"
+				scale_factor="90" />
+			<Piece
+				id="nord_spear_pommel_7"
+				Type="Pommel"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 194 Weight: 1.77 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_2_t3"
+		name="{=j8O8a16o}Hirdmann Spear"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_12"
+				Type="Blade" />
+			<Piece
+				id="nord_spear_guard_5"
+				Type="Guard" />
+			<Piece
+				id="spear_handle_21"
+				Type="Handle" />
+			<Piece
+				id="nord_spear_pommel_7"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 214 Weight: 2.01 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_1_t4"
+		name="{=bFCgpmjI}Thegn Long Spear "
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_4"
+				Type="Blade" />
+			<Piece
+				id="nord_spear_guard_10"
+				Type="Guard"
+				scale_factor="90" />
+			<Piece
+				id="spear_handle_16"
+				Type="Handle"
+				scale_factor="109" />
+			<Piece
+				id="nord_spear_pommel_2"
+				Type="Pommel"
+				scale_factor="90" />
+		</Pieces>
+		<!-- Length: 182 Weight: 2.19 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_atgeir_1_t4"
+		name="{=x9yX5WY1}Vargr Atgeir"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_13"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="default_polearm_guard"
+				Type="Guard" />
+			<Piece
+				id="spear_handle_20"
+				Type="Handle" />
+			<Piece
+				id="spear_pommel_10"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 145 Weight: 1.74 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_atgeir_1_t5"
+		name="{=Co7OJ4xk}Ulfhednar Atgeir"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_13"
+				Type="Blade" />
+			<Piece
+				id="default_polearm_guard"
+				Type="Guard" />
+			<Piece
+				id="spear_handle_19"
+				Type="Handle"
+				scale_factor="110" />
+			<Piece
+				id="nord_spear_pommel_4"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 145 Weight: 1.74 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_2_t5"
+		name="{=P3BMHUI7}Jarlsmenn Spear"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_2"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="spear_handle_26"
+				Type="Handle" />
+			<Piece
+				id="nord_spear_pommel_4"
+				Type="Pommel"
+				scale_factor="98" />
+		</Pieces>
+		<!-- Length: 217 Weight: 2.04 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_3_t5"
+		name="{=i9emJMhc}Huscarl Spear"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_7"
+				Type="Blade"
+				scale_factor="103" />
+			<Piece
+				id="nord_spear_guard_7"
+				Type="Guard"
+				scale_factor="104" />
+			<Piece
+				id="spear_handle_26"
+				Type="Handle"
+				scale_factor="108" />
+			<Piece
+				id="nord_spear_pommel_4"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 228 Weight: 1.64 -->
+	</CraftedItem>
+	<CraftedItem
+		id="nord_spear_4_t5"
+		name="{=azZbPrLH}Horse Guard Spear"
+		culture="Culture.nord"
+		crafting_template="TwoHandedPolearm"
+		modifier_group="polearm">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_5"
+				Type="Blade" />
+			<Piece
+				id="nord_spear_guard_7"
+				Type="Guard" />
+			<Piece
+				id="spear_handle_26"
+				Type="Handle" />
+			<Piece
+				id="nord_spear_pommel_4"
+				Type="Pommel"
+				scale_factor="110" />
+		</Pieces>
+		<!-- Length: 233 Weight: 2.1 -->
+	</CraftedItem>
+	<Item
+		multiplayer_item="false"
+		id="hook"
+		name="{=7zCPG8TR}Hook"
+		is_merchandise="false"
+		body_name="bo_throwing_stone"
+		mesh="hook"
+		weight="1"
+		appearance="0.1"
+		Type="Thrown"
+		item_holsters="">
+		<ItemComponent>
+			<Weapon
+				accuracy="100"
+				stack_amount="1"
+				thrust_speed="100"
+				speed_rating="100"
+				missile_speed="20"
+				weapon_length="100"
+				thrust_damage="0"
+				weapon_class="Stone"
+				ammo_class="Stone"
+				weapon_balance="100"
+				physics_material="missile"
+				swing_damage_type="Blunt"
+				thrust_damage_type="Blunt"
+				item_usage="stone">
+				<WeaponFlags
+					RangedWeapon="true"
+					Consumable="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			DropOnAnyAction="true"
+			DoesNotSpawnWhenDropped="true" />
+	</Item>
+	<!-- Tournament_weapons -->
+	<!-- Tournament_weapons -->
+	<CraftedItem
+		id="nord_javelin_blunt"
+		name="{=tndayFqm}God's Ray"
+		crafting_template="Javelin"
+		is_merchandise="false"
+		culture="Culture.nord"
+		has_modifier="false">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_2_blunt"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="default_polearm_guard"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="spear_handle_9"
+				Type="Handle"
+				scale_factor="100" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="nord_atgeir_polearm_blunt"
+		name="{=UnzLkDwh}Sparring Atgeir"
+		crafting_template="TwoHandedPolearm"
+		is_merchandise="false"
+		culture="Culture.nord"
+		has_modifier="false">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_13_blunt"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="default_polearm_guard"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="spear_handle_4"
+				Type="Handle"
+				scale_factor="90" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="nord_polearm_blunt"
+		name="{=IrfkUehV}Decorated Sparring Spear"
+		crafting_template="TwoHandedPolearm"
+		is_merchandise="false"
+		culture="Culture.nord"
+		has_modifier="false">
+		<Pieces>
+			<Piece
+				id="nord_spear_blade_1_blunt"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="default_polearm_guard"
+				Type="Guard" />
+			<Piece
+				id="spear_handle_14"
+				Type="Handle"
+				scale_factor="93" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="nord_2haxe_blunt"
+		name="{=HZzitkbA}Nord Hollow Two Handed Axe"
+		crafting_template="TwoHandedAxe"
+		is_merchandise="false"
+		culture="Culture.nord"
+		has_modifier="false">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_07_blunt"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="naval_axe_handle05"
+				Type="Handle"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="nord_1haxe_blunt"
+		name="{=PtsMdvmg}Nord Etched Axe"
+		crafting_template="OneHandedAxe"
+		is_merchandise="false"
+		culture="Culture.nord"
+		has_modifier="false">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_11_blunt"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="naval_axe_handle07"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="nord_throwing_axe_blunt"
+		name="{=nUY0R3C5}Nord Sparring Throwing Axe"
+		crafting_template="ThrowingAxe"
+		is_merchandise="false"
+		culture="Culture.nord"
+		has_modifier="false">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_13_blunt"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="naval_axe_handle09_2"
+				Type="Handle"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="nord_1hsword_blunt"
+		name="{=c8vjF1OV}Embroidered Onehanded Sword"
+		crafting_template="OneHandedSword"
+		is_merchandise="false"
+		culture="Culture.nord"
+		has_modifier="false">
+		<Pieces>
+			<Piece
+				id="nord_sword_blade_02_blunt"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="nord_sword_guard_07"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="cleaver_grip_3"
+				Type="Handle"
+				scale_factor="100" />
+			<Piece
+				id="battania_pommel_1"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<!-- END Tournament_weapons -->
+	<!-- Tournament Elite Reward Weapons -->
+	<CraftedItem
+		id="head_breaker_2haxe"
+		name="{=6JDP59hC}Head Breaker"
+		crafting_template="TwoHandedAxe"
+		is_merchandise="false"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_08"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle12"
+				Type="Handle" />
+		</Pieces>
+		<!-- Length: 100 Weight: 1.48 -->
+	</CraftedItem>
+	<CraftedItem
+		id="world_chopper__1haxe"
+		name="{=D9NTPNfb}World Chopper"
+		crafting_template="OneHandedAxe"
+		is_merchandise="false">
+		<Pieces>
+			<Piece
+				id="naval_axe_head_10"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="naval_axe_handle02"
+				Type="Handle"
+				scale_factor="91" />
+		</Pieces>
+		<!-- Length: 71 Weight: 1.29 -->
+	</CraftedItem>
+	<!-- END Tournament Elite Reward Weapons -->
+	<!-- END Tournament Elite Reward Weapons -->
+	<!-- Coh weapons -->
+	<CraftedItem
+		id="barghasts_great_axe"
+		name="{=EvQfwcbG}Barghasts Great Axe"
+		crafting_template="TwoHandedAxe">
+		<Pieces>
+			<Piece
+				id="coh_axe_head_1"
+				Type="Blade" />
+			<Piece
+				id="coh_axe_handle_1"
+				Type="Handle"
+				scale_factor="95" />
+			<Piece
+				id="coh_axe_pommel_1"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 119 Weight: 1.31 -->
+	</CraftedItem>
+	<CraftedItem
+		id="dagger_jambiya"
+		name="{=Hn6nlQ8W}Jambiya"
+		culture="Culture.sturgia"
+		crafting_template="Dagger">
+		<Pieces>
+			<Piece
+				id="coh_dagger_blade_1"
+				Type="Blade" />
+			<Piece
+				id="coh_dagger_guard_1"
+				Type="Guard" />
+			<Piece
+				id="coh_dagger_grip_1"
+				Type="Handle" />
+			<Piece
+				id="coh_dagger_pommel_1"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 43 Weight: 0.9 -->
+	</CraftedItem>
+	<CraftedItem
+		id="dagger_golden_claw"
+		name="{=twF8wm6u}Golden Claw"
+		crafting_template="Dagger"
+		modifier_group="sword"
+		culture="Culture.empire">
+		<Pieces>
+			<Piece
+				id="coh_dagger_blade_2"
+				Type="Blade" />
+			<Piece
+				id="coh_dagger_guard_2"
+				Type="Guard" />
+			<Piece
+				id="coh_dagger_grip_2"
+				Type="Handle" />
+			<Piece
+				id="coh_dagger_pommel_2"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 47 Weight: 0.9 -->
+	</CraftedItem>
+	<CraftedItem
+		id="captain_sword"
+		name="{=T1isi5ow}Nord Great Sword"
+		crafting_template="OneHandedSword"
+		modifier_group="sword"
+		is_merchandise="false"
+		culture="Culture.nord">
+		<Pieces>
+			<Piece
+				id="coh_sword_blade_1"
+				Type="Blade" />
+			<Piece
+				id="coh_sword_guard_1"
+				Type="Guard" />
+			<Piece
+				id="coh_sword_grip_1"
+				Type="Handle" />
+			<Piece
+				id="coh_sword_pommel_1"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 89 Weight: 1.25 -->
+	</CraftedItem>
+	<CraftedItem
+		id="pirate_sword_1"
+		name="{=pIXFkzbE}Pirate Sword"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="coh_sword_blade_2"
+				Type="Blade"
+				scale_factor="90" />
+			<Piece
+				id="sturgian_guard_8"
+				Type="Guard" />
+			<Piece
+				id="sturgian_grip_30"
+				Type="Handle" />
+			<Piece
+				id="khuzait_pommel_2"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 68 Weight: 0.76 -->
+	</CraftedItem>
+	<CraftedItem
+		id="pirate_sword_2"
+		name="{=JNaO6ZbL}Pirate Hook Sword"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="coh_mace_head_1"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="cleaver_guard_4"
+				Type="Guard" />
+			<Piece
+				id="sturgian_grip_33"
+				Type="Handle" />
+			<Piece
+				id="wood_pommel_1"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 78 Weight: 1.21 -->
+	</CraftedItem>
+	<CraftedItem
+		id="pirate_sword_3"
+		name="{=3cLifFla}Pirate Boarding Sword"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="coh_mace_head_1"
+				Type="Blade" />
+			<Piece
+				id="sturgian_guard_6"
+				Type="Guard" />
+			<Piece
+				id="sickle_handle_1"
+				Type="Handle" />
+			<Piece
+				id="coh_sword_pommel_2"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 93 Weight: 1.34 -->
+	</CraftedItem>
+	<CraftedItem
+		id="pirate_axe"
+		name="{=auw0MX3B}Pirate Axe"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="coh_mace_head_2"
+				Type="Blade" />
+			<Piece
+				id="coh_mace_handle_1"
+				Type="Handle"
+				scale_factor="95" />
+			<Piece
+				id="battania_pommel_3"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 119 Weight: 1.31 -->
+	</CraftedItem>
+	<CraftedItem
+		id="pirate_sword_4"
+		name="{=5sOaCRMf}Pirate Falchion Sword"
+		crafting_template="OneHandedSword"
+		modifier_group="sword">
+		<Pieces>
+			<Piece
+				id="cleaver_blade_7"
+				Type="Blade" />
+			<Piece
+				id="aserai_guard_8"
+				Type="Guard" />
+			<Piece
+				id="sturgian_grip_25"
+				Type="Handle" />
+			<Piece
+				id="khuzait_pommel_2"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 89 Weight: 1.86 -->
+	</CraftedItem>
+	<CraftedItem
+		id="pirate_axe_2"
+		name="{=EfxxVF1z}Pirate Tzikurion Axe"
+		crafting_template="OneHandedAxe"
+		modifier_group="axe">
+		<Pieces>
+			<Piece
+				id="axe_craft_26_head"
+				Type="Blade" />
+			<Piece
+				id="naval_axe_handle08"
+				Type="Handle"
+				scale_factor="110" />
+			<Piece
+				id="default_polearm_pommel"
+				Type="Pommel" />
+		</Pieces>
+		<!-- Length: 52 Weight: 1.17 -->
+	</CraftedItem>
+</Items>

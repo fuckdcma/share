@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Factions>
+	<Faction
+		id="northern_pirates"
+		initial_home_settlement="Settlement.hideout_mountain_12"
+		banner_key="17.234.116.1536.1536.768.768.1.0.0"
+		color="FF8B7C73"
+		color2="FF8B7C73"
+		culture="Culture.looters"
+		default_party_template="PartyTemplate.northern_pirates_template"
+		settlement_banner_mesh="none"
+		is_bandit="true"
+		is_outlaw="true"
+		name="{=pBUc2pL8}Sea Raiders"
+		tier="1"></Faction>
+	<Faction
+		id="southern_pirates"
+		initial_home_settlement="Settlement.hideout_forest_4"
+		banner_key="17.174.116.1536.1536.768.768.1.0.0"
+		color="FFECBA44"
+		color2="FFECBA44"
+		culture="Culture.southern_pirates"
+		default_party_template="PartyTemplate.southern_pirates_template"
+		settlement_banner_mesh="none"
+		is_bandit="true"
+		is_outlaw="true"
+		name="{=H9MSGaRu}Corsairs"
+		tier="1"></Faction>
+	<Faction
+		id="skolderbrotva"
+		tier="4"
+		name="{=7k9izAvC}Skolderbroda"
+		initial_home_settlement="Settlement.village_N3_2" />
+	<Faction
+		id="clan_nord_1"
+		name="{=arPWRpR2}Throsniring"
+		initial_home_settlement="Settlement.town_N1"
+		tier="6"
+		owner="Hero.lord_7_1"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.166.1528.1528.764.764.1.0.0.166.9.171.483.483.764.764.0.0.0" />
+	<Faction
+		id="clan_nord_2"
+		name="{=vYyqedpf}Kjolding"
+		initial_home_settlement="Settlement.town_N2"
+		tier="5"
+		owner="Hero.lord_7_3"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.166.1528.1528.764.764.1.0.0.174.9.38.483.483.764.764.0.0.0" />
+	<Faction
+		id="clan_nord_3"
+		name="{=gxNSsA2K}Orthling"
+		initial_home_settlement="Settlement.town_N3"
+		tier="4"
+		owner="Hero.lord_7_5"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.166.1528.1528.764.764.1.0.0.177.9.171.591.591.764.764.0.0.0" />
+	<Faction
+		id="clan_nord_4"
+		name="{=FKBKOucq}Skylfing"
+		initial_home_settlement="Settlement.town_N4"
+		tier="4"
+		owner="Hero.lord_7_14"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.166.1528.1528.764.764.1.0.0.178.9.171.581.581.764.764.0.0.0" />
+	<Faction
+		id="clan_nord_5"
+		name="{=fYHxASS0}Gauting"
+		initial_home_settlement="Settlement.castle_N1"
+		tier="3"
+		owner="Hero.lord_7_17"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.166.1528.1528.764.764.1.0.0.168.9.171.483.483.764.764.0.0.0" />
+	<Faction
+		id="clan_nord_6"
+		name="{=MK1p3KPZ}Rungniring"
+		initial_home_settlement="Settlement.castle_N3"
+		tier="3"
+		owner="Hero.lord_7_18"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.166.1528.1528.764.764.1.0.0.170.9.171.483.483.764.764.0.0.0" />
+	<Faction
+		id="clan_nord_7"
+		name="{=bZISStag}Huldring"
+		initial_home_settlement="Settlement.castle_N9"
+		tier="4"
+		owner="Hero.lord_7_19"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.166.1528.1528.764.764.1.0.0.165.9.171.483.483.767.742.0.0.0" />
+	<Faction
+		id="clan_nord_8"
+		name="{=CUoDDhze}Dvarroving"
+		initial_home_settlement="Settlement.castle_N4"
+		tier="1"
+		owner="Hero.lord_7_20"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.166.1528.1528.764.764.1.0.0.169.9.171.483.483.764.764.0.0.0" />
+	<Faction
+		id="clan_nord_9"
+		name="{=bel6Oc5G}Visduring"
+		initial_home_settlement="Settlement.castle_N7"
+		tier="2"
+		owner="Hero.lord_7_25"
+		culture="Culture.nord"
+		super_faction="Kingdom.nord"
+		is_noble="true"
+		banner_key="11.241.9.1528.1528.764.764.1.0.0.172.9.171.548.548.764.751.0.0.0" />
+</Factions>

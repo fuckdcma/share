@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings>
+	<!-- CHARACTER CREATION -->
+	<!-- Old versions - probably remove. The string_id is identical to the strings in Native\Module_Data\strings.xml
+  <string id="str_culture_description.vlandia" text="{=base.strings.string.text.str_culture_description.vlandia}The Vlandians are the descendants of adventurers from the west who lived under the Empire for centuries before forming an independent kingdom. With the decline of imperial authority, they have evolved into a well organised feudal society led by a cast of warlike nobles who prefer to fight with spears and lances on horseback." />
+  <string id="str_culture_description.battania" text="{=base.strings.string.text.str_culture_description.battania}The Battanians still remember the olden days when the woods stretched across northern Calradia, and the Empire and its cities had yet to violate their sanctity. The fierce warriors remain loyal to their traditional ways. They paint their faces when going to battle and even their noblemen prefer to fight on foot while using great axes and two-handed swords with deadly efficiency." />
+  <string id="str_culture_description.khuzait" text="{=base.strings.string.text.str_culture_description.khuzait}The Khuzait confederation of steppe tribes used to live a nomadic life, but have recently settled in the eastern frontier of the Empire and are slowly transitioning into an agrarian society with permanent town centers. Despite this, they still retain many aspects of their nomadic life, including their affinity with horses. They are masters of mounted archery, shooting and then galluping out of reach."  />
+  <string id="str_culture_description.sturgia" text="{=base.strings.string.text.str_culture_description.sturgia}Sturgians are the descendants of the foreign tribes of northern Calradia. As the empire expanded into their cold forests, they found that a ready market for the luxurious furs of woodland animals whom they traditionally hunted and trapped. Sturgian chieftains became princes, vying for pre-eminence with the help of Nord mercenaries who migrated into their realm. They are good hunters and wanderers, travelling far in search of opportunies both for trade and for plunder." />
+  <string id="str_culture_description.aserai" text="{=base.strings.string.text.str_culture_description.aserai}The Aserai are the inhabitants of the Nahasa desert, a mixture of nomadic bedouin and settled oasis farmers. They are famous for their horsemanship and their knowledge of the learning of many lands, especially medicine, gained from lying on some of the continent's most lucrative trade routes. Each clan is fiercely proud of its lineage and often jealous of the others, but when united by a charismatic leader, they become a major force in the south." />
+  <string id="str_culture_description.empire" text="{=base.strings.string.text.str_culture_description.empire}The Calradian Empire is in decline. Even before the murder of the Emperor Arenicos, the once united realm was torn by political rivalries. Today, those factions are in open war. Yet Calradians endure. They are technologically more advanced than their neighbors and their mastery of engineering is not just evident in their aqueducts, beautiful architecture and massive city walls. It also makes them experts in siege warfare." />
+  -->
+	<string
+		id="str_char_creation_generic_selection"
+		text="{=yCEMiKjB}Choose your {SELECTION}" />
+	<string
+		id="str_player_brother_name.vlandia"
+		text="{=dFpNRB1g}Nogand" />
+	<string
+		id="str_player_brother_name.battania"
+		text="{=C8NDynaB}Niasen" />
+	<string
+		id="str_player_brother_name.khuzait"
+		text="{=JDtbzwB0}Nusun" />
+	<string
+		id="str_player_brother_name.sturgia"
+		text="{=CaCfbRJq}Nozhon" />
+	<string
+		id="str_player_brother_name.aserai"
+		text="{=m2uEbrkh}Najun" />
+	<string
+		id="str_player_brother_name.empire"
+		text="{=4kBdT24F}Nathanos" />
+	<string
+		id="str_player_little_brother_name.vlandia"
+		text="{=8YvBapxl}Varic" />
+	<string
+		id="str_player_little_brother_name.battania"
+		text="{=w4Ajm40u}Faroc" />
+	<string
+		id="str_player_little_brother_name.khuzait"
+		text="{=WTF4ZIe7}Jatu" />
+	<string
+		id="str_player_little_brother_name.sturgia"
+		text="{=NWxC3CbS}Fodor" />
+	<string
+		id="str_player_little_brother_name.aserai"
+		text="{=at4MdVBJ}Fathid" />
+	<string
+		id="str_player_little_brother_name.empire"
+		text="{=CONYULU6}Phasos" />
+	<string
+		id="str_player_little_sister_name.vlandia"
+		text="{=3Y5dudW9}Alda" />
+	<string
+		id="str_player_little_sister_name.battania"
+		text="{=IcBq2jSZ}Aitheen" />
+	<string
+		id="str_player_little_sister_name.khuzait"
+		text="{=MgBazeaE}Alte" />
+	<string
+		id="str_player_little_sister_name.sturgia"
+		text="{=pAf5Mt3X}Alishka" />
+	<string
+		id="str_player_little_sister_name.aserai"
+		text="{=q65JaEBW}Alya" />
+	<string
+		id="str_player_little_sister_name.empire"
+		text="{=OA9bQ8QJ}Alea" />
+	<string
+		id="str_tutorial_Bow"
+		text="{=8UUV94Lq}Ranged Training" />
+	<string
+		id="str_tutorial_Melee"
+		text="{=qNrWU4Or}Melee Training" />
+	<string
+		id="str_tutorial_Mounted"
+		text="{=P7KbSBvr}Mounted Training" />
+	<string
+		id="str_tutorial_AdvancedMelee"
+		text="{=D0SoDPcr}Advanced Melee Training" />
+	<string
+		id="str_tutorial_ranged_bow"
+		text="{=gUvxp8mf}Bow Training" />
+	<string
+		id="str_tutorial_ranged_javelin"
+		text="{=okM9QUFA}Javelin Training" />
+	<string
+		id="str_tutorial_ranged_crossbow"
+		text="{=d0LpBfis}Crossbow Training" />
+	<string
+		id="str_tutorial_melee_sword"
+		text="{=5bYwdRFs}Sword Training" />
+	<string
+		id="str_tutorial_melee_shield"
+		text="{=GjGF4xbn}Shield Training" />
+	<string
+		id="str_tutorial_melee_go_to_trainer"
+		text="{=q71nXdD4}Go to trainer" />
+	<string
+		id="str_tutorial_mounted_melee"
+		text="{=MqeQco4z}Mounted Spear Training" />
+	<string
+		id="str_tutorial_mounted_bow"
+		text="{=9YqwNQPO}Mounted Ranged Training" />
+	<string
+		id="str_tutorial_mounted_sword_and_shield"
+		text="{=elRQHiLR}Mounted Sword Training" />
+	<string
+		id="str_tutorial_mounted_mount_the_horse"
+		text="{=L24eYhaX}Mount the horse" />
+	<string
+		id="str_tutorial_mounted_hit_targets"
+		text="{=jWvle1tC}Finish the track and hit targets as many as you can ({HIT} / {ALL})" />
+	<string
+		id="str_tutorial_advmelee_swordshield"
+		text="{=uW4htMut}Sword and Shield Training" />
+	<string
+		id="str_tutorial_adv_melee_go_to_trainer"
+		text="{=q71nXdD4}Go to trainer" />
+	<string
+		id="str_tutorial_adv_melee_beat_easy_trainer"
+		text="{=BoQ0N23g}Defeat rookie trainer" />
+	<string
+		id="str_tutorial_adv_melee_go_to_normal_trainer"
+		text="{=L0tOoWpV}Go to normal trainer" />
+	<string
+		id="str_tutorial_adv_melee_beat_normal_trainer"
+		text="{=iVbIg7hT}Defeat veteran trainer" />
+	<string
+		id="str_tutorial_ranged_go_to_shooting_position"
+		text="{=kwW6v202}Go to shooting position" />
+	<string
+		id="str_tutorial_advmelee_2hsword"
+		text="{=OJmYUcaU}Two Handed Sword Training" />
+	<string
+		id="str_tutorial_advmelee_spearshield"
+		text="{=z9eC5hjv}Spear and Shield Training" />
+	<string
+		id="str_tutorial_ranged_shoot_targets"
+		text="{=lN1RQ260}Shoot targets ({HIT} / {ALL})" />
+	<string
+		id="str_tutorial_melee_defense"
+		text="{=ZozwfwVl}Defend yourself ({HIT} / {ALL})" />
+	<string
+		id="str_tutorial_melee_attack"
+		text="{=LGuJctoZ}Attack to trainer ({HIT} / {ALL})" />
+	<string
+		id="str_tutorial_melee_sword_shield_training_description"
+		text="{=atWs6mkm}One Handed Sword and Shield Training" />
+	<string
+		id="str_tutorial_melee_sword_training_description"
+		text="{=HOuIbabS}Two Handed Sword Training" />
+	<string
+		id="str_tutorial_advmelee_training_description"
+		text="{=QHhdmvLj}Combat Training" />
+	<string
+		id="str_tutorial_mounted_spear_training_description"
+		text="{=MqeQco4z}Mounted Spear Training" />
+	<string
+		id="str_tutorial_mounted_melee_training_description"
+		text="{=elRQHiLR}Mounted Sword Training" />
+	<string
+		id="str_tutorial_mounted_bow_training_description"
+		text="{=tZtrK3cs}Horse Archery Training" />
+	<string
+		id="str_tutorial_crossbow_training_description"
+		text="{=d0LpBfis}Crossbow Training" />
+	<string
+		id="str_tutorial_bow_training_description"
+		text="{=gUvxp8mf}Bow Training" />
+	<string
+		id="str_tutorial_javelin_training_description"
+		text="{=okM9QUFA}Javelin Training" />
+	<string
+		id="str_tutorial_time_score"
+		text="{=Xr50xGhr} ({TIME_SCORE} seconds)" />
+	<string
+		id="str_destructible_component.archery_target_pot"
+		text="{=7xHMIZEP}Practice Target" />
+	<string
+		id="str_destructible_component.pot_archery_target_breakable"
+		text="{=7xHMIZEP}Practice Target" />
+	<string
+		id="str_destructible_component.archery_practice_target"
+		text="{=7xHMIZEP}Practice Target" />
+	<!-- //CHARACTER CREATION -->
+	<!--Tutorial Box Texts-->
+	<!-- Enter Village Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EnterVillageTutorial"
+		text="{=oj7B1GOT}Entering Settlements" />
+	<string
+		id="str_campaign_tutorial_description.EnterVillageTutorial"
+		text="{=3nilwlcM}You have arrived at {TUTORIAL_SETTLEMENT_NAME}. To explore the location, you can enter the settlement by pressing the highlighted button on the left." />
+	<!-- Navigate On Map Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.NavigateOnMapTutorialStep1"
+		text="{=3RqEmB15}Navigating Calradia" />
+	<string
+		id="str_campaign_tutorial_description.NavigateOnMapTutorialStep1"
+		text="{=f6xYa3c4}Welcome to Calradia!{newline}{newline}You can explore the world map by moving the camera with {FORWARD_KEY}{BACKWARDS_KEY}{LEFT_KEY}{RIGHT_KEY}, panning your view by right clicking and dragging your mouse and zooming in and out with the mouse wheel.{newline}{newline}Give it a try." />
+	<string
+		id="str_campaign_tutorial_description.NavigateOnMapTutorialStep1_controller"
+		text="{=B5MNWr0J}Welcome to Calradia!{newline}{newline}You can explore the world map by moving the camera with {CONSOLE_MOVEMENT_KEY}, panning your view with {CONSOLE_CAMERA_KEY} and zooming in and out with {MAP_ZOOM_OUT_KEY} and {MAP_ZOOM_IN_KEY}.{newline}{newline}Give it a try." />
+	<string
+		id="str_campaign_tutorial_title.NavigateOnMapTutorialStep2"
+		text="{=3RqEmB15}Navigating Calradia" />
+	<string
+		id="str_campaign_tutorial_description.NavigateOnMapTutorialStep2"
+		text="{=odbkXZkz}Moving your party is done by clicking on the map. This will leave a mark on the target location - unless you have clicked on inaccessible areas such as mountains or sea.{newline}{newline}Let's set off to {TUTORIAL_SETTLEMENT_NAME}!" />
+	<string
+		id="str_campaign_tutorial_description.NavigateOnMapTutorialStep2_controller"
+		text="{=3r0HfDMk}Moving your party is done by hovering the indicator on the map and pressing {CONSOLE_ACTION_KEY}. This will leave a mark on the target location - unless you have hovered over an inaccessible areas such as mountains or sea.{newline}{newline}Let's set off to {TUTORIAL_SETTLEMENT_NAME}!" />
+	<!-- See Markers In Mission Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.SeeMarkersInMissionTutorial"
+		text="{=jLWPSiOR}Speak to the Headman" />
+	<string
+		id="str_campaign_tutorial_description.SeeMarkersInMissionTutorial"
+		text="{=MmFO0Erq}You can hold {MISSION_INDICATORS_KEY} to see the location of the Headman.{newline}{newline}Once you are near him, press {INTERACTION_KEY} to speak with him." />
+	<!-- Get Supplies Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.GetSuppliesTutorialStep1"
+		text="{=cZsPNpCs}Buying Food" />
+	<string
+		id="str_campaign_tutorial_description.GetSuppliesTutorialStep1"
+		text="{=B7WlM3CU}You should purchase supplies from the settlement menu on the left." />
+	<string
+		id="str_campaign_tutorial_title.GetSuppliesTutorialStep2"
+		text="{=cZsPNpCs}Buying Food" />
+	<string
+		id="str_campaign_tutorial_description.GetSuppliesTutorialStep2"
+		text="{=3YkpC9Nf}You can filter Items through buttons at the top. Filter them to Misc." />
+	<string
+		id="str_campaign_tutorial_title.GetSuppliesTutorialStep3"
+		text="{=cZsPNpCs}Buying Food" />
+	<string
+		id="str_campaign_tutorial_description.GetSuppliesTutorialStep3"
+		text="{=CpKLau15}Your brother recommends that you purchase 2 sacks of grain.{newline}{newline}You can do this by transferring them to your inventory with the little arrow on the left side" />
+	<!-- Press Leave Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.PressLeaveToReturnFromMissionType1"
+		text="{=wq9sNkMc}Leaving a Mission" />
+	<string
+		id="str_campaign_tutorial_description.PressLeaveToReturnFromMissionType1"
+		text="{=NED1z7Pe}To leave a mission, you can hold down {LEAVE_MISSION_KEY}.{newline}{newline}This will return you to the settlement menu where you can purchase supplies and hire recruits." />
+	<string
+		id="str_campaign_tutorial_title.PressLeaveToReturnFromMissionType2"
+		text="{=wq9sNkMc}Leaving a Mission" />
+	<string
+		id="str_campaign_tutorial_description.PressLeaveToReturnFromMissionType2"
+		text="{=NED1z7Pe}To leave a mission, you can hold down {LEAVE_MISSION_KEY}.{newline}{newline}This will return you to the settlement menu where you can purchase supplies and hire recruits." />
+	<!-- Get Quest Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.GetQuestTutorial"
+		text="{=KUEHAD4U}Quests" />
+	<string
+		id="str_campaign_tutorial_description.GetQuestTutorial"
+		text="{=5M48atXU}You have an active quest! You can learn more about it by clicking on the quest log on the lower left of your screen." />
+	<string
+		id="str_campaign_tutorial_description.GetQuestTutorial_controller"
+		text="{=JEhe0TvD}You have an active quest! You can learn more about it by pressing {CONSOLE_ACTION_KEY} while the cursor is on the quest log on the lower left of your screen." />
+	<!-- Take and Rescue Prisoner Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.TakeAndRescuePrisonerTutorial"
+		text="{=ZW9OGfEt}Rescuing &amp; Taking Prisoners" />
+	<string
+		id="str_campaign_tutorial_description.TakeAndRescuePrisonerTutorial"
+		text="{=rLEIuqZO}After a hard-fought battle, you may have the choice to take some prisoners or recruit those that you have freed from your enemy.{newline}{newline}Both options are done by transferring the troops to your party with the little arrow button on the left." />
+	<!-- Stealth Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.StealthCrouchTutorial"
+		text="{=tIhdFeTC}Crouching" />
+	<string
+		id="str_campaign_tutorial_description.StealthCrouchTutorial"
+		text="{=aJ8dQKU7}You are quieter and less visible when crouching. Try it now by pressing {CROUCH_KEY} and pass by the guard." />
+	<string
+		id="str_campaign_tutorial_title.StealthWalkSlowTutorial"
+		text="{=w7IddF5x}Walk Slow" />
+	<string
+		id="str_campaign_tutorial_description.StealthWalkSlowTutorial"
+		text="{=Ufu46ImM}Press {WALK_MODE_KEY} to move slowly and reduce noise, making enemies less suspicious." />
+	<string
+		id="str_campaign_tutorial_description.StealthWalkSlowTutorial_controller"
+		text="{=AebxolIj}Hold {CROUCH_KEY} and press {INTERACTION_KEY} to move slowly and reduce noise, making enemies less suspicious." />
+	<string
+		id="str_campaign_tutorial_title.StealthHideInBushesTutorial"
+		text="{=ZdliFbrB}Tall Grass" />
+	<string
+		id="str_campaign_tutorial_description.StealthHideInBushesTutorial"
+		text="{=Bhi4lVXC}There is tall grass on the right of this passage. Use it to avoid the patrol." />
+	<string
+		id="str_campaign_tutorial_title.StealthDistractionTutorial"
+		text="{=04nPpqA2}Distraction" />
+	<string
+		id="str_campaign_tutorial_description.StealthDistractionTutorial"
+		text="{=87daU1Hh}You can distract guards with noise. Try throwing one of the stones in your inventory to grab their attention." />
+	<string
+		id="str_campaign_tutorial_title.StealthDarkZoneTutorial"
+		text="{=40fvS57E}Darkness" />
+	<string
+		id="str_campaign_tutorial_description.StealthDarkZoneTutorial"
+		text="{=suKqm5BB}You are less visible in dark areas." />
+	<string
+		id="str_campaign_tutorial_title.StealthStealthKillTutorial"
+		text="{=C5x8Ygbj}Stealth Kill" />
+	<string
+		id="str_campaign_tutorial_description.StealthStealthKillTutorial"
+		text="{=9Vw6P30y}You will deal additional damage when you hit an unaware enemy. Take out the remaining guard from behind." />
+	<string
+		id="str_campaign_tutorial_title.StealthHideCorpseTutorial"
+		text="{=GNDrLQQ8}Hide the Body" />
+	<string
+		id="str_campaign_tutorial_description.StealthHideCorpseTutorial"
+		text="{=9ePM7lia}If an enemy comes across a corpse, they will start investigating. You can avoid this by pressing {INTERACTION_KEY} to interact with the body to move it out of the way." />
+	<!-- Recruitment Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.RecruitmentTutorialStep1"
+		text="{=fpdXZ0fl}Recruitment" />
+	<string
+		id="str_campaign_tutorial_description.RecruitmentTutorialStep1"
+		text="{=Rvn8tGB0}Your brother has asked you to hire at least 4 men before you set out to face the raiders.{newline}{newline}You can hire troops from villages and towns by clicking on the &quot;Recruit Troops&quot; button." />
+	<string
+		id="str_campaign_tutorial_description.RecruitmentTutorialStep1_controller"
+		text="{=9Dpz9Emy}Your brother has asked you to hire at least 4 men before you set out to face the raiders.{newline}{newline}You can hire troops from villages and towns by pressing {CONSOLE_ACTION_KEY} while the cursor is on the &quot;Recruit Troops&quot; button." />
+	<string
+		id="str_campaign_tutorial_title.RecruitmentTutorialStep2"
+		text="{=fpdXZ0fl}Recruitment" />
+	<string
+		id="str_campaign_tutorial_description.RecruitmentTutorialStep2"
+		text="{=ddoD208G}Notables help you recruit more and better (higher level) troops according to your relation with them.{newline}{newline}Click on some troops to move them into your party." />
+	<string
+		id="str_campaign_tutorial_description.RecruitmentTutorialStep2_controller"
+		text="{=EeC9zwta}Notables help you recruit more and better (higher level) troops according to your relation with them.{newline}{newline}Move troops into your party by pressing {CONSOLE_ACTION_KEY} while the cursor is on their portraits." />
+	<!-- Talk to Notable Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.TalkToNotableTutorialStep1"
+		text="{=axnDLcDA}Talk to the headman" />
+	<string
+		id="str_campaign_tutorial_description.TalkToNotableTutorialStep1"
+		text="{=LS1whiyj}The menu on the top right shows the important people in your current location.{newline}{newline}Click on the headman's portrait to talk to him." />
+	<string
+		id="str_campaign_tutorial_description.TalkToNotableTutorialStep1_controller"
+		text="{=0yLZL3Vz}The menu on the top right shows the important people in your current location.{newline}{newline}Press {CONSOLE_ACTION_KEY} while the cursor is on the headman's portrait to talk to him." />
+	<string
+		id="str_campaign_tutorial_title.TalkToNotableTutorialStep2"
+		text="{=axnDLcDA}Talk to the headman" />
+	<string
+		id="str_campaign_tutorial_description.TalkToNotableTutorialStep2"
+		text="{=xCHBC7S9}Click on the &quot;Visit&quot; button to return to the notable and learn more about the task ahead." />
+	<string
+		id="str_campaign_tutorial_description.TalkToNotableTutorialStep2_controller"
+		text="{=wbdzBBPp}Return to the notable and learn more about the task ahead by pressing {CONSOLE_ACTION_KEY} while the cursor is on the &quot;Visit&quot; button." />
+	<!-- Order Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.OrderTutorial1TutorialStep1"
+		text="{=x4xx1Zd6}Battle Commands" />
+	<string
+		id="str_campaign_tutorial_description.OrderTutorial1TutorialStep1"
+		text="{=Ph2nk4Ms}At the beginning of a battle your soldiers will be holding their position. You can tell them to charge by opening the movement orders with {FIRST_ORDER_CATEGORY_KEY} and choosing &quot;Follow Me&quot; with {SECOND_ORDER_CATEGORY_KEY}." />
+	<string
+		id="str_campaign_tutorial_description.OrderTutorial1TutorialStep1_controller"
+		text="{=lRPvkRJy}At the beginning of a battle your soldiers will be holding their position. You can tell them to follow by opening the order menu with {HOLD_OPEN_ORDER_KEY} and movement orders with {FIRST_ORDER_CATEGORY_KEY} and choosing &quot;Follow Me&quot; with {SECOND_ORDER_CATEGORY_KEY}." />
+	<string
+		id="str_campaign_tutorial_title.OrderTutorial1TutorialStep2"
+		text="{=x4xx1Zd6}Battle Commands" />
+	<string
+		id="str_campaign_tutorial_description.OrderTutorial1TutorialStep2"
+		text="{=FCMKJLrh}You can tell your men to charge by opening the movement orders with {FIRST_ORDER_CATEGORY_KEY} and choosing charge with {THIRD_ORDER_CATEGORY_KEY}." />
+	<string
+		id="str_campaign_tutorial_description.OrderTutorial1TutorialStep2_controller"
+		text="{=mvYbXi4O}You can tell your men to charge by opening the order menu with {HOLD_OPEN_ORDER_KEY} and movement orders with {FIRST_ORDER_CATEGORY_KEY} and choosing &quot;Charge&quot; with {THIRD_ORDER_CATEGORY_KEY}." />
+	<string
+		id="str_campaign_tutorial_title.OrderTutorial2Tutorial"
+		text="{=mfugkRoz}Hideouts &amp; Orders" />
+	<string
+		id="str_campaign_tutorial_description.OrderTutorial2Tutorial"
+		text="{=LA4oaC7b}Hideout missions begin with the enemy unaware of your approach.{newline}{newline}Order your troops to follow you with the {FIRST_ORDER_CATEGORY_KEY} and {SECOND_ORDER_CATEGORY_KEY} shortcuts and try to take them on in small groups." />
+	<string
+		id="str_campaign_tutorial_description.OrderTutorial2Tutorial_controller"
+		text="{=0FQcVmYK}Hideout missions begin with the enemy unaware of your approach.{newline}{newline}Open the order menu with {HOLD_OPEN_ORDER_KEY} and order your troops to follow you with the {FIRST_ORDER_CATEGORY_KEY} and {SECOND_ORDER_CATEGORY_KEY} shortcuts and try to take them on in small groups." />
+	<!-- Movement in Mission Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.MovementInMissionTutorial"
+		text="{=KiJd6Xik}Movement" />
+	<string
+		id="str_campaign_tutorial_description.MovementInMissionTutorial"
+		text="{=58IKj85P}You can move your character:{newline}- Forwards with {FORWARD_KEY}{newline}- Backwards with {BACKWARDS_KEY}{newline}- Left with {LEFT_KEY}{newline}- Right with {RIGHT_KEY}{newline}{newline}Try them all now!" />
+	<string
+		id="str_campaign_tutorial_description.MovementInMissionTutorial_controller"
+		text="{=JXbP1ula}You can move your character with {CONSOLE_MOVEMENT_KEY}.{newline}{newline}Try moving in four direction now!" />
+	<!-- Upgrading Troops Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.UpgradingTroopsStep1"
+		text="{=GhVXQrYF}Upgrading Troops" />
+	<string
+		id="str_campaign_tutorial_description.UpgradingTroopsStep1"
+		text="{=I1Cvs1zL}Some of your troops now have enough experience for an upgrade.{newline}{newline}To review and upgrade your troops click on the highlighted party screen button." />
+	<string
+		id="str_campaign_tutorial_description.UpgradingTroopsStep1_controller"
+		text="{=oq3SvXCm}Some of your troops now have enough experience for an upgrade.{newline}{newline}To review and upgrade your troops press {CONSOLE_ACTION_KEY} while the cursor is on the highlighted party screen button." />
+	<string
+		id="str_campaign_tutorial_title.UpgradingTroopsStep2"
+		text="{=GhVXQrYF}Upgrading Troops" />
+	<string
+		id="str_campaign_tutorial_description.UpgradingTroopsStep2"
+		text="{=b1suRGVY}Troops that are ready to upgrade are marked with a special icon{UPGRADE_ICON}.{newline}{newline}The total number of upgradeable troops is shown inside the highlighted button, at the top right corner of the screen.{newline}{newline}Open the popup to upgrade some of your troops." />
+	<string
+		id="str_campaign_tutorial_title.UpgradingTroopsStep3"
+		text="{=GhVXQrYF}Upgrading Troops" />
+	<string
+		id="str_campaign_tutorial_description.UpgradingTroopsStep3"
+		text="{=SJ5Yp3eI}Troop upgrades will cost you denars and troop experience. Some troops may have two possible upgrade paths and may require items such as horses." />
+	<!-- Buying Food Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.BuyingFood"
+		text="{=dLXZaEI1}Buying Foods" />
+	<string
+		id="str_campaign_tutorial_description.BuyingFoodStep1"
+		text="{=vdEoBkpr}You must maintain food supplies at all times. If you run out of food, your party will lose morale. Your troops may desert you because of low morale.{newline}{newline}You can see your food reserve on the info bar. Hover over it to see how much food your party consumes each day. Since your party needs food, go to marketplace now to purchase some." />
+	<string
+		id="str_campaign_tutorial_description.BuyingFoodStep2"
+		text="{=QVChn4mG}Food items are also trade goods. You can find trade goods easily with the &quot;Miscellaneous&quot; filter." />
+	<string
+		id="str_campaign_tutorial_description.BuyingFoodStep3"
+		text="{=iOLa5rjZ}Grain is usually the cheapest food you can buy.{newline}{newline}Other types of food may grant various bonuses when consumed.{newline}{newline}Buy some food now." />
+	<!-- Choosing Perks Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.ChoosingPerkUpgradesStep1"
+		text="{=yrlPHYpa}Choosing Perk Upgrades" />
+	<string
+		id="str_campaign_tutorial_title.ChoosingPerkUpgradesStep2"
+		text="{=yrlPHYpa}Choosing Perk Upgrades" />
+	<string
+		id="str_campaign_tutorial_title.ChoosingPerkUpgradesStep3"
+		text="{=yrlPHYpa}Choosing Perk Upgrades" />
+	<string
+		id="str_campaign_tutorial_description.ChoosingPerkUpgradesStep1"
+		text="{=bZOVbBRG}When your skill points reach a required threshold, one or more perks will become available.{newline}{newline}This will be notified by a small indicator over the character screen button.{newline}{newline}Click on the character button to view available perk choices." />
+	<string
+		id="str_campaign_tutorial_description.ChoosingPerkUpgradesStep1_controller"
+		text="{=TZZaO7iI}When your skill points reach a required threshold, one or more perks will become available.{newline}{newline}This will be notified by a small indicator over the character screen button.{newline}{newline}Press {CONSOLE_ACTION_KEY} while the cursor is on the character button to view available perk choices." />
+	<string
+		id="str_campaign_tutorial_description.ChoosingPerkUpgradesStep2"
+		text="{=uWEUYE1m}You can choose an available perk by clicking on its button." />
+	<string
+		id="str_campaign_tutorial_description.ChoosingPerkUpgradesStep2_controller"
+		text="{=pKtXgb6b}You can choose an available perk by pressing {CONSOLE_ACTION_KEY} while the cursor is on its button." />
+	<string
+		id="str_campaign_tutorial_description.ChoosingPerkUpgradesStep3"
+		text="{=hZ9eNwFZ}Perks usually become available in pairs.{newline}{newline}Each one grants different bonuses so choose wisely." />
+	<!-- Choosing Focus Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.ChoosingSkillFocusStep1"
+		text="{=q3mOBLFn}Choosing Skill Focus" />
+	<string
+		id="str_campaign_tutorial_title.ChoosingSkillFocusStep2"
+		text="{=q3mOBLFn}Choosing Skill Focus" />
+	<string
+		id="str_campaign_tutorial_description.ChoosingSkillFocusStep1"
+		text="{=E9f8YUbO}You gain a level every time your total skill points total reaches a target value. Leveling up grants focus points to spend.{newline}{newline}If you have free focus points you will see it by a small indicator over the character screen button. Click on the button to review different skills and choose one to increase focus." />
+	<string
+		id="str_campaign_tutorial_description.ChoosingSkillFocusStep1_controller"
+		text="{=N8YVPdBw}You gain a level every time your total skill points total reaches a target value. Leveling up grants focus points to spend.{newline}{newline}If you have free focus points you will see it by a small indicator over the character screen button. Press {CONSOLE_ACTION_KEY} while the cursor is on the character button to review different skills and choose one to increase focus." />
+	<string
+		id="str_campaign_tutorial_description.ChoosingSkillFocusStep2"
+		text="{=k9QvIYaR}Focus points are used to increase the learning rate at any skill." />
+	<!-- Getting Companions Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.GettingCompanionsStep1"
+		text="{=9aymfBBG}Getting Companions" />
+	<string
+		id="str_campaign_tutorial_title.GettingCompanionsStep2"
+		text="{=9aymfBBG}Getting Companions" />
+	<string
+		id="str_campaign_tutorial_title.GettingCompanionsStep3"
+		text="{=9aymfBBG}Getting Companions" />
+	<string
+		id="str_campaign_tutorial_description.GettingCompanionsStep1"
+		text="{=e54212r1}In towns, you can find talented individuals that can aid you.{newline}{newline}These potential companions can be found hanging out in taverns.{newline}{newline}Go to tavern district now to find a potential companion." />
+	<string
+		id="str_campaign_tutorial_description.GettingCompanionsStep2"
+		text="{=VzE9aVBh}You can see portraits of Important NPCs on the top bar.{newline}{newline}Click on the portrait and choose visit from the menu." />
+	<string
+		id="str_campaign_tutorial_description.GettingCompanionsStep2_controller"
+		text="{=0FssY1wG}You can see portraits of Important NPCs on the top bar.{newline}{newline}Press {CONSOLE_ACTION_KEY} while the cursor is on their portrait and choose talk from the menu." />
+	<string
+		id="str_campaign_tutorial_description.GettingCompanionsStep3"
+		text="{=KbpiRMnO}Click on the &quot;Visit&quot; button to start conversation." />
+	<string
+		id="str_campaign_tutorial_description.GettingCompanionsStep3_controller"
+		text="{=v3Ibi438}Press {CONSOLE_ACTION_KEY} while the cursor is on the &quot;Visit&quot; button to start conversation." />
+	<!-- Ransoming Prisoners Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.RansomingPrisonersStep1"
+		text="{=HPe7HaZx}Ransoming Prisoners" />
+	<string
+		id="str_campaign_tutorial_title.RansomingPrisonersStep2"
+		text="{=HPe7HaZx}Ransoming Prisoners" />
+	<string
+		id="str_campaign_tutorial_description.RansomingPrisonersStep1"
+		text="{=Z7zWkAV8}You can ransom your prisoners off to the ransom broker.{newline}{newline}You can find him in the tavern area." />
+	<string
+		id="str_campaign_tutorial_description.RansomingPrisonersStep2"
+		text="{=IjMel5eg}You can sell off all prisoners at once.{newline}{newline}Or you can engage with the ransom broker to pick them individually." />
+	<!-- Equipment Sets Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EquipmentSets"
+		text="{=a5MGfVtc}Equipment Sets" />
+	<string
+		id="str_campaign_tutorial_description.EquipmentSets"
+		text="{=cuzMV8pT}Every character in Calradia has three equipment sets for different purposes: Civilian, battle, and stealth. You can switch between their sets using the buttons over the character's model. Note that some equipment may be unusable in certain equipment sets, due to their intended environment." />
+	<!-- Party Speed Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.PartySpeed"
+		text="{=xgO3cCgR}Overburdened" />
+	<string
+		id="str_campaign_tutorial_description.PartySpeed"
+		text="{=DtKKtcws}Notice your party speed has dropped because you are carrying too much.{newline}You should reduce the amount of weight you carry to speed up.{newline}You can also increase your party's carrying capacity by recruiting more troops or buying horses and camels." />
+	<!-- Army Cohesion Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.ArmyCohesionStep1"
+		text="{=o5ho2Txg}Army Cohesion" />
+	<string
+		id="str_campaign_tutorial_title.ArmyCohesionStep2"
+		text="{=o5ho2Txg}Army Cohesion" />
+	<string
+		id="str_campaign_tutorial_description.ArmyCohesionStep1"
+		text="{=gKzLAjXr}Notice how your army cohesion has dropped to a low point, and it is more likely that your army will disperse.{newline}You can click on the army management button to boost your cohesion." />
+	<string
+		id="str_campaign_tutorial_description.ArmyCohesionStep1_controller"
+		text="{=qjMhakoM}Notice how your army cohesion has dropped to a low point, and it is more likely that your army will disperse.{newline}You can press {CONSOLE_ACTION_KEY} while the cursor is on the army management button to boost your cohesion." />
+	<string
+		id="str_campaign_tutorial_description.ArmyCohesionStep2"
+		text="{=xORASoex}You can click on &quot;+&quot; button to add 10 cohesion. Be aware that boosting it costs some influence." />
+	<string
+		id="str_campaign_tutorial_description.ArmyCohesionStep2_controller"
+		text="{=JD7OlpIl}You can press {CONSOLE_ACTION_KEY} while the cursor is on the &quot;+&quot; button to add 10 cohesion. Be aware that boosting it costs some influence." />
+	<!-- Create Army Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.CreateArmyStep1"
+		text="{=BfQrnvpC}Creating Army" />
+	<string
+		id="str_campaign_tutorial_title.CreateArmyStep2"
+		text="{=BfQrnvpC}Creating Army" />
+	<string
+		id="str_campaign_tutorial_title.CreateArmyStep3"
+		text="{=BfQrnvpC}Creating Army" />
+	<string
+		id="str_campaign_tutorial_description.CreateArmyStep1"
+		text="{=VvpPbvpm}You can call other lords to your banner. Click on the highlighted army icon on the lower right to do so." />
+	<string
+		id="str_campaign_tutorial_description.CreateArmyStep1_controller"
+		text="{=oKl1p2er}You can call other lords to your banner. Press {CONSOLE_ACTION_KEY} while the cursor is on the highlighted army icon on the lower right to do so." />
+	<string
+		id="str_campaign_tutorial_description.CreateArmyStep2"
+		text="{=bfIEbq8b}You can create an army by adding members from the list on the left. To finalize your choices, press &quot;Done&quot;." />
+	<string
+		id="str_campaign_tutorial_description.CreateArmyStep3"
+		text="{=5RSfkx7d}Gathering of your army may take some time." />
+	<!-- Raid Village Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.RaidVillageStep1"
+		text="{=zN9iNaIW}Raiding Village" />
+	<string
+		id="str_campaign_tutorial_description.RaidVillageStep1"
+		text="{=pow4wUAM}Raiding villages will weaken the economy of the owner's faction by disrupting the flow of supplies between the village and its bound settlement. Also, the raiding party will get some resources from raiding." />
+	<!-- Bombardment Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.BombardmentStep1"
+		text="{=QewGND2m}Sieges" />
+	<string
+		id="str_campaign_tutorial_description.BombardmentStep1"
+		text="{=xFWG6uZ8}Sieges are an integral part of warfare in Calradia, as they are the main way to conquer towns and castles." />
+	<!-- Order of Battle Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.OrderOfBattleTutorialStep1"
+		text="{=TCQQRQgI}Order of Battle" />
+	<string
+		id="str_campaign_tutorial_title.OrderOfBattleTutorialStep2"
+		text="{=TCQQRQgI}Order of Battle" />
+	<string
+		id="str_campaign_tutorial_title.OrderOfBattleTutorialStep3"
+		text="{=TCQQRQgI}Order of Battle" />
+	<string
+		id="str_campaign_tutorial_description.OrderOfBattleTutorialStep1"
+		text="{=eFv4yeJY}If you have at least 20 troops you'll have the option to draw up a strategy before every battle. You can assign heroes to be captains of formations, distribute your troops between formations and give preferences to which kinds of troops should be included in which formation, as well as some other options.{newline}{newline}Try assigning yourself as the captain of one of the formations by dragging your portrait at the center top to one of the formations' captain slots." />
+	<string
+		id="str_campaign_tutorial_description.OrderOfBattleTutorialStep2"
+		text="{=yhTaDeLf}You can create new formations to divide your troops into smaller groups to have finer control. You can also determine what percentage of the selected troop type should start the battle in these formations by manipulating the sliders inside the formation cards.{newline}{newline}Try creating a new formation by selecting its type and adjust a formation's troop weight." />
+	<string
+		id="str_campaign_tutorial_description.OrderOfBattleTutorialStep3"
+		text="{=bqgthBbb}If you're not the encounter leader, the Order of Battle screen will open in a limited state. This means that lords senior to you will choose their formations first. You then assign yourself to a formation, and you will control that single formation.{newline}{newline}Try assigning yourself to an available formation." />
+	<!-- Crafting Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.CraftingStep1Tutorial"
+		text="{=Kqt8RHh7}Smithy" />
+	<string
+		id="str_campaign_tutorial_description.CraftingStep1Tutorial"
+		text="{=1jggMDRI}This screen allows you to craft different weapons for yourself or to fulfill orders for local non-player characters. To do this, you must use raw or refined resources that you can either purchase or manufacture by smelting weapons you carry.{newline}{newline}You can change the type of weapon that you are crafting through the highlighted button." />
+	<!-- Crafting Orders Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.CraftingOrdersTutorial"
+		text="{=0NPZA7Ub}Crafting orders" />
+	<string
+		id="str_campaign_tutorial_description.CraftingOrdersTutorial"
+		text="{=L2biDS8U}Notables in towns will post orders for new weapons. They'll have requirements for you to complete and they'll pay you for the ordered weapon.{newline}{newline}You can view these orders by clicking on the highlighted button, at the top right." />
+	<!-- Inventory Banner Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.InventoryBannerItemTutorial"
+		text="{=7kjdE4s2}Banners" />
+	<string
+		id="str_campaign_tutorial_description.InventoryBannerItemTutorial"
+		text="{=6G8w1ZBv}You've found a banner! Banners are items that can be equipped by heroes and they give significant bonuses to the formations those heroes lead. You can inspect and see the effect of the banner by hovering over the banner item." />
+	<!-- Crime Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.CrimeTutorial"
+		text="{=xj0MgUO0}Crime" />
+	<string
+		id="str_campaign_tutorial_description.CrimeTutorial"
+		text="{=wgK6QxXm}This is your crime rating with the faction that owns the settlement. You gain a rating by robbing or attacking a kingdom's subjects. Players with a rating of 30 or higher in a neutral kingdom will be barred from its settlements, while an independent player with a crime rating of 60 or higher will be attacked on sight. Crime rating will decay over time.{newline}{newline}You can get more details on crime rating from the encyclopedia." />
+	<!-- Assign Role Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.AssignRolesTutorial"
+		text="{=mo30kGdz}Assign Roles" />
+	<string
+		id="str_campaign_tutorial_description.AssignRolesTutorial"
+		text="{=SbLp73Z3}You can assign roles to your clan members in your party. They'll give bonuses according to their skills and perks.{newline}{newline}You can start the assignment process through the higlighted area." />
+	<!-- Kingdom Decision Voting Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.KingdomDecisionVotingTutorial"
+		text="{=VRLsCOQa}Kingdom Decision" />
+	<string
+		id="str_campaign_tutorial_description.KingdomDecisionVotingTutorial"
+		text="{=HORKLD7t}You can participate in your faction's decision-making process through this panel. You can spend influence to sway opinions but the ruler will always have the last word.{newline}{newline}Select one of the available decision options to continue." />
+	<!-- Encyclopedia Home Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaHomeTutorial"
+		text="{=MxmOWsHj}Encyclopedia" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaHomeTutorial"
+		text="{=77YzJbA2}Encyclopedia offers up-to-date information about settlements, heroes, clans, and factions. Select a category to see contents listed under the said category." />
+	<!-- Encyclopedia Settlements Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaSettlementsTutorial"
+		text="{=wZPdOclh}Encyclopedia Settlements" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaSettlementsTutorial"
+		text="{=VMcd4nma}The Encyclopedia has information on all the towns, castles, and villages of Calradia. Once visited or revealed, you can track up-to-date information from the encyclopedia." />
+	<!-- Encyclopedia Troops Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaTroopsTutorial"
+		text="{=D4b6tzYx}Encyclopedia Units" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaTroopsTutorial"
+		text="{=MCeCa7SE}Troop pages allow you to see the skills and equipment sets of the selected troop. Try investigating upgrade trees to plan your army composition ahead of time." />
+	<!-- Encyclopedia Kingdoms Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaKingdomsTutorial"
+		text="{=1GgxLyhx}Encyclopedia Kingdoms" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaKingdomsTutorial"
+		text="{=zF0xUaXd}Investigate kingdoms to keep up with the fiefs, clans, and wars of the kingdoms of the Calradia." />
+	<!-- Encyclopedia Clans Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaClansTutorial"
+		text="{=3hfKI636}Encyclopedia Clans" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaClansTutorial"
+		text="{=TVqGNr8b}Keeping up with Clans of Caldraia allows you to follow up on allies and foes alike. You can check their members, fiefs, and power levels upon reveal." />
+	<!-- Encyclopedia Concepts Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaConceptsTutorial"
+		text="{=xDyzNFic}Encyclopedia Concepts" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaConceptsTutorial"
+		text="{=sYkqpuFx}Bannerlord has many different elements that affect the world of Calradia. You can always use filters to learn more about the game concepts." />
+	<!-- Encyclopedia Track Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaTrackTutorial"
+		text="{=lfkwsa5f}Track" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaTrackTutorial"
+		text="{=GDPa0sQX}Tracking allows you to find the settlements on the world map. As long as the track button is active location selected settlements will be highlighted. You can click the point near the settlement text to disable tracking." />
+	<!-- Encyclopedia Search Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaSearchTutorial"
+		text="{=NLKmdNbt}Search" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaSearchTutorial"
+		text="{=BV5gL8SK}If you know what or who you are looking for you can use the search bar and type in. The search bar lists all the persons, settlements, and troops of the Calradia." />
+	<!-- Encyclopedia Filters Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaFiltersTutorial"
+		text="{=OwqFpPwa}Filters" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaFiltersTutorial"
+		text="{=JoYrhCGB}Trying to find something specific? Use filters on the left bar to narrow out the results." />
+	<!-- Encyclopedia Sort Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaSortTutorial"
+		text="{=AtMSecCf}Sort" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaSortTutorial"
+		text="{=1XkYGDEZ}The sorting menu lets you sort your results based on different variables." />
+	<!-- Encyclopedia Fog of War Tutorial -->
+	<string
+		id="str_campaign_tutorial_title.EncyclopediaFogOfWarTutorial"
+		text="{=yF9agd1M}Fog of War" />
+	<string
+		id="str_campaign_tutorial_description.EncyclopediaFogOfWarTutorial"
+		text="{=rVaufuNb}You have opened a page where your character has very little information. Arriving at settlements and meeting people of interest related to this page will reveal more and up to date information." />
+	<!--//Tutorial Box Texts-->
+	<!--SPECIAL CHARACTER GREETINGS-->
+	<string
+		id="str_context_line.first_meeting_istiana"
+		text="{=HfZVK8gb}Yes... Do I know you?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="IsIstianaTag"
+				weight="100" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_quest_taken.storymode_mentor"
+		text="{=Uge82Njb}Have you decided what to do?">
+		<tags>
+			<tag
+				tag_name="IsStoryModeMentorTag"
+				weight="100" />
+		</tags>
+	</string>
+	<!-- Some main storyline texts -->
+	<string
+		id="main_storyline_skip_tutorial_notification_text"
+		text="{=lJiEsNiQ}A few hours after you leave the training ground, you come across a wounded man lying under a tree. You share your water with him and try to dress his wounds as best as you can. He tells you he is a traveling doctor. To thank you for your help, he hands you a small bronze artifact which he says was once given to him in payment by a warrior who said only that it was related to 'Neretzes' Folly.' He suspects it might be of great value. You resolve to find out more." />
+	<string
+		id="rescue_family_quest_let_go_radagos_quest_log"
+		text="{=DjQuB0TU}You saved your brothers and sister, and you decided to let {RADAGOS.LINK} go..." />
+	<string
+		id="rescue_family_quest_execute_radagos_quest_log"
+		text="{=ZpcV9MZE}You saved your brothers and sister, and you decided to execute {RADAGOS.LINK} because he caused the death of your parents." />
+	<string
+		id="rescue_family_quest_radagos_conversation_line_1"
+		text="{=X1TJNkBV}We found your little brother and sister. But my former partner {HIDEOUT_BOSS.LINK} betrayed me. We came into his camp to negotiate the kids' release, and he seized us right then and there.[if:convo_angry_voice]" />
+	<string
+		id="rescue_family_quest_brother_conversation_line_1"
+		text="{=xachJ1hb}Yes, we are all fine. The little ones are scared but fine... We need to be quick and get the hell out of this place.[if:convo_calm_friendly][ib:confident]" />
+	<string
+		id="rescue_family_quest_brother_conversation_line_2"
+		text="{=p3Kia1OO}I'll take them to the nearest fortress immediately. They will be safe there." />
+	<string
+		id="rescue_family_quest_galter_conversation_player_line_1"
+		text="{=mWMkslbn}He led us here. Where are my brothers and my sister?" />
+	<string
+		id="rescue_family_quest_radagos_goodbye_conversation_line_1"
+		text="{=3dhvmJDp}Well... Looks like we've gotten your kin back to you, so my end of our deal is complete. I'll be making myself scarce now.[ib:hip][if:convo_uncomfortable_voice]" />
+	<string
+		id="rescue_family_quest_radagos_goodbye_conversation_player_line_1"
+		text="{=HrdVRMgR}Perhaps by saving my brother and sister you earned your life back. Very well, go now." />
+	<string
+		id="find_hideout_quest_radagos_conversation_line_1"
+		text="{=eVgAY7ts}Good Heaven, I'll need a better description than that. My men have harvested dozens of little brats in this region. Quite good hunting grounds! Already sent most of them south to a slave market I know, though.[ib:hip][if:convo_snide_voice]" />
+	<string
+		id="find_hideout_quest_radagos_conversation_line_2"
+		text="{=j6bEqzmb}Oh, you'll need my help all right, if you want to get them back - alive, that is. " />
+	<string
+		id="find_hideout_quest_radagos_conversation_line_3"
+		text="{=TJbQO2Lm}See, my boys have some pretty specific instructions about what to do if there's a rescue attempt..." />
+	<string
+		id="find_hideout_quest_brother_conversation_line_1"
+		text="{=ZKTLAXo8}I have a better idea. We would have a better chance if we split up now. I'll take {RADAGOS.NAME} and go find the slaver market and look for a way to free the children.[if:convo_normal]" />
+	<string
+		id="find_hideout_quest_brother_conversation_line_2"
+		text="{=bCqsjBDl}However we must be careful not to endanger their lives and it could be better to just buy them. We need to have our purses full for that though." />
+	<string
+		id="find_hideout_quest_brother_conversation_line_3"
+		text="{=qIltCuBe}Get on the road now. Once I locate the little ones, I'll come find you.[ib:normal][if:convo_calm_friendly]" />
+	<string
+		id="little_sister_encyclopedia_text"
+		text="{=epB0x816}{PLAYER_LITTLE_SISTER.NAME} is the little sister of {PLAYER.LINK}. She has been abducted by bandits, who intend to sell her into slavery." />
+</strings>

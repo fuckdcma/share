@@ -1,0 +1,37 @@
+<Prefab>
+	<Window>
+	    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsEnabled">
+			<Children>
+			
+				<MiniMapWidget Id="MiniMap"  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="@SuggestedWidth" SuggestedHeight="@SuggestedHeight"  MarginLeft="-10" MarginTop="-20" Sprite="BlankWhiteSquare_9"
+				Brush.GlobalColor="#696969FF">
+					<Children>	
+						<Widget DataSource="{AgentMarkList}" Sprite="MiniMapBg" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center"  SuggestedWidth="@SuggestedWidth2" SuggestedHeight="@SuggestedHeight2" >
+							<ItemTemplate>		
+							
+                                <AgentMarkWidget Text="@AgentMarkSprite" Brush.FontSize="@MarkSize" DirectionX="@DirectionX" DirectionY="@DirectionY"   AgnetMarkState="@State" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="5" SuggestedHeight="5"  HorizontalAlignment="Center" VerticalAlignment="Center" PositionXOffset="@XOffset" PositionYOffset="@YOffset" IsUppermost="@Uppermost"
+                                    Brush.FontColor="@GlobalColor" Brush.TextAlphaFactor="@AlphaFactor">		
+                                    <Children>	
+                                        <TextWidget Text="●" Brush.FontSize="8" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center"  SuggestedWidth="5" SuggestedHeight="5" />
+                                        <Widget  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center"  SuggestedWidth="5" SuggestedHeight="5" />
+                                    </Children>	
+                                </AgentMarkWidget>
+							
+								<!-- <AgentMarkWidget DirectionX="@DirectionX" DirectionY="@DirectionY" Sprite="AgentMark\AgentMark" Sprite="AgentMark\AgentMark" DieSprite="AgentDieMark\AgentDieMark" AgnetMarkState="@State" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="6" SuggestedHeight="6" HorizontalAlignment="Center" VerticalAlignment="Center" PositionXOffset="@XOffset" PositionYOffset="@YOffset" IsUppermost="@Uppermost" -->
+<!-- Brush.GlobalColor="@GlobalColor"> -->
+		
+								<!-- <Children>	 -->
+									<!-- <TextWidget  Text="o"  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center"  SuggestedWidth="5" SuggestedHeight="5" /> -->
+									<!-- <Widget  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center"  SuggestedWidth="5" SuggestedHeight="5" /> -->
+								<!-- </Children>	 -->
+								<!-- </AgentMarkWidget> -->
+							</ItemTemplate>	
+						</Widget>
+					</Children>	
+					
+				</MiniMapWidget>
+				
+			</Children>
+		</Widget>		
+	</Window>
+</Prefab>

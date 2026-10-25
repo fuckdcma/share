@@ -1,0 +1,23 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="TroopIconXOffset" DefaultValue="-15"/>
+    <Parameter Name="TroopIconYOffset" DefaultValue="-10"/>
+  </Parameters>
+  <Window>
+    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="50" SuggestedHeight="46" PositionXOffset="-5">
+      <Children>
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="12" MarginTop="2.5" MarginBottom="2.5" HorizontalAlignment="Right" VerticalAlignment="Center">
+          <Children>
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="-2" MarginBottom="-2" MarginLeft="-2" MarginRight="-2" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="BlankWhiteCircle" Color="@Color2" AlphaFactor="0.8"/>
+            <ImageIdentifierWidget DataSource="{Banner}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="1.5" MarginBottom="1.5" MarginLeft="1.5" MarginRight="1.5"  HorizontalAlignment="Center" VerticalAlignment="Center" ImageId="@Id" AdditionalArgs="@AdditionalArgs" TextureProviderName="@TextureProviderName" CircularClipEnabled="true" IsCircularClipRadiusHalfOfHeight="true"/>
+          </Children>
+        </Widget>
+        <MultiplayerTroopTypeIconWidget Id="IconContainer" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="31" SuggestedHeight="33" ScaleFactor="1.2" HorizontalAlignment="Left" PositionXOffset="*TroopIconXOffset" PositionYOffset="*TroopIconYOffset" VerticalAlignment="Center" ForegroundWidget="IconForeground" IconSpriteType="@IconSpriteType" Color="@Color" UseOriginalSize="false">
+          <Children>
+            <Widget Id="IconForeground" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Color="@Color2"/>
+          </Children>
+        </MultiplayerTroopTypeIconWidget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

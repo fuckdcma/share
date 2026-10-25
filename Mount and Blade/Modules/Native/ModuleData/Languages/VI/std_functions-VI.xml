@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="Vietnamese" />
+  </tags>
+   <functions>
+	<function functionName="PLURAL" functionBody="{?$0.Plural}{$0.Plural}{?}{$0}{\?}" />
+	<function functionName="IS_PLURAL" functionBody="{?$0!.P}1{:?$0.Plural}1{:}0{\?}" />
+	<function functionName="GENDER" functionBody="{?$0!.MS}0{:?$0!.FS}1{:?$0!.MP}2{:?$0!.FP}3{:?$0!.NS}4{:?$0!.NP}5{:}{\?}" />
+	<function functionName="MAX" functionBody="{?$0&gt;$1}{$0}{?}{$1}{\\?}" />
+    <function functionName="ABS" functionBody="{?$0&gt;0}{$0}{?}{0 - $0}{\\?}" />
+    <function functionName="POW2" functionBody="{?$0==0}1{?}{2*POW2($0 - 1)}{\\?}" />
+    <function functionName="FIB" functionBody="{?$0 &lt; 2}1{?}{FIB($0 - 1)+FIB($0 - 2)}{\\?}" />
+    <function functionName="ADDITION" functionBody="$0+$1" />
+  </functions>
+</base>

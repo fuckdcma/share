@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<partyTemplates>
+  <MBPartyTemplate id="main_hero_party_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.main_hero" />
+      <!--PartyTemplateStack min_value="5" max_value="5" troop="NPCCharacter.vlandian_sharpshooter" />
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.vlandian_sergeant" />
+      <PartyTemplateStack min_value="20" max_value="20" troop="NPCCharacter.vlandian_sharpshooter" />
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.sturgian_recruit" />
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.aserai_tribesman" />
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.vlandian_recruit" />
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.battanian_volunteer" />
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.khuzait_nomad" />
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.vlandian_sharpshooter" />
+      <PartyTemplateStack min_value="30" max_value="30" troop="NPCCharacter.vlandian_sergeant" />
+      <PartyTemplateStack min_value="60" max_value="60" troop="NPCCharacter.aserai_tribal_horseman"/-->
+    </stacks>
+  </MBPartyTemplate>
+
+  <MBPartyTemplate id="gamescom_player_party_template_aserai" >
+    <stacks>
+      <PartyTemplateStack min_value="10" max_value="10" troop="NPCCharacter.yongliang_sol_1001" />
+      <PartyTemplateStack min_value="10" max_value="10" troop="NPCCharacter.yongliang_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+  <MBPartyTemplate id="militia_aserai_template" >
+    <stacks>
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yongliang_sol_1001" />
+      <PartyTemplateStack min_value="1" max_value="1" troop="NPCCharacter.yongliang_sol_1001" />
+    </stacks>
+  </MBPartyTemplate>
+
+  <MBPartyTemplate id="kingdom_hero_party_aserai_template" >
+    <stacks>
+      <PartyTemplateStack min_value="12" max_value="12" troop="NPCCharacter.yongliang_sol_1001" />
+      <PartyTemplateStack min_value="10" max_value="10" troop="NPCCharacter.yongliang_sol_1001" />
+
+    </stacks>
+  </MBPartyTemplate>
+</partyTemplates>

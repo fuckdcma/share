@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+-->
+<strings>
+	<!-- 铁匠铺打造 -->
+  <string id="str_crafting_template.SG_Mace" text="{=*}三国单手杖" />
+  <string id="str_crafting_template.SG_TwoHandedMace" text="{=*}三国双手杖" />
+
+	<string id="str_crafting_template.SG_OneHandedSword" text="{=*}三国单手剑" />
+  <string id="str_crafting_template.SG_TwoHandedSword" text="{=*}三国双手剑" />
+
+	<string id="str_crafting_template.SG_Pike" text="{=*}三国步战长枪" />
+  <string id="str_crafting_template.SG_TwoHandedPolearm" text="{=*}三国长杆" />
+  
+  <string id="str_crafting_template.SG_ThrowingKnife" text="{=*}三国飞刀" />
+  <string id="str_crafting_template.SG_Javelin" text="{=*}三国标枪" />
+  <string id="str_crafting_template.SG_ThrowingAxe" text="{=*}三国飞斧" />
+
+  <string id="str_crafting_template.SG_OneHandedAxe" text="{=*}三国单手斧" />
+  <string id="str_crafting_template.SG_TwoHandedAxe" text="{=*}三国双手斧" />
+
+  <string id="str_weapon_usage.SG_Mace" text="{=*}单手" />
+  <string id="str_weapon_usage.SG_TwoHandedMace" text="{=*}双手" />
+
+  <string id="str_weapon_usage.SG_OneHandedSword" text="{=*}单手" />
+  <string id="str_weapon_usage.SG_TwoHandedSword" text="{=*}双手" />
+
+  <string id="str_weapon_usage.SG_OneHandedPolearm" text="{=*}单手" />
+  <string id="str_weapon_usage.SG_TwoHandedPolearm" text="{=*}双手" />
+  <string id="str_weapon_usage.SG_TwoHandedPolearm_Couchable" text="{=*}骑枪冲刺" />
+  <string id="str_weapon_usage.SG_TwoHandedPolearm_Pike" text="{=*}双手" />
+  <string id="str_weapon_usage.SG_TwoHandedPolearm_Bracing" text="{=*}架矛" />
+  <string id="str_weapon_usage.SG_TwoHandedPolearm_Thrown" text="{=*}投掷" />
+
+	<string id="str_weapon_usage.SG_ThrowingKnife" text="{=*}投掷" />
+	<string id="str_weapon_usage.SG_Javelin" text="{=*}投掷" />
+
+  <string id="str_weapon_usage.SG_OneHandedAxe" text="{=*}单手" />
+  <string id="str_weapon_usage.SG_TwoHandedAxe" text="{=*}双手" />
+	<string id="str_weapon_usage.SG_ThrowingAxe" text="{=*}投掷" />
+
+  <!-- History Records -->
+  <string id="str_history_record" text="{=strHistoryRecord}history record" />
+  <string id="str_history_record_desc" text="{=strHistoryRecordDesc}history record desc" />
+  <string id="str_history_record_sort_time" text="{=strHistoryRecordSortTime}time of history" />
+  <string id="str_history_record_filter_group_time" text="{=strHistoryRecordFilterGroupTime}year of history" />
+  <string id="str_battle_record_title" text="{=strBattleRecordTitle}battle record title" />
+  <string id="str_battle_record_desc_first_field" text="{=strBattleRecordDescFirstField}battle record first desc field" />
+  <string id="str_battle_record_desc_first_settlement" text="{=strBattleRecordDescFirstSettlement}battle record first desc settlement" />
+  <string id="str_battle_record_desc_first_settlement_no_hero" text="{=strBattleRecordDescFirstSettlementNoHero}battle record first desc settlement" />
+  <string id="str_battle_record_desc_first_settlement_hero" text="{=strBattleRecordDescFirstSettlementHero}battle record first desc settlement" />
+  <string id="str_battle_record_regular_troop" text="{=strBattleRecordRegularTroop}regular troop" />
+  <string id="str_battle_record_splitter" text="{=strBattleRecordSplitter}, " />
+  <string id="str_battle_record_comma" text="{=strBattleRecordComma}, " />
+  <string id="str_battle_record_fullstop" text="{=strBattleRecordFullstop}, " />
+  <string id="str_battle_record_semicolon" text="{=strBattleRecordSemicolon}; " />
+  <string id="str_battle_record_result_win1" text="{=strBattleRecordResultWin1}greatly win" />
+  <string id="str_battle_record_result_win2" text="{=strBattleRecordResultWin2}regular victory" />
+  <string id="str_battle_record_result_win3" text="{=strBattleRecordResultWin3}miserable victor" />
+  <string id="str_battle_record_result_lose1" text="{=strBattleRecordResultLose1}fiasco" />
+  <string id="str_battle_record_result_lose2" text="{=strBattleRecordResultLose2}defeated" />
+  <string id="str_battle_record_result_lose3" text="{=strBattleRecordResultLose3}lose by a neck" />
+  <string id="str_battle_record_desc_second" text="{=strBattleRecordDescSecond}battle record desc second" />
+  <string id="str_battle_record_desc_third_prefix" text="{=strBattleRecordDescThirdPrefix}during this battle" />
+  <string id="str_battle_record_desc_third_kill_regular" text="{=strBattleRecordDescThirdKillRegular}desc third kill regular" />
+  <string id="str_battle_record_desc_third_kill_hero" text="{=strBattleRecordDescThirdKillHero}desc third kill hero" />
+  <string id="str_battle_record_desc_third_wound_hero" text="{=strBattleRecordDescThirdWoundHero}desc third wound hero" />
+  <string id="str_battle_record_desc_third_hero_wounded" text="{=strBattleRecordDescThirdHeroWounded}hero is wounded during the battle" />
+  <string id="str_battle_record_desc_third_hero_killed" text="{=strBattleRecordDescThirdHeroKilled}hero is killed during the battle" />
+
+  <!-- 文化名称 -->
+  <string id="str_culture_rich_name.yongliang" text="{=*}雍凉" />
+  <string id="str_culture_rich_name.yanzhou" text="{=*}兖州" />
+  <string id="str_culture_rich_name.yizhou" text="{=*}益州" />
+  <string id="str_culture_rich_name.yangzhou" text="{=*}扬州" />
+  <string id="str_culture_rich_name.jizhou" text="{=*}冀州" />
+  <string id="str_culture_rich_name.youzhou" text="{=*}幽州" />
+  <string id="str_culture_rich_name.yuzhou" text="{=*}豫州" />
+  <string id="str_culture_rich_name.jingzhou" text="{=*}荆州" />
+  <string id="str_culture_rich_name.jiaozhou" text="{=*}交州" />
+  <string id="str_culture_rich_name.sili" text="{=*}司州" />
+  <string id="str_culture_rich_name.qingzhou" text="{=*}青州" />
+  <string id="str_culture_rich_name.xuzhou" text="{=*}徐州" />
+  <string id="str_culture_rich_name.bingzhou" text="{=*}并州" />
+  <!-- 文化描述 -->
+  <string id="str_culture_description.yongliang" text="{=*}雍凉文化可追朔到古代黄河文明时期。秦一统后，以此地为雍、凉二州。自西汉以来，雍凉成为拱卫长安之屏障，而丝绸之路亦以雍凉地区为重要节点。百年来，此地商旅客货绵延，邦交使团络绎，而中原与西域之商贸和交流得以繁荣。同时，雍凉地区作为汉代西北边疆之军事重镇，民风尚武，淳朴彪悍。雍凉兵马以精锐骑兵为主，征战如电，奔袭如火，参与中原和西域之鏖战不计其数，堪称汉朝对外扩张、对内稳固边疆之柱石。雍凉文化历经千年岁月沧桑，其历史文化辉煌灿烂，为华夏文明不可或缺的重要部分。" />
+  <string id="str_culture_description.yanzhou" text="{=*}兖州历史可追溯到春秋时期，其区域曾属鲁国疆域。秦统一后，在此设置郡县。东汉以后，兖州成为东部之重要行政区域。兖州地理位置优越，土地肥沃，资源丰富盐铁、农业、渔业高度发达。经历两汉数百年之休养，兖州粮仓漫溢，武库皆强弩坚矛，士卒不畏死，百姓安居乐业，文人名士辈出，辞赋华章多出于此。兖州兵卒素以装备优良、训练严苛而闻名。将领多为名门望族之后，精于阵战，擅长多兵种配合协同战术，堪称攻守兼备之精锐。" />
+  <string id="str_culture_description.yizhou" text="{=*}益州大部位于巴蜀地界，山川险峻，地势崎岖；山河壮丽，自然风光优美。先秦时期，此地曾是小国林立。秦统一后，关中文化及巴蜀文化在此碰撞、融合。后又历经两汉数百年发展，方才形成具有西南特色之益州文化。益州自然资源丰富，盛产蜀锦丝绸，亦是关中之粮仓，有天府之称。益州山川，为军队提供了天然的防御条件。汉朝修筑临邛、蜀郡和郫县等军事要塞，郡县之中，多屯兵备战，以保益州免受南方少数民族入侵，扼守汉帝国西南边陲之稳定。" />
+  <string id="str_culture_description.yangzhou" text="{=*}扬州地处东部沿海之地，春秋古称淮、海及江南为扬州，战国时期，以吴楚鱼米之乡闻名于列国。汉代之扬州，临江淮，控吴越；东抵东海之滨，西至三江之口；土地肥沃，气候适宜。两汉以来，扬州之农业、商业皆得以发展，凭借其地理和气候优势，仓廪充实，世家云集，成为资源丰富之大州。扬州兵马多募楼船之士，士卒皆习水战，能在艨艟之上，以强弓硬弩击杀强敌。东汉末年，群雄纷乱，扬州之地多被分为淮南及江东二处，而扬州境内之氏族林立，也成为了无法调和之隐患。" />
+  <string id="str_culture_description.jizhou" text="{=*}春秋时期，百家争鸣，以禹之九州冠以称谓，冀州即其一。西汉元封五年，汉世宗孝武皇帝始设冀州刺史部。冀州地处河北平原，军民素来淳朴踏实。境内大小城郭连绵，村落密集。人口众多，兵源充沛。乃自古中原必争之地。冀州士卒多为材官、骑士、轻车，尤擅阵战，熟知传统兵团作战之法，于平原大规模之会战时尤显优势。然则北军多不习水性，水上作战往往力有不逮。" />
+  <string id="str_culture_description.youzhou" text="{=*}帝尧时，禹平水土，以为九州，“燕齐起幽营之号”，乃有幽州之称。战国时期，幽州属燕地，民风彪悍刚毅，而世之慷慨悲歌之士，多出于此。幽燕苦寒之地，商旅多望而生畏，故而严冬之时，往往物资紧俏。为防匈奴寇边，两汉以来不遗余力在此设要塞、修边防，更勤于马政。东汉初年，幽州之突骑已闻名于天下，为光武之倚重。幽州兵将擅长骑兵勇战，亦可适应冰雪苦寒之地，堪称北方边塞之重器。" />
+  <string id="str_culture_description.yuzhou" text="{=*}古之豫州，乃大禹九州之一，见于《禹贡》。其位于天下之中，故别称“中州”。其地东接青徐，西连雍并，北靠冀兖，南临荆襄，为南北之枢纽，交通之要冲。汉初年，设豫州刺史部，辖颍川郡、汝南郡、沛郡，以及梁国。东汉时，设其治所为谯郡，辖二郡四国九十七县。其地虽不大，而其重则冠于诸州之上，自古名人贤士，多出于此。豫州人口丰足，故而兵马充裕，马匹富足；粮秣满盈，戈矛锋锐。其兵甲弓弩之利，为当世所不及。" />
+  <string id="str_culture_description.jingzhou" text="{=*}《禹贡》曰：“荆及衡阳惟荆州“。荆州地界有云梦之泽、衡山之峦；北至荆山，南跨五岭；扼守大江之中游，而水网丘陵密布。自春秋战国以来，鄢郢之地是为楚文化之源头。开汉后数百年，荆州一度扩大，遂为天下之要冲。荆楚富庶，百姓安居，官吏士民皆乐其业，汉代文人雅士亦多汇聚于此，壮士所出，其俗勇而有谋，尤擅以剑盾、弓弩破敌，攻守兼备。" />
+  <string id="str_culture_description.jiaozhou" text="{=*}交州古为百越之地，秦设桂林、象郡，汉武置交趾刺史部，后称交州，是中原最南端疆域。此地远离中原，五岭阻隔，多雨林沼泽与瘴气，汉越杂居，民俗彪悍，士卒惯于湿热与丛林作战。两汉时，交州为“物产宝库”，热带果蔬、珍宝香料丰富，借海路成为海上丝路起点；其兵马兼有先秦遗风与南蛮之俗。士卒多为山林之中招募，擅长于丛林山地间奔袭突击。" />
+  <string id="str_culture_description.sili" text="{=*}司隶乃两汉京畿之地，秦属内史，汉武置司隶校尉部，辖洛阳、长安等重镇，为天下政教、军事、经济中枢。此地地势平坦，城池林立且城防坚固，两汉历代经营，宫室官署密布，人口稠密，人才荟萃；既是帝王驻跸之所，也是四方辐辏之地，掌控天下命脉，汉末虽遭战乱，仍是群雄逐鹿的核心目标，其中枢地位无可替代。" />
+  <string id="str_culture_description.qingzhou" text="{=*}青州溯源上古，少昊氏于此建都，禹分九州而定其名，秦并六国后置齐郡，汉武设刺史部，负山面海，渔盐丰饶，乃两汉“粟支十年”的富庶之地。其地处中原东部枢纽，临淄等城商贾辐辏，却因战略要冲屡遭战火。七国构乱，胶西兵兴于此；黄巾举义，百万流民集于斯。青州之民农时耕渔，战时为兵，善守城、通海事，既有齐鲁儒风之厚重，亦有乱世兵戈之刚健，是影响三国格局的重要地域。" />
+  <string id="str_culture_description.xuzhou" text="{=*}徐州溯源上古，乃尧封彭祖之地，为古之九州要地，秦设泗水郡，汉置刺史部，辖彭城、下邳等重镇，地处江淮与中原交汇，盐铁、丝绸、粮米在此集散。“东襟黄海、西接中原、南屏江淮、北扼齐鲁”，乃南北交通枢纽。然因战略位置关键，常年沦为争战之地。百姓于战火中既懂农耕桑麻，亦善操戈守城，步兵列阵御敌、弩兵凭城拒守。民风兼具江淮之柔韧与中原之刚劲。" />
+  <string id="str_culture_description.bingzhou" text="{=*}并州之名，肇始于禹分九州，秦并天下而置其郡，汉承秦制后拓其疆。并州属古九州，北邻匈奴、东接鲜卑，乃中原御胡第一道屏障，有“天下肩背”之称。两汉边患频仍，百姓久历战火，民风剽悍尚武；境内多草原牧场，马政兴盛，胡汉杂居促步骑技艺交融，卫青、霍去病皆发迹于此，并州铁骑早年破漠北、后成三国劲旅，刚勇之风贯穿乱世。" />
+
+  <!-- 文化父母名称 -->
+  <string id="str_player_father_name.yongliang" text="{=*}雍凉养父" />
+  <string id="str_player_mother_name.yongliang" text="{=*}雍凉养母" />
+  <string id="str_player_father_name.yanzhou" text="{=*}兖州养父" />
+  <string id="str_player_mother_name.yanzhou" text="{=*}兖州养母" />
+  <string id="str_player_father_name.yizhou" text="{=*}益州养父" />
+  <string id="str_player_mother_name.yizhou" text="{=*}益州养母" />
+  <string id="str_player_father_name.yangzhou" text="{=*}扬州养父" />
+  <string id="str_player_mother_name.yangzhou" text="{=*}扬州养母" />
+  <string id="str_player_father_name.jizhou" text="{=*}冀州养父" />
+  <string id="str_player_mother_name.jizhou" text="{=*}冀州养母" />
+  <string id="str_player_father_name.youzhou" text="{=*}幽州养父" />
+  <string id="str_player_mother_name.youzhou" text="{=*}幽州养母" />
+  <string id="str_player_father_name.yuzhou" text="{=*}豫州养父" />
+  <string id="str_player_mother_name.yuzhou" text="{=*}豫州养母" />
+  <string id="str_player_father_name.jingzhou" text="{=*}荆州养父" />
+  <string id="str_player_mother_name.jingzhou" text="{=*}荆州养母" />
+  <string id="str_player_father_name.jiaozhou" text="{=*}交州养父" />
+  <string id="str_player_mother_name.jiaozhou" text="{=*}交州养母" />
+  <string id="str_player_father_name.sili" text="{=*}司隶养父" />
+  <string id="str_player_mother_name.sili" text="{=*}司隶养母" />
+  <string id="str_player_father_name.xuzhou" text="{=*}徐州养父" />
+  <string id="str_player_mother_name.xuzhou" text="{=*}徐州养母" />
+  <string id="str_player_father_name.qingzhou" text="{=*}青州养父" />
+  <string id="str_player_mother_name.qingzhou" text="{=*}青州养母" />
+  <string id="str_player_father_name.bingzhou" text="{=*}并州养父" />
+  <string id="str_player_mother_name.bingzhou" text="{=*}并州养母" />
+
+  <!-- 文化文本 -->
+  <!--IS_GENERAL_SIDE true means there are several behaviours which explicitly declare their side, in which case in order not to repeat "from left side" several times, main body text will say it once and it won't be mentioned in each individiual behaviour's text-->
+  <string id="str_faction_ruler.yongliang" text="{=*}主公" />
+  <string id="str_faction_ruler.yanzhou" text="{=*}主公" />
+  <string id="str_faction_ruler.yizhou" text="{=*}主公" />
+  <string id="str_faction_ruler.yangzhou" text="{=*}主公" />
+  <string id="str_faction_ruler.jizhou" text="{=*}主公" />
+  <string id="str_faction_ruler.youzhou" text="{=*}主公" />
+  <string id="str_faction_ruler.yuzhou" text="{=*}主公" />
+  <string id="str_faction_ruler.jingzhou" text="{=*}主公" />
+  <string id="str_faction_ruler.jiaozhou" text="{=*}主公" />
+  <string id="str_faction_ruler.sili" text="{=*}主公" />
+  <string id="str_faction_ruler.qingzhou" text="{=*}主公" />
+  <string id="str_faction_ruler.xuzhou" text="{=*}主公" />
+  <string id="str_faction_ruler.bingzhou" text="{=*}主公" />
+
+  <string id="str_faction_official.yongliang" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.yanzhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.yizhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.yangzhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.jizhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.youzhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.yuzhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.jingzhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.jiaozhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.sili" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.qingzhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.xuzhou" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.bingzhou" text="{=*}{RULER_OP}" />
+  
+  <string id="str_faction_official.yongliang_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.yanzhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.yizhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.yangzhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.jizhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.youzhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.yuzhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.jingzhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.jiaozhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.sili_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.qingzhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.bingzhou_f" text="{=*}{RULER_OP}" />
+  <string id="str_faction_official.xuzhou_f" text="{=*}{RULER_OP}" />
+  <!-- <string id="lpbDPuuW" text="{RULER.NAME}{?RULER.GENDER}女皇{?}皇帝{\?}"/>
+       <string id="7pAZatbz" text="{RULER.NAME}{?RULER.GENDER}女皇{?}皇帝{\?}"/> -->
+  <string id="str_faction_ruler_term_in_speech.yongliang" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.yanzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.yizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.yangzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.jizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.youzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.yuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.jingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.jiaozhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.sili" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.qingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.bingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_term_in_speech.xuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+
+  <string id="str_faction_ruler_name_with_title.yongliang" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.yanzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.yizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.yangzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.jizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.youzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.yuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.jingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.jiaozhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.sili" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.qingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.bingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+  <string id="str_faction_ruler_name_with_title.xuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女主公{?}主公{\?}" />
+
+  <!-- <string id="nAaT19CC" text="{RULER.NAME}{?RULER.GENDER}执政官{?}执政官{\?}"/> -->
+  <string id="str_faction_noble_name_with_title.yongliang" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.yanzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.yizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.yangzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.jizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.youzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.yuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.jingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.jiaozhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.sili" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.qingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.bingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+  <string id="str_faction_noble_name_with_title.xuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}女将军{?}将军{\?}" />
+
+  <!-- "The southern imperial forces have withdrawn" -->
+  <string id="str_adjective_for_faction.yongliang" text="{=*}雍凉" /> <!-- 北帝国 -->
+  <string id="str_adjective_for_faction.yanzhou" text="{=*}兖州" />
+  <string id="str_adjective_for_faction.yizhou" text="{=*}益州" />
+  <string id="str_adjective_for_faction.yangzhou" text="{=*}扬州" />
+  <string id="str_adjective_for_faction.jizhou" text="{=*}冀州" />
+  <string id="str_adjective_for_faction.youzhou" text="{=*}幽州" />
+  <string id="str_adjective_for_faction.yuzhou" text="{=*}豫州" />
+  <string id="str_adjective_for_faction.jingzhou" text="{=*}荆州" />
+  <string id="str_adjective_for_faction.jiaozhou" text="{=*}交州" />
+  <string id="str_adjective_for_faction.sili" text="{=*}司隶" />
+  <string id="str_adjective_for_faction.qingzhou" text="{=*}青州" />
+  <string id="str_adjective_for_faction.bingzhou" text="{=*}并州" />
+  <string id="str_adjective_for_faction.xuzhou" text="{=*}徐州" />
+
+
+  <!-- "Not much left after the Southern Empire raided the place" -->
+  <string id="str_short_term_for_faction.yongliang" text="{=*}雍凉" /> <!-- 北帝国 -->
+  <string id="str_short_term_for_faction.yanzhou" text="{=*}兖州" />
+  <string id="str_short_term_for_faction.yizhou" text="{=*}益州" />
+  <string id="str_short_term_for_faction.yangzhou" text="{=*}扬州" />
+  <string id="str_short_term_for_faction.jizhou" text="{=*}冀州" />
+  <string id="str_short_term_for_faction.youzhou" text="{=*}幽州" />
+  <string id="str_short_term_for_faction.yuzhou" text="{=*}豫州" />
+  <string id="str_short_term_for_faction.jingzhou" text="{=*}荆州" />
+  <string id="str_short_term_for_faction.jiaozhou" text="{=*}交州" />
+  <string id="str_short_term_for_faction.sili" text="{=*}司隶" />
+  <string id="str_short_term_for_faction.bingzhou" text="{=*}青州" />
+  <string id="str_short_term_for_faction.qingzhou" text="{=*}并州" />
+  <string id="str_short_term_for_faction.xuzhou" text="{=*}徐州" />
+
+  <!-- The formal name for a faction is derived from the culture, as the southern Empire doesn't consider itself the 'southern Empire,' it considers itself the sole legitimate empire -->
+  <!-- "In the name of the Calradian Empire, I welcome you" -->
+  <string id="str_faction_formal_name_for_culture.yongliang" text="{=*}雍凉" /> <!-- 卡拉德帝国 -->
+  <string id="str_faction_formal_name_for_culture.yanzhou" text="{=*}兖州" />
+  <string id="str_faction_formal_name_for_culture.yizhou" text="{=*}益州" />
+  <string id="str_faction_formal_name_for_culture.yangzhou" text="{=*}扬州" />
+  <string id="str_faction_formal_name_for_culture.jizhou" text="{=*}冀州" />
+  <string id="str_faction_formal_name_for_culture.youzhou" text="{=*}幽州" />
+  <string id="str_faction_formal_name_for_culture.yuzhou" text="{=*}豫州" />
+  <string id="str_faction_formal_name_for_culture.jingzhou" text="{=*}荆州" />
+  <string id="str_faction_formal_name_for_culture.jiaozhou" text="{=*}交州" />
+  <string id="str_faction_formal_name_for_culture.sili" text="{=*}司隶" />
+  <string id="str_faction_formal_name_for_culture.bingzhou" text="{=*}青州" />
+  <string id="str_faction_formal_name_for_culture.qingzhou" text="{=*}并州" />
+  <string id="str_faction_formal_name_for_culture.xuzhou" text="{=*}徐州" />
+
+  <!-- "The language and laws of the Empire" -->
+  <string id="str_faction_informal_name_for_culture.yongliang" text="{=*}雍凉人" /> <!-- 帝国人 -->
+  <string id="str_faction_informal_name_for_culture.yanzhou" text="{=*}兖州人" />
+  <string id="str_faction_informal_name_for_culture.yizhou" text="{=*}益州人" />
+  <string id="str_faction_informal_name_for_culture.yangzhou" text="{=*}扬州人" />
+  <string id="str_faction_informal_name_for_culture.jizhou" text="{=*}冀州人" />
+  <string id="str_faction_informal_name_for_culture.youzhou" text="{=*}幽州人" />
+  <string id="str_faction_informal_name_for_culture.yuzhou" text="{=*}豫州人" />
+  <string id="str_faction_informal_name_for_culture.jingzhou" text="{=*}荆州人" />
+  <string id="str_faction_informal_name_for_culture.jiaozhou" text="{=*}交州人" />
+  <string id="str_faction_informal_name_for_culture.sili" text="{=*}司隶人" />
+  <string id="str_faction_informal_name_for_culture.qingzhou" text="{=*}青州人" />
+  <string id="str_faction_informal_name_for_culture.bingzhou" text="{=*}并州人" />
+  <string id="str_faction_informal_name_for_culture.xuzhou" text="{=*}徐州人" />
+
+
+  <!-- I will teach you imperial ways -->
+  <string id="str_adjective_for_culture.yongliang" text="{=*}雍凉" /> <!-- 帝国 -->
+  <string id="str_adjective_for_culture.yanzhou" text="{=*}兖州" />
+  <string id="str_adjective_for_culture.yizhou" text="{=*}益州" />
+  <string id="str_adjective_for_culture.yangzhou" text="{=*}扬州" />
+  <string id="str_adjective_for_culture.jizhou" text="{=*}冀州" />
+  <string id="str_adjective_for_culture.youzhou" text="{=*}幽州" />
+  <string id="str_adjective_for_culture.yuzhou" text="{=*}豫州" />
+  <string id="str_adjective_for_culture.jingzhou" text="{=*}荆州" />
+  <string id="str_adjective_for_culture.jiaozhou" text="{=*}交州" />
+  <string id="str_adjective_for_culture.sili" text="{=*}司隶" />
+  <string id="str_adjective_for_culture.qingzhou" text="{=*}青州" />
+  <string id="str_adjective_for_culture.bingzhou" text="{=*}并州" />
+  <string id="str_adjective_for_culture.xuzhou" text="{=*}徐州" />
+
+  <!-- I don't care for the imperials and their big, decadent cities -->
+  <string id="str_neutral_term_for_culture.yongliang" text="{=*}雍凉的" /> <!-- 帝国的 -->
+  <string id="str_neutral_term_for_culture.yanzhou" text="{=*}兖州的" />
+  <string id="str_neutral_term_for_culture.yizhou" text="{=*}益州的" />
+  <string id="str_neutral_term_for_culture.yangzhou" text="{=*}扬州的" />
+  <string id="str_neutral_term_for_culture.jizhou" text="{=*}冀州的" />
+  <string id="str_neutral_term_for_culture.youzhou" text="{=*}幽州的" />
+  <string id="str_neutral_term_for_culture.yuzhou" text="{=*}豫州的" />
+  <string id="str_neutral_term_for_culture.jingzhou" text="{=*}荆州的" />
+  <string id="str_neutral_term_for_culture.jiaozhou" text="{=*}交州的" />
+  <string id="str_neutral_term_for_culture.sili" text="{=*}司隶的" />
+  <string id="str_neutral_term_for_culture.qingzhou" text="{=*}青州的" />
+  <string id="str_neutral_term_for_culture.bingzhou" text="{=*}并州的" />
+  <string id="str_neutral_term_for_culture.xuzhou" text="{=*}徐州的" />
+
+
+  <!-- 衣谷新增物种类的物品字串符 -->
+  <string
+		id="str_item_category.soldier_level_3"
+		text="{=*}三阶士兵升级套装" />
+    <string
+		id="str_item_category.soldier_level_4"
+		text="{=*}四阶士兵升级套装" />
+    <string
+		id="str_item_category.soldier_level_5"
+		text="{=*}五阶士兵升级套装" />
+    <string
+		id="str_item_category.soldier_level_6"
+		text="{=*}六阶士兵升级套装" />
+    <string
+		id="str_item_category.soldier_level_7"
+		text="{=*}七阶士兵升级套装" />
+</strings>
+<!--
+</base> 
+-->

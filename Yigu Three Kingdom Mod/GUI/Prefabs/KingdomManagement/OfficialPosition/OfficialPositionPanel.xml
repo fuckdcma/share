@@ -1,0 +1,129 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Kingdom.Item.Tuple.Width" BrushLayer="Default" BrushName="Kingdom.Item.Tuple" BrushValueType="Width" />
+    <Constant Name="Kingdom.Item.Tuple.Height" BrushLayer="Default" BrushName="Kingdom.Item.Tuple" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Armies.Sort.1.Width" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.1" BrushValueType="Width" />
+    <Constant Name="Kingdom.Armies.Sort.1.Height" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.1" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Armies.Sort.2.Width" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.2" BrushValueType="Width" />
+    <Constant Name="Kingdom.Armies.Sort.2.Height" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.2" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Armies.Sort.3.Width" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.3" BrushValueType="Width" />
+    <Constant Name="Kingdom.Armies.Sort.3.Height" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.3" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Armies.Sort.4.Width" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.4" BrushValueType="Width" />
+    <Constant Name="Kingdom.Armies.Sort.4.Height" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.4" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Armies.Sort.5.Width" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.5" BrushValueType="Width" />
+    <Constant Name="Kingdom.Armies.Sort.5.Height" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.5" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Armies.Sort.6.Width" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.6" BrushValueType="Width" />
+    <Constant Name="Kingdom.Armies.Sort.6.Height" BrushLayer="Default" BrushName="Kingdom.Armies.Sort.6" BrushValueType="Height" />
+
+    <Constant Name="Kingdom.Scroll.Header.Width" BrushLayer="Default" BrushName="Scroll.Header" BrushValueType="Width" />
+    <Constant Name="Kingdom.Scroll.Header.Height" BrushLayer="Default" BrushName="Scroll.Header" BrushValueType="Height" />
+
+    <Constant Name="ScrollableArea.Margin.Bottom" Additive="8" Value="!Kingdom.Item.Tuple.Height" />
+
+    <Constant Name="Encyclopedia.Canvas.Width" BrushName="Encyclopedia.Canvas" BrushLayer="Default" BrushValueType="Width" />
+    <Constant Name="Encyclopedia.Canvas.Height" BrushName="Encyclopedia.Canvas" BrushLayer="Default" BrushValueType="Height" />
+
+    <Constant Name="Encyclopedia.Width" Value="!Encyclopedia.Canvas.Width" Additive="-35" />
+    <Constant Name="Encyclopedia.Height" Value="!Encyclopedia.Canvas.Height" Additive="-198" />
+
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@Show">
+      <Children>
+
+        <EncyclopediaTroopScrollablePanel Id="RightSideScrollablePanel" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" InnerPanel="RightSideRect\InnerPanel" ClipRect="RightSideRect" VerticalAlignment="Center" HorizontalAlignment="Center" HorizontalScrollbar="..\RightSideHorizontalScrollbar" VerticalScrollbar="..\RightSideVerticalScrollbar" PanWithMouseEnabled="true" AutoHideScrollBars="true" MarginTop="10" MarginBottom="85" MarginLeft="0" MarginRight="0">
+          <Children>
+
+            <!--Right Side Character Clan, Friends, Enemies-->
+            <Widget Id="RightSideRect" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" HorizontalAlignment="Center" DoNotAcceptEvents="true" ClipContents="true" MarginLeft="0" MarginRight="0" MarginBottom="-85">
+              <Children>
+
+                <Widget Id="InnerPanel" HeightSizePolicy="CoverChildren" WidthSizePolicy="CoverChildren" HorizontalAlignment="Center" IsHidden="@HasErrors">
+                  <Children>
+
+                    <!--Center Side-->
+                    <Widget DataSource="{Tree}" HorizontalAlignment="Center" HeightSizePolicy="CoverChildren" WidthSizePolicy="CoverChildren" MarginTop="10" MarginBottom="65">
+                      <Children>
+
+                        <OfficialPositionUnitTreeNodeItem Id="InnerPanel" HorizontalAlignment="Center" DoNotAcceptEvents="true"/>
+
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </Widget>
+
+              </Children>
+            </Widget>
+
+            <!--变动官职-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" PositionXOffset="60" PositionYOffset="-100" SuggestedHeight="50" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+              <Children>
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteAssignOfficialPosition" Brush="ButtonBrush3" IsEnabled="@PlayerUpdateOPEnabled" IsVisible="true">
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="@UpdateOPButtonText" />
+                  </Children>
+                </ButtonWidget>
+                <HintWidget DoNotAcceptEvents="true" DataSource="{UpdateOPHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </Widget>
+
+            <!--废除官职-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" PositionXOffset="60" PositionYOffset="-50" SuggestedHeight="50" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+              <Children>
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteAbolishOfficialPosition" Brush="ButtonBrush3" IsEnabled="@PlayerUpdateOPEnabled" IsVisible="true">
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="@AbolishOPButtonText" />
+                  </Children>
+                </ButtonWidget>
+                <HintWidget DoNotAcceptEvents="true" DataSource="{UpdateOPHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </Widget>
+
+            <!--增设官职-->
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" PositionXOffset="60" SuggestedHeight="50" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+              <Children>
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteCreateNewOfficialPosition" Brush="ButtonBrush3" IsEnabled="@PlayerCreateNewCustomOPEnabled" IsVisible="true">
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="@NewCustomOPButtonText" />
+                  </Children>
+                </ButtonWidget>
+                <HintWidget DoNotAcceptEvents="true" DataSource="{NewCustomOPHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </Widget>
+          </Children>
+        </EncyclopediaTroopScrollablePanel>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="50" IsVisible="@HasErrors">
+          <Children>
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="Encyclopedia.Error.Text" Text="@TreeDisplayErrorText" />
+          </Children>
+        </Widget>
+
+        <!--Bottom Shadow-->
+        <Widget HeightSizePolicy ="Fixed" WidthSizePolicy="StretchToParent" SuggestedHeight="158" Sprite="StdAssets\scroll_hide" VerticalAlignment="Bottom" IsEnabled="false"/>
+
+        <ScrollbarWidget HeightSizePolicy ="StretchToParent" WidthSizePolicy="Fixed" Id="RightSideVerticalScrollbar" SuggestedWidth="30" MinValue="0" MaxValue="100" MarginRight="10" MarginBottom="70" MarginTop="0" AlignmentAxis="Vertical" HorizontalAlignment="Right" VerticalAlignment="Center" Handle="ScrollbarHandle" UpdateChildrenStates="true">
+          <Children>
+            <Widget Id="ScrollbarBed" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="SPGeneral\SPRecruitment\slider_thin_bed_vertical" />
+            <ImageWidget Id="ScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" MinHeight="153" SuggestedWidth="30" SuggestedHeight="150" HorizontalAlignment="Center" Brush="Encyclopedia.Scroll.Handle.Vertical" />
+          </Children>
+        </ScrollbarWidget>
+
+        <ScrollbarWidget HeightSizePolicy ="Fixed" WidthSizePolicy="StretchToParent" Id="RightSideHorizontalScrollbar" SuggestedHeight="8" MinValue="0" MaxValue="100" MarginLeft="40" MarginRight="55" MarginBottom="65" AlignmentAxis="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Handle="ScrollbarHandle" UpdateChildrenStates="true">
+          <Children>
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="4" VerticalAlignment="Center" Sprite="SPGeneral\SPRecruitment\slider_thin_bed_horizontal" />
+            <ImageWidget Id="ScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" MinWidth="153" SuggestedHeight="30" SuggestedWidth="150" VerticalAlignment="Center" Brush="Encyclopedia.Scroll.Handle.Horizontal" />
+          </Children>
+        </ScrollbarWidget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

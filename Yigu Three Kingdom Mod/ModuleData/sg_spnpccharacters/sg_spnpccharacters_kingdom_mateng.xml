@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<NPCCharacters>
+	<NPCCharacter id="mateng_sol_000"
+		default_group="Infantry"
+		level="14"
+		name="马腾氏卒"
+		is_female="false"
+		is_basic_troop="true"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="75"/>
+			<skill id="Riding" value="5"/>
+			<skill id="OneHanded" value="105"/>
+			<skill id="TwoHanded" value="10"/>
+			<skill id="Polearm" value="65"/>
+			<skill id="Bow" value="5"/>
+			<skill id="Crossbow" value="5"/>
+			<skill id="Throwing" value="10"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_001"/>
+			<upgrade_target id="NPCCharacter.mateng_sol_010"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_02"/>
+				<equipment slot="Item1" id="Item.sg_shield_002"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s009_head"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s009_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c02_s2001_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s002_leg"/>
+			</EquipmentRoster>
+
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_001"
+		default_group="Infantry"
+		level="16"
+		name="西凉锐士"
+		is_female="false"
+		is_basic_troop="true"
+		upgrade_requires="ItemCategory.soldier_level_3"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="55"/>
+			<skill id="Riding" value="5"/>
+			<skill id="OneHanded" value="50"/>
+			<skill id="TwoHanded" value="10"/>
+			<skill id="Polearm" value="115"/>
+			<skill id="Bow" value="5"/>
+			<skill id="Crossbow" value="5"/>
+			<skill id="Throwing" value="10"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_002"/>
+			<upgrade_target id="NPCCharacter.mateng_sol_006"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_spear_yongliang_02"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s3001_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s3001_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s3001_body"/>
+				<equipment slot="Gloves" id="Item.sg_cl_c01_s2001_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s3001_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_002"
+		default_group="Infantry"
+		level="21"
+		name="西凉军士"
+		is_female="false"
+		is_basic_troop="true"
+		upgrade_requires="ItemCategory.soldier_level_4"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="120"/>
+			<skill id="Riding" value="10"/>
+			<skill id="OneHanded" value="55"/>
+			<skill id="TwoHanded" value="15"/>
+			<skill id="Polearm" value="165"/>
+			<skill id="Bow" value="5"/>
+			<skill id="Crossbow" value="5"/>
+			<skill id="Throwing" value="20"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_003"/>
+			<upgrade_target id="NPCCharacter.mateng_sol_004"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_spear_yongliang_02"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s4002_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s4002_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s4002_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c01_s4002_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s4002_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_003"
+		default_group="Infantry"
+		level="26"
+		name="西凉甲士"
+		is_female="false"
+		is_basic_troop="true"
+		upgrade_requires="ItemCategory.soldier_level_5"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="135"/>
+			<skill id="Riding" value="20"/>
+			<skill id="OneHanded" value="135"/>
+			<skill id="TwoHanded" value="35"/>
+			<skill id="Polearm" value="85"/>
+			<skill id="Bow" value="15"/>
+			<skill id="Crossbow" value="15"/>
+			<skill id="Throwing" value="70"/>
+		</skills>
+		
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_danshou_yongliang_04"/>
+				<equipment slot="Item1" id="Item.lz_shield_yongliang_05"/>
+				<equipment slot="Item2" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s5002_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s5002_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s5002_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c01_s5002_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s5002_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_004"
+		default_group="Infantry"
+		level="26"
+		name="西凉长枪士"
+		is_female="false"
+		upgrade_requires="ItemCategory.soldier_level_5"
+		is_basic_troop="true"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="155"/>
+			<skill id="Riding" value="15"/>
+			<skill id="OneHanded" value="85"/>
+			<skill id="TwoHanded" value="35"/>
+			<skill id="Polearm" value="210"/>
+			<skill id="Bow" value="15"/>
+			<skill id="Crossbow" value="15"/>
+			<skill id="Throwing" value="30"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_005"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_spear_yongliang_03"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s5003_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s5003_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s5003_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c01_s5003_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s5003_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_005"
+		default_group="Infantry"
+		level="31"
+		name="西凉长枪重步"
+		is_female="false"
+		is_basic_troop="true"
+		upgrade_requires="ItemCategory.soldier_level_6"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="220"/>
+			<skill id="Riding" value="30"/>
+			<skill id="OneHanded" value="110"/>
+			<skill id="TwoHanded" value="50"/>
+			<skill id="Polearm" value="315"/>
+			<skill id="Bow" value="25"/>
+			<skill id="Crossbow" value="25"/>
+			<skill id="Throwing" value="45"/>
+		</skills>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_spear_yongliang_03"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s6002_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s6002_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s6002_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c01_s6002_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s6002_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_006"
+		default_group="Cavalry"
+		level="21"
+		name="西凉轻骑"
+		is_female="false"
+		is_basic_troop="true"
+		upgrade_requires="ItemCategory.soldier_level_4"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="40"/>
+			<skill id="Riding" value="200"/>
+			<skill id="OneHanded" value="65"/>
+			<skill id="TwoHanded" value="35"/>
+			<skill id="Polearm" value="205"/>
+			<skill id="Bow" value="15"/>
+			<skill id="Crossbow" value="15"/>
+			<skill id="Throwing" value="30"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_007"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_spear_yongliang_01"/>
+				<equipment slot="Item1" id="Item.lz_danshou_yongliang_03"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s4001_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s6001_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s4001_body"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s6001_leg"/>
+				<equipment slot="Horse" id="Item.sg_c06_horse_mengguma"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_001"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+				<equipment slot="Horse" id="Item.sg_c06_horse_mengguma"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_001"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_007"
+		default_group="Cavalry"
+		level="26"
+		name="西凉重骑"
+		is_female="false"
+		is_basic_troop="true"
+		upgrade_requires="ItemCategory.soldier_level_5"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="45"/>
+			<skill id="Riding" value="245"/>
+			<skill id="OneHanded" value="75"/>
+			<skill id="TwoHanded" value="45"/>
+			<skill id="Polearm" value="250"/>
+			<skill id="Bow" value="20"/>
+			<skill id="Crossbow" value="20"/>
+			<skill id="Throwing" value="35"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_008"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_shuo_yongliang_02"/>
+				<equipment slot="Item1" id="Item.lz_shield_yongliang_05"/>
+				<equipment slot="Item2" id="Item.lz_danshou_yongliang_03"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s5001_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s6001_shoulder"/>
+				<equipment slot="Body" id="Item.lz_yongliang_yi_01"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s6001_leg"/>
+				<equipment slot="Horse" id="Item.sg_c06_horse_caoyuanliema"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c01_001_a"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+				<equipment slot="Horse" id="Item.sg_c06_horse_caoyuanliema"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c01_001_a"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_008"
+		default_group="Cavalry"
+		level="31"
+		name="西凉骠骑"
+		is_female="false"
+		upgrade_requires="ItemCategory.soldier_level_6"
+		is_basic_troop="true"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="55"/>
+			<skill id="Riding" value="275"/>
+			<skill id="OneHanded" value="95"/>
+			<skill id="TwoHanded" value="50"/>
+			<skill id="Polearm" value="280"/>
+			<skill id="Bow" value="25"/>
+			<skill id="Crossbow" value="25"/>
+			<skill id="Throwing" value="40"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_009"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_sha_yongliang_01"/>
+				<equipment slot="Item1" id="Item.lz_shield_yongliang_05"/>
+				<equipment slot="Item2" id="Item.lz_danshou_yongliang_04"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s6001_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s6001_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s6001_body"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s5003_leg"/>
+				<equipment slot="Horse" id="Item.sg_c06_horse_caoyuanliema"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c01_001_b"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+				<equipment slot="Horse" id="Item.sg_c06_horse_caoyuanliema"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c01_001_b"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_009"
+		default_group="Cavalry"
+		level="36"
+		name="西凉铁骑"
+		is_female="false"
+		is_basic_troop="true"
+		upgrade_requires="ItemCategory.soldier_level_7"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="60"/>
+			<skill id="Riding" value="310"/>
+			<skill id="OneHanded" value="100"/>
+			<skill id="TwoHanded" value="55"/>
+			<skill id="Polearm" value="310"/>
+			<skill id="Bow" value="30"/>
+			<skill id="Crossbow" value="30"/>
+			<skill id="Throwing" value="45"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.xiliangtieqi_elite"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_sha_yongliang_01"/>
+				<equipment slot="Item1" id="Item.lz_shield_yongliang_05"/>
+				<equipment slot="Item2" id="Item.lz_danshou_yongliang_05"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s7001_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s7001_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s7001_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c01_s7001_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s7001_leg"/>
+				<equipment slot="Horse" id="Item.sg_c02_horse_hantingyuzaoma"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c01_001_b"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+				<equipment slot="Horse" id="Item.sg_c02_horse_hantingyuzaoma"/>
+				<equipment slot="HorseHarness" id="Item.sg_hh_c01_001_b"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_010"
+		default_group="Ranged"
+		level="16"
+		name="西凉弓手"
+		is_female="false"
+		is_basic_troop="true"
+		occupation="Soldier"
+		upgrade_requires="ItemCategory.soldier_level_3"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="90"/>
+			<skill id="Riding" value="10"/>
+			<skill id="OneHanded" value="60"/>
+			<skill id="TwoHanded" value="20"/>
+			<skill id="Polearm" value="20"/>
+			<skill id="Bow" value="100"/>
+			<skill id="Crossbow" value="20"/>
+			<skill id="Throwing" value="40"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_011"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_bow_yongliang_01"/>
+				<equipment slot="Item1" id="Item.lz_arrow_yongliang_01"/>
+				<equipment slot="Item2" id="Item.lz_danshou_yongliang_02"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s3002_head"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s3002_body"/>
+				<equipment slot="Gloves" id="Item.sg_cl_c01_s2001_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s3002_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_011"
+		default_group="Ranged"
+		level="21"
+		name="西凉强弓手"
+		is_female="false"
+		is_basic_troop="true"
+		upgrade_requires="ItemCategory.soldier_level_4"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="110"/>
+			<skill id="Riding" value="20"/>
+			<skill id="OneHanded" value="100"/>
+			<skill id="TwoHanded" value="25"/>
+			<skill id="Polearm" value="35"/>
+			<skill id="Bow" value="150"/>
+			<skill id="Crossbow" value="25"/>
+			<skill id="Throwing" value="45"/>
+		</skills>
+		<upgrade_targets>
+			<upgrade_target id="NPCCharacter.mateng_sol_012"/>
+		</upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_bow_yongliang_03"/>
+				<equipment slot="Item1" id="Item.lz_arrow_yongliang_01"/>
+				<equipment slot="Item2" id="Item.lz_danshou_yongliang_02"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s4003_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s4003_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s4003_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c01_s4003_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s4003_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter id="mateng_sol_012"
+		default_group="Ranged"
+		level="26"
+		name="西凉积射士"
+		is_female="false"
+		upgrade_requires="ItemCategory.soldier_level_5"
+		is_basic_troop="true"
+		occupation="Soldier"
+		culture="Culture.yongliang">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="0005D80E400000017877877777787777777787777777777777777777788788780044500304777777000000000000000000000000000000000000000010881080"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010AC0FC000370F78778777777877777777877777777777777777777887887800B450030B777777000000000000000000000000000000000000000061801085"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="145"/>
+			<skill id="Riding" value="30"/>
+			<skill id="OneHanded" value="130"/>
+			<skill id="TwoHanded" value="35"/>
+			<skill id="Polearm" value="40"/>
+			<skill id="Bow" value="175"/>
+			<skill id="Crossbow" value="40"/>
+			<skill id="Throwing" value="55"/>
+		</skills>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_bow_yongliang_04"/>
+				<equipment slot="Item1" id="Item.lz_arrow_yongliang_01"/>
+				<equipment slot="Item2" id="Item.lz_danshou_yongliang_03"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s5004_head"/>
+				<equipment slot="Cape" id="Item.sg_ar_c01_s5004_shoulder"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s5004_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c01_s5004_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s5004_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+</NPCCharacters>

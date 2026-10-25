@@ -1,0 +1,270 @@
+<Prefab>
+  <Window>
+
+    <TextQueryParentWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" TextInputWidget="TextQueryParent\TextQueryContentList\TextInputParent\TextInputWidget" TextQueryParent="TextQueryParent">
+      <Children>
+
+        <!--Text
+        Query-->
+        <DimensionSyncWidget Id="TextQueryParent" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="@PanelWidth" SuggestedHeight="440" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="-50" DimensionToSync="Vertical" WidgetToCopyHeightFrom="TextQueryContentList">
+          <Children>
+
+            <DimensionSyncWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true" DimensionToSync="Vertical" WidgetToCopyHeightFrom="..\TextQueryContentList">
+              <Children>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Top" Sprite="StdAssets\Popup\canvas" />
+              </Children>
+            </DimensionSyncWidget>
+
+            <ListPanel Id="CustomOfficialPositionContentList" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalBottomToTop" MaxHeight="645">
+              <Children>
+
+                <!--Title-->
+                <AutoHideRichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="30" MarginRight="30" MarginTop="10" Brush="Popup.Title.Text" MinHeight="50" Text="@TitleText" WidgetToHideIfEmpty="..\TitleDivider" />
+
+                <!--Divider-->
+                <Widget Id="TitleDivider" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="23" Sprite="StdAssets\Popup\divider" />
+
+                <!--Text Input-->
+                <ListPanel Id="TopLevel" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" StackLayout.LayoutMethod="VerticalBottomToTop">
+                  <Children>
+                    <ListPanel Id="AllInputLevel" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="220" HorizontalAlignment="Center" VerticalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <Children>
+                        <ListPanel Id="LeftInputAvatarLevel" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" StackLayout.LayoutMethod="VerticalBottomToTop" IsEnabled="@IsCreateOP">
+                          <Children>
+                            <ListPanel Id="OfficialPositionLevelListPanel" DoNotAcceptEvents="true" HeightSizePolicy="Fixed" WidthSizePolicy="CoverChildren" SuggestedHeight="40" HorizontalAlignment="Left" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="30" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="官职等阶" />
+                                <Standard.DropdownWithHorizontalControl Id="EncyclopediaSortButton" Parameter.IsFlatDesign="true" Parameter.ShowNextAndPrevious="false" Parameter.IsCustomWidth="true" Parameter.CustomWidth="200" Parameter.SelectorDataSource="{SortSelectionOPLevel}" Parameter.OnDropdownClick="ExecuteOnDropdownActivated" UpdateChildrenStates="true" ExtendCursorAreaRight="-20" GamepadNavigationIndex="0">
+                                  <Children>
+                                    <BrushWidget Id="TypeSortVisualWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" PositionXOffset="-20" VerticalAlignment="Center" Brush="Encyclopedia.Dropdown.Arrow" />
+                                  </Children>
+                                </Standard.DropdownWithHorizontalControl>
+                              </Children>
+                            </ListPanel>
+                            <ListPanel Id="OfficialPositionNameListPanel" DoNotAcceptEvents="true" HeightSizePolicy="Fixed" WidthSizePolicy="CoverChildren" SuggestedHeight="40" HorizontalAlignment="Left" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="30" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="官职名称" />
+                                <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="200" Sprite="General\CharacterCreation\name_input_area" HorizontalAlignment="Center">
+                                  <Children>
+                                    <EditableTextWidget Id="OfficialPositionNameTextInputWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="10" MarginRight="10" MarginTop="12" MarginBottom="12" Brush="Review.NameInput.Text" Brush.FontSize="24" RealText="@OpNameText"/>
+                                  </Children>
+                                </Widget>
+                              </Children>
+                            </ListPanel>
+                            <ListPanel Id="OfficialPositionExtraSoldierListPanel" DoNotAcceptEvents="true" HeightSizePolicy="Fixed" WidthSizePolicy="CoverChildren" SuggestedHeight="40" HorizontalAlignment="Left" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="30" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="兵卒限额" />
+                                <SliderWidget Id="ScrollBarExtraSoldier" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="42" VerticalAlignment="Center" Filler="Filler" Handle="SliderHandle" MaxValueInt="@SoldierBonusIntMax" MinValueFloat="0" ValueInt="@SoldierBonusInt">
+                                  <Children>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="38" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_canvas" IsEnabled="false" />
+                                    <Widget Id="Filler" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="35" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_fill" ClipContents="true">
+                                      <Children>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="35" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_fill" />
+                                      </Children>
+                                    </Widget>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="65" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_frame" IsEnabled="false" />
+                                    <ImageWidget Id="SliderHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="14" SuggestedHeight="38" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="SPOptions.Slider.Handle" DoNotAcceptEvents="true" GamepadNavigationIndex="0"/>
+                                  </Children>
+                                </SliderWidget>
+                                <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="30" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="20" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="@SoldierBonusText" />
+                              </Children>
+                            </ListPanel>
+                            <ListPanel Id="OfficialPositionExtraCompanionListPanel" DoNotAcceptEvents="true" HeightSizePolicy="Fixed" WidthSizePolicy="CoverChildren" SuggestedHeight="40" HorizontalAlignment="Left" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="30" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="副官限额" />
+                                <SliderWidget Id="ScrollBarExtraCompanion" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="42" VerticalAlignment="Center" Filler="Filler" Handle="SliderHandle" MaxValueInt="@CompanionBonusIntMax" MinValueFloat="0" ValueInt="@CompanionBonusInt">
+                                  <Children>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="38" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_canvas" IsEnabled="false" />
+                                    <Widget Id="Filler" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="35" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_fill" ClipContents="true">
+                                      <Children>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="35" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_fill" />
+                                      </Children>
+                                    </Widget>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="65" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_frame" IsEnabled="false" />
+                                    <ImageWidget Id="SliderHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="14" SuggestedHeight="38" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="SPOptions.Slider.Handle" DoNotAcceptEvents="true" GamepadNavigationIndex="0"/>
+                                  </Children>
+                                </SliderWidget>
+                                <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="30" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="20" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="@CompanionBonusText" />
+                              </Children>
+                            </ListPanel>
+                            <ListPanel Id="OfficialPositionExtraArmyListPanel" DoNotAcceptEvents="true" HeightSizePolicy="Fixed" WidthSizePolicy="CoverChildren" SuggestedHeight="40" HorizontalAlignment="Left" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="30" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="军队限额" />
+                                <SliderWidget Id="ScrollBarExtraArmy" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="42" VerticalAlignment="Center" Filler="Filler" Handle="SliderHandle" MaxValueInt="@ArmyBonusIntMax" MinValueFloat="0" ValueInt="@ArmyBonusInt">
+                                  <Children>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="38" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_canvas" IsEnabled="false" />
+                                    <Widget Id="Filler" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="35" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_fill" ClipContents="true">
+                                      <Children>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="35" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_fill" />
+                                      </Children>
+                                    </Widget>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="65" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="SPGeneral\SPOptions\standart_slider_frame" IsEnabled="false" />
+                                    <ImageWidget Id="SliderHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="14" SuggestedHeight="38" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="SPOptions.Slider.Handle" DoNotAcceptEvents="true" GamepadNavigationIndex="0"/>
+                                  </Children>
+                                </SliderWidget>
+                                <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="30" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="20" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="@ArmyBonusText" />
+                              </Children>
+                            </ListPanel>
+                          </Children>
+                        </ListPanel>
+                        <ListPanel Id="CurrentAvatar" DataSource="{CurrentUnit}" IsVisible="@IsVisible" IsEnabled="false" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" StackLayout.LayoutMethod="VerticalBottomToTop">
+                          <Children>
+                            <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="250" HeightSizePolicy="Fixed" SuggestedHeight="40" MarginLeft="15" MarginRight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Popup.Description.Text" Brush.FontSize="24" Brush.TextHorizontalAlignment="Center" MaxHeight="480" MinHeight="10" Text="@NameText" />
+                            <ButtonWidget WidthSizePolicy="Fixed" SuggestedWidth="220" HeightSizePolicy="Fixed" SuggestedHeight="160" MarginLeft="15" MarginRight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Encyclopedia.SubPage.Element" Command.Click="ExecuteAssignOPToNpc">
+                              <Children>
+
+                                <!-- Troop Visual -->
+                                <NavigationAutoScrollWidget TrackedWidget="..\ElementImage" ScrollYOffset="150" />
+                                <NavigationScopeTargeter ScopeID="EncyclopediaUnitTreeItemScope" ScopeParent="..\ElementImage" />
+                                <ImageIdentifierWidget Id="ElementImage" DataSource="{ImageIdentifier}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ImageId="@Id" AdditionalArgs="@AdditionalArgs" ImageTypeCode="@ImageTypeCode" HorizontalAlignment="Center" MarginRight="3" MarginLeft="3" MarginBottom="3" MarginTop="3" GamepadNavigationIndex="0"/>
+
+                                <!-- Troop Tier -->
+                                <Widget DataSource="{TierIconData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="-2" PositionYOffset="5" Sprite="@Text">
+                                  <Children>
+                                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"/>
+                                  </Children>
+                                </Widget>
+
+                                <!-- Troop Type Icon -->
+                                <Widget DataSource="{TypeIconData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Left" VerticalAlignment="Top" PositionXOffset="6" PositionYOffset="5" Sprite="@Text">
+                                  <Children>
+                                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"/>
+                                  </Children>
+                                </Widget>
+
+                                <!-- Hint -->
+                                <HintWidget DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint"/>
+
+                                <!-- Selection Border -->
+                                <Widget DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Sprite="SelectionBorder@2x_9" IsVisible="@IsActiveUnit"/>
+
+                              </Children>
+                            </ButtonWidget>
+                          </Children>
+                        </ListPanel>
+                        <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="30" Brush="InventoryBuyAllButton" IsVisible="@IsAssignOP" IsEnabled="false" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <ListPanel Id="AssignToAvatar" DataSource="{AssignToUnit}" IsVisible="@IsVisible" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" StackLayout.LayoutMethod="VerticalBottomToTop">
+                          <Children>
+                            <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="250" HeightSizePolicy="Fixed" SuggestedHeight="40" MarginLeft="15" MarginRight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Popup.Description.Text" Brush.FontSize="24" Brush.TextHorizontalAlignment="Center" MaxHeight="480" MinHeight="10" Text="@NameText" />
+                            <ButtonWidget WidthSizePolicy="Fixed" SuggestedWidth="220" HeightSizePolicy="Fixed" SuggestedHeight="160" MarginLeft="15" MarginRight="15" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Encyclopedia.SubPage.Element" Command.Click="ExecuteAssignOPToNpc">
+                              <Children>
+
+                                <!-- Troop Visual -->
+                                <NavigationAutoScrollWidget TrackedWidget="..\ElementImage" ScrollYOffset="150" />
+                                <NavigationScopeTargeter ScopeID="EncyclopediaUnitTreeItemScope" ScopeParent="..\ElementImage" />
+                                <ImageIdentifierWidget Id="ElementImage" DataSource="{ImageIdentifier}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ImageId="@Id" AdditionalArgs="@AdditionalArgs" ImageTypeCode="@ImageTypeCode" HorizontalAlignment="Center" MarginRight="3" MarginLeft="3" MarginBottom="3" MarginTop="3" GamepadNavigationIndex="0"/>
+
+                                <!-- Troop Tier -->
+                                <Widget DataSource="{TierIconData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="-2" PositionYOffset="5" Sprite="@Text">
+                                  <Children>
+                                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"/>
+                                  </Children>
+                                </Widget>
+
+                                <!-- Troop Type Icon -->
+                                <Widget DataSource="{TypeIconData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Left" VerticalAlignment="Top" PositionXOffset="6" PositionYOffset="5" Sprite="@Text">
+                                  <Children>
+                                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"/>
+                                  </Children>
+                                </Widget>
+
+                                <!-- Hint -->
+                                <HintWidget DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint"/>
+
+                                <!-- Selection Border -->
+                                <Widget DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Sprite="SelectionBorder@2x_9" IsVisible="@IsActiveUnit"/>
+
+                              </Children>
+                            </ButtonWidget>
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ListPanel>
+
+                    <ListPanel Id="GovernedByListPanel" IsEnabled="@IsCreateOP" DoNotAcceptEvents="true" HeightSizePolicy="Fixed" WidthSizePolicy="CoverChildren" SuggestedHeight="40" HorizontalAlignment="Left" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <Children>
+                        <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="30" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="隶属于" />
+                        <Standard.DropdownWithHorizontalControl Id="EncyclopediaSortButton" Parameter.IsFlatDesign="true" Parameter.ShowNextAndPrevious="false" Parameter.IsCustomWidth="true" Parameter.CustomWidth="300" Parameter.SelectorDataSource="{SortSelectionGovernedBy}" Parameter.OnDropdownClick="ExecuteOnDropdownActivated" UpdateChildrenStates="true" ExtendCursorAreaRight="-20" GamepadNavigationIndex="0">
+                          <Children>
+                            <BrushWidget Id="TypeSortVisualWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" PositionXOffset="-20" VerticalAlignment="Center" Brush="Encyclopedia.Dropdown.Arrow" />
+                          </Children>
+                        </Standard.DropdownWithHorizontalControl>
+                      </Children>
+                    </ListPanel>
+                    <!--<ListPanel Id="ExtraAllowedNumberList" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Left" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <Children>
+                        <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="20" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="兵卒限额" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="60" Sprite="General\CharacterCreation\name_input_area" HorizontalAlignment="Center">
+                          <Children>
+                            <IntegerInputTextWidget Id="ExtraSoldierTextInputWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="12" MarginBottom="12" Brush="Review.NameInput.Text" Brush.FontSize="24" IntText="@SoldierBonusText" />
+                          </Children>
+                        </Widget>
+                        <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="20" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="副官限额" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="60" Sprite="General\CharacterCreation\name_input_area" HorizontalAlignment="Center">
+                          <Children>
+                            <IntegerInputTextWidget Id="ExtraCompanionTextInputWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="12" MarginBottom="12" Brush="Review.NameInput.Text" Brush.FontSize="24" IntText="@CompanionBonusText" />
+                          </Children>
+                        </Widget>
+                        <RichTextWidget WidthSizePolicy="Fixed" SuggestedWidth="100" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="30" MarginRight="20" MarginTop="20" MarginBottom="20" Brush="Popup.Description.Text" Brush.FontSize="24" MaxHeight="480" MinHeight="10" Text="军队限额" />
+                        <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="60" Sprite="General\CharacterCreation\name_input_area" HorizontalAlignment="Center">
+                          <Children>
+                            <IntegerInputTextWidget Id="ExtraArmyTextInputWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="12" MarginBottom="12" Brush="Review.NameInput.Text" Brush.FontSize="24" IntText="@ArmyBonusText" />
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ListPanel>-->
+                  </Children>
+                </ListPanel>
+
+                <!--Control
+                Buttons-->
+                <NavigationForcedScopeCollectionTargeter CollectionParent="..\." />
+                <NavigationScopeTargeter ScopeID="TextQueryPopupScope" ScopeParent="..\ControlButtons" ScopeMovements="Horizontal" />
+                <ListPanel Id="ControlButtons" WidthSizePolicy="CoverChildren" SuggestedHeight="70" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginLeft="35" MarginRight="35" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                  <Children>
+
+                    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="251" SuggestedHeight="64" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="ButtonBrush2" MarginRight="40" Command.Click="ExecuteNegativeAction" IsVisible="@IsButtonCancelShown" GamepadNavigationIndex="0">
+                      <Children>
+                        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="32" VerticalAlignment="Center" MarginLeft="47" MarginRight="40" Brush="Popup.Button.Text" Text="@ButtonCancelLabel" />
+                        <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="12" KeyID="@KeyID" IsVisible="@IsVisible" />
+                      </Children>
+                    </ButtonWidget>
+
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="251" SuggestedHeight="64" HorizontalAlignment="Right" VerticalAlignment="Center" GamepadNavigationIndex="1">
+                      <Children>
+                        <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="ButtonBrush1" Command.Click="ExecuteAffirmativeAction" IsVisible="@IsButtonOkShown" IsEnabled="@IsButtonOkEnabled">
+                          <Children>
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="32" VerticalAlignment="Center" MarginLeft="47" MarginRight="40" Brush="Popup.Button.Text" Text="@ButtonOkLabel" />
+                            <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="12" KeyID="@KeyID" IsVisible="@IsVisible" />
+                          </Children>
+                        </ButtonWidget>
+                        <HintWidget DataSource="{DoneButtonDisabledReasonHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="57">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Kingdom.GeneralButtons.Text" Brush.FontColor="@InfluenceCostColor" IntText="@OPInfluenceCost" IsEnabled="true" />
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="17" SuggestedHeight="27" HorizontalAlignment="Right" VerticalAlignment="Center" Sprite="SPKingdom\influence_icon_small" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="StdAssets\Popup\canvas_gradient" IsEnabled="false" />
+
+            <!--Frame
+            Border-->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="frame_9" ExtendLeft="18" ExtendTop="18" ExtendRight="18" ExtendBottom="18" IsEnabled="false" />
+
+          </Children>
+        </DimensionSyncWidget>
+
+      </Children>
+    </TextQueryParentWidget>
+
+  </Window>
+</Prefab>

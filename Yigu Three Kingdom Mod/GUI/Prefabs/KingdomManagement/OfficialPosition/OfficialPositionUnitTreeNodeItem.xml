@@ -1,0 +1,93 @@
+<Prefab>
+  <Constants>
+
+    <Constant Name="Encyclopedia.SubPage.Element.Width" BrushName="Encyclopedia.SubPage.Element" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Encyclopedia.SubPage.Element.Height" BrushName="Encyclopedia.SubPage.Element" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Encyclopedia.CharacterTree.Line.Height" BrushName="Encyclopedia.CharacterTree.Line" BrushLayer="Default" BrushValueType="Height" Additive="-10"/>
+
+    <Constant Name="IconAlpha" Value="0.7"/>
+  </Constants>
+  <Window>
+    <EncyclopediaUnitTreeNodeItemBrushWidget HeightSizePolicy="CoverChildren" WidthSizePolicy="CoverChildren" MarginLeft="10" MarginRight="10" IsAlternativeUpgrade="@IsAlternativeUpgrade" ButtonContainer="ButtonContainer" ChildContainer="ChildContainer" LineContainer="LineContainer" LineBrush="Encyclopedia.CharacterTree.Line" AlternateLineBrush="Encyclopedia.CharacterTree.Line.Alternative">
+      <Children>
+        <ListPanel Id="ButtonContainer" StackLayout.LayoutMethod="VerticalBottomToTop" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="130" HorizontalAlignment="Center" MarginRight="20">
+          <Children>
+            <!-- OfficialPosition name plate -->
+            <Widget DataSource="{Unit}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Top" MarginLeft="20" Sprite="OfficialPosition\bg_gw_wenguan">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@NameText" Brush="OfficialPosition.SubPage.Element.OPName.Text"/>
+              </Children>
+            </Widget>
+
+            <!-- Hero Portrait Button-->
+            <ButtonWidget DataSource="{Unit}" Command.Click="ExecuteOfficialPositionEdit" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="80" SuggestedWidth="110" HorizontalAlignment="Right" Brush="OfficialPosition.SubPage.Element">
+              <Children>
+
+                <!-- Troop Visual -->
+                <NavigationAutoScrollWidget TrackedWidget="..\ElementImage" ScrollYOffset="150" />
+                <NavigationScopeTargeter ScopeID="EncyclopediaUnitTreeItemScope" ScopeParent="..\ElementImage" />
+                <ImageIdentifierWidget Id="ElementImage" DataSource="{ImageIdentifier}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ImageId="@Id" AdditionalArgs="@AdditionalArgs" ImageTypeCode="@ImageTypeCode" HorizontalAlignment="Center" MarginRight="3" MarginLeft="3" MarginBottom="3" MarginTop="3" GamepadNavigationIndex="0"/>
+
+                <!-- ZhuGong OP Icon -->
+                <Widget DataSource="{HeroStatusInForceData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="-2" PositionYOffset="@PositionYOffset" Sprite="@Text">
+                  <Children>
+                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="@BrushName"/>
+                  </Children>
+                </Widget>
+
+                <!-- Court OP Icon -->
+                <Widget DataSource="{HeroCourtOPData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="-2" PositionYOffset="@PositionYOffset" Sprite="@Text">
+                  <Children>
+                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="@BrushName"/>
+                  </Children>
+                </Widget>
+
+                <!-- TaiShou OP Icon -->
+                <Widget DataSource="{HeroTaiShouOPData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="-2" PositionYOffset="@PositionYOffset" Sprite="@Text">
+                  <Children>
+                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="@BrushName"/>
+                  </Children>
+                </Widget>
+
+                <!-- Noble OP Icon -->
+                <Widget DataSource="{HeroNobleOPData}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" HorizontalAlignment="Right" VerticalAlignment="Top" PositionXOffset="-2" PositionYOffset="@PositionYOffset" Sprite="@Text">
+                  <Children>
+                    <HintWidget DataSource="{Hint}" DoNotAcceptEvents="true" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="@BrushName"/>
+                  </Children>
+                </Widget>
+
+                <!-- Hint -->
+                <HintWidget DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint"/>
+
+                <!-- Selection Border -->
+                <Widget DoNotAcceptEvents="true" HeightSizePolicy ="StretchToParent" WidthSizePolicy="StretchToParent" Sprite="SelectionBorder@2x_9" IsVisible="@IsActiveUnit"/>
+
+              </Children>
+            </ButtonWidget>
+
+            <!--Character Name-->
+            <Widget DataSource="{Unit}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Top" MarginLeft="20" Sprite="OfficialPosition\bg_mingzi" AlphaFactor="@CharacterNameplateAlphaFactor">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@CharacterNameText" Brush="@CharacterNameTextBrush"/>
+              </Children>
+            </Widget>
+          </Children>
+        </ListPanel>
+
+        <!-- Tree Connection Lines Container (Lines are added from the code) -->
+        <Widget Id="LineContainer" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" SuggestedWidth="0" HeightSizePolicy="Fixed" SuggestedHeight="!Encyclopedia.CharacterTree.Line.Height" HorizontalAlignment="Center" MarginTop="144" Sprite="BlankWhiteSquare_9" AlphaFactor="0.5">
+          <Children>
+
+          </Children>
+        </Widget>
+
+        <ListPanel Id="ChildContainer" DataSource="{Branch}" HeightSizePolicy ="CoverChildren" WidthSizePolicy="CoverChildren" SuggestedWidth="800" MarginTop="169" DoNotAcceptEvents="true" StackLayout.LayoutMethod="HorizontalLeftToRight">
+          <ItemTemplate>
+            <OfficialPositionUnitTreeNodeItem/>
+          </ItemTemplate>
+        </ListPanel>
+      </Children>
+    </EncyclopediaUnitTreeNodeItemBrushWidget>
+  </Window>
+</Prefab>

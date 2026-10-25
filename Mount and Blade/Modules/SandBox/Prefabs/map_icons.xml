@@ -1,0 +1,13 @@
+<prefabs>
+	<game_entity name="MapSnowAndRainDefiner" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="SnowAndRainTextureDefiner">
+				<variables>
+					<variable name="SnowAndRainTexture" value="main_map_snow_flowmap"/>
+					<variable name="WeatherNodeGridWidthAndHeight" value="32"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>

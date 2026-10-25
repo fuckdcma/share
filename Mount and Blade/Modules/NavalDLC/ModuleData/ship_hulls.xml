@@ -1,0 +1,1916 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ShipHulls>
+	<ShipHull
+		id="ship_knarr_storyline"
+		name="{=m4RIR3hg}Captured Knarr"
+		description="{=qUtuVL48}When a broad, low, fine-lined square-sailed vessel is spotted near a northern coastal village, an experienced mariner is usually summoned to look out from a cliff and make a critical determination: is it a snekkja or drakkar packed with Nord warriors? In that case, the people must gather their herds and valuables and rush to the nearest hiding spot in the woods. Or is it a knarr? In that case, the villagers pack up their trade goods and hurry to the nearest town, ready to bargain for walrus ivory, whale oil and other treasures of the north, hauled by this sturdy commercial vessel used by various peoples across the northern seas."
+		mission_ship="ship_knarr_storyline"
+		skeletal_crew_capacity="5"
+		main_deck_crew_capacity="15"
+		total_crew_capacity="15"
+		max_hitpoints="160000"
+		max_fire_hitpoints="160000"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="4"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="12000"
+		sea_worthiness="40"
+		inventory_capacity="3000"
+		map_visual_scale="0.072">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="5" />
+			<ShipSlot
+				id="deck"
+				tag_id="6" />
+			<ShipSlot
+				id="oars"
+				tag_id="7" />
+			<ShipSlot
+				id="sail"
+				tag_id="8" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_knarr_storyline_2"
+		name="{=JUbCqdHC}Captured Knarr Ship"
+		description="{=qUtuVL48}When a broad, low, fine-lined square-sailed vessel is spotted near a northern coastal village, an experienced mariner is usually summoned to look out from a cliff and make a critical determination: is it a snekkja or drakkar packed with Nord warriors? In that case, the people must gather their herds and valuables and rush to the nearest hiding spot in the woods. Or is it a knarr? In that case, the villagers pack up their trade goods and hurry to the nearest town, ready to bargain for walrus ivory, whale oil and other treasures of the north, hauled by this sturdy commercial vessel used by various peoples across the northern seas."
+		mission_ship="ship_knarr_storyline_2"
+		skeletal_crew_capacity="10"
+		main_deck_crew_capacity="45"
+		total_crew_capacity="45"
+		max_hitpoints="160000"
+		max_fire_hitpoints="160000"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="4"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="12000"
+		sea_worthiness="40"
+		inventory_capacity="3000"
+		map_visual_scale="0.072">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_lightlongship_storyline"
+		name="{=Ee38ZjmH}Snekkja"
+		description="{=0YdWaNsY}Several centuries ago, northern shipbuilders developed a new technique of hullbuilding in which the planks of the hull overlapped each other. They produced light, strong warships with fine lines that could be built quickly but were still seaworthy enough for the harsh northern ocean. This allowed peoples like the Nords, the Vlandians and others to range far from their homelands, trading, raiding, or fighting as mercenaries. The light longship, known to the Nords as the snekkja or snake, is the smallest of these vessels, the kind that might be outfitted by a lone band of raiders, or cover the flanks of a jarl’s fleet."
+		mission_ship="ship_lightlongship_storyline"
+		skeletal_crew_capacity="10"
+		main_deck_crew_capacity="40"
+		total_crew_capacity="40"
+		max_hitpoints="140000"
+		max_fire_hitpoints="140000"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="4"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="19000"
+		sea_worthiness="35"
+		inventory_capacity="900"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="northern_trade_ship"
+		name="{=oieBz5WB}Knarr"
+		description="{=qUtuVL48}When a broad, low, fine-lined square-sailed vessel is spotted near a northern coastal village, an experienced mariner is usually summoned to look out from a cliff and make a critical determination: is it a snekkja or drakkar packed with Nord warriors? In that case, the people must gather their herds and valuables and rush to the nearest hiding spot in the woods. Or is it a knarr? In that case, the villagers pack up their trade goods and hurry to the nearest town, ready to bargain for walrus ivory, whale oil and other treasures of the north, hauled by this sturdy commercial vessel used by various peoples across the northern seas."
+		mission_ship="ship_knarr"
+		skeletal_crew_capacity="6"
+		main_deck_crew_capacity="18"
+		total_crew_capacity="18"
+		is_trade_ship="true"
+		max_hitpoints="9000"
+		max_fire_hitpoints="9000"
+		max_sail_hitpoints="4500"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="2.0"
+		value="6000"
+		sea_worthiness="25"
+		inventory_capacity="8000"
+		map_visual_scale="0.072">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="eastern_trade_ship"
+		name="{=RYvOc8pI}Dhow"
+		description="{=CEbW2CVf}The dhow, and ships built on the same lines, have been sailing the seas of southern Calradia for over a thousand years, its distinctive silhouette appearing in carvings on Kannic tomb walls. The triangular lateen sail that is now almost universally carried by dhows is a more recent invention, allowing these ships to catch seasonal winds blowing out of the Nahhasa desert or the mountains to their north parallel to the main trade routes."
+		mission_ship="ship_dhow"
+		skeletal_crew_capacity="6"
+		main_deck_crew_capacity="16"
+		total_crew_capacity="16"
+		max_hitpoints="9600"
+		max_fire_hitpoints="9600"
+		max_sail_hitpoints="4800"
+		is_trade_ship="true"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="2.0"
+		value="6000"
+		sea_worthiness="26"
+		inventory_capacity="7700"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="western_trade_ship"
+		name="{=WlPxqfND}Trade Cog"
+		description="{=acfqcMbB}The cog was developed by shipwrights on the western coasts of Calradia to travel long distances and weather the fierce storms of the ocean. Its ancestors were similar to the Nordic knarr or the Battanian birlinn, but the cog evolved to become much taller, broader and heavier. It serves both as a trading vessel and as a warship in the navies of the Vlandian and Battanian lords who now rule these coasts, the latter usually mounting a stern castle."
+		mission_ship="ship_trade_cog"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="30"
+		max_hitpoints="16000"
+		max_fire_hitpoints="16000"
+		max_sail_hitpoints="8000"
+		is_trade_ship="true"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="false"
+		production_build_weight="2.0"
+		value="13000"
+		sea_worthiness="32"
+		inventory_capacity="11000"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="sturgia_heavy_ship"
+		name="{=cVlHTcJU}Lodya"
+		description="{=vWMVYVsp}The lodya draws two shipbuilding traditions: that of the Nords who sailed their longships to trade and raid up Sturgian rivers, and that of the great galleys that sailed from imperial ports on Lake Laconis, whose glory the Sturgian princes wished to surpass. In its basic lines it resembles a sleek shallow-drafted river-craft, with ample oar-power to row against the wind or current, but is much larger. Sturgians however often arm it for battle like a dromon, packing its well-protected decks with archers and sometimes even mounting a ram."
+		mission_ship="ship_sturgianheavylongship"
+		skeletal_crew_capacity="36"
+		main_deck_crew_capacity="70"
+		total_crew_capacity="96"
+		max_hitpoints="30000"
+		max_fire_hitpoints="30000"
+		max_sail_hitpoints="15000"
+		ship_type="heavy"
+		has_hold="false"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="45000"
+		sea_worthiness="46"
+		inventory_capacity="3200"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="nord_medium_ship"
+		name="{=256aKoIR}Drakkar"
+		description="{=vfcFN9bK}The Nords claim that the god Fryr taught their people the secret of the lapstrake, a technique of shipbuilding in which planks overlap each other to create a strong, light hull. Inspection of imperial annals might site this mythic event to just sometime near the year 700, when longships full of warriors first began to terrorize the seas of the north. The drakkar or dragon-ship is the pinnacle of this design, the pride of any jarl’s fleet. Nord chiefs lavish gold on bards who sing of the sleek lines of their drakkars, in the same way an eastern lord might pay a poet to praise his horses. That said, they are smaller than the flagships of most of their adversaries, and usually mount little in the way of ballistae or other auxiliary weapons. Ships like the dromon are made by engineers, who wish to apply the Empire’s methodical battle-winning arts to combat at sea. The drakkar in contrast is a ship for heroes, warriors who want to get to their foeman’s ship, scramble aboard, and start putting axes into skulls."
+		mission_ship="ship_drakkar"
+		skeletal_crew_capacity="32"
+		main_deck_crew_capacity="106"
+		total_crew_capacity="106"
+		max_hitpoints="30000"
+		max_fire_hitpoints="30000"
+		max_sail_hitpoints="15000"
+		ship_type="heavy"
+		has_hold="false"
+		base_speed="3"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="50000"
+		sea_worthiness="48"
+		inventory_capacity="3200"
+		map_visual_scale="0.055">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="nord_mediumballista_ship"
+		name="{=xyj3H2rc}Battle Knarr"
+		description="{=HaryzKaa}Though Nords and Sturgians favour quick boarding engagements, they know the value of naval artillery. Since regular longships lack the stability and space to mount ballistae, they used the Battle Knarr. These oversized and reinforced Knarr, can accommodate ballistae as well as a large crew."
+		mission_ship="nord_mediumballista_ship"
+		skeletal_crew_capacity="18"
+		main_deck_crew_capacity="52"
+		total_crew_capacity="52"
+		max_hitpoints="18000"
+		max_fire_hitpoints="14800"
+		max_sail_hitpoints="7400"
+		ship_type="medium"
+		has_hold="false"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="1.5"
+		value="26000"
+		sea_worthiness="48"
+		inventory_capacity="3200"
+		map_visual_scale="0.067">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="medium_fore"
+				tag_id="fore" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="northern_medium_ship"
+		name="{=h2VhZvqE}Longship"
+		description="{=gxb5VP9l}Several centuries ago, northern shipbuilders developed a new technique of hullbuilding in which the planks of the hull overlapped each other. This resulted in the longship, a design which is found in abundance on the northern seas. They are seaworthy, lightweight, easy to sail, and quick to accelerate and turn. With their shallow draft they can navigate rivers and coastal waters with ease, though they have trouble in rough seas. In battle, longships try to bring their large crews into boarding action as soon as possible, which is not a hard task thanks to their many oars."
+		mission_ship="ship_longship"
+		skeletal_crew_capacity="22"
+		main_deck_crew_capacity="54"
+		total_crew_capacity="54"
+		max_hitpoints="14800"
+		max_fire_hitpoints="14800"
+		max_sail_hitpoints="7400"
+		ship_type="medium"
+		has_hold="false"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="1.5"
+		value="24000"
+		sea_worthiness="43"
+		inventory_capacity="2600"
+		map_visual_scale="0.065">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="northern_light_ship"
+		name="{=bvfd7xzX}Light Longship"
+		description="{=0YdWaNsY}Several centuries ago, northern shipbuilders developed a new technique of hullbuilding in which the planks of the hull overlapped each other. They produced light, strong warships with fine lines that could be built quickly but were still seaworthy enough for the harsh northern ocean. This allowed peoples like the Nords, the Vlandians and others to range far from their homelands, trading, raiding, or fighting as mercenaries. The light longship, known to the Nords as the snekkja or snake, is the smallest of these vessels, the kind that might be outfitted by a lone band of raiders, or cover the flanks of a jarl’s fleet."
+		mission_ship="ship_lightlongship"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="32"
+		total_crew_capacity="32"
+		max_hitpoints="9000"
+		max_fire_hitpoints="9000"
+		max_sail_hitpoints="4500"
+		ship_type="light"
+		has_hold="false"
+		base_speed="3"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="4.0"
+		value="8500"
+		sea_worthiness="35"
+		inventory_capacity="1800"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="battanian_light_ship"
+		name="{=orLydrtn}Birlinn"
+		description="{=ri644aaR}The Battanians are less known for their maritime traditions than many other peoples of the north, but some tribes have long plied the rivers and lakes of their forest lands or traded along the coast. The birlinn, or “catship”, evolved out of the smaller flat-bottomed boats used on inland waters. Its low freeboard means that it struggles in rough seas, but in a calm or a swell its stubby hull is perhaps the most maneuverable of any Calradian vessel, adept for darting around rocks, whirlpools or shoals."
+		mission_ship="ship_catship"
+		skeletal_crew_capacity="10"
+		main_deck_crew_capacity="36"
+		total_crew_capacity="36"
+		max_hitpoints="11200"
+		max_fire_hitpoints="11200"
+		max_sail_hitpoints="9200"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="2.0"
+		value="11000"
+		sea_worthiness="20"
+		inventory_capacity="2200"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="battanian_medium_ship"
+		name="{=RLQzhaXw}Barlinnger"
+		description="{=aiFdWrrK}To hold the line in larger naval engagements, the Battanians built the Barlinnger. Sharing characteristics with the Birlinn, the Barlinnger is slower and more cumbersome. However, its broad deck and raised mid castle make archers and skirmishers deadly in ranged engagements. This ship was also favoured by the Vlandians for the same reason."
+		mission_ship="ship_catship_medium"
+		skeletal_crew_capacity="20"
+		main_deck_crew_capacity="50"
+		total_crew_capacity="50"
+		max_hitpoints="17200"
+		max_fire_hitpoints="11200"
+		max_sail_hitpoints="9200"
+		ship_type="medium"
+		has_hold="false"
+		base_speed="2.7"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="25500"
+		sea_worthiness="22"
+		inventory_capacity="2800"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="medium_fore"
+				tag_id="fore" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="western_light_ship"
+		name="{=PQkqq3pf}Western Galley"
+		description="{=eIejANIa}This galley is used throughout the western coasts of Calradia for both commerce and warfare. It is an evolution of the vessels used by mariners from the Biscan, Byalic and Nordvyg coasts to fish, whale and trade. This galley is flexible and relatively cheap to build, making it the workhorse of Battanian, Vlandian and imperial seafarers. It mounts the square sail that is generally preferred by seafarers in northern waters."
+		mission_ship="ship_galley"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="32"
+		total_crew_capacity="32"
+		max_hitpoints="10800"
+		max_fire_hitpoints="10800"
+		max_sail_hitpoints="5400"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.7"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="4.0"
+		value="8000"
+		sea_worthiness="22"
+		inventory_capacity="1400"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="western_medium_ship"
+		name="{=KOenNjIj}Cog"
+		description="{=OV5xlvrb}Despite being a clinker ship, Cogs are still taller and sturdier from northern ships. It can carry a decent crew and reinforcements, and sail at a decent pace. Cogs can hold the line against many other ships, and used in western navies for that purpose."
+		mission_ship="ship_cog"
+		skeletal_crew_capacity="18"
+		main_deck_crew_capacity="42"
+		total_crew_capacity="60"
+		max_hitpoints="18600"
+		max_fire_hitpoints="18600"
+		max_sail_hitpoints="9300"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="25000"
+		sea_worthiness="27"
+		inventory_capacity="2800"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="vlandia_heavy_ship"
+		name="{=BWdKHUNi}Roundship"
+		description="{=mfo5vaD9}When Vlandians arrived on the shores of Calradia they sailed in simple craft similar to Nord longships. But, just as the first generations of Vlandian settlers learned to build fortifications to protect their new lands, so they also learned to build citadels upon the waves, the great roundships, to protect the commerce that enriched them. Their basic lines are similar to those of cogs common in Vlandian ports but the roundship is nearly twice as large, mounting two large square sails. They are designed to make full use of the Vlandian tradition of crossbowmanship, with castles at both bow and stern providing the marines a lofty point from which to shoot as well as cover to reload."
+		mission_ship="ship_roundship"
+		skeletal_crew_capacity="36"
+		main_deck_crew_capacity="66"
+		total_crew_capacity="108"
+		max_hitpoints="42000"
+		max_fire_hitpoints="42000"
+		max_sail_hitpoints="21000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="72000"
+		sea_worthiness="38"
+		inventory_capacity="4000"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="khuzait_heavy_ship"
+		name="{=fX41pKIa}Qalguk"
+		description="{=9l40SnwD}The qalguk is a product of a very different shipbuilding tradition than other heavy warships, that of the cities on the eastern edge of Lake Tanaesis. Until recently, both sides of the lake were part of the Empire, and there was little need for ships that could stand in a battle-line. The coming of the Khuzaits from the eastern steppe however brought war to Tanaesis, and the khans demanded fleets that were the equal of any other realm from his new subjects. What they received was the qalguk, a warship made by shipwrights who learned their trade building merchantmen and pleasure-craft for the great lake. Compared to other heavies it is delicate, and finicky, but it can outrun virtually any other vessel on the water. Despite the limitations, the khans appreciated a ship that gave them the same advantage at sea as their horses did on land: the choice to avoid hand-to-handing fighting and pepper the enemy with arrows, or, if they thought they had an advantage, to close quickly and strike a devastating blow."
+		mission_ship="ship_xebec"
+		skeletal_crew_capacity="32"
+		main_deck_crew_capacity="66"
+		total_crew_capacity="100"
+		max_hitpoints="32000"
+		max_fire_hitpoints="32000"
+		max_sail_hitpoints="16000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Cavalry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="62000"
+		sea_worthiness="34"
+		inventory_capacity="4000"
+		map_visual_scale="0.055">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="eastern_medium_ship"
+		name="{=IYGSgCeL}Sambuk"
+		description="{=VJhNTmZM}The sambuk is the traditional trading dhow of the Perassic Sea redesigned for warfare. It is to Aserai and Khuzait navies what the liburna is to imperial ones - the all-purpose workhorse, fleshing out the line and guarding the flanks in battle, hunting pirates, or protecting convoys of merchantment. The sambuk is distinguished by its very high speed, which also makes it a favorite of corsairs, if they can obtain one."
+		mission_ship="ship_meditmedium"
+		skeletal_crew_capacity="18"
+		main_deck_crew_capacity="40"
+		total_crew_capacity="60"
+		max_hitpoints="20000"
+		max_fire_hitpoints="20000"
+		max_sail_hitpoints="10000"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="true"
+		production_build_weight="5.0"
+		value="26000"
+		sea_worthiness="28"
+		inventory_capacity="2800"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="eastern_heavy_ship"
+		name="{=Hza50zPb}Dromakion"
+		description="{=fQieVaQx}The dromakion is a somewhat smaller version of the dromon. The keel and frame do not bear anywhere near as much weight as the dromon, and do not require the building techniques that are jealously guarded by imperial shipwrights. Consequently, it is in wide use across south and east Calradia, by Aserai, Khuzaits and the more cost-conscious imperial archons."
+		mission_ship="ship_lightdromon"
+		skeletal_crew_capacity="30"
+		main_deck_crew_capacity="66"
+		total_crew_capacity="94"
+		max_hitpoints="34000"
+		max_fire_hitpoints="34000"
+		max_sail_hitpoints="17000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="60000"
+		sea_worthiness="27"
+		inventory_capacity="4000"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="aserai_heavy_ship"
+		name="{=JqQKmjjd}Ghurab"
+		description="{=rQgQkgZ7}The ghurab, or “crow”, is the Aserai sultanate’s answer to the dromon. The ports on the south coast of the Perassic Sea, once home to the Kannic states, have a long tradition of shipbuilding. Most of their craft, however, were light and swift. In centuries passed, when ramming was decisive, they served the Kannic navies well. Today however missile fire and boarding decides most battles, and the emirs who now rule this coast felt a need for bigger and stronger vessels."
+		mission_ship="ship_meditheavy"
+		skeletal_crew_capacity="36"
+		main_deck_crew_capacity="76"
+		total_crew_capacity="112"
+		max_hitpoints="56000"
+		max_fire_hitpoints="56000"
+		max_sail_hitpoints="28000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="75000"
+		sea_worthiness="36"
+		inventory_capacity="4800"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="central_light_ship"
+		name="{=Gn64sGJU}Eastern Galley"
+		description="{=WWJcXPqY}This galley is common in southern and eastern Calradia, in the more restricted waters of the Gulf of Charas, the Perassic Sea and Lake Tanaesis. It evolved from the swift galleys that the Kannic states used to contest the seas with the Calradian Empire in its infancy. Today, Aserai, Khuzaits and imperial seafarers use it for both trade and warfare. It mounts the lateen sail, which is preferred by sailors from these lands."
+		mission_ship="ship_meditlight"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="30"
+		total_crew_capacity="30"
+		max_hitpoints="10000"
+		max_fire_hitpoints="10000"
+		max_sail_hitpoints="5000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.7"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="2.0"
+		value="7500"
+		sea_worthiness="21"
+		inventory_capacity="1400"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="empire_medium_ship"
+		name="{=mHoFtjHm}Liburna"
+		description="{=cDPRKnTj}The liburna is a centuries-old design, but it is still effective. Like many traditional imperial warships, it carries a ram. These are less decisive than they were centuries ago, when hulls were more brittle, but still can cripple or sink an opponent with several blows. They serve as the workhorses of the imperial navy, able to serve as scout and pursuit ships and as auxiliaries to the battle-line of dromons."
+		mission_ship="ship_liburna"
+		skeletal_crew_capacity="24"
+		main_deck_crew_capacity="48"
+		total_crew_capacity="60"
+		max_hitpoints="22000"
+		max_fire_hitpoints="22000"
+		max_sail_hitpoints="11000"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="28000"
+		sea_worthiness="24"
+		inventory_capacity="2800"
+		map_visual_scale="0.065">
+		<AvailableSlots>
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="empire_heavy_ship"
+		name="{=mqacAzET}Dromon"
+		description="{=wQ7ahU73}The dromon is the work of imperial shipwrights who have taken the heavy galleys of the early empire and updated them with the technologies of the seafaring peoples of the south and east. Their unusual sail plan, a lateen in front and a squaresail behind, reflects this hybrid tradition. The name means “runner”, but nautical design and terminology evolve differently, and the dromon is distinguished not by its speed but by being the heaviest and sturdiest ship on the five seas. Like all heavy warships they turn and accelerate slowly, and thus must rely on smaller craft like the liburna to chase nimble pirates and smugglers. But in battle a line of dromons, their rams cutting the waters ahead of them, epitomizes the irresistible might of the Empire."
+		mission_ship="ship_dromon"
+		skeletal_crew_capacity="44"
+		main_deck_crew_capacity="80"
+		total_crew_capacity="120"
+		max_hitpoints="60000"
+		max_fire_hitpoints="60000"
+		max_sail_hitpoints="30000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="80000"
+		sea_worthiness="32"
+		inventory_capacity="4800"
+		map_visual_scale="0.052">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="southern_fishing_ship"
+		name="{=CBIJ0cJz}Southern Fishing Ship"
+		description="{=NWxkNwDh}The small fishing boats used in coastal villages throughout Calradia are generally quite similar to each other. Most are designed simply to sail to the nearest fishing grounds, lay out nets, and sail back with as big catch as possible, though some can be used to chase and harpoon smaller whales."
+		mission_ship="ship_fishing_southern"
+		skeletal_crew_capacity="6"
+		main_deck_crew_capacity="12"
+		total_crew_capacity="12"
+		max_hitpoints="4000"
+		max_fire_hitpoints="4000"
+		max_sail_hitpoints="2000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="5000"
+		sea_worthiness="18"
+		inventory_capacity="1000"
+		map_visual_scale="0.072">
+		<AvailableSlots>
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="empire_trade_ship"
+		name="{=W2cqChwa}Corbita"
+		description="{=dT9uM2iC}Corbitae have been hauling the cargo of the Calradian Empire for over a millennium. Their holds, more capacious than those of any other ship on the sea, were designed to ferry vast quantities of grain from the warm lands around the Perassic Sea to the sprawling imperial capital at Paravenos. The empire is no longer as centralized as it once was, and none of its cities now require the bounty of a continent to feed them, but corbitae are still the engine of commerce across the imperial-controlled northern shores of the Perassic."
+		mission_ship="ship_corbita"
+		skeletal_crew_capacity="10"
+		main_deck_crew_capacity="25"
+		total_crew_capacity="35"
+		max_hitpoints="19200"
+		max_fire_hitpoints="19200"
+		max_sail_hitpoints="9600"
+		is_trade_ship="true"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="false"
+		can_equip_figurehead="false"
+		production_build_weight="2.0"
+		value="16000"
+		sea_worthiness="40"
+		inventory_capacity="12000"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="fishing_ship"
+		name="{=CwxOZskH}Fishing Ship"
+		description="{=NWxkNwDh}The small fishing boats used in coastal villages throughout Calradia are generally quite similar to each other. Most are designed simply to sail to the nearest fishing grounds, lay out nets, and sail back with as big catch as possible, though some can be used to chase and harpoon smaller whales."
+		mission_ship="ship_fishing"
+		skeletal_crew_capacity="10"
+		main_deck_crew_capacity="35"
+		total_crew_capacity="35"
+		max_hitpoints="4000"
+		max_fire_hitpoints="4000"
+		max_sail_hitpoints="2000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="3"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="12000"
+		sea_worthiness="40"
+		inventory_capacity="2500"
+		map_visual_scale="0.072">
+		<AvailableSlots>
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_dromon_storyline"
+		name="{=sNjJ0nLM}Prison Dromon"
+		description="{=wQ7ahU73}The dromon is the work of imperial shipwrights who have taken the heavy galleys of the early empire and updated them with the technologies of the seafaring peoples of the south and east. Their unusual sail plan, a lateen in front and a squaresail behind, reflects this hybrid tradition. The name means “runner”, but nautical design and terminology evolve differently, and the dromon is distinguished not by its speed but by being the heaviest and sturdiest ship on the five seas. Like all heavy warships they turn and accelerate slowly, and thus must rely on smaller craft like the liburna to chase nimble pirates and smugglers. But in battle a line of dromons, their rams cutting the waters ahead of them, epitomizes the irresistible might of the Empire."
+		mission_ship="ship_dromon_storyline"
+		skeletal_crew_capacity="1"
+		main_deck_crew_capacity="1"
+		total_crew_capacity="150"
+		max_hitpoints="6000"
+		max_fire_hitpoints="6000"
+		max_sail_hitpoints="100000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="80000"
+		sea_worthiness="32"
+		inventory_capacity="2200"
+		map_visual_scale="0.052">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="purigs_roundship_storyline"
+		name="{=BWdKHUNi}Roundship"
+		description="{=mfo5vaD9}When Vlandians arrived on the shores of Calradia they sailed in simple craft similar to Nord longships. But, just as the first generations of Vlandian settlers learned to build fortifications to protect their new lands, so they also learned to build citadels upon the waves, the great roundships, to protect the commerce that enriched them. Their basic lines are similar to those of cogs common in Vlandian ports but the roundship is nearly twice as large, mounting two large square sails. They are designed to make full use of the Vlandian tradition of crossbowmanship, with castles at both bow and stern providing the marines a lofty point from which to shoot as well as cover to reload."
+		mission_ship="purigs_roundship_storyline"
+		skeletal_crew_capacity="36"
+		main_deck_crew_capacity="56"
+		total_crew_capacity="100"
+		max_hitpoints="5600"
+		max_fire_hitpoints="5600"
+		max_sail_hitpoints="100000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="72000"
+		sea_worthiness="38"
+		inventory_capacity="2200"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="burning_cog_ship"
+		name="{=LJKQbrhp}Viper Cog"
+		description="{=acfqcMbB}The cog was developed by shipwrights on the western coasts of Calradia to travel long distances and weather the fierce storms of the ocean. Its ancestors were similar to the Nordic knarr or the Battanian birlinn, but the cog evolved to become much taller, broader and heavier. It serves both as a trading vessel and as a warship in the navies of the Vlandian and Battanian lords who now rule these coasts, the latter usually mounting a stern castle."
+		mission_ship="burning_cog_ship"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="20"
+		max_hitpoints="2600"
+		max_fire_hitpoints="2000"
+		max_sail_hitpoints="1000"
+		ship_type="medium"
+		has_hold="false"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="18000"
+		sea_worthiness="32"
+		inventory_capacity="3600"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="burning_fishing_ship"
+		name="{=CwxOZskH}Fishing Ship"
+		description="{=NWxkNwDh}The small fishing boats used in coastal villages throughout Calradia are generally quite similar to each other. Most are designed simply to sail to the nearest fishing grounds, lay out nets, and sail back with as big catch as possible, though some can be used to chase and harpoon smaller whales."
+		mission_ship="burning_ship_fishing"
+		skeletal_crew_capacity="10"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="20"
+		max_hitpoints="10000"
+		max_fire_hitpoints="10000"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="3"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="12000"
+		sea_worthiness="40"
+		inventory_capacity="2500"
+		map_visual_scale="0.072">
+		<AvailableSlots>
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_storyline_quest_4_boss_cog_ship"
+		name="{=KOenNjIj}Cog"
+		description="{=acfqcMbB}The cog was developed by shipwrights on the western coasts of Calradia to travel long distances and weather the fierce storms of the ocean. Its ancestors were similar to the Nordic knarr or the Battanian birlinn, but the cog evolved to become much taller, broader and heavier. It serves both as a trading vessel and as a warship in the navies of the Vlandian and Battanian lords who now rule these coasts, the latter usually mounting a stern castle."
+		mission_ship="naval_storyline_quest_4_boss_cog_ship"
+		skeletal_crew_capacity="18"
+		main_deck_crew_capacity="36"
+		total_crew_capacity="54"
+		max_hitpoints="18600"
+		max_fire_hitpoints="3000"
+		max_sail_hitpoints="1000"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="25000"
+		sea_worthiness="27"
+		inventory_capacity="1600"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="naval_storyline_quest_4_boss_round_ship"
+		name="{=BWdKHUNi}Roundship"
+		description="{=mfo5vaD9}When Vlandians arrived on the shores of Calradia they sailed in simple craft similar to Nord longships. But, just as the first generations of Vlandian settlers learned to build fortifications to protect their new lands, so they also learned to build citadels upon the waves, the great roundships, to protect the commerce that enriched them. Their basic lines are similar to those of cogs common in Vlandian ports but the roundship is nearly twice as large, mounting two large square sails. They are designed to make full use of the Vlandian tradition of crossbowmanship, with castles at both bow and stern providing the marines a lofty point from which to shoot as well as cover to reload."
+		mission_ship="naval_storyline_quest_4_boss_round_ship"
+		skeletal_crew_capacity="36"
+		main_deck_crew_capacity="66"
+		total_crew_capacity="100"
+		max_hitpoints="28600"
+		max_fire_hitpoints="5600"
+		max_sail_hitpoints="1000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="72000"
+		sea_worthiness="38"
+		inventory_capacity="2200"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="naval_storyline_quest_4_player_medit_ship"
+		name="{=4siUSR8A}Golden Wasp"
+		description="{=VJhNTmZM}The sambuk is the traditional trading dhow of the Perassic Sea redesigned for warfare. It is to Aserai and Khuzait navies what the liburna is to imperial ones - the all-purpose workhorse, fleshing out the line and guarding the flanks in battle, hunting pirates, or protecting convoys of merchantment. The sambuk is distinguished by its very high speed, which also makes it a favorite of corsairs, if they can obtain one."
+		mission_ship="naval_storyline_quest_4_player_medit_ship"
+		skeletal_crew_capacity="18"
+		main_deck_crew_capacity="32"
+		total_crew_capacity="48"
+		max_hitpoints="20000"
+		max_fire_hitpoints="3000"
+		max_sail_hitpoints="2200"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="28000"
+		sea_worthiness="28"
+		inventory_capacity="1600"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="naval_storyline_quest_4_boss_light_ship"
+		name="{=PQkqq3pf}Western Galley"
+		description="{=eIejANIa}This galley is used throughout the western coasts of Calradia for both commerce and warfare. It is an evolution of the vessels used by mariners from the Biscan, Byalic and Nordvyg coasts to fish, whale and trade. This galley is flexible and relatively cheap to build, making it the workhorse of Battanian, Vlandian and imperial seafarers. It mounts the square sail that is generally preferred by seafarers in northern waters."
+		mission_ship="naval_storyline_ship_galley"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="24"
+		total_crew_capacity="24"
+		max_hitpoints="18600"
+		max_fire_hitpoints="1300"
+		max_sail_hitpoints="1000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.7"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="4.0"
+		value="12000"
+		sea_worthiness="22"
+		inventory_capacity="600"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ballista_ship_galley_storyline"
+		name="{=PQkqq3pf}Western Galley"
+		description="{=eIejANIa}This galley is used throughout the western coasts of Calradia for both commerce and warfare. It is an evolution of the vessels used by mariners from the Biscan, Byalic and Nordvyg coasts to fish, whale and trade. This galley is flexible and relatively cheap to build, making it the workhorse of Battanian, Vlandian and imperial seafarers. It mounts the square sail that is generally preferred by seafarers in northern waters."
+		mission_ship="ballista_ship_galley_storyline"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="24"
+		total_crew_capacity="24"
+		max_hitpoints="10800"
+		max_fire_hitpoints="10800"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.7"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="4.0"
+		value="12000"
+		sea_worthiness="22"
+		inventory_capacity="600"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="western_trade_ship_storyline"
+		name="{=WlPxqfND}Trade Cog"
+		description="{=acfqcMbB}The cog was developed by shipwrights on the western coasts of Calradia to travel long distances and weather the fierce storms of the ocean. Its ancestors were similar to the Nordic knarr or the Battanian birlinn, but the cog evolved to become much taller, broader and heavier. It serves both as a trading vessel and as a warship in the navies of the Vlandian and Battanian lords who now rule these coasts, the latter usually mounting a stern castle."
+		mission_ship="ship_trade_cog_storyline"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="30"
+		max_hitpoints="16000"
+		max_fire_hitpoints="2600"
+		max_sail_hitpoints="100000"
+		is_trade_ship="true"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="14000"
+		sea_worthiness="32"
+		inventory_capacity="3600"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_lodya_storyline"
+		name="{=cVlHTcJU}Lodya"
+		description="{=vWMVYVsp}The lodya draws on two shipbuilding traditions: that of the Nords who sailed their longships to trade and raid up Sturgian rivers, and that of the great galleys that sailed from imperial ports on Lake Laconis, whose glory the Sturgian princes wished to surpass. In its basic lines it resembles a sleek shallow-drafted river-craft, with ample oar-power to row against the wind or current, but is much larger. Sturgians however often arm it for battle like a dromon, packing its well-protected decks with archers and sometimes even mounting a ram."
+		mission_ship="ship_lodya_storyline"
+		skeletal_crew_capacity="36"
+		main_deck_crew_capacity="70"
+		total_crew_capacity="95"
+		max_hitpoints="4200"
+		max_fire_hitpoints="4200"
+		max_sail_hitpoints="100000"
+		ship_type="heavy"
+		has_hold="false"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="50000"
+		sea_worthiness="46"
+		inventory_capacity="1400"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_birlinn_storyline"
+		name="{=orLydrtn}Birlinn"
+		description="{=ri644aaR}The Battanians are less known for their maritime traditions than many other peoples of the north, but some tribes have long plied the rivers and lakes of their forest lands or traded along the coast. The birlinn, or “catship”, evolved out of the smaller flat-bottomed boats used on inland waters. Its low freeboard means that it struggles in rough seas, but in a calm or a swell its stubby hull is perhaps the most maneuverable of any Calradian vessel, adept for darting around rocks, whirlpools or shoals."
+		mission_ship="ship_birlinn_storyline"
+		skeletal_crew_capacity="10"
+		main_deck_crew_capacity="24"
+		total_crew_capacity="24"
+		max_hitpoints="1400"
+		max_fire_hitpoints="1400"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="2.0"
+		value="16000"
+		sea_worthiness="20"
+		inventory_capacity="600"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_meditheavy_storyline"
+		name="{=abRcmjmc}Wounded Beast"
+		description="{=rQgQkgZ7}The ghurab, or “crow”, is the Aserai sultanate’s answer to the dromon. The ports on the south coast of the Perassic Sea, once home to the Kannic states, have a long tradition of shipbuilding. Most of their craft, however, were light and swift. In centuries passed, when ramming was decisive, they served the Kannic navies well. Today however missile fire and boarding decides most battles, and the emirs who now rule this coast felt a need for bigger and stronger vessels."
+		mission_ship="ship_meditheavy_storyline"
+		skeletal_crew_capacity="36"
+		main_deck_crew_capacity="74"
+		total_crew_capacity="112"
+		max_hitpoints="3100"
+		max_fire_hitpoints="5800"
+		max_sail_hitpoints="100000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="75000"
+		sea_worthiness="36"
+		inventory_capacity="2400"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+			<ShipSlot
+				id="roof"
+				tag_id="roof" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_meditlight_storyline"
+		name="{=Gn64sGJU}Eastern Galley"
+		description="{=WWJcXPqY}This galley is common in southern and eastern Calradia, in the more restricted waters of the Gulf of Charas, the Perassic Sea and Lake Tanaesis. It evolved from the swift galleys that the Kannic states used to contest the seas with the Calradian Empire in its infancy. Today, Aserai, Khuzaits and imperial seafarers use it for both trade and warfare. It mounts the lateen sail, which is preferred by sailors from these lands."
+		mission_ship="ship_meditlight_storyline"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="20"
+		max_hitpoints="1500"
+		max_fire_hitpoints="1500"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="2.7"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="2.0"
+		value="12000"
+		sea_worthiness="21"
+		inventory_capacity="600"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_liburna_storyline"
+		name="{=mHoFtjHm}Liburna"
+		description="{=cDPRKnTj}The liburna is a centuries-old design, but it is still effective. Like many traditional imperial warships, it carries a ram. These are less decisive than they were centuries ago, when hulls were more brittle, but still can cripple or sink an opponent with several blows. They serve as the workhorses of the imperial navy, able to serve as scout and pursuit ships and as auxiliaries to the battle-line of dromons."
+		mission_ship="ship_liburna_storyline"
+		skeletal_crew_capacity="24"
+		main_deck_crew_capacity="40"
+		total_crew_capacity="60"
+		max_hitpoints="6000"
+		max_fire_hitpoints="6000"
+		max_sail_hitpoints="100000"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="30000"
+		sea_worthiness="24"
+		inventory_capacity="1200"
+		map_visual_scale="0.065">
+		<AvailableSlots>
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_liburna_q2_storyline"
+		name="{=5Hz3KEiy}Battering Liburna"
+		description="{=cDPRKnTj}The liburna is a centuries-old design, but it is still effective. Like many traditional imperial warships, it carries a ram. These are less decisive than they were centuries ago, when hulls were more brittle, but still can cripple or sink an opponent with several blows. They serve as the workhorses of the imperial navy, able to serve as scout and pursuit ships and as auxiliaries to the battle-line of dromons."
+		mission_ship="ship_liburna_q2_storyline"
+		skeletal_crew_capacity="24"
+		main_deck_crew_capacity="48"
+		total_crew_capacity="60"
+		max_hitpoints="320000"
+		max_fire_hitpoints="320000"
+		max_sail_hitpoints="100000"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="30000"
+		sea_worthiness="24"
+		inventory_capacity="1200"
+		map_visual_scale="0.065">
+		<AvailableSlots>
+			<ShipSlot
+				id="bow"
+				tag_id="bow" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<!--Storyline Quest 1 -->
+	<ShipHull
+		id="longship_storyline_q1"
+		name="{=N70FI1KR}Gunnar's Longship"
+		description="{=gxb5VP9l}Several centuries ago, northern shipbuilders developed a new technique of hullbuilding in which the planks of the hull overlapped each other. This resulted in the longship, a design which is found in abundance on the northern seas. They are seaworthy, lightweight, easy to sail, and quick to accelerate and turn. With their shallow draft they can navigate rivers and coastal waters with ease, though they have trouble in rough seas. In battle, longships try to bring their large crews into boarding action as soon as possible, which is not a hard task thanks to their many oars."
+		mission_ship="longship_storyline_q1"
+		skeletal_crew_capacity="22"
+		main_deck_crew_capacity="40"
+		total_crew_capacity="40"
+		max_hitpoints="240000"
+		max_fire_hitpoints="240000"
+		max_sail_hitpoints="100000"
+		ship_type="medium"
+		has_hold="false"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="3.0"
+		value="24000"
+		sea_worthiness="43"
+		inventory_capacity="1100"
+		map_visual_scale="0.065">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_lightlongship_q1"
+		name="{=bvfd7xzX}Light Longship"
+		description="{=Gvww5OHz}Light longships, fitting as many sailors and oars as possible into their small hulls, are dangerous both to their enemies and their own crews. They are agile enough to avoid most ram attacks or ballista shots but they cannot take more than a few hits."
+		mission_ship="ship_lightlongship_q1"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="20"
+		max_hitpoints="110000"
+		max_fire_hitpoints="110000"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="3"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="4.0"
+		value="10000"
+		sea_worthiness="35"
+		inventory_capacity="800"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_trade_cog_q1"
+		name="{=TnD5i0jB}Cog of the Fortune"
+		description="{=acfqcMbB}The cog was developed by shipwrights on the western coasts of Calradia to travel long distances and weather the fierce storms of the ocean. Its ancestors were similar to the Nordic knarr or the Battanian birlinn, but the cog evolved to become much taller, broader and heavier. It serves both as a trading vessel and as a warship in the navies of the Vlandian and Battanian lords who now rule these coasts, the latter usually mounting a stern castle."
+		mission_ship="ship_trade_cog"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="30"
+		max_hitpoints="260000"
+		max_fire_hitpoints="260000"
+		max_sail_hitpoints="100000"
+		is_trade_ship="true"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="18000"
+		sea_worthiness="32"
+		inventory_capacity="3600"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_meditlight_storyline_q5"
+		name="{=Gn64sGJU}Eastern Galley"
+		description="{=WWJcXPqY}This galley is common in southern and eastern Calradia, in the more restricted waters of the Gulf of Charas, the Perassic Sea and Lake Tanaesis. It evolved from the swift galleys that the Kannic states used to contest the seas with the Calradian Empire in its infancy. Today, Aserai, Khuzaits and imperial seafarers use it for both trade and warfare. It mounts the lateen sail, which is preferred by sailors from these lands."
+		mission_ship="ship_meditlight_storyline_q5"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="20"
+		max_hitpoints="2100"
+		max_fire_hitpoints="2000"
+		max_sail_hitpoints="100000"
+		ship_type="light"
+		has_hold="false"
+		base_speed="3"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="4.0"
+		value="10000"
+		sea_worthiness="35"
+		inventory_capacity="800"
+		map_visual_scale="0.06">
+		<AvailableSlots>
+			<ShipSlot
+				id="side"
+				tag_id="side" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="ship_trade_cog_q3"
+		name="{=WlPxqfND}Trade Cog"
+		description="{=acfqcMbB}The cog was developed by shipwrights on the western coasts of Calradia to travel long distances and weather the fierce storms of the ocean. Its ancestors were similar to the Nordic knarr or the Battanian birlinn, but the cog evolved to become much taller, broader and heavier. It serves both as a trading vessel and as a warship in the navies of the Vlandian and Battanian lords who now rule these coasts, the latter usually mounting a stern castle."
+		mission_ship="ship_trade_cog_q3"
+		skeletal_crew_capacity="8"
+		main_deck_crew_capacity="20"
+		total_crew_capacity="30"
+		max_hitpoints="16000"
+		max_fire_hitpoints="17500"
+		max_sail_hitpoints="100000"
+		is_trade_ship="true"
+		ship_type="medium"
+		has_hold="true"
+		base_speed="2.9"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="false"
+		production_build_weight="3.0"
+		value="18000"
+		sea_worthiness="32"
+		inventory_capacity="3600"
+		map_visual_scale="0.07">
+		<AvailableSlots>
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+	<ShipHull
+		id="crusas_roundship_nested_q5"
+		name="{=BWdKHUNi}Roundship"
+		description="{=mfo5vaD9}When Vlandians arrived on the shores of Calradia they sailed in simple craft similar to Nord longships. But, just as the first generations of Vlandian settlers learned to build fortifications to protect their new lands, so they also learned to build citadels upon the waves, the great roundships, to protect the commerce that enriched them. Their basic lines are similar to those of cogs common in Vlandian ports but the roundship is nearly twice as large, mounting two large square sails. They are designed to make full use of the Vlandian tradition of crossbowmanship, with castles at both bow and stern providing the marines a lofty point from which to shoot as well as cover to reload."
+		mission_ship="crusas_roundship_nested_q5"
+		skeletal_crew_capacity="36"
+		main_deck_crew_capacity="66"
+		total_crew_capacity="100"
+		max_hitpoints="42000"
+		max_fire_hitpoints="42000"
+		max_sail_hitpoints="100000"
+		ship_type="heavy"
+		has_hold="true"
+		base_speed="2.8"
+		default_group="Infantry"
+		can_navigate_shallow_water="true"
+		can_equip_figurehead="true"
+		production_build_weight="2.0"
+		value="72000"
+		sea_worthiness="38"
+		inventory_capacity="2200"
+		map_visual_scale="0.05">
+		<AvailableSlots>
+			<ShipSlot
+				id="fore"
+				tag_id="fore" />
+			<ShipSlot
+				id="aft"
+				tag_id="aft" />
+			<ShipSlot
+				id="hull"
+				tag_id="hull" />
+			<ShipSlot
+				id="deck"
+				tag_id="deck" />
+			<ShipSlot
+				id="oars"
+				tag_id="oars" />
+			<ShipSlot
+				id="sail"
+				tag_id="sail" />
+		</AvailableSlots>
+	</ShipHull>
+</ShipHulls>

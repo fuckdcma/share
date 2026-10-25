@@ -1,0 +1,38 @@
+<Brushes> 
+ <Brush Name="Bandage.Info.Text" Font="Galahad" TextHorizontalAlignment="Left">
+    <Layers>
+      <BrushLayer Name="Default" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#000000FF" TextOutlineAmount="0.1" TextGlowRadius="0" TextBlur="0.5" FontSize="30" />
+      <Style Name="Alert" FontColor="#E55454FF" />
+    </Styles>
+    <Animations>
+      <Animation Name="AmmoAlertAnimation" Duration="0.6" Loop="true">
+        <AnimationProperty PropertyName="FontColor">
+          <KeyFrame Time="0.0" Value="#FFFFFFFF" />
+          <KeyFrame Time="0.01" Value="#D62626FF" />
+        </AnimationProperty>
+        <AnimationProperty PropertyName="TextBlur">
+          <KeyFrame Time="0.0" Value="0" />
+          <KeyFrame Time="0.01" Value="1" />
+        </AnimationProperty>
+        <AnimationProperty PropertyName="TextGlowRadius">
+          <KeyFrame Time="0.0" Value="0" />
+          <KeyFrame Time="0.01" Value="0.5" />
+        </AnimationProperty>
+      </Animation>
+    </Animations>
+  </Brush>
+  
+   <Brush Name="Float.Info.Text" Font="Galahad" TextHorizontalAlignment="Left">
+    <Layers>
+      <BrushLayer Name="Default" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" FontColor="#FFFFFFFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFFFF" TextOutlineAmount="0.0" TextGlowRadius="0" TextBlur="0.0" FontSize="30" />
+
+    </Styles>
+  </Brush>
+  
+ </Brushes>

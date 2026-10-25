@@ -1,0 +1,4144 @@
+<prefabs>
+	<game_entity old_prefab_name="" name="nord_castle_gatehouse_a_l2">
+		<children>
+			<game_entity old_prefab_name="" name="reverb_wood_interior">
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable value="Sphere" name="Trigger Shape"/>
+							<variable value="false" name="Is Triggered"/>
+							<variable value="false" name="Is Master Supressor"/>
+							<variable value="false" name="Is Master Sound"/>
+							<variable value="Speakers" name="Sound Preset"/>
+							<variable value="1.000000" name="Overrided Min Distance"/>
+							<variable value="20.000000" name="Overrided Max Distance"/>
+							<variable value="false" name="Override Sound"/>
+							<variable value="false" name="Is Static"/>
+							<variable value="true" name="Play On Startup"/>
+							<variable value="event:/mission/ambient/reverb/wood_interior" name="Event Path"/>
+						</variables>
+					</script>
+				</scripts>
+				<transform position="-7.968, 0.776, 11.648"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="reverb_wood_interior">
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable value="Sphere" name="Trigger Shape"/>
+							<variable value="false" name="Is Triggered"/>
+							<variable value="false" name="Is Master Supressor"/>
+							<variable value="false" name="Is Master Sound"/>
+							<variable value="Speakers" name="Sound Preset"/>
+							<variable value="1.000000" name="Overrided Min Distance"/>
+							<variable value="20.000000" name="Overrided Max Distance"/>
+							<variable value="false" name="Override Sound"/>
+							<variable value="false" name="Is Static"/>
+							<variable value="true" name="Play On Startup"/>
+							<variable value="event:/mission/ambient/reverb/wood_interior" name="Event Path"/>
+						</variables>
+					</script>
+				</scripts>
+				<transform position="8.014, 1.310, 11.718"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="reverb_stone_interior">
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable value="Sphere" name="Trigger Shape"/>
+							<variable value="false" name="Is Triggered"/>
+							<variable value="false" name="Is Master Supressor"/>
+							<variable value="false" name="Is Master Sound"/>
+							<variable value="Speakers" name="Sound Preset"/>
+							<variable value="1.000000" name="Overrided Min Distance"/>
+							<variable value="20.000000" name="Overrided Max Distance"/>
+							<variable value="false" name="Override Sound"/>
+							<variable value="false" name="Is Static"/>
+							<variable value="true" name="Play On Startup"/>
+							<variable value="event:/mission/ambient/reverb/stone_interior" name="Event Path"/>
+						</variables>
+					</script>
+				</scripts>
+				<transform position="-7.726, -0.461, 3.741"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="reverb_stone_interior">
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable value="Sphere" name="Trigger Shape"/>
+							<variable value="false" name="Is Triggered"/>
+							<variable value="false" name="Is Master Supressor"/>
+							<variable value="false" name="Is Master Sound"/>
+							<variable value="Speakers" name="Sound Preset"/>
+							<variable value="1.000000" name="Overrided Min Distance"/>
+							<variable value="20.000000" name="Overrided Max Distance"/>
+							<variable value="false" name="Override Sound"/>
+							<variable value="false" name="Is Static"/>
+							<variable value="true" name="Play On Startup"/>
+							<variable value="event:/mission/ambient/reverb/stone_interior" name="Event Path"/>
+						</variables>
+					</script>
+				</scripts>
+				<transform position="8.622, 0.939, 3.028"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="reverb_gatehouse">
+				<scripts>
+					<script name="AmbientSoundEmitter">
+						<variables>
+							<variable value="Sphere" name="Trigger Shape"/>
+							<variable value="true" name="Is Triggered"/>
+							<variable value="false" name="Is Master Supressor"/>
+							<variable value="false" name="Is Master Sound"/>
+							<variable value="Speakers" name="Sound Preset"/>
+							<variable value="1.000000" name="Overrided Min Distance"/>
+							<variable value="20.000000" name="Overrided Max Distance"/>
+							<variable value="false" name="Override Sound"/>
+							<variable value="false" name="Is Static"/>
+							<variable value="true" name="Play On Startup"/>
+							<variable value="event:/mission/ambient/reverb/gatehouse" name="Event Path"/>
+						</variables>
+					</script>
+				</scripts>
+				<transform scale="10.000, 10.000, 10.000" rotation_euler="0.000, 0.000, 0.000" position="-0.252, 1.222, 0.010"/>
+			</game_entity>
+			<game_entity occlusion_body_name="bo_occ_nord_castle_gatehouse_a_l2" old_prefab_name="" name="nord_castle_gatehouse_a_l2">
+				<children>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_01">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="12.276, 1.993, 16.905"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_01"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_01"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_02">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="12.196, -1.255, 16.937"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_02"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_02"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_03">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 0.781" position="11.815, -4.685, 17.017"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_03"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_03"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_04">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="8.228, -5.204, 16.982"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_04"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_04"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_05">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, -0.786" position="4.529, -4.843, 17.083"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_05"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_05"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_06">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 0.547" position="-4.653, -4.771, 17.021"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_06"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_06"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_07">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="-8.189, -5.227, 16.980"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_07"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_07"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_08">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, -0.785" position="-11.901, -4.581, 17.000"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_08"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_08"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_09">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="-12.206, -1.367, 16.948"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_09"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_09"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="nord_castle_gatehouse_a_l2_left_stairs">
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_left_stairs"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_left_stairs"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="nord_castle_gatehouse_a_l2_right_stairs">
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_right_stairs"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_right_stairs"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_gatehouse_a_l2_merlon_10">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="-12.227, 1.951, 16.964"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_gatehouse_a_l2_merlon_10"/>
+						</components>
+						<physics shape="bo_nord_castle_gatehouse_a_l2_merlon_10"/>
+					</game_entity>
+				</children>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable value="" name="NavMeshPrefabName"/>
+							<variable value="" name="SideTag"/>
+							<variable value="-1" name="_onSolidWallGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_underDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_overDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_properGroundInsideNavmeshID"/>
+							<variable value="-1" name="_properGroundOutsideNavmeshID"/>
+						</variables>
+					</script>
+				</scripts>
+				<components>
+					<meta_mesh_component name="nord_castle_gatehouse_a_l2"/>
+				</components>
+				<physics shape="bo_nord_castle_gatehouse_a_l2"/>
+			</game_entity>
+		</children>
+		<physics shape="bo_nord_castle_gatehouse_a_l2"/>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="0.000, 0.000, 0.000"/>
+		<flags>
+			<flag value="true" name="record_to_scene_replay"/>
+		</flags>
+	</game_entity>
+	<game_entity name="nord_castle_wall_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_a_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_wall_a_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_wall_a_l2"/>
+		</components>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="nord_castle_wall_a_l2_merlon_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wall_a_l2_merlon_01"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_a_l2_merlon_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-8.815, -1.902, 9.487"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wall_a_l2_merlon_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wall_a_l2_merlon_02"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_a_l2_merlon_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-6.012, -1.895, 9.520"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wall_a_l2_merlon_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wall_a_l2_merlon_03"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_a_l2_merlon_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-2.606, -1.892, 9.483"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wall_a_l2_merlon_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wall_a_l2_merlon_04"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_a_l2_merlon_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="0.675, -1.930, 9.429"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wall_a_l2_merlon_05" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wall_a_l2_merlon_05"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_a_l2_merlon_05"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="3.660, -1.847, 9.462"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wall_a_l2_merlon_06" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wall_a_l2_merlon_06"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_a_l2_merlon_06"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="6.975, -1.857, 9.494"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wall_a_l2_merlon_07" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wall_a_l2_merlon_07"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_a_l2_merlon_07"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="10.072, -1.894, 9.506"/>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="nord_castle_wall_d_l2" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="nord_castle_wall_d_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_d_l2">
+				<physics shape="bo_nord_castle_wall_d_l2"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_d_l2"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="nord_castle_wall_d_l2_merlon_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_d_l2_merlon_01"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_d_l2_merlon_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.508, -1.931, 9.596"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_d_l2_merlon_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_d_l2_merlon_02"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_d_l2_merlon_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.369, -1.887, 9.458"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_d_l2_merlon_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_d_l2_merlon_03"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_d_l2_merlon_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="1.850, -1.918, 9.581"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_d_l2_merlon_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_d_l2_merlon_04"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_d_l2_merlon_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.369, -1.895, 9.575"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="nord_castle_wall_c_l2" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="nord_castle_wall_c_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_d_l2">
+				<physics shape="bo_nord_castle_wall_c_l2"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_c_l2"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="nord_castle_wall_c_l2_merlon_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_c_l2_merlon_01"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_c_l2_merlon_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.326, -1.945, 9.746"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_c_l2_merlon_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_c_l2_merlon_02"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_c_l2_merlon_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.125, -1.921, 10.091"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_c_l2_merlon_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_c_l2_merlon_03"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_c_l2_merlon_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="1.994, -1.898, 10.499"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_c_l2_merlon_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_c_l2_merlon_04"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_c_l2_merlon_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.022, -2.015, 11.001"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity old_prefab_name="" name="nord_castle_corner_a_l2">
+		<children>
+			<game_entity old_prefab_name="" name="nord_castle_corner_a_l2" occlusion_body_name="bo_occ_nord_castle_corner_a_l2">
+				<children>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_a_l2_merlon_05">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="4.053, -1.112, 9.470"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_a_l2_merlon_05"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_a_l2_merlon_05"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_a_l2_merlon_04">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="3.171, -4.035, 9.463"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_a_l2_merlon_04"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_a_l2_merlon_04"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_a_l2_merlon_03">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="-0.118, -4.008, 9.529"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_a_l2_merlon_03"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_a_l2_merlon_03"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_a_l2_merlon_02">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="-3.472, -3.964, 9.365"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_a_l2_merlon_02"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_a_l2_merlon_02"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_a_l2_merlon_01">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="-3.928, -1.246, 9.498"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_a_l2_merlon_01"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_a_l2_merlon_01"/>
+					</game_entity>
+				</children>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable value="" name="NavMeshPrefabName"/>
+							<variable value="" name="SideTag"/>
+							<variable value="-1" name="_onSolidWallGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_underDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_overDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_properGroundInsideNavmeshID"/>
+							<variable value="-1" name="_properGroundOutsideNavmeshID"/>
+						</variables>
+					</script>
+				</scripts>
+				<components>
+					<meta_mesh_component name="nord_castle_corner_a_l2"/>
+				</components>
+				<physics shape="bo_nord_castle_corner_a_l2"/>
+			</game_entity>
+		</children>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="0.000, 0.000, 0.000"/>
+		<flags>
+			<flag value="true" name="record_to_scene_replay"/>
+		</flags>
+	</game_entity>
+	<game_entity old_prefab_name="" name="nord_castle_corner_d_l2">
+		<children>
+			<game_entity old_prefab_name="" name="nord_castle_corner_d_l2" occlusion_body_name="bo_occ_nord_castle_corner_d_l2">
+				<children>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_d_l2_merlon_01">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="-3.782, -1.267, 9.495"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_d_l2_merlon_01"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_d_l2_merlon_01"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_d_l2_merlon_02">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="-3.237, -4.040, 9.498"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_d_l2_merlon_02"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_d_l2_merlon_02"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_d_l2_merlon_03">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="0.074, -3.967, 9.493"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_d_l2_merlon_03"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_d_l2_merlon_03"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_d_l2_merlon_04">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 0.785" position="3.607, -3.759, 9.578"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_d_l2_merlon_04"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_d_l2_merlon_04"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_d_l2_merlon_05">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="3.918, -0.100, 9.480"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_d_l2_merlon_05"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_d_l2_merlon_05"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_d_l2_merlon_06">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="3.853, 3.633, 9.453"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_d_l2_merlon_06"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_d_l2_merlon_06"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_d_l2_merlon_07">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="1.095, 3.970, 9.563"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_d_l2_merlon_07"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_d_l2_merlon_07"/>
+					</game_entity>
+				</children>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable value="" name="NavMeshPrefabName"/>
+							<variable value="" name="SideTag"/>
+							<variable value="-1" name="_onSolidWallGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_underDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_overDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_properGroundInsideNavmeshID"/>
+							<variable value="-1" name="_properGroundOutsideNavmeshID"/>
+						</variables>
+					</script>
+				</scripts>
+				<components>
+					<meta_mesh_component name="nord_castle_corner_d_l2"/>
+				</components>
+				<physics shape="bo_nord_castle_corner_d_l2"/>
+			</game_entity>
+		</children>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="0.000, 0.000, 0.000"/>
+		<flags>
+			<flag value="true" name="record_to_scene_replay"/>
+		</flags>
+	</game_entity>
+	<game_entity old_prefab_name="" name="nord_castle_corner_c_l2">
+		<children>
+			<game_entity old_prefab_name="" name="nord_castle_corner_c_l2" occlusion_body_name="bo_occ_nord_castle_corner_c_l2">
+				<children>
+					<game_entity old_prefab_name="" name="nord_castle_corner_c_l2_stairs">
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_stairs"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_stairs"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_c_l2_merlon_08">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="0.000, -3.764, 14.216"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_merlon_08"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_merlon_08"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_c_l2_merlon_07">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, -0.785" position="-3.367, -3.388, 14.249"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_merlon_07"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_merlon_07"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_c_l2_merlon_06">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="-3.552, 0.032, 14.077"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_merlon_06"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_merlon_06"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_c_l2_merlon_05">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 0.785" position="-2.930, 3.284, 14.174"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_merlon_05"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_merlon_05"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_c_l2_merlon_04">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="0.000, 3.542, 14.183"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_merlon_04"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_merlon_04"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_c_l2_merlon_03">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, -0.785" position="3.460, 3.237, 14.284"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_merlon_03"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_merlon_03"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_c_l2_merlon_02">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="3.625, 0.000, 14.069"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_merlon_02"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_merlon_02"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_c_l2_merlon_01">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 0.785" position="3.423, -3.442, 14.199"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_c_l2_merlon_01"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_c_l2_merlon_01"/>
+					</game_entity>
+				</children>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable value="" name="NavMeshPrefabName"/>
+							<variable value="" name="SideTag"/>
+							<variable value="-1" name="_onSolidWallGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_underDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_overDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_properGroundInsideNavmeshID"/>
+							<variable value="-1" name="_properGroundOutsideNavmeshID"/>
+						</variables>
+					</script>
+				</scripts>
+				<components>
+					<meta_mesh_component name="nord_castle_corner_c_l2"/>
+				</components>
+				<physics shape="bo_nord_castle_corner_c_l2"/>
+			</game_entity>
+		</children>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="0.000, 0.000, 0.000"/>
+		<flags>
+			<flag value="true" name="record_to_scene_replay"/>
+		</flags>
+	</game_entity>
+	<game_entity old_prefab_name="" name="nord_castle_corner_e_l2">
+		<children>
+			<game_entity old_prefab_name="" name="nord_castle_corner_e_l2" occlusion_body_name="bo_occ_nord_castle_corner_e_l2">
+				<children>
+					<game_entity old_prefab_name="" name="nord_castle_corner_e_l2_stairs">
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_stairs"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_stairs"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_e_l2_merlon_01">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 0.785" position="3.465, -3.297, 14.079"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_merlon_01"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_merlon_01"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_e_l2_merlon_02">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="3.686, 0.058, 14.080"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_merlon_02"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_merlon_02"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_e_l2_merlon_03">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, -0.785" position="3.446, 3.422, 14.080"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_merlon_03"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_merlon_03"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_e_l2_merlon_04">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="0.122, 3.572, 14.080"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_merlon_04"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_merlon_04"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_e_l2_merlon_05">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 0.785" position="-3.286, 3.271, 14.080"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_merlon_05"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_merlon_05"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_e_l2_merlon_06">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, 1.571" position="-3.628, 0.093, 14.080"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_merlon_06"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_merlon_06"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_e_l2_merlon_07">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform rotation_euler="0.000, 0.000, -0.785" position="-3.371, -3.364, 14.080"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_merlon_07"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_merlon_07"/>
+					</game_entity>
+					<game_entity mobility="1" old_prefab_name="" name="nord_castle_corner_e_l2_merlon_08">
+						<children>
+							<game_entity mobility="1" old_prefab_name="" name="debris_holder">
+								<transform position="0.000, -3.618, 14.080"/>
+								<tags>
+									<tag name="reference"/>
+								</tags>
+							</game_entity>
+						</children>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable value="" name="NavMeshPrefabName"/>
+									<variable value="None" name="BattleSide"/>
+									<variable value="0.000" name="SoundAndParticleEffectForwardOffset"/>
+									<variable value="0.000" name="SoundAndParticleEffectHeightOffset"/>
+									<variable value="" name="SoundEffectOnDestroy"/>
+									<variable value="" name="ParticleEffectOnDestroy"/>
+									<variable value="5.000" name="HeavyHitParticlesThreshold"/>
+									<variable value="" name="HeavyHitParticlesTag"/>
+									<variable value="reference" name="ReferenceEntityTag"/>
+									<variable value="false" name="PassHitOnToParent"/>
+									<variable value="false" name="DestroyOnAnyHit"/>
+									<variable value="1.000" name="MaxHitPoint"/>
+									<variable value="true" name="CanBeDestroyedInitially"/>
+									<variable value="true" name="DestroyedByStoneOnly"/>
+									<variable value="debris_vlandia_l1" name="DestructionStates"/>
+								</variables>
+							</script>
+						</scripts>
+						<components>
+							<meta_mesh_component name="nord_castle_corner_e_l2_merlon_08"/>
+						</components>
+						<physics shape="bo_nord_castle_corner_e_l2_merlon_08"/>
+					</game_entity>
+				</children>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable value="" name="NavMeshPrefabName"/>
+							<variable value="" name="SideTag"/>
+							<variable value="-1" name="_onSolidWallGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_underDebrisGenericNavmeshID"/>
+							<variable value="-1" name="_overDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_overDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisInsideNavmeshID"/>
+							<variable value="-1" name="_underDebrisOutsideNavmeshID"/>
+							<variable value="-1" name="_properGroundInsideNavmeshID"/>
+							<variable value="-1" name="_properGroundOutsideNavmeshID"/>
+						</variables>
+					</script>
+				</scripts>
+				<components>
+					<meta_mesh_component name="nord_castle_corner_e_l2"/>
+				</components>
+				<physics shape="bo_nord_castle_corner_e_l2"/>
+			</game_entity>
+		</children>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="0.000, 0.000, 0.000"/>
+		<flags>
+			<flag value="true" name="record_to_scene_replay"/>
+		</flags>
+	</game_entity>
+	<game_entity name="nord_castle_wall_a_l2_broken" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="nord_castle_wall_a_l2_broken" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_a_l2_broken">
+				<physics shape="bo_nord_castle_wall_a_l2_broken"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_a_l2_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="nord_castle_wall_a_l2_merlon_07" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_a_l2_merlon_07"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_a_l2_merlon_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="10.072, -1.894, 9.506"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_a_l2_merlon_06" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_a_l2_merlon_06"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_a_l2_merlon_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="6.975, -1.857, 9.494"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_a_l2_merlon_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_a_l2_merlon_02"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_a_l2_merlon_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.012, -1.895, 9.520"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_a_l2_merlon_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_a_l2_merlon_01"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_a_l2_merlon_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-8.815, -1.902, 9.487"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wall_a_l2" old_prefab_name="">
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="nord_castle_wall_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_a_l2">
+						<physics shape="bo_nord_castle_wall_a_l2"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_a_l2"/>
+						</components>
+						<scripts>
+							<script name="WallSegment">
+								<variables>
+									<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+									<variable name="_properGroundInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+									<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+									<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+									<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+									<variable name="SideTag" value=""/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="nord_castle_wall_a_l2_merlon_01" old_prefab_name="" mobility="1">
+								<physics shape="bo_nord_castle_wall_a_l2_merlon_01"/>
+								<components>
+									<meta_mesh_component name="nord_castle_wall_a_l2_merlon_01"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-8.815, -1.902, 9.487"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="nord_castle_wall_a_l2_merlon_02" old_prefab_name="" mobility="1">
+								<physics shape="bo_nord_castle_wall_a_l2_merlon_02"/>
+								<components>
+									<meta_mesh_component name="nord_castle_wall_a_l2_merlon_02"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-6.012, -1.895, 9.520"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="nord_castle_wall_a_l2_merlon_03" old_prefab_name="" mobility="1">
+								<physics shape="bo_nord_castle_wall_a_l2_merlon_03"/>
+								<components>
+									<meta_mesh_component name="nord_castle_wall_a_l2_merlon_03"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-2.606, -1.892, 9.483"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="nord_castle_wall_a_l2_merlon_04" old_prefab_name="" mobility="1">
+								<physics shape="bo_nord_castle_wall_a_l2_merlon_04"/>
+								<components>
+									<meta_mesh_component name="nord_castle_wall_a_l2_merlon_04"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="0.675, -1.930, 9.429"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="nord_castle_wall_a_l2_merlon_05" old_prefab_name="" mobility="1">
+								<physics shape="bo_nord_castle_wall_a_l2_merlon_05"/>
+								<components>
+									<meta_mesh_component name="nord_castle_wall_a_l2_merlon_05"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="3.660, -1.847, 9.462"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="nord_castle_wall_a_l2_merlon_06" old_prefab_name="" mobility="1">
+								<physics shape="bo_nord_castle_wall_a_l2_merlon_06"/>
+								<components>
+									<meta_mesh_component name="nord_castle_wall_a_l2_merlon_06"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="6.975, -1.857, 9.494"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="nord_castle_wall_a_l2_merlon_07" old_prefab_name="" mobility="1">
+								<physics shape="bo_nord_castle_wall_a_l2_merlon_07"/>
+								<components>
+									<meta_mesh_component name="nord_castle_wall_a_l2_merlon_07"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_vlandia_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="10.072, -1.894, 9.506"/>
+									</game_entity>
+								</children>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="nord_castle_wall_d_l2_broken" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="nord_castle_wall_d_l2_broken" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_d_l2_broken">
+				<physics shape="bo_nord_castle_wall_d_l2_broken"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_d_l2_broken"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="nord_castle_wall_d_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_d_l2">
+				<physics shape="bo_nord_castle_wall_d_l2"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wall_d_l2"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="nord_castle_wall_d_l2_merlon_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_d_l2_merlon_01"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_d_l2_merlon_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.508, -1.931, 9.596"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_d_l2_merlon_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_d_l2_merlon_02"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_d_l2_merlon_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.369, -1.887, 9.458"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_d_l2_merlon_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_d_l2_merlon_03"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_d_l2_merlon_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="1.850, -1.918, 9.581"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="nord_castle_wall_d_l2_merlon_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_nord_castle_wall_d_l2_merlon_04"/>
+						<components>
+							<meta_mesh_component name="nord_castle_wall_d_l2_merlon_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_vlandia_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.369, -1.895, 9.575"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity old_prefab_name="" name="nord_castle_keep_interior_l2">
+		<components>
+			<meta_mesh_component name="nord_castle_keep_interior_l2"/>
+		</components>
+		<physics shape="bo_nord_castle_keep_interior_l2"/>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="10.308, 2.509, 1.409"/>
+	</game_entity>
+	<game_entity name="nord_castle_tower_round_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_tower_round_a_l2">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_tower_round_a_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_tower_round_a_l2"/>
+		</components>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="nord_castle_tower_round_a_l2_stairs" old_prefab_name="">
+				<physics shape="bo_nord_castle_tower_round_a_l2_stairs">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_stairs"/>
+				</components>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_20" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_20"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_20"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-7.352, 2.269, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_19" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_19"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_19"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-6.002, 4.277, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_18" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_18"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_18"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-4.546, 6.196, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_17" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_17"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_17"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-2.421, 7.002, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_16" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_16"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_16"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="0.008, 7.813, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_15" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_15"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_15"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="2.145, 7.060, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_14" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_14"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_14"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="4.459, 6.229, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_13" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_13"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_13"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="6.009, 4.356, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_12" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_12"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_12"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="7.415, 2.378, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_11" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_11"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_11"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="7.437, 0.000, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_10" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_10"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_10"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="7.355, -2.422, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_09" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_09"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_09"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="6.124, -4.236, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_08" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_08"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_08"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="4.517, -6.135, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_07" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_07"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_07"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="2.446, -7.005, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_06" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_06"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_06"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="0.107, -7.690, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_05" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_05"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_05"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-2.174, -7.045, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_04"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-4.592, -6.277, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_03"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-5.920, -4.320, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_02"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-7.203, -2.451, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 0.127, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_tower_round_a_l2_merlon_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_tower_round_a_l2_merlon_01"/>
+				<components>
+					<meta_mesh_component name="nord_castle_tower_round_a_l2_merlon_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-7.323, -0.135, 16.756" rotation_euler="0.000, 0.000, 0.000" scale="1.068, 1.000, 1.000"/>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="nord_castle_keep_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_keep_a_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_keep_a_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_keep_a_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_wall_f_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_f_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_wall_f_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_wall_f_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_corner_f_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_corner_f_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_corner_f_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_corner_f_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_wall_e_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wall_e_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_wall_e_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_wall_e_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_wallgate_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_wallgate_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_wallgate_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_wallgate_l2"/>
+		</components>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="nord_castle_wallgate_l2_stairs" old_prefab_name="">
+				<physics shape="bo_nord_castle_wallgate_l2_stairs">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="nord_castle_wallgate_l2_stairs"/>
+				</components>
+			</game_entity>
+			<game_entity name="nord_castle_wallgate_l2_merlon_08" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wallgate_l2_merlon_08"/>
+				<components>
+					<meta_mesh_component name="nord_castle_corner_c_l2_merlon_08"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="0.000, -3.764, 14.216"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wallgate_l2_merlon_07" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wallgate_l2_merlon_07"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wallgate_l2_merlon_07"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-3.367, -3.388, 14.249" rotation_euler="0.000, 0.000, -0.785"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wallgate_l2_merlon_06" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wallgate_l2_merlon_06"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wallgate_l2_merlon_06"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-3.552, 0.032, 14.077" rotation_euler="0.000, 0.000, 1.571"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wallgate_l2_merlon_05" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wallgate_l2_merlon_05"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wallgate_l2_merlon_05"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-2.930, 3.284, 14.174" rotation_euler="0.000, 0.000, 0.785"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wallgate_l2_merlon_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wallgate_l2_merlon_04"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wallgate_l2_merlon_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="0.000, 3.542, 14.183"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wallgate_l2_merlon_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wallgate_l2_merlon_03"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wallgate_l2_merlon_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="3.460, 3.237, 14.284" rotation_euler="0.000, 0.000, -0.785"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wallgate_l2_merlon_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wallgate_l2_merlon_02"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wallgate_l2_merlon_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="3.625, 0.000, 14.069" rotation_euler="0.000, 0.000, 1.571"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="nord_castle_wallgate_l2_merlon_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_nord_castle_wallgate_l2_merlon_01"/>
+				<components>
+					<meta_mesh_component name="nord_castle_wallgate_l2_merlon_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_vlandia_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="3.423, -3.442, 14.199" rotation_euler="0.000, 0.000, 0.785"/>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="nord_castle_stairs_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_stairs_a_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_stairs_a_l2">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="nord_castle_stairs_a_l2"/>
+		</components>
+		<children>
+			<game_entity name="stairs_bo" old_prefab_name="">
+				<physics shape="bo_2_empire_castle_stairs_a_l2">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="nord_castle_stairs_b_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_stairs_b_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_stairs_b_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_stairs_b_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_stairs_c_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_stairs_c_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_stairs_c_l2">
+			<body_flags>
+				<body_flag name="has_steps"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="nord_castle_stairs_c_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_baracks_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_baracks_a_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_baracks_a_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_baracks_a_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_barn_a_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_barn_a_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_barn_a_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_barn_a_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_barn_b_l2" old_prefab_name="" occlusion_body_name="bo_occ_nord_castle_barn_b_l2">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_castle_barn_b_l2"/>
+		<components>
+			<meta_mesh_component name="nord_castle_barn_b_l2"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_castle_merlon_part_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="-0.496, -2.731, 0.047" rotation_euler="0.000, 1.571, 1.571" scale="1.927, 1.892, 1.274"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" material="plank_e" factor="4285039029"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4285039029"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" material="plank_e" factor="4285039029"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="0.066, -2.731, 0.000" rotation_euler="-1.571, -0.112, -0.112" scale="1.927, 3.979, 1.274"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" material="plank_e" factor="4284513205"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4284513205"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" material="plank_e" factor="4284513205"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_f_column" old_prefab_name="">
+				<transform position="0.547, -2.731, 0.085" rotation_euler="0.000, 1.571, 1.571" scale="1.927, 1.892, 1.274"/>
+				<physics shape="bo_wooden_platform_2_plank_f_column"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_f_column">
+						<mesh name="wooden_platform_2_plank_f_column.0" material="plank_e" factor="4285235893"/>
+						<mesh name="wooden_platform_2_plank_f_column.1" factor="4285235893"/>
+						<mesh name="wooden_platform_2_plank_f_column.lod3" material="plank_e" factor="4285235893"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="0.890, 0.481, 0.000" rotation_euler="0.000, 0.000, 1.574" scale="1.750, 1.750, 1.750"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c">
+						<mesh name="wooden_platform_2_plank_c.0" factor="4290562272"/>
+						<mesh name="wooden_platform_2_plank_c.1" factor="4290562272"/>
+						<mesh name="wooden_platform_2_plank_c.lod3" factor="4290562272"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="wooden_platform_2_plank_c" old_prefab_name="">
+				<transform position="-0.854, 0.474, 0.000" rotation_euler="0.000, 0.000, 1.574" scale="1.750, 1.750, 1.750"/>
+				<physics shape="bo_wooden_platform_2_plank_a"/>
+				<components>
+					<meta_mesh_component name="wooden_platform_2_plank_c">
+						<mesh name="wooden_platform_2_plank_c.0" factor="4290562272"/>
+						<mesh name="wooden_platform_2_plank_c.1" factor="4290562272"/>
+						<mesh name="wooden_platform_2_plank_c.lod3" factor="4290562272"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="dirty_a" old_prefab_name="">
+				<transform position="-0.457, 0.391, 0.186" rotation_euler="0.000, 0.000, 1.577" scale="0.804, 0.778, 0.778"/>
+				<components>
+					<meta_mesh_component name="dirty_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="dirty_a" old_prefab_name="">
+				<transform position="0.468, 0.461, 0.186" rotation_euler="0.000, 0.000, -1.554" scale="0.810, 0.778, 0.778"/>
+				<components>
+					<meta_mesh_component name="dirty_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="dirty_a" old_prefab_name="">
+				<transform position="0.045, 0.453, 0.395" rotation_euler="0.000, 0.000, -1.554" scale="0.810, 0.713, 0.778"/>
+				<components>
+					<meta_mesh_component name="dirty_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<base xmlns:xsi="http://www.w3.org/2001/xmlschema-instance" xmlns:xsd="http://www.w3.org/2001/xmlschema" type="voice_definitions">
+	
+	<voice_definition name="sg_male_01" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.93" max_pitch_multiplier="1.11">
+		<!-- 定义不同类型的语音 -->
+		<voice type="Grunt" path="event:/voice/combat/male/01/grunt" face_anim="grunt"/>  <!---->
+		<voice type="Jump" path="event:/voice/combat/male/01/jump" face_anim="scream"/>   	 <!---->
+		<voice type="Yell" path="event:/sg_m_combat_yell_1A" face_anim="yell"/>
+		<voice type="Pain" path="event:/sg_m_combat_pain_1A" face_anim="hit"/>					<!---->
+		<voice type="Death" path="event:/sg_m_combat_death_1A" face_anim="death2"/>
+		<voice type="Stun" path="event:/voice/combat/male/01/stun" face_anim="hit"/>					<!---->
+		<voice type="Victory" path="event:/sg_m_combat_victory_1A" face_anim="victory"/>
+		<voice type="Climb" path="event:/voice/combat/male/01/climb" face_anim="hit"/>				<!---->
+		<voice type="Focus" path="event:/voice/combat/male/01/focus" face_anim="hit"/>			<!---->
+		<voice type="Debacle" path="event:/sg_m_combat_debacle_1A" face_anim="scream"/>
+		<voice type="HorseRally" path="event:/sg_m_combat_horserally_1A" face_anim="yeah"/>
+		<voice type="HorseStop" path="event:/sg_m_order_horse_stop_1A" face_anim="wow"/>
+		<voice type="Fear" path="event:/sg_m_combat_fear_1A" face_anim="terrified"/>
+		<!-- 定义不同类型部队的语音  -->
+		<voice type="Infantry" path="event:/sg_m_ord_id_infantry_1A" face_anim="infantry"/>
+		<voice type="Cavalry" path="event:/sg_m_ord_id_cavalry_1A" face_anim="cavalry"/>
+		<voice type="Archers" path="event:/sg_m_ord_id_archers_1A" face_anim="archers"/>
+		<voice type="Everyone" path="event:/sg_m_ord_id_everyone_1A" face_anim="everyone"/>
+		<voice type="HorseArchers" path="event:/sg_m_ord_id_horsearchers_1A" face_anim="attack"/>
+		<voice type="Mixed" path="event:/sg_m_ord_id_everyone_1A" face_anim="everyone"/>
+		<!-- 特殊语音指令  -->
+		<voice type="Charge" path="event:/sg_m_order_id_attack_1A" face_anim="attack"/>
+		<voice type="Move" path="event:/sg_m_order_id_move_1A" face_anim="move"/>
+		<voice type="Retreat" path="event:/sg_m_order_id_retreat_1A" face_anim="retreat"/>
+		<voice type="Follow" path="event:/sg_m_order_id_follow_1A" face_anim="followme"/>
+		<voice type="Advance" path="event:/sg_m_order_id_advance_1A" face_anim="attack"/>
+		<voice type="Dismount" path="event:/sg_m_order_id_dismount_1A" face_anim="attack"/>
+		<voice type="Mount" path="event:/sg_m_order_id_horsemount_1A" face_anim="attack"/>
+		<voice type="FallBack" path="event:/sg_m_order_id_fall_back_1A" face_anim="attack"/>
+		<voice type="FireAtWill" path="event:/sg_m_order_id_fireatwill_1A" face_anim="attack"/>
+		<voice type="HoldFire" path="event:/sg_m_order_id_holdfire_1A" face_anim="attack"/>
+		<voice type="Stop" path="event:/sg_m_order_id_stop_1A" face_anim="attack"/>
+		<voice type="PickSpears" path="event:/voice/combat/male/04/commands/pick_spears" face_anim="attack"/>
+		<voice type="PickDefault" path="event:/voice/combat/male/04/commands/pick_default" face_anim="attack"/>
+		<voice type="FaceEnemy" path="event:/sg_m_order_id_faceenemy_1A" face_anim="attack"/>
+		<voice type="FaceDirection" path="event:/sg_m_order_id_facedirection_1A" face_anim="attack"/>
+		<!-- 攻城语音指令 -->
+		<voice type="AttackGate" path="event:/voice/combat/male/04/commands/attack_gate" face_anim="attack"/>
+		<voice type="UseSiegeWeapon" path="event:/voice/combat/male/04/commands/use_siege_weapon" face_anim="attack"/>
+		<voice type="UseLadders" path="event:/voice/combat/male/04/commands/delegate" face_anim="attack"/>
+		<voice type="CommandDelegate" path="event:/sg_m_order_id_delegate_1A" face_anim="attack"/>
+		<voice type="CommandUndelegate" path="event:/sg_m_order_id_undelegate_1A" face_anim="attack"/>
+		<!-- 阵形语音指令 -->
+		<voice type="FormCircle" path="event:/sg_m_ord_form_id_circle_1A" face_anim="attack"/>
+		<voice type="FormColumn" path="event:/sg_m_ord_form_id_column_1A" face_anim="attack"/>
+		<voice type="FormLine" path="event:/sg_m_ord_form_id_line_1A" face_anim="attack"/>
+		<voice type="FormLoose" path="event:/sg_m_ord_form_id_Loose_1A" face_anim="attack"/>
+		<voice type="FormScatter" path="event:/sg_m_ord_form_id_scatter_1A" face_anim="attack"/>
+		<voice type="FormShieldWall" path="event:/sg_m_ord_form_id_shieldwall_1A" face_anim="attack"/>
+		<voice type="FormSkein" path="event:/sg_m_ord_form_id_wedge_1A" face_anim="attack"/>
+		<voice type="FormSquare" path="event:/sg_m_ord_form_id_square_1A" face_anim="attack"/>
+  		<!-- 联机语音指令 -->
+		<voice type="MpHelp" path="event:/voice/combat/male/04/mp/help" face_anim="attack" />
+		<voice type="MpSpot" path="event:/voice/combat/male/04/mp/spot" face_anim="attack" />
+		<voice type="MpThanks" path="event:/voice/combat/male/04/mp/thanks" face_anim="attack" />
+		<voice type="MpSorry" path="event:/voice/combat/male/04/mp/sorry" face_anim="attack" />
+		<voice type="MpAffirmative" path="event:/voice/combat/male/04/mp/affirmative" face_anim="attack" />
+		<voice type="MpNegative" path="event:/voice/combat/male/04/mp/negative" face_anim="attack" />
+		<voice type="MpRegroup" path="event:/voice/combat/male/04/mp/regroup" face_anim="attack" />
+		<voice type="MpDefend" path="event:/voice/combat/male/04/mp/defend" face_anim="attack" />
+		<voice type="MpAttack" path="event:/voice/combat/male/04/mp/attack" face_anim="attack" />
+	</voice_definition>
+
+
+	<voice_definition name="sg_female_01" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.93" max_pitch_multiplier="1.11">
+		<!-- 定义不同类型的语音 -->
+		<voice type="Grunt" path="event:/voice/combat/female/01/grunt" face_anim="grunt"/>  <!---->
+		<voice type="Jump" path="event:/voice/combat/female/01/jump" face_anim="scream"/>   	 <!---->
+		<voice type="Yell" path="event:/sg_f_combat_yell_1A" face_anim="yell"/>
+		<voice type="Pain" path="event:/sg_f_combat_pain_1A" face_anim="hit"/>					
+		<voice type="Death" path="event:/sg_f_combat_death_1A" face_anim="death2"/>
+		<voice type="Stun" path="event:/voice/combat/female/01/stun" face_anim="hit"/>					<!---->
+		<voice type="Victory" path="event:/sg_f_combat_victory_1A" face_anim="victory"/>
+		<voice type="Climb" path="event:/voice/combat/female/01/climb" face_anim="hit"/>				<!---->
+		<voice type="Focus" path="event:/voice/combat/female/01/focus" face_anim="hit"/>			<!---->
+		<voice type="Debacle" path="event:/sg_f_combat_debacle_1A" face_anim="scream"/>
+		<voice type="HorseRally" path="event:/sg_f_combat_horserally_1A" face_anim="yeah"/>
+		<voice type="HorseStop" path="event:/sg_f_order_horse_stop_1A" face_anim="wow"/>
+		<voice type="Fear" path="event:/sg_f_combat_fear_1A" face_anim="terrified"/>
+		<!-- 定义不同类型部队的语音  -->
+		<voice type="Infantry" path="event:/sg_f_ord_id_infantry_1A" face_anim="infantry"/>
+		<voice type="Cavalry" path="event:/sg_f_ord_id_cavalry_1A" face_anim="cavalry"/>
+		<voice type="Archers" path="event:/sg_f_ord_id_archers_1A" face_anim="archers"/>
+		<voice type="Everyone" path="event:/sg_f_ord_id_everyone_1A" face_anim="everyone"/>
+		<voice type="HorseArchers" path="event:/sg_f_ord_id_horsearchers_1A" face_anim="attack"/>
+		<voice type="Mixed" path="event:/sg_f_ord_id_everyone_1A" face_anim="everyone"/>
+		<!-- 特殊语音指令  -->
+		<voice type="Charge" path="event:/sg_f_order_id_attack_1A" face_anim="attack"/>
+		<voice type="Move" path="event:/sg_f_order_id_move_1A" face_anim="move"/>
+		<voice type="Retreat" path="event:/sg_f_order_id_retreat_1A" face_anim="retreat"/>
+		<voice type="Follow" path="event:/sg_f_order_id_follow_1A" face_anim="followme"/>
+		<voice type="Advance" path="event:/sg_f_order_id_advance_1A" face_anim="attack"/>
+		<voice type="Dismount" path="event:/sg_f_order_id_dismount_1A" face_anim="attack"/>
+		<voice type="Mount" path="event:/sg_f_order_id_horsemount_1A" face_anim="attack"/>
+		<voice type="FallBack" path="event:/sg_f_order_id_fall_back_1A" face_anim="attack"/>
+		<voice type="FireAtWill" path="event:/sg_f_order_id_fireatwill_1A" face_anim="attack"/>
+		<voice type="HoldFire" path="event:/sg_f_order_id_holdfire_1A" face_anim="attack"/>
+		<voice type="Stop" path="event:/sg_f_order_id_stop_1A" face_anim="attack"/>
+		<voice type="PickSpears" path="event:/voice/combat/female/04/commands/pick_spears" face_anim="attack"/>
+		<voice type="PickDefault" path="event:/voice/combat/female/04/commands/pick_default" face_anim="attack"/>
+		<voice type="FaceEnemy" path="event:/sg_f_order_id_faceenemy_1A" face_anim="attack"/>
+		<voice type="FaceDirection" path="event:/sg_f_order_id_facedirection_1A" face_anim="attack"/>
+		<!-- 攻城语音指令 -->
+		<voice type="AttackGate" path="event:/voice/combat/female/04/commands/attack_gate" face_anim="attack"/>
+		<voice type="UseSiegeWeapon" path="event:/voice/combat/female/04/commands/use_siege_weapon" face_anim="attack"/>
+		<voice type="UseLadders" path="event:/voice/combat/female/04/commands/delegate" face_anim="attack"/>
+		<voice type="CommandDelegate" path="event:/sg_f_order_id_delegate_1A" face_anim="attack"/>
+		<voice type="CommandUndelegate" path="event:/sg_f_order_id_undelegate_1A" face_anim="attack"/>
+		<!-- 阵形语音指令 -->
+		<voice type="FormCircle" path="event:/sg_f_ord_form_id_circle_1A" face_anim="attack"/>
+		<voice type="FormColumn" path="event:/sg_f_ord_form_id_column_1A" face_anim="attack"/>
+		<voice type="FormLine" path="event:/sg_f_ord_form_id_line_1A" face_anim="attack"/>
+		<voice type="FormLoose" path="event:/sg_f_ord_form_id_Loose_1A" face_anim="attack"/>
+		<voice type="FormScatter" path="event:/sg_f_ord_form_id_scatter_1A" face_anim="attack"/>
+		<voice type="FormShieldWall" path="event:/sg_f_ord_form_id_shieldwall_1A" face_anim="attack"/>
+		<voice type="FormSkein" path="event:/sg_f_ord_form_id_wedge_1A" face_anim="attack"/>
+		<voice type="FormSquare" path="event:/sg_f_ord_form_id_square_1A" face_anim="attack"/>
+  		<!-- 联机语音指令 -->
+		<voice type="MpHelp" path="event:/voice/combat/female/04/mp/help" face_anim="attack" />
+		<voice type="MpSpot" path="event:/voice/combat/female/04/mp/spot" face_anim="attack" />
+		<voice type="MpThanks" path="event:/voice/combat/female/04/mp/thanks" face_anim="attack" />
+		<voice type="MpSorry" path="event:/voice/combat/female/04/mp/sorry" face_anim="attack" />
+		<voice type="MpAffirmative" path="event:/voice/combat/female/04/mp/affirmative" face_anim="attack" />
+		<voice type="MpNegative" path="event:/voice/combat/female/04/mp/negative" face_anim="attack" />
+		<voice type="MpRegroup" path="event:/voice/combat/female/04/mp/regroup" face_anim="attack" />
+		<voice type="MpDefend" path="event:/voice/combat/female/04/mp/defend" face_anim="attack" />
+		<voice type="MpAttack" path="event:/voice/combat/female/04/mp/attack" face_anim="attack" />
+	</voice_definition>
+	<voice_definition name="sg_female_02" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.93" max_pitch_multiplier="1.11">
+		<!-- 定义不同类型的语音 -->
+		<voice type="Grunt" path="event:/voice/combat/female/01/grunt" face_anim="grunt"/>  <!---->
+		<voice type="Jump" path="event:/voice/combat/female/01/jump" face_anim="scream"/>   	 <!---->
+		<voice type="Yell" path="event:/sg_f_combat_yell_1A" face_anim="yell"/>
+		<voice type="Pain" path="event:/sg_f_combat_pain_1A" face_anim="hit"/>					
+		<voice type="Death" path="event:/sg_f_combat_death_1A" face_anim="death2"/>
+		<voice type="Stun" path="event:/voice/combat/female/01/stun" face_anim="hit"/>					<!---->
+		<voice type="Victory" path="event:/sg_f_combat_victory_1A" face_anim="victory"/>
+		<voice type="Climb" path="event:/voice/combat/female/01/climb" face_anim="hit"/>				<!---->
+		<voice type="Focus" path="event:/voice/combat/female/01/focus" face_anim="hit"/>			<!---->
+		<voice type="Debacle" path="event:/sg_f_combat_debacle_1A" face_anim="scream"/>
+		<voice type="HorseRally" path="event:/sg_f_combat_horserally_1A" face_anim="yeah"/>
+		<voice type="HorseStop" path="event:/sg_f_order_horse_stop_1A" face_anim="wow"/>
+		<voice type="Fear" path="event:/sg_f_combat_fear_1A" face_anim="terrified"/>
+		<!-- 定义不同类型部队的语音  -->
+		<voice type="Infantry" path="event:/sg_f_ord_id_infantry_1A" face_anim="infantry"/>
+		<voice type="Cavalry" path="event:/sg_f_ord_id_cavalry_1A" face_anim="cavalry"/>
+		<voice type="Archers" path="event:/sg_f_ord_id_archers_1A" face_anim="archers"/>
+		<voice type="Everyone" path="event:/sg_f_ord_id_everyone_1A" face_anim="everyone"/>
+		<voice type="HorseArchers" path="event:/sg_f_ord_id_horsearchers_1A" face_anim="attack"/>
+		<voice type="Mixed" path="event:/sg_f_ord_id_everyone_1A" face_anim="everyone"/>
+		<!-- 特殊语音指令  -->
+		<voice type="Charge" path="event:/sg_f_order_id_attack_1B" face_anim="attack"/>
+		<voice type="Move" path="event:/sg_f_order_id_move_1B" face_anim="move"/>
+		<voice type="Retreat" path="event:/sg_f_order_id_retreat_1B" face_anim="retreat"/>
+		<voice type="Follow" path="event:/sg_f_order_id_follow_1B" face_anim="followme"/>
+		<voice type="Advance" path="event:/sg_f_order_id_advance_1B" face_anim="attack"/>
+		<voice type="Dismount" path="event:/sg_f_order_id_dismount_1B" face_anim="attack"/>
+		<voice type="Mount" path="event:/sg_f_order_id_horsemount_1B" face_anim="attack"/>
+		<voice type="FallBack" path="event:/sg_f_order_id_fall_back_1B" face_anim="attack"/>
+		<voice type="FireAtWill" path="event:/sg_f_order_id_fireatwill_1B" face_anim="attack"/>
+		<voice type="HoldFire" path="event:/sg_f_order_id_holdfire_1B" face_anim="attack"/>
+		<voice type="Stop" path="event:/sg_f_order_id_stop_1B" face_anim="attack"/>
+		<voice type="PickSpears" path="event:/voice/combat/female/04/commands/pick_spears" face_anim="attack"/>
+		<voice type="PickDefault" path="event:/voice/combat/female/04/commands/pick_default" face_anim="attack"/>
+		<voice type="FaceEnemy" path="event:/sg_f_order_id_faceenemy_1B" face_anim="attack"/>
+		<voice type="FaceDirection" path="event:/sg_f_order_id_facedirection_1B" face_anim="attack"/>
+		<!-- 攻城语音指令 -->
+		<voice type="AttackGate" path="event:/voice/combat/female/04/commands/attack_gate" face_anim="attack"/>
+		<voice type="UseSiegeWeapon" path="event:/voice/combat/female/04/commands/use_siege_weapon" face_anim="attack"/>
+		<voice type="UseLadders" path="event:/voice/combat/female/04/commands/delegate" face_anim="attack"/>
+		<voice type="CommandDelegate" path="event:/sg_f_order_id_delegate_1B" face_anim="attack"/>
+		<voice type="CommandUndelegate" path="event:/sg_f_order_id_undelegate_1B" face_anim="attack"/>
+		<!-- 阵形语音指令 -->
+		<voice type="FormCircle" path="event:/sg_f_ord_form_id_circle_1B" face_anim="attack"/>
+		<voice type="FormColumn" path="event:/sg_f_ord_form_id_column_1B" face_anim="attack"/>
+		<voice type="FormLine" path="event:/sg_f_ord_form_id_line_1B" face_anim="attack"/>
+		<voice type="FormLoose" path="event:/sg_f_ord_form_id_Loose_1B" face_anim="attack"/>
+		<voice type="FormScatter" path="event:/sg_f_ord_form_id_scatter_1B" face_anim="attack"/>
+		<voice type="FormShieldWall" path="event:/sg_f_ord_form_id_shieldwall_1B" face_anim="attack"/>
+		<voice type="FormSkein" path="event:/sg_f_ord_form_id_wedge_1B" face_anim="attack"/>
+		<voice type="FormSquare" path="event:/sg_f_ord_form_id_square_1B" face_anim="attack"/>
+  		<!-- 联机语音指令 -->
+		<voice type="MpHelp" path="event:/voice/combat/female/04/mp/help" face_anim="attack" />
+		<voice type="MpSpot" path="event:/voice/combat/female/04/mp/spot" face_anim="attack" />
+		<voice type="MpThanks" path="event:/voice/combat/female/04/mp/thanks" face_anim="attack" />
+		<voice type="MpSorry" path="event:/voice/combat/female/04/mp/sorry" face_anim="attack" />
+		<voice type="MpAffirmative" path="event:/voice/combat/female/04/mp/affirmative" face_anim="attack" />
+		<voice type="MpNegative" path="event:/voice/combat/female/04/mp/negative" face_anim="attack" />
+		<voice type="MpRegroup" path="event:/voice/combat/female/04/mp/regroup" face_anim="attack" />
+		<voice type="MpDefend" path="event:/voice/combat/female/04/mp/defend" face_anim="attack" />
+		<voice type="MpAttack" path="event:/voice/combat/female/04/mp/attack" face_anim="attack" />
+	</voice_definition>
+
+
+
+
+
+
+</base>

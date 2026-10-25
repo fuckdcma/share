@@ -1,0 +1,137 @@
+<prefabs>
+	<game_entity name="ship_connection_bridge" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="ship_connection_plank" old_prefab_name="">
+				<transform position="1.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.500, 1.500, 1.000"/>
+				<physics shape="bo_wooden_platform_plank_a">
+					<body_flags>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="wooden_platform_plank_c"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ship_connection_plank" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_wooden_platform_plank_a">
+			<body_flags>
+				<body_flag name="moveable"/>
+				<body_flag name="agent_only"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="wooden_platform_plank_c"/>
+		</components>
+		<children>
+			<game_entity name="_barrier_04x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-2.140, 0.000, 0.000" rotation_euler="0.000, 0.000, -1.571" scale="0.350, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+			<game_entity name="_barrier_04x04m" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="2.140, 0.000, 0.000" rotation_euler="0.000, 0.000, 1.571" scale="0.350, 1.000, 4.000"/>
+				<physics shape="bo_barrier">
+					<body_flags>
+						<body_flag name="barrier"/>
+						<body_flag name="moveable"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="barrier"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ship_connection_plank_no_physics" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+					<meta_mesh_component name="boarding_bridge_segment"/>
+		</components>
+	</game_entity>
+	<game_entity name="sp_troop_crew_quarters" old_prefab_name="">
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="sp_troop_crew_quarters"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="arrow_new_icon">
+				<mesh name="arrow_new_icon" factor="4278190335"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="sp_troop_outer_deck" old_prefab_name="">
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="sp_troop_outer_deck"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="arrow_new_icon"/>
+		</components>
+	</game_entity>
+	<game_entity name="sp_troop_inner_deck" old_prefab_name="">
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="sp_troop_inner_deck"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="arrow_new_icon">
+				<mesh name="arrow_new_icon" factor="4278255372"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="oar_6m" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_oar_6m"/>
+		<components>
+			<meta_mesh_component name="oar_6m"/>
+		</components>
+	</game_entity>
+	<game_entity name="oar_8m" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_oar_8m"/>
+		<components>
+			<meta_mesh_component name="oar_8m"/>
+		</components>
+	</game_entity>
+	<game_entity name="oar_10m" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_oar_10m"/>
+		<components>
+			<meta_mesh_component name="oar_10m"/>
+		</components>
+	</game_entity>
+	<game_entity name="oar_12m" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_oar_12m"/>
+		<components>
+			<meta_mesh_component name="oar_12m"/>
+		</components>
+	</game_entity>
+</prefabs>
+

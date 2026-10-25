@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<quest id="0"
+       title="测试任务"
+       description="描述"
+       type="side">
+  <accpt_nodes>
+    <node id="0"
+          name=""
+          type="node_start"
+          out="1"/>
+    <node id="1"
+          name=""
+          type="node_end"/>
+    <node id="1"
+          name=""
+          type="on_talk_quest_town_npc"
+          out="2"/>
+    <node id="2"
+          name=""
+          type="show_talk"
+          out="3">
+      <params>
+        <speaker value="talk_npc" />
+        <text value="将军，如今兵荒马乱，匪患四起。愿将军能助我练兵自保，此举实为急需。愿奉上800G和两匹马为练兵所需，事成之后，另有重谢。"/>
+      </params>
+    </node>
+    <node id="3"
+          name=""
+          type="show_talk"
+          out="4">
+      <params>
+        <speaker value="player" />
+        <text value="可否另寻他法？"/>
+      </params>
+    </node>
+    <node id="4"
+          name=""
+          type="show_talk"
+          out="5">
+      <params>
+        <speaker value="talk_npc" />
+        <text value="若将军事务繁忙，遣一心腹善战者足矣。"/>
+      </params>
+    </node>
+    <node id="5"
+          name=""
+          type="show_talk_options">
+      <outs>
+        <out id="0" value="6" />
+        <out id="1" value="7" />
+        <out id="2" value="1" />
+      </outs>
+      <params>
+        <speaker value="player" />
+        <options>
+          <option out_bind="0" out_params="{player_character}" value="公既有命，自当效劳。"/>
+          <option out_bind="1" value="然，某即刻差人去办。"/>
+          <option out_bind="2" value="军务殷繁，恕难从命。"/>
+        </options>
+      </params>
+    </node>
+    <node id="6"
+          name=""
+          type="accept_quest"
+          out="1">
+      <params>
+        <quest value="current_quest" />
+        <accepter value="{in_params}"/>
+      </params>
+    </node>
+    <node id="7"
+          name=""
+          type="show_select_buddy">
+      <outs>
+        <out id="0" value="6" />
+        <out id="1" value="5" />
+      </outs>
+    </node>
+  </accpt_nodes>
+  <objectives>
+  </objectives>
+  <end_actions>
+  </end_actions>
+  <failure_actions>
+  </failure_actions>
+</quest>

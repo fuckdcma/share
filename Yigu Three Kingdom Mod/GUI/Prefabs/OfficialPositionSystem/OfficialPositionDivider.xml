@@ -1,0 +1,80 @@
+﻿<DiscardedRoot>
+	<!--OfficialPosition Info Text-->
+	<EncyclopediaDivider MarginTop="20" Parameter.ItemList="..\OfficialPositionContainer" Parameter.Title="官职" />
+	<NavigationScopeTargeter ScopeID="EncyclopediaHeroOfficialPositionScope" ScopeParent="..\OfficialPositionContainer" ScopeMovements="Horizontal" />
+	<ListPanel HeightSizePolicy="CoverChildren" Id="OfficialPositionContainer" StackLayout.LayoutMethod="VerticalBottomToTop" WidthSizePolicy="StretchToParent">
+		<Children>
+
+			<ListPanel DefaultCellHeight="30" DefaultCellWidth="275" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" MarginLeft="15" MarginTop="10" WidthSizePolicy="CoverChildren">
+				<Children>
+					<TextWidget DataSource="{MilitaryOP}" Brush.FontSize="26" Brush.FontColor="#CC0000FF" ClipContents="false" HeightSizePolicy="CoverChildren" PositionYOffset="2" Text="@Text" MarginLeft="15" VerticalAlignment="Center" WidthSizePolicy="CoverChildren">
+						<Children>
+							<HintWidget Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{Hint}" />
+						</Children>
+					</TextWidget>
+					<TextWidget DataSource="{WarTempOP}" Brush.FontSize="26" Brush.FontColor="#808000FF" ClipContents="false" HeightSizePolicy="CoverChildren" PositionYOffset="2" Text="@Text" MarginLeft="15" VerticalAlignment="Center" WidthSizePolicy="CoverChildren">
+						<Children>
+							<HintWidget Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{Hint}" />
+						</Children>
+					</TextWidget>
+					<TextWidget DataSource="{PoliticalOP}" Brush.FontSize="26" Brush.FontColor="#aaee15FF" ClipContents="false" HeightSizePolicy="CoverChildren" PositionYOffset="2" Text="@Text" MarginLeft="15" VerticalAlignment="Center" WidthSizePolicy="CoverChildren">
+						<Children>
+							<HintWidget Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{Hint}" />
+						</Children>
+					</TextWidget>
+					<TextWidget DataSource="{NobleOP}" Brush.FontSize="26" Brush.FontColor="#da0b94FF" ClipContents="false" HeightSizePolicy="CoverChildren" PositionYOffset="2" Text="@Text" MarginLeft="15" VerticalAlignment="Center" WidthSizePolicy="CoverChildren">
+						<Children>
+							<HintWidget Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{Hint}" />
+						</Children>
+					</TextWidget>
+				</Children>
+			</ListPanel>
+
+			<GridWidget ColumnCount="2" DataSource="{HeroOfficialPosition}" IsVisible="@ToShowInGautletUI" DefaultCellHeight="30" DefaultCellWidth="275" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" MarginLeft="15" MarginTop="10" WidthSizePolicy="CoverChildren">
+				<Children>
+					<ListPanel HeightSizePolicy="CoverChildren" MarginLeft="15" MarginTop="3" WidthSizePolicy="CoverChildren">
+						<Children>
+							<AutoHideRichTextWidget Brush="Encyclopedia.Stat.DefinitionText" HeightSizePolicy="CoverChildren" MarginRight="5" Text="所属派系：" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" />
+							<AutoHideRichTextWidget Brush="Encyclopedia.Stat.ValueText" HeightSizePolicy="CoverChildren" PositionYOffset="2" Text="@Force" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" />
+						</Children>
+					</ListPanel>
+					<ListPanel HeightSizePolicy="CoverChildren" MarginLeft="15" MarginTop="3" WidthSizePolicy="CoverChildren">
+						<Children>
+							<AutoHideRichTextWidget Brush="Encyclopedia.Stat.DefinitionText" HeightSizePolicy="CoverChildren" MarginRight="5" Text="功勋：" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" />
+							<AutoHideRichTextWidget Brush="Encyclopedia.Stat.ValueText" HeightSizePolicy="CoverChildren" PositionYOffset="2" Text="@Merit" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" />
+						</Children>
+					</ListPanel>
+					<ListPanel HeightSizePolicy="CoverChildren" MarginLeft="15" MarginTop="3" WidthSizePolicy="CoverChildren" IsHidden="@NotGovernedByHero">
+						<Children>
+							<AutoHideRichTextWidget Brush="Encyclopedia.Stat.DefinitionText" HeightSizePolicy="CoverChildren" MarginRight="5" Text="隶属于  ：" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" />
+							<AutoHideRichTextWidget Brush="Encyclopedia.SubPage.History.Text" HeightSizePolicy="CoverChildren" PositionYOffset="2" Text="@GovernedByHero" VerticalAlignment="Center" WidthSizePolicy="CoverChildren" Command.LinkClick="ExecuteLink"/>
+						</Children>
+					</ListPanel>
+				</Children>
+			</GridWidget>
+		</Children>
+	</ListPanel>
+
+	<!--Specialities Divider-->
+	<EncyclopediaDivider Id="SpecialitiesDivider" MarginTop="20" Parameter.Title="特性" Parameter.ItemList="..\SpecialitiesGrid" />
+	<!--Specialities Grid-->
+	<NavigationScopeTargeter ScopeID="EncyclopediaHeroSpecialitiesContentScope" ScopeParent="..\SpecialitiesGrid" ScopeMovements="Horizontal" AlternateScopeMovements="Vertical" AlternateMovementStepSize="6" />
+	<NavigatableGridWidget Id="SpecialitiesGrid" DataSource="{Specialities}" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "CoverChildren" SuggestedWidth="350" SuggestedHeight="350" DefaultCellWidth="100" DefaultCellHeight="65" HorizontalAlignment="Left" ColumnCount="6" MarginTop="10" MarginLeft="15" AutoScrollYOffset="15">
+		<ItemTemplate>
+
+			<!--Speciality-->
+			<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="36" SuggestedWidth="100" VerticalAlignment="Center" MarginRight="20" Color="@SpecialityBackgroundColor" Sprite="StdAssets\Popup\order_popup_card_default">
+				<Children>
+					<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" VerticalAlignment="Center" MarginBottom="6" Brush="Encyclopedia.Stat.DefinitionText" Text="@NameWithLevel">
+						<Children>
+							<HintWidget Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{EffectDescription}" />
+						</Children>
+					</TextWidget>
+					<!--Frame Border-->
+					<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Frame" IsEnabled="false" />
+				</Children>
+			</Widget>
+
+		</ItemTemplate>
+	</NavigatableGridWidget>
+</DiscardedRoot>

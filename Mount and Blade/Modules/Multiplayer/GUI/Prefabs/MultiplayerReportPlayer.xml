@@ -1,0 +1,52 @@
+<Prefab>
+  <Constants>
+
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare" Color="#000000FF" AlphaFactor="0.9">
+      <Children>
+
+        <!--Panel-->
+        <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="860" SuggestedHeight="330" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Report.Popup.Frame" >
+          <Children>
+            <NavigationForcedScopeCollectionTargeter CollectionID="LobbyReportPlayerScopeCollection" CollectionParent="..\." CollectionOrder="1000" />
+
+            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="50" SuggestedHeight="50" HorizontalAlignment="Right" VerticalAlignment="Top" Brush="CloseButton.Flat" Command.Click="ExecuteCancel">
+              <Children>
+                <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-40" KeyID="@KeyID" IsVisible="@IsVisible"/>
+              </Children>
+            </ButtonWidget>
+
+            <NavigationScopeTargeter ScopeID="LobbyReportPlayerScope" ScopeParent="..\Container" ScopeMovements="Vertical" />
+            <ListPanel Id="Container" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalTopToBottom" MarginTop="25" DoNotAcceptEvents="true">
+              <Children>
+                <!--Title-->
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Text="@ReportReasonText"/>
+
+                <!--Reason Dropdown-->
+                <Standard.DropdownWithHorizontalControl Id="ReasonDropdown" VerticalAlignment="Center" HorizontalAlignment="Center" Parameter.IsFlatDesign="true" Parameter.ShowNextAndPrevious="false" Parameter.SelectorDataSource="{ReportReasons}" Parameter.DisabledHintDataSource="{..\DisabledReasonHint}" MarginTop="25" GamepadNavigationIndex="0"/>
+
+                <!--Input Area-->
+                <EditableTextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="796" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center" Text="@ReportMessage" MarginTop="25" Brush="Report.Popup.TextBox" Brush.TextVerticalAlignment="Center" GamepadNavigationIndex="1"/>
+
+                <TextWidget IsVisible="@IsRequestedFromMission" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginTop="25" HorizontalAlignment="Center" Brush="Report.Popup.Description.Text" Text="@MuteDescriptionText" />
+
+                <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" Brush="WideButton.Flat" IsEnabled="@CanSendReport" Command.Click="ExecuteDone" DoNotPassEventsToChildren="true" MarginTop="25" HorizontalAlignment="Center" GamepadNavigationIndex="2">
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Report.Button.Text" Text="@DoneText">
+                      <Children>
+                        <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                      </Children>
+                    </TextWidget>
+                  </Children>
+                </ButtonWidget>
+
+              </Children>
+            </ListPanel>
+          </Children>
+        </BrushWidget>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

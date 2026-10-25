@@ -1,0 +1,154 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Banner.Width" BrushLayer="Default" BrushName="MPLobby.Clan.Banner" BrushValueType="Width" />
+    <Constant Name="Banner.Height" BrushLayer="Default" BrushName="MPLobby.Clan.Banner" BrushValueType="Height" />
+
+    <Constant Name="Banner.Width.Scaled" MultiplyResult="0.60" Value="!Banner.Width" />
+    <Constant Name="Banner.Height.Scaled" MultiplyResult="0.84" Value="!Banner.Height" />
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsSelected">
+      <Children>
+				
+				<ListPanel Id="SigilFactionParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SuggestedHeight="500" MarginLeft="50" MarginRight="50" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <Children>
+
+						<!--Title-->
+						<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginBottom="25" Brush="MPLobby.Clan.Title.Text" Text="@TitleText"/>
+
+            <!--Information Title and Change Name Button-->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="10" StackLayout.LayoutMethod="HorizontalLeftToRight" >
+              <Children>
+                <!--Title-->
+								<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" Brush="MPLobby.Clan.Title.Text" Brush.TextHorizontalAlignment="Left" Text="@InformationText" Brush.FontSize="36" />
+                
+                <!--Change Information Button-->
+								<NavigationScopeTargeter ScopeID="ChangeInformationButtonScope" ScopeParent="..\ChangeInformationButton" NavigateFromScopeEdges="true" ExtendDiscoveryAreaLeft="800" />
+                <ButtonWidget Id="ChangeInformationButton" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="29" SuggestedHeight="37" HorizontalAlignment="Right" Command.Click="ExecuteOpenSetClanInformationPopup" IsVisible="@IsPrivilegedMember" GamepadNavigationIndex="0">
+                  <Children>
+                    <!--Icon-->
+                    <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Clan.EditInfo.Button" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </ListPanel>
+
+            <!--No Description Text-->
+						<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" Brush.TextHorizontalAlignment="Center" Brush="MPLobby.Clan.Paragraph.Text" Text="@NoDescriptionText" IsHidden="@DoesHaveDescription"/>
+            
+            <!--Clan Description-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Clan.Paragraph.Text" Brush.TextHorizontalAlignment="Center" Brush.TextVerticalAlignment="Top" Text="@ClanDescriptionText" IsVisible="@DoesHaveDescription" MarginBottom="25"/>
+
+            <!--Separator-->
+            <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" HorizontalAlignment="Center" MarginBottom="15" MarginTop="15" Sprite="GradientDivider" Color="#F4E1C4FF" AlphaFactor="0.4" />
+
+            <!--Announcements Title and Add Announcement Button-->
+						<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="10" StackLayout.LayoutMethod="HorizontalSpaced" >
+              <Children>
+                <!--Announcements Title-->
+								<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" Brush="MPLobby.Clan.Title.Text" Brush.TextHorizontalAlignment="Left" Text="@AnnouncementsText" Brush.FontSize="36" />
+                
+                <!--Add Announcement Button-->
+								<NavigationScopeTargeter ScopeID="AddAnnouncementButtonScope" ScopeParent="..\AddAnnouncementButton" NavigateFromScopeEdges="true" ExtendDiscoveryAreaLeft="800" />
+                <ButtonWidget Id="AddAnnouncementButton" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" HorizontalAlignment="Right" Command.Click="ExecuteOpenSendAnnouncementPopup" IsVisible="@IsPrivilegedMember" GamepadNavigationIndex="0">
+                  <Children>
+                    <!--Icon-->
+                    <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" Brush="MPLobby.Clan.AddAnnouncement.Button" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </ListPanel>
+
+            <!--No Announcements Text-->
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="150" Brush.TextHorizontalAlignment="Center" Brush="MPLobby.Clan.Paragraph.Text" Text="@NoAnnouncementsText" IsHidden="@DoesHaveAnnouncements"/>
+
+            <!--Announcements List-->
+						<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="250" IsVisible="@DoesHaveAnnouncements">
+              <Children>
+
+                <ScrollablePanel Id="AnnouncementsScrollablePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginRight="15" AutoHideScrollBars="true" ClipRect="AnnouncementsRect" InnerPanel="AnnouncementsRect\AnnouncementsListPanel" MouseScrollAxis="Vertical" VerticalScrollbar="..\AnnouncementsScrollbar">
+                  <Children>
+										<NavigationScopeTargeter ScopeID="LobbyClanAnnouncementsScope" ScopeParent="..\AnnouncementsRect" ScopeMovements="Vertical"/>
+                    <Widget Id="AnnouncementsRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                      <Children>
+                        <NavigatableListPanel Id="AnnouncementsListPanel" DataSource="{AnnouncementsList}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalBottomToTop">
+                          
+                          <ItemTemplate>
+                            <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Clan.Information.ListBG" MarginBottom="25">
+                              <Children>
+                                <!--Announcement Contents-->
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="25" MarginTop="10" MarginBottom="30" VerticalAlignment="Top" Brush="MPLobby.Clan.Paragraph.Text" Brush.TextHorizontalAlignment="Left" Text="@MessageText" />
+                                
+                                <!--Announcement Poster Details-->
+                                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginRight="10" MarginBottom="10" Brush="MPLobby.Clan.Paragraph.Text" Brush.TextHorizontalAlignment="Right" Brush.FontSize="16" Brush.TextAlphaFactor="0.6" VerticalAlignment="Bottom" Text="@Details"/>
+
+                                <!--Delete Announcement Button-->
+                                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="12" SuggestedHeight="12" HorizontalAlignment="Right" VerticalAlignment="Top" MarginRight="5" MarginTop="5" UpdateChildrenStates="true" Command.Click="ExecuteDeleteAnnouncement" IsVisible="@CanBeDeleted">
+                                  <Children>
+                                    <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.Clan.Delete.Announcement.Button"/>
+                                  </Children>
+                                </ButtonWidget>
+                              </Children>
+                            </BrushWidget>
+                          </ItemTemplate>
+
+                        </NavigatableListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <ScrollbarWidget Id="AnnouncementsScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="6" MarginBottom="10" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0" >
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#5a4033FF" AlphaFactor="0.2" />
+                    <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                  </Children>
+                </ScrollbarWidget>
+
+              </Children>
+            </ListPanel>
+
+            <!--Separator-->
+            <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="2" HorizontalAlignment="Center" MarginBottom="5" Sprite="GradientDivider" Color="#F4E1C4FF" AlphaFactor="0.4" />
+
+            <!--Action Buttons-->
+						<NavigationScopeTargeter ScopeID="LobbyClanActionButtonsScope" ScopeParent="..\ActionButtonsParent" ScopeMovements="Horizontal"/>
+            <ListPanel Id="ActionButtonsParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="250" MarginRight="250" StackLayout.LayoutMethod="HorizontalSpaced" IsVisible="@AreActionButtonsEnabled">
+              <Children>
+                <!--Disband Button-->
+								<ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="99" SuggestedHeight="99" Brush="MPLobby.Clan.DisbandButton" Command.Click="ExecuteDisbandClan" IsEnabled="@IsLeader" GamepadNavigationIndex="0">
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="24" VerticalAlignment="Bottom" PositionYOffset="19" Brush="MPLobby.Matchmaking.CircleButtonText" Text="@DisbandText" />
+                  </Children>
+                </ButtonWidget>
+
+                <!--Leave Button-->
+								<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="103" SuggestedHeight="103" HorizontalAlignment="Center">
+                  <Children>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsLeader">
+                      <Children>
+                        <HintWidget DataSource="{CantLeaveHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint"/>
+                      </Children>
+                    </Widget>
+										<ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="103" SuggestedHeight="103" Brush="MPLobby.Clan.LeaveButton" Command.Click="ExecuteLeaveClan" IsDisabled="@IsLeader" GamepadNavigationIndex="1">
+                      <Children>
+                        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="24" VerticalAlignment="Bottom" PositionYOffset="15" Brush="MPLobby.Matchmaking.CircleButtonText" Text="@LeaveText" />
+                      </Children>
+                    </ButtonWidget>
+                  </Children>
+                </Widget>
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+
+        <!--Popups-->
+        <Lobby.Clan.SendPost.Popup DataSource="{SendAnnouncementPopup}" />
+        <Lobby.Clan.SendPost.Popup DataSource="{SetClanInformationPopup}" />
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

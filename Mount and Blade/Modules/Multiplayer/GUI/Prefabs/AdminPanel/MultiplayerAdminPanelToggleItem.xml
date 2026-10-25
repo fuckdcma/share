@@ -1,0 +1,33 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" HorizontalAlignment="Center">
+      <Children>
+        
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAligment="Left" VerticalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight" IsDisabled="@IsDisabled">
+          <Children>
+
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" VerticalAlignment="Center" Brush="MPAdminPanel.Option.Title.Text" Text="@OptionTitle">
+              <Children>
+                <HintWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{DescriptionHint}" IsDisabled="true"/>
+              </Children>
+            </TextWidget>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" VerticalAlignment="Center" MarginLeft="5" >
+              <Children>
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" HorizontalAlignment="Left" MarginLeft="80" Brush="SPOptions.Checkbox.Empty.Button" ButtonType="Toggle" IsSelected="@ToggleValue" ToggleIndicator="ToggleIndicator" UpdateChildrenStates="true">
+                  <Children>
+                    <BrushWidget Id="ToggleIndicator" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="SPOptions.Checkbox.Full.Button" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+        
+        <HintWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{DisabledHint}" IsDisabled="true"/>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

@@ -1,0 +1,52 @@
+<Prefab>
+  <Constants>
+    <Constant Name="TopHeader.Height" BrushName="MPLobby.TopHeader.Background" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <Window>
+    <MultiplayerLobbyScreenWidget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsLoggedIn="@IsLoggedIn" IsSearchGameRequested="@IsSearchGameRequested" IsSearchingGame="@IsSearchingGame" IsMatchmakingEnabled="@IsMatchmakingEnabled" IsCustomBattleEnabled="@IsCustomGameFindEnabled" IsPartyLeader="@IsPartyLeader" IsInParty="@IsInParty" MenuWidget="Menu" ProfileScreenWidget="Profile" HomeScreenWidget="Home" ClanScreenWidget="Clan" MatchmakingScreenWidget="Matchmaking" FriendsPanelWidget="FriendsPanel">
+      <Children>
+        <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <Standard.Background />
+
+        <Lobby.Menu Id="Menu" DataSource="{Menu}" IsVisible="@IsEnabled" />
+        <Lobby.AuthenticationPanel Id="Login" DataSource="{Login}" IsVisible="@IsEnabled" />
+        <Lobby.Home Id="Home" DataSource="{Home}" IsVisible="@IsEnabled" />
+        <Lobby.Matchmaking Id="Matchmaking" DataSource="{Matchmaking}" IsVisible="@IsEnabled" />
+        <Lobby.Armory Id="Armory" DataSource="{Armory}" IsVisible="@IsEnabled" />
+        <Lobby.Profile Id="Profile" DataSource="{Profile}" IsVisible="@IsEnabled"/>
+        <MPOptions Id="Options" DataSource="{Options}" IsVisible="@IsEnabled" MarginTop="!TopHeader.Height" />
+        <Lobby.GameSearch Id="GameSearchPanel" DataSource="{GameSearch}" IsVisible="@IsEnabled" />
+        <Lobby.Friends Id="FriendsPanel" DataSource="{Friends}" IsVisible="@IsEnabled"/>
+        <Lobby.AfterBattlePopup Id="AfterBattlePopup" DataSource="{AfterBattlePopup}" IsVisible="@IsEnabled" />
+        <Lobby.PartyPlayerSuggestionPopup Id="PartyPlayerSuggestionPopup" DataSource="{PartyPlayerSuggestionPopup}" IsVisible="@IsEnabled"/>
+        <Lobby.Clan.Leaderboard DataSource="{ClanLeaderboardPopup}" IsVisible="@IsEnabled"/>
+        <Lobby.Clan Id="Clan" DataSource="{Clan}" IsVisible="@IsEnabled"/>
+        <Lobby.Clan.Creation.Information DataSource="{ClanCreationInformationPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Clan.Invitation.Popup Id="ClanInvitationPopup" DataSource="{ClanInvitationPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Clan.Creation.Popup Id="ClanCreationPopup" DataSource="{ClanCreationPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Clan.MatchmakingRequest.Popup Id="ClanMatchmakingRequestPopup" DataSource="{ClanMatchmakingRequestPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Clan.Invite.Friends.Popup Id="ClanInviteFriendsPopup" DataSource="{ClanInviteFriendsPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Query.Popup Id="QueryPopup" DataSource="{QueryPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Information.Popup Id="InformationPopup" DataSource="{InformationPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Profile.BannerlordID.Change.Popup DataSource="{BannerlordIDChangePopup}" IsVisible="@IsSelected" />
+        <Lobby.Profile.BannerlordID.Add.Friend.Popup DataSource="{BannerlordIDAddFriendPopup}" IsVisible="@IsSelected" />
+        <Lobby.Profile.Badge.Selection.Popup DataSource="{BadgeSelectionPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Profile.Badge.Progress.Popup DataSource="{BadgeProgressionInformation}" IsVisible="@IsEnabled" />
+        <Lobby.Home.Sigil.Change.Popup DataSource="{ChangeSigilPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Cosmetic.Obtain.Popup DataSource="{CosmeticObtainPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Profile.RecentGames DataSource="{RecentGames}" IsVisible="@IsEnabled" />
+        <Lobby.Profile.Rank.Progress.Popup DataSource="{RankProgressInformation}" IsVisible="@IsEnabled" />
+        <Lobby.Profile.Rank.Leaderboard.Popup DataSource="{RankLeaderboard}" IsVisible="@IsEnabled" />
+        <Lobby.PlayerProfile Id="PlayerProfile" DataSource="{PlayerProfile}" IsVisible="@IsEnabled" />
+        <Lobby.PartyInvitationPopup Id="PartyInvitationPopup" DataSource="{PartyInvitationPopup}" IsVisible="@IsEnabled" />
+        <Lobby.PartyJoinRequestPopup Id="PartyJoinRequestPopup" DataSource="{PartyJoinRequestPopup}" IsVisible="@IsEnabled" />
+        <Lobby.Rejoin DataSource="{Rejoin}" IsVisible="@IsEnabled" />
+        <Lobby.BlockerState DataSource="{BlockerState}" />
+        <BrightnessOption DataSource="{BrightnessPopup}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@Visible" />
+        <ExposureOption DataSource="{ExposurePopup}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@Visible" />
+
+      </Children>
+    </MultiplayerLobbyScreenWidget>
+  </Window>
+</Prefab>

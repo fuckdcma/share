@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+	<Name value="Yigu ThreeKingdoms"/>
+	<Id value="YiGuThreeKingdoms"/>
+	<!--Version will be injected on build-->
+	<Version value="v 0.1.4.0"/>
+	<DefaultModule value="false"/>
+	<SingleplayerModule value="true"/>
+	<MultiplayerModule value="false"/>
+	<Official value="false"/>
+	<DependedModules>
+		<DependedModule Id="Native" DependentVersion="v1.4.8" />
+		<DependedModule Id="SandBoxCore" DependentVersion="v1.4.8" />
+		<DependedModule Id="Sandbox" DependentVersion="v1.4.8" />
+		<DependedModule Id="CustomBattle" DependentVersion="v1.4.8"/>
+		<DependedModule Id="StoryMode" DependentVersion="v1.4.8" />
+		<DependedModule Id="Bannerlord.Harmony"/>
+		<DependedModule Id="Bannerlord.ButterLib"/>
+		<DependedModule Id="Bannerlord.UIExtenderEx"/>
+		<DependedModule Id="Bannerlord.MBOptionScreen"/>
+	</DependedModules>
+	<!-- Prototype -->
+	<DependedModuleMetadatas>
+		<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="v1.4.8" />
+		<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="v1.4.8" />
+		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="v1.4.8" />
+		<DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="v1.4.8"/>
+		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="v1.4.8" />
+		<DependedModuleMetadata id="Bannerlord.Harmony" order="LoadBeforeThis"/>
+		<DependedModuleMetadata id="Bannerlord.ButterLib" order="LoadBeforeThis"/>
+		<DependedModuleMetadata id="Bannerlord.UIExtenderEx" order="LoadBeforeThis"/>
+		<DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis"/>
+	</DependedModuleMetadatas>
+	<SubModules>
+		<SubModule>
+			<Name value = "YiGu.ThreeKingdoms"/>
+			<DLLName value = "YiGu.ThreeKingdoms.dll"/>
+			<SubModuleClassType value = "YiGu.ThreeKingdoms.SubModule"/>
+			<Assemblies>
+				<Assembly value="Microsoft.Bcl.AsyncInterfaces.dll"/>
+				<Assembly value="Microsoft.Bcl.HashCode.dll"/>
+				<Assembly value="CsvHelper.dll"/>
+			</Assemblies>
+			<Tags>
+				<Tag key="DedicatedServerType" value ="none" />
+				<Tag key="IsNoRenderModeElement" value ="false" />
+			</Tags>
+		</SubModule>
+	</SubModules>
+	<Xmls>
+		<XmlNode>
+			<XmlName id="Items" path="sg_spitems"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="CraftingPieces" path="sg_crafting_pieces"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="WeaponDescriptions" path="sg_weapon_descriptions"/>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="CraftingTemplates" path="sg_crafting_templates"/>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="sg_spnpccharacters"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="sg_custombattle_characters"/>
+			<IncludedGameTypes>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="sg_lords"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="sg_education_character_templates"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="NPCCharacters" path="sg_education_equipment_templates"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Heroes" path="sg_heroes"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Factions" path="sg_spclans"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Items" path="ori_banned_items"/>
+				<IncludedGameTypes>
+					<GameType value="Campaign"/>
+					<GameType value="CampaignStoryMode"/>
+					<GameType value="CustomGame"/>
+					<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Kingdoms" path="sg_spkingdoms"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="SPCultures" path="sg_spcultures"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Items" path="sg_flag_yigutest"/>
+			<IncludedGameTypes>
+				<GameType value = "StoryMode"/>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "Sandbox"/>
+				<GameType value = "SandboxCore"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Settlements" path="settlements"/>
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="GameText" path="module_strings"/>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="GameText" path="module_strings_code"/>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="GameText" path="tk_wanderer_strings" />
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Scene" path="custom_battle_scenes"/>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="EquipmentRosters" path="sg_equipmentrosters"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="BodyProperties" path="sg_bodyproperties"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+				<GameType value = "CustomGame"/>
+				<GameType value = "EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="partyTemplates" path="sg_partytemplates"/>
+			<IncludedGameTypes>
+				<GameType value = "Campaign"/>
+				<GameType value = "CampaignStoryMode"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="EquipmentRosters" path="sg_equipment_sets" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="EquipmentRosters" path="sg_npc_equipment_sets" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Monsters" path="monsters" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>
+			<XmlName id="Concepts" path="concept_strings" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame"/>
+				<GameType value="EditorGame"/>
+			</IncludedGameTypes>
+		</XmlNode>
+		<XmlNode>                
+			<XmlName id="EquipmentRosters" path="sandboxcore_equipment_sets" />
+			<IncludedGameTypes>
+				<GameType value="Campaign" />
+				<GameType value="CampaignStoryMode" />
+				<GameType value="CustomGame" />
+				<GameType value="EditorGame" />
+			</IncludedGameTypes>
+		</XmlNode>  
+	</Xmls>
+</Module>

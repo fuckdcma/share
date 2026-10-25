@@ -1,0 +1,45 @@
+<Prefab>
+  <Constants>
+    <Constant Name="RefreshButton.Width" BrushLayer="Default" BrushName="RefreshButton.Flat" BrushValueType="Width" />
+    <Constant Name="RefreshButton.Height" BrushLayer="Default" BrushName="RefreshButton.Flat" BrushValueType="Height" />
+
+    <Constant Name="QuitButton.Width" Value="92" />
+    <Constant Name="QuitButton.Height" Value="92" />
+  </Constants>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+
+        <Standard.Background />
+        
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="150" MarginRight="150" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <Children>
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="10" Brush="MPLobby.Popup.HeaderText" Text="@TitleText" />
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="25" Brush="MPLobby.Popup.MessageText" Text="@DescriptionText" />
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center">
+              <Children>
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="86" SuggestedHeight="86" HorizontalAlignment="Center" MarginRight="15" Brush="MPLobby.LoginButton.Flat" Command.Click="ExecuteRejoin" IsDisabled="@IsRejoining" UpdateChildrenStates="true">
+                  <Children>
+                    <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="26" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="24" Brush="MPLobby.Matchmaking.CircleButtonText" Text="@RejoinText" />
+                  </Children>
+                </ButtonWidget>
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="86" SuggestedHeight="86" HorizontalAlignment="Center" MarginLeft="15" Brush="MPLobby.LeaveButton.Flat" Command.Click="ExecuteFlee" IsDisabled="@IsRejoining" UpdateChildrenStates="true">
+                  <Children>
+                    <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="26" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="24" Brush="MPLobby.Matchmaking.CircleButtonText" Text="@FleeText" />
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </ListPanel>
+          </Children>
+        </ListPanel>
+
+        <Standard.CircleLoadingWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="360" Parameter.Period="0.5" IsVisible="@IsRejoining" />
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

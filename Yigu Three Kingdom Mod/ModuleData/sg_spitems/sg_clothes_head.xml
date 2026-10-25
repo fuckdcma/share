@@ -1,0 +1,4098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+<!-- 雍凉 -->
+	<Item id="sg_ar_c01_s001_head_a"
+        name="{=*}羊肚手巾"
+        subtype="head_armor"
+        mesh="ar_c01_s001_head_a"
+        culture="Culture.yongliang"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s001_head_b"
+        name="{=*}灰帻"
+        subtype="head_armor"
+        mesh="ar_c01_s001_head_b"
+        culture="Culture.yongliang"
+        weight="0.1"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="none"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s002_head"
+        name="{=*}一体皮胄"
+        subtype="head_armor"
+        mesh="ar_c01_s002_head"
+        culture="Culture.yongliang"
+        weight="0.8"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="15"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s003_head"
+        name="{=*}蓝帻毡武弁"
+        subtype="head_armor"
+        mesh="ar_c01_s003_head"
+        culture="Culture.yongliang"
+        weight="0.9"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="16"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s005_head_a"
+        name="{=*}带帻皮额挡"
+        subtype="head_armor"
+        mesh="ar_c01_s005_head_a"
+        culture="Culture.yongliang"
+        weight="0.9"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="18"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s005_head_b"
+        name="{=*}皮幅巾"
+        subtype="head_armor"
+        mesh="ar_c01_s005_head_b"
+        culture="Culture.yongliang"
+        weight="0.6"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="14"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s007_head_a"
+        name="{=*}羽饰西凉铁胄"
+        subtype="head_armor"
+        mesh="ar_c01_s007_head_a"
+        culture="Culture.yongliang"
+        weight="2.8"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="35"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s007_head_b"
+        name="{=*}西凉铁胄"
+        subtype="head_armor"
+        mesh="ar_c01_s007_head_b"
+        culture="Culture.yongliang"
+        weight="2.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="35"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s009_head"
+        name="{=*}紫帻皮武弁"
+        subtype="head_armor"
+        mesh="ar_c01_s009_head"
+        culture="Culture.yongliang"
+        weight="1"
+        difficulty="0" 
+        appearance="1.3" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s010_head_a"
+        name="{=*}多瓣铁盔"
+        subtype="head_armor"
+        mesh="ar_c01_s010_head_a"
+        culture="Culture.yongliang"
+        weight="1.6"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="26"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s010_head_b"
+        name="{=*}棕色暗纹戴首巾"
+        subtype="head_armor"
+        mesh="ar_c01_s010_head_b"
+        culture="Culture.yongliang"
+        weight="0.2"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="2"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s010_head_c"
+        name="{=*}鱼鳞铁额挡"
+        subtype="head_armor"
+        mesh="ar_c01_s010_head_c"
+        culture="Culture.yongliang"
+        weight="2.8"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="35"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s013_head"
+        name="{=*}羽饰布顿项铜盔"
+        subtype="head_armor"
+        mesh="ar_c01_s013_head"
+        culture="Culture.yongliang"
+        weight="2.7"
+        difficulty="0" 
+        appearance="1.3" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="34"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s015_head_b"
+        name="{=*}包脸头巾"
+        subtype="head_armor"
+        mesh="ar_c01_s015_head_b"
+        culture="Culture.yongliang"
+        weight="0.2"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           hair_cover_type="none"
+           has_gender_variations="true"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s015_head_c"
+        name="{=*}缨饰一体铁盔配包脸头巾"
+        subtype="head_armor"
+        mesh="ar_c01_s015_head_c"
+        culture="Culture.yongliang"
+        weight="3.1"
+        difficulty="0" 
+        appearance="1.2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="39"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s016_head"
+        name="{=*}缨饰尖顶铁胄"
+        subtype="head_armor"
+        mesh="ar_c01_s016_head"
+        culture="Culture.yongliang"
+        weight="2.9"
+        difficulty="0" 
+        appearance="1.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="33"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s018_head"
+        name="{=*}羽饰铁护耳铁胄"
+        subtype="head_armor"
+        mesh="ar_c01_s018_head"
+        culture="Culture.yongliang"
+        weight="3.2"
+        difficulty="0" 
+        appearance="1.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="40"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s019_head"
+        name="{=*}札甲铁额挡"
+        subtype="head_armor"
+        mesh="ar_c01_s019_head"
+        culture="Culture.yongliang"
+        weight="3.3"
+        difficulty="0" 
+        appearance="1.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="41"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g001_head"
+        name="{=*}【将作】武弁大冠"
+        subtype="head_armor"
+        mesh="ar_c01_g001_head"
+        culture="Culture.yongliang"
+        weight="0.8"
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="27"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_cl_c01_g001_head"
+        name="{=*}【将作】董卓官帽"
+        subtype="head_armor"
+        mesh="cl_c01_g001_head"
+        culture="Culture.yongliang"
+        weight="0.5"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="32"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true"
+           Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_g002_head"
+        name="{=*}【将作】羽饰金箍细札重盔"
+        subtype="head_armor"
+        mesh="S_GEN001_0002_TOUKUI"
+        culture="Culture.yongliang"
+        weight="3.6"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="81"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_g002_head_civilian"
+        name="{=*}【将作】吕布头盔"
+        subtype="head_armor"
+        mesh="ar_c01_g002_head_a"
+        culture="Culture.yongliang"
+        weight="3.6"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="92"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true"
+           Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_g003_head"
+        name="{=*}【将作】金饰铁札胄"
+        subtype="head_armor"
+        mesh="ar_c01_g003_head"
+        culture="Culture.yongliang"
+        weight="3.5"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="76"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g004_head_a"
+        name="{=*}【将作】游牧铆接铁盔"
+        subtype="head_armor"
+        mesh="ar_c01_g004_head_a"
+        culture="Culture.yongliang"
+        weight="3.4"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="78"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g004_head_b"
+        name="{=*}【将作】华雄头盔"
+        subtype="head_armor"
+        mesh="ar_c01_g004_head_b"
+        culture="Culture.yongliang"
+        weight="2.1"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="77"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g005_head"
+        name="{=*}【将作】缨饰漆面铁札重盔"
+        subtype="head_armor"
+        mesh="ar_c01_g005_head"
+        culture="Culture.yongliang"
+        weight="4"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="76"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g006_head"
+        name="{=*}【将作】八瓣铁兜鍪"
+        subtype="head_armor"
+        mesh="ar_c01_g006_head"
+        culture="Culture.yongliang"
+        weight="2.0"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="78"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g007_head_a"
+        name="{=*}【将作】带护耳铁额挡"
+        subtype="head_armor"
+        mesh="ar_c01_g007_head_a"
+        culture="Culture.yongliang"
+        weight="4"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="76"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g007_head_b"
+        name="{=*}【将作】高顺头盔(带毛发)"
+        subtype="head_armor"
+        mesh="ar_c01_g007_head_b"
+        culture="Culture.yongliang"
+        weight="3.2"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="75"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g008_head_a"
+        name="{=*}【将作】獬豸朝冠"
+        subtype="head_armor"
+        mesh="ar_c01_g008_head_a"
+        culture="Culture.yongliang"
+        weight="0.2"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="32"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g008_head_b"
+        name="{=*【将作】}贾诩帽子(带毛发)"
+        subtype="head_armor"
+        mesh="ar_c01_g008_head_b"
+        culture="Culture.yongliang"
+        weight="0.4"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="44"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g010_head"
+        name="{=*}【将作】红缨一体盔带皮护耳"
+        subtype="head_armor"
+        mesh="ar_c01_g010_head"
+        culture="Culture.yongliang"
+        weight="2.1"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="71"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g011_hair"
+        name="{=*}李傕头发"
+        subtype="head_armor"
+        mesh="ar_c01_g011_hair"
+        culture="Culture.yongliang"
+        weight="0.1"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g012_head"
+        name="{=*}【将作】草原缨饰皮札胄"
+        subtype="head_armor"
+        mesh="ar_c01_g012_head"
+        culture="Culture.yongliang"
+        weight="1.8"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="70"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g015_head"
+        name="{=*}吕雯头发"
+        subtype="head_armor"
+        mesh="ar_c01_g015_head"
+        culture="Culture.yongliang"
+        weight="0.5"
+        difficulty="0" 
+       appearance="0"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="39"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c01_g015_hair_old"
+        name="{=*}装饰帻"
+        subtype="head_armor"
+        mesh="ar_c01_g015_hair_old"
+        culture="Culture.yongliang"
+        weight="0.1"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g015_head_old_a"
+        name="{=*}束发装饰帻"
+        subtype="head_armor"
+        mesh="ar_c01_g015_head_old_a"
+        culture="Culture.yongliang"
+        weight="0.1"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g016_head"
+        name="{=*}【将作】玉饰却敌冠"
+        subtype="head_armor"
+        mesh="ar_c01_g016_head"
+        culture="Culture.yongliang"
+        weight="0.2"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="32"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s3001_head"
+        name="{=*}西凉毡帽皮武弁"
+        subtype="head_armor"
+        mesh="ar_c01_s3001_head"
+        culture="Culture.yongliang"
+        weight="0.9"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="12"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s3002_head"
+        name="{=*}西凉羽饰带绒皮武冠"
+        subtype="head_armor"
+        mesh="ar_c01_s3002_head"
+        culture="Culture.yongliang"
+        weight="1.3"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="14"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s4001_head"
+        name="{=*}西凉轻骑羽饰毡帽皮武弁"
+        subtype="head_armor"
+        mesh="ar_c01_s4001_head"
+        culture="Culture.yongliang"
+        weight="0.9"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="18"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s4002_head"
+        name="{=*}西凉毡护耳帽皮武弁"
+        subtype="head_armor"
+        mesh="ar_c01_s4002_head"
+        culture="Culture.yongliang"
+        weight="1.6"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="18"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s4003_head"
+        name="{=*}西凉羽饰毡帽皮武弁2"
+        subtype="head_armor"
+        mesh="ar_c01_s4003_head"
+        culture="Culture.yongliang"
+        weight="0.9"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="12"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s5001_head"
+        name="{=*}西凉羽缨多瓣铁胄"
+        subtype="head_armor"
+        mesh="ar_c01_s5001_head"
+        culture="Culture.yongliang"
+        weight="2.4"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="26"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s5002_head"
+        name="{=*}西凉带绒铁札胄配铁护耳"
+        subtype="head_armor"
+        mesh="ar_c01_s5002_head"
+        culture="Culture.yongliang"
+        weight="2.4"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="26"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s5003_head"
+        name="{=*}西凉红缨铁札胄带面巾"
+        subtype="head_armor"
+        mesh="ar_c01_s5003_head"
+        culture="Culture.yongliang"
+        weight="2.5"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="27"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s5004_head"
+        name="{=*}西凉羽饰带绒铁札胄配皮护耳"
+        subtype="head_armor"
+        mesh="ar_c01_s5004_head"
+        culture="Culture.yongliang"
+        weight="2.6"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="30"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s6001_head"
+        name="{=*}西凉缨饰多瓣铁胄带皮护耳"
+        subtype="head_armor"
+        mesh="ar_c01_s6001_head"
+        culture="Culture.yongliang"
+        weight="2.9"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="35"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s6002_head"
+        name="{=*}西凉缨饰铁札胄带铁护耳"
+        subtype="head_armor"
+        mesh="ar_c01_s6002_head"
+        culture="Culture.yongliang"
+        weight="3"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="35"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s7001_head"
+        name="{=*}西凉缨饰华丽多瓣铁胄"
+        subtype="head_armor"
+        mesh="ar_c01_s7001_head"
+        culture="Culture.yongliang"
+        weight="3.2"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="37"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s7002_head"
+        name="{=*}西凉羽饰白帻铁札胄带铁护耳"
+        subtype="head_armor"
+        mesh="ar_c01_s7002_head"
+        culture="Culture.yongliang"
+        weight="3.3"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="39"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c01_s7003_head"
+        name="{=*}西凉短缨华丽多瓣铁胄"
+        subtype="head_armor"
+        mesh="ar_c01_s7003_head"
+        culture="Culture.yongliang"
+        weight="3.2"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="37"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_c01_s2001_head"
+        name="{=*}西凉带绒皮武冠"
+        subtype="head_armor"
+        mesh="cl_c01_s2001_head"
+        culture="Culture.yongliang"
+        weight="0.6"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="13"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+
+<!-- 冀州 -->
+	<Item id="sg_ar_c05_s1001_hair"
+        name="{=*}邺国乡勇头发"
+        subtype="head_armor"
+        mesh="ar_c05_s1001_hair"
+        culture="Culture.jizhou"
+        weight="0.1"
+        difficulty="0" 
+        appearance="0.1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s2001_head"
+        name="{=*}冀州皮胄"
+        subtype="head_armor"
+        mesh="ar_c05_s2001_head"
+        culture="Culture.jizhou"
+        weight="1.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="25"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s3001_head"
+        name="{=*}加强冀州皮胄"
+        subtype="head_armor"
+        mesh="ar_c05_s3001_head"
+        culture="Culture.jizhou"
+        weight="1.9"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="30"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s3002_head"
+        name="{=*}皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="13"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_01"
+        name="{=*}汉戍卒粗制皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="8"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_03"
+        name="{=*}汉弓手轻质皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="6"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_02"
+        name="{=*}汉材官轻质皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="9"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_04"
+        name="{=*}汉加厚皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="14"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_05"
+        name="{=*}汉加厚填充皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="17"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_08"
+        name="{=*}汉骑兵皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="25"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s3002_head_b"
+        name="{=*}羽饰皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head_b"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="13"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_06"
+        name="{=*}汉加厚羽饰皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head_b"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="25"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_07"
+        name="{=*}汉加厚填充羽饰皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head_b"
+        culture="Culture.jizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="30"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s4001_head"
+        name="{=*}羽缨冀州铜札胄"
+        subtype="head_armor"
+        mesh="ar_c05_s4001_head"
+        culture="Culture.jizhou"
+        weight="3.3"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="38"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s4002_head"
+        name="{=*}冀州铜札胄"
+        subtype="head_armor"
+        mesh="ar_c05_s4002_head"
+        culture="Culture.jizhou"
+        weight="3.3"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="38"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s5001_head"
+        name="{=*}羽缨冀州铁札盔带铁顿项"
+        subtype="head_armor"
+        mesh="ar_c05_s5001_head"
+        culture="Culture.jizhou"
+        weight="4.2"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="47"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s5003_head"
+        name="{=*}缨饰冀州铜札胄"
+        subtype="head_armor"
+        mesh="ar_c05_s5003_head"
+        culture="Culture.jizhou"
+        weight="3.4"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="40"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s5004_head"
+        name="{=*}羽饰冀州皮胄"
+        subtype="head_armor"
+        mesh="ar_c05_s5004_head"
+        culture="Culture.jizhou"
+        weight="2"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="22"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s6001_head"
+        name="{=*}缨饰冀州铁札盔带铁顿项"
+        subtype="head_armor"
+        mesh="ar_c05_s6001_head"
+        culture="Culture.jizhou"
+        weight="4.2"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="47"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s6002_head"
+        name="{=*}羽饰加强冀州皮胄"
+        subtype="head_armor"
+        mesh="ar_c05_s6002_head"
+        culture="Culture.jizhou"
+        weight="2.4"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="28"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s7001_head"
+        name="{=*}缨饰华丽冀州铁札盔带铁顿项"
+        subtype="head_armor"
+        mesh="ar_c05_s7001_head"
+        culture="Culture.jizhou"
+        weight="4.3"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="48"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_s7002_head"
+        name="{=*}羽饰冀州铜胄带铜护面"
+        subtype="head_armor"
+        mesh="ar_c05_s7002_head"
+        culture="Culture.jizhou"
+        weight="3.6"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="44"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g001_head"
+        name="{=*}【将作】华丽缨饰银札铁胄"
+        subtype="head_armor"
+        mesh="ar_c05_g001_head"
+        culture="Culture.jizhou"
+        weight="3.2"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="70"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g002_head"
+        name="{=*}【将作】金饰绒缨银鳞铁胄"
+        subtype="head_armor"
+        mesh="ar_c05_g002_head"
+        culture="Culture.jizhou"
+        weight="3.4"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="74"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g003_head"
+        name="{=*}【将作】绒缨银鳞铁胄"
+        subtype="head_armor"
+        mesh="ar_c05_g003_head"
+        culture="Culture.jizhou"
+        weight="3.5"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="76"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g004_head"
+        name="{=*}【将作】铜饰札铁胄"
+        subtype="head_armor"
+        mesh="ar_c05_g004_head"
+        culture="Culture.jizhou"
+        weight="3.4"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="70"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g005_head"
+        name="{=*}【将作】华丽缨饰皮札胄"
+        subtype="head_armor"
+        mesh="ar_c05_g005_head"
+        culture="Culture.jizhou"
+        weight="2.5"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="70"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g006_head"
+        name="{=*}【将作】缨饰护面皮胄"
+        subtype="head_armor"
+        mesh="ar_c05_g006_head"
+        culture="Culture.jizhou"
+        weight="2.8"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="76"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g006_head02"
+        name="{=*}【将作】草原缨饰皮札胄"
+        subtype="head_armor"
+        mesh="ar_c05_g006_head02"
+        culture="Culture.jizhou"
+        weight="2.8"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="74"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g006_head03"
+        name="{=*}【将作】金漆铁护面"
+        subtype="head_armor"
+        mesh="ar_c05_g006_head03"
+        culture="Culture.jizhou"
+        weight="0.4"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="47"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g007_head"
+        name="{=*}【将作】羽缨银札铁胄"
+        subtype="head_armor"
+        mesh="ar_c05_g007_head"
+        culture="Culture.jizhou"
+        weight="3.6"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="74"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g008_head"
+        name="{=*}【将作】章甫冠"
+        subtype="head_armor"
+        mesh="ar_c05_g008_head"
+        culture="Culture.jizhou"
+        weight="0.3"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="11"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c05_g009_head"
+        name="{=*}【将作】章甫朝冠"
+        subtype="head_armor"
+        mesh="ar_c05_g009_head"
+        culture="Culture.jizhou"
+        weight="0.3"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="11"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+
+<!-- 兖州 -->
+  <Item id="sg_ar_c02_s2001_head"
+        name="{=*}缨饰游牧帽"
+        subtype="head_armor"
+        mesh="ar_c02_s2001_head"
+        culture="Culture.yanzhou"
+        weight="1.3"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="12"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s4002_head"
+        name="{=*}兖州军高顶铁札盔带布护耳"
+        subtype="head_armor"
+        mesh="ar_c02_s4002_head"
+        culture="Culture.yanzhou"
+        weight="2.9"
+        difficulty="0" 
+        appearance="4" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="29"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s4003_head"
+        name="{=*}羽饰游牧帽"
+        subtype="head_armor"
+        mesh="ar_c02_s4003_head"
+        culture="Culture.yanzhou"
+        weight="2.6"
+        difficulty="0" 
+        appearance="4" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="28"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s5001_head"
+        name="{=*}缨饰高顶铁札盔带布护耳"
+        subtype="head_armor"
+        mesh="ar_c02_s5001_head"
+        culture="Culture.yanzhou"
+        weight="2.85"
+        difficulty="0" 
+        appearance="5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="33"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s5003_head"
+        name="{=*}铁护耳高顶铁札盔"
+        subtype="head_armor"
+        mesh="ar_c02_s5003_head"
+        culture="Culture.yanzhou"
+        weight="2.95"
+        difficulty="0" 
+        appearance="5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="28"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s6001_head"
+        name="{=*}缨饰铁护耳高顶铁札盔"
+        subtype="head_armor"
+        mesh="ar_c02_s6001_head"
+        culture="Culture.yanzhou"
+        weight="3.1"
+        difficulty="0" 
+        appearance="6" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="38"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s6002_head"
+        name="{=*}羽饰铁护耳高顶铁札盔"
+        subtype="head_armor"
+        mesh="ar_c02_s6002_head"
+        culture="Culture.yanzhou"
+        weight="3.2"
+        difficulty="0" 
+        appearance="6" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="40"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s7001_head"
+        name="{=*}金顶缨饰铁护耳高顶铁札盔"
+        subtype="head_armor"
+        mesh="ar_c02_s7001_head"
+        culture="Culture.yanzhou"
+        weight="3.3"
+        difficulty="0" 
+        appearance="6" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="41"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s7002_head"
+        name="{=*}金顶羽饰铁护耳高顶铁札盔"
+        subtype="head_armor"
+        mesh="ar_c02_s7002_head"
+        culture="Culture.yanzhou"
+        weight="3.4"
+        difficulty="0" 
+        appearance="6" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="42"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s8001_head"
+        name="{=*}羽缨铁护耳高顶铁札盔"
+        subtype="head_armor"
+        mesh="ar_c02_s8001_head"
+        culture="Culture.yanzhou"
+        weight="2.9"
+        difficulty="0" 
+        appearance="5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="34"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c02_s8002_head"
+        name="{=*}双羽缨铁护耳高顶铁札盔"
+        subtype="head_armor"
+        mesh="ar_c02_s8002_head"
+        culture="Culture.yanzhou"
+        weight="2.8"
+        difficulty="0" 
+        appearance="5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="32"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+<!-- 黄巾 -->
+	<Item id="sg_ar_c11_com01_head"
+        name="{=*}黄帻"
+        subtype="head_armor"
+        mesh="ar_c11_com01_head"
+        culture="Culture.huangjin_bandits"
+        weight="0.1"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c11_com02_head"
+        name="{=*}黄戴首巾"
+        subtype="head_armor"
+        mesh="ar_c11_com02_head"
+        culture="Culture.huangjin_bandits"
+        weight="0.2"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="2"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c11_s2002_head"
+        name="{=*}黄羊肚手巾"
+        subtype="head_armor"
+        mesh="ar_c11_s2002_head"
+        culture="Culture.huangjin_bandits"
+        weight="0.1"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c11_s2003_head"
+        name="{=*}黄纹饰长扎头巾"
+        subtype="head_armor"
+        mesh="ar_c11_s2003_head"
+        culture="Culture.huangjin_bandits"
+        weight="0.3"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="3"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c11_s3002_head"
+        name="{=*}黄扎头巾"
+        subtype="head_armor"
+        mesh="ar_c11_s3002_head"
+        culture="Culture.huangjin_bandits"
+        weight="0.2"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="2"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c11_s3003_head"
+        name="{=*}纹饰皮弁衬黄扎头巾"
+        subtype="head_armor"
+        mesh="ar_c11_s3003_head"
+        culture="Culture.huangjin_bandits"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="9"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c11_s4002_head"
+        name="{=*}覆皮甲叶黄扎头巾"
+        subtype="head_armor"
+        mesh="ar_c11_s4002_head"
+        culture="Culture.huangjin_bandits"
+        weight="1.2"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="15"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c11_s4003_head"
+        name="{=*}黄巾缨饰皮盔覆皮甲叶"
+        subtype="head_armor"
+        mesh="ar_c11_s4003_head"
+        culture="Culture.huangjin_bandits"
+        weight="1.5"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="18"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c11_s5001_head"
+        name="{=*}黄巾皮胄覆铁札带铁护耳"
+        subtype="head_armor"
+        mesh="ar_c11_s5001_head"
+        culture="Culture.huangjin_bandits"
+        weight="2.2"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="30"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_yol_001_4001_head"
+        name="{=*}黄巾皮胄覆铁甲叶"
+        subtype="head_armor"
+        mesh="yol_001_4001_head"
+        culture="Culture.huangjin_bandits"
+        weight="1.9"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="24"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+
+
+<!-- 幽州 -->
+	<Item id="sg_ar_c06_g001_head"
+        name="{=*}【将作】北方多瓣羽缨重盔"
+        subtype="head_armor"
+        mesh="ar_c06_g001_head"
+        culture="Culture.youzhou"
+        weight="4.4"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="75"
+           arm_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_g002_head"
+        name="{=*}【将作】羽饰铜冠"
+        subtype="head_armor"
+        mesh="ar_c06_g002_head"
+        culture="Culture.youzhou"
+        weight="2.7"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="76"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="lz_jiaozhou_01"
+        name="{=*}交州术士冠"
+        subtype="head_armor"
+        mesh="ar_c06_g002_head"
+        culture="Culture.youzhou"
+        weight="2.7"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="26"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="lz_jiaozhou_02"
+        name="{=*}交州巫师冠"
+        subtype="head_armor"
+        mesh="ar_c06_g002_head"
+        culture="Culture.youzhou"
+        weight="2.7"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="34"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_g004_head"
+        name="{=*}【将作】缨饰护颊多瓣铁胄"
+        subtype="head_armor"
+        mesh="ar_c06_g004_head"
+        culture="Culture.youzhou"
+        weight="2.7"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="75"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_g005_head"
+        name="{=*}【将作】游牧羽缨多瓣铁盔"
+        subtype="head_armor"
+        mesh="ar_c06_g005_head"
+        culture="Culture.youzhou"
+        weight="3.6"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="76"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_g005_head_a"
+        name="{=*}【将作】厚绒游牧羽缨多瓣铁盔"
+        subtype="head_armor"
+        mesh="ar_c06_g005_head_a"
+        culture="Culture.youzhou"
+        weight="3.5"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="77"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_c06_g006_head"
+        name="{=*}【将作】玉饰蓝纱委貌冠"
+        subtype="head_armor"
+        mesh="cl_c06_g006_head"
+        culture="Culture.youzhou"
+        weight="3.6"
+        difficulty="0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="23"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_c06_s3002_head"
+        name="{=*}素色戴首巾"
+        subtype="head_armor"
+        mesh="cl_c06_s3002_head"
+        culture="Culture.youzhou"
+        weight="0.2"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="2"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_c06_s1001_head"
+        name="{=*}幽州毡弁"
+        subtype="head_armor"
+        mesh="cl_c06_s1001_head"
+        culture="Culture.youzhou"
+        weight="3.5"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="33"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_s4004_head"
+        name="{=*}幽州缨饰覆铁片皮盔"
+        subtype="head_armor"
+        mesh="ar_c06_s4004_head"
+        culture="Culture.youzhou"
+        weight="2.3"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="27"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_s6002_head"
+        name="{=*}幽州缨饰覆铁片皮盔配皮护耳"
+        subtype="head_armor"
+        mesh="ar_c06_s6002_head"
+        culture="Culture.youzhou"
+        weight="2.6"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="30"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_s7001_head"
+        name="{=*}白马义从铁胄"
+        subtype="head_armor"
+        mesh="ar_c06_s7001_head"
+        culture="Culture.youzhou"
+        weight="3.1"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="38"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_s3001_head"
+        name="{=*}幽州铁额挡毡弁"
+        subtype="head_armor"
+        mesh="ar_c06_s3001_head"
+        culture="Culture.youzhou"
+        weight="3.5"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="33"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_s4001_head"
+        name="{=*}幽州铁额挡加强毡弁"
+        subtype="head_armor"
+        mesh="ar_c06_s4001_head"
+        culture="Culture.youzhou"
+        weight="3.5"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="33"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_s5001_head"
+        name="{=*}幽州铁额挡加强饰布带毡弁"
+        subtype="head_armor"
+        mesh="ar_c06_s5001_head"
+        culture="Culture.youzhou"
+        weight="3.5"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="33"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c06_s6001_head"
+        name="{=*}幽州绒饰羽缨铁札胄带皮护耳铁护喉"
+        subtype="head_armor"
+        mesh="ar_c06_s6001_head"
+        culture="Culture.youzhou"
+        weight="3.5"
+        difficulty="0" 
+        appearance="2.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="33"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="plate"
+           material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+
+<!-- 扬州 -->
+  <Item id="sg_cl_c04_s1001_head"
+        name="{=*}东吴素帻"
+        subtype="head_armor"
+        mesh="cl_c04_s1001_head"
+        culture="Culture.yangzhou"
+        weight="0.5"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="4"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s2001_head"
+        name="{=*}东吴高顶皮武弁"
+        subtype="head_armor"
+        mesh="ar_c04_s2001_head"
+        culture="Culture.yangzhou"
+        weight="0.7"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="8"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s2002_head"
+        name="{=*}缨饰游牧帽"
+        subtype="head_armor"
+        mesh="ar_c04_s2002_head"
+        culture="Culture.yangzhou"
+        weight="1.3"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="12"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s3001_head"
+        name="{=*}东吴加皮额挡高顶皮武弁"
+        subtype="head_armor"
+        mesh="ar_c04_s3001_head"
+        culture="Culture.yangzhou"
+        weight="1.1"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="14"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s3002_head"
+        name="{=*}东吴皮弁"
+        subtype="head_armor"
+        mesh="ar_c04_s3002_head"
+        culture="Culture.yangzhou"
+        weight="1.0"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="14"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s4001_head"
+        name="{=*}东吴羽饰加铁额挡高顶铁武弁1"
+        subtype="head_armor"
+        mesh="ar_c04_s4001_head"
+        culture="Culture.yangzhou"
+        weight="2.0"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="25"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s4002_head"
+        name="{=*}东吴铁额挡"
+        subtype="head_armor"
+        mesh="ar_c04_s4002_head"
+        culture="Culture.yangzhou"
+        weight="1.8"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="22"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s4003_head"
+        name="{=*}东吴皮武弁大冠"
+        subtype="head_armor"
+        mesh="ar_c04_s4003_head"
+        culture="Culture.yangzhou"
+        weight="1.0"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="15"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s5001_head"
+        name="{=*}东吴羽缨加铁额挡一体铁盔"
+        subtype="head_armor"
+        mesh="ar_c04_s5001_head"
+        culture="Culture.yangzhou"
+        weight="2.3"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="29"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s5002_head"
+        name="{=*}东吴羽饰加铁额挡高顶铁武弁2"
+        subtype="head_armor"
+        mesh="ar_c04_s5002_head"
+        culture="Culture.yangzhou"
+        weight="2.6"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="30"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s5003_head"
+        name="{=*}东吴羽饰加铁额挡高顶铜武弁带青铜护面"
+        subtype="head_armor"
+        mesh="ar_c04_s5003_head"
+        culture="Culture.yangzhou"
+        weight="3.6"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="44"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s5004_head"
+        name="{=*}东吴铁武弁大冠"
+        subtype="head_armor"
+        mesh="ar_c04_s5004_head"
+        culture="Culture.yangzhou"
+        weight="2.9"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="33"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s6001_head"
+        name="{=*}缨饰游牧帽"
+        subtype="head_armor"
+        mesh="ar_c04_s6001_head"
+        culture="Culture.yangzhou"
+        weight="1.3"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="12"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s6002_head"
+        name="{=*}东吴羽饰加铜额挡高顶铁武弁"
+        subtype="head_armor"
+        mesh="ar_c04_s6002_head"
+        culture="Culture.yangzhou"
+        weight="3.2"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="41"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s7001_head"
+        name="{=*}东吴华丽羽饰加铁额挡高顶铁武弁带铁顿项"
+        subtype="head_armor"
+        mesh="ar_c04_s7001_head"
+        culture="Culture.yangzhou"
+        weight="3.5"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="46"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c04_s7002_head"
+        name="{=*}东吴羽饰华丽加铜额挡高顶铜武弁"
+        subtype="head_armor"
+        mesh="ar_c04_s7002_head"
+        culture="Culture.yangzhou"
+        weight="2.9"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="42"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+
+
+
+
+
+
+<!-- 益州 -->
+    <Item id="sg_cl_c03_s1001_head"
+        name="{=*}汉斗笠"
+        subtype="head_armor"
+        mesh="cl_c03_s1001_head"
+        culture="Culture.yizhou"
+        weight="0.2"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="12"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s4001_head"
+        name="{=*}季汉高顶毡弁"
+        subtype="head_armor"
+        mesh="ar_c03_s4001_head"
+        culture="Culture.yizhou"
+        weight="0.3"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="17"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s6001_head"
+        name="{=*}季汉毡弁"
+        subtype="head_armor"
+        mesh="ar_c03_s6001_head"
+        culture="Culture.yizhou"
+        weight="0.4"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="26"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s5003_head"
+        name="{=*}季汉羽饰高顶毡弁"
+        subtype="head_armor"
+        mesh="ar_c03_s5003_head"
+        culture="Culture.yizhou"
+        weight="0.4"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="21"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s5004_head"
+        name="{=*}缨饰铁札胄"
+        subtype="head_armor"
+        mesh="ar_c03_s5004_head"
+        culture="Culture.yizhou"
+        weight="3.0"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="31"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s6002_head"
+        name="{=*}季汉羽饰毡弁"
+        subtype="head_armor"
+        mesh="ar_c03_s6002_head"
+        culture="Culture.yizhou"
+        weight="1.5"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="22"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s7002_head"
+        name="{=*}季汉羽饰毡弁带铁札额挡"
+        subtype="head_armor"
+        mesh="ar_c03_s7002_head"
+        culture="Culture.yizhou"
+        weight="2.2"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="36"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s8001_head"
+        name="{=*}季汉蛮族覆铁头巾"
+        subtype="head_armor"
+        mesh="ar_c03_s8001_head"
+        culture="Culture.yizhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="17"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s7001_head"
+        name="{=*}季汉白毦锐士铜护面铁札胄"
+        subtype="head_armor"
+        mesh="ar_c03_s7001_head"
+        culture="Culture.yizhou"
+        weight="3.3"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="30"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s7001_head_a"
+        name="{=*}季汉铜护面铁札胄"
+        subtype="head_armor"
+        mesh="ar_c03_s7001_head_a"
+        culture="Culture.yizhou"
+        weight="4.2"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="41"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c03_s7001_head_b"
+        name="{=*}季汉铜护面"
+        subtype="head_armor"
+        mesh="ar_c03_s7001_head_b"
+        culture="Culture.yizhou"
+        weight="1.6"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="26"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+
+<!-- 荆州 -->
+    <Item id="sg_cl_c08_s1001_head"
+        name="{=*}荆州素戴首巾"
+        subtype="head_armor"
+        mesh="cl_c08_s1001_head"
+        culture="Culture.jingzhou"
+        weight="0.1"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="1"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_cl_c08_s3002_head"
+        name="{=*}荆州素戴头巾"
+        subtype="head_armor"
+        mesh="cl_c08_s3002_head"
+        culture="Culture.jingzhou"
+        weight="0.1"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="1"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="false"/>
+	  </Item>
+    <Item id="sg_ar_c08_s4002_head"
+        name="{=*}荆州皮平巾帻配头巾"
+        subtype="head_armor"
+        mesh="ar_c08_s4002_head"
+        culture="Culture.jingzhou"
+        weight="0.6"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="11"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s4003_head"
+        name="{=*}荆州羽饰皮平巾帻"
+        subtype="head_armor"
+        mesh="ar_c08_s4003_head"
+        culture="Culture.jingzhou"
+        weight="0.6"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="11"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s5001_head"
+        name="{=*}荆州羽缨铁札额挡皮札胄"
+        subtype="head_armor"
+        mesh="ar_c08_s5001_head"
+        culture="Culture.jingzhou"
+        weight="1.9"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="30"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s5002_head"
+        name="{=*}荆州铁札额挡皮札胄"
+        subtype="head_armor"
+        mesh="ar_c08_s5002_head"
+        culture="Culture.jingzhou"
+        weight="1.9"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="30"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s5003_head"
+        name="{=*}荆州铁札额挡"
+        subtype="head_armor"
+        mesh="ar_c08_s5003_head"
+        culture="Culture.jingzhou"
+        weight="2.3"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="35"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s5004_head"
+        name="{=*}荆州羽饰皮平巾帻配头巾"
+        subtype="head_armor"
+        mesh="ar_c08_s5004_head"
+        culture="Culture.jingzhou"
+        weight="0.6"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="11"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s5005_head"
+        name="{=*}荆州羽饰皮额挡"
+        subtype="head_armor"
+        mesh="ar_c08_s5005_head"
+        culture="Culture.jingzhou"
+        weight="1.8"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="28"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s6001_head"
+        name="{=*}荆州衬虎皮铁札额挡"
+        subtype="head_armor"
+        mesh="ar_c08_s6001_head"
+        culture="Culture.jingzhou"
+        weight="2.7"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="39"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s6002_head"
+        name="{=*}荆州羽饰铁札额挡"
+        subtype="head_armor"
+        mesh="ar_c08_s6002_head"
+        culture="Culture.jingzhou"
+        weight="2.4"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="37"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s7001_head"
+        name="{=*}荆州羽缨铁札额挡"
+        subtype="head_armor"
+        mesh="ar_c08_s7001_head"
+        culture="Culture.jingzhou"
+        weight="3.6"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="43"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_s7002_head"
+        name="{=*}荆州羽饰强化铁札胄"
+        subtype="head_armor"
+        mesh="ar_c08_s7002_head"
+        culture="Culture.jingzhou"
+        weight="3.6"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="42"
+            has_gender_variations="false"
+            hair_cover_type="type2"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+    <Item id="sg_ar_c08_004_head"
+          name="{=*}【将作】羽缨金饰铁兜鍪"
+          subtype="head_armor"
+          mesh="ar_c08_004_c08_head"
+          culture="Culture.jingzhou"
+          weight="3.9"
+          difficulty="0" 
+          is_merchandise="false"
+          appearance="6"
+          Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="78"
+            has_gender_variations="false"
+            hair_cover_type="all"
+            modifier_group="plate"
+            material_type="Plate" />
+      </ItemComponent>
+      <Flags UseTeamColor="true" 
+                Civilian="true" />
+    </Item>
+<!-- 豫州 -->
+  <Item id="sg_cl_c07_s1001_head"
+        name="{=*}豫州素帻"
+        subtype="head_armor"
+        mesh="cl_c07_s1001_head"
+        culture="Culture.yuzhou"
+        weight="0.17"
+        difficulty="0" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s3001_head"
+        name="{=*}豫州皮弁"
+        subtype="head_armor"
+        mesh="ar_c07_s3001_head"
+        culture="Culture.yuzhou"
+        weight="0.8"
+        difficulty="0" 
+        appearance="10" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s4001_head"
+        name="{=*}豫州羽缨皮护耳四瓣盔"
+        subtype="head_armor"
+        mesh="ar_c07_s4001_head"
+        culture="Culture.yuzhou"
+        weight="1.7"
+        difficulty="0" 
+        appearance="25" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="23"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s4002_head"
+        name="{=*}豫州缨饰皮护耳四瓣盔"
+        subtype="head_armor"
+        mesh="ar_c07_s4002_head"
+        culture="Culture.yuzhou"
+        weight="1.8"
+        difficulty="0" 
+        appearance="25" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="23"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s4003_head"
+        name="{=*}豫州羽饰素帻皮弁"
+        subtype="head_armor"
+        mesh="ar_c07_s4003_head"
+        culture="Culture.yuzhou"
+        weight="1.1"
+        difficulty="0" 
+        appearance="16" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="15"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s5001_head"
+        name="{=*}豫州羽缨皮护耳铜饰四瓣盔"
+        subtype="head_armor"
+        mesh="ar_c07_s5001_head"
+        culture="Culture.yuzhou"
+        weight="2.4"
+        difficulty="0" 
+        appearance="32" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="28"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s5002_head"
+        name="{=*}豫州羽饰缨铁护耳铜饰四瓣盔"
+        subtype="head_armor"
+        mesh="ar_c07_s5002_head"
+        culture="Culture.yuzhou"
+        weight="2.6"
+        difficulty="0" 
+        appearance="35" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="30"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s5003_head"
+        name="{=*}豫州羽饰皮护耳铜饰四瓣盔"
+        subtype="head_armor"
+        mesh="ar_c07_s5003_head"
+        culture="Culture.yuzhou"
+        weight="2.2"
+        difficulty="0" 
+        appearance="32" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="28"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s6001_head"
+        name="{=*}豫州双羽饰缨铁护耳华丽四瓣盔"
+        subtype="head_armor"
+        mesh="ar_c07_s6001_head"
+        culture="Culture.yuzhou"
+        weight="2.7"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="36"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c07_s7001_head"
+        name="{=*}豫州多羽饰缨铁护耳华丽四瓣盔"
+        subtype="head_armor"
+        mesh="ar_c07_s7001_head"
+        culture="Culture.yuzhou"
+        weight="3.2"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="41"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+
+
+<!-- 汉 -->
+  <Item id="sg_wangyuedizi_002_head"
+        name="{=*}精致斗笠"
+        subtype="head_armor"
+        mesh="cl_c03_s1001_head"
+        culture="Culture.yizhou"
+        weight="0.2"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="26"
+           hair_cover_type="none"
+           has_gender_variations="false"
+            modifier_group="leather"
+            material_type="Leather" />
+      </ItemComponent>
+	    <Flags UseTeamColor="true" 
+                Civilian="true" />
+	  </Item>
+  <Item id="sg_cl_c10_s2001_head"
+        name="{=*}汉皮弁"
+        subtype="head_armor"
+        mesh="cl_c10_s2001_head"
+        culture="Culture.sili"
+        weight="0.8"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="14"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_c10_s4004_head"
+        name="{=*}羽饰汉皮弁"
+        subtype="head_armor"
+        mesh="cl_c10_s4004_head"
+        culture="Culture.sili"
+        weight="0.8"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="14"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c10_s5002_head"
+        name="{=*}汉缨饰高顶铁札胄"
+        subtype="head_armor"
+        mesh="ar_c10_s5002_head"
+        culture="Culture.sili"
+        weight="2.3"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="39"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c10_s5006_head"
+        name="{=*}羽缨细札铁胄"
+        subtype="head_armor"
+        mesh="ar_c10_s5006_head"
+        culture="Culture.sili"
+        weight="3.2"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="41"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c10_s6002_head"
+        name="{=*}羽缨细札铁胄"
+        subtype="head_armor"
+        mesh="ar_c10_s6002_head"
+        culture="Culture.sili"
+        weight="2.4"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="41"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_ar_c10_s6005_head"
+        name="{=*}缨饰细札铁胄"
+        subtype="head_armor"
+        mesh="ar_c10_s6005_head"
+        culture="Culture.sili"
+        weight="2.4"
+        difficulty="0" 
+        appearance="2" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="41"
+           has_gender_variations="false"
+           hair_cover_type="type2"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+    <Item id="sg_S_SOL002_1002_toukui"
+          name="{=*}翎式玄铁环锁盔"
+          subtype="head_armor"
+          mesh="S_SOL002_1002_toukui"
+          weight="0.5"  
+          difficulty="1" 
+          culture="Culture.sili"
+          appearance="4" 
+          Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="10"
+            has_gender_variations="false"
+            hair_cover_type="type1"
+            modifier_group="cloth_unarmoured"
+            material_type="Cloth" />
+      </ItemComponent>
+      <Flags UseTeamColor="true" 
+                  Civilian="true" />
+    </Item>
+
+    <Item id="sg_S_SOL002_1002_toukui01"
+          name="{=*}玄铁环锁盔"
+          subtype="head_armor"
+          mesh="S_SOL002_1002_toukui01"
+          weight="0.5"  
+          difficulty="1" 
+          culture="Culture.sili"
+          appearance="4" 
+          Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="10"
+            has_gender_variations="false"
+            hair_cover_type="type1"
+            modifier_group="cloth_unarmoured"
+            material_type="Cloth" />
+      </ItemComponent>
+      <Flags UseTeamColor="true" 
+                  Civilian="true" />
+    </Item>
+
+<!-- 通用 -->
+	<Item id="sg_npc_barber_head"
+        name="{=*}深色花纹戴首巾"
+        subtype="head_armor"
+        mesh="cl_sg_npc_barber_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_cityresident_head"
+        name="{=*}深色戴首巾"
+        subtype="head_armor"
+        mesh="sg_npc_cityresident_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="3"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_merchant_head"
+        name="{=*}镶钉皮发带"
+        subtype="head_armor"
+        mesh="sg_npc_merchant_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="2"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_guard_head"
+        name="{=*}平民斗笠"
+        subtype="head_armor"
+        mesh="sg_npc_guard_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_bartender_head"
+        name="{=*}素色帕头"
+        subtype="head_armor"
+        mesh="sg_npc_bartender_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="5"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_clerk_head"
+        name="{=*}素色戴首巾"
+        subtype="head_armor"
+        mesh="sg_npc_clerk_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="7"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_booksellers_head"
+        name="{=*}深色幅巾"
+        subtype="head_armor"
+        mesh="sg_npc_booksellers_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="5"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_gladiator_head"
+        name="{=*}赤色戴首巾"
+        subtype="head_armor"
+        mesh="cl_sg_npc_gladiator_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="4"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_wenguan_head"
+        name="{=*}文官"
+        subtype="head_armor"
+        mesh="sg_npc_wenguan_head"
+        weight="0.1"
+        difficulty="1" 
+        is_merchandise="false"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_wuguan_head"
+        name="{=*}武官"
+        subtype="head_armor"
+        mesh="sg_npc_wuguan_head"
+        weight="0.1"
+        is_merchandise="false"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_peddler_head"
+        name="{=*}商贩"
+        subtype="head_armor"
+        mesh="cl_sg_npc_peddler_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="5"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_S_SOL00001_Tk"
+        name="{=*}帽子"
+        subtype="head_armor"
+        mesh="S_SOL00001_Tk"
+        weight="0.1"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_wenguanmaozi_head"
+        name="{=*}文官帽子"
+        subtype="head_armor"
+        mesh="npc_wenguanmaozi_head"
+        weight="0.5"
+        difficulty="1" 
+        is_merchandise="false"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_wenguanmaozi_head_a"
+        name="{=*}文官帽子"
+        subtype="head_armor"
+        mesh="npc_wenguanmaozi_head_a"
+        weight="0.5"
+        difficulty="1" 
+        is_merchandise="false"
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_npc_guan_head"
+        name="{=*}束发紫金冠"
+        subtype="npc_guan_head"
+        mesh="npc_guan_head"
+        weight="0.5"
+        difficulty="250" 
+        is_merchandise="false"
+        appearance="6"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="99"
+           has_gender_variations="false"
+           hair_cover_type="All"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_com_head_0001"
+        name="{=*}骁勇帽"
+        subtype="head_armor"
+        mesh="cl_com_head_0001"
+        weight="0.5"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_com_head_0002"
+        name="{=*}棘纹隐踪笠"
+        subtype="head_armor"
+        mesh="cl_com_head_0002"
+        weight="0.5"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor"> 
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"  
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item> 
+  <Item id="sg_cl_com_head_0003"
+        name="{=*}赤纹紫曜冠"
+        subtype="head_armor"
+        mesh="cl_com_head_0003"
+        weight="0.5"
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_com_head_0004"
+        name="{=*}玄金夔纹冠"
+        subtype="head_armor"
+        mesh="cl_com_head_0004"
+        weight="0.5"  
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_com_head_0005"
+        name="{=*}赤绦玄玉冠"
+        subtype="head_armor"
+        mesh="cl_com_head_0005"
+        weight="0.5"  
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"  
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item> 
+  <Item id="sg_cl_com_head_0006"
+        name="{=*}暗纹流苏冠"
+        subtype="head_armor"
+        mesh="cl_com_head_0006"
+        weight="0.5"  
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_cl_com_head_0007"
+        name="{=*}赤纹虎威冠"
+        subtype="head_armor"
+        mesh="cl_com_head_0007"
+        weight="0.5"  
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item
+		id="sg_desert_cap"
+		name="缠裹帽"
+		mesh="aserai_helmet_m"
+		weight="0.4"
+		appearance="1"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor
+				head_armor="6"
+				has_gender_variations="false"
+				hair_cover_type="type1"
+				beard_cover_type="none"
+				modifier_group="cloth_unarmoured"
+				material_type="Cloth" />
+		</ItemComponent>
+		<Flags
+			Civilian="true"
+			UseTeamColor="true" />
+	</Item>
+<!-- 匈奴-鲜卑 -->
+  <Item id="sg_s_t1021_tk"
+        name="{=*}玄铁攒尖盔"
+        subtype="head_armor"
+        mesh="s_t1021_tk"
+        weight="1.35"  
+        difficulty="1" 
+        appearance="3" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="28"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+             modifier_group="chain" 
+             material_type="Chainmail" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_yol002_tk005"
+        name="{=*}赤鬃玄甲盔"
+        subtype="head_armor"
+        mesh="sg_yol002_tk005"
+        weight="1.65"  
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="41"
+            body_armor="8"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="plate" 
+          material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_s_blw_6"
+        name="{=*}胡风玄铁盔"
+        subtype="head_armor"
+        mesh="s_blw_6"
+        weight="1.45"  
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="34"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="plate" 
+          material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_s_blw_2"
+        name="{=*}苍狼首胄"
+        subtype="head_armor"
+        mesh="s_blw_2"
+        weight="1.5"  
+        difficulty="1" 
+        appearance="1" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="38"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="plate" 
+          material_type="Plate" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_xnxb_425_ht_max2014_tk"
+        name="{=*}胡风锥顶毡帽"
+        subtype="head_armor"
+        mesh="xnxb_425_ht_max2014_tk"
+        weight="0.4"  
+        difficulty="1" 
+        culture="Culture.beifangshizu_bandits"
+        appearance="4" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="11"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="sg_yol002_102_toukui_01"
+          name="{=*}鲜卑狐裘风帽"
+          subtype="head_armor"
+          mesh="yol002_102_toukui_01"
+          weight="0.5"  
+          difficulty="1" 
+          culture="Culture.beifangshizu_bandits"
+          appearance="4" 
+          Type="HeadArmor">
+      <ItemComponent>
+      <Armor head_armor="10"
+            has_gender_variations="false"
+            hair_cover_type="type1"
+            modifier_group="cloth_unarmoured"
+            material_type="Cloth" />
+      </ItemComponent>
+      <Flags UseTeamColor="true" 
+                  Civilian="true" />
+    </Item>
+
+
+
+
+
+</Items>

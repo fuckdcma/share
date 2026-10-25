@@ -1,0 +1,1245 @@
+<prefabs>
+	<game_entity name="ballista_a_spawnerfireShip" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="prefab_cannot_be_broken" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipFireBallistaSpawner">
+				<variables>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="DirectionRestrictionDegree" value="90.000"/>
+					<variable name="ToBeSpawnedOverrideName" value=""/>
+					<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="ballista_a_spawnerShip" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="prefab_cannot_be_broken" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipBallistaSpawner">
+				<variables>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="DirectionRestrictionDegree" value="90.000"/>
+					<variable name="ToBeSpawnedOverrideName" value=""/>
+					<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="ballista_b_spawnerfireShip" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="prefab_cannot_be_broken" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipFireBallistaSpawner">
+				<variables>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="DirectionRestrictionDegree" value="90.000"/>
+					<variable name="ToBeSpawnedOverrideName" value=""/>
+					<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="ballista_b_spawnerShip" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="prefab_cannot_be_broken" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="ShipBallistaSpawner">
+				<variables>
+					<variable name="AddOnDeployTag" value=""/>
+					<variable name="RemoveOnDeployTag" value=""/>
+					<variable name="DirectionRestrictionDegree" value="90.000"/>
+					<variable name="ToBeSpawnedOverrideName" value=""/>
+					<variable name="ToBeSpawnedOverrideNameForFireVersion" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="sp_wood_workshop" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="npc_wait"/>
+			<tag name="merchant_carpenter"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_wood_workshop_idle_part_01"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value="wood_load"/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="60.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_fishnet_repairer" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="disable_at_night"/>
+			<tag name="shipyard_worker"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_fishnet_repairer_idle"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_sitting_sharpening" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="sp_sharpening_knife" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="disable_at_night"/>
+					<tag name="shipyard_worker"/>
+				</tags>
+				<transform position="-4.489, -1.945, -0.441"/>
+				<components>
+					<meta_mesh_component name="animation_stand_cage_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_fishnet_sharpening_knife_idle"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value="stick"/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value="knife"/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_chair_c_unsittable" old_prefab_name="">
+				<transform position="-4.475, -2.218, -0.477" rotation_euler="0.000, 0.000, -1.610" scale="0.800, 0.800, 1.000"/>
+				<physics shape="bo_bd_chair_c" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_chair_c"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_arms_on_fence_idle" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="npc_wait"/>
+			<tag name="npc_common"/>
+			<tag name="disable_at_night"/>
+			<tag name="shipyard_worker"/>
+			<tag name="market_worker"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_villager_arms_on_fence_idle"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="60.000"/>
+							<variable name="MaxWaitInSeconds" value="250.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_filling_cart" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="sp_filling_cart" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="disable_at_night"/>
+					<tag name="market_worker"/>
+				</tags>
+				<transform position="-0.255, -1.032, -0.006"/>
+				<components>
+					<meta_mesh_component name="animation_stand_cage_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_filling_cart_loop"/>
+									<variable name="PairLoopStartAction" value="act_talk_to_1"/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value="carrot"/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_basket_a" old_prefab_name="">
+				<transform position="0.507, -0.622, -0.006" rotation_euler="0.000, 0.000, -1.109" scale="0.800, 0.800, 0.650"/>
+				<physics shape="bo_bd_basket_a" override_material="straw"/>
+				<components>
+					<meta_mesh_component name="bd_basket_a"/>
+				</components>
+				<children>
+					<game_entity name="foods_carrots_b" old_prefab_name="">
+						<transform position="-0.110, 0.098, 0.143" rotation_euler="0.000, 0.000, 1.109" scale="1.000, 1.000, 1.231"/>
+						<components>
+							<meta_mesh_component name="foods_carrots_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_carrots_b" old_prefab_name="">
+						<transform position="0.029, 0.076, 0.205" non_orthogonal_rotation_mat="0.322018, 0.933148, -0.159807, -0.833473, 0.337117, 0.437806, 0.325642, -0.005483, 0.945477" scale="1.004, 1.034, 1.198"/>
+						<components>
+							<meta_mesh_component name="foods_carrots_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_carrots_b" old_prefab_name="">
+						<transform position="0.174, -0.013, 0.143" rotation_euler="0.000, 0.000, 2.122" scale="1.000, 1.000, 1.231"/>
+						<components>
+							<meta_mesh_component name="foods_carrots_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="foods_carrots_b" old_prefab_name="">
+						<transform position="-0.076, -0.082, 0.143" rotation_euler="0.000, 0.000, 2.981" scale="1.000, 1.000, 1.231"/>
+						<components>
+							<meta_mesh_component name="foods_carrots_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="foods_carrots_basket" old_prefab_name="">
+				<transform position="-0.190, -0.364, -0.006" rotation_euler="0.000, 0.000, 0.281" scale="0.700, 0.700, 0.700"/>
+				<physics shape="bo_foods_carrots_basket"/>
+				<components>
+					<meta_mesh_component name="foods_carrots_basket"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="">
+				<transform position="-0.772, -0.500, -0.025" rotation_euler="0.000, 0.000, 0.000" scale="0.700, 0.700, 0.610"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+				<children>
+					<game_entity name="market_apple_crate" old_prefab_name="">
+						<transform position="-0.008, 0.128, 1.155" rotation_euler="0.000, 0.000, -0.660" scale="1.000, 1.000, 1.148"/>
+						<physics shape="bo_market_apple_crate"/>
+						<components>
+							<meta_mesh_component name="market_apple_crate"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="sp_npc_wait" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="npc_wait"/>
+					<tag name="npc_common"/>
+				</tags>
+				<transform position="0.308, 1.009, -0.006" rotation_euler="0.000, 0.000, 2.932"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_stand_1"/>
+									<variable name="PairLoopStartAction" value="act_listen_1"/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_shipyard_worker" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="disable_at_night"/>
+			<tag name="static_npc"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_shipyard_worker_idle"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_sitting_on_dock" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="disable_at_night"/>
+			<tag name="static_npc"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="0.000, 0.172, -0.017"/>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_villager_sitting_on_dock"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="60.000"/>
+							<variable name="MaxWaitInSeconds" value="250.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_sitting_on_beach" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="npc_common"/>
+			<tag name="disable_at_night"/>
+			<tag name="shipyard_worker"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value="act_villager_sitting_on_beach_arrive"/>
+							<variable name="LoopStartAction" value="act_villager_sitting_on_beach_idle"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_villager_sitting_on_beach_leave"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_sawing" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="npc_common_limited"/>
+			<tag name="npc_wait"/>
+			<tag name="npc_common"/>
+			<tag name="disable_at_night"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_villager_sawing"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value="woodcutter"/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="60.000"/>
+							<variable name="MaxWaitInSeconds" value="250.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_woodcutter" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="sp_villager_sawing" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="disable_at_night"/>
+					<tag name="shipyard_worker"/>
+				</tags>
+				<transform position="-0.113, -0.695, -0.441"/>
+				<components>
+					<meta_mesh_component name="animation_stand_cage_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value=""/>
+									<variable name="LoopStartAction" value="act_villager_sawing"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value="woodcutter_a"/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="60.000"/>
+									<variable name="MaxWaitInSeconds" value="250.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="1.140, 0.114, -0.520" rotation_euler="0.388, -0.035, -0.041" scale="0.800, 0.800, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="-1.453, 0.067, -0.482" rotation_euler="-0.239, -0.153, -0.089" scale="0.700, 0.700, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="-1.225, 0.284, -0.513" rotation_euler="0.568, -0.177, 0.044" scale="0.700, 0.700, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_a" old_prefab_name="">
+				<transform position="1.320, -0.126, -0.603" rotation_euler="-0.461, 0.126, 0.000" scale="0.800, 0.800, 1.000"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_a"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_a"/>
+				</components>
+			</game_entity>
+			<game_entity name="battania_castle_keep_wood_stake_e" old_prefab_name="">
+				<transform position="-0.113, 0.035, 0.257" rotation_euler="0.000, 0.000, 0.000" scale="2.000, 1.800, 1.800"/>
+				<physics shape="bo_battania_castle_keep_wood_stake_e"/>
+				<components>
+					<meta_mesh_component name="battania_castle_keep_wood_stake_e"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_washing_floor" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="disable_at_night"/>
+			<tag name="static_npc"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_villager_washing_floor"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value="bucket_empty"/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_shipyard_repair" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="disable_at_night"/>
+			<tag name="shipyard_worker"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value="act_shipyard_worker_repair_arrive"/>
+							<variable name="LoopStartAction" value="act_shipyard_worker_repair_loop"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_shipyard_worker_repair_leave"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value="hammer_metal"/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="60.000"/>
+							<variable name="MaxWaitInSeconds" value="250.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_villager_shipyard_repair_02" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="villager_repairman" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="disable_at_night"/>
+					<tag name="shipyard_worker"/>
+				</tags>
+				<transform position="1.269, -0.377, -0.021"/>
+				<components>
+					<meta_mesh_component name="animation_stand_cage_blue"/>
+				</components>
+				<scripts>
+					<script name="UsablePlace">
+						<variables>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="animation_point" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="record_to_scene_replay" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<scripts>
+							<script name="AnimationPoint">
+								<variables>
+									<variable name="ArriveAction" value="act_shipyard_worker_repair_loop_2_arrive"/>
+									<variable name="LoopStartAction" value="act_shipyard_worker_repair_loop_2"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value=""/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value="hammer_metal"/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="60.000"/>
+									<variable name="MaxWaitInSeconds" value="250.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_barrel_b" old_prefab_name="">
+				<transform position="0.301, 0.083, 0.369" rotation_euler="0.000, 1.571, -2.263"/>
+				<physics shape="bo_bd_barrel_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_b" old_prefab_name="">
+				<transform position="-0.823, 0.191, -0.021"/>
+				<physics shape="bo_bd_barrel_b" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_b"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_barrel_a" old_prefab_name="">
+				<transform position="-1.161, -0.751, -0.021"/>
+				<physics shape="bo_bd_barrel_a" override_material="wood"/>
+				<components>
+					<meta_mesh_component name="bd_barrel_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_wood_workshop_b" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="npc_wait"/>
+			<tag name="npc_common"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_cage_blue"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value="act_wood_workshop_idle_part_02"/>
+							<variable name="LoopStartAction" value="act_wood_workshop_idle_part_02"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value="blacksmith_hammer"/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="60.000"/>
+							<variable name="MaxWaitInSeconds" value="220.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_npc_wait_limited" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="npc_common_limited"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="arrow_new_icon"/>
+		</components>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="animation_point" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<scripts>
+					<script name="AnimationPoint">
+						<variables>
+							<variable name="ArriveAction" value=""/>
+							<variable name="LoopStartAction" value="act_stand_1"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value=""/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="30.000"/>
+							<variable name="MaxWaitInSeconds" value="75.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="_useOwnPositionInsteadOfWorldPosition" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

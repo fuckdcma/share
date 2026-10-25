@@ -1,0 +1,50 @@
+<Brushes>
+  <Brush Name="Duel.Character.Button">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="StdAssets\Popup\canvas_dark" Color="#FFFFFFFF" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1.0" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.5" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.5" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="Duel.Character.Button.Enemy">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="StdAssets\Popup\canvas_dark" Color="#FFA0A0FF" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" ColorFactor="1.0" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" ColorFactor="1.5" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" ColorFactor="0.85" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" ColorFactor="0.5" />
+      </Style>
+    </Styles>
+  </Brush>
+  <Brush Name="Duel.State.RemainingTime.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#E8E8E8FF" TextGlowColor="#000000FF" TextOutlineColor="#000000FF" TextOutlineAmount="0.2" TextGlowRadius="0" TextBlur="0" FontSize="30" />
+    </Styles>
+  </Brush>
+  <Brush Name="Duel.State.Score.Text" Font="FiraSansExtraCondensed-Regular">
+    <Styles>
+      <Style Name="Default" FontColor="#E8E8E8FF" TextGlowColor="#000000FF" TextOutlineColor="#000000FF" TextOutlineAmount="0.2" TextGlowRadius="0" TextBlur="0" FontSize="24" />
+    </Styles>
+  </Brush>
+</Brushes>

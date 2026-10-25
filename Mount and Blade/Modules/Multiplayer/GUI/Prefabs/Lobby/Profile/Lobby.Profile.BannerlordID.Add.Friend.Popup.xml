@@ -1,0 +1,60 @@
+<Prefab>
+	<Window>
+
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare" Color="#000000FF" AlphaFactor="0.9">
+      <Children>
+				<NavigationForcedScopeCollectionTargeter CollectionID="AddFriendPopupCollection" CollectionParent="..\." />
+
+				<NavigationScopeTargeter ScopeID="AddFriendPopupScope" ScopeParent="..\PopupParent" ScopeMovements="Vertical" />
+    		<BrushWidget Id="PopupParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="550" MarginRight="550" MarginTop="350" MarginBottom="450" Brush="MPLobby.Profile.BannerlordID.AddFriend.Popup.Frame" IsVisible="@IsSelected">
+          <Children>
+            
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15" MarginLeft="15" MarginRight="15">
+              <Children>
+
+                <!--Title and Close Button-->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="25" VerticalAlignment="Top" StackLayout.LayoutMethod="HorizontalLeftToRight" >
+                  <Children>
+                    <!--Title-->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Text="@TitleText" />
+                    
+                    <!--Close Button-->
+                    <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="22" HorizontalAlignment="Right" Command.Click="ExecuteClosePopup">
+                      <Children>
+                        <!--Icon-->
+                        <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.CustomServer.CloseButton" />
+                        <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-40" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                      </Children>
+                    </ButtonWidget>
+
+                  </Children>
+                </ListPanel>
+
+                <!--Text Input-->
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" MarginRight="35" MarginLeft="35" MarginTop="60" Sprite="BlankWhiteSquare_9" Color="#382921FF">
+                  <Children>
+                    <EditableTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="5" MarginTop="5" Brush="MP.ChatLog.Text" Brush.TextVerticalAlignment="Top" Text="@BannerlordIDInputText" GamepadNavigationIndex="0"/>
+                  </Children>
+                </Widget>
+
+                <!--Error Text-->
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="120" Brush="MPLobby.Profile.Popup.Error.Text" Text="@ErrorText" />
+
+              </Children>
+            </Widget>
+
+            <!--Send Button-->
+            <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginBottom="10" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="WideButton.Flat" Command.Click="ExecuteTryAddFriend" GamepadNavigationIndex="1">
+              <Children>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.BannerlordID.AddFriend.Text" Brush.TextVerticalAlignment="Center" Text="@AddText" />
+                <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </BrushWidget>
+
+      </Children>
+    </Widget>
+	</Window>
+</Prefab>

@@ -1,0 +1,100 @@
+<Prefab>
+  <Constants>
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.7">
+      <Children>
+
+				<NavigationForcedScopeCollectionTargeter CollectionID="LobbyRecentGamesScope" CollectionParent="..\." />
+				
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1030" HorizontalAlignment="Center" Sprite="flat_panel_9" >
+          <Children>
+            <!-- Title  -->
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="20" Brush="MPLobby.PlayerProfile.Title.Text" Text="@RecentGamesText" />
+
+            <!-- Separator -->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="70" MarginRight="70" MarginTop="75" StackLayout.LayoutMethod="HorizontalLeftToRight">
+              <Children>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="13" HorizontalAlignment="Center" PositionXOffset="-1" Sprite="scoreboard_top_divider_9" Color="#A18661FF"/>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="13" HorizontalAlignment="Center" PositionXOffset="-1" Sprite="scoreboard_top_divider_9" Color="#A18661FF" HorizontalFlip="true"/>
+              </Children>
+            </ListPanel>
+            
+            
+            <Widget Id="RecentGames" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" MarginLeft="50" MarginRight="50" MarginBottom="75" IsVisible="@GotItems">
+              <Children>
+								
+                <ScrollablePanel Id="ScrollablePanel" WidthSizePolicy="Fixed" HeightSizePolicy ="StretchToParent" SuggestedWidth="850" InnerPanel="MyClipRect\InnerPanel" ClipRect="MyClipRect" MarginTop="100" MarginBottom="40" HorizontalAlignment="Center" VerticalAlignment="Top" VerticalScrollbar="..\ScrollbarContainer\Scrollbar" AutoHideScrollBars="true" >
+                  <Children>
+										<NavigationScopeTargeter ScopeID="LobbyRecentGamesTeamScope" ScopeParent="..\MyClipRect" ScopeMovements="Vertical" />
+                    <Widget Id="MyClipRect" WidthSizePolicy = "StretchToParent" HeightSizePolicy = "StretchToParent" HorizontalAlignment="Center" ClipContents="true" AlphaFactor="0.75" >
+                      <Children>
+                        <NavigatableListPanel Id="InnerPanel" DataSource="{Games}" StackLayout.LayoutMethod="VerticalTopToBottom" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" >
+                          <ItemTemplate>
+                            <Lobby.Profile.RecentGames.Game MarginBottom="6" MarginTop="6" />
+                          </ItemTemplate>
+                        </NavigatableListPanel>
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <Widget Id="ScrollbarContainer" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginTop="100" MarginBottom="40" MarginRight="13">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="friends_list_slider_bed_9" AlphaFactor="0.2" />
+                    <ScrollbarWidget Id="Scrollbar" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"  AlignmentAxis="Vertical" Handle="ScrollbarHandle" MaxValue="100" MinValue="0" UpdateChildrenStates="true">
+                      <Children>
+                        <ImageWidget Id="ScrollbarHandle" WidthSizePolicy="Fixed" SuggestedWidth="4" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="MPLobby.FriendsPanel.ScrollHandle" MinHeight="50" />
+                      </Children>
+                    </ScrollbarWidget>
+                  </Children>
+                </Widget>
+
+              </Children>
+            </Widget>
+
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" IsHidden="@GotItems">
+              <Children>
+                <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="-10" MarginTop="50" Brush="MPLobby.Armory.SelectionTitle" ClipContents="false" Text="@NoRecentGamesFoundText" />
+              </Children>
+            </Widget>
+
+            <!-- Close Popup Button -->
+						<NavigationScopeTargeter ScopeID="LobbyRecentGamesCloseButtonScope" ScopeParent="..\CloseButton" />
+            <ButtonWidget Id="CloseButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="25" Brush="WideButton.Flat" Command.Click="ExecuteClosePopup" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" GamepadNavigationIndex="0" >
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="MPLobby.PlayButton.Text" Brush.FontSize="28" Brush.TextVerticalAlignment="Center" Text="@CloseText" />
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </Widget>
+
+        <!--Player Actions Context Menu-->
+        <ContextMenuBrushWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsActivated="@IsPlayerActionsActive" IsVisible="false" ActionListPanel="ActionListPanel" Brush="Scoreboard.ContextMenu.Background" UpdateChildrenStates="true">
+          <Children>
+            <ListPanel Id="ActionListPanel" DataSource="{PlayerActions}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" UpdateChildrenStates="true">
+              <ItemTemplate>
+                <ContextMenuItemWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="35" TypeIconWidget="TypeIconWidget" ActionButtonWidget="ButtonDimensionsSyncWidget\ActionButtonWidget" TypeIconState="@Value" CanBeUsed="@IsEnabled">
+                  <Children>
+                    <BrushWidget Id="TypeIconWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="23" SuggestedHeight="23" Brush="Scoreboard.ContextMenu.Icon" VerticalAlignment="Center" MarginLeft="2"/>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Text="@Definition" Brush="Scoreboard.ContextMenu.ItemText" VerticalAlignment="Center" MarginLeft="30" MarginRight="10" />
+                    <DimensionSyncWidget Id="ButtonDimensionsSyncWidget" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" DimensionToSync="Horizontal" WidgetToCopyHeightFrom="..\..\..\ActionListPanel" UpdateChildrenStates="true">
+                      <Children>
+                        <HintWidget DoNotAcceptEvents="@IsEnabled" DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                        <ButtonWidget CanAcceptEvents="@IsEnabled" Id="ActionButtonWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Left" Command.Click="ExecuteAction" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" Brush="MPLobby.Matchmaking.Region.DropdownItem"/>
+                      </Children>
+                    </DimensionSyncWidget>
+                  </Children>
+                </ContextMenuItemWidget>
+              </ItemTemplate>
+            </ListPanel>
+          </Children>
+        </ContextMenuBrushWidget>
+
+
+      </Children>
+    </Widget>
+
+  </Window>
+</Prefab>

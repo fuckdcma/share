@@ -1,0 +1,3907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+<!-- 雍凉 -->
+	<Item id="sg_cl_c01_farmer001_body" 
+        name="{=*}农民布衣" 
+        mesh="cl_c01_farmer001_body" 
+        culture="Culture.yongliang" 
+        weight="0.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" 
+             leg_armor="1" 
+             arm_armor="1" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s001_body_a" 
+        name="{=*}素色破烂短上衣" 
+        mesh="ar_c01_s001_body_a" 
+        culture="Culture.yongliang" 
+        weight="0.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" 
+             leg_armor="1" 
+             arm_armor="1" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s001_body_b" 
+        name="{=*}素色无袖上衣" 
+        mesh="ar_c01_s001_body_b" 
+        culture="Culture.yongliang" 
+        weight="0.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" 
+             leg_armor="2" 
+             arm_armor="0" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s002_body" 
+        name="{=*}素色窄袖短直裾" 
+        mesh="ar_c01_s002_body" 
+        culture="Culture.yongliang" 
+        weight="1.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4" 
+             leg_armor="2" 
+             arm_armor="1" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s003_body" 
+        name="{=*}西凉粗制札皮胸甲" 
+        mesh="ar_c01_s003_body" 
+        culture="Culture.yongliang" 
+        weight="2.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="11" 
+             leg_armor="4" 
+             arm_armor="2" 
+             covers_body="false" 
+			 modifier_group="leather"
+			 material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s005_body" 
+        name="{=*}西凉两挡皮甲" 
+        mesh="ar_c01_s005_body" 
+        culture="Culture.yongliang" 
+        weight="3.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" 
+             leg_armor="4" 
+             arm_armor="3" 
+             covers_body="false" 
+			 modifier_group="leather"
+			 material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s006_body" 
+        name="{=*}粗制皮甲带护裆" 
+        mesh="ar_c01_s006_body" 
+        culture="Culture.yongliang" 
+        weight="4.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" 
+             leg_armor="5" 
+             arm_armor="3" 
+             covers_body="false" 
+			 modifier_group="leather"
+			 material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s007_body" 
+        name="{=*}西凉两挡铁甲" 
+        mesh="ar_c01_s007_body" 
+        culture="Culture.yongliang" 
+        weight="8.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" 
+             leg_armor="4" 
+             arm_armor="4" 
+             covers_body="false" 
+			 modifier_group="chain"
+			 material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s009_body" 
+        name="{=*}前朝皮甲" 
+        mesh="ar_c01_s009_body" 
+        culture="Culture.yongliang" 
+        weight="3.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" 
+             leg_armor="3" 
+             arm_armor="3" 
+             covers_body="false" 
+             modifier_group="leather"
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="lz_yizhou_yi_01" 
+        name="{=*}益州武库皮甲" 
+        mesh="ar_c01_s009_body" 
+        culture="Culture.yongliang" 
+        weight="3.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" 
+             leg_armor="3" 
+             arm_armor="8" 
+             covers_body="false" 
+             modifier_group="leather"
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="lz_yizhou_yi_02" 
+        name="{=*}益州武库厚制皮甲" 
+        mesh="ar_c01_s009_body" 
+        culture="Culture.yongliang" 
+        weight="3.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" 
+             leg_armor="4" 
+             arm_armor="12" 
+             covers_body="false" 
+             modifier_group="leather"
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s010_body" 
+        name="{=*}西凉粗制铁胸甲" 
+        mesh="ar_c01_s010_body" 
+        culture="Culture.yongliang" 
+        weight="8.7" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" 
+             leg_armor="3" 
+             arm_armor="3" 
+             covers_body="false" 
+             modifier_group="chain"
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s011_body" 
+        name="{=*}西凉铁札甲" 
+        mesh="ar_c01_s011_body" 
+        culture="Culture.yongliang" 
+        weight="11.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" 
+             leg_armor="8" 
+             arm_armor="3" 
+             covers_body="false" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s013_body" 
+        name="{=*}西凉皮鳞甲带护挡" 
+        mesh="ar_c01_s013_body" 
+        culture="Culture.yongliang" 
+        weight="8.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" 
+             leg_armor="6" 
+             arm_armor="4" 
+             covers_body="false" 
+             modifier_group="leather"
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s015_body" 
+        name="{=*}粗制铁胸甲带腿裙" 
+        mesh="ar_c01_s015_body" 
+        culture="Culture.yongliang" 
+        weight="13.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" 
+             leg_armor="12" 
+             arm_armor="3" 
+             covers_body="false" 
+             modifier_group="chain"
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s016_body" 
+        name="{=*}西凉铁札甲带腿裙" 
+        mesh="ar_c01_s016_body" 
+        culture="Culture.yongliang" 
+        weight="13.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="31" 
+             leg_armor="13" 
+             arm_armor="4" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s018_body" 
+        name="{=*}西凉粗制鳞甲" 
+        mesh="ar_c01_s018_body" 
+        culture="Culture.yongliang" 
+        weight="18.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41" 
+             leg_armor="18" 
+             arm_armor="15" 
+             covers_body="true" 
+             modifier_group="chain"
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s019_body" 
+        name="{=*}西凉两挡鳞甲带腿裙" 
+        mesh="ar_c01_s019_body" 
+        culture="Culture.yongliang" 
+        weight="18.3" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="43" 
+             leg_armor="17" 
+             arm_armor="8" 
+             covers_body="true" 
+             modifier_group="chain"
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g001_body" 
+        name="{=*}【将作】兽吞铁札铠" 
+        mesh="ar_c01_g001_body" 
+        culture="Culture.yongliang" 
+        weight="11.9" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="21" 
+             body_armor="75" 
+             leg_armor="21" 
+             arm_armor="18" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_cl_c01_g001_body" 
+        name="{=*}【将作】董卓常服" 
+        mesh="cl_c01_g001_body" 
+        culture="Culture.yongliang" 
+        weight="16.0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="60" 
+             leg_armor="16" 
+             arm_armor="17" 
+             covers_body="true" 
+             modifier_group="leather"
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g002_body" 
+        name="{=*}【将作】兽面吞头连环铠" 
+        mesh="S_GEN001_0002_xj" 
+        culture="Culture.yongliang" 
+        weight="23.8" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+             body_armor="79" 
+             leg_armor="25" 
+             arm_armor="21" 
+            covers_body="false"
+            modifier_group="chain"
+            material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g002_body_civilian" 
+        name="{=*}【将作】吕布常服" 
+        mesh="ar_c01_g002_body_a" 
+        culture="Culture.yongliang" 
+        weight="2.8" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="86"
+            leg_armor="42"
+            arm_armor="42"
+            covers_body="false"
+            modifier_group="leather"
+            material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g003_body" 
+        name="{=*}【将作】盆领黑漆重札" 
+        mesh="ar_c01_g003_body" 
+        culture="Culture.yongliang" 
+        weight="24.5" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" 
+             body_armor="74" 
+             leg_armor="22" 
+             arm_armor="21" 
+             covers_body="false"
+             modifier_group="plate"
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g003_body_b" 
+        name="{=*}【将作】盆领黑重札" 
+        mesh="ar_c01_g003_body_b" 
+        culture="Culture.yongliang" 
+        weight="24.5" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="23" 
+                body_armor="69" 
+                leg_armor="25" 
+                arm_armor="21" 
+                covers_body="false"
+                modifier_group="plate"
+                material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g004_body_a" 
+        name="{=*}【将作】精致两挡重铁甲" 
+        mesh="ar_c01_g004_body_a" 
+        culture="Culture.yongliang" 
+        weight="21.4" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" 
+                    body_armor="72" 
+                    leg_armor="21" 
+                    arm_armor="19" 
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g004_body_b" 
+        name="{=*}【将作】绒饰两挡重铁甲" 
+        mesh="ar_c01_g004_body_b" 
+        culture="Culture.yongliang" 
+        weight="21.4" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="22" 
+                    body_armor="76" 
+                    leg_armor="23" 
+                    arm_armor="21" 
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g005_body" 
+        name="{=*}【将作】漆面两档重札" 
+        mesh="ar_c01_g005_body" 
+        culture="Culture.yongliang" 
+        weight="20.4" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+                    body_armor="76" 
+                    leg_armor="23" 
+                    arm_armor="20" 
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_cl_c01_g005_body" 
+        name="{=*}【将作】玉带直裾" 
+        mesh="cl_c01_g005_body" 
+        culture="Culture.yongliang" 
+        weight="1.2" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26"
+				     leg_armor="18"
+				     arm_armor="12"
+				     covers_body="true"
+				     modifier_group="cloth"
+				     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g006_body" 
+        name="{=*}【将作】黑光鱼鳞铠" 
+        mesh="ar_c01_g006_body" 
+        culture="Culture.yongliang" 
+        weight="21.3" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+                    body_armor="69" 
+                    leg_armor="26" 
+                    arm_armor="27" 
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g007_body_a" 
+        name="{=*}【将作】兽皮连环铁札" 
+        mesh="ar_c01_g007_body_a" 
+        culture="Culture.yongliang" 
+        weight="20.1" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="25" 
+                    body_armor="74" 
+                    leg_armor="21" 
+                    arm_armor="19" 
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g007_body_b" 
+        name="{=*}【将作】兽皮连环铁札（带羽翼）" 
+        mesh="ar_c01_g007_body_b" 
+        culture="Culture.yongliang" 
+        weight="20.6" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="25" 
+                    body_armor="74" 
+                    leg_armor="21" 
+                    arm_armor="19" 
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g008_body" 
+        name="{=*}【将作】两挡甲外罩大氅" 
+        mesh="ar_c01_g008_body" 
+        culture="Culture.yongliang" 
+        weight="24.3" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" 
+                    body_armor="65" 
+                    leg_armor="19" 
+                    arm_armor="17" 
+				     covers_body="true"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g010_body" 
+        name="{=*}【将作】狼皮披肩漆面无袖重札" 
+        mesh="ar_c01_g010_body" 
+        culture="Culture.yongliang" 
+        weight="23.8" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+                    body_armor="72" 
+                    leg_armor="25" 
+                    arm_armor="25" 
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g011_body" 
+        name="{=*}【将作】绒边鱼鳞两挡甲" 
+        mesh="ar_c01_g011_body" 
+        culture="Culture.yongliang" 
+        weight="22.1" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="28" 
+                    body_armor="74" 
+                    leg_armor="19" 
+                    arm_armor="19" 
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_cl_c01_g011_body" 
+        name="{=*}【将作】行衣" 
+        mesh="cl_c01_g011_body" 
+        culture="Culture.yongliang" 
+        weight="1.8" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="32"
+				     leg_armor="14"
+				     arm_armor="13"
+				     covers_body="false"
+				     modifier_group="cloth_unarmoured"
+				     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g012_body" 
+        name="{=*}【将作】铁护胸对襟一体鱼鳞重皮甲" 
+        mesh="ar_c01_g012_body" 
+        culture="Culture.yongliang" 
+        weight="22.5" 
+        is_merchandise="false"
+        appearance="4"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="24" 
+                    body_armor="64" 
+                    leg_armor="23" 
+                    arm_armor="17" 
+				     covers_body="true"
+				     modifier_group="chain"
+				     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g015_body" 
+        name="{=*}【将作】金饰银鳞铠" 
+        mesh="ar_c01_g015_body_converted" 
+        culture="Culture.yongliang" 
+        weight="12.7" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="27" 
+                    body_armor="78" 
+                    leg_armor="25" 
+                    arm_armor="25" 
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c01_g015_body_old" 
+        name="{=*}【将作】女式两挡重皮札" 
+        mesh="ar_c01_g015_body_old" 
+        culture="Culture.yongliang" 
+        weight="16.7" 
+        is_merchandise="false"
+        appearance="5"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+                    body_armor="68" 
+                    leg_armor="23" 
+                    arm_armor="23" 
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+	<Item id="sg_cl_c01_g015_body" 
+        name="{=*}赤色女装" 
+        mesh="cl_c01_g015_body_old" 
+        culture="Culture.yongliang" 
+        weight="0.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="7"
+                   leg_armor="3"
+                   arm_armor="3"
+                   covers_body="false"
+                   modifier_group="cloth_unarmoured"
+                   material_type="Cloth"
+                   has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_g016_body" 
+        name="{=*}【将作】华丽汉服" 
+        mesh="ar_c01_g016_body" 
+        culture="Culture.yongliang" 
+        weight="1.25" 
+        is_merchandise="false"
+        appearance="5"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="56"
+				     leg_armor="21"
+				     arm_armor="21"
+                     head_armor ="11"
+				     covers_body="false"
+				     modifier_group="cloth_unarmoured"
+				     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s3001_body" 
+        name="{=*}西凉短袖戎服铁札护胸" 
+        mesh="ar_c01_s3001_body" 
+        culture="Culture.yongliang" 
+        weight="8.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23"
+				     leg_armor="7"
+				     arm_armor="6"
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s3002_body" 
+        name="{=*}西凉布束腰短袖戎服皮札护胸" 
+        mesh="ar_c01_s3002_body" 
+        culture="Culture.yongliang" 
+        weight="8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="15"
+				     leg_armor="7"
+				     arm_armor="6"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s4001_body" 
+        name="{=*}西凉长袖戎服粗制皮两挡配皮鳞护裆" 
+        mesh="ar_c01_s4001_body" 
+        culture="Culture.yongliang" 
+        weight="10.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26"
+				     leg_armor="11"
+				     arm_armor="8"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="lz_yongliang_yi_01" 
+        name="{=*}西凉长袖戎服粗制皮两挡配皮鳞护裆" 
+        mesh="ar_c01_s4001_body" 
+        culture="Culture.yongliang" 
+        weight="10.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35"
+				     leg_armor="19"
+				     arm_armor="17"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s4002_body" 
+        name="{=*}西凉革带短袖戎服皮札护胸1" 
+        mesh="ar_c01_s4002_body" 
+        culture="Culture.yongliang" 
+        weight="8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23"
+				     leg_armor="7"
+				     arm_armor="6"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s4003_body" 
+        name="{=*}西凉革带短袖戎服皮札护胸" 
+        mesh="ar_c01_s4003_body" 
+        culture="Culture.yongliang" 
+        weight="8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17"
+				     leg_armor="7"
+				     arm_armor="6"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s5002_body" 
+        name="{=*}西凉长袖戎服绒抱腹细札铁两挡" 
+        mesh="ar_c01_s5002_body" 
+        culture="Culture.yongliang" 
+        weight="12.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="34"
+				     leg_armor="14"
+				     arm_armor="8"
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c01_s5003_body" 
+        name="{=*}西凉短袖戎服纹饰细札铁两挡配布腿裙" 
+        mesh="ar_c01_s5003_body" 
+        culture="Culture.yongliang" 
+        weight="12.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="34"
+				     leg_armor="14"
+				     arm_armor="8"
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s5004_body" 
+        name="{=*}西凉革带短袖戎服细铁札护胸" 
+        mesh="ar_c01_s5004_body" 
+        culture="Culture.yongliang" 
+        weight="11.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27"
+				     leg_armor="8"
+				     arm_armor="8"
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s6001_body" 
+        name="{=*}西凉长袖戎服铁札两挡配铁鳞护裆" 
+        mesh="ar_c01_s6001_body" 
+        culture="Culture.yongliang" 
+        weight="18.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42"
+				     leg_armor="19"
+				     arm_armor="18"
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s6002_body" 
+        name="{=*}西凉短袖戎服细札铁两挡配带腿裙" 
+        mesh="ar_c01_s6002_body" 
+        culture="Culture.yongliang" 
+        weight="18.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="39"
+				     leg_armor="17"
+				     arm_armor="9"
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s7001_body" 
+        name="{=*}西凉长袖戎服金漆鱼鳞铁两挡带腿裙" 
+        mesh="ar_c01_s7001_body" 
+        culture="Culture.yongliang" 
+        weight="20.3" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="47"
+				     leg_armor="20"
+				     arm_armor="10"
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s7002_body" 
+        name="{=*}西凉短袖戎服细札铁两挡配带长腿裙" 
+        mesh="ar_c01_s7002_body" 
+        culture="Culture.yongliang" 
+        weight="21.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="47"
+				     leg_armor="21"
+				     arm_armor="10"
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c01_s7003_body" 
+        name="{=*}西凉长袖戎服多层铁护裆细铁札两挡配长铁鳞腿裙" 
+        mesh="ar_c01_s7003_body" 
+        culture="Culture.yongliang" 
+        weight="22.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="47"
+				     leg_armor="19"
+				     arm_armor="5"
+				     covers_body="false"
+				     modifier_group="chain"
+				     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_cl_c01_s2001_body" 
+        name="{=*}西凉短袖戎服" 
+        mesh="cl_c01_s2001_body" 
+        culture="Culture.yongliang" 
+        weight="3.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5"
+				     leg_armor="1"
+				     arm_armor="2"
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+
+
+<!-- 冀州 -->
+	<Item id="sg_ar_c05_s1001_body" 
+        name="{=*}冀州皮甲" 
+        mesh="ar_c05_s1001_body" 
+        culture="Culture.jizhou" 
+        weight="2.3" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12"
+				     leg_armor="3"
+				     arm_armor="1"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c05_s2001_body" 
+        name="{=*}冀州皮札甲" 
+        mesh="ar_c05_s2001_body" 
+        culture="Culture.jizhou" 
+        weight="4.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23"
+				     leg_armor="4"
+				     arm_armor="3"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c05_s3001_body" 
+        name="{=*}冀州玄色皮札甲" 
+        mesh="ar_c05_s3001_body" 
+        culture="Culture.jizhou" 
+        weight="4.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26"
+				     leg_armor="4"
+				     arm_armor="4"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c05_s3002_body" 
+        name="{=*}冀州粗制皮甲" 
+        mesh="ar_c05_s3002_body" 
+        culture="Culture.jizhou" 
+        weight="2.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="15"
+				     leg_armor="3"
+				     arm_armor="2"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c05_s3002_body_old" 
+        name="{=*}冀州加长粗制皮甲" 
+        mesh="ar_c05_s3002_body_old" 
+        culture="Culture.jizhou" 
+        weight="3.3" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17"
+				     leg_armor="4"
+				     arm_armor="2"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c05_s4003_body" 
+        name="{=*}冀州加强粗制皮甲" 
+        mesh="ar_c05_s4003_body" 
+        culture="Culture.jizhou" 
+        weight="3.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="19"
+				     leg_armor="4"
+				     arm_armor="4"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c05_s5003_body" 
+        name="{=*}冀州覆铁叶皮甲" 
+        mesh="ar_c05_s5003_body" 
+        culture="Culture.jizhou" 
+        weight="11.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35"
+				     leg_armor="14"
+				     arm_armor="5"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c05_s6001_body" 
+        name="{=*}冀州带护裆覆铁叶皮甲" 
+        mesh="ar_c05_s6001_body" 
+        culture="Culture.jizhou" 
+        weight="13.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="37"
+				     leg_armor="17"
+				     arm_armor="7"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c05_s7001_body" 
+        name="{=*}华丽冀州带护裆覆铁叶皮甲" 
+        mesh="ar_c05_s7001_body" 
+        culture="Culture.jizhou" 
+        weight="14.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41"
+				     leg_armor="18"
+				     arm_armor="7"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_cl_com_body_0001" 
+        name="{=*}平民衣服1" 
+        mesh="cl_com_body_0001" 
+        culture="Culture.yongliang" 
+        weight="0.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" 
+             leg_armor="1" 
+             arm_armor="1" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="true" />
+	</Item>
+	<Item id="sg_cl_com_body_0002" 
+        name="{=*}平民衣服2" 
+        mesh="cl_com_body_0002" 
+        culture="Culture.yongliang" 
+        weight="0.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" 
+             leg_armor="1" 
+             arm_armor="1" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="true" />
+	</Item>
+	<Item id="sg_cl_com_body_0003" 
+        name="{=*}平民衣服3" 
+        mesh="cl_com_body_0003" 
+        culture="Culture.yongliang" 
+        weight="0.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" 
+             leg_armor="1" 
+             arm_armor="1" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+            Civilian="true" />
+	</Item>
+	<Item id="sg_cl_com_body_0004" 
+        name="{=*}农民衣服" 
+        mesh="cl_com_body_0004" 
+        culture="Culture.yongliang" 
+        weight="0.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" 
+             leg_armor="1" 
+             arm_armor="1" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="true" />
+	</Item>
+
+
+
+
+
+	<Item id="sg_ar_c05_g001_body" 
+        name="{=*}【将作】华丽通臂重铁甲_2" 
+        mesh="ar_c05_g001_body" 
+        culture="Culture.jizhou" 
+        weight="14.6" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="21" 
+                    body_armor="69" 
+                    leg_armor="32" 
+                    arm_armor="22" 
+				     covers_body="true"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+	<Item id="sg_ar_c05_g002_body" 
+        name="{=*}【将作】文武袍罩华丽铁甲" 
+        mesh="ar_c05_g002_body" 
+        culture="Culture.jizhou" 
+        weight="17.2" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+                    body_armor="80" 
+                    leg_armor="24" 
+                    arm_armor="24" 
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+	<Item id="sg_ar_c05_g003_body" 
+        name="{=*}【将作】绒边锦袍罩华丽铁甲" 
+        mesh="ar_c05_g003_body" 
+        culture="Culture.jizhou" 
+        weight="17.6" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="28" 
+                    body_armor="78" 
+                    leg_armor="32" 
+                    arm_armor="29" 
+				     covers_body="true"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+	<Item id="sg_ar_c05_g004_body" 
+        name="{=*}【将作】华丽通臂重铁甲" 
+        mesh="ar_c05_g004_body" 
+        culture="Culture.jizhou" 
+        weight="14.3" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="27" 
+                    body_armor="75" 
+                    leg_armor="25" 
+                    arm_armor="24" 
+				     covers_body="true"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+	<Item id="sg_ar_c05_g005_body" 
+        name="{=*}【将作】紫罩袍华丽铁甲" 
+        mesh="ar_c05_g005_body" 
+        culture="Culture.jizhou" 
+        weight="11.7" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+                    body_armor="78" 
+                    leg_armor="28" 
+                    arm_armor="27" 
+				     covers_body="true"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+	<Item id="sg_ar_c05_g006_body" 
+        name="{=*}【将作】华丽覆铁叶重皮甲" 
+        mesh="ar_c05_g006_body" 
+        culture="Culture.jizhou" 
+        weight="10.4" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+                    body_armor="74" 
+                    leg_armor="28" 
+                    arm_armor="27" 
+				     covers_body="true"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+	<Item id="sg_ar_c05_g007_body" 
+        name="{=*}【将作】皮鳞护腰女裙" 
+        mesh="ar_c05_g007_body_converted" 
+        culture="Culture.jizhou" 
+        weight="6.5" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" 
+                    body_armor="72" 
+                    leg_armor="25" 
+                    arm_armor="25" 
+				     covers_body="true"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+	<Item id="sg_ar_c05_g008_body" 
+        name="{=*}【将作】青色谋士服" 
+        mesh="ar_c05_g008_body" 
+        culture="Culture.jizhou" 
+        weight="1.8" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="15" 
+                    body_armor="50" 
+                    leg_armor="15" 
+                    arm_armor="15" 
+				     covers_body="true"
+				     modifier_group="cloth"
+				     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+	<Item id="sg_ar_c05_g009_body" 
+        name="{=*}【将作】素色谋士服" 
+        mesh="ar_c05_g009_body" 
+        culture="Culture.jizhou" 
+        weight="1.8" 
+        is_merchandise="false"
+        appearance="4"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="17" 
+                    body_armor="55" 
+                    leg_armor="12" 
+                    arm_armor="12" 
+				     covers_body="true"
+                     modifier_group="cloth"
+                     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+
+<!-- 兖州 -->
+	<Item id="sg_cl_c02_s1001_body" 
+        name="{=*}兖州民兵布衣_a" 
+        mesh="cl_c02_s1001_body" 
+        culture="Culture.yanzhou" 
+        weight="0.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4" 
+             leg_armor="2" 
+             arm_armor="0" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_yi_03" 
+        name="{=*}兖州弓手粗麻布衣" 
+        mesh="cl_c02_s1001_body" 
+        culture="Culture.yanzhou" 
+        weight="0.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" 
+             leg_armor="3" 
+             arm_armor="2" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="lz_yanzhou_yi_01" 
+        name="{=*}兖州戍卒粗制麻布衣" 
+        mesh="cl_c02_s1001_body" 
+        culture="Culture.yanzhou" 
+        weight="0.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5" 
+             leg_armor="2" 
+             arm_armor="2" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s2001_body" 
+        name="{=*}兖州军加厚对襟皮束衣配长袖戎服" 
+        mesh="ar_c02_s2001_body" 
+        culture="Culture.yanzhou" 
+        weight="2.5" 
+        appearance="2" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" 
+             leg_armor="8" 
+             arm_armor="2" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="lz_yanzhou_yi_02" 
+        name="{=*}兖州正卒对襟皮束衣配长袖戎服" 
+        mesh="ar_c02_s2001_body" 
+        culture="Culture.yanzhou" 
+        weight="2.5" 
+        appearance="2" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             leg_armor="5" 
+             arm_armor="1" 
+             covers_body="true" 
+             modifier_group="cloth"
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s4001_body" 
+        name="{=*}兖州军对襟筒袖盆领皮束衣配长袖戎服" 
+        mesh="ar_c02_s4001_body" 
+        culture="Culture.yanzhou" 
+        weight="4.9" 
+        appearance="4" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" 
+             leg_armor="5" 
+             arm_armor="10" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s4002_body" 
+        name="{=*}兖州军长袖戎服配对襟筒袖盆领皮束衣覆铁札" 
+        mesh="ar_c02_s4002_body" 
+        culture="Culture.yanzhou" 
+        weight="8.9" 
+        appearance="4" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="28" 
+             leg_armor="10" 
+             arm_armor="12" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s4003_body" 
+        name="{=*}中原加长对襟皮束衣配长袖戎服" 
+        mesh="ar_c02_s4003_body" 
+        culture="Culture.yanzhou" 
+        weight="4.7" 
+        appearance="4" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="21" 
+             leg_armor="10" 
+             arm_armor="10" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s5001_body" 
+        name="{=*}中原长袖戎服配对襟筒袖高盆领皮束衣覆铁札" 
+        mesh="ar_c02_s5001_body" 
+        culture="Culture.yanzhou" 
+        weight="10.8" 
+        appearance="5" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="34" 
+             leg_armor="12" 
+             arm_armor="12" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s5002_body" 
+        name="{=*}中原长袖戎服配对襟筒袖盆领铁札" 
+        mesh="ar_c02_s5002_body" 
+        culture="Culture.yanzhou" 
+        weight="11" 
+        appearance="5" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" 
+             leg_armor="13" 
+             arm_armor="12" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s5003_body" 
+        name="{=*}中原长袖戎服配对襟筒袖盆领皮裙铁札" 
+        mesh="ar_c02_s5003_body" 
+        culture="Culture.yanzhou" 
+        weight="12" 
+        appearance="5" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" 
+             leg_armor="14" 
+             arm_armor="11" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s5004_body" 
+        name="{=*}中原短袖戎服配豹皮饰对襟长筒袖盆领铁札" 
+        mesh="ar_c02_s5004_body" 
+        culture="Culture.yanzhou" 
+        weight="9.8" 
+        appearance="5" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="33" 
+             leg_armor="12" 
+             arm_armor="14" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s6001_body" 
+        name="{=*}中原短袖戎服配对襟长筒袖高盆领铁札" 
+        mesh="ar_c02_s6001_body" 
+        culture="Culture.yanzhou" 
+        weight="15" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="39" 
+             leg_armor="15" 
+             arm_armor="13" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s6002_body" 
+        name="{=*}中原短袖戎服配对襟长筒袖盆领加长铁札皮护腿" 
+        mesh="ar_c02_s6002_body" 
+        culture="Culture.yanzhou" 
+        weight="18.8" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41" 
+             leg_armor="15" 
+             arm_armor="17" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s7001_body" 
+        name="{=*}中原短袖戎服配对襟长筒袖高盆领加长铁札铁护腿" 
+        mesh="ar_c02_s7001_body" 
+        culture="Culture.yanzhou" 
+        weight="20" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" 
+             leg_armor="15" 
+             arm_armor="18" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s7002_body" 
+        name="{=*}中原短袖戎服配对襟长筒袖盆领加长铁札皮护腿" 
+        mesh="ar_c02_s7002_body" 
+        culture="Culture.yanzhou" 
+        weight="18.8" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" 
+             leg_armor="15" 
+             arm_armor="17" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s8001_body" 
+        name="{=*}中原短袖戎服配对襟盆领铁札" 
+        mesh="ar_c02_s8001_body" 
+        culture="Culture.yanzhou" 
+        weight="12" 
+        appearance="5" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" 
+             leg_armor="10" 
+             arm_armor="12" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+	<Item id="sg_ar_c02_s8002_body" 
+        name="{=*}中原短袖戎服配对襟盆领长披膊铁札" 
+        mesh="ar_c02_s8002_body" 
+        culture="Culture.yanzhou" 
+        weight="13" 
+        appearance="5" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" 
+             leg_armor="11" 
+             arm_armor="12" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+<!-- 扬州 -->
+    <Item id="sg_cl_c04_s1001_body" 
+        name="{=*}扬州素服" 
+        mesh="cl_c04_s1001_body" 
+        culture="Culture.yangzhou" 
+        weight="18.8" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="10" 
+             leg_armor="1" 
+             arm_armor="1" 
+             covers_body="false" 
+             modifier_group="cloth"
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s2002_body" 
+        name="{=*}扬州素服" 
+        mesh="ar_c04_s2002_body" 
+        culture="Culture.yangzhou" 
+        weight="18.8" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" 
+             leg_armor="9" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="cloth"
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s3002_body" 
+        name="{=*}东吴长袖戎服皮护胸" 
+        mesh="ar_c04_s3002_body" 
+        culture="Culture.yangzhou" 
+        weight="7.9" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16" 
+             leg_armor="2" 
+             arm_armor="6" 
+             covers_body="false" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s4001_body" 
+        name="{=*}东吴长袖戎服短腿裙两挡铁甲配铁披膊" 
+        mesh="ar_c04_s4001_body" 
+        culture="Culture.yangzhou" 
+        weight="11.3" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="28" 
+             leg_armor="8" 
+             arm_armor="9" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s4002_body" 
+        name="{=*}东吴长袖戎服短铜腿裙两挡铁甲配皮披膊" 
+        mesh="ar_c04_s4002_body" 
+        culture="Culture.yangzhou" 
+        weight="9.8" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" 
+             leg_armor="8" 
+             arm_armor="8" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s4003_body" 
+        name="{=*}东吴长袖戎服两挡皮甲" 
+        mesh="ar_c04_s4003_body" 
+        culture="Culture.yangzhou" 
+        weight="7.9" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" 
+             leg_armor="6" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s5001_body" 
+        name="{=*}东吴长袖戎服短腿裙两挡铁甲配铁披膊布悍腰" 
+        mesh="ar_c04_s5001_body" 
+        culture="Culture.yangzhou" 
+        weight="11.3" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="29" 
+             leg_armor="8" 
+             arm_armor="9" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s5002_body" 
+        name="{=*}东吴长袖戎服短腿裙两挡铁甲配铁披膊毡悍腰" 
+        mesh="ar_c04_s5002_body" 
+        culture="Culture.yangzhou" 
+        weight="11.3" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" 
+             leg_armor="8" 
+             arm_armor="9" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s5003_body" 
+        name="{=*}东吴长袖戎服短腿裙皮护喉两挡铁甲配铁披膊" 
+        mesh="ar_c04_s5003_body" 
+        culture="Culture.yangzhou" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" 
+             leg_armor="11" 
+             arm_armor="13" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s5004_body" 
+        name="{=*}东吴长袖戎服两挡铁甲配皮披膊" 
+        mesh="ar_c04_s5004_body" 
+        culture="Culture.yangzhou" 
+        weight="10.7" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" 
+             leg_armor="10" 
+             arm_armor="8" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s6001_body" 
+        name="{=*}东吴长袖戎服铁短腿裙皮护喉两挡铜甲配铁披膊" 
+        mesh="ar_c04_s6001_body" 
+        culture="Culture.yangzhou" 
+        weight="18.8" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" 
+             leg_armor="15" 
+             arm_armor="17" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s6002_body" 
+        name="{=*}东吴短袖戎服铁短腿裙皮护喉两挡铜甲配铁披膊" 
+        mesh="ar_c04_s6002_body" 
+        culture="Culture.yangzhou" 
+        weight="13.4" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="31" 
+             leg_armor="12" 
+             arm_armor="12" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s7001_body" 
+        name="{=*}东吴长袖戎服长腿裙铁两挡带铁札护胸铁披膊" 
+        mesh="ar_c04_s7001_body" 
+        culture="Culture.yangzhou" 
+        weight="20.4" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" 
+             leg_armor="21" 
+             arm_armor="15" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s7002_body" 
+        name="{=*}东吴长袖戎服长腿裙铜两挡带铜披膊" 
+        mesh="ar_c04_s7002_body" 
+        culture="Culture.yangzhou" 
+        weight="21.4" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41" 
+             leg_armor="20" 
+             arm_armor="14" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c04_s8001_body_converted" 
+        name="{=*}东吴长袖戎服铁护胸" 
+        mesh="ar_c04_s8001_body_converted" 
+        culture="Culture.yangzhou" 
+        weight="18.8" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" 
+             leg_armor="15" 
+             arm_armor="17" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+
+<!-- 黄巾 -->
+    <Item id="sg_ar_c11_com02_body" 
+        name="{=*}黄巾步卒身甲" 
+        mesh="ar_c11_com02_body"
+        culture="Culture.huangjin_bandits"
+        weight="12.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16"
+				     leg_armor="3"
+				     arm_armor="3"
+				     covers_body="false"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c11_s2002_body" 
+        name="{=*}黄巾农民弓手身甲" 
+        mesh="ar_c11_s2002_body" 
+        culture="Culture.huangjin_bandits" 
+        weight="5.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5"
+				     leg_armor="2"
+				     arm_armor="1"
+				     covers_body="false"
+				     modifier_group="cloth_unarmoured"
+				     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c11_s2003_body" 
+        name="{=*}黄巾乱军身甲" 
+        mesh="ar_c11_s2003_body" 
+        culture="Culture.huangjin_bandits" 
+        weight="5.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="7"
+				     leg_armor="3"
+				     arm_armor="2"
+				     covers_body="false"
+				     modifier_group="cloth_unarmoured"
+				     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+	<Item id="sg_ar_c11_s3001_body" 
+        name="{=*}黄巾刀牌手身甲" 
+        mesh="ar_c11_s3001_body" 
+        culture="Culture.huangjin_bandits" 
+        weight="3.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="13"
+				     leg_armor="3"
+				     arm_armor="2"
+				     covers_body="false"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+    <Item id="sg_S_YOL001_1002_2020_4_20_Aworl_MAX19_YF" 
+        name="{=*}黄巾刀牌手身甲" 
+        mesh="S_YOL001_1002_2020_4_20_Aworl_MAX19_YF" 
+        culture="Culture.huangjin_bandits" 
+        weight="8.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="19"
+				     leg_armor="4"
+				     arm_armor="3"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+    <Item id="sg_S_YOL001_1004" 
+        name="{=*}黄巾刀牌手身甲" 
+        mesh="S_YOL001_1004" 
+        culture="Culture.huangjin_bandits" 
+        weight="11.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18"
+				     leg_armor="5"
+				     arm_armor="1"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+    <Item id="sg_S_YOL001_1005" 
+        name="{=*}黄巾刀牌手身甲" 
+        mesh="S_YOL001_1005" 
+        culture="Culture.huangjin_bandits" 
+        weight="0.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="2"
+				     leg_armor="1"
+				     arm_armor="0"
+				     covers_body="false"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+               Civilian="false" />
+	</Item>
+
+
+
+<!-- 幽州 -->
+	<Item id="sg_ar_c06_g001_body" 
+        name="{=*}【将作】纹饰皮护胸细铁札" 
+        mesh="ar_c06_g001_body" 
+        culture="Culture.youzhou" 
+        weight="8.9" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="27" 
+                    body_armor="78" 
+                    leg_armor="25" 
+                    arm_armor="26" 
+				     covers_body="true"
+				     modifier_group="leather"
+				     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_g002_body" 
+        name="{=*}【将作】金饰云纹重皮札" 
+        mesh="ar_c06_g002_body_converted" 
+        culture="Culture.youzhou" 
+        weight="8.9" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="29" 
+                    body_armor="80" 
+                    leg_armor="35" 
+                    arm_armor="35" 
+				     covers_body="true"
+                     modifier_group="chain" 
+                     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+ 
+    <Item id="sg_ar_c06_g004_body" 
+        name="{=*}【将作】铁板护胸重铁札" 
+        mesh="ar_c06_g004_body" 
+        culture="Culture.youzhou" 
+        weight="19.8" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="27" 
+                    body_armor="76" 
+                    leg_armor="31" 
+                    arm_armor="31" 
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_g005_body" 
+        name="{=*}【将作】北地绒边罩袍对襟重札" 
+        mesh="ar_c06_g005_body" 
+        culture="Culture.youzhou" 
+        weight="21.2" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" 
+                    body_armor="76" 
+                    leg_armor="22" 
+                    arm_armor="22" 
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_cl_c06_g006_body" 
+        name="{=*}【将作】皮护胸玉饰文武袍" 
+        mesh="cl_c06_g006_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="24" 
+                    body_armor="71" 
+                    leg_armor="23" 
+                    arm_armor="23" 
+				     covers_body="false"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    <Item id="sg_ar_c06_s2001_body" 
+        name="{=*}幽州长袖戎服铁护胸" 
+        mesh="ar_c06_s2001_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12"
+				     leg_armor="6"
+				     arm_armor="3"
+				     covers_body="true"
+                     modifier_group="cloth"
+                     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s3002_body" 
+        name="{=*}幽州长袖戎服粗制皮护胸" 
+        mesh="ar_c06_s3002_body" 
+        culture="Culture.youzhou" 
+        weight="3.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17"
+				     leg_armor="3"
+				     arm_armor="5"
+				     covers_body="true"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s4001_body" 
+        name="{=*}幽州长袖戎服铁护胸带护心镜" 
+        mesh="ar_c06_s4001_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20"
+				     leg_armor="8"
+				     arm_armor="9"
+				     covers_body="true"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s4002_body" 
+        name="{=*}幽州长袖戎服铁护胸带护心镜皮腿裙" 
+        mesh="ar_c06_s4002_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23"
+				     leg_armor="8"
+				     arm_armor="8"
+				     covers_body="true"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s4003_body" 
+        name="{=*}幽州长袖戎服粗制皮两挡带腿裙" 
+        mesh="ar_c06_s4003_body" 
+        culture="Culture.youzhou" 
+        weight="4.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="24"
+				     leg_armor="10"
+				     arm_armor="6"
+				     covers_body="true"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s4004_body" 
+        name="{=*}幽州长袖戎服粗制覆铁片皮两挡带腿裙" 
+        mesh="ar_c06_s4004_body" 
+        culture="Culture.youzhou" 
+        weight="9.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="32"
+				     leg_armor="11"
+				     arm_armor="8"
+				     covers_body="true"
+                     modifier_group="chain" 
+                     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s5001_body" 
+        name="{=*}幽州长袖戎服铁护胸带护心镜1" 
+        mesh="ar_c06_s5001_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35"
+				     leg_armor="14"
+				     arm_armor="11"
+				     covers_body="true"
+                     modifier_group="plate" 
+                     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s5002_body" 
+        name="{=*}幽州长袖戎服铁护胸带护心镜双层皮腿裙" 
+        mesh="ar_c06_s5002_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36"
+				     leg_armor="23"
+				     arm_armor="17"
+				     covers_body="true"
+                     modifier_group="plate" 
+                     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s6001_body" 
+        name="{=*}幽州长袖戎服细铁札带兽吞护心镜铁札腿裙" 
+        mesh="ar_c06_s6001_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40"
+				     leg_armor="23"
+				     arm_armor="21"
+				     covers_body="true"
+                     modifier_group="plate" 
+                     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s6002_body" 
+        name="{=*}幽州长袖戎服覆铁片皮两挡配皮腿裙" 
+        mesh="ar_c06_s6002_body" 
+        culture="Culture.youzhou" 
+        weight="11.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="34"
+				     leg_armor="14"
+				     arm_armor="8"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s7001_body" 
+        name="{=*}幽州长袖戎服纹饰细札铁两挡配皮腿裙" 
+        mesh="ar_c06_s7001_body" 
+        culture="Culture.youzhou" 
+        weight="16.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42"
+				     leg_armor="17"
+				     arm_armor="8"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c06_s8001_body" 
+        name="{=*}幽州双层皮腿裙配布悍腰" 
+        mesh="ar_c06_s8001_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40"
+				     leg_armor="23"
+				     arm_armor="21"
+				     covers_body="false"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_cl_c06_s1001_body" 
+        name="{=*}幽州长袖戎服" 
+        mesh="cl_c06_s1001_body" 
+        culture="Culture.youzhou" 
+        weight="30.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="8"
+				     leg_armor="2"
+				     arm_armor="2"
+				     covers_body="true"
+                     modifier_group="cloth"
+                     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+
+
+
+<!-- 益州 -->
+    <Item id="sg_cl_c03_s1001_body" 
+        name="{=*}季汉戎服" 
+        mesh="cl_c03_s1001_body" 
+        culture="Culture.yizhou" 
+        weight="1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4"
+				     leg_armor="3"
+				     arm_armor="2"
+				     covers_body="false"
+                     modifier_group="cloth"
+                     material_type="Cloth"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s3002_body" 
+        name="{=*}季汉麻布悍腰戎服" 
+        mesh="ar_c03_s3002_body" 
+        culture="Culture.yizhou" 
+        weight="1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5"
+				     leg_armor="3"
+				     arm_armor="2"
+				     covers_body="false"
+                     modifier_group="cloth"
+                     material_type="Cloth"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s4001_body" 
+        name="{=*}季汉戎服配毡护胸" 
+        mesh="ar_c03_s4001_body" 
+        culture="Culture.yizhou" 
+        weight="2.7" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14"
+				     leg_armor="3"
+				     arm_armor="2"
+				     covers_body="false"
+                     modifier_group="cloth"
+                     material_type="Cloth"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s5001_body" 
+        name="{=*}季汉细铁鳞护胸带毡披膊皮护腿" 
+        mesh="ar_c03_s5001_body" 
+        culture="Culture.yizhou" 
+        weight="8.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35"
+				     leg_armor="12"
+				     arm_armor="11"
+				     covers_body="false"
+                     modifier_group="chain" 
+                     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s5002_body" 
+        name="{=*}季汉细铁鳞甲护胸带毡披膊" 
+        mesh="ar_c03_s5002_body" 
+        culture="Culture.yizhou" 
+        weight="8.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35"
+				     leg_armor="10"
+				     arm_armor="13"
+				     covers_body="false"
+                     modifier_group="chain" 
+                     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s5003_body" 
+        name="{=*}季汉戎服配毡护胸悍腰" 
+        mesh="ar_c03_s5003_body" 
+        culture="Culture.yizhou" 
+        weight="5.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18"
+				     leg_armor="6"
+				     arm_armor="3"
+				     covers_body="false"
+                     modifier_group="leather" 
+                     material_type="Leather"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s5004_body" 
+        name="{=*}季汉细铁鳞甲护胸带披膊护裆" 
+        mesh="ar_c03_s5004_body" 
+        culture="Culture.yizhou" 
+        weight="21.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42"
+				     leg_armor="18"
+				     arm_armor="14"
+				     covers_body="false"
+                     modifier_group="chain" 
+                     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s6001_body" 
+        name="{=*}季汉细铁鳞两挡甲带披膊护裆" 
+        mesh="ar_c03_s6001_body" 
+        culture="Culture.yizhou" 
+        weight="21.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42"
+				     leg_armor="18"
+				     arm_armor="14"
+				     covers_body="false"
+                     modifier_group="chain" 
+                     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s6002_body" 
+        name="{=*}季汉细铁鳞两挡甲带披膊护裆配罩衣毡悍腰" 
+        mesh="ar_c03_s6002_body" 
+        culture="Culture.yizhou" 
+        weight="23.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41"
+				     leg_armor="16"
+				     arm_armor="14"
+				     covers_body="false"
+                     modifier_group="chain" 
+                     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s7001_body" 
+        name="{=*}季汉白毦锐士细铁鳞甲" 
+        mesh="ar_c03_s7001_body" 
+        culture="Culture.yizhou" 
+        weight="19.7" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42"
+				     leg_armor="20"
+				     arm_armor="10"
+				     covers_body="false"
+                     modifier_group="chain" 
+                     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s7002_body" 
+        name="{=*}季汉细铁鳞两挡甲带披膊护裆配毡悍腰" 
+        mesh="ar_c03_s7002_body" 
+        culture="Culture.yizhou" 
+        weight="3" 
+        appearance="23.6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="45"
+				     leg_armor="21"
+				     arm_armor="14"
+				     covers_body="false"
+                     modifier_group="chain" 
+                     material_type="Chainmail"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c03_s8001_body" 
+        name="{=*}季汉蛮族纹饰皮甲配皮札腿裙" 
+        mesh="ar_c03_s8001_body" 
+        culture="Culture.yizhou" 
+        weight="23.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="43"
+				     leg_armor="21"
+				     arm_armor="10"
+				     covers_body="false"
+                     modifier_group="leather" 
+                     material_type="Leather"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="lz_jiaozhou_yi01" 
+        name="{=*}交州蛮族纹饰皮甲" 
+        mesh="ar_c03_s8001_body" 
+        culture="Culture.yizhou" 
+        weight="20.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40"
+				     leg_armor="22"
+				     arm_armor="12"
+				     covers_body="false"
+                     modifier_group="leather" 
+                     material_type="Leather"
+             has_gender_variations="false" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+<!-- 荆州 -->
+    <Item id="sg_cl_c08_s1001_body" 
+        name="{=*}荆州素戎服" 
+        mesh="cl_c08_s1001_body" 
+        culture="Culture.jingzhou" 
+        weight="3.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="9" 
+             leg_armor="4" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="cloth"
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s2001_body" 
+        name="{=*}荆州素戎服配皮札护胸" 
+        mesh="ar_c08_s2001_body" 
+        culture="Culture.jingzhou" 
+        weight="5.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             leg_armor="4" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s3001_body" 
+        name="{=*}荆州戎服配粗制皮护胸" 
+        mesh="ar_c08_s3001_body" 
+        culture="Culture.jingzhou" 
+        weight="8.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" 
+             leg_armor="5" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_cl_c08_s3002_body" 
+        name="{=*}荆州戎服" 
+        mesh="cl_c08_s3002_body" 
+        culture="Culture.jingzhou" 
+        weight="3.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="9" 
+             leg_armor="4" 
+             arm_armor="4" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s4001_body" 
+        name="{=*}荆州戎服配缝制皮护胸" 
+        mesh="ar_c08_s4001_body" 
+        culture="Culture.jingzhou" 
+        weight="10.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" 
+             leg_armor="8" 
+             arm_armor="4" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s4002_body" 
+        name="{=*}荆州素戎服配缝制皮护胸" 
+        mesh="ar_c08_s4002_body" 
+        culture="Culture.jingzhou" 
+        weight="10.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" 
+             leg_armor="8" 
+             arm_armor="4" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s4003_body" 
+        name="{=*}荆州戎服配前朝皮护胸" 
+        mesh="ar_c08_s4003_body" 
+        culture="Culture.jingzhou" 
+        weight="10.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="19" 
+             leg_armor="5" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s4004_body" 
+        name="{=*}荆州戎服配简易皮护胸" 
+        mesh="ar_c08_s4004_body" 
+        culture="Culture.jingzhou" 
+        weight="11.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" 
+             leg_armor="8" 
+             arm_armor="5" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s5001_body" 
+        name="{=*}荆州戎服配两挡铁札甲1" 
+        mesh="ar_c08_s5001_body" 
+        culture="Culture.jingzhou" 
+        weight="5.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" 
+             leg_armor="4" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s5002_body" 
+        name="{=*}荆州戎服配两挡铁札甲2" 
+        mesh="ar_c08_s5002_body" 
+        culture="Culture.jingzhou" 
+        weight="15.7" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" 
+             leg_armor="14" 
+             arm_armor="8" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s5003_body" 
+        name="{=*}荆州戎服配纹饰两挡皮甲" 
+        mesh="ar_c08_s5003_body" 
+        culture="Culture.jingzhou" 
+        weight="10.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="31" 
+             leg_armor="12" 
+             arm_armor="4"
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s5004_body" 
+        name="{=*}荆州戎服配细札皮护胸" 
+        mesh="ar_c08_s5004_body" 
+        culture="Culture.jingzhou" 
+        weight="10.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" 
+             leg_armor="8" 
+             arm_armor="4" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s5005_body" 
+        name="{=*}荆州戎服配皮札护胸" 
+        mesh="ar_c08_s5005_body" 
+        culture="Culture.jingzhou" 
+        weight="8.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" 
+             leg_armor="5" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s6001_body" 
+        name="{=*}荆州素戎服配两挡铁札甲" 
+        mesh="ar_c08_s6001_body" 
+        culture="Culture.jingzhou" 
+        weight="15.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="39" 
+             leg_armor="14" 
+             arm_armor="8" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s6002_body" 
+        name="{=*}荆州戎服配铁札护胸" 
+        mesh="ar_c08_s6002_body" 
+        culture="Culture.jingzhou" 
+        weight="15.3" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" 
+             leg_armor="9"
+             arm_armor="7" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s7001_body" 
+        name="{=*}荆州素戎服铁札两挡配裙甲" 
+        mesh="ar_c08_s7001_body" 
+        culture="Culture.jingzhou" 
+        weight="22.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" 
+             leg_armor="13" 
+             arm_armor="5" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s7002_body" 
+        name="{=*}荆州戎服配两挡铁札甲3" 
+        mesh="ar_c08_s7002_body" 
+        culture="Culture.jingzhou" 
+        weight="22.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="44" 
+             leg_armor="14" 
+             arm_armor="5" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_004_body" 
+        name="{=*}【将作】金饰虎纹铁札甲" 
+        mesh="ar_c08_004_c08_body" 
+        culture="Culture.jingzhou" 
+        weight="14.4" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="26" 
+                    body_armor="78" 
+                    leg_armor="34" 
+                    arm_armor="34" 
+             covers_body="true" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_S_SOL002_1002_kjwz" 
+        name="{=*}朱红扎鳞甲" 
+        mesh="S_SOL002_1002_kjwz" 
+        weight="6.2" 
+        appearance="4" 
+        culture="Culture.sili"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" 
+                    leg_armor="3"
+				     arm_armor="2"
+                     head_armor="5"
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+<!-- 豫州 -->
+    <Item id="sg_cl_c07_s1001_body" 
+        name="{=*}豫州长袖戎服" 
+        mesh="cl_c07_s1001_body" 
+        culture="Culture.youzhou" 
+        weight="1.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4"
+				     leg_armor="3"
+				     arm_armor="2"
+				     covers_body="true"
+                     modifier_group="cloth"
+                     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c07_s2001_body" 
+        name="{=*}豫州长袖戎服皮护胸" 
+        mesh="ar_c07_s2001_body" 
+        culture="Culture.youzhou" 
+        weight="3.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18"
+				     leg_armor="9"
+				     arm_armor="4"
+				     covers_body="true"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c07_s3001_body" 
+        name="{=*}豫州长袖戎服饰铜钉覆铁片皮护胸1" 
+        mesh="ar_c07_s3001_body" 
+        culture="Culture.youzhou" 
+        weight="8.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25"
+				     leg_armor="10"
+				     arm_armor="5"
+				     covers_body="true"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c07_s3002_body" 
+        name="{=*}豫州长袖戎服饰铜钉皮护胸" 
+        mesh="ar_c07_s3002_body" 
+        culture="Culture.youzhou" 
+        weight="7.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23"
+				     leg_armor="10"
+				     arm_armor="5"
+				     covers_body="true"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c07_s4001_body" 
+        name="{=*}豫州长袖戎服多铜钉皮护胸" 
+        mesh="ar_c07_s4001_body" 
+        culture="Culture.youzhou" 
+        weight="7.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23"
+				     leg_armor="10"
+				     arm_armor="5"
+				     covers_body="false"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c07_s5001_body" 
+        name="{=*}豫州长袖戎服铁护胸带铁鳞护裆铜钉皮腿裙" 
+        mesh="ar_c07_s5001_body" 
+        culture="Culture.youzhou" 
+        weight="12.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36"
+				     leg_armor="13"
+				     arm_armor="8"
+				     covers_body="true"
+                     modifier_group="chain" 
+                     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c07_s5002_body" 
+        name="{=*}豫州长袖戎服铁护胸带铜钉皮护裆腿裙" 
+        mesh="ar_c07_s5002_body" 
+        culture="Culture.youzhou" 
+        weight="12.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36"
+				     leg_armor="13"
+				     arm_armor="5"
+				     covers_body="true"
+                     modifier_group="chain" 
+                     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c07_s5003_body" 
+        name="{=*}豫州长袖戎服饰铜钉覆铁片皮护胸2" 
+        mesh="ar_c07_s5003_body" 
+        culture="Culture.youzhou" 
+        weight="12.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36"
+				     leg_armor="13"
+				     arm_armor="8"
+				     covers_body="true"
+                     modifier_group="chain" 
+                     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c07_s6001_body" 
+        name="{=*}豫州长袖戎服铁护胸带铁鳞护裆铜钉皮腿裙配革带" 
+        mesh="ar_c07_s6001_body" 
+        culture="Culture.youzhou" 
+        weight="17.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42"
+				     leg_armor="14"
+				     arm_armor="9"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+
+    <Item id="sg_ar_c07_s7001_body" 
+        name="{=*}豫州长袖戎服盆领两挡铁甲带铁鳞护裆腿裙配革带" 
+        mesh="ar_c07_s7001_body" 
+        culture="Culture.youzhou" 
+        weight="20.3" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42"
+				     leg_armor="18"
+				     arm_armor="11"
+                     head_armor="7"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+<!-- 汉 -->
+    <Item id="sg_cl_c10_s1001_body" 
+        name="{=*}汉材官戎服" 
+        mesh="cl_c10_s1001_body" 
+        culture="Culture.sili" 
+        weight="1.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4"
+				     leg_armor="4"
+				     arm_armor="2"
+                     head_armor="2"
+				     covers_body="true"
+                     modifier_group="cloth"
+                     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_cl_c10_s2001_body" 
+        name="{=*}汉锐士戎服" 
+        mesh="cl_c10_s2001_body" 
+        culture="Culture.sili" 
+        weight="1.0" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5"
+				     leg_armor="3"
+				     arm_armor="2"
+                     head_armor="5"
+				     covers_body="false"
+                     modifier_group="cloth"
+                     material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_cl_c10_s3001_body" 
+        name="{=*}汉皮护胸" 
+        mesh="cl_c10_s3001_body" 
+        culture="Culture.sili" 
+        weight="3.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="13"
+				     leg_armor="5"
+				     arm_armor="3"
+                     head_armor="8"
+				     covers_body="true"
+                     modifier_group="leather" 
+                     material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_cl_c10_s4001_body" 
+        name="{=*}汉皮鳞甲护胸" 
+        mesh="cl_c10_s4001_body" 
+        culture="Culture.sili" 
+        weight="4.9" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18"
+				     leg_armor="5"
+				     arm_armor="3"
+                     head_armor="5"
+				     covers_body="true"
+                     modifier_group="chain" 
+                     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c10_s5002_body" 
+        name="{=*}汉斜襟铁札两挡甲" 
+        mesh="ar_c10_s5002_body" 
+        culture="Culture.sili" 
+        weight="12.7" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="24"
+				     leg_armor="6"
+				     arm_armor="5"
+                     head_armor="6"
+				     covers_body="true"
+                     modifier_group="chain" 
+                     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c10_s6001_body" 
+        name="{=*}汉铁两挡甲1" 
+        mesh="ar_c10_s6001_body" 
+        culture="Culture.sili" 
+        weight="13.3" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25"
+				     leg_armor="8"
+				     arm_armor="7"
+                     head_armor="7"
+				     covers_body="true"
+                     modifier_group="chain" 
+                     material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c10_s6002_body" 
+        name="{=*}汉斜襟铁札两挡甲配铁札裙甲" 
+        mesh="ar_c10_s6002_body" 
+        culture="Culture.sili" 
+        weight="18.4" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="31"
+				     leg_armor="14"
+				     arm_armor="6"
+                     head_armor="6"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c10_s6004_body" 
+        name="{=*}汉铁两挡甲2" 
+        mesh="ar_c10_s6004_body" 
+        culture="Culture.sili" 
+        weight="16.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="29"
+				     leg_armor="11"
+				     arm_armor="9"
+                     head_armor="6"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c10_s5006_body" 
+        name="{=*}汉羽林对襟铁札甲" 
+        mesh="ar_c10_s5006_body" 
+        culture="Culture.sili" 
+        weight="20.1" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36"
+				     leg_armor="9"
+				     arm_armor="7"
+                     head_armor="6"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c10_s6005_body" 
+        name="{=*}汉羽林对襟带裙甲重铁札" 
+        mesh="ar_c10_s6005_body" 
+        culture="Culture.sili" 
+        weight="24.8" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="39"
+				     leg_armor="14"
+				     arm_armor="10"
+                     head_armor="8"
+				     covers_body="true"
+				     modifier_group="plate"
+				     material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_cl_c10_g1001_body" 
+        name="{=*}龙袍" 
+        mesh="cl_c10_g1001_body" 
+        weight="12" 
+        culture="Culture.sili" 
+        appearance="0"
+        difficulty="290" 
+        is_merchandise="false"
+		value="500000"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="28" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="false" 
+           Civilian="true" />
+	</Item>
+
+
+
+
+
+<!-- 通用 -->
+    <Item id="sg_npc_barber_body" 
+        name="{=*}双色短搭" 
+        mesh="cl_sg_npc_barber_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_cityresident_body" 
+        name="{=*}素短搭" 
+        mesh="sg_npc_cityresident_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_merchant_body" 
+        name="{=*}短袖厚素直裾" 
+        mesh="sg_npc_merchant_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_guard_body" 
+        name="{=*}深色罩袍厚素直裾" 
+        mesh="sg_npc_guard_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_bartender_body" 
+        name="{=*}素长袖短搭" 
+        mesh="sg_npc_bartender_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_clerk_body" 
+        name="{=*}素色短袖直裾" 
+        mesh="sg_npc_clerk_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="false" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_maid_body" 
+        name="{=*}女式花纹曲裾" 
+        mesh="sg_npc_maid_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_booksellers_body" 
+        name="{=*}素罩袍配深色直裾" 
+        mesh="sg_npc_booksellers_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_gladiator_body" 
+        name="{=*}短搭配皮护胸" 
+        mesh="cl_sg_npc_gladiator_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_wenguan_body" 
+        name="{=*}文官" 
+        mesh="sg_npc_wenguan_body" 
+        weight="13.2" 
+        is_merchandise="false"
+        appearance="0"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_wuguan_body" 
+        name="{=*}武官" 
+        mesh="sg_npc_wuguan_body" 
+        weight="13.2" 
+        is_merchandise="false"
+        appearance="0"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_peddler_body" 
+        name="{=*}商贩" 
+        mesh="cl_sg_npc_peddler_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_guizuwujiang_body" 
+        name="{=*}【将作】贵族罩衫重皮札" 
+        mesh="npc_guizuwujiang_body" 
+        weight="20.2" 
+        is_merchandise="false"
+        appearance="6"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" 
+                    body_armor="65" 
+                    leg_armor="18" 
+                    arm_armor="18" 
+             covers_body="false" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_jianke_body" 
+        name="{=*}侠士服" 
+        mesh="sg_npc_jianke_body" 
+        weight="13.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" 
+                    leg_armor="7"
+				     arm_armor="2"
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+<!-- 匈奴-鲜卑 -->
+    <Item id="sg_s_t1021_xj" 
+        name="{=*}胡风锁子战袍" 
+        mesh="s_t1021_xj" 
+        weight="20.1" 
+        appearance="2" 
+        culture="Culture.beifangshizu_bandits"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="32" 
+                    leg_armor="11"
+				     arm_armor="12"
+                     head_armor="6"
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_yol002_xj003" 
+        name="{=*}白鹿鞣革戎衣" 
+        mesh="sg_yol002_xj003" 
+        weight="18.2" 
+        appearance="2" 
+        culture="Culture.beifangshizu_bandits"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" 
+                    leg_armor="6"
+				     arm_armor="4"
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_yol002_xj005" 
+        name="{=*}狼首鳞甲" 
+        mesh="sg_yol002_xj005" 
+        weight="20.2" 
+        appearance="2" 
+        culture="Culture.beifangshizu_bandits"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="37" 
+                    leg_armor="18"
+             covers_body="false" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_xnxb_425_yifuzt" 
+        name="{=*}鲜卑鹿皮氅衣" 
+        mesh="xnxb_425_yifuzt" 
+        weight="6.2" 
+        appearance="4" 
+        culture="Culture.beifangshizu_bandits"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" 
+                    leg_armor="3"
+				     arm_armor="2"
+                     head_armor="5"
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+
+    
+
+</Items>

@@ -1,0 +1,129 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="ShowGameMode" DefaultValue="true" />
+    <Parameter Name="ShowDate" DefaultValue="true" />
+    <Parameter Name="IsToggleable" DefaultValue="true" />
+  </Parameters>
+  <Constants>
+    <Constant Name="FriendButton.Width" BrushName="MPLobby.FriendsPanel.FriendButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FriendButton.Height" BrushName="MPLobby.FriendsPanel.FriendButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="FriendButton.ProfileCanvas.Width" Value="80"/>
+    <Constant Name="FriendButton.ProfileCanvas.Height" Value="80"/>
+
+    <Constant Name="FactionIcon.Size" Value="52" />
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" >
+      <Children>
+
+        <NavigationTargetSwitcher FromTarget="..\." ToTarget="..\ToggleButton" />
+        <ToggleButtonWidget Id="ToggleButton" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="60" VerticalAlignment="Top" Brush="MPLobby.RecentGames.GameButton" WidgetToClose="..\InnerPanel" MarginBottom="10" MarginRight="0" MarginLeft="0" IsSelected="false" IsEnabled="*IsToggleable">
+          <Children>
+            <Widget UpdateChildrenStates="true" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+              <Children>
+                <MultiplayerLobbyClassFilterFactionItemButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FactionIcon.Size" SuggestedHeight = "!FactionIcon.Size" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="50" Culture="@CultureA"/>
+
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="110" Brush="MPLobby.Profile.RecentGames.Faction" ClipContents="false" Text="@FactionNameA" />
+
+                <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="300" IndexToBeVisible="0" IndexToWatch="@MatchResultIndex">
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.Score" Brush.TextHorizontalAlignment="Right" Text="@ScoreA" />
+                  </Children>
+                </ValueBasedVisibilityWidget>
+                <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="300"  IndexToWatch="@MatchResultIndex" IndexToBeVisible="1" >
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.Score" Brush.TextHorizontalAlignment="Right" Text="@ScoreA" Brush.FontColor="#6D7917FF"/>
+                  </Children>
+                </ValueBasedVisibilityWidget>
+                <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="300" IndexToWatch="@MatchResultIndex" IndexToBeVisible="2" >
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.Score" Brush.TextHorizontalAlignment="Right" Text="@ScoreA" Brush.FontColor="#A12D0FFF"/>
+                  </Children>
+                </ValueBasedVisibilityWidget>
+
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.Versus" ClipContents="false" Text="@Seperator" MarginLeft="50" MarginRight="50"/>
+
+                <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="300" IndexToWatch="@MatchResultIndex" IndexToBeVisible="0">
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.Score" Brush.TextHorizontalAlignment="Left" Text="@ScoreB"/>
+                  </Children>
+                </ValueBasedVisibilityWidget>
+                <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="300" IndexToWatch="@MatchResultIndex" IndexToBeVisible="1" >
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.Score" Brush.TextHorizontalAlignment="Left" Text="@ScoreB" Brush.FontColor="#A12D0FFF"/>
+                  </Children>
+                </ValueBasedVisibilityWidget>
+                <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="100" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="300" IndexToWatch="@MatchResultIndex" IndexToBeVisible="2">
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" Brush="MPLobby.Profile.RecentGames.Score" Brush.TextHorizontalAlignment="Left" Text="@ScoreB" Brush.FontColor="#6D7917FF"/>
+                  </Children>
+                </ValueBasedVisibilityWidget>
+
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="110" Brush="MPLobby.Profile.RecentGames.Faction" Brush.TextHorizontalAlignment="Right" ClipContents="false" Text="@FactionNameB" />
+
+                <MultiplayerLobbyClassFilterFactionItemButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FactionIcon.Size" SuggestedHeight = "!FactionIcon.Size" HorizontalAlignment="Right" VerticalAlignment="Center"  MarginRight="50" Culture="@CultureB"/>
+              </Children>
+            </Widget>
+
+            <!--Player Abandoned Game-->
+            <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight = "60" IndexToWatch="@PlayerResultIndex" IndexToBeVisible="0" Sprite="BlankWhiteSquare" Color="#373737FF">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="36" SuggestedHeight="33" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPLobby\Profile\game_left_icon" Color="#F4E1C4FF">
+                  <Children>
+                    <HintWidget DataSource="{AbandonedHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </Widget>
+              </Children>
+            </ValueBasedVisibilityWidget>
+
+            <!--Player Won Game-->
+            <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight = "60" IndexToWatch="@PlayerResultIndex" IndexToBeVisible="1" Sprite="BlankWhiteSquare" Color="#6D7917FF">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="36" SuggestedHeight="33" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPLobby\Profile\win_icon" Color="#F4E1C4FF">
+                  <Children>
+                    <HintWidget DataSource="{WonHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </Widget>
+              </Children>
+            </ValueBasedVisibilityWidget>
+
+            <!--Player Lost Game-->
+            <ValueBasedVisibilityWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight = "60" IndexToWatch="@PlayerResultIndex" IndexToBeVisible="2" Sprite="BlankWhiteSquare" Color="#A12D0FFF">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="36" SuggestedHeight="33" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPLobby\Profile\defeat_icon" Color="#F4E1C4FF">
+                  <Children>
+                    <HintWidget DataSource="{LostHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true" />
+                  </Children>
+                </Widget>
+              </Children>
+            </ValueBasedVisibilityWidget>
+
+
+          </Children>
+        </ToggleButtonWidget>
+
+        <ListPanel Id="InnerPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="77" StackLayout.LayoutMethod="VerticalTopToBottom" IsVisible="false" DoNotAcceptNavigation="true" >
+          <Children>
+            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="5" Brush="MPLobby.Profile.RecentGames.GameMode" Text="@GameMode" IsVisible="*ShowGameMode" />
+            <TextWidget DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="5" Brush="MPLobby.Profile.RecentGames.Date" Text="@Date" IsVisible="*ShowDate" />
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="6" MarginBottom="20" StackLayout.LayoutMethod="HorizontalCentered">
+              <Children>
+
+								<NavigationScopeTargeter ScopeID="LobbyRecentGamesTeamAListScope" ScopeParent="..\TeamAList" ScopeMovements="Vertical" />
+                <Lobby.Profile.RecentGames.Game.Team Id="TeamAList" Parameter.ListDataSource="{PlayersA}" MarginRight="10"/>
+								
+								<NavigationScopeTargeter ScopeID="LobbyRecentGamesTeamBListScope" ScopeParent="..\TeamBList" ScopeMovements="Vertical" />
+                <Lobby.Profile.RecentGames.Game.Team Id="TeamBList" Parameter.ListDataSource="{PlayersB}" MarginLeft="10"/>
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </ListPanel>
+
+
+      </Children>
+    </Widget>
+
+  </Window>
+</Prefab>

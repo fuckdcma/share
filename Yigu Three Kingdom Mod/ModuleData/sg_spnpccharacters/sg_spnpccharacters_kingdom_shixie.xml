@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <!-- 士兵 -->
+	<NPCCharacter id="shixie_sol_000"
+		default_group="Infantry"
+		level="14"
+		name="士燮氏卒"
+		is_female="false"
+    is_basic_troop="true"
+		occupation="Soldier"
+		culture="Culture.jiaozhou">
+		<face>
+			<BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485"  key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"  />
+			<BodyPropertiesMax version="4" age="39" weight="0.7223" build="0.7052"  key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"  />
+		</face>
+		<skills>
+			<skill id="Athletics" value="75"/>
+			<skill id="Riding" value="5"/>
+			<skill id="OneHanded" value="105"/>
+			<skill id="TwoHanded" value="10"/>
+			<skill id="Polearm" value="65"/>
+			<skill id="Bow" value="5"/>
+			<skill id="Crossbow" value="5"/>
+			<skill id="Throwing" value="10"/>
+		</skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_001" />
+      <upgrade_target id="NPCCharacter.shixie_sol_002" />
+      <upgrade_target id="NPCCharacter.shixie_sol_003" />
+    </upgrade_targets>
+		<Equipments>
+			<EquipmentRoster>
+				<equipment slot="Item0" id="Item.lz_hj_yangzhou_02"/>
+				<equipment slot="Item1" id="Item.sg_shield_002"/>
+				<equipment slot="Head" id="Item.sg_ar_c01_s009_head"/>
+				<equipment slot="Body" id="Item.sg_ar_c01_s009_body"/>
+				<equipment slot="Gloves" id="Item.sg_ar_c02_s2001_arm"/>
+				<equipment slot="Leg" id="Item.sg_ar_c01_s002_leg"/>
+			</EquipmentRoster>
+			<EquipmentRoster civilian="true">
+				<equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+				<equipment slot="Item1" id="Item.lz_hsd_han_06"/>
+				<equipment slot="Item2" id="Item.lz_ji_han_02"/>
+				<equipment slot="Item3" id="Item.sg_throwing_knife_whole_001"/>
+				<equipment slot="Head" id="Item.lz_yanzhou_mao_07"/>
+				<equipment slot="Body" id="Item.lz_cloth_troop_01"/>
+				<equipment slot="Gloves" id="Item.lz_arm_nv_01"/>
+				<equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+			</EquipmentRoster>
+		</Equipments>
+	</NPCCharacter>
+  <NPCCharacter id="shixie_sol_001" default_group="Ranged" level="16" name="{=*}交州丛林射手"  upgrade_requires="ItemCategory.soldier_level_3" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="30" />
+      <skill id="Bow" value="100" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="40" />
+      <skill id="Riding" value="10" />
+      <skill id="Athletics" value="90" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_005" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jiaozhou_01" />
+        <equipment slot="Item1" id="Item.lz_arrow_jiaozhou_01" />
+        <equipment slot="Item2" id="Item.lz_danshou_jiaozhou_02" />
+        <equipment slot="Head" id="Item.sg_cl_c10_s2001_head" />
+        <equipment slot="Body" id="Item.sg_cl_c10_s2001_body" />
+        <equipment slot="Leg" id="Item.sg_cl_c10_s1001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_002" default_group="Infantry" level="16" name="{=*}交州藤牌环刀士"  upgrade_requires="ItemCategory.soldier_level_3" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="65" />
+      <skill id="Bow" value="10" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="40" />
+      <skill id="Riding" value="10" />
+      <skill id="Athletics" value="120" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_006" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_03" />
+        <equipment slot="Item1" id="Item.lz_shield_jiaozhou_03" />
+        <equipment slot="Head" id="Item.sg_cl_c10_s2001_head" />
+        <equipment slot="Cape" id="Item.sg_cl_c10_s4001_shoulder" />
+        <equipment slot="Body" id="Item.sg_cl_c10_s4001_body" />
+        <equipment slot="Leg" id="Item.sg_cl_c10_s4001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_003" default_group="Infantry" level="16" name="{=*}交州披甲健卒" upgrade_requires="ItemCategory.soldier_level_3" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="50" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="155" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="20" />
+      <skill id="Riding" value="10" />
+      <skill id="Athletics" value="130" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_007" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_spear_jiaozhou_01" />
+        <equipment slot="Head" id="Item.sg_cl_c10_s2001_head" />
+        <equipment slot="Cape" id="Item.sg_cl_c10_s4001_shoulder" />
+        <equipment slot="Body" id="Item.sg_cl_c10_s4001_body" />
+        <equipment slot="Leg" id="Item.sg_cl_c10_s4001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_004" default_group="Infantry" level="16" name="{=*}交州蛮族勇士" upgrade_requires="ItemCategory.soldier_level_3" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="85" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="55" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="110" />
+      <skill id="Riding" value="10" />
+      <skill id="Athletics" value="120" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_008" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_03" />
+        <equipment slot="Item1" id="Item.lz_shield_jiaozhou_01" />
+        <equipment slot="Head" id="Item.sg_cl_c03_s1001_head" />
+        <equipment slot="Body" id="Item.lz_jiaozhou_yi01" />
+        <equipment slot="Leg" id="Item.sg_ar_c08_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_005" default_group="Ranged" level="21" name="{=*}交州密林射手" upgrade_requires="ItemCategory.soldier_level_4" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="25" />
+      <skill id="Polearm" value="35" />
+      <skill id="Bow" value="150" />
+      <skill id="Crossbow" value="25" />
+      <skill id="Throwing" value="45" />
+      <skill id="Riding" value="20" />
+      <skill id="Athletics" value="110" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_009" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jiaozhou_02" />
+        <equipment slot="Item1" id="Item.lz_arrow_jiaozhou_02" />
+        <equipment slot="Item2" id="Item.lz_danshou_jiaozhou_03" />
+        <equipment slot="Head" id="Item.sg_ar_c08_s4003_head" />
+        <equipment slot="Body" id="Item.sg_cl_c10_s3001_body" />
+        <equipment slot="Leg" id="Item.sg_cl_c10_s3001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_006" default_group="Infantry" level="21" name="{=*}交州陷阵甲士" upgrade_requires="ItemCategory.soldier_level_4" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="135" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="85" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="70" />
+      <skill id="Riding" value="20" />
+      <skill id="Athletics" value="140" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_010" />
+      <upgrade_target id="NPCCharacter.shixie_sol_013" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_04" />
+        <equipment slot="Item1" id="Item.lz_shield_jiaozhou_02" />
+        <equipment slot="Head" id="Item.sg_ar_c03_s5004_head" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+        <equipment slot="Body" id="Item.sg_ar_c02_s4001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c02_s8001_arm" />
+        <equipment slot="Leg" id="Item.sg_cl_c10_s4001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_007" default_group="Infantry" level="21" name="{=*}交州枪矛健卒" upgrade_requires="ItemCategory.soldier_level_4" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="95" />
+      <skill id="TwoHanded" value="35" />
+      <skill id="Polearm" value="195" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="30" />
+      <skill id="Riding" value="15" />
+      <skill id="Athletics" value="165" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_011" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_pike_01" />
+        <equipment slot="Head" id="Item.sg_ar_c03_s5004_head" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+        <equipment slot="Body" id="Item.sg_cl_c10_s4001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_008" default_group="Ranged" level="21" name="{=*}交州蛮族巫兵" upgrade_requires="ItemCategory.soldier_level_4" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="120" />
+      <skill id="TwoHanded" value="35" />
+      <skill id="Polearm" value="65" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="150" />
+      <skill id="Riding" value="15" />
+      <skill id="Athletics" value="155" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_012" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_02" />
+        <equipment slot="Item1" id="Item.lz_stone_jiaozhou_02" />
+        <equipment slot="Head" id="Item.lz_jiaozhou_02" />
+        <equipment slot="Body" id="Item.lz_jiaozhou_yi01" />
+        <equipment slot="Leg" id="Item.sg_ar_c08_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_009" default_group="Ranged" level="26" name="{=*}交州峻岭毒箭手" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="35" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="175" />
+      <skill id="Crossbow" value="40" />
+      <skill id="Throwing" value="55" />
+      <skill id="Riding" value="30" />
+      <skill id="Athletics" value="145" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jiaozhou_02" />
+        <equipment slot="Item1" id="Item.lz_arrow_jiaozhou_02" />
+        <equipment slot="Item2" id="Item.lz_arrow_jiaozhou_02" />
+        <equipment slot="Item3" id="Item.lz_danshou_jiaozhou_03" />
+        <equipment slot="Head" id="Item.sg_ar_c10_s5002_head" />
+        <equipment slot="Cape" id="Item.sg_cl_c10_s4001_shoulder" />
+        <equipment slot="Body" id="Item.sg_cl_c10_s4001_body" />
+        <equipment slot="Leg" id="Item.sg_cl_c10_s4001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_010" default_group="Infantry" level="26" name="{=*}交州陷阵锐士" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="175" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="95" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="90" />
+      <skill id="Riding" value="25" />
+      <skill id="Athletics" value="155" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_04" />
+        <equipment slot="Item1" id="Item.lz_shield_jiaozhou_02" />
+        <equipment slot="Head" id="Item.sg_ar_c03_s5004_head" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+        <equipment slot="Body" id="Item.sg_ar_c10_s6004_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_011" default_group="Infantry" level="26" name="{=*}交州枪矛甲士" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="115" />
+      <skill id="TwoHanded" value="45" />
+      <skill id="Polearm" value="270" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="40" />
+      <skill id="Riding" value="25" />
+      <skill id="Athletics" value="195" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_014" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_pike_01" />
+        <equipment slot="Head" id="Item.sg_ar_c03_s5004_head" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+        <equipment slot="Body" id="Item.sg_ar_c10_s6004_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_012" default_group="Ranged" level="26" name="{=*}交州南蛮蛊师" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="180" />
+      <skill id="TwoHanded" value="45" />
+      <skill id="Polearm" value="75" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="240" />
+      <skill id="Riding" value="25" />
+      <skill id="Athletics" value="175" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_015" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_04" />
+        <equipment slot="Item1" id="Item.lz_stone_jiaozhou_02" />
+        <equipment slot="Item2" id="Item.lz_stone_jiaozhou_02" />
+        <equipment slot="Head" id="Item.lz_jiaozhou_01" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s5001_shoulder" />
+        <equipment slot="Body" id="Item.lz_jiaozhou_yi01" />
+        <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c08_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_013" default_group="Cavalry" level="26" name="{=*}交州散骑" upgrade_requires="ItemCategory.soldier_level_5" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="270" />
+      <skill id="TwoHanded" value="45" />
+      <skill id="Polearm" value="90" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="40" />
+      <skill id="Riding" value="225" />
+      <skill id="Athletics" value="145" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_05" />
+        <equipment slot="Item1" id="Item.lz_shield_jiaozhou_02" />
+        <equipment slot="Head" id="Item.sg_ar_c03_s5004_head" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+        <equipment slot="Body" id="Item.sg_ar_c02_s4001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c02_s8001_arm" />
+        <equipment slot="Leg" id="Item.sg_cl_c10_s4001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+      <equipment slot="Horse" id="Item.sg_c01_horse_xiyuchunxuema" />
+      <equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t1_a" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_014" default_group="Infantry" level="31" name="{=*}交州折冲锐士" upgrade_requires="ItemCategory.soldier_level_6" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="120" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="305" />
+      <skill id="Bow" value="25" />
+      <skill id="Crossbow" value="25" />
+      <skill id="Throwing" value="45" />
+      <skill id="Riding" value="30" />
+      <skill id="Athletics" value="245" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_pike_01" />
+        <equipment slot="Head" id="Item.sg_ar_c10_s6005_head" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+        <equipment slot="Body" id="Item.sg_ar_c10_s6002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_015" default_group="Ranged" level="31" name="{=*}交州炎蛮术士"  upgrade_requires="ItemCategory.soldier_level_6" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="210" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="85" />
+      <skill id="Bow" value="25" />
+      <skill id="Crossbow" value="25" />
+      <skill id="Throwing" value="310" />
+      <skill id="Riding" value="30" />
+      <skill id="Athletics" value="205" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shixie_sol_016" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_05" />
+        <equipment slot="Item1" id="Item.lz_stone_jiaozhou_02" />
+        <equipment slot="Item2" id="Item.lz_stone_jiaozhou_02" />
+        <equipment slot="Head" id="Item.lz_jiaozhou_02" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s5001_shoulder" />
+        <equipment slot="Body" id="Item.lz_jiaozhou_yi01" />
+        <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c08_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shixie_sol_016" default_group="Ranged" level="36" name="{=*}交州炎蛮火神巫师"  upgrade_requires="ItemCategory.soldier_level_7" occupation="Soldier" is_basic_troop="true" culture="Culture.jiaozhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_jiaozhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="250" />
+      <skill id="TwoHanded" value="55" />
+      <skill id="Polearm" value="95" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="395" />
+      <skill id="Riding" value="35" />
+      <skill id="Athletics" value="215" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_danshou_jiaozhou_05" />
+        <equipment slot="Item1" id="Item.lz_stone_jiaozhou_01" />
+        <equipment slot="Item2" id="Item.lz_stone_jiaozhou_01" />
+        <equipment slot="Head" id="Item.lz_jiaozhou_02" />
+        <equipment slot="Cape" id="Item.sg_ar_c10_s5001_shoulder" />
+        <equipment slot="Body" id="Item.lz_jiaozhou_yi01" />
+        <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c08_s7001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

@@ -1,0 +1,39 @@
+<Prefab>
+	<Constants>
+    <Constant Name="PowerBar.Flag.Width" BrushLayer="Default" BrushName="MPHUD.PowerBar.Flag" BrushValueType="Width" MultiplyResult="0.6" />
+    <Constant Name="PowerBar.Flag.Height" BrushLayer="Default" BrushName="MPHUD.PowerBar.Flag" BrushValueType="Height" MultiplyResult="0.6" />
+
+  </Constants>
+	<VisualDefinitions>
+
+	</VisualDefinitions>
+	<Window>
+    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PowerBar.Flag.Width" SuggestedHeight="!PowerBar.Flag.Height" MarginLeft="7" MarginRight="7">
+      <Children>
+        <FillBarVerticalClipWidget  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="28" SuggestedHeight="41"  HorizontalAlignment="Center" Color="@Color2" AlphaFactor="0" ClipWidget="ClipWidget" FillWidget="ClipWidget\FillWidget" InitialAmountAsFloat="@FlagProgress" IsDirectionUpward="true" MaxAmountAsFloat="1">
+          <Children>
+            <ImageWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="27" SuggestedHeight="46" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPHUD.PowerBar.Flag.Background" Brush.GlobalAlphaFactor="0.6" Brush.GlobalColor="@Color2" IsDisabled="@IsKeepFlag" />
+            <ImageWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedWidth="22" SuggestedHeight="41"  HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPHUD.PowerBar.Flag" IsDisabled="@IsKeepFlag" Brush.GlobalColor="@Color2" Brush.GlobalAlphaFactor="0" MarginLeft="1.5" MarginRight="1.5" />
+            <Widget Id="ClipWidget" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedWidth="22" SuggestedHeight="41" MarginLeft="1.5" MarginRight="1.5" HorizontalAlignment="Center" ForcePixelPerfectRenderPlacement="true">
+              <Children>
+                <ImageWidget Id="FillWidget"  WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedWidth="22" SuggestedHeight="41" MarginLeft="2" MarginRight="2"   HorizontalAlignment="Center" Brush="MPHUD.PowerBar.Flag" Brush.GlobalColor="@Color" IsDisabled="@IsKeepFlag" />
+              </Children>
+            </Widget>
+          </Children>
+        </FillBarVerticalClipWidget>
+        <!--<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" IsVisible="@IsSpawnAffectorFlag" VerticalAlignment="Bottom" HorizontalAlignment="Center" PositionYOffset="25" Sprite="MPHud\spawn_affector_flag" Color="#FF00FFFF"/>-->
+        <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPHUD.PowerBar.FlagLetter" Brush.FontColor="@Color2" Text="@LetterCode"/>
+
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom" PositionYOffset="40">
+          <Children>
+            <ValueBasedVisibilityWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  IndexToBeVisible="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" WatchType="BiggerThanEqual" PositionYOffset="5" IndexToWatch="@RemainingRemovalTime" IsVisible="false">
+              <Children>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="MPHUD.Flag.RemovalTime.Text" IntText="@RemainingRemovalTime"/>
+              </Children>
+            </ValueBasedVisibilityWidget>
+          </Children>
+        </ListPanel>
+      </Children>
+    </Widget>
+	</Window>
+</Prefab>

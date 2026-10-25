@@ -1,0 +1,47 @@
+<YiguKingdomTabControlListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="38" ArmiesButton="ArmiesTabButton" ArmiesPanel="..\..\ArmiesPanel" ClansButton="ClanTabButton" ClansPanel="..\..\ClansPanel" FiefsButton="FiefsTabButton" FiefsPanel="..\..\FiefsPanel" OfficialPositionButton="OfficialPositionTabButton" OfficialPositionPanel="..\..\OfficialPositionPanel" PoliciesButton="PoliciesTabButton" PoliciesPanel="..\..\PoliciesPanel" DiplomacyButton="DiplomacyTabButton" DiplomacyPanel="..\..\DiplomacyPanel">
+		<Children>
+
+			<!--Clan Tab-->
+			<ButtonWidget Id="ClanTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Header.Tab.Right.Width.Scaled" SuggestedHeight="!Header.Tab.Right.Height.Scaled" MarginRight="5" Brush="Header.Tab.Left" Command.Click="ExecuteShowClan_Patched" UpdateChildrenStates="true">
+				<Children>
+					<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" PositionXOffset="10" Brush="Clan.TabControl.Text" Text="@ClansText" />
+				</Children>
+			</ButtonWidget>
+
+			<!--Fiefs Tab-->
+			<ButtonWidget Id="FiefsTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Header.Tab.Center.Width.Scaled" SuggestedHeight="!Header.Tab.Center.Height.Scaled" VerticalAlignment="Center" PositionYOffset="2" Brush="Header.Tab.Center" Command.Click="ExecuteShowFiefs_Patched" UpdateChildrenStates="true">
+				<Children>
+					<TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="@FiefsText" />
+				</Children>
+			</ButtonWidget>
+
+			<!--OfficialPosition Button-->
+			<ButtonWidget Id="OfficialPositionTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Header.Tab.Center.Width.Scaled" SuggestedHeight="!Header.Tab.Center.Height.Scaled" HorizontalAlignment="Right" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="5" Brush="Header.Tab.Center" Command.Click="ExecuteShowOfficialPosition" UpdateChildrenStates="true">
+				<Children>
+					<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="@OfficialPositionText" />
+				</Children>
+			</ButtonWidget>
+
+			<!--Policies Button-->
+			<ButtonWidget Id="PoliciesTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Header.Tab.Center.Width.Scaled" SuggestedHeight="!Header.Tab.Center.Height.Scaled" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="5" Brush="Header.Tab.Center" Command.Click="ExecuteShowPolicies_Patched" IsEnabled="@PlayerHasKingdom" UpdateChildrenStates="true">
+				<Children>
+					<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" IsEnabled="@PlayerHasKingdom" Text="@PoliciesText" />
+				</Children>
+			</ButtonWidget>
+
+			<!--Armies Button-->
+			<ButtonWidget Id="ArmiesTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Header.Tab.Center.Width.Scaled" SuggestedHeight="!Header.Tab.Center.Height.Scaled" HorizontalAlignment="Right" VerticalAlignment="Center" PositionYOffset="2" MarginLeft="5" Brush="Header.Tab.Center" Command.Click="ExecuteShowArmy_Patched" UpdateChildrenStates="true">
+				<Children>
+					<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="@ArmiesText" />
+				</Children>
+			</ButtonWidget>
+
+			<!--Diplomacy Button-->
+			<ButtonWidget Id="DiplomacyTabButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Header.Tab.Right.Width.Scaled" SuggestedHeight="!Header.Tab.Right.Height.Scaled" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="6" Brush="Header.Tab.Right" Command.Click="ExecuteShowDiplomacy_Patched" UpdateChildrenStates="true">
+				<Children>
+					<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Clan.TabControl.Text" Text="@DiplomacyText" />
+				</Children>
+			</ButtonWidget>
+
+		</Children>
+	</YiguKingdomTabControlListPanel>

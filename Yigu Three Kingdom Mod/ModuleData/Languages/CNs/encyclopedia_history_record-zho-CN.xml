@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+ <tags>
+  <tag language="简体中文"/>
+ </tags>
+ <strings>
+     <string id="strHistoryRecord" text="史书" />
+     <string id="strHistoryRecordDesc" text="史书记录条目" />
+     <string id="strHistoryRecordSortTime" text="时间" />
+     <string id="strHistoryRecordFilterGroupTime" text="年份" />
+     <string id="strBattleRecordTitle" text="{TIME}，{SETTLEMENT}{?IS_NEAR_SETTLEMENT}近郊{?}{\?}之战" />
+     <string id="strBattleRecordDescFirstField" text="{TIME}，于{SETTLEMENT}附近，{ATTACKER_HERO_LIST}率{ATTACKER_TROOP_COUNT}人大军攻击{DEFENDER_HERO_LIST}的军队{DEFENDER_TROOP_COUNT}人，结果{BATTLE_RESULT}。" />
+     <string id="strBattleRecordDescFirstSettlement" text="{TIME}，于{SETTLEMENT}中，{ATTACKER_HERO_LIST}率{ATTACKER_TROOP_COUNT}人大军进攻{DEFENDER_DESC}{DEFENDER_TROOP_COUNT}人镇守的{?IS_VILLAGE}村庄{?}城池{\?}，结果{BATTLE_RESULT}。" />
+     <string id="strBattleRecordDescFirstSettlementNoHero" text="{DEFENDER}守军" />
+     <string id="strBattleRecordDescFirstSettlementHero" text="{DEFENDER}领" />
+     <string id="strBattleRecordRegularTroop" text="盗匪" />
+     <string id="strBattleRecordSplitter" text="、" />
+     <string id="strBattleRecordComma" text="，" />
+     <string id="strBattleRecordSemicolon" text="；" />
+     <string id="strBattleRecordFullstop" text="。" />
+     <string id="strBattleRecordResultWin1" text="以少胜多" />
+     <string id="strBattleRecordResultWin2" text="凯旋而归" />
+     <string id="strBattleRecordResultWin3" text="血战惨胜" />
+     <string id="strBattleRecordResultLose1" text="惨遭大败" />
+     <string id="strBattleRecordResultLose2" text="铩羽而归" />
+     <string id="strBattleRecordResultLose3" text="血战惜败" />
+     <string id="strBattleRecordDescSecond" text="此战，{ATTACKER_LEADER}方伤亡{ATTACKER_CASUALTY}人，{DEFENDER_LEADER}方伤亡{DEFENDER_CASUALTY}人。" />
+     <string id="strBattleRecordDescThirdPrefix" text="是役，" />
+     <string id="strBattleRecordDescThirdKillRegular" text="手刃{KILL_REGULAR_COUNT}名敌军" />
+     <string id="strBattleRecordDescThirdKillHero" text="阵斩{KILL_HERO_LIST}" />
+     <string id="strBattleRecordDescThirdWoundHero" text="重创{WOUND_HERO_LIST}" />
+     <string id="strBattleRecordDescThirdHeroWounded" text="{HERO}为流矢所伤" />
+     <string id="strBattleRecordDescThirdHeroKilled" text="{HERO}殁于流矢" />
+ </strings>
+</base>

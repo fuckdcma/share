@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  OccupationType  父母职业
+    Artisan       工匠 (村子|贫穷)
+    Bard          吟游诗人 (村子|贫穷)
+    Retainer      侍从 (村子|富裕)
+    Merchant      商人 (城镇|富裕)
+    Farmer        农民 (村子|贫穷)
+    Hunter        猎人 (村子|贫穷)
+    Vagabond      流浪者 (村子|贫穷)
+    Mercenary     雇佣兵 (城镇|贫穷)
+    Herder        牧民 (村子|贫穷)
+    Healer        医生 (村子|富裕)
+
+  Skill           角色技能
+    OneHanded     单手
+    TwoHanded     双手
+    Polearm       长杆
+    Bow           弓
+    Crossbow      弩
+    Throwing      投掷
+    Riding        骑术
+    Athletics     跑动
+    Crafting      锻造
+    Tactics       战术
+    Scouting      侦察
+    Roguery       流氓习气
+    Charm         魅力
+    Trade         交易
+    Steward       管理
+    Leadership    统御
+    Medicine      医术
+    Engineering   工程
+
+  Attribute       角色属性
+    Vigor         活力
+    Control       控制
+    Endurance     耐力
+    Cunning       狡诈
+    Social        社交
+    Intelligence  智力
+
+  Traits          角色性格
+    Valor         胆气
+    Mercy         善恶
+    Honor         荣誉
+    Generosity    胸怀
+    Calculating   谋略
+
+  Option  选项
+    拥有属性：
+      Text                  选项文本
+      Description           选择后的描述文本
+      Culture               选项是否显示所要求的文化
+      Stage                 选项归属的选择阶段
+      ConditionCulture      条件：当前文化
+      ConditionFamily       选项：家庭归属类型
+      ConditionEconomy      选项：家庭经济
+      ConditionOccupation   选项：家庭职业
+      Skills                提升的技能
+      Attribute             提升的属性
+      Traits                提升的性格
+      Renown                提升的声望
+      ParentType            家庭类型
+      OccupationType        家庭职业
+      Animation             选择选项后，人物所播放的动作
+      AnimationItem         播放动画时，人物所佩戴的模型（可以是武器id，也可以是预制件id）
+      TitleType             用于控制青年阶段不同选项人物所穿的衣服
+
+
+    详细说明：
+      Text 与 Description
+        这部分文本需要先在 ModuleData\Languages 的语言文件中配置文本
+        然后填写时按照格式 {=ID}备选文本 进行填写
+
+      ConditionCulture, ConditionFamily, ConditionEconomy, ConditionOccupation
+        以上为选项是否显示的控制条件
+        条件可以写多项，使用英文小写逗号分隔，如果存在多项条件，则是判断是否满足多个条件中的任意一项
+        如果不写或着删除，则表示不进行限制
+        例：
+          单个：ConditionCulture="yongliang"
+          多个：ConditionCulture="yongliang,jizhou,yangzhou"
+
+        填写说明：
+          ConditionCulture    文化id
+          ConditionFamily     农村：Rual 城镇：Urban
+          ConditionEconomy    贫穷：Poor 富有：Rich
+          ConditionOccupation 职业id
+
+        提示：农村或城镇、贫穷或富有依照家庭职业来判断
+
+      Skills  提升的技能
+        技能最多填写两个，使用英文小写逗号分隔
+        如果不写或着删除，则表示不提升技能
+        例：
+          单个：Skills="OneHanded"
+          两个：Skills="OneHanded,TwoHanded"
+
+      ParentType 家庭类型
+        家庭类型限制比较死，只能填写1-6，目前 Parents 阶段不建议新增或删减。
+-->
+
+<CharacterCreationConfig>
+  <SpawnPoints>
+    <SpawnPoint ConditionCulture="sili" PosX="1557.926" PosY="1276.781"/>
+    <SpawnPoint ConditionCulture="sili" PosX="1727.099" PosY="1284.797"/>
+    <SpawnPoint ConditionCulture="jingzhou" PosX="1718.374" PosY="1137.188"/>
+    <SpawnPoint ConditionCulture="yizhou" PosX="1323.133" PosY="1060.337"/>
+    <SpawnPoint ConditionCulture="jizhou" PosX="1826.127" PosY="1390.325"/>
+    <SpawnPoint ConditionCulture="youzhou" PosX="1902.199" PosY="1584.422"/>
+    <SpawnPoint ConditionCulture="youzhou" PosX="2265.752" PosY="1733.277"/>
+    <SpawnPoint ConditionCulture="yanzhou" PosX="1853.003" PosY="1347.125"/>
+    <SpawnPoint ConditionCulture="yanzhou" PosX="1894.281" PosY="1407.157"/>
+    <SpawnPoint ConditionCulture="xuzhou" PosX="1959.639" PosY="1273.276"/>
+    <SpawnPoint ConditionCulture="jiaozhou" PosX="1786.773" PosY="740.53"/>
+    <SpawnPoint ConditionCulture="jiaozhou" PosX="1667.071" PosY="729.677"/>
+    <SpawnPoint ConditionCulture="yangzhou" PosX="2031.761" PosY="1133.969"/>
+    <SpawnPoint ConditionCulture="yangzhou" PosX="1898.133" PosY="960.014"/>
+    <SpawnPoint ConditionCulture="bingzhou" PosX="1739.744" PosY="1582.084"/>
+    <SpawnPoint ConditionCulture="qingzhou" PosX="2011.935" PosY="1429.97"/>
+    <SpawnPoint ConditionCulture="yuzhou" PosX="1832.596" PosY="1212.255"/>
+    <SpawnPoint ConditionCulture="yongliang" PosX="1186.357" PosY="1589.468"/>
+  </SpawnPoints>
+  <OtherTexts>
+    <OtherText Id="ReviewPageDescription" Text="{=*}你准备开始你在东汉末年的乱世中冒险了！这是你的角色，如果准备好了请继续，或是返回之前的选项进行更改。"/>
+    <OtherText Id="AgeSelectionTitle" Text="{=*}初始年龄"/>
+    <OtherText Id="AgeSelectionDescription" Text="{=*}你的角色在什么年纪开启了冒险之旅？"/>
+    <OtherText Id="AgeSelectionYoungAdult" Text="{=*}岁在弱冠，风华正茂。青丝如瀑，眸若晨星。身姿挺拔，如玉树临风；意气飞扬，似鸿鹄展翅。心怀壮志，胸藏万卷，然世事未谙，如初涉瀚海。如鹰隼试翼，风尘吸张；如乳虎啸谷，百兽震惶。虽有冲天之志，然羽翼未丰；虽有凌云之心，然根基未固。"/>
+    <OtherText Id="AgeSelectionAdult" Text="{=*}岁至而立，风华内敛。青衿已褪，白首未临。承先祖之遗风，负家门之厚望。如日之方中，似月之将满。筋骨犹强，而思虑渐深；血气方刚，而锋芒稍敛。内外之责并臻，公私之事交迫。前承少年之余烈，后启中年之新篇。乃人生之枢机，命运之转捩。"/>
+    <OtherText Id="AgeSelectionMiddleAged" Text="{=*}岁届不惑，气度沉雄。鬓发微斑，映岁月之痕；目色深邃，藏天地之机。身姿如山，经风雨而不倾；意态似水，历波涛而愈静。胸中丘壑，早已了然；世事浮沉，尽归平淡。如日之过午，光华内敛。心如古井，波澜不惊，虽蕴深沉，更显岁月之厚重。"/>
+    <OtherText Id="AgeSelectionElder" Text="{=*}岁至知命，气象恢弘。鬓发如霜，映岁月之沧桑；眉宇含章，藏乾坤之玄奥。胸中万象，早已洞明；浮生百态，尽归从容。长河中流，前波后浪；沉稳持重，世事洞明。心如古镜，尘埃不染；苍松立崖，历经风霜。"/>
+  </OtherTexts>
+  <!-- 定义家庭职业 -->
+  <BackStoryOccupations>
+    <Occupation Id="Artisan" Urban="false" Rich="false" />    <!-- 工匠 (村子|贫穷) -->
+    <Occupation Id="Bard" Urban="false" Rich="false" />       <!-- 吟游诗人 (村子|贫穷) -->
+    <Occupation Id="Retainer" Urban="false" Rich="false" />   <!-- 侍从 (村子|富裕) -->
+    <Occupation Id="Merchant" Urban="false" Rich="false" />   <!-- 商人 (城镇|富裕) -->
+    <Occupation Id="Farmer" Urban="false" Rich="false" />     <!-- 农民 (村子|贫穷) -->
+    <Occupation Id="Hunter" Urban="false" Rich="false" />     <!-- 猎人 (村子|贫穷) -->
+    <Occupation Id="Vagabond" Urban="false" Rich="false" />   <!-- 流浪者 (村子|贫穷) -->
+    <Occupation Id="Mercenary" Urban="false" Rich="false" />  <!-- 雇佣兵 (城镇|贫穷) -->
+    <Occupation Id="Herder" Urban="false" Rich="false" />     <!-- 牧民 (村子|贫穷) -->
+    <Occupation Id="Healer" Urban="false" Rich="false" />     <!-- 医生 (村子|富裕) -->
+  </BackStoryOccupations>
+  <BackStoryStageTexts>
+    <StageText Stage="Parents"
+               Title="{=*}【家世】" 
+               Description="{=*}夫天命有常，家世各异。你生于乱世，家世何如？……"/>
+
+    <StageText Stage="Childhood"
+               Title="{=*}【求学治经】" 
+               Description="{=*}年少时，你聪慧伶俐，天赋异禀。邑人奇之，乃使就学。你立志研习……"/>
+
+    <StageText Stage="Education"
+               Title="{=*}【流寇来犯】" 
+               Description="{=*}时值黄巾猖獗，流寇四起。有贼寇百余人聚集，意欲洗劫乡里。里正为护妇孺，不幸为流寇弹弓所伤，跌落马下，血流如注。{newline}{newline}此时，你血气方刚，悲愤不已，于是……"/>
+
+    <StageText Stage="Education"
+               Title="{=*}【流寇来犯】" 
+               Description="{=*}时值黄巾猖獗，流寇四起。有贼寇百余人聚集，意欲洗劫乡里。里正为护妇孺，不幸为流寇弹弓所伤，跌落马下，血流如注。{newline}{newline}此时，你血气方刚，悲愤不已，于是……"
+               ConditionFamily="Urban"/>
+
+    <StageText Stage="Youth"
+               Title="{=*}【馈赠】" 
+               Description="{=*}年已十七，当服更卒役。里正知你骁勇，然见所持之兵刃，仅有环首短刀一柄，名曰“拍髀”，乃镌刻竹简所用，不足以防身。{newline}{newline}便邀至其家，愿馈赠你兵器一件用以防身。你选择……"/>
+
+    <StageText Stage="Youth"
+               Title="{=*}【馈赠】" 
+               Description="{=*}年已及笄，你意欲外出闯荡。里正知你骁勇，然见所持之兵刃，仅有环首短刀一柄，名曰“拍髀”，乃镌刻竹简所用，不足以防身。{newline}{newline}便邀至其家，愿馈赠你兵器一件用以防身。你选择……"
+               ConditionGender="Female"/>
+
+    <StageText Stage="Adulthood"
+               Title="{=*}【踏上征程】" 
+               Description="{=*}忽一日，江阔云低，醉里挑灯。你饮下浊酒，仗剑出门，畅想着未来的征程。将来的你会是…………"/>
+  </BackStoryStageTexts>
+  <BackStoryOptions>
+    <!-- 家族 -->
+    <!-- empire -->
+    <Option Text="{=*}【习武不辍，行正济世】"
+            Description="{=*}【习武不辍，行正济世】{newline}{newline}父为游侠，名震乡里。每诫余曰：“当习文武，行正途，济天下。”余谨记父言，自小习武，志在扫平世间不平之事。{newline}{newline}家虽贫，然父授余剑术，教余骑射。每至夜深，父携余至荒野，指点剑法，曰：“剑者，心之器也。心正则剑正，心邪则剑邪。”余闻之，凛然受教，日夜苦练，不敢懈怠。{newline}{newline}年十岁，已能持剑舞风，骑射如飞。乡里有不平事，乃欲挺身而出。或问余曰：“子年幼，何不畏强？”余对曰：“父教我以正，我当行之以勇。世间不平，岂可坐视？”"
+            Stage="Parents"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="OneHanded,Polearm"
+            Attribute="Endurance"
+            ParentType="1"
+            OccupationType="Retainer" /> 
+          
+    <Option Text="{=*}【伏案苦读，夙夜匪懈】" 
+            Description="{=*}【伏案苦读，夙夜匪懈】{newline}{newline}家无余财，唯典籍数卷，朝夕披览，手不释卷。每至夜深，灯火如豆，犹伏案苦读，孜孜不倦。邻舍有富者，锦衣玉食，嬉戏终日，余未尝羡之。独爱书卷之香，沉浸其中，如饮醇醪，不觉饥寒。{newline}{newline}或问余曰：“人皆苟图衣食，子何苦如此？”余对曰：书中有天地，何苦之有？{newline}{newline}年十岁，已遍览家藏，遂借书于乡里。每得一书，如获至宝，昼夜诵读，直至烂熟于心。家贫无纸笔，则以树枝画地，以沙为纸，习字不辍。乡人叹曰：“贫不足忧，志不可夺，当如是也。”"
+            Stage="Parents"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="Medicine,Tactics"
+            Attribute="Intelligence"
+            ParentType="2"
+            OccupationType="Bard" />
+
+    <Option Text="{=*}【家富志远，心在庙堂】" 
+            Description="{=*}【家富志远，心在庙堂】{newline}{newline}生于世家，族显而家富。锦衣玉食，仆从如云，然余独好国政，志在天下。每闻朝堂之事，必悉心倾听；每见典籍所载，必潜心研读。尝独坐书斋，披览史册，究古今之变，探治乱之源。{newline}{newline}或问余曰：“子年幼，何忧国事？”余对曰：“大丈夫当怀鸿鹄之志，岂可图燕雀之见？家国之责，重于泰山；天下之志，远如沧海。”{newline}{newline}年十岁，已通《春秋》《尚书》，知礼乐之制，明刑政之要。常与父兄论天下大势，言辞犀利，见解独到，族人皆奇之，赞曰：“虽处富贵，不耽逸乐；虽居安闲，不忘忧患。”"
+            Stage="Parents"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="Steward,Leadership"
+            Attribute="Social"
+            ParentType="3"
+            OccupationType="Merchant" />
+
+    <Option Text="{=*}【饥寒砺志，流离不堕】" 
+            Description="{=*}【饥寒砺志，流离不堕】{newline}{newline}家道衰微，贫无立锥。时逢天下饥馑，流民四起，余不得已随众奔走，辗转于荒野之间，号呼转徙，云水飘飏。{newline}{newline}初离乡里，与老弱病残为伍。昼则跋山涉水，夜则露宿风餐。饥则采野果充腹，渴则饮涧水解渴。余咬牙挺立，不敢言苦。流民之列，饿殍遍野，啼饥号寒，余尝分食与老弱，解衣与病残。{newline}{newline}或问余曰：“子年幼，何不自顾？”余对曰：“君子固穷，余不坠其志也。”{newline}{newline}途中遇盗匪劫掠，流民惊散，余独持木棍，护佑弱小，虽力不能敌，然志不可夺。盗匪见余年幼而勇，竟生怜悯，弃之而去。自此，余更知坚忍之可贵，志气之不可摧。"
+            Stage="Parents"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="Athletics,Scouting"
+            Attribute="Vigor"
+            ParentType="4"
+            OccupationType="Vagabond" />
+
+    <Option Text="{=*}【耕读传家，躬耕陇亩】" 
+            Description="{=*}【耕读传家，躬耕陇亩】{newline}{newline}祖居乡里，世代为农，耕读传家，朴实无华。父勤于田亩，母善于织纺，家中虽无余财，然衣食自足，和睦安乐。{newline}{newline}若非徭役之时，春则忙于秧苗，夏则俯身锄禾，秋则稻穗累累，冬则修渠备耕。{newline}{newline}及至垂髫，随父劳作。父携余至田间，诫曰：“农者，国之本也。汝虽年幼，当知耕读为本，禾苗如人，勤则茂，惰则萎。”余铭记之，不敢稍怠。虽年幼，然知稼穑之艰，晓生计之难。"
+            Stage="Parents"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="Engineering,Trade"
+            Attribute="Endurance"
+            ParentType="5"
+            OccupationType="Farmer" />
+
+
+    <Option Text="{=*}【北狄之后，匈奴苗裔】" 
+            Description="{=*}【北狄之后，匈奴苗裔】{newline}{newline}生于朔漠，长于穹庐，自幼习游牧之事，善骑射，能于马上食寝，驰骋如飞，盖天性使然也。{newline}{newline}时值匈奴内迁，随部众南徙，入居中原，虽处华夏之地，然其匈奴之风未泯，骑射之技犹存。其人少时，每忆草原之辽阔，至暮春，辄驰马出郭，纵辔疾驰。思及漠北，则心驰神往，不能自已。{newline}{newline}其性质朴，好勇尚武，虽居中原，不改其旧俗，喜与同伴较射猎，角力搏击，以显其勇。然中原之地，礼乐昌明，文教蔚兴，其人虽怀匈奴之技，亦渐染华夏之风，习诗书，明礼仪，然其心之所向，终不忘草原之自由，骑射之豪迈。{newline}{newline}每至夜深人静，仰观天象，北斗所指，犹忆漠北之星宿，心中感慨，未尝不唏嘘流涕也。"
+            Stage="Parents"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="Riding,Bow"
+            Attribute="Control"
+            ParentType="6"
+            OccupationType="Herder" />
+
+
+    <!-- 童年早期 -->
+    <Option Text="{=*}【兵法韬略】" 
+            Description="{=*}你立志研读【兵法韬略】{newline}{newline}兵者，国之大事，死生之地，存亡之道，不可不察也。昔黄帝战蚩尤于涿鹿，以兵势胜之；汤武伐桀纣，以兵略克之。故兵法者，乃天地之理，阴阳之变，刚柔之用，奇正之合也。{newline}{newline}孙子曰：“兵者，诡道也。”故善战者，不战而屈人之兵；善守者，不守而保其国。兵无常势，水无常形，能因敌变化而取胜者，谓之神。{newline}{newline}夫兵者，贵速不贵久，贵奇不贵正。故善用兵者，避其锐气，击其惰归，以逸待劳，以饱待饥。昔韩信背水一战，以少胜多；项羽破釜沉舟，以勇制强。此皆兵法之妙用也。"
+            Stage="Childhood"
+            Skills="Leadership,Tactics"
+            Attribute="Cunning"
+            Traits="Calculating"
+            Animation="act_childhood_leader" />
+          
+    <Option Text="{=*}【墨家著作】" 
+            Description="{=*}你立志研读【墨家著作】{newline}{newline}墨家者，肇自墨子，成于战国。其道尚同，其徒皆善守御之具，习攻战之器，然不为攻，唯以守为务。{newline}{newline}墨家之经，其文质朴，其义深远，虽非华丽之辞，然切中时弊，足以警世。其术贵俭，非礼非乐，节用节葬。其言曰：“兼相爱，交相利。”又曰：“非攻非战，守御为务。”{newline}{newline}至于汉代，虽儒术独尊，然墨家之余风，犹存于民间。其节用之训，非攻之诫，犹足以警世励俗。墨家之学，虽非显赫，然其志在济世，其道在安民。其言虽质朴，然其义深远。故虽不为世所重，然其道不灭，其学不衰。此墨家之所以为墨家也。"
+            Stage="Childhood"
+            Skills="Engineering,Crafting"
+            Attribute="Intelligence"
+            Traits="Mercy"
+            Animation="act_childhood_athlete" />
+
+    <Option Text="{=*}【纵横之略】" 
+            Description="{=*}你立志研读【纵横之略】{newline}{newline}纵横之士，生于战国，兴于秦汉，其术诡谲，其辞雄辩。盖以权变为宗，以利害为衡，游说诸侯，驰骋天下。{newline}{newline}其经典者，皆以谋略为本，以辞令为锋。其文纵横捭阖，其辞犀利如剑。或言合纵，或言连横，皆以利害为权衡，可谓纵横家之圭臬也。{newline}{newline}夫犀首说六国合纵，张仪说秦连横，皆以一言而动天下，其辞令之妙，可谓”一言兴邦，一言丧邦“。纵横之士，其术虽诡，然亦有道。盖以权变为用，以仁义为辅。其谋略虽隐，然成事必显，其道虽诡，然终归于正。{newline}{newline}故纵横之士，虽以权变为宗，然亦不失仁义之本。后世之士，虽不必尽用其术，然亦不可不知其理也。"
+            Stage="Childhood"
+            Skills="Charm,Trade"
+            Attribute="Social"
+            Traits="Calculating"
+            Animation="act_childhood_manners" />
+
+    <Option Text="{=*}【法家术论】" 
+            Description="{=*}你立志研读【法家术论】{newline}{newline}法家者，肇于管仲，成于韩非，其道尚法，其术重势。昔者，商君佐秦，变法图强，废井田，开阡陌，奖耕战，禁私斗，于是国富兵强，诸侯震恐。韩非著书，集其大成，言法术势，三者兼备，其文峻刻，其理深邃，以为帝王之具，不可废也。{newline}{newline}夫法家之要，在于严刑峻法，信赏必罚。管子曰：“法者，天下之程式，万事之仪表。”韩非亦云：“法不阿贵，绳不挠曲。”是故，法行则国治，法弛则国乱。商君之法，使秦民勇于公战，怯于私斗，卒并六国，一统天下。{newline}{newline}法家之学，其尊君抑臣，富国强兵之术，实为乱世之良药。故汉承秦制，虽尊儒术，然其法治互为表里，未尝废也。"
+            Stage="Childhood"
+            Skills="Steward,Leadership"
+            Attribute="Control"
+            Traits="Valor"
+            Animation="act_childhood_animals" />
+
+    <Option Text="{=*}【儒家典籍】" 
+            Description="{=*}你立志研读【儒家典籍】{newline}{newline}昔者，孔子删述六经，垂宪万世，其道大光。儒家之学，肇自洙泗，流衍九州，蔚为显学。夫《诗》《书》《礼》《乐》《易》《春秋》者，圣人之微言大义存焉。其辞约而旨远，其事迩而义深，诚可谓经天纬地，垂范百王者也。{newline}{newline}故儒家者，乃修身齐家治国平天下之大法也。为学者，贵在持之以恒，日积月累，方能成其大器。孟子曰：“天将降大任于斯人也，必先苦其心志，劳其筋骨。”故君子者，必先修身，而后能齐家治国平天下。夫仁者，爱人者也；义者，正己者也；礼者，序上下者也；智者，明是非者也；信者，守承诺者也。{newline}{newline}是故儒家者，乃以仁义为本，以礼智为用，以信为行，以成其大道也。"
+            Stage="Childhood"
+            Skills="Charm,Medicine"
+            Attribute="Endurance"
+            Traits="Honor"
+            Animation="act_childhood_memory" />
+
+    <Option Text="{=*}【道家经典】" 
+            Description="{=*}你立志研读【道家经典】{newline}{newline}夫道家者，肇自黄老，宗于玄元。其道幽深，其理微妙。昔者黄帝问道于广成，老聃著经于函谷。五千言之秘旨，括乾坤之奥义；道德之真诠，贯古今之玄机。{newline}{newline}道家之学，博大精深。其言天道，则阴阳消长；其论人事，则祸福倚伏。观天之道，执天之行，尽矣。故曰：“天网恢恢，疏而不漏。”又云：“柔弱胜刚强，鱼不可脱于渊。”此乃道家之智术，处世之良箴也。{newline}{newline}是以汉室初兴，崇尚黄老；文景之治，贵在清静。曹参守萧何之法，汲黯行无为之政。此皆道家之遗风，治世之明效也。然则道家之学，岂徒虚无寂灭而已哉？实乃修身治国之要道，济世利民之良方也。"
+            Stage="Childhood"
+            Skills="Athletics,Tactics"
+            Attribute="Endurance"
+            Traits="Generosity"
+            Animation="act_childhood_numbers" />
+
+    <!-- 流寇来犯 -->
+    <Option Text="{=*}【抽刀迎战，身先士卒】" 
+            Description="{=*}【抽刀迎战，身先士卒】{newline}{newline}余见状，愤然抽刀，挺身而出，呼曰：“吾辈岂可坐视贼寇横行！愿随吾者，上！”众皆应声。{newline}{newline}余率先冲入敌阵，刀光闪烁，如猛虎下山。贼寇猝不及防，纷纷退避。余挥刀斩敌数人，血染衣襟，然斗志愈炽。{newline}{newline}贼寇见余勇猛，心生畏惧，阵脚大乱。余乘势追击，刀锋所向，贼寇无不披靡。战至日暮，贼寇溃散，村中得以保全。余虽身被数创，然心无愧色，村人皆感其勇，称颂不已。”"
+            Stage="Education"
+            Skills="OneHanded,Athletics"
+            Attribute="Vigor"
+            Animation="act_childhood_gracious"
+            AnimationItem="lz_hsd_han_03_chushi" />
+          
+    <Option Text="{=*}【组织村民，列队抵御】" 
+            Description="{=*}【组织村民，列队抵御】{newline}{newline}余见势危急，遂召集村民，列队抵御。余曰：“贼寇虽众，然乌合之众，不足为惧。吾等当齐心协力，击退外敌！”众皆鼓舞。{newline}{newline}余命青壮持竹棍列前，老弱猎弓在后，妇孺在侧照顾伤者。余自持长刀，立于阵前。贼寇至，见村中早有防备，心生怯意。余挥刀指挥，村民齐声呐喊，声震山谷。{newline}{newline}贼寇冲锋数次，皆被击退。余见贼寇士气已衰，遂命村民反击，贼寇大溃，村中得以保全。战后，村人皆赞余之智勇，余幸甚。"
+            Stage="Education"
+            Skills="Leadership,Tactics"
+            Attribute="Intelligence"
+            Animation="act_childhood_militia"
+            AnimationItem="lz_hj_chushi_1" />
+
+    <Option Text="{=*}【挥戈向向，直取匪首】" 
+            Description="{=*}【挥戈向向，直取匪首】{newline}{newline}余眼见危急，扶起里正，拾其长戈，翻身跃马，持戈冲入敌阵。贼寇见余单骑突入，皆惊愕不已。{newline}{newline}余挥戈如风，所向披靡，直逼匪首。匪首见状，拔刀迎战。余悲愤交加，戈锋所向，匪首招架不住，终被一戈刺中，挑翻在地，又以戈援斫之，使其血溅当场。匪首翻滚抽搐，哀嚎不已。{newline}{newline}贼寇见首领毙命，顿时大乱，纷纷溃散。余乘势追击，贼寇大败，村中得以保全。战后，村人皆赞余之勇猛，日后可为勇将。"
+            Stage="Education"
+            Skills="Polearm,Riding"
+            Attribute="Vigor"
+            Animation="act_childhood_grit"
+            AnimationItem="lz_ge_minbing_chushi" />
+
+    <Option Text="{=*}【纵马疾驰，箭射流寇】" 
+            Description="{=*}【纵马疾驰，箭射流寇】{newline}{newline}余见贼寇势大，不可力战。遂决意以狩猎之法制敌。遂握猎弓在手，纵马疾驰，持弓搭箭，瞄准贼寇。{newline}{newline}余自幼好猎，箭无虚发。弓弦响处，贼寇纷纷中箭倒地。余骑马穿梭于外，箭发如蝗，贼寇惊恐，四散奔走。{newline}{newline}村中青壮见贼寇已乱，遂趁机反击，贼寇大溃，村中得以保全。战后，村人皆赞余之箭术。"
+            Stage="Education"
+            Skills="Bow,Riding"
+            Attribute="Control"
+            Animation="act_childhood_sharp"
+            AnimationItem="lz_bow_han_01_chushi" />
+            
+    <Option Text="{=*}【藏于谷垛，伺机逃离】" 
+            Description="{=*}【藏于谷垛，伺机逃离】{newline}{newline}余见贼寇势大，遂决意藏于谷垛，屏息凝神，静待时机。贼寇入村，四处劫掠，然未察觉余之藏身之处。{newline}{newline}余见贼寇分散，遂悄然出村，趁乱逃离。余一路疾行，约莫三十余里，方才喘歇。后闻听官兵已然尽诛贼寇，方归乡里。余虽未与贼寇正面交锋，然保全性命，亦感庆幸。"
+            Stage="Education"
+            Skills="Scouting,Roguery"
+            Attribute="Cunning"
+            Animation="act_childhood_fierce"
+            AnimationItem="lz_hsd_han_03_chushi" />
+
+    <Option Text="{=*}【趁乱奔走，急告县尉】" 
+            Description="{=*}【趁乱奔走，急告县尉】{newline}{newline}余趁贼寇劫掠之际，取村驿中快马一匹，拍马疾行，终至县衙。余急告县尉，县尉闻讯，即命县中甲士一百，材官三百，并更卒、弩手、杂役凡数百人，驰援村庄。{newline}{newline}官兵至，弩矢齐发，贼寇乃降，县尉乃命甲士尽斩贼寇，悬首于城郭以震流寇。村中亦得以保全。战后，村人皆赞余之机智。"
+            Stage="Education"
+            Skills="Riding,Steward"
+            Attribute="Social"
+            Animation="act_childhood_sharp"
+            AnimationItem="lz_hsd_han_03_chushi" />
+
+    <!-- 青年 -->
+    <Option Text="{=*}选取一柄【汉剑】" 
+            Description="{=*}【你将获得汉剑一柄】{newline}{newline}其鞘，薄木为胎，缠麻为韧，批灰为质，大漆为表；{newline}其刃，八面剑身，脊线分明，刃长四尺，镜面研磨。{newline}其制，轻盈灵动，刺之如电；形制古朴，工艺精湛；{newline}{newline}刃口锋利，寒光凛冽。宛若秋水凝霜，锋芒逼人。{newline}实为战场杀伐之利器、地位之象征。"
+            Stage="Youth"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="OneHanded,Athletics"
+            Attribute="Vigor"
+            TitleType="1"
+            Animation="act_childhood_gracious" />
+
+    <Option Text="{=*}选取一把【环刀】" 
+            Description="{=*}【你将获得环首刀一把】{newline}{newline}环首刀者，厚背直刃，微弧内反。形制精巧，功用卓著。尾缀环首，雕镂纹饰。刀身坚韧，锋刃如霜。折叠千锤，淬火成钢，{newline}{newline}故刀身刚柔并济，寒光逼人。实为挥砍劈剁之利器也。"
+            Stage="Youth"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="OneHanded,TwoHanded"
+            Attribute="Endurance"
+            TitleType="2"
+            Animation="act_childhood_grit" />
+
+    <Option Text="{=*}选取一支【斧钺】" 
+            Description="{=*}【你将获得斧钺一把】{newline}{newline}钺者，杀伐之极，威仪之至。青铜范铸，刃宽而薄；兽面云纹，形制庄重。柄长四尺，刃如弯月；{newline}{newline}杀伐之气，望则生畏。挥之如雷霆万钧，落之似山崩地裂。"
+            Stage="Youth"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="TwoHanded,Riding"
+            Attribute="Vigor"
+            TitleType="3"
+            Animation="act_childhood_sharp" />
+
+    <Option Text="{=*}选取一杆【长戟】" 
+            Description="{=*}【你将获得卜字戟一杆】{newline}{newline}汉戟者，形如卜字，长兵利器。其头铁铸，前锋尖锐；侧枝横出，可刺可钩。{newline}{newline}骑兵持之，冲锋陷阵，刺敌于马下，钩敌于鞍前；步兵列之，戟林如墙，拒敌于百步之外，破阵于瞬息之间。"
+            Stage="Youth"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="Polearm,Riding"
+            Attribute="Vigor"
+            TitleType="4"
+            Animation="act_childhood_gracious" />
+
+    <Option Text="{=*}选取一副【弓矢】" 
+            Description="{=*}【你将获得汉弓一张】{newline}{newline}兵中长器，射远而威众。其弓复合，木为骨干，角筋为表，腱为内衬，弹性强劲，韧性十足。其弦以丝或筋为之，紧绷如月，蓄势待发。箭矢之制，杆以竹木，镞以精铁，形如柳叶，锋如霜雪，羽以鸟翎，飞如流星。当其临阵，弓开满月，箭去如电。{newline}{newline}骑兵骑射，驰骋如风，箭无虚发；步兵列阵，万箭齐发，遮天蔽日。是时弓矢所至，敌皆胆寒，山河为之震动。"
+            Stage="Youth"
+            Skills="Bow,Athletics"
+            Attribute="Control"
+            TitleType="5"
+            Animation="act_childhood_fierce" />
+
+    <Option Text="{=*}选取一张【手弩】" 
+            Description="{=*}【你将获得手弩一张】{newline}{newline}护身利器，小巧精致，射远穿坚，能及百步。其制精巧，弩臂以硬木为之，弩弓复合，角筋为表，腱为内衬，蓄势待发。弩机以铜铁铸之，结构繁复，望山以瞄准，牙以控发，悬刀击弦，当其临阵，弩张如满月，箭去似流星。{newline}{newline}守城之士，持弩以待，敌不敢近；伏击之兵，弩箭齐发，敌无所遁形。是时弩之所至，敌甲皆穿，毋有能当者。"
+            Stage="Youth"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="Crossbow,Athletics"
+            Attribute="Control"
+            TitleType="6"
+            Animation="act_childhood_apprentice" />
+    
+    <Option Text="{=*}更换一匹【快马】" 
+            Description="{=*}【你将获得快马一匹】{newline}{newline}得一利器，不若得骏马一匹。当此乱世，纵有兵刃之利，亦莫若驰骋之速。今观此马，体貌雄伟，蹄健如飞，必能助君于乱世之中，求一生路。"
+            Stage="Youth"
+            ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou"
+            Skills="Riding,Medicine"
+            Attribute="Endurance"
+            TitleType="9"
+            Animation="act_childhood_athlete" />
+
+    <!-- 成年 -->
+    <Option Text="{=*}【武卒】     大漠挥戈旗酒烈，{newline}             阴山驰马青锋寒。" 
+            Description="{=*}【武卒】 {newline}铁衣霜甲，戟戈林立。铁骑纵横，胡尘尽散；{newline}祁连雪映，卷朔风之凛冽；北境风霜，砺剑戟之锋寒。{newline}弓开满月，箭似流星；旌旗所指，汉威远扬。{newline}功成青史，名垂千古；魂照帝乡，风传万世。{newline}实社稷之屏障，苍生之脊梁。"
+            Stage="Adulthood"
+            Skills="Polearm,Riding"
+            Attribute="Vigor"
+            Traits="Valor"
+            Renown="20"
+            Animation="act_childhood_athlete" />
+          
+    <Option Text="{=*}【文吏】     锦绣文章骈作赋，{newline}             晨昏宣室笔如刀。" 
+            Description="{=*}【文吏】{newline}书千秋之典章，定四方之乱离。{newline}皎如明月，坚似寒霜；惠及黎庶，明察秋毫。{newline}献策安邦，兴社稷之大业；临危受命，定邦国之奠基。{newline}如山岳之巍峨，若松柏之长青。{newline}胜江河之浩瀚，似星辰之高渺。{newline}实社稷之高风，天下之冀盼。"
+            Stage="Adulthood"
+            Skills="Steward,Leadership"
+            Attribute="Social"
+            Traits="Calculating"
+            Renown="10"
+            Animation="act_childhood_gracious" />
+
+    <Option Text="{=*}【商贾】     通衢纵横云中鸟，{newline}             货殖春秋计远谋。" 
+            Description="{=*}【商贾】{newline}陶朱猗顿，富甲四海；吕氏奇货，名震九州。{newline}弦高犒师，解郑国之危；范蠡泛舟，成吞吴之业。{newline}通衢四海，贸易千邦；能观时变，可兴国运。{newline}逐利而不失义，居市而不忘忧。助秦并六合，兴汉开三疆。{newline}实财货之枢纽，国运之栋梁。"
+            Stage="Adulthood"
+            Skills="Trade,Roguery"
+            Attribute="Cunning"
+            Traits="Calculating"
+            Renown="10"
+            Animation="act_childhood_clever" />
+
+    <Option Text="{=*}【游侠】     游子仗剑八千里，{newline}             盏中清月作悲声。" 
+            Description="{=*}【游侠】{newline}轻生死，重然诺；扶危困，济苍生。{newline}仗剑天涯，气凌霜雪；志比金石，义薄云天。{newline}荆轲易水，悲歌动地；聂政韩庭，剑气冲霄。{newline}朱家匿季布，义盖四海；郭解济穷困，名震九州。{newline}白马银鞍，驰骋朔漠；青锋赤胆，斩鲸东海。{newline}实寰宇之雄杰，古今之义士。"
+            Stage="Adulthood"
+            Skills="OneHanded,Crossbow"
+            Attribute="Control"
+            Traits="Honor"
+            Renown="5"
+            Animation="act_childhood_tough" />
+
+    <Option Text="{=*}【隐士】     山林雅趣三两事，{newline}             闲溪垂钓四五人。" 
+            Description="{=*}【隐士】{newline}秦汉风烟，难掩其志；魏晋尘嚣，不改其心。{newline}高风淡泊，志比夷齐；采薇首阳，心追巢许。{newline}不慕管晏之荣，甘守颜回之乐；{newline}宁居原宪之贫，远避子贡之富。{newline}商山四皓，避秦而隐；箕山颍水，慕尧而栖。{newline}伯夷清节，千秋共仰；严光高卧，百世流芳。{newline}实山川之逸民，古今之清士。"
+            Stage="Adulthood"
+            Skills="Athletics,Charm"
+            Attribute="Intelligence" 
+            Traits="Mercy"
+            Renown="5"
+            Animation="act_childhood_ready" />
+
+    <Option Text="{=*}【使节】     博望功成青史载，{newline}             归朝犹带汉家天。" 
+            Description="{=*}【使节】{newline}凿空西域，志坚行苦；持节万里，孤身涉险。{newline}胡地风霜，不改其志；汉家日月，长照其心。{newline}葡萄苜蓿，传中土之丰饶；汗血良驹，壮帝川之威仪。{newline}博望功成，青史留名；千秋伟业，威名永颂。{newline}实汉使之楷模，华夏之脊梁。"
+            Stage="Adulthood"
+            Skills="Scouting,Tactics"
+            Attribute="Endurance" 
+            Traits="Honor"
+            Renown="15"
+            Animation="act_childhood_ready" />
+
+  </BackStoryOptions>
+</CharacterCreationConfig>

@@ -1,0 +1,65 @@
+<Prefab>
+  <Constants>
+    <Constant Name="CardWidth" Value="190" />
+    <Constant Name="CardHeight" Value="295" />
+    <Constant Name="HorizontalPowerWidth" Value="65" />
+    <Constant Name="HorizontalPowerHeight" Value="25" />
+    <Constant Name="VerticalPowerWidth" Value="25" />
+    <Constant Name="VerticalPowerHeight" Value="65" />
+    <Constant Name="PowerFontSize" Value="25" />
+  </Constants>
+  <Window>
+
+    <!-- 卡牌渲染 -->
+    <ImageWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="@CardSprite" MarginTop="5" MarginRight="5" MarginLeft="5" MarginBottom="5" >
+
+          <Children>
+			<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="CardFrame" MarginTop="-5" MarginRight="-5" MarginLeft="-5" MarginBottom="-5" />
+			
+		
+            <!--等级显示-->
+            <TextWidget
+              WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"
+              HorizontalAlignment="Right" VerticalAlignment="Top"
+              MaxWidth="50" Brush="Card.Level.Text" MarginTop="15" MarginRight="5"
+              Brush.FontSize="25"  Brush.FontColor="@LevelColor" Brush.TextOutlineColor="@LevelOutlineColor"  Brush.TextVerticalAlignment="Top"
+              Text="@Level"
+            />
+
+            <!-- 卡牌力量显示 Up -->
+            <Widget  DataSource="{UpPowerVm}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!HorizontalPowerWidth" SuggestedHeight="!HorizontalPowerHeight" HorizontalAlignment="Center" VerticalAlignment="Top" Color="@CampColor" Sprite="BlankWhiteSquare_9">
+              <Children>
+                <CardPowerWidget  Brush.FontSize="!PowerFontSize"  Brush.FontColor="@CampFontColor" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+                Brush="Card.Power.Text" Text="@Power" HorizontalAlignment="Center" VerticalAlignment="Center" />
+              </Children>
+            </Widget>
+
+            <!-- 卡牌力量显示 Down -->
+            <Widget  DataSource="{DownPowerVm}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!HorizontalPowerWidth" SuggestedHeight="!HorizontalPowerHeight" HorizontalAlignment="Center" VerticalAlignment="Bottom" Color="@CampColor" Sprite="BlankWhiteSquare_9">
+              <Children>
+                <CardPowerWidget  Brush.FontSize="!PowerFontSize"  Brush.FontColor="@CampFontColor" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+                Brush="Card.Power.Text" Text="@Power" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+              </Children>
+            </Widget>
+
+            <!-- 卡牌力量显示 Right -->
+            <Widget  DataSource="{RightPowerVm}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!VerticalPowerWidth" SuggestedHeight="!VerticalPowerHeight" HorizontalAlignment="Right" VerticalAlignment="Center" Color="@CampColor" Sprite="BlankWhiteSquare_9">
+              <Children>
+                <CardPowerWidget  Brush.FontSize="!PowerFontSize"  Brush.FontColor="@CampFontColor" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+                Brush="Card.Power.Text" Text="@Power" HorizontalAlignment="Center" VerticalAlignment="Center" />
+              </Children>
+            </Widget>
+
+            <!-- 卡牌力量显示 Left -->
+            <Widget  DataSource="{LeftPowerVm}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!VerticalPowerWidth" SuggestedHeight="!VerticalPowerHeight" HorizontalAlignment="Left" VerticalAlignment="Center" Color="@CampColor" Sprite="BlankWhiteSquare_9">
+              <Children>
+                <CardPowerWidget  Brush.FontSize="!PowerFontSize"  Brush.FontColor="@CampFontColor" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent"
+                Brush="Card.Power.Text" Text="@Power" HorizontalAlignment="Center" VerticalAlignment="Center" />
+              </Children>
+            </Widget>
+
+          </Children>
+        </ImageWidget>
+
+  </Window>
+</Prefab>

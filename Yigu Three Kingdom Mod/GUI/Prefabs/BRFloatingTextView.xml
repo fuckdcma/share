@@ -1,0 +1,26 @@
+<Prefab>
+
+  <Constants>
+      <Constant Name="Button.Height" Value="100" />	
+	<Constant Name="Button.Width" Value="300" />
+  </Constants>
+  
+  <Window>
+      <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" >
+        <Children>		
+			<Widget DataSource="{FloatingTexts}"  DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" >
+				<ItemTemplate>				
+					<!-- <TextWidget Text="@FloatingText" Brush="Bandage.Info.Text" Brush.FontColor="@FontColor" Brush.FontSize="@FontSize" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"  HorizontalAlignment="Left" VerticalAlignment="Bottom" PositionXOffset="@XOffset" PositionYOffset="@YOffset"  > -->
+					<!-- </TextWidget> -->				
+					
+					<FloatingTextWidget Text="@FloatingText" Brush="Float.Info.Text" Brush.FontColor="@FontColor" Brush.FontSize="@FontSize" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"   
+					Position="@ScreenPosition"  Distance="@Distance" Brush.TextHorizontalAlignment="Center" Brush.TextVerticalAlignment="Center"> 
+					</FloatingTextWidget>
+					 
+					 
+				</ItemTemplate>	
+			</Widget>
+        </Children>
+      </Widget>
+  </Window>
+</Prefab>

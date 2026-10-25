@@ -1,0 +1,506 @@
+<prefabs>
+	<game_entity name="hjolmsborg" old_prefab_name="">
+		<tags>
+			<tag name="hjolmsborg"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 1.403"/>
+		<children>
+			<game_entity name="map_icons_vlandia_village_l3" old_prefab_name="">
+				<transform position="-0.035, 1.059, 0.461" rotation_euler="0.000, 0.000, 0.000" scale="0.556, 0.556, 0.556"/>
+				<components>
+					<meta_mesh_component name="village_vlandia_3"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_battania_wooden_platform" old_prefab_name="">
+				<transform position="1.416, 2.311, -0.085" rotation_euler="0.000, 0.000, 0.000" scale="1.928, 1.928, 1.928"/>
+				<components>
+					<meta_mesh_component name="mi_bat_wood_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_battania_wooden_platform" old_prefab_name="">
+				<transform position="1.416, -0.232, -0.085" rotation_euler="0.000, 0.000, 0.000" scale="1.928, 1.928, 1.928"/>
+				<components>
+					<meta_mesh_component name="mi_bat_wood_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_battania_wooden_platform" old_prefab_name="">
+				<transform position="0.011, 2.311, -0.085" rotation_euler="0.000, 0.000, 0.000" scale="1.928, 1.928, 1.928"/>
+				<components>
+					<meta_mesh_component name="mi_bat_wood_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_battania_wooden_platform" old_prefab_name="">
+				<transform position="0.011, -0.232, -0.085" rotation_euler="0.000, 0.000, 0.000" scale="1.928, 1.928, 1.928"/>
+				<components>
+					<meta_mesh_component name="mi_bat_wood_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_battania_wooden_platform" old_prefab_name="">
+				<transform position="-1.449, -0.232, -0.085" rotation_euler="0.000, 0.000, 0.000" scale="1.928, 1.928, 1.928"/>
+				<components>
+					<meta_mesh_component name="mi_bat_wood_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="map_icons_battania_wooden_platform" old_prefab_name="">
+				<transform position="-1.449, 2.311, -0.085" rotation_euler="0.000, 0.000, 0.000" scale="1.928, 1.928, 1.928"/>
+				<components>
+					<meta_mesh_component name="mi_bat_wood_platform"/>
+				</components>
+			</game_entity>
+			<game_entity name="_bo" old_prefab_name="">
+				<transform position="0.132, 0.598, -0.689" rotation_euler="0.286, -1.474, 1.480" scale="11.382, 11.385, 14.230"/>
+				<physics shape="bo_barrier_sphere">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="town_port" old_prefab_name="">
+				<tags>
+					<tag name="main_map_city_port"/>
+				</tags>
+				<transform position="-0.651, -2.139, 0.410" rotation_euler="0.000, 0.000, 0.501"/>
+			</game_entity>
+			<game_entity name="castle_gate" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="main_map_city_gate"/>
+				</tags>
+				<transform position="-0.670, 3.943, 0.740" rotation_euler="0.000, 0.000, 1.618"/>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sea_highlight_beam" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="item_highlight_cylinder">
+				<mesh name="item_highlight_cylinder" material="item_highlight_cylinder_sea"/>
+			</meta_mesh_component>
+		</components>
+	</game_entity>
+	<game_entity name="ship_door_use_point" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="12.295, 8.380, 1.000" rotation_euler="0.000, 0.000, -0.015"/>
+		<scripts>
+			<script name="ShipDoorUsePoint">
+				<variables>
+					<variable name="ActionStringId" value=""/>
+					<variable name="DescriptionStringId" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="nord_grand_bazaar_part_1_door" old_prefab_name="" mobility="1">
+				<transform position="0.830, -0.890, 0.000" rotation_euler="-1.571, -3.142, 3.142"/>
+				<physics shape="bo_nord_grand_bazaar_part_1_door"/>
+				<components>
+					<meta_mesh_component name="nord_grand_bazaar_part_1_door"/>
+				</components>
+			</game_entity>
+			<game_entity name="highlight_pointer_glow_ground" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="ship_door_highlight"/>
+				</tags>
+				<transform position="-0.088, 0.110, 0.000" rotation_euler="0.000, 0.000, 0.015"/>
+				<children>
+					<game_entity name="highlight_pointer_glow_beam" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="no_shadow" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="bow_training_shooting_position"/>
+						</tags>
+						<transform position="0.000, 0.000, 5.413" rotation_euler="0.000, 0.000, 0.000" scale="25.000, 25.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="item_highlight_cylinder" position="0.000, 0.000, -14.900" rotation="0.000, 0.000, 0.000" scale="0.150, 0.150, 10.000">
+								<mesh name="item_highlight_cylinder" factor="4287704319" factor2="4294701823"/>
+							</meta_mesh_component>
+						</components>
+					</game_entity>
+					<game_entity name="highlight_glow_delayed" old_prefab_name="" mobility="1">
+						<transform position="0.000, 0.000, 1.770" rotation_euler="0.000, 0.000, 0.000" scale="0.553, 0.553, 1.000"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{B9B53451-DC7B-4583-97E4-3A3D61A374DF}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="fire_obstacle" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="AmbientSoundEmitter">
+				<variables>
+					<variable name="Event Path" value="event:/mission/ambient/detail/fire/fire_medium"/>
+					<variable name="Play On Startup" value="true"/>
+					<variable name="Is Static" value="true"/>
+					<variable name="Override Sound" value="false"/>
+					<variable name="Overrided Volume Multiplier" value="1.000000"/>
+					<variable name="Overrided Max Distance" value="25.000000"/>
+					<variable name="Overrided Min Distance" value="2.000000"/>
+					<variable name="Is Master Sound" value="false"/>
+					<variable name="Is Master Supressor" value="false"/>
+					<variable name="Is Triggered" value="false"/>
+					<variable name="Trigger Shape" value="Sphere"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="0.321, -0.118, -0.034" rotation_euler="0.000, 0.000, -0.276" scale="0.244, 0.244, 0.074"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="-0.065, -0.640, -0.034" rotation_euler="0.000, 0.000, 0.757" scale="0.244, 0.244, 0.074"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="-0.358, -1.447, -0.034" rotation_euler="0.000, 0.000, 1.422" scale="0.244, 0.244, 0.074"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="-0.640, -0.475, -0.034" rotation_euler="0.000, 0.000, 0.775" scale="0.244, 0.244, 0.074"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="-1.026, -1.032, -0.034" rotation_euler="0.000, 0.000, 0.775" scale="0.244, 0.244, 0.074"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="-1.181, -0.226, -0.034" rotation_euler="0.000, 0.000, 0.775" scale="0.244, 0.244, 0.074"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="-1.432, 0.458, -0.034" rotation_euler="0.000, 0.000, 0.775" scale="0.244, 0.244, 0.074"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="0.842, -1.887, -0.034" rotation_euler="0.000, 0.000, -1.080" scale="0.148, 0.148, 0.045"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="1.483, -1.138, -0.034" rotation_euler="0.000, 0.000, -1.740" scale="0.066, 0.066, 0.020"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="0.929, -1.193, -0.066" rotation_euler="0.000, 0.000, -1.740" scale="0.066, 0.066, 0.020"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="0.982, -0.422, -0.078" rotation_euler="0.000, 0.000, -0.276" scale="0.323, 0.323, 0.066"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="1.346, -1.603, -0.034" rotation_euler="0.000, 0.000, -0.846" scale="0.066, 0.066, 0.020"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="0.929, 0.714, -0.034" rotation_euler="0.000, 0.000, 0.044" scale="0.066, 0.066, 0.020"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="0.655, 1.113, -0.034" rotation_euler="0.000, 0.000, -0.850" scale="0.066, 0.066, 0.020"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="1.744, -1.178, -0.078" rotation_euler="0.000, 0.000, -0.276" scale="0.323, 0.323, 0.066"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="rock_floor_a" old_prefab_name="">
+				<transform position="-0.202, 0.763, -0.034" rotation_euler="0.000, 0.000, 0.775" scale="0.244, 0.244, 0.074"/>
+				<physics override_material="stone"/>
+				<components>
+					<meta_mesh_component name="rock_floor_a">
+						<mesh name="rock_floor_a.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod2.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod4.22" material="terrain_ground_mud_b" factor="4280887593"/>
+						<mesh name="rock_floor_a.lod5.22" material="terrain_ground_mud_b" factor="4280887593"/>
+					</meta_mesh_component>
+				</components>
+			</game_entity>
+			<game_entity name="editor_sphere" old_prefab_name="">
+				<transform position="0.379, -0.713, -0.537" rotation_euler="0.000, 0.000, 0.000" scale="3.032, 3.032, 3.032"/>
+				<physics shape="bo_sphere_collider">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="-1.944, 0.486, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="-1.549, -1.021, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="-0.798, -1.878, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="-0.207, -0.870, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="1.083, -1.390, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="0.707, -2.160, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="1.675, -2.097, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="1.870, -1.274, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="0.525, -0.501, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="0.040, 0.499, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="-0.486, 1.089, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="-0.933, 0.876, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="2.265, -0.762, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="1.157, 0.436, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="1.389, 0.288, 0.151" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+			<game_entity name="empty_object" old_prefab_name="">
+				<transform position="-0.768, -0.034, -0.923" rotation_euler="0.000, 0.000, 0.000" scale="1.074, 1.074, 1.074"/>
+				<components>
+					<particle_system_instanced_component>
+						<effect_ref base_effect="{FDFA626D-6581-4FEF-9BF8-D480DBA2368B}"/>
+					</particle_system_instanced_component>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cinematic_hatch" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_aserai_dungeon_cell_bars_closed"/>
+		<components>
+			<meta_mesh_component name="aserai_dungeon_cell_bars_closed">
+				<mesh name="aserai_dungeon_cell_bars_closed.5" factor="4280098077"/>
+				<mesh name="aserai_dungeon_cell_bars_closed.11" factor="4280098077"/>
+				<mesh name="aserai_dungeon_cell_bars_closed.14" factor="4280098077"/>
+			</meta_mesh_component>
+		</components>
+		<scripts>
+			<script name="RotateObjectScript">
+				<variables>
+					<variable name="RotationAxis" value="X"/>
+					<variable name="WaitBeforeRotateAsSeconds" value="3.000"/>
+					<variable name="RotateAngle" value="90.000"/>
+					<variable name="RotationSpeed" value="-45.000"/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

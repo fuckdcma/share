@@ -1,0 +1,21 @@
+<Prefab>
+  <Constants>
+      <Constant Name="Button.Height" Value="100" />	
+	<Constant Name="Button.Width" Value="300" />
+  </Constants>
+
+  
+  
+  <Window>
+
+      <Widget Id="OpenCustumConfig"  WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="350" SuggestedHeight="150" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginLeft="0" MarginBottom="100">
+        <Children>		
+                    <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Button.Width" SuggestedHeight="!Button.Height"  HorizontalAlignment="Center"  VerticalAlignment="Center" Brush="Popup.Done.Button.NineGrid" Command.Click="OpenConfig" UpdateChildrenStates="true">
+                      <Children>
+                        <TextWidget Text="Open Config" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="Popup.Button.Text"/>
+                      </Children>
+                    </ButtonWidget>
+        </Children>
+      </Widget>
+  </Window>
+</Prefab>

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<CraftedItem
+		id="lz_hj_chushi_1"
+		name="{=*}素装八面短汉剑"
+		crafting_template="SG_OneHandedSword">
+		<Pieces>
+			<Piece
+				id="sg_sword_blade_014_1h"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_sword_guard_014"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="sg_sword_grip_014_1h"
+				Type="Handle"
+				scale_factor="100" />
+			<Piece
+				id="sg_sword_pommel_014"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_hj_chushi_2"
+		name="{=*}素装八面汉剑"
+		crafting_template="SG_OneHandedSword">
+		<Pieces>
+			<Piece
+				id="sg_sword_blade_014_1h"
+				Type="Blade"
+				scale_factor="150" />
+			<Piece
+				id="sg_sword_guard_014"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="sg_sword_grip_014_1h"
+				Type="Handle"
+				scale_factor="100" />
+			<Piece
+				id="sg_sword_pommel_014"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_hsd_han_02_chushi"
+		name="{=*}汉铁制内弧环首刀"
+		crafting_template="SG_OneHandedSword">
+		<Pieces>
+			<Piece
+				id="sg_sword_blade_020_a_l"
+				Type="Blade"
+				scale_factor="140" />
+			<Piece
+				id="sg_t1_sword_grip_004_1h"
+				Type="Handle"
+				scale_factor="110" />
+			<Piece
+				id="sg_sword_pommel_006"
+				Type="Pommel"
+				scale_factor="130" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_hsd_han_03_chushi"
+		name="{=*}汉铁制内弧环首短刀"
+		crafting_template="SG_OneHandedSword">
+		<Pieces>
+			<Piece
+				id="sg_sword_blade_020_a_l"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="sg_t1_sword_grip_004_1h"
+				Type="Handle"
+				scale_factor="100" />
+			<Piece
+				id="sg_sword_pommel_006"
+				Type="Pommel"
+				scale_factor="120" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_hsd_han_03_chushi"
+		name="{=*}汉廿炼拍髀"
+		crafting_template="SG_OneHandedSword">
+		<Pieces>
+			<Piece
+				id="sg_t2_sword_blade_006_1h"
+				Type="Blade"
+				scale_factor="50" />
+			<Piece
+				id="sg_t2_sword_grip_001_1h"
+				Type="Handle"
+				scale_factor="50" />
+			<Piece
+				id="sg_t5_sword_pommel_007"
+				Type="Pommel"
+				scale_factor="70" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_shuangshou_bingzhou_01_chushi"
+		name="{=*}仪仗青铜钺"
+		crafting_template="SG_TwoHandedAxe">
+		<Pieces>
+			<Piece
+				id="sg_axe_head_002_b"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t4_axe_handle_005_2h"
+				Type="Handle"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_ji_han_01_chushi"
+		name="{=*}汉旧制作卜字骑戟"
+		crafting_template="SG_TwoHandedPolearm">
+		<Pieces>
+			<Piece
+				id="sg_t1_spear_blade_004"
+				Type="Blade"
+				scale_factor="120" />
+			<Piece
+				id="sg_spear_handle_002_c"
+				Type="Handle"
+				scale_factor="112" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_ge_minbing_chushi"
+		name="{=*}汉戍卒短戈"
+		crafting_template="SG_TwoHandedPolearm">
+		<Pieces>
+			<Piece
+				id="sg_t3_spear_blade_013"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t1_spear_handle_001_c"
+				Type="Handle"
+				scale_factor="80" />
+		</Pieces>
+	</CraftedItem>
+	<Item
+		id="lz_shield_chushi"
+		name="{=*}小竹盾"
+		body_name="bo_cap_sg_shield_001"
+		shield_body_name="bo_sg_shield_001"
+		recalculate_body="false"
+		mesh="sg_shield_001"
+		using_tableau="false"
+		weight="0.3"
+		appearance="1"
+		Type="Shield"
+		item_holsters="shield_round:shield_4"
+		has_lower_holster_priority="true"
+		holster_position_shift="0.0, 0.0, 0.0">
+		<ItemComponent>
+			<Weapon
+				weapon_class="LargeShield"
+				body_armor="15"
+				thrust_speed="101"
+				thrust_damage_type="Blunt"
+				speed_rating="101"
+				physics_material="wood_shield"
+				item_usage="shield"
+				position="-0.02, 0.0, 0.0"
+				rotation="-5.0,-90.0,-10.0"
+				weapon_length="54"
+				center_of_mass="0.0,0.0,0.0"
+				hit_points="415"
+				modifier_group="shield">
+				<WeaponFlags
+					CanBlockRanged="true"
+					HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			WoodenParry="true"
+			ForceAttachOffHandPrimaryItemBone="true"
+			HeldInOffHand="true" />
+	</Item>
+	<Item
+		id="sg_shield_007_chushi"
+		name="{=*}勾镶"
+		body_name="bo_cap_sg_shield_007_a"
+		shield_body_name="bo_sg_shield_007_a"
+		recalculate_body="false"
+		mesh="sg_shield_007_a"
+		using_tableau="false"
+		weight="1.0"
+		appearance="1"
+		Type="Shield"
+		item_holsters="shield:shield_2:shield_3:shield_4"
+		has_lower_holster_priority="true"
+		holster_position_shift="0.0, 0.0, 0.0">
+		<ItemComponent>
+			<Weapon
+				weapon_class="LargeShield"
+				body_armor="10"
+				thrust_speed="82"
+				thrust_damage="5"
+				thrust_damage_type="Blunt"
+				speed_rating="82"
+				physics_material="metal_shield"
+				item_usage="hand_shield"
+				position="-0.01, 0.00, 0.00"
+				rotation="-90.0,-90.0,-10.0"
+				weapon_length="97"
+				center_of_mass="0.0,0.0,0.0"
+				hit_points="260"
+				modifier_group="shield">
+				<WeaponFlags
+					CanBlockRanged="true"
+					HasHitPoints="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			WoodenParry="true"
+			ForceAttachOffHandPrimaryItemBone="true"
+			HeldInOffHand="true" />
+	</Item>
+	<Item
+		id="lz_bow_han_01_chushi"
+		name="{=*}汉戍卒弓"
+		body_name="bo_sg_shortbow_001"
+		mesh="sg_shortbow_001"
+		weight="0.3"
+		difficulty="0"
+		appearance="1"
+		Type="Bow"
+		item_holsters="bow_hip:bow_hip_2:bow_back:bow_back_2">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Bow"
+				ammo_class="Arrow"
+				ammo_limit="1"
+				thrust_speed="86"
+				speed_rating="86"
+				missile_speed="90"
+				weapon_length="113"
+				accuracy="101"
+				thrust_damage="40"
+				thrust_damage_type="Pierce"
+				item_usage="bow"
+				physics_material="wood_weapon"
+				center_of_mass="0.1,0,-0.15"
+				modifier_group="bow">
+				<WeaponFlags
+					RangedWeapon="true"
+					HasString="true"
+					StringHeldByHand="true"
+					NotUsableWithOneHand="true"
+					TwoHandIdleOnMount="true"
+					AutoReload="true"
+					UnloadWhenSheathed="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+	<Item
+		id="lz_arrow_han_02_chushi"
+		name="{=*}汉戍卒羽箭"
+		body_name="bo_capsule_arrow"
+		holster_body_name="bo_axe_short"
+		mesh="arrow_bl_a"
+		holster_mesh="arrow_bl_a_quiver"
+		holster_mesh_with_weapon="arrow_bl_a_quiver"
+		subtype="arrows"
+		flying_mesh="arrow_bl_flying"
+		weight="0.06"
+		difficulty="0"
+		appearance="0.1"
+		Type="Arrows"
+		item_holsters="quiver_back_top:quiver_back_top_2"
+		holster_position_shift="0,0,0.15">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Arrow"
+				stack_amount="33"
+				thrust_speed="0"
+				speed_rating="0"
+				physics_material="missile"
+				missile_speed="2"
+				weapon_length="97"
+				thrust_damage="1"
+				thrust_damage_type="Pierce"
+				item_usage="arrow_top"
+				passby_sound_code="event:/mission/combat/missile/passby"
+				rotation="0, -80, 25"
+				sticking_position="0,-0.97,0"
+				sticking_rotation="90,0,0"
+				center_of_mass="0,0.0,-0.13"
+				modifier_group="arrow">
+				<WeaponFlags
+					Consumable="true"
+					AmmoSticksWhenShot="true"
+					CanKnockDown="true"
+					AmmoBreaksOnBounceBack="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<Item
+		id="lz_xbow_han_01_chushi"
+		name="{=*}汉手弩"
+		body_name="bo_sg_crossbow_001"
+		mesh="sg_crossbow_001"
+		weight="1.0"
+		appearance="1"
+		difficulty="0"
+		Type="Crossbow"
+		AmmoOffset="0.0, 0.03, 0.1"
+		item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+		holster_position_shift="0.0,0.02,-0.46">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Crossbow"
+				ammo_class="Bolt"
+				missile_speed="122"
+				accuracy="102"
+				thrust_damage="42"
+				thrust_speed="65"
+				speed_rating="65"
+				weapon_length="58"
+				ammo_limit="1"
+				thrust_damage_type="Pierce"
+				item_usage="crossbow_light"
+				reload_phase_count="2"
+				physics_material="wood_weapon"
+				center_of_mass="0,0,0.4"
+				modifier_group="crossbow">
+				<WeaponFlags
+					RangedWeapon="true"
+					HasString="true"
+					NotUsableWithOneHand="true"
+					TwoHandIdleOnMount="true" />
+			</Weapon>
+		</ItemComponent>
+	</Item>
+	<Item
+		id="lz_bolt_han_02_chushi"
+		name="{=*}汉戍卒弩箭"
+		body_name="bo_capsule_arrow"
+		holster_body_name="bo_axe_short"
+		mesh="bolt_bl_e"
+		holster_mesh="bolt_bl_e_quiver"
+		holster_mesh_with_weapon="bolt_bl_e_quiver"
+		flying_mesh="bolt_bl_flying"
+		weight="0.005"
+		appearance="0.1"
+		Type="Bolts"
+		item_holsters="quiver_bolts:quiver_bolts_2:quiver_back_middle:quiver_back_top">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Bolt"
+				stack_amount="40"
+				thrust_speed="0"
+				thrust_damage="1"
+				thrust_damage_type="Pierce"
+				speed_rating="0"
+				missile_speed="10"
+				weapon_length="47"
+				item_usage=""
+				passby_sound_code="event:/mission/combat/missile/passby"
+				rotation="180, 0, 0"
+				physics_material="missile"
+				sticking_position="0,-0.37,0"
+				sticking_rotation="90,0,0"
+				center_of_mass="0,0,-0.1"
+				modifier_group="bolt">
+				<WeaponFlags
+					AttachAmmoToVisual="true"
+					Consumable="true"
+					AmmoSticksWhenShot="true"
+					CanKnockDown="true"
+					CanPenetrateShield="true"
+					MultiplePenetration="true"
+					AmmoBreaksOnBounceBack="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+	<Item id="sg_ar_c01_s009_body_chushi" 
+        name="{=*}汉戍卒皮甲" 
+        mesh="ar_c01_s009_body" 
+        weight="2.5" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" 
+             leg_armor="4" 
+             arm_armor="5" 
+             covers_body="false" 
+             modifier_group="leather"
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="lz_cloth_troop_01_chushi" 
+        name="{=*}汉戍卒衣" 
+        mesh="cl_c08_s3002_body" 
+        weight="1.1" 
+        appearance="0.1" 
+		value="-1"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="11" 
+             leg_armor="4" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="lz_cloth_nv_01_chushi" 
+        name="{=*}曲裾深衣" 
+        mesh="sg_npc_maid_body" 
+        weight="13.2" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="15" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_npc_wuguan_chushi" 
+        name="{=*}武官服" 
+        mesh="sg_npc_wuguan_body" 
+        weight="3.2" 
+        appearance="6" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+    <Item id="sg_ar_c08_s5001_body_chushi" 
+        name="{=*}粗制戎服配两挡铁札甲" 
+        mesh="ar_c08_s5001_body" 
+        weight="5.6" 
+        appearance="1" 
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="11" 
+             leg_armor="4" 
+             arm_armor="3" 
+             covers_body="true" 
+             modifier_group="chain" 
+             material_type="Chainmail" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="false" />
+	</Item>
+    <Item id="sg_ar_c08_s4002_arm_chushi"
+        name="{=*}粗制皮革护腕" 
+        mesh="ar_c08_s4002_arm" 
+        weight="1.09" 
+        appearance="1"
+        Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="14" 
+             covers_hands="false" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="false" 
+           Civilian="true" />
+	</Item>
+	<Item id="lz_arm_nv_chushi"
+        name="{=*}粗制束腕" 
+        mesh="ar_c06_g002_arm" 
+        weight="0.13" 
+        appearance="0.1" 
+		value="-1"
+        Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="25" 
+             covers_hands="false" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="false" 
+               Civilian="true" />
+	</Item>
+	<Item id="sg_cl_c01_farmer001_leg_chushi"
+        name="{=*}农民布鞋"
+        mesh="cl_c01_farmer001_leg"
+        weight="0.7"
+        appearance="1"
+        Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="1"
+             has_gender_variations="true"
+             covers_legs="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s002_leg_chushi"
+        name="{=*}行藤布履"
+        mesh="ar_c01_s002_leg"
+        weight="0.59"
+        appearance="1"
+        Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="9"
+             covers_legs="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="sg_ar_c01_s003_leg_chushi"
+        name="{=*}游牧皮靴"
+        mesh="ar_c01_s003_leg"
+        weight="0.67"
+        appearance="1"
+        Type="LegArmor">
+		<ItemComponent>
+			<Armor leg_armor="11"
+             covers_legs="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="lz_shufa_wenguan_chushi"
+        name="{=*}发髻"
+        subtype="head_armor"
+        mesh="ar_c05_s1001_hair"
+        weight="0.1"
+        difficulty="0" 
+        appearance="1" 
+		value="10"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="1"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_head_nv_01_chushi"
+        name="{=*}简易女束发"
+        subtype="head_armor"
+        mesh="ar_c01_g015_head"
+        weight="0.5"
+        difficulty="0" 
+        appearance="1" 
+		value="-1"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="5"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_head_nv_02_chushi"
+        name="{=*}简易女束发"
+        subtype="head_armor"
+        mesh="ar_c01_g015_head_old_a"
+        weight="0.1"
+        difficulty="0" 
+        appearance="1" 
+		value="10"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="2"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_01_chushi"
+        name="{=*}汉戍卒粗制皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="8"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_yanzhou_mao_chushi"
+        name="{=*}汉羽饰皮弁"
+        subtype="head_armor"
+        mesh="ar_c05_s3002_head_b"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0.5" 
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="34"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item
+		id="lz_donkey_chushi"
+		name="{=*}小驴"
+		mesh="mule_mesh"
+		item_category="horse"
+		value="220"
+		weight="300"
+		appearance="1"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.mule"
+				maneuver="45"
+				speed="40"
+				charge_damage="1"
+				body_length="85"
+				is_mountable="true"
+				extra_health="90"
+				is_pack_animal="true" />
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="pack_camel_chushi"
+		name="{=*}骆驼"
+		mesh="camel_mesh"
+		item_category="sumpter_horse"
+		value="220"
+		weight="520"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.camel"
+				maneuver="31"
+				speed="30"
+				charge_damage="6"
+				body_length="133"
+				extra_health="210"
+				is_pack_animal="true"
+				is_mountable="true" />
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="sumpter_horse_chushi"
+		name="老马"
+		mesh="horse_brown"
+		item_category="sumpter_horse"
+		difficulty="0"
+		weight="430"
+		value="60"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="41"
+				speed="34"
+				charge_damage="4"
+				body_length="95"
+				is_mountable="true"
+				is_pack_animal="true"
+				extra_health="60"
+				modifier_group="horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_brown_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="sg_c06_horse_menggumae_chushi"
+		name="驿马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="horse"
+		weight="500"
+		difficulty="0"
+		appearance="1"
+		value="210"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="55"
+				speed="46"
+				charge_damage="3"
+				body_length="110"
+				is_mountable="true"
+				extra_health="60"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="sg_c06_horse_menggumae_yema"
+		name="野马"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="horse"
+		weight="500"
+		difficulty="0"
+		appearance="1"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="19"
+				speed="63"
+				charge_damage="7"
+				body_length="120"
+				is_mountable="true"
+				extra_health="10"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+
+
+
+
+</Items>

@@ -1,0 +1,70 @@
+<Prefab>
+  <Constants>
+  </Constants>
+  <VisualDefinitions>
+  </VisualDefinitions>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" >
+      <Children>
+
+        <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <Children>
+            
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" Brush="MPLobby.Home.Announcement.Panel.Title" Text="@TitleText" />
+
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="210" MarginTop="10" StackLayout.LayoutMethod="HorizontalLeftToRight">
+              <Children>
+
+                <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="ClipRect" MarginRight="6" InnerPanel="ClipRect\AnnouncementList" VerticalScrollbar="..\VerticalScrollbar">
+                  <Children>
+                    <Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true" >
+                      <Children>
+
+                        <!-- Announcement Item List -->
+                        <NavigationScopeTargeter ScopeID="LobbyAnnouncementsScope" ScopeParent="..\AnnouncementList" ScopeMovements="Vertical" />
+                        <NavigatableListPanel Id="AnnouncementList" DataSource="{AnnouncementList}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <ItemTemplate>
+                            <!-- Announcement -->
+                            <BoolBrushChangerBrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" TargetWidget="AnnouncementTupleButton" FalseBrush="MPLobby.Home.Announcement.Tuple" TrueBrush="MPLobby.Home.Announcement.Tuple.Pinned" BooleanCheck="@IsPinned">
+                              <Children>
+
+                                <ButtonWidget Id="AnnouncementTupleButton" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Home.Announcement.Tuple" Command.Click="ExecuteInspect" >
+                                  <Children>
+                                    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                      <Children>
+                                        <MultiplayerLobbyAnnouncementIconBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" HorizontalAlignment="Center" VerticalAlignment="Center" IconBrush="MPLobby.Home.Announcement.IconBrush" Brush="MPLobby.Home.Announcement.Icon" MarginRight="7" />
+                                        <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="520" Brush="MPLobby.Home.Announcement.Title" VerticalAlignment="Center" Text="@Title" MarginRight="7" />
+                                        <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="250" Brush="MPLobby.Home.Announcement.Date" VerticalAlignment="Center" Text="@DateText" />
+                                      </Children>
+                                    </ListPanel>
+                                  </Children>
+                                </ButtonWidget>
+
+                              </Children>
+                            </BoolBrushChangerBrushWidget>
+
+                          </ItemTemplate>
+                        </NavigatableListPanel>
+
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ScrollablePanel>
+
+                <ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="6" MarginRight="5" MarginBottom="15" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0" >
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#5a4033FF" AlphaFactor="0.2" />
+                    <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                  </Children>
+                </ScrollbarWidget>
+
+              </Children>
+            </ListPanel>
+            
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

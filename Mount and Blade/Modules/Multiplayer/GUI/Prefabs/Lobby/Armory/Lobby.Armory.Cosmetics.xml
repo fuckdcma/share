@@ -1,0 +1,328 @@
+<Prefab>
+  <Constants>
+    <Constant Name="Region.DropdownHeader.Width" BrushName="MPLobby.Matchmaking.Region.DropdownHeader" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Region.DropdownHeader.Height" BrushName="MPLobby.Matchmaking.Region.DropdownHeader" BrushLayer="Default" BrushValueType="Height"/>
+    <Constant Name="RefreshButton.Width" BrushLayer="Default" BrushName="RefreshButton.Flat" BrushValueType="Width" />
+    <Constant Name="RefreshButton.Height" BrushLayer="Default" BrushName="RefreshButton.Flat" BrushValueType="Height" />
+
+    <Constant Name="CommonColorX" Value="#E9D9ADFF"/>
+    <Constant Name="CommonColor" Value="#0000FFFF"/>
+    <Constant Name="RareColor" Value="#4CACFFFF"/>
+    <Constant Name="UniqueColor" Value="#D365FBFF"/>
+    
+    <Constant Name="Cosmetic.Item.Selectable.State.Alpha" Value="1"/>
+    <Constant Name="Cosmetic.Item.Non.Selectable.State.Alpha" Value="0.1"/>
+    <Constant Name="Cosmetic.Item.Non.Selectable.State.Animation.Duration" Value="0.27"/>
+    
+  </Constants>
+  <Window>
+    <MultiplayerArmoryCosmeticsSectionWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsTauntAssignmentActive="@IsTauntAssignmentActive" TauntAssignmentStateAlpha="0.37" TauntAssignmentStateAnimationDuration="0.27" BottomSectionParent="BottomSectionParent" TopSectionParent="CosmeticsContainer\TabsParent" SortControlsParent="CosmeticsContainer\SortControls" CategorySeparatorWidget="CosmeticsContainer\CategorySeparator">
+      <Children>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="10" MarginBottom="50" IsHidden="@HasCosmeticInfoReceived">
+          <Children>
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#00000044" />
+            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom" IsHidden="@IsLoading">
+              <Children>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.Armory.Cosmetic.Name.Text" Brush.FontSize="30" Text="@CosmeticInfoErrorText" />
+                <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!RefreshButton.Width" SuggestedHeight="!RefreshButton.Height" HorizontalAlignment="Center" MarginTop="10" Brush="RefreshButton.Flat" Command.Click="ExecuteRefreshCosmeticInfo" />
+              </Children>
+            </ListPanel>
+
+            <Standard.CircleLoadingWidget Id="LoadingAnimation" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="40" Parameter.Period="0.5" IsVisible="@IsLoading" />
+          </Children>
+        </Widget>
+
+        <Widget Id="CosmeticsContainer" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginBottom="50" IsVisible="@HasCosmeticInfoReceived">
+          <Children>
+
+            <!-- Category Filters -->
+						<NavigationScopeTargeter ScopeID="ArmoryCustomizationTabsScope" ScopeParent="..\TabsParent" ScopeMovements="Horizontal" ExtendDiscoveryAreaBottom="-20" ExtendDiscoveryAreaTop="-20" />
+            <NavigatableListPanel Id="TabsParent" DataSource="{AvailableCategories}" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="90" HorizontalAlignment="Center" MarginLeft="30" MarginRight="30" StackLayout.LayoutMethod="HorizontalSpaced">
+              <ItemTemplate>
+                <MultiplayerArmoryCosmeticCategoryButtonWidget ButtonType="Radio" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="47" SuggestedHeight="57" VerticalAlignment="Center" Command.Click="ExecuteSelectCategory" CommandParameter.Click="0" IsSelected="@IsSelected" CosmeticTypeName="@CosmeticTypeName" CosmeticCategoryName="@CosmeticCategoryName" TauntCategorySpriteBrush="MPLobby.Armory.Cosmetic.Taunt.Category.Icons" ClothingCategorySpriteBrush="MPLobby.Armory.Cosmetic.Clothing.Category.Icons" Brush="MPLobby.Armory.Category.Button" >
+              <Children>
+                    <HintWidget DataSource="{AllCategoriesHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                  </Children>
+                </MultiplayerArmoryCosmeticCategoryButtonWidget>
+              </ItemTemplate>
+            </NavigatableListPanel>
+
+            <!-- Separator -->
+            <Widget Id="CategorySeparator" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="20" MarginTop="75" ClipContents="true">
+              <Children>
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1288" HorizontalAlignment="Center" Sprite="MPLobby\Armory\divider_notched_for_item_icons" />
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1288" HorizontalAlignment="Center" Sprite="MPLobby\Armory\divider_notched_for_item_icons" VerticalFlip="true" />
+              </Children>
+            </Widget>
+
+            <!-- Scrolling Area -->
+            <Widget DataSource="{ActiveCategory}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="140">
+              <Children>
+
+                <ScrollablePanel Id="ScrollablePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="ClipRect" InnerPanel="ClipRect\CosmeticsGrid" VerticalScrollbar="..\VerticalScrollbar">
+                  <Children>
+
+										<NavigationScopeTargeter ScopeID="ArmoryCustomizationCosmeticsGridScope" ScopeParent="..\ClipRect" ScopeMovements="Horizontal" AlternateScopeMovements="Vertical" AlternateMovementStepSize="3" />
+                    <Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true" >
+                      <Children>
+												
+                        <NavigatableGridWidget Id="CosmeticsGrid" DataSource="{AvailableCosmetics}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" ColumnCount="3" DefaultCellHeight="215" DefaultCellWidth="170" LayoutImp="GridLayout">
+                          <ItemTemplate>
+
+                            <!-- Single Cosmetic Item -->
+                            <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="170" SuggestedHeight="200" StackLayout.LayoutMethod="VerticalTopToBottom">
+                              <Children>
+
+                                <!-- Single Cosmetic Item -->
+                                <Widget Id="CosmeticItemCard" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="170" StackLayout.LayoutMethod="VerticalTopToBottom" >
+                                  <Children>
+                                    <MultiplayerLobbyArmoryCosmeticItemButtonWidget Id="CosmeticItem" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Top" Brush="MPLobby.Armory.CosmeticButton.Audio" Command.HoverBegin="ExecuteEnableActions" Command.HoverEnd="ExecuteDisableActions" Command.Click="ExecuteAction" Command.AlternateClick="ExecutePreview" IsSelected="@IsSelected" IsSelectable="@IsSelectable" SelectableStateAlpha="!Cosmetic.Item.Selectable.State.Alpha" NonSelectableStateAlpha="!Cosmetic.Item.Non.Selectable.State.Alpha" SelectableStateAnimationDuration="!Cosmetic.Item.Non.Selectable.State.Animation.Duration" Rarity="2">
+                                      <Children>
+
+                                        <Widget DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+                                          <Children>
+                                            <!-- Tier Indicator -->
+                                            <MultiplayerLobbyArmoryCosmeticTierVisualBrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" Rarity="@Rarity" Brush="MPLobby.Armory.CosmeticBackground" />
+                                          </Children>
+                                        </Widget>
+
+                                        <!-- Icon -->
+                                        <ImageIdentifierWidget DataSource="{Icon}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="69" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="6" MarginRight="6" MarginTop="6" MarginBottom="6" Brush="MPLobby.Armory.Cosmetic.Item" AdditionalArgs="@AdditionalArgs" ImageId="@Id" TextureProviderName="@TextureProviderName" />
+
+                                        <IconBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="96" SuggestedHeight="96" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="6" MarginRight="6" MarginTop="28" MarginBottom="6" Brush="MPLobby.Armory.Cosmetic.Card.TauntIcon" IconBrush="MPLobby.Armory.Cosmetic.Taunt.Icons" IconID="@TauntID" IsSelected="@IsSelected" />
+
+                                        <!-- Selected Indicator -->
+                                        <Widget DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsSelected">
+                                          <Children>
+                                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="8" MarginRight="8" Sprite="MPLobby\Armory\cosmetics_gradient" Color="#000000FF" />
+                                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="3" MarginRight="3" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Cosmetic.Item.Name" Text="@SelectSlotText" />
+                                          </Children>
+                                        </Widget>
+                                        
+                                        <!-- Dark Tint To Indicate Its Locked -->
+                                        <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="160" SuggestedHeight="160" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Armory.CosmeticButton.Tint" Rarity="@Rarity" IsHidden="@IsUnlocked"/>
+                                        
+                                        <!-- Price Tag -->
+                                        <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="30" HorizontalAlignment="Left" VerticalAlignment="Top" MarginTop="20" MarginLeft="12" Sprite="customization_card_price_label_9" Color="#120F0AFF" IsHidden="@IsUnlocked">
+                                          <Children>
+                                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" MarginRight="5" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                                              <Children>
+                                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="20" MarginLeft="5" VerticalAlignment="Center" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" />
+                                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="3" MarginTop="5" IntText="@Cost" Brush="MPLobby.Armory.Cosmetic.Price.Text" />
+                                              </Children>
+                                            </ListPanel>
+                                          </Children>
+                                        </Widget>
+
+                                        <!-- Action and Preview Info -->
+                                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="10" IsVisible="@AreActionsEnabled">
+                                          <Children>
+                                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="45" MarginLeft="8" MarginRight="8" Sprite="MPLobby\Armory\cosmetics_gradient" Color="#000000FF" AlphaFactor="0.6" />
+
+                                            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="45" ExtendTop="20" StackLayout.LayoutMethod="HorizontalSpaced">
+                                              <Children>
+
+                                                <!-- Action Info -->
+                                                <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="65" HorizontalAlignment="Left" VerticalAlignment="Bottom" MarginLeft="15" StackLayout.LayoutMethod="VerticalTopToBottom">
+                                                  <Children>
+                                                    <!-- Mouse Button Icon -->
+                                                    <InputKeyVisualWidget DataSource="{ActionKey}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" HorizontalAlignment="Left" KeyID="@KeyID" Color="#F4E1C4FF"/>
+
+                                                    <!-- Action Text -->
+                                                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" MaxWidth="65" HorizontalAlignment="Left" Brush="MPLobby.BannerlordID.ParagraphText" Text="@ActionText" Brush.FontSize="14" />
+                                                  </Children>
+                                                </ListPanel>
+
+                                                <!-- Preview Info -->
+                                                <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="65" HorizontalAlignment="Right" VerticalAlignment="Bottom" MarginRight="15" StackLayout.LayoutMethod="VerticalTopToBottom">
+                                                  <Children>
+                                                    <!-- Mouse Button Icon -->
+                                                    <InputKeyVisualWidget DataSource="{PreviewKey}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="25" HorizontalAlignment="Right" KeyID="@KeyID" Color="#F4E1C4FF"/>
+
+                                                    <!-- Preview Text -->
+                                                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" MaxWidth="65" HorizontalAlignment="Right" Brush="MPLobby.BannerlordID.ParagraphText" Text="@PreviewText" Brush.FontSize="14" />
+                                                  </Children>
+                                                </ListPanel>
+
+                                              </Children>
+                                            </ListPanel>
+
+                                          </Children>
+                                        </Widget>
+
+                                        <!-- Animation Fill Bar -->
+                                        <SliderWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Filler="Filler" MaxValueFloat="100" MinValueFloat="0" ValueFloat="@PreviewAnimationRatio" MarginTop="2" MarginLeft="2" MarginBottom="3" MarginRight="2">
+                                          <Children>
+                                            <Widget Id="Filler" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" VerticalAlignment="Center" ClipContents="true">
+                                              <Children>
+                                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="165" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="SquareWRoundedCorners_9" Color="#FFFFFF60" />
+                                              </Children>
+                                            </Widget>
+                                          </Children>
+                                        </SliderWidget>
+
+                                        <MultiplayerLobbyArmoryCosmeticItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="156" SuggestedHeight="156" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Armory.CosmeticButton" Rarity="@Rarity" IsUsed="@IsUsed"/>
+
+                                        <HintWidget DataSource="{ItemNameHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" />
+
+                                      </Children>
+                                    </MultiplayerLobbyArmoryCosmeticItemButtonWidget>
+
+                                    <!-- RequiresOnFoot Icon -->
+                                    <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="25" SuggestedHeight="17" VerticalAlignment="Top" HorizontalAlignment="Right" MarginTop="18" MarginRight="18" Brush="Taunt.Item.RequiresOnFoot.Icon" IsVisible="@RequiresOnFoot">
+                                      <Children>
+                                        <HintWidget DataSource="{BlocksMovementOnUsageHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsDisabled="true"></HintWidget>
+                                  </Children>
+                                    </BrushWidget>
+
+                                  </Children>
+                                </Widget>
+
+                                <ScrollingTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" VerticalAlignment="Bottom" HorizontalAlignment="Center" MarginLeft="10" MarginRight="10" ScrollOnHoverWidget="..\CosmeticItemCard\CosmeticItem" IsAutoScrolling="false" Brush="MPLobby.Cosmetic.Item.Name" Brush.TextHorizontalAlignment="Left" Text="@Name" />
+                              </Children>
+                            </ListPanel>
+
+                          </ItemTemplate>
+                        </NavigatableGridWidget>
+
+                      </Children>
+                    </Widget>
+
+                    <!--Scroll Gradient-->
+                    <Widget DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="576" SuggestedHeight="57" HorizontalAlignment="Right" PositionXOffset="12" VerticalAlignment="Bottom" Sprite="CharacterCreation\character_creation_scroll_gradient" />
+
+                  </Children>
+                </ScrollablePanel>
+
+                <ImageWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="GradientDivider_9" Brush.Color="#796448FF" VerticalAlignment="Bottom" />
+
+                <!-- Scrollbar -->
+                <ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="6" MarginBottom="15" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0" >
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#5a4033FF" AlphaFactor="0.2" />
+                    <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                  </Children>
+                </ScrollbarWidget>
+
+              </Children>
+            </Widget>
+
+            <!-- Sorting Dropdowns -->
+            <ListPanel Id="SortControls" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="90" MarginRight="30" StackLayout.LayoutMethod="HorizontalLeftToRight">
+              <Children>
+
+                <!-- Sort Category -->
+								<NavigationScopeTargeter ScopeID="ArmoryCustomizationSortCategoryScope" ScopeParent="..\SortCategoryDropdownParent" ScopeMovements="Vertical" ExtendDiscoveryAreaRight="50" />
+                <ListPanelDropdownWidget Id="SortCategoryDropdownParent" DataSource="{SortCategories}" WidthSizePolicy="Fixed" HeightSizePolicy ="CoverChildren" SuggestedWidth="180" MarginTop="10" DoNotHandleDropdownListPanel="true" CurrentSelectedIndex="@SelectedIndex" Button="DropdownButton" ListPanelContainer="ListContainer" ListPanel="ListContainer\PrimaryUsageSelectorList" TextWidget="DropdownButton\Container\ContainerChild\SelectedTextWidget" GamepadNavigationIndex="0">
+                  <Children>
+                    <ButtonWidget Id="DropdownButton" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Left" VerticalAlignment="Top">
+                      <Children>
+                        <Widget Id="Container" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center">
+                          <Children>
+                            <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" Brush="MPLobby.Filters.Dropdown.BG"/>
+                            <ListPanel Id="ContainerChild" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center">
+                              <Children>
+                                <RichTextWidget Id="SelectedTextWidget" Text=" " WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" MarginLeft="10" PositionYOffset="-2" Brush="MPLobby.Matchmaking.Region.Text" TextHorizontalAlignment="Left"/>
+                                <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="15" SuggestedHeight="15" VerticalAlignment="Center" MarginLeft="7" PositionYOffset="-2" Brush="MPLobby.Filters.Dropdown.Arrow"/>
+                              </Children>
+                            </ListPanel>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                    <Widget Id="ListContainer" IsVisible="false" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="40" MarginLeft="8" MarginRight="8" Sprite="region_combobox_bg_9" Color="#000000FF" AlphaFactor="0.9">
+                      <Children>
+												<NavigationForcedScopeCollectionTargeter CollectionParent="..\." />
+												<NavigationScopeTargeter ScopeID="ArmoryCustomizationSortCategoryDropdownScope" ScopeParent="..\PrimaryUsageSelectorList" ScopeMovements="Vertical" />
+                        <NavigatableListPanel Id="PrimaryUsageSelectorList" DataSource="{ItemList}" IsVisible="false" StackLayout.LayoutMethod="VerticalTopToBottom" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" HorizontalAlignment="Left" MarginTop="20" MarginBottom="10">
+                          <ItemTemplate>
+                            <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy ="Fixed" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" ButtonType="Radio" Brush="MPLobby.Matchmaking.Region.DropdownItem" IsHidden="@IsRegionNone">
+                              <Children>
+                                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="10" MarginRight="10">
+                                  <Children>
+                                    <RichTextWidget Text="@StringItem" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Matchmaking.Region.ItemText"/>
+                                  </Children>
+                                </ListPanel>
+                              </Children>
+                            </ButtonWidget>
+                          </ItemTemplate>
+                        </NavigatableListPanel>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="!Region.DropdownHeader.Height" HorizontalAlignment="Center" PositionYOffset="-3" Sprite="MPLobby\Matchmaking\region_combobox_header" />
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ListPanelDropdownWidget>
+
+                <!-- Sort Order -->
+								<NavigationScopeTargeter ScopeID="ArmoryCustomizationSortOrderScope" ScopeParent="..\SortOrderDropdownParent" ScopeMovements="Vertical" ExtendDiscoveryAreaLeft="50"  />
+                <ListPanelDropdownWidget Id="SortOrderDropdownParent" DataSource="{SortOrders}" WidthSizePolicy="Fixed" HeightSizePolicy ="CoverChildren" SuggestedWidth="180" MarginTop="10" MarginLeft="160" DoNotHandleDropdownListPanel="true" CurrentSelectedIndex="@SelectedIndex" Button="DropdownButton" ListPanelContainer="ListContainer" ListPanel="ListContainer\PrimaryUsageSelectorList" TextWidget="DropdownButton\Container\ContainerChild\SelectedTextWidget" GamepadNavigationIndex="0">
+                  <Children>
+                    <ButtonWidget Id="DropdownButton" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Right" VerticalAlignment="Top">
+                      <Children>
+                        <Widget Id="Container" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center">
+                          <Children>
+                            <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" Brush="MPLobby.Filters.Dropdown.BG"/>
+                            <ListPanel Id="ContainerChild" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center">
+                              <Children>
+                                <RichTextWidget Id="SelectedTextWidget" Text=" " WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="10" PositionYOffset="-2" Brush="MPLobby.Matchmaking.Region.Text"/>
+                                <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="15" SuggestedHeight="15" VerticalAlignment="Center" MarginLeft="7" PositionYOffset="-2" Brush="MPLobby.Filters.Dropdown.Arrow"/>
+                              </Children>
+                            </ListPanel>
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </ButtonWidget>
+                    <Widget Id="ListContainer" IsVisible="false" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="40" MarginLeft="8" MarginRight="8" Sprite="region_combobox_bg_9" Color="#000000FF" AlphaFactor="0.9">
+                      <Children>
+												<NavigationForcedScopeCollectionTargeter CollectionParent="..\." />
+												<NavigationScopeTargeter ScopeID="ArmoryCustomizationSortOrderDropdownScope" ScopeParent="..\PrimaryUsageSelectorList" ScopeMovements="Vertical" />
+                        <NavigatableListPanel Id="PrimaryUsageSelectorList" DataSource="{ItemList}" IsVisible="false" StackLayout.LayoutMethod="VerticalTopToBottom" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Top" HorizontalAlignment="Left" MarginTop="20" MarginBottom="10">
+                          <ItemTemplate>
+                            <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy ="Fixed" SuggestedHeight="30" HorizontalAlignment="Center" VerticalAlignment="Bottom" ButtonType="Radio" Brush="MPLobby.Matchmaking.Region.DropdownItem" IsHidden="@IsRegionNone">
+                              <Children>
+                                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="10" MarginRight="10">
+                                  <Children>
+                                    <RichTextWidget Text="@StringItem" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Matchmaking.Region.ItemText"/>
+                                  </Children>
+                                </ListPanel>
+                              </Children>
+                            </ButtonWidget>
+                          </ItemTemplate>
+                        </NavigatableListPanel>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="180" SuggestedHeight="!Region.DropdownHeader.Height" HorizontalAlignment="Center" PositionYOffset="-3" Sprite="MPLobby\Matchmaking\region_combobox_header" />
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ListPanelDropdownWidget>
+
+              </Children>
+            </ListPanel>
+
+          </Children>
+        </Widget>
+
+
+        <Widget Id="BottomSectionParent" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren"  VerticalAlignment="Bottom">
+          <Children>
+        <!-- Current Loot -->
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="10" StackLayout.LayoutMethod="HorizontalLeftToRight">
+          <Children>
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="35" VerticalAlignment="Center" MarginTop="7" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" />
+            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" MarginLeft="10" IntText="@Loot" Brush="MPLobby.GameSearch.TitleText" Brush.FontSize="48" />
+          </Children>
+        </ListPanel>
+
+        <!--Reset Button-->
+        <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="40" SuggestedHeight="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Command.Click="ExecuteResetPreview" Brush="MPLobby.Armory.Reset.Button" MarginTop="30" MarginRight="30" IsHidden="@IsManagingTaunts">
+          <Children>
+            <HintWidget DataSource="{ResetPreviewHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+          </Children>
+        </ButtonWidget>
+      </Children>
+    </Widget>
+
+      </Children>
+    </MultiplayerArmoryCosmeticsSectionWidget>
+  </Window>
+</Prefab>

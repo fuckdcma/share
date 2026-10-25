@@ -1,0 +1,83 @@
+<Prefab>
+	<Window>
+		<Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="790" SuggestedHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="50" MarginBottom="300" IsVisible="@IsSelected" >
+			<Children>
+				<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Report.Popup.Frame" >
+					<Children>
+						<NavigationForcedScopeCollectionTargeter CollectionID="ChangeSigilForcedCollection" CollectionParent="..\." />
+						<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15" MarginLeft="25" MarginRight="25" StackLayout.LayoutMethod="VerticalTopToBottom">
+							<Children>
+
+								<!--Title and Close Button-->
+								<ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="25" StackLayout.LayoutMethod="HorizontalLeftToRight" >
+									<Children>
+										<!--Title-->
+										<TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Text="@TitleText" />
+
+										<!--Close Button-->
+										<ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="20" SuggestedHeight="22" HorizontalAlignment="Right" Command.Click="ExecuteClosePopup">
+											<Children>
+												<!--Icon-->
+												<BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.CustomServer.CloseButton" />
+                        <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-40" KeyID="@KeyID" IsVisible="@IsVisible"/>
+											</Children>
+										</ButtonWidget>
+
+									</Children>
+								</ListPanel>
+
+								<!--Sigil Icon Selection-->
+								<Widget Id="InnerPanel" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="800" SuggestedHeight="275" HorizontalAlignment="Center" MarginRight="20" MarginBottom="10">
+									<Children>
+
+										<ScrollablePanel Id="ScrollablePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AutoHideScrollBars="true" ClipRect="ClipRect" InnerPanel="ClipRect\IconsGrid" VerticalScrollbar="..\VerticalScrollbar">
+											<Children>
+
+												<NavigationScopeTargeter ScopeID="LobbyClanChangeSigilGridScope" ScopeParent="..\ClipRect" ScopeMovements="Horizontal" AlternateScopeMovements="Vertical" AlternateMovementStepSize="8" />
+												<Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+													<Children>
+
+														<NavigatableGridWidget DataSource="{IconsList}" Id="IconsGrid" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" ColumnCount="8" DefaultCellHeight="90" DefaultCellWidth="90" LayoutImp="GridLayout">
+															<ItemTemplate>
+																<ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="75" SuggestedHeight="75" HorizontalAlignment="Center" VerticalAlignment="Center" Command.Click="ExecuteSelectIcon" Brush="FaceGen.Card" ButtonType="Radio" IsSelected="@IsSelected">
+																	<Children>
+																		<Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="2" MarginRight="2" MarginTop="2" MarginBottom="2" Sprite="@IconPath" />
+																	</Children>
+																</ButtonWidget>
+															</ItemTemplate>
+														</NavigatableGridWidget>
+
+													</Children>
+												</Widget>
+
+											</Children>
+										</ScrollablePanel>
+
+										<ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Top" MarginTop="6" MarginBottom="15" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0" >
+											<Children>
+												<Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" Color="#5A4033FF" AlphaFactor="0.2" />
+												<ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="10" SuggestedWidth="8" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+											</Children>
+										</ScrollbarWidget>
+
+									</Children>
+								</Widget>
+
+							</Children>
+						</ListPanel>
+
+						<!--Apply Button-->
+						<NavigationScopeTargeter ScopeID="LobbyClanChangeSigilApplyButton" ScopeParent="..\ApplyButton" />
+						<ButtonWidget Id="ApplyButton" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="342" SuggestedHeight="69" MarginBottom="25" HorizontalAlignment="Center" VerticalAlignment="Bottom" Brush="WideButton.Flat" Command.Click="ExecuteChangeSigil" IsEnabled="@CanChangeSigil" GamepadNavigationIndex="0">
+							<Children>
+								<TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Clan.CreateButton.Text" Text="@ApplyText" />
+                <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+							</Children>
+						</ButtonWidget>
+
+					</Children>
+				</BrushWidget>
+			</Children>
+		</Widget>
+	</Window>
+</Prefab>

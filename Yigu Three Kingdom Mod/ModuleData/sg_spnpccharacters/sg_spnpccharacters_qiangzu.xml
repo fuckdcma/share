@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <NPCCharacter id="qiangzu_sol_1001" default_group="Infantry" level="6" name="{=*}羌族氏族战士" occupation="Bandit" is_basic_troop="true" culture="Culture.qiangzu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="0" />
+      <skill id="Athletics" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.qiangzu_sol_2001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="qiangzu_sol_2001" default_group="Infantry" level="11" name="{=*}羌族氏族勇士" occupation="Bandit" is_basic_troop="true" culture="Culture.qiangzu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="15" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="20" />
+      <skill id="Riding" value="5" />
+      <skill id="Athletics" value="40" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.qiangzu_sol_3001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="qiangzu_sol_3001" default_group="Infantry" level="16" name="{=*}羌族战纹勇士" occupation="Bandit" is_basic_troop="true" culture="Culture.qiangzu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="30" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="70" />
+      <skill id="Riding" value="10" />
+      <skill id="Athletics" value="70" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.qiangzu_sol_4001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="qiangzu_sol_4001" default_group="Infantry" level="21" name="{=*}羌族图腾勇士" occupation="Bandit" is_basic_troop="true" culture="Culture.qiangzu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="100" />
+      <skill id="Bow" value="45" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="60" />
+      <skill id="Riding" value="15" />
+      <skill id="Athletics" value="100" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.qiangzu_sol_5001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="qiangzu_sol_5001" default_group="Infantry" level="26" name="{=*}羌族酋长亲卫" occupation="Bandit" is_basic_troop="true" culture="Culture.qiangzu_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="60" />
+      <skill id="Crossbow" value="60" />
+      <skill id="Throwing" value="80" />
+      <skill id="Riding" value="20" />
+      <skill id="Athletics" value="130" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

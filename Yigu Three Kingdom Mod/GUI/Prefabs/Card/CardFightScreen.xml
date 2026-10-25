@@ -1,0 +1,111 @@
+<Prefab>
+  <Variables>
+  </Variables>
+  <Constants>
+    <Constant Name="Card.HoldPanel.Width" BrushLayer="Default" BrushName="Popup.CloseButton" BrushValueType="Width" />
+    <Constant Name="Card.HoldPanel.Height" BrushLayer="Default" BrushName="Popup.CloseButton" BrushValueType="Height" />
+    <Constant Name="GameNotification.Text.HorizontalMargins" Value="10"/>
+    <Constant Name="CardWidth" Value="190" />
+    <Constant Name="CardHeight" Value="295" />
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="CardFightBackground" >
+      <Children>
+
+        <!--<SpriteAnimationWidget  WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SpriteName="SpeedLine" HorizontalAlignment="Center"  VerticalAlignment="Center"/>-->
+
+        <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="251" SuggestedHeight="64"
+                      HorizontalAlignment="Left" VerticalAlignment="Bottom" Brush="Popup.Cancel.Button"
+                      Command.Click="OnExitScreen" IsVisible="true">
+          <Children>
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="投降" />
+          </Children>
+        </ButtonWidget>
+
+
+        <ListPanel  WidthSizePolicy="StretchToParent"  HeightSizePolicy="Fixed" SuggestedHeight="70"  MarginLeft="300"  MarginRight="300" StackLayout.LayoutMethod="HorizontalCentered" >
+          <Children>
+
+            <!--玩家局数胜负-->
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="70" Brush="Card.DeckCount.Text"
+                        Text="@PlayerRoundCount"
+                        Brush.FontSize="35"  MarginRight="0"
+                        Brush.TextHorizontalAlignment="Right" Brush.FontColor="#1E90FFFF"
+                        VerticalAlignment="Top"/>
+
+
+            <!--显示当前局数-->
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="200" SuggestedHeight="64" Brush="Card.DeckCount.Text" Text="@RoundCount"
+                    
+                        Brush.TextHorizontalAlignment="Center" Brush.FontColor="#F0F8FFFF"
+                        VerticalAlignment="Top"/>
+
+
+
+            <!--Npc局数胜负-->
+            <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="70" Brush="Card.DeckCount.Text" Text="@NpcRoundCount"
+                        Brush.FontSize="35"   MarginLeft="0"
+                        Brush.TextHorizontalAlignment="Left" Brush.FontColor="#FF0000FF"
+                        VerticalAlignment="Top"/>
+
+          </Children>
+        </ListPanel>
+        <!-- <Standard.Background /> -->
+
+        <ListPanel id="PlayerPanel" DataSource="{PlayerHandPanel}" WidthSizePolicy="StretchToParent"  HeightSizePolicy="StretchToParent"  MarginBottom="50">
+          <Children>
+
+            <HandCardPanel HorizontalAlignment="Left" />
+
+            <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" >
+              <!--说明面板-->
+              <Children>
+                <!--Descriptions Right Panel-->
+                <CardDescriptionPage id="PlayerCardDescription" DataSource="{CardDescription}" HorizontalAlignment="Left" MarginLeft="1"/>
+
+                <!-- 卡牌数量提示 -->
+                <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren"
+                         MarginLeft="20" HorizontalAlignment="Left" VerticalAlignment="Bottom" MarginBottom="1"
+                        
+          >
+                  <Children>
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="Card.DeckCount.Text" Text="@DeckCount"
+                                Brush.TextHorizontalAlignment="Center"
+                                VerticalAlignment="Bottom" MarginBottom="1"/>
+                  </Children>
+                </Widget>
+
+              </Children>
+            </Widget>
+
+          </Children>
+        </ListPanel>
+
+
+        <HandCardPanel id="NpcPanel" DataSource="{NpcHandPanel}" HorizontalAlignment="Right"/>
+
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="50" MarginLeft="550" MarginRight="550" MarginBottom="50" Sprite="HandCardListBackground" >
+          <Children>
+
+            <!-- <ListPanel Id="vertical" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalBottomToTop" HorizontalAlignment="Center"> -->
+            <!-- <Children>							 -->
+
+            <!-- <ListPanel Id="horizonta" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight" >			 -->
+            <!-- <Children> -->
+            <!-- 卡牌列表内面板 -->
+            <GridWidget Id="GridWidget"  DataSource="{CardBoardList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"
+            VerticalAlignment="Center" ColumnCount="3" RowCount="3" DefaultCellHeight="!CardHeight" DefaultCellWidth="!CardWidth">
+              <ItemTemplate>
+                <CardBoard id="CardBoard"/>
+              </ItemTemplate>
+            </GridWidget>
+            <!-- </Children> -->
+            <!-- </ListPanel> -->
+            <!-- </Children> -->
+            <!-- </ListPanel> -->
+          </Children>
+        </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

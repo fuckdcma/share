@@ -1,0 +1,71 @@
+<prefabs>
+	<game_entity name="nord_village_house_a" old_prefab_name="" occlusion_body_name="bo_occ_nord_village_house_a">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_village_house_a" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="nord_village_house_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_village_house_b" old_prefab_name="" occlusion_body_name="bo_occ_nord_village_house_b">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_village_house_b" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="nord_village_house_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_village_house_c" old_prefab_name="" occlusion_body_name="bo_occ_nord_village_house_c">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_village_house_c" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="nord_village_house_c"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_village_house_part_a" old_prefab_name="" occlusion_body_name="bo_occ_nord_village_house_part_a">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_village_house_part_a" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="nord_village_house_part_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_village_house_part_b" old_prefab_name="" occlusion_body_name="bo_occ_nord_village_house_part_a">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_village_house_part_a" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="nord_village_house_part_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_village_house_d" old_prefab_name="" occlusion_body_name="bo_occ_nord_village_house_d">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_village_house_d" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="nord_village_house_d"/>
+		</components>
+		<children>
+			<game_entity name="nord_village_house_d_stairs" old_prefab_name="">
+				<physics shape="bo_nord_village_house_d_stairs" mass="1.000">
+					<body_flags>
+						<body_flag name="has_steps"/>
+					</body_flags>
+				</physics>
+				<components>
+					<meta_mesh_component name="nord_village_house_d_stairs"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="nord_village_barn" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_village_barn" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="nord_village_barn"/>
+		</components>
+	</game_entity>
+	<game_entity name="nord_village_barn_door" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_nord_village_barn_door" mass="1.000"/>
+		<components>
+			<meta_mesh_component name="nord_village_barn_door"/>
+		</components>
+	</game_entity>
+</prefabs>
+

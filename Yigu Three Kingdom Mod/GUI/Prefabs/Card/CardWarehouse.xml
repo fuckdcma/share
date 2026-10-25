@@ -1,0 +1,173 @@
+<Prefab>
+  <Constants>
+    <Constant Name="CardWidth" Value="190" />
+    <Constant Name="CardHeight" Value="295" />
+  </Constants>
+  <Window>
+
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="CardFightBackground" >
+      <Children>
+
+        <ListPlane StackLayout.LayoutMethod="HorizontalLeftToRight" WidthSizePolicy="StretchToParent"
+                   HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Center" >
+          <Children>
+
+            <!--说明面板-->
+            <!--Descriptions Right Panel-->
+            <CardDescriptionPage id="CardDescriptions" DataSource="{CardDescription}"/>
+
+
+            <!-- 所有卡牌预览 -->
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="20" MarginLeft="450" MarginRight="20" MarginBottom="20" Sprite="卡牌选项背景4" >
+              <Children>
+
+                <ListPlane  WidthSizePolicy="StretchToParent"
+                           HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalBottomToTop" >
+                  <Children>
+
+                    <!--卡牌面板操作-->
+                      <ListPlane StackLayout.LayoutMethod="HorizontalLeftToRight" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" >
+                      <Children>
+
+                        <Standard.DropdownWithHorizontalControl  Id="StringOption"
+                                                                      Parameter.SelectorDataSource="{SortSelector}"
+                                                                      Parameter.IsCustomWidth ="true"
+                                                                      Parameter.CustomWidth="180" MarginTop="12" />
+
+                        <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+                                      SuggestedWidth="251" SuggestedHeight="64"
+                                      Brush="Popup.Cancel.Button" Command.Click="OnChangeSortDir" HorizontalAlignment="Left"  MarginLeft="250" >
+                          <Children>
+                            <TextWidget Text="@SortDirection" WidthSizePolicy="StretchToParent"
+                                        HeightSizePolicy="StretchToParent" PositionYOffset="3" Brush="Mission.MainAgentHUD.TakenDamageFeed.Text"/>
+                          </Children>
+                        </ButtonWidget>
+
+
+                        <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+                                      SuggestedWidth="251" SuggestedHeight="64"
+                                      Brush="Popup.Cancel.Button" Command.Click="OnEditorDeck" HorizontalAlignment="Right"  >
+                          <Children>
+                            <TextWidget Text="@EditorText" WidthSizePolicy="StretchToParent"
+                                        HeightSizePolicy="StretchToParent" PositionYOffset="3" Brush="Mission.MainAgentHUD.TakenDamageFeed.Text"/>
+                          </Children>
+                        </ButtonWidget>
+
+                        <!--卡组当前数量-->
+                        <TextWidget
+                          WidthSizePolicy="Fixed" HeightSizePolicy="Fixed"
+                          SuggestedWidth="251" SuggestedHeight="64"
+                          HorizontalAlignment="Center" VerticalAlignment="Center"
+                          Brush="Card.DeckCount.Text" 
+                          Brush.FontSize="30"  Brush.TextHorizontalAlignment="Center" 
+                          Text="@DeckCount"
+                        />
+
+
+
+                      </Children>
+                    </ListPlane>
+
+
+
+                      <!-- 预览卡牌列表 -->
+                      <ListPlane Id="CenterPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center"  MarginTop="60"  >
+                        <Children>
+
+                          <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" 
+                                           VerticalAlignment="Bottom" AutoHideScrollBars="true" ClipRect="ClipRect" InnerPanel="ClipRect\GridWidget" 
+                                           VerticalScrollbar="..\VerticalScrollbar">
+                            <Children>
+
+                              <Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15"  ClipContents="true">
+                                <Children>
+
+                                  <GridWidget Id="GridWidget"  DataSource="{CardList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"
+                                              VerticalAlignment="Top" ColumnCount="7"  DefaultCellHeight="!CardHeight" DefaultCellWidth="!CardWidth"  >
+                                    <ItemTemplate>
+
+                                      
+                                      <CardPage id="CardItem" />
+
+
+                                    </ItemTemplate>
+                                  </GridWidget>
+
+                                </Children>
+                              </Widget>
+
+                              <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="150" VerticalAlignment="Bottom" Sprite="StdAssets\Popup\scrollable_field_gradient" IsEnabled="false" />
+
+                            </Children>
+                          </ScrollablePanel>
+
+                          <ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Center" MarginTop="20" MarginBottom="20" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0">
+                            <Children>
+                              <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="MPLobby\CustomServer\lobby_slider_bed" AlphaFactor="0.4" />
+                              <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="8" SuggestedHeight="10" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                            </Children>
+                          </ScrollbarWidget>
+
+                        </Children>
+                      </ListPlane>
+
+
+                      <!--牌组列表-->
+                      <!--<ListPlane Id="DeckPanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center"  MarginTop="400"  >
+                        <Children>
+
+                          <ScrollablePanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Right" 
+                                           VerticalAlignment="Bottom" AutoHideScrollBars="true" ClipRect="ClipRect" InnerPanel="ClipRect\GridWidget" 
+                                           VerticalScrollbar="..\VerticalScrollbar">
+                            <Children>
+
+                              <Widget Id="ClipRect" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="15" MarginBottom="15"  ClipContents="true">
+                                <Children>
+
+                                  <GridWidget Id="GridWidget"  DataSource="{CardDeckList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center"
+                                              VerticalAlignment="Top" ColumnCount="6"  DefaultCellHeight="!CardHeight" DefaultCellWidth="!CardWidth"  >
+                                    <ItemTemplate>
+                                      <CardPage id="CardItem" />
+                                    </ItemTemplate>
+                                  </GridWidget>
+
+                                </Children>
+                              </Widget>
+
+                              <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="150" VerticalAlignment="Bottom" Sprite="StdAssets\Popup\scrollable_field_gradient" IsEnabled="false" />
+
+                            </Children>
+                          </ScrollablePanel>
+
+                          <ScrollbarWidget Id="VerticalScrollbar" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="8" HorizontalAlignment="Right" VerticalAlignment="Center" MarginTop="20" MarginBottom="20" AlignmentAxis="Vertical" Handle="VerticalScrollbarHandle" MaxValue="100" MinValue="0">
+                            <Children>
+                              <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="4" HorizontalAlignment="Center" Sprite="MPLobby\CustomServer\lobby_slider_bed" AlphaFactor="0.4" />
+                              <ImageWidget Id="VerticalScrollbarHandle" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="8" SuggestedHeight="10" HorizontalAlignment="Center" Brush="FaceGen.Scrollbar.Handle" />
+                            </Children>
+                          </ScrollbarWidget>
+
+                        </Children>
+                      </ListPlane>-->
+
+
+                  </Children>
+                </ListPlane>
+              </Children>
+            </Widget>
+
+
+            <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="251" SuggestedHeight="64" 
+                          HorizontalAlignment="Left" VerticalAlignment="Bottom" Brush="Popup.Cancel.Button" 
+                          Command.Click="OnExitWarehouse" IsVisible="true">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="Popup.Button.Text" Text="退出" />
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </ListPlane>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

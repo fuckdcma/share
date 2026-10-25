@@ -1,0 +1,1528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings>
+	<!-- COMMENTS ON EARLIER SEA BATTLE -->
+	<string
+		id="str_comment_endplayerbattle_you_defeated_our_enemy_at_sea.default"
+		text="{=Ob4WaDsD}I heard you fought ship to ship with {DEFEATED_PARTY_LEADER}, and won.">
+		<tags>
+			<tag
+				tag_name="DefaultTag" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_endplayerbattle_we_defeated_enemy_at_sea.default"
+		text="{=Zh00ZPZF}I will not forget how our ships met those of {DEFEATED_PARTY_LEADER}, and bested them.">
+		<tags>
+			<tag
+				tag_name="DefaultTag" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_endplayerbattle_we_defeated_pirates.default"
+		text="{=H9CuYSX3}We did well to defeat those pirates back there. The common enemy of mankind, so they say.">
+		<tags>
+			<tag
+				tag_name="DefaultTag" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_endplayerbattle_we_defeated_pirates.default_2"
+		text="{=H9CuYSX3}We did well to defeat those pirates back there. The common enemy of mankind, so they say.">
+		<tags>
+			<tag
+				tag_name="DefaultTag" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_endplayerbattle_you_accosted_my_trading_ship.default"
+		text="{=mgT3OzDk}I hear you seized one of my trading vessels. I am not pleased.">
+		<tags>
+			<tag
+				tag_name="DefaultTag"
+				weight="+1" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_endplayerbattle_we_defeated_you_at_sea.default"
+		text="{=V61Dy2Pt}I remember when we last met and battled, ship to ship.">
+		<tags>
+			<tag
+				tag_name="DefaultTag"
+				weight="+1" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_endplayerbattle_we_were_defeated_at_sea.default"
+		text="{=5rXHns1H}I remember when you and I last fought together. We had good ships and valiant crews. It's a pity we did not prevail.">
+		<tags>
+			<tag
+				tag_name="DefaultTag"
+				weight="+1" />
+		</tags>
+	</string>
+	<!-- INTRO COMMENT-->
+	<string
+		id="str_comment_intro.common_cautious_at_sea"
+		text="{=qYa1Ubs7}I shall mark down your name. Now, do not take it amiss if I do not invite you to dine on board, for the world is a treacherous place, and I have learned to be wary.">
+		<tags>
+			<tag
+				tag_name="CombatantTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+			<tag
+				tag_name="HighRegisterTag"
+				weight="1" />
+			<tag
+				tag_name="CautiousTag"
+				weight="1" />
+			<tag
+				tag_name="CalculatingTag"
+				weight="1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag" />
+		</tags>
+	</string>
+	<string
+		id="str_surrender_demand_hero.curt_at_sea"
+		text="{=W7FarbyE}You can't outrun us. Yield or die.[ib:warrior][if:convo_aggressive]">
+		<tags>
+			<tag
+				tag_name="PersonaCurtTag"
+				weight="+1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="2" />
+		</tags>
+	</string>
+	<string
+		id="str_surrender_demand_hero.earnest_at_sea"
+		text="{=6GDZHADD}Strike your sails and ship your oars, or we shall attack.[ib:warrior][if:convo_angry]">
+		<tags>
+			<tag
+				tag_name="PersonaEarnestTag"
+				weight="+1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="2" />
+		</tags>
+	</string>
+	<string
+		id="str_surrender_demand_hero.softspoken_at_sea"
+		text="{=kObd6NR1}Heave to and prepare to be boarded, or fight.[ib:warrior][if:convo_angry]">
+		<tags>
+			<tag
+				tag_name="PersonaSoftspokenTag"
+				weight="+1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="2" />
+		</tags>
+	</string>
+	<string
+		id="str_surrender_demand_hero.ironic_at_sea"
+		text="{=tpBIsbT1}Right. So unless you ship your oars now and let us board you, you're going down.[ib:warrior][if:convo_angry]">
+		<tags>
+			<tag
+				tag_name="PersonaIronicTag"
+				weight="+1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="2" />
+		</tags>
+	</string>
+	<!-- voiced lines move from here to below -->
+	<string
+		id="str_piracy_threat.1"
+		text="{=9CLh70Zn}Ahoy there! There's a tax on ships in these waters, sailor, paid either in coin or in blood.[if:convo_mocking_revenge]" />
+	<string
+		id="str_piracy_threat.2"
+		text="{=fqcljZxA}You! Heave to, you bastards, or we'll cut every last one of your throats.[if:convo_bared_teeth]" />
+	<string
+		id="str_piracy_threat.3"
+		text="{=0Ioje6ia}Ahoy there. Furl your sails and ship your oars.[if:convo_mocking_revenge]" />
+	<!-- mocking revenge works well -->
+	<string
+		id="str_piracy_pay_agreement.1"
+		text="{=bfuBBrTq}Oh aye, you can buy your lives. I wouldn't push too hard on the price if I were you, though, as you might say it's a bit of a seller's market.[ib:hip][rf:convo_bemused]" />
+	<string
+		id="str_piracy_pay_agreement.2"
+		text="{=uwCp5zUL}Name the sum, and be quick about it, or we'll just feed you to the sharks.[ib:hip][rf:convo_bared_teeth]" />
+	<string
+		id="str_piracy_pay_agreement.3"
+		text="{=tWcTygzR}Good, good. I much prefer a straight-up deal to rummaging through your gut afterward to see what you might have hid there.[ib:hip][rf:convo_bemused]" />
+	<string
+		id="str_piracy_conclusion.1"
+		text="{=yaEcWHTp}Very well. Sail safely, and don't forget to put aside some silver for your return trip.[ib:closed][rf:convo_bemused]" />
+	<string
+		id="str_piracy_conclusion.2"
+		text="{=qdpW0xjM}We'll take it. Now best get your sails over the horizon before we change your minds.[ib:closed][rf:convo_bared_teeth]" />
+	<string
+		id="str_piracy_conclusion.3"
+		text="{=AMiXtNfV}Good. Now be careful out there. World's full of thieves, not all of them as kind as we are.[ib:closed][rf:convo_bemused]" />
+	<string
+		id="str_piracy_start_fight.1"
+		text="{=elvtV0kV}Well, let no one say we didn't give you a chance.[ib:aggressive][if:convo_annoyed]" />
+	<string
+		id="str_piracy_start_fight.2"
+		text="{=zLJP22F7}Expect no mercy.[ib:aggressive][if:convo_very_stern]" />
+	<string
+		id="str_piracy_start_fight.3"
+		text="{=361sEjHd}Really? I suppose I'll be getting my hands dirty today, then.[ib:aggressive][if:convo_bared_teeth]" />
+	<string
+		id="str_culture_rich_name.nord"
+		text="{=bpYLTRTL}Nords" />
+	<string
+		id="str_culture_description.nord"
+		text="{=danasORQ}The Nords are a people made by the sea. The very name of their home, the Nordvyg, refers to the icy stretch of glacier-cut coastline that links their scattered settlements. Until recently, their towns were little more than a shrine or market beside a fjord or estuary, surrounded by a palisade. Some make a modest living by farming barley and raising sheep, but those with ambition must venture forth in their longships to trade, plunder or fight for hire." />
+	<string
+		id="str_faction_official.nord"
+		text="{=PbCPzAFn}a jarl"></string>
+	<string
+		id="str_faction_official.nord_f"
+		text="{=CbaWIHqc}a jarlinna" />
+	<string
+		id="str_faction_ruler.nord"
+		text="{=sKnYLPkn}king" />
+	<string
+		id="str_faction_ruler.nord_f"
+		text="{=anHqaNK0}queen" />
+	<string
+		id="str_short_term_for_faction.nord"
+		text="{=bpYLTRTL}Nords" />
+	<string
+		id="str_faction_informal_name_for_culture.nord"
+		text="{=RPsjP1bm}the Nords" />
+	<string
+		id="str_adjective_for_culture.nord"
+		text="{=PwBHqr0V}Nordic" />
+	<string
+		id="str_neutral_term_for_culture.nord"
+		text="{=bpYLTRTL}Nords" />
+	<string
+		id="str_kingdom_formal_name.nord"
+		text="{=hvcyO1P4}Kingdom of the Nordvyg" />
+	<string
+		id="str_faction_formal_name_for_culture.nord"
+		text="{=hvcyO1P4}Kingdom of the Nordvyg" />
+	<string
+		id="str_faction_ruler_name_with_title.nord"
+		text="{=pcy8IXDf}{?RULER.GENDER}Queen{?}King{\?} {RULER.NAME}" />
+	<string
+		id="str_faction_noble_name_with_title.nord"
+		text="{=lO21CPat}{?RULER.GENDER}Jarlinna{?}Jarl{\?} {RULER.NAME}" />
+	<string
+		id="str_player_mother_name.nord"
+		text="{=X7Xp9xGe}Tertha" />
+	<string
+		id="str_player_father_name.nord"
+		text="{=Q6bKmIzq}Bjalthir" />
+	<string
+		id="str_comment_noble_introduces_self.nord"
+		text="{=msWVJl9k}I am {CONVERSATION_CHARACTER.LINK} of the {CLAN_NAME}.">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+		</tags>
+	</string>
+	<string
+		id="str_liege_title.nord"
+		text="{=PnlGtqe5}king of the Nordvyg">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+		</tags>
+	</string>
+	<string
+		id="str_liege_title_female.nord"
+		text="{=a0z0uxsb}queen of the Nordvyg">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_noble_introduces_self_and_clan.nord"
+		text="{=Yd1s1Awa}I am {CONVERSATION_CHARACTER.LINK}, of the {CLAN_NAME}, one of the ancient lineages of the Nords.">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_noble_introduces_self_and_clan.nord_boasting"
+		text="{=id6YPGQk}I am {CONVERSATION_CHARACTER.LINK}, of the {CLAN_NAME}. One table in the High Hall is reserved for our fallen, and two more for those we have slain.">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+			<tag
+				tag_name="UncharitableTag" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_noble_introduces_self_and_clan.nord_individualist_female"
+		text="{=GCiHxPkG}I am {CONVERSATION_CHARACTER.LINK}. I will not boast to you of my lineage. In the north, we aim to surpass the fame of our forefathers, not live off of their reputation.">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+			<tag
+				tag_name="UncharitableTag" />
+			<tag
+				tag_name="NpcIsFemaleTag" />
+			<tag
+				tag_name="ValorTag"
+				weight="1" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_noble_introduces_self_and_clan.nord_individualist"
+		text="{=GCiHxPkG}I am {CONVERSATION_CHARACTER.LINK}. I will not boast to you of my lineage. A true son of the North aims to surpass his fathers, not live off of their reputation.">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+			<tag
+				tag_name="UncharitableTag" />
+			<tag
+				tag_name="ValorTag"
+				weight="1" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_noble_introduces_self_and_clan.nord_boasting_curt"
+		text="{=rgGeCszp}I am {CONVERSATION_CHARACTER.LINK}, of the {CLAN_NAME}. We are wound-smiths and wave-riders, raven-feeders and ring-breakers.">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+			<tag
+				tag_name="PersonaEarnestTag"
+				weight="1" />
+		</tags>
+	</string>
+	<string
+		id="str_comment_noble_introduces_self_and_clan.nord_boasting_ironic"
+		text="{=aLQdv0ZX}I am {CONVERSATION_CHARACTER.LINK}, of the {CLAN_NAME}. It is unseemly to boast, so I will leave it to others to tell you of our deeds. It is a conversation best had on a long winter's night, for it may take some considerable time.">
+		<tags>
+			<tag
+				tag_name="NordTag" />
+			<tag
+				tag_name="PersonaIronicTag"
+				weight="2" />
+		</tags>
+	</string>
+	<!-- Viking, cheerful-->
+	<string
+		id="prebackstory.spc_wanderer_nord_0n"
+		text="{=cAafekbv}Some day I hope to tell my story to a dozen of my sons, as we feast for the solstice in my hall, so that they shall follow my example and sail out into the world to make their fortunes. Until then, I will settle for telling it to strangers in taverns like yourself." />
+	<string
+		id="backstory_a.spc_wanderer_nord_0n"
+		text="{=ZlbiEKZL}I was the youngest in my family. My mother always told me that some day I would own the finest galley in the northlands. My oldest brother heard this, and would mock me incessantly. When I would set forth on my fine ship? Would my mother sail with me to fight my enemies? Perhaps he wished me to shame me into leaving, so I would give him no trouble about our inheritance." />
+	<string
+		id="backstory_b.spc_wanderer_nord_0n"
+		text="{=d5lpGY8m}One day, soon after I came of age, I took a hundred sheep from our flocks, sold them, and bought a small snekya. I hired some men too, and set off to raid the coast of Sturgia. But of course I was a poor judge of warriors, and when the boyar's druzhina set upon us they scattered, and burned my ship." />
+	<string
+		id="backstory_c.spc_wanderer_nord_0n"
+		text="{=Gtdo9T3r}I have sworn that I shall not return home, unless I am indeed standing at the helm of a fine ship that my brother could envy. I have fought for Vlandian barons, imperial archons, even once an noyan of the east. I have fought in many battles, some on land and some at sea. But lords are stingy, and I think none has rewarded me according to my due." />
+	<string
+		id="response_1.spc_wanderer_nord_0n"
+		text="{=jCVcj25s}Nothing makes a finer warrior than a hunger to prove yourself that can never be satisfied." />
+	<string
+		id="response_2.spc_wanderer_nord_0n"
+		text="{=wxhllGxC}I wonder how many men you have slain to forget a child's taunt." />
+	<string
+		id="backstory_d.spc_wanderer_nord_0n"
+		text="{=hCB5tRmu}So... Perhaps you have a need of warriors, or captains for your ships. If you are a generous lord, then I can be a worthy follower." />
+	<string
+		id="generic_backstory.spc_wanderer_nord_0n"
+		text="{=xf8VxbGa}I was the youngest son in my family. Well, in our lands, sons - especially the youngest - are expected to make their own name. I can fight by land or by sea, and I am ready to serve whoever rewards me well." />
+	<!-- Seal hunter-->
+	<string
+		id="prebackstory.spc_wanderer_nord_1n"
+		text="{=EYBQaaCH}I seek work. I will tell you my story, so that you are in no doubt of my skills." />
+	<string
+		id="backstory_a.spc_wanderer_nord_1n"
+		text="{=R2LtaPrL}I come from Svalfjord. Farther north than that, people cannot live. There is ice in our bay for six months of the year. In the summer we hunt whales, black whales, which are smaller than most but are cunning and can still sink you if you're not careful. Each summer we gather in our boats and drive the whales into the fjord. Since I was a girl I would go with my father and uncle and several others from the village.  " />
+	<string
+		id="backstory_b.spc_wanderer_nord_1n"
+		text="{=GgUnrDeT}There was a dispute over a whale carcass. I do not remember what caused it, exactly, but my father felt he had sole claim to it. He cursed the others and said words that could not be unsaid. He would not apologize, and had to leave the village. So it was just me, him and my uncle, living alone on the coast, in a shelter dug into the turf with a hole in the roof to let out smoke. " />
+	<string
+		id="backstory_c.spc_wanderer_nord_1n"
+		text="{=HZKEfJ3q}My father insisted that we would still hunt. It was madness, just three people in a boat, but what else could we do? One day a whale that he harpooned dragged us far out to sea. When we were struggling to row back, a storm blew up, and sank the boat. My father and I swam ashore but my uncle drowned. I'd had enough. I left the next day." />
+	<string
+		id="response_1.spc_wanderer_nord_1n"
+		text="{=cm3dWaRL}Some men persist in folly unto death, and there is nothing you can do." />
+	<string
+		id="response_2.spc_wanderer_nord_1n"
+		text="{=2e2OtohH}Where I come from, parents are to be honored and obeyed." />
+	<string
+		id="backstory_d.spc_wanderer_nord_1n"
+		text="{=kt6E6hZK}So... I can cast a harpoon, and handle a boat that is being dragged by a whale in its death throes. I think I would be of use in any ship's crew, if the pay is right." />
+	<string
+		id="generic_backstory.spc_wanderer_nord_1n"
+		text="{=3Mu5N4Pr}I am from the Svalfjord, the further reaches of the Nordlands. We hunt whales in small boats. We trust our lives to each other's skill. If you have a ship to crew, you will find no one better." />
+	<!-- Healer, from the Jumne-->
+	<string
+		id="prebackstory.spc_wanderer_nord_2n"
+		text="{=hl0oYfvf}I was born in a farm near Throndelag, but my family moved to the new lands near the Jumne river. If I see neither place again as long as I live, I will have no regret." />
+	<string
+		id="backstory_a.spc_wanderer_nord_2n"
+		text="{=PG95aHx1}We moved to the Jumne because we heard there was farmland for the taking. When we arrived, we found there were Vanni already there, but at first they did not mind our presence. They lived in the woods and left us the open meadows by the river. I was given in marriage to the Vanni chieftain's son to seal the arrangement, along with some cloth and axe-heads." />
+	<string
+		id="backstory_b.spc_wanderer_nord_2n"
+		text="{=gGLcvhD9}More Nords followed, however. I was living in my husband's village, and the Vanni complained that the coming and going ruined the hunting. They thought this voided the deal. There were talks, but they went nowhere. So the Vanni killed some Nords in the fields - though not my brothers, as a consideration to me." />
+	<string
+		id="backstory_c.spc_wanderer_nord_2n"
+		text="{=DN6XgaS3}The Vanni hoped the other Nords would flee. But they did not know them. One of my brothers came to me in secret. He told me to poison my Vanni husband's family, like I was that old queen of Sturgland. Hah! One day my family demands that I wed this man and have his children, the next they say to kill him? I wasn't having it. I slipped off that night, and wish to see neither brothers nor husband again." />
+	<string
+		id="response_1.spc_wanderer_nord_2n"
+		text="{=qxOpJrbP}Yes, certainly family can be demanding..." />
+	<string
+		id="response_2.spc_wanderer_nord_2n"
+		text="{=89rT5fDr}Hmf. Without kin, we are as beasts." />
+	<string
+		id="backstory_d.spc_wanderer_nord_2n"
+		text="{=eedfzuGw}At any rate, a year with the Vanni has taught me much about the woods, about herbs, the treatment of wounds and fevers. I reckon I could be of good use to a company of warriors." />
+	<string
+		id="generic_backstory.spc_wanderer_nord_2n"
+		text="{=gjU6kqvS}I am from the Jumne. Although I am Nord by birth, I have lived among the Vanni. I know much about herbs, and the art of healing." />
+	<!-- Scout, from Beinland-->
+	<string
+		id="prebackstory.spc_wanderer_nord_3n"
+		text="{=acbUlz1E}You want to hear a story, eh? I'll tell you the short version. The long, well, that could keep a longhouse entertained for a half-dozen midwinter nights. Beinlandings... In matters of the law, they don't like to make things simple. Or cheap." />
+	<string
+		id="backstory_a.spc_wanderer_nord_3n"
+		text="{=FVwyrKBh}See, I came to Beinland some years ago, like many from the Nordvyg. Land for the taking, they said, and all men stand equal before the law. I found one unsettled valley with a stream and lush grass, and built my home there. I should have asked why no one done so before." />
+	<string
+		id="backstory_b.spc_wanderer_nord_3n"
+		text="{=ijmUcJWt}Turns out my neighbor, Odig, was a difficult one. People say he had troll-blood. One day he shows up with his retainers and tells me my sheep had broken into his fields, when they hadn't, and demanded compensation. I told him to go away. Then I started to find my sheep dead in their pastures, and then one of my herdsman. I decided to take my case before the Thing." />
+	<string
+		id="backstory_c.spc_wanderer_nord_3n"
+		text="{=KfUc1Hhl}The Thinglaw, though... To gain a hearing I needed a chieftain to back my case. I found one, but he brought a great retinue along with him, which I had to feast. The Thing ruled in my favor and outlawed Odig - everyone hated him - but to enforce the judgment , to take his head and his property, well, I was on my own there. My chief offered to provide armed men, but not for free." />
+	<string
+		id="response_1.spc_wanderer_nord_3n"
+		text="{=ONjs1uCt}Sounds like a fine source of income for the old clans of Beinland." />
+	<string
+		id="response_2.spc_wanderer_nord_3n"
+		text="{=SCTqjH0j}Just get yourself a lord and master. Much simpler than setting your own course though this world." />
+	<string
+		id="backstory_d.spc_wanderer_nord_3n"
+		text="{=97mvKD9y}By then I had quite a few debts. Well, I sold my herd and my farmhouse to pay my creditors, and here I am, looking for a new source of income. I'll miss Beinland though. Herding in the lonely moors, hunting in the quiet woods. I like to roam the land, and if you're looking for a man to scout ahead, well, I may be him." />
+	<string
+		id="generic_backstory.spc_wanderer_nord_3n"
+		text="{=Tfk39abh}I'm from the Nordvyg, but moved to Beinland. I bought a herd of sheep there, which I hoped would make my fortune, but between several bad winters and some disputes with my neighbors, well, that all came to naught. I'm much poorer than I was before, but at least I'm a bit wiser for having studied at the foot of such a harsh teacher as that island. If you're looking for someone to lead your company through the wilds, well, I may be him." />
+	<!-- Smith -->
+	<string
+		id="prebackstory.spc_wanderer_nord_4n"
+		text="{=VRfSzgtn}So... What am I doing in this dingy tavern, far from my homeland? Well, I suppose it's because I was taught that it's a fine thing to be ambitious, to seize what chances fate gives you..." />
+	<string
+		id="backstory_a.spc_wanderer_nord_4n"
+		text="{=bYjzSZeE}I was sent by my village as a fyrdman to our jarl, Grykka Half-an-Ear. I was eager to fight and win wealth and glory, but I knew a bit about metalwork and he needed a smith, so instead of joining his warriors they put me in a sooty alcove at the base of the wall and told to pump the bellows and hammer nails and horseshoes." />
+	<string
+		id="backstory_b.spc_wanderer_nord_4n"
+		text="{=vPNcuore}But a smith's life has its advantages. The ladies of the castle, you see, sometimes needed their jewelry repaired. I was down there hammering away in the sweat and the smoke, and I suppose I was one of the few interesting things to see in that freezing fortress if you're a jarl's daughter with a great deal of time on her hands." />
+	<string
+		id="backstory_c.spc_wanderer_nord_4n"
+		text="{=hs9ntbwB}But you know what complications can come of love. The daughter was late in her time, and soon people would be asking questions. I helped myself to a blade and a horse in place of my long-unpaid wages and rode away as fast as I could. Maybe I'll go back 20 years from now and greet the new jarl with a cheerful, 'Hello, son!'" />
+	<string
+		id="response_1.spc_wanderer_nord_4n"
+		text="{=TULO2Md5}I suppose you owed nothing to a master who took you for granted." />
+	<string
+		id="response_2.spc_wanderer_nord_4n"
+		text="{=B2bP9gWK}Only a scoundrel would boast of such base behavior." />
+	<string
+		id="backstory_d.spc_wanderer_nord_4n"
+		text="{=ZAOssGGD}So, I don't mind sharpening blades and fixing armor, but the one thing I ask is the chance to better myself. Now that I've laid that out straight, what do you say? Do you have work for a man like me?" />
+	<string
+		id="generic_backstory.spc_wanderer_nord_4n"
+		text="{=8c3aIeaQ}My father was a smith, and I learned his trade. I know such skills are in high demand. I will gladly sharpen blades and repair armor for my pay, but the one thing I ask from any master is the chance to rise in the world." />
+	<!-- Easterling -->
+	<string
+		id="prebackstory.spc_wanderer_nord_5n"
+		text="{=8S5gsYFi}Very well, then. I was a shipmaster. I'm Nord by birth but I've sailed mostly with the Khuzaits." />
+	<string
+		id="backstory_a.spc_wanderer_nord_5n"
+		text="{=DtEBwPpJ}I grew up near Gauksdal, where my father was a ferry-man on the Jumne River. In those days the Khan was fighting the Sturgians on the great lakes. Not many of his followers had much experience with ships, and he was paying good wages, far more than our jarl would have. So, I went south.." />
+	<string
+		id="backstory_b.spc_wanderer_nord_5n"
+		text="{=HTe5X0E5}They put me as steersman on a qalguk. That was quite a jump, from a ferry-boat to the pride of the Khan's fleet, but I got the hang of it soon enough. Strange ship, the qalguk... Damned fast, but sluggish. I'd line it up for a run at our foes and we'd come down on them and shower them with arrows. Then we'd put about, make our way upwind, and do it again. We won a great battle in Laconis and captured two of their lodyas packed with loot." />
+	<string
+		id="backstory_c.spc_wanderer_nord_5n"
+		text="{=p4OvT9BS}Then the Khan settled things with the Sturgians and we went to war with the Empire. That didn't go as well. The dromons caught us one day on the Davana River, as we were sailing back from a raid. The tactics we used against the Sturgians... you can't do that in the confines of a river. Our ships got all jammed together and their ballistae set our sails on fire. I jumped and swam to shore but all my loot went down with the ship." />
+	<string
+		id="response_1.spc_wanderer_nord_5n"
+		text="{=pwvThagp}A commander must choose his battlefield carefully, on sea as much as on land." />
+	<string
+		id="response_2.spc_wanderer_nord_5n"
+		text="{=UArZmF1R}Hah! This is what happens when horse-nomads mess about with boats." />
+	<string
+		id="backstory_d.spc_wanderer_nord_5n"
+		text="{=OQQw1yDa}So... I'm starting anew, with empty pockets. What do you say? Do you need a shipmaster? Perhaps I'll have better luck with you than I did on that qalguk." />
+	<string
+		id="generic_backstory.spc_wanderer_nord_5n"
+		text="{=blf9jsyc}I'm a steersman. I've served under several masters, and handled everything from small knarrs to big dromakions and qalguks in my time." />
+	<!-- Boatswain -->
+	<string
+		id="prebackstory.spc_wanderer_nord_6n"
+		text="{=g0mUObp7}I served on the imperial navy for 10 years, on a dromon. If you're looking to hire someone, perhaps I can tell you about my experience." />
+	<string
+		id="backstory_a.spc_wanderer_nord_6n"
+		text="{=iyfKyaRB}Some years back, in the time of Neretzes, a group of us from Thronderlag crossed the Byalic to sign up with the Empire. I'll never forget my first sight of Diathma, those shining stone towers rising out of the lake. We docked next to a dromon, the Glory of the Senate. I looked up at the well-scrubbed decks, the polished oaken swan figurehead at the prow... It made our knarr look like a battered old toy. I signed on, then and there." />
+	<string
+		id="backstory_b.spc_wanderer_nord_6n"
+		text="{=W01GTKJa}We had a good captain. He didn't care if you were Calradic or Nord, just that you put your back into your work. After three years they made me first mate. We sailed mostly in the Perassic, fighting the Aserai. Their ghurabs were almost as big as our dromons, with rams and ballistae. In that kind of fight every little advantage counts, so I made sure that every man knew his duty, our bowstrings were stored dry, and our stocks of bolts were full." />
+	<string
+		id="backstory_c.spc_wanderer_nord_6n"
+		text="{=Y1fwBgHt}But then Neretzes died at Pendraic and the Empire ran out of money. Our pay was always late. Men got surly and shirked their duty. We got a new captain, too, who cursed us as blackguards and whipped us for little things. Each time we put into port a few jumped ship. We were too short-handed to caulk properly, and the Perassic shipworms rotted our timbers. It was only a matter of time before our timbers gave out in a storm, so I too left." />
+	<string
+		id="response_1.spc_wanderer_nord_6n"
+		text="{=2tKB7ead}The imperial fleet in its prime must have been a sight to see. A sad fate." />
+	<string
+		id="response_2.spc_wanderer_nord_6n"
+		text="{=aPBepy70}So, when the Empire could no longer plunder at will, its splendor faded. Divine justice, I say." />
+	<string
+		id="backstory_d.spc_wanderer_nord_6n"
+		text="{=WbGbNiK1}So I'm done with the Empire... But I'm not done with the sea. If you've got a ship, and you're looking for a man who can keep it battle-ready, you might give me consideration.." />
+	<string
+		id="generic_backstory.spc_wanderer_nord_6n"
+		text="{=mbyAkTWs}I was a boatswain in the imperial navy. If you need someone to keep a crew disciplined and a ship battle-ready, I'm your man." />
+	<!-- Sea-Rover -->
+	<string
+		id="prebackstory.spc_wanderer_nord_7n"
+		text="{=38otGWuh}Aye, I can do that. I was a pirate, a sea-raider, a plague on the oceans, the common enemy of all mankind, and a damned fine time I had." />
+	<string
+		id="backstory_a.spc_wanderer_nord_7n"
+		text="{=aEEnTzJY}I was one of a group of lads who used to spend time with our jarl's youngest son. We'd hunt together, drink together, raise hell together... Eventually though he spent his way through his inheritance, so he sailed off with one of his father's longships, bringing us along for the ride." />
+	<string
+		id="backstory_b.spc_wanderer_nord_7n"
+		text="{=l0jyALdX}We cruised from Beinland down to the Biscan coast and back, looking sharp for merchantmen and gave warships a wide berth. Sometimes our prey had some fight in her, and I don't mind telling you that I had a real knack for keeping my footing on a tossing cog as we traded blows with the crew. But most of the time we'd just leap aboard, leering and swearing we'd drink from their skulls, and they paid us to be on our way." />
+	<string
+		id="backstory_c.spc_wanderer_nord_7n"
+		text="{=oPOZGPzk}'A short life, but a merry one!' we'd say, and that's how it went. We'd put into a cove to celebrate the capture of a corbita. I'd had some poorly salted fish though, so while my friends were carousing I was curled up sick in a sea-cave. I staggered out at dawn to find a Vlandian baron and his knights had come upon my shipmates in the night, when they were in their cups, and left them all headless on the beach." />
+	<string
+		id="response_1.spc_wanderer_nord_7n"
+		text="{=ksRArOXz}Well... It sounds like you've got luck, which is a good thing to have." />
+	<string
+		id="response_2.spc_wanderer_nord_7n"
+		text="{=rJOKrccB}Thank the Heavens, which saved you from a life of villainy and gave you another chance." />
+	<string
+		id="backstory_d.spc_wanderer_nord_7n"
+		text="{=kaQKkSxH}I can't curse fate, we all knew how it would end, but it did leave me without a source of drinking money. So... I'm a good fighter at sea, and I know a thing or two about pirates and rogues, and how to handle them. You have any ships that need an extra hand?" />
+	<string
+		id="generic_backstory.spc_wanderer_nord_7n"
+		text="{=bSGq3pbt}Aye, well, I used to be one of those who you might call Sea Raiders. Our ship was taken, though, and I was the sole survivor. I'm on the lookout for honest work, or work of another kind, if you know a captain who's hiring." />
+	<!-- Mariner-->
+	<string
+		id="prebackstory.spc_wanderer_aserai_0n"
+		text="{=Tebbwgcp}I can only hope that Heaven has prepared a reward for all the sorrow and suffering that I am about to relate to you." />
+	<string
+		id="backstory_a.spc_wanderer_aserai_0n"
+		text="{=RQsjEaaL}I am a skilled mariner. I am from Quyaz. The blood of the Kannic people runs in my veins, and Kannic blood is half saltwater, so they say. I took to the sea at an early age as a navigator's apprentice, and by 20 I had accumulated enough to buy a share in a ship sailing the Jade Sea." />
+	<string
+		id="backstory_b.spc_wanderer_aserai_0n"
+		text="{=rCR9Z2uu}Alas, our captain was a braggart. We were headed to Revyl with a cargo of dates and dyes. He wished to show his knowledge of the Bay of Ortygia, and took a quick route between the islands. Of course he was dashed on the rocks. I seized a timber, and was washed shore with a dozen other half-drowned survivors who had what I guess you could call luck." />
+	<string
+		id="backstory_c.spc_wanderer_aserai_0n"
+		text="{=eSZEyhqR}My next voyage was on a felucca out of Zeonica heading eastward to Danustica. Pirates took us, and burnt it to the waterline. Then I took service on a dromon, fitted as a privateer, but we were caught by an unseasonal dust-storm that rolled off the Jabal Tamar and smashed us into a rock in the Gulf of Charas. Each time, destiny saw fit to spare me after first having paupered me." />
+	<string
+		id="response_1.spc_wanderer_aserai_0n"
+		text="{=Idu09mwb}Great are your sorrows, but greater still your perseverance! Surely it shall be rewarded with riches." />
+	<string
+		id="response_2.spc_wanderer_aserai_0n"
+		text="{=vRB6q8Cq}Yeah, okay, maybe also consider that your destiny wants you to remain on dry land." />
+	<string
+		id="backstory_d.spc_wanderer_aserai_0n"
+		text="{=iBhK0Itq}Despite my sufferings I still yearn for travel and traffic. And none of these wrecks was any fault of my own. Misfortune is a good teacher, they say, and I think my knowledge is second to none in terms of what not to do when in command of a ship." />
+	<string
+		id="generic_backstory.spc_wanderer_aserai_0n"
+		text="{=1Z0PBOPJ}I'm a sailor out of Quyaz. We venture further from our homes than anyone else on the coast, and I believe that my knowledge of winds, currents and stars is the equal of any of my peers." />
+	<string
+		id="prebackstory.spc_wanderer_empire_0n"
+		text="{=Y07Poozc}Let me think how I want to put this..." />
+	<string
+		id="backstory_a.spc_wanderer_empire_0n"
+		text="{=k74H9HWC}I'm from Zeonica. In my youth, the archon was one Sulvanis, father of the current Garios. Now, let us say your empire is at peace with the Aserai and Vlandians, but their merchants are cutting into your pockets and you expect to be at war in the future. If one of your mariners sailed out of harbor with one ship and came back with two, would you question them too carefully?" />
+	<string
+		id="backstory_b.spc_wanderer_empire_0n"
+		text="{=jmqfmCCX}So here's where I come in... Let's say you have acquired a cheap Aserai shabak, by one means or the other. It was intended as a ship that could move goods from one place to another as cheaply as possible. But you want it refitted to be faster, with a lead-sheeted belly and some towers for archers, never mind why. My family and I specialized in adding them." />
+	<string
+		id="backstory_c.spc_wanderer_empire_0n"
+		text="{=ybEKyqgq}But suppose again that you are the archon Garios, scheming to become emperor. You need a treaty with the sultan, sooner not later. And the sultan has his court full of aggrieved merchants. So you announce a list of men to be exiled, names that are known throughout the Perassic Sea as men of ingenuity and daring. " />
+	<string
+		id="response_1.spc_wanderer_empire_0n"
+		text="{=2eG5uizX}No nation ever prospered on the seas without a bit of corsairing." />
+	<string
+		id="response_2.spc_wanderer_empire_0n"
+		text="{=mypuUHZ0}Pirates, and those that help them, are the common enemy of mankind." />
+	<string
+		id="backstory_d.spc_wanderer_empire_0n"
+		text="{=qedxehRv}I will say this. Many lords condemn us, but relatively few are willing to pass up the opportunity to employ us, at least not when they have ships to maintain." />
+	<string
+		id="generic_backstory.spc_wanderer_empire_0n"
+		text="{=u6XRjWZN}I grew up in Zeonica. Corsairing is an honorable profession there. It hones the skills of the empire's sailors, between wars. I specialize in the construction and modification of corsair vessels, and may even have sailed on one from time to time." />
+	<!-- Vlandia. -->
+	<string
+		id="prebackstory.spc_wanderer_vlandia_0n"
+		text="{=9n90mLG1}I am from Charas. I don't know how much you know of its recent past." />
+	<string
+		id="backstory_a.spc_wanderer_vlandia_0n"
+		text="{=TMdL4gJH}My father was one of the Sea-Victuallers. Perhaps you have heard of them. When the guildmaster of Charas brought in the Brotherhood of the Woods and rebelled against the Vlandian king, the fishermen of the coast brought supplies to the besieged city. They did it for pay, mind, as starving cities will pay dearly for moldy bread and minnows, not because they believed a word of the Brotherhood's mad promises of a world without lords and ladies and taxes and tithes." />
+	<string
+		id="backstory_b.spc_wanderer_vlandia_0n"
+		text="{=cc9JuNoL}But the Baron dey Cortain, who led the siege, wasn't terribly interested in their reasons. He went up and down the coast, hanging anyone with a boat with five leagues of Charas who could not give a full account of himself. An informant put my father's name on the list, and so we like so many others fled to the islands of the gulf." />
+	<string
+		id="backstory_c.spc_wanderer_vlandia_0n"
+		text="{=9wYQGoha}So that's where I grew up on, on a gull-splattered bit of rock, living on fish and seaweed and rainwater, because of course the baron's informant had taken my family's land in his absence. But I can safely say that no one knows the sea like I do, as the wind can come at you hard from any direction at any time of day, and a fisherman who can't slip between two rocks a stone's throw apart with a breeze hard on his beam is food for the sharks." />
+	<string
+		id="response_1.spc_wanderer_vlandia_0n"
+		text="{=jZTgmQxr}A cruel fate to suffer, just for bring food to your fellow-men." />
+	<string
+		id="response_2.spc_wanderer_vlandia_0n"
+		text="{=EQTgCk0z}What is it with the fishermen of Charas? Are there no fish left to catch, that they must profit from smuggling and rebellion?" />
+	<string
+		id="backstory_d.spc_wanderer_vlandia_0n"
+		text="{=hBxcDZjk}At any rate, if you are looking for a helmsman, I doubt you will find a better one." />
+	<string
+		id="generic_backstory.spc_wanderer_vlandia_0n"
+		text="{=IWzzeHb6}I am from Charas. The islands of the coast are rich in mackeral and tuna but treacherous, with many small currents and unpredictable winds. We reckon ourselves the finest sailors in Calradia, if you don't mind my saying." />
+	<!-- INITIAL GREETINGS-->
+	<!-- Persona curt upper-->
+	<string
+		id="str_context_line.first_meeting_cu_at_sea"
+		text="{=HEaZpWIk}Ahoy! I want to speak to your captain.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_rude_cu_at_sea"
+		text="{=K1VKZiEr}Ahoy! Damn your eyes and stay out of our way, you clumsy lubbers. Who captains you?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="ImpoliteTag"
+				weight="1" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_under_command_cu_at_sea"
+		text="{=V3yLFapl}{STR_SALUTATION}... Our ship is at your command.">
+		<tags>
+			<tag
+				tag_name="UnderCommandTag"
+				weight="15" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_attacking_cu_at_sea"
+		text="{=SJtKprVI}Who are you? Strike your sails and ship your oars, or prepare to fight.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="+4" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.impolite_cu"
+		text="{=UwhbV9SC}{STR_SALUTATION}... Is that you? Please be brief. The winds are with us and I have no time to waste.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="FriendlyRelationshipTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtUpperTag" />
+		</tags>
+	</string>
+	<!-- Persona ironic upper-->
+	<string
+		id="str_context_line.first_meeting_iu_default_at_sea"
+		text="{=ezosNKvK}Ahoy, there! May I have the pleasure of knowing who captains this vessel?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_iu_rude_at_sea"
+		text="{=PadfbuOo}Ahoy, there! If you could be so kind, could you try to steer your lump of flotsam out of our way?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="ImpoliteTag"
+				weight="+1" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_unmet_iu_at_sea"
+		text="{=0xqmpdIc}Ahoy! As it appears your poor floundering tub can't outrun us, we might as well have a little chat. Perhaps you'd like to introduce yourself?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="+4" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.friendly_iu_at_sea"
+		text="{=OzSIBEag}{STR_SALUTATION}... Ahoy! So somehow you've managed to keep yourself afloat since we last met. It's good to see you, you worthless lubber!">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+			<tag
+				tag_name="FriendlyRelationshipTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_v1_weary_iu_at_sea"
+		text="{=sXw6ME3A}Ahoy! What's your name? Forgive me if we have spoken before and I do not recall, for I have met many promising captains only to hear later they were swallowed by the deep.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+			<tag
+				tag_name="OldTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="GenerosityTag"
+				weight="+1" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.enemy_but_not_attacking_iu_at_sea"
+		text="{=c1aP8VnP}Ahoy, there! I know you. Be careful, now, as you might find that you've caught a bigger fish than you first reckoned.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="PlayerIsEnemyTag"
+				weight="+1" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicUpperTag" />
+		</tags>
+	</string>
+	<!-- Persona earnest upper-->
+	<string
+		id="str_context_line.first_meeting_earnest_eu_at_sea"
+		text="{=clfsNbtf}Ahoy! Greetings to you! May I ask who captains this vessel?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestUpperTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_unmet_eu_at_sea"
+		text="{=XX86EIy0}Ahoy! Do you care to tell me your name, before I give the order to engage your ship?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="+4" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_unmet_v2_honorable_eu_at_sea"
+		text="{=zbwRnvwT}Ahoy! Respect the custom of the sea and the terms of parley, and I shall do likewise. Now, who are you?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="+4" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="HonorTag"
+				weight="1" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.dislike_eu_at_sea"
+		text="{=P0NKsfwf}{STR_SALUTATION}... Pirates like you may put on airs, but they all end up the same way, dangling from the yardarm of their betters.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="HostileRelationshipTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="UncharitableTag" />
+			<tag
+				tag_name="DeviousTag"
+				weight="1" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.friendly_eu_at_sea"
+		text="{=Ax8iqIzC}{STR_SALUTATION}... Ahoy! I hope you have been enjoying fair weather and good seas.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="PlayerIsEnemyTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="HostileRelationshipTag"
+				weight="-1" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_gloat_eu_at_sea"
+		text="{=aaQpQHsQ}{STR_SALUTATION}... Is that you? It doesn't look like you can escape your fate, does it? Let's see if the sea accepts your vile corpse, or if it just vomits it back up.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="HostileRelationshipTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="CruelTag"
+				weight="1" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestUpperTag" />
+		</tags>
+	</string>
+	<!-- Persona upper softspoken-->
+	<string
+		id="str_context_line.first_meeting_wary_su_at_sea"
+		text="{=arZJwHKC}Ahoy! If you can hear me at that distance, come no further. Whose ship is this?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_wary_v1_su_at_sea"
+		text="{=q5Mq29ZZ}Ahoy! We know you're an enemy, so do not think to take us unawares.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsEnemyTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_unmet_su_at_sea"
+		text="{=4xgNsle7}Ahoy! You appear be a foe, and in a minute I will order my ship to close with you and take you. But first, I would know your name.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="+3" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.under_command_su"
+		text="{=ZyauddCb}{STR_SALUTATION}... My ship and crew are yours to command.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="UnderCommandTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenUpperTag" />
+		</tags>
+	</string>
+	<!-- Persona curt lower-->
+	<string
+		id="str_context_line.first_meeting_default_cl_at_sea"
+		text="{=r7MmKgXb}Ahoy! Whose ship is this?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_wary_cl_at_sea"
+		text="{=WVQtu5ab}Ahoy! Keep a bowshot's length away, or more, until I know if you're friend or foe.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="ImpoliteTag"
+				weight="+1" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_unmet_cl_at_sea"
+		text="{=3ylOZFJi}Ahoy! Who are you? Speak, before I send you to the bottom.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="+4" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.enemy_met_cl_at_sea"
+		text="{=ivLxIasE}Ahoy! You want something with us? You might find you've caught more than you bargained for.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="PlayerIsEnemyTag"
+				weight="+1" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtLowerTag" />
+		</tags>
+	</string>
+	<!-- Persona ironic lower-->
+	<string
+		id="str_context_line.first_meeting_il_at_sea"
+		text="{=fSMAEYOt}Ahoy! So, who captains this here wallowing sow of a vessel?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_attacking_il_at_sea"
+		text="{=dPAqhZx4}Ahoy! If have anything to say, then say it. But try anything tricky and we'll send you right to the bottom.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_v2_cruel_il_at_sea"
+		text="{=wOLcO7Ey}Well, I'll not deny it. It'll be a real pleasure to feed you to the sharks.">
+		<tags>
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="HostileRelationshipTag" />
+			<tag
+				tag_name="CruelTag"
+				weight="1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.friendly_met_il_at_sea"
+		text="{=GpxxpwcX}Ahoy! {STR_SALUTATION}... I'd know your vessel anywhere! Look at the state of that ship. I'm surprised it doesn't just sink into the sea out of shame. ">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+			<tag
+				tag_name="FriendlyRelationshipTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicLowerTag" />
+		</tags>
+	</string>
+	<!-- Persona earnest lower-->
+	<string
+		id="str_context_line.unmet_el_at_sea"
+		text="{=fqGPu6J2}Ahoy! ... What ship is this, and who's the captain?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_unmet_el_at_sea"
+		text="{=y6jZ3ZEJ}Ahoy there, now! Before we fight, if you will, tell me who captains your ship!">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.metbefore_el_at_sea"
+		text="{=sO0VNZN3}{STR_SALUTATION}... Is that you on that ship? It's been a while.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.dislike_el_at_sea"
+		text="{=ZKS1AEpj}Ahoy! I know you, don't I? {STR_SALUTATION}... Do you and I have anything to talk about?">
+		<tags>
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="HostileRelationshipTag" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenLowerTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="MercyTag"
+				weight="-1" />
+			<tag
+				tag_name="CalculatingTag"
+				weight="-1" />
+		</tags>
+	</string>
+	<!-- Persona softspoken lower -->
+	<string
+		id="str_context_line.first_meeting_sl_at_sea"
+		text="{=LCamKf8a}Ahoy! May I speak to your captain?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.metbefore_friendly_sl_at_sea"
+		text="{=HR4IUF9S}Ahoy! Is that you, {STR_SALUTATION}? It's good to see you.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="FriendlyRelationshipTag" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_sl_at_sea"
+		text="{=6y0CvuT8}Ahoy! Do you wish to speak, before we attack?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenLowerTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.dislike_sl_at_sea"
+		text="{=AYMKLPXY}Ahoy! I know your ship. {STR_SALUTATION}, isn't it? Do you and I have anything to talk about?">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="HostileRelationshipTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenLowerTag" />
+		</tags>
+	</string>
+	<!-- Persona curt tribal -->
+	<string
+		id="str_context_line.first_meeting_ct_at_sea"
+		text="{=odtTWIET}I do not know your ship. Who commands you?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_wary_cu_at_sea"
+		text="{=pkb1Qb75}Ahoy! Keep your distance, lest you foul our sails. Who is in command over there?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="ImpoliteTag"
+				weight="+1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtUpperTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_attracted_male_ct_at_sea"
+		text="{=RqlG4sWy}Greetings! Do I speak to the captain of this ship, my lady?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtTribalTag" />
+			<tag
+				tag_name="AttractedToPlayerTag"
+				weight="1" />
+			<tag
+				tag_name="PlayerIsFemaleTag"
+				weight="1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_cruel_ct_at_sea"
+		text="{=3WjLejeG}Who captains this ship? I would know whom I slay.">
+		<tags>
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="CruelTag"
+				weight="1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_met_cruel_ct_at_sea"
+		text="{=jAOcpROC}{STR_SALUTATION}... I shall stain the seas with your blood.">
+		<tags>
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="CruelTag"
+				weight="1" />
+			<tag
+				tag_name="FriendlyRelationshipTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaCurtTribalTag" />
+		</tags>
+	</string>
+	<!-- Persona ironic tribal -->
+	<string
+		id="str_context_line.first_meeting_it_at_sea_exaggerated"
+		text="{=cUi56tqb}You, over there! With which bold seafarer do I have the pleasure of speaking?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_it_at_sea_sarcastic"
+		text="{=V9612yv0}You, over there! Tell me the name of the captain brave enough to put to sea in such a leaky jumble of planks as your ship.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="AmoralTag"
+				weight="+2" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.friendly_it_at_sea"
+		text="{=iqQj3bF7}I trust you have been keeping well, enjoying the salt air and sending the miscreants of the sea to their watery graves.">
+		<!-- change as is northern -->
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+			<tag
+				tag_name="FriendlyRelationshipTag" />
+			<tag
+				tag_name="AmoralTag"
+				weight="+1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_1_it_at_sea"
+		text="{=IPpqJCVq}Well... Unless I reckon the odds falsely, I'd say you have a good chance of getting wet shortly. I hope you can swim.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="1" />
+			<tag
+				tag_name="HostileRelationshipTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.friendly_il_at_sea"
+		text="{=bTBZExBm}{STR_SALUTATION}! When I saw that hull all covered with barnacles, those tangled ropes, that cluttered deck, I knew it must be you!">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="AttackingTag"
+				weight="-1" />
+			<tag
+				tag_name="FriendlyRelationshipTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaIronicTribalTag" />
+		</tags>
+	</string>
+	<!-- Persona earnest tribal -->
+	<string
+		id="str_context_line.first_meeting_et_at_sea"
+		text="{=bsXMiU47}Peace to you, stranger, and fair seas. I do not know your ship. To whom do I speak?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_enemy_et_at_sea"
+		text="{=UTlUqXsI}I do not know your ship. Who are you? What do you want with us?">
+		<tags>
+			<tag
+				tag_name="PlayerIsEnemyTag" />
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_unmet_et_at_sea"
+		text="{=bRrHfVbg}You, over there! Who commands you? Know that we mean to take you or to sink you.">
+		<tags>
+			<tag
+				tag_name="AttackingTag"
+				weight="2" />
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.friendly_et_at_sea"
+		text="{=lzbTtpkY}{STR_SALUTATION}... Peace to you... I hope the sea air is doing you good.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="PlayerIsEnemyTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="HostileRelationshipTag"
+				weight="-1" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_met_hostile_et_at_sea"
+		text="{=DLDozLY8}{STR_SALUTATION}... The seas have delivered you into our hands.">
+		<tags>
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="FriendlyRelationshipTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaEarnestTribalTag" />
+		</tags>
+	</string>
+	<!-- Persona softspoken tribal-->
+	<string
+		id="str_context_line.first_meeting_st_at_sea"
+		text="{=ipdOFEna}You, over there! Peace to you! Who captains your ship?">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.friendly_st_at_sea"
+		text="{=OATyZfqg}{STR_SALUTATION}... I hope the seas have been treating you well.">
+		<tags>
+			<tag
+				tag_name="MetBeforeTag" />
+			<tag
+				tag_name="PlayerIsEnemyTag"
+				weight="-1" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="HostileRelationshipTag"
+				weight="-1" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenTribalTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.firstmeeting_attacking_cruel_st_at_sea"
+		text="{=T0KbGaWF}I don't know you... If you have anything to say, say it quickly. The sharks are hungry and I would not keep them waiting.">
+		<tags>
+			<tag
+				tag_name="FirstMeetingTag" />
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenTribalTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="AmoralTag" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.attacking_hate_st_at_sea"
+		text="{=bZK0CJvM}I've waited a long time for this day. Have a good look around you, for soon your eyes will have little to see but the inside of a shark's belly.">
+		<tags>
+			<tag
+				tag_name="AttackingTag" />
+			<tag
+				tag_name="HostileRelationshipTag" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenTribalTag" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="CruelTag"
+				weight="1" />
+		</tags>
+	</string>
+	<string
+		id="str_context_line.first_meeting_under_command_st_at_sea"
+		text="{=tUnYGiaE}{STR_SALUTATION}... We sail at your command.">
+		<tags>
+			<tag
+				tag_name="UnderCommandTag"
+				weight="15" />
+			<tag
+				tag_name="PlayerIsAtSeaTag"
+				weight="+3" />
+			<tag
+				tag_name="VoiceGroupPersonaSoftspokenTribalTag" />
+		</tags>
+	</string>
+</strings>

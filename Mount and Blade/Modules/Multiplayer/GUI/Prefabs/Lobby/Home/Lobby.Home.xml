@@ -1,0 +1,346 @@
+<Prefab>
+  <Constants>
+    <Constant Name="TopHeader.Height" BrushName="MPLobby.TopHeader.Background" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="PlayButton.Width" BrushName="MPLobby.PlayButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayButton.Height" BrushName="MPLobby.PlayButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="PlayerProfile.Frame.Width" BrushName="MPLobby.Home.PlayerProfile.Frame" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayerProfile.Frame.Height" BrushName="MPLobby.Home.PlayerProfile.Frame" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="PlayerProfile.StatsBackground.Width" BrushName="MPLobby.Home.PlayerProfile.StatsBackground" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayerProfile.StatsBackground.Height" BrushName="MPLobby.Home.PlayerProfile.StatsBackground" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="PlayerProfile.LevelBarBed.Width" BrushName="MPLobby.Home.PlayerProfile.LevelBarBed" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayerProfile.LevelBarBed.Height" BrushName="MPLobby.Home.PlayerProfile.LevelBarBed" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="PlayerProfile.LevelBarGlow.Width" BrushName="MPLobby.Home.PlayerProfile.LevelBarGlow" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayerProfile.LevelBarGlow.Height" BrushName="MPLobby.Home.PlayerProfile.LevelBarGlow" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="PlayerProfile.StatsDivider.Width" BrushName="MPLobby.Home.PlayerProfile.StatsDivider" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="PlayerProfile.StatsDivider.Height" BrushName="MPLobby.Home.PlayerProfile.StatsDivider" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="Banner.Width" BrushLayer="Default" BrushName="MPLobby.Clan.Banner" BrushValueType="Width" />
+    <Constant Name="Banner.Height" BrushLayer="Default" BrushName="MPLobby.Clan.Banner" BrushValueType="Height" />
+
+    <Constant Name="Banner.Width.Scaled" MultiplyResult="0.60" Value="!Banner.Width" />
+    <Constant Name="Banner.Height.Scaled" MultiplyResult="0.84" Value="!Banner.Height" />
+  </Constants>
+  <VisualDefinitions>
+    <VisualDefinition Name="NewsItem.Bar" TransitionDuration="0.050">
+      <VisualState SuggestedHeight="2" State="Default" />
+      <VisualState SuggestedHeight="2" State="Pressed" />
+      <VisualState SuggestedHeight="2" State="Selected" />
+      <VisualState SuggestedHeight="10" State="Hovered" />
+      <VisualState SuggestedHeight="2" State="Disabled" />
+    </VisualDefinition>
+  </VisualDefinitions>
+  <Window>
+    <MultiplayerLobbyHomeScreenWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="!TopHeader.Height" DoNotAcceptEvents="true" FindGameButton="FindGameButton" SelectionInfo="SelectionInfo" HasUnofficialModulesLoaded="@HasUnofficialModulesLoaded">
+      <Children>
+        <Widget DataSource="{Player}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayerProfile.Frame.Width" SuggestedHeight="850" MarginLeft="30" MarginTop="20">
+          <Children>
+
+            <!-- Player Details -->
+            <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayerProfile.StatsBackground.Width" SuggestedHeight="680" HorizontalAlignment="Center" MarginTop="110" Sprite="MPLobby\Home\player_stats" StackLayout.LayoutMethod="VerticalTopToBottom" >
+              <Children>
+
+                <!-- Rank -->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="20" StackLayout.LayoutMethod="VerticalTopToBottom" IsHidden="@IsRankInfoLoading">
+                  <Children>
+
+                    <!-- Game Type Buttons -->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Home.PlayerProfile.NextLevelText" Brush.FontSize="18" Text="@GameTypeText" />
+                    <NavigationScopeTargeter ScopeID="GameTypeSelectionScope" ScopeParent="..\GameTypeSelection" ScopeMovements="Horizontal" ExtendDiscoveryAreaLeft="50" ExtendDiscoveryAreaRight="145" ExtendDiscoveryAreaTop="-25" />
+                    <NavigatableListPanel Id="GameTypeSelection" DataSource="{GameTypes}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <ItemTemplate>
+                        <MultiplayerLobbyGameTypeItemButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="50" SuggestedHeight="50" MarginRight="5" ButtonType="Radio" IsSelected="@IsSelected" Brush="MPLobby.GameMode" GameTypeID="@GameTypeID" Command.Click="ExecuteSelection">
+                          <Children>
+                            <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                          </Children>
+                        </MultiplayerLobbyGameTypeItemButtonWidget>
+                      </ItemTemplate>
+                    </NavigatableListPanel>
+
+                    <!-- Current Rank Sprite -->
+                    <NavigationScopeTargeter ScopeID="RankButtonScope" ScopeParent="..\RankButton" ScopeMovements="Vertical" ExtendDiscoveryAreaLeft="150" ExtendDiscoveryAreaRight="150" ExtendDiscoveryAreaTop="-20" />
+                    <MultiplayerLobbyRankItemButtonWidget Id="RankButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center" Brush="MPLobby.Rank" RankID="@RatingID" Command.Click="ExecuteShowRankProgression" GamepadNavigationIndex="0" />
+
+                    <!-- Current Rank Text -->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" SuggestedHeight="28" Brush="MPLobby.Home.PlayerProfile.LevelText" Brush.FontSize="18" Text="@RatingText"/>
+
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                      <Children>
+
+                        <!-- Rank Progress Bar -->
+                        <FillBarWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayerProfile.LevelBarBed.Width" SuggestedHeight="!PlayerProfile.LevelBarBed.Height" VerticalAlignment="Center" FillWidget="FillWidget" MaxAmount="100" InitialAmount="@RatingRatio" Sprite="MPLobby\Home\player_stats_level_bar_bed" AlphaFactor="0.3">
+                          <Children>
+                            <HintWidget DataSource="{RatingHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                            <Widget Id="FillWidget" ClipContents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="300" MarginTop="5" MarginBottom="6" MarginLeft="5" MarginRight="6" Sprite="MPLobby\Home\player_stats_level_bar_fill" AlphaFactor="0.9">
+                              <Children>
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayerProfile.LevelBarGlow.Width" SuggestedHeight="!PlayerProfile.LevelBarGlow.Height" HorizontalAlignment="Right" Sprite="MPLobby\Home\player_stats_level_bar_fill_glow" AlphaFactor="0.7" />
+                              </Children>
+                            </Widget>
+                          </Children>
+                        </FillBarWidget>
+
+                      </Children>
+                    </ListPanel>
+
+                    <!-- Points Remaining Text -->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="28" Brush="MPLobby.Home.PlayerProfile.NextLevelText" Text="@RankText" />
+
+                    <!-- Rank Leaderboard Popup Open Button -->
+                    <NavigationScopeTargeter ScopeID="RankLeaderboardScope" ScopeParent="..\RankLeaderboard" ScopeMovements="Vertical" ExtendDiscoveryAreaLeft="180" ExtendDiscoveryAreaRight="180" />
+                    <ButtonWidget Id="RankLeaderboard" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="36" HorizontalAlignment="Center" Brush="MPLobby.Profile.Rank.Leaderboard.Button" Command.Click="ExecuteShowRankLeaderboard" IsHidden="@IsRankInfoCasual" GamepadNavigationIndex="0" />
+
+                  </Children>
+                </ListPanel>
+
+                <!-- Rank -->
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="235" HorizontalAlignment="Center" MarginTop="20" IsVisible="@IsRankInfoLoading">
+                  <Children>
+                    <MultiplayerCircleLoading HorizontalAlignment="Center" VerticalAlignment="Center" Parameter.IsEnabled="true" />
+                  </Children>
+                </Widget>
+
+                <!-- Experience -->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="30" StackLayout.LayoutMethod="VerticalTopToBottom" >
+                  <Children>
+                    <!-- Current Level Text -->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" SuggestedHeight="28" Brush="MPLobby.Home.PlayerProfile.LevelText" Brush.FontSize="18" Text="@LevelText"/>
+
+                    <!-- Level Progress Bar -->
+                    <FillBarWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayerProfile.LevelBarBed.Width" SuggestedHeight="!PlayerProfile.LevelBarBed.Height" HorizontalAlignment="Center" FillWidget="FillWidget" MaxAmount="100" InitialAmount="@ExperienceRatio" Sprite="MPLobby\Home\player_stats_level_bar_bed" AlphaFactor="0.3">
+                      <Children>
+                        <HintWidget DataSource="{ExperienceHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                        <Widget Id="FillWidget" ClipContents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="300" MarginTop="5" MarginBottom="6" MarginLeft="5" MarginRight="6" Sprite="MPLobby\Home\player_stats_level_bar_fill" AlphaFactor="0.9">
+                          <Children>
+                            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayerProfile.LevelBarGlow.Width" SuggestedHeight="!PlayerProfile.LevelBarGlow.Height" HorizontalAlignment="Right" Sprite="MPLobby\Home\player_stats_level_bar_fill_glow" AlphaFactor="0.7" />
+                          </Children>
+                        </Widget>
+                      </Children>
+                    </FillBarWidget>
+
+                    <!-- Experience Remaining Text -->
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="28" Brush="MPLobby.Home.PlayerProfile.NextLevelText" Text="@ExperienceText" />
+                  </Children>
+                </ListPanel>
+
+                <!-- Divider -->
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayerProfile.StatsDivider.Width" SuggestedHeight="!PlayerProfile.StatsDivider.Height" HorizontalAlignment="Center" MarginTop="10" MarginBottom="10" Sprite="MPLobby\Home\player_stats_divider" AlphaFactor="0.4" />
+
+                <!-- Clan and Badge Info -->
+                <ListPanel Id="ClanAndBadgeInfoContainer" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="230" HorizontalAlignment="Center" MarginLeft="30" MarginRight="50" StackLayout.LayoutMethod="HorizontalCentered">
+                  <Children>
+
+                    <!-- Clan Info -->
+                    <NavigationScopeTargeter ScopeID="ClanInfoScope" ScopeParent="..\ClanNameParent" ScopeMovements="Vertical"/>
+                    <Widget Id="ClanNameParent" UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" Command.Click="ExecuteShowClanPage">
+                      <Children>
+                        <ListPanel UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="150" StackLayout.LayoutMethod="VerticalTopToBottom" IsVisible="@IsClanInfoSupported" >
+                          <Children>
+
+                            <ListPanel UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <!-- Title -->
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="7" Brush="MPLobby.Home.PlayerProfile.SubTitle.Text" Text="@ClanInfoTitleText" />
+
+                                <!-- Clan Leaderboard Button -->
+                                <ButtonWidget DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="10" Command.Click="ExecuteShowClanLeaderboard">
+                                  <Children>
+                                    <HintWidget DataSource="{ClanLeaderboardHint}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="36" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint"/>
+                                    <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="36" HorizontalAlignment="Center" Brush="MPLobby.Show.Clan.Leaderboard.Button" GamepadNavigationIndex="0" />
+                                  </Children>
+                                </ButtonWidget>
+                              </Children>
+                            </ListPanel>
+
+                            <ButtonWidget Id="ClanNameParent" UpdateChildrenStates="true" DoNotPassEventsToChildren="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" MarginTop="13" Command.Click="ExecuteShowClanPage" >
+                              <Children>
+                                <ListPanel UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom">
+                                  <Children>
+                                    <!-- Banner -->
+                                    <MaskedTextureWidget DataSource="{ClanBanner}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" SuggestedWidth="!Banner.Width.Scaled" SuggestedHeight="!Banner.Height.Scaled"  Brush="MPLobby.Clan.Banner.Button" AdditionalArgs="@AdditionalArgs" ImageId="@Id" TextureProviderName="@TextureProviderName" IsDisabled="true"  />
+                                    <!-- Clan Name -->
+                                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="MPLobby.Clan.ChangeBanner.Text" Brush.TextVerticalAlignment="Top" Brush.FontSize="26" PositionYOffset="0" Text="@ClanName" />
+                                  </Children>
+                                </ListPanel>
+                              </Children>
+                            </ButtonWidget>
+
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+
+                    <!-- Badge -->
+                    <NavigationScopeTargeter ScopeID="ClanBadgeScope" ScopeParent="..\Badge" ExtendDiscoveryAreaTop="-10" ExtendDiscoveryAreaBottom="-10" />
+                    <ButtonWidget Id="Badge" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" Command.Click="ExecuteChangeBadge" >
+                      <Children>
+                        <ListPanel DataSource="{ShownBadge}" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="150" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <Children>
+                            <!-- Title -->
+                            <TextWidget DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" PositionYOffset="8" MarginBottom="10" Brush="MPLobby.Home.PlayerProfile.SubTitle.Text" Text="@BadgeInfoTitleText" />
+
+                            <!-- Badge Visual -->
+                            <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="140" DoNotPassEventsToChildren="true" Brush="MPLobby.Profile.Badge.Card.Alt" UpdateChildrenStates="true">
+                              <Children>
+                                <!-- Sprite -->
+                                <MultiplayerPlayerBadgeVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="120" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Icon" BadgeId="@BadgeId" GamepadNavigationIndex="0" />
+                                <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="15" MarginRight="15" MarginTop="15" MarginBottom="15" Brush="MPLobby.Profile.Badge.Card.Tint"/>
+                                <BrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Card.Change.Icon"/>
+
+                                <!-- Badge Description Tooltip -->
+                                <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" SuggestedWidth="30" SuggestedHeight="30" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                              </Children>
+                            </BrushWidget>
+
+                            <!-- Badge Name -->
+                            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="10" Brush="MPLobby.Clan.ChangeBanner.Text" Brush.FontSize="26"  Text="@Name" IsEnabled="false"/>
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </ButtonWidget>
+
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+
+            <!-- Top Section -->
+            <BrushWidget Id="TopSection" RenderLate="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayerProfile.Frame.Width" SuggestedHeight="!PlayerProfile.Frame.Height" Brush="MPLobby.Home.PlayerProfile.Frame">
+              <Children>
+                <!-- Avatar -->
+                <ImageIdentifierWidget DoNotAcceptEvents="true" DataSource="{Avatar}" ImageId="@Id" AdditionalArgs="@AdditionalArgs" IsVisible="@IsValid" TextureProviderName="@TextureProviderName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="116" SuggestedHeight="116" MarginTop="9" MarginLeft="5" VerticalAlignment="Top" HorizontalAlignment="Left" />
+
+                <!-- Sigil -->
+                <NavigationScopeTargeter ScopeID="SigilSelectionScope" ScopeParent="..\SigilSelection" RightNavigationScope="GameTypeSelectionScope" />
+                <ButtonWidget Id="SigilSelection" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="55" SuggestedHeight="55" MarginLeft="85" MarginTop="85" Command.HoverBegin="ExecuteActivateSigilChangeInformation" Command.HoverEnd="ExecuteDeactivateSigilChangeInformation" Command.Click="ExecuteChangeSigil" Sprite="BlankWhiteCircle" Brush.Color="#874B1AFF" GamepadNavigationIndex="0" >
+                  <Children>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="2" MarginRight="2" MarginTop="2" MarginBottom="2" Sprite="BlankWhiteCircle" Color="#462719FF" />
+                    <Widget DataSource="{Sigil}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="3" MarginRight="3" MarginTop="3" MarginBottom="3" Sprite="@IconPath" />
+                    <BrushWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="2" MarginRight="2" MarginTop="2" MarginBottom="2" Brush="MPLobby.Sigil.Change.Button.Tint" />
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" Brush="MPLobby.Home.ChangeSigil.Text" Text="@ChangeText" />
+                  </Children>
+                </ButtonWidget>
+
+                <!-- Name and Loot -->
+                <Widget DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="40" MarginBottom="40" MarginLeft="136" MarginRight="10">
+                  <Children>
+                    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="30" MarginTop="0" StackLayout.LayoutMethod="VerticalTopToBottom">
+                      <Children>
+                        <ScrollingRichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Home.PlayerProfile.PlayerName" MarginRight="35" PositionYOffset="-5" Text="@Name" IsAutoScrolling="false" />
+
+                        <!-- Loot -->
+                        <Widget DoNotPassEventsToChildren="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="28" HorizontalAlignment="Left" MarginTop="5">
+                          <Children>
+                            <HintWidget DataSource="{LootHint}" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="140" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                            <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                              <Children>
+                                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="23" SuggestedHeight="23" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" />
+                                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginLeft="3" PositionYOffset="-5" Brush="MPLobby.Home.PlayerProfile.LootText" IntText="@Loot" />
+                              </Children>
+                            </ListPanel>
+                          </Children>
+                        </Widget>
+
+                      </Children>
+                    </ListPanel>
+                  </Children>
+                </Widget>
+
+              </Children>
+            </BrushWidget>
+
+            <NavigationScopeTargeter ScopeID="ShowMoreButtonScope" ScopeParent="..\ShowMoreButton" ScopeMovements="Horizontal" ExtendDiscoveryAreaLeft="170" ExtendDiscoveryAreaRight="170" />
+            <ButtonWidget Id="ShowMoreButton" DataSource="{..}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="30" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" Command.Click="ExecuteOpenProfile" GamepadNavigationIndex="0">
+              <Children>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.Profile.RecentGames.GameMode" Brush.FontSize="22" Text="@OpenProfileText" />
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </Widget>
+
+        <!-- News & Announcements -->
+        <ListPanel WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="850" HorizontalAlignment="Center" MarginTop="50" MarginLeft="20" StackLayout.LayoutMethod="VerticalTopToBottom" IsVisible="@IsNewsAvailable">
+          <Children>
+
+            <!-- News Section -->
+            <NavigationScopeTargeter ScopeID="LobbyHomeNewsScope" ScopeParent="..\News" />
+            <Widget Id="News" DataSource="{News}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" SuggestedWidth="836" HorizontalAlignment="Center" IsVisible="@HasValidNews" >
+              <Children>
+
+                <!--Vertical Important and Common News Container-->
+                <ListPanel Id="NewsContainer" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+                  <Children>
+
+                    <ButtonWidget DataSource="{MainNews}" Command.Click="ExecuteOpenLink" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="845" SuggestedHeight="427" FrictionEnabled="false" GamepadNavigationIndex="0">
+                      <Children>
+                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                          <Children>
+                            <OnlineImageTextureWidget  ImageSizePolicy="ScaleToBiggerDimension" OnlineImageSourceUrl="@NewsImageUrl" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="135" VerticalAlignment="Bottom" Sprite="MPLobby\Home\news_grid_box_gradient" AlphaFactor="0.7"/>
+                          </Children>
+                        </Widget>
+                        <BrushWidget VisualDefinition="NewsItem.Bar" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" VerticalAlignment="Bottom" SuggestedHeight="2" Brush="MPLobby.News.Bar" />
+                      </Children>
+                    </ButtonWidget>
+
+                    <NavigatableListPanel DataSource="{ImportantNews}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginTop="18" MinIndex="0">
+                      <ItemTemplate>
+                        <ButtonWidget Command.Click="ExecuteOpenLink" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="263" SuggestedHeight="133" HorizontalAlignment="Center" VerticalAlignment="Center" MarginRight="28" FrictionEnabled="false">
+                          <Children>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" ClipContents="true">
+                              <Children>
+                                <OnlineImageTextureWidget  ImageSizePolicy="ScaleToBiggerDimension" OnlineImageSourceUrl="@NewsImageUrl" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="135" VerticalAlignment="Bottom" Sprite="MPLobby\Home\news_grid_box_gradient" AlphaFactor="0.7" />
+                              </Children>
+                            </Widget>
+                            <BrushWidget VisualDefinition="NewsItem.Bar" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" VerticalAlignment="Bottom" SuggestedHeight="2" Brush="MPLobby.News.Bar" />
+                          </Children>
+                        </ButtonWidget>
+                      </ItemTemplate>
+                    </NavigatableListPanel>
+
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </Widget>
+
+            <!-- Announcements Panel -->
+            <Widget DataSource="{Announcements}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" IsVisible="@HasValidAnnouncements" >
+              <Children>
+                <Lobby.Home.Announcements.Panel />
+              </Children>
+            </Widget>
+
+
+          </Children>
+        </ListPanel>
+
+        <NavigationScopeTargeter ScopeID="FindGameButtonScope" ScopeParent="..\FindGameButton" ScopeMovements="Horizontal" ExtendDiscoveryAreaLeft="135" ExtendDiscoveryAreaTop="250" />
+        <ButtonWidget Id="FindGameButton" Command.Click="ExecuteFindGame" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!PlayButton.Width" SuggestedHeight="!PlayButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="100" Brush="MPLobby.PlayButton" FrictionEnabled="false" GamepadNavigationIndex="0">
+          <Children>
+            <TextWidget IsVisible="@IsMatchFindPossible" Text="@FindGameText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.PlayButton.Text"/>
+            <TextWidget IsHidden="@IsMatchFindPossible" Text="@MatchFindNotPossibleText" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Brush="MPLobby.PlayButton.Text"/>
+          </Children>
+        </ButtonWidget>
+
+        <NavigationScopeTargeter ScopeID="FindGameSettingsButtonScope" ScopeParent="..\SelectionInfo" ScopeMovements="Horizontal" />
+        <ButtonWidget Id="SelectionInfo" Command.Click="ExecuteOpenMatchmaking" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="30" GamepadNavigationIndex="0">
+          <Children>
+            <TextWidget Text="@SelectionInfoText" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="MPLobby.Matchmaking.SelectionInfoText"/>
+          </Children>
+        </ButtonWidget>
+
+        <NavigationScopeTargeter ScopeID="LobbyHomeCenterPanelScope" ScopeParent="..\CenterPanelScopeHolder" />
+        <Widget DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" Id="CenterPanelScopeHolder" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+      </Children>
+    </MultiplayerLobbyHomeScreenWidget>
+  </Window>
+</Prefab>

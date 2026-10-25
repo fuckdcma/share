@@ -1,0 +1,3077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+	<NPCCharacter
+		id="dead_lord_7_1"
+		name="{=BA605r19}Volbjorn the Hungry"
+		age="84"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0002500200A0295D939F077507006AF1AA7444C00A7A09475C000143A0A557190CBC76CC0B37000A0000000000000000000000000000000000000000636C9102" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="7" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+			<Trait
+				id="Commander"
+				value="5" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="dead_lord_7_2"
+		name="{=GLDbrLoH}Ilrika"
+		age="79"
+		voice="curt"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_politician_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0002880200A02016939F077507006AF1AA114B50097A09475C000143A0A55707098FB69A0837000A0000000000000000000000000000000000000000170C0102" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="16" />
+			<Trait
+				id="Manager"
+				value="12" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+			<Trait
+				id="Authoritarian"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_1"
+		name="{=mXtXNspg}Halthdar"
+		age="52"
+		voice="earnest"
+		is_hero="true"
+		default_group="Infantry"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills_ruler"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0002500200A0055F939C89C54B9663748A7944755A7633475CA65779A0A5571506ACB6680A37CA7A0000000000000000000000000000000000000000474C5002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="HuscarlFightingSkills"
+				value="6" />
+			<Trait
+				id="Commander"
+				value="14" />
+			<Trait
+				id="Politician"
+				value="16" />
+			<Trait
+				id="Manager"
+				value="12" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+			<Trait
+				id="Authoritarian"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentSet
+				id="nord_king_template_bat_m" />
+			<EquipmentSet
+				id="nord_king_template_civ_m"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_2"
+		name="{=sfrs2VST}Jarminja"
+		age="63"
+		voice="earnest"
+		default_group="Infantry"
+		is_hero="true"
+		is_female="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_chatelaine_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000AA007802C100A3063F379241320F86C599A764AA4442B600800F27200600A0678866807FF7FF600000000000000000000000000000000000000007CF42142" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="14" />
+			<Trait
+				id="Manager"
+				value="14" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Honor"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_1_1"
+		name="{=b9pW9P9W}Mjalrik"
+		age="25"
+		voice="earnest"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0002880200A0279BA29F08B00100635667A0478249B97F4B2AB7A80BA0A557050187961308000451000000000000000000000000000000000000000061041102" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="HopliteFightingSkills"
+				value="9" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Manager"
+				value="16" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Generosity"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_1_2"
+		name="{=soGMWeHU}Sidunric"
+		age="24"
+		voice="earnest"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_rookie_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00026C0200A0191493905982481493742CB644755A763347546314C1A393581801ABB6130A76B14A000000000000000000000000000000000000000063645002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="HopliteFightingSkills"
+				value="3" />
+			<Trait
+				id="Commander"
+				value="2" />
+			<Trait
+				id="Politician"
+				value="2" />
+			<Trait
+				id="Manager"
+				value="2" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Generosity"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_1_3"
+		age="32"
+		name="{=vNbhkiTB}Thyrsif"
+		voice="ironic"
+		is_female="true"
+		is_hero="true"
+		default_group="Infantry"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0002880200A02017939F077507006AF1AA114782497A49475C0001ABA0A55707027886240737440A000000000000000000000000000000000000000060F40002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Generosity"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_13"
+		name="{=2yt38osY}Orvi"
+		age="52"
+		voice="earnest"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0000AC04C07033C635992E7823B6A3C69462A7839DA68C195D3729B992F100A304BBB6460BC8885500000000000000000000000000000000000000003B6C1002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="7" />
+			<Trait
+				id="Commander"
+				value="8" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="10" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_13_1"
+		name="{=abfuHxOs}Gunjadrid"
+		age="22"
+		is_female="true"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0000AC04E414301035992E7823B6A3C6C457A7839DA68C195D3729B992F100A30098860309C8885500000000000000000000000000000000000000003B241002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="6" />
+			<Trait
+				id="Manager"
+				value="4" />
+			<Trait
+				id="Valor"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_13_2"
+		name="{=jrf0UWHv}Yfinja"
+		age="24"
+		is_female="true"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_chatelaine_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000038029314300B359A26752326A3C6C4D3A7839DA63C19EDA789B892F100A3009F160309C8085500000000000000000000000000000000000000003B1C3002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="6" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Valor"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_13_3"
+		name="{=tKIM6Ad1}Morgunja"
+		age="17"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_healer_scholar_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0000D0028014015E519A26752026A3C6C4D0776695735F1889A782B892F100A303ABA6320676025500000000000000000000000000000000000000003B4C2002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<!-- TEENAGER, NO SKILLS OR TRAITS YET-->
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_13_4"
+		name="{=mwFbN6H6}Valmua"
+		age="24"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0000E8079CFC30125D721A4BB325D2FAAB74686A35701C469C78903F9922170900BBB6030B97A4A300000000000000000000000000000000000000003B742002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="HuscarlFightingSkills"
+				value="5" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="10" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_3"
+		name="{=5JO7SHD5}Grykka"
+		voice="ironic"
+		default_group="Infantry"
+		age="46"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0008180294002A9DB92025502C3F20F792914845ADA32700F853CC3078F0200304BAE6450BDA3F0000000000000000000000000000000000000000007D645146" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="HuscarlFightingSkills"
+				value="8" />
+			<Trait
+				id="Commander"
+				value="12" />
+			<Trait
+				id="Politician"
+				value="10" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+			<Trait
+				id="Oligarchic"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_3_1"
+		name="{=z0YNlEJl}Gautgar"
+		age="24"
+		voice="softspoken"
+		is_hero="true"
+		default_group="Infantry"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0008B00558001913B9202550213320B792914845ADA32700F853CC3078F0200300DC66030DDA310000000000000000000000000000000000000000007DAC5146" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="HuscarlFightingSkills"
+				value="7" />
+			<Trait
+				id="Commander"
+				value="14" />
+			<Trait
+				id="Politician"
+				value="14" />
+			<Trait
+				id="Manager"
+				value="10" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_3_2"
+		name="{=w7GJ8i1D}Iridrun"
+		voice="softspoken"
+		default_group="Infantry"
+		age="22"
+		is_hero="true"
+		is_female="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0008180291B4000AB92025502C3F20F796914845ADA32700F853CC3078F0200B0099F60309DA3F0000000000000000000000000000000000000000007D2C3002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="6" />
+			<Trait
+				id="Manager"
+				value="10" />
+			<Trait
+				id="Mercy"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_3_3"
+		name="{=Klyk4sd5}Heimkir"
+		voice="softspoken"
+		default_group="Infantry"
+		age="18"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000254020FFC069BF99C89C54B366374E0B0BE007DA3B8028C5710FFA0F2304D00B996030B9EB2860000000000000000000000000000000000000000636C1002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="HuscarlFightingSkills"
+				value="5" />
+			<Trait
+				id="Commander"
+				value="2" />
+			<Trait
+				id="Politician"
+				value="2" />
+			<Trait
+				id="Manager"
+				value="2" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_4"
+		name="{=h8IIiZMW}Agrynja"
+		age="44"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		is_female="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0008000000001016B92025503F3B20B792CA43533BB01700200A023078FB212C0478F64507DA3F0000000000000000000000000000000000000000007CFC0104" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="PeltastFightingSkills"
+				value="9" />
+			<Trait
+				id="Commander"
+				value="12" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Honor"
+				value="1" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_4_1"
+		name="{=0hHaefoK}Dyfa"
+		age="23"
+		voice="ironic"
+		default_group="Infantry"
+		is_hero="true"
+		is_female="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_rookie_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0008440292002008095025592C3920A797E34845ADA32700F801683F702D90F70088460208DF3F0000000000000000000000000000000000000000007D0C3104" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="PeltastFightingSkills"
+				value="4" />
+			<Trait
+				id="Commander"
+				value="6" />
+			<Trait
+				id="Politician"
+				value="6" />
+			<Trait
+				id="Manager"
+				value="4" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Honor"
+				value="1" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_5"
+		name="{=RDDq3etN}Asgotha"
+		default_group="Infantry"
+		age="50"
+		voice="softspoken"
+		is_hero="true"
+		is_female="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0002B004CE000018C74A725397B6ACE53A397B688793B648490618BAB889476B04A8B6460A879A8A0000000000000000000000000000000000000000534C40C2" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="HopliteFightingSkills"
+				value="5" />
+			<Trait
+				id="Commander"
+				value="14" />
+			<Trait
+				id="Politician"
+				value="10" />
+			<Trait
+				id="Manager"
+				value="16" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_6"
+		name="{=lvqxpSFS}Vulthir"
+		voice="earnest"
+		default_group="Infantry"
+		age="47"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_chatelaine_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000084034F0004C1F99C89C54B9F6374E0B0BC909CB15F108C5510FFA0F2301D05BAE6570B9EB2860000000000000000000000000000000000000000636C3002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="10" />
+			<Trait
+				id="Manager"
+				value="14" />
+			<Trait
+				id="Generosity"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_5_1"
+		name="{=IvNVLWem}Kjarvon"
+		default_group="Infantry"
+		age="25"
+		voice="ironic"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0000B8034F002243B78A76B368AD8644F053946C6873EFD0530218A5A3D8336C01AADF130A1B389100000000000000000000000000000000000000003D5C4085" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="PeltastFightingSkills"
+				value="5" />
+			<Trait
+				id="Commander"
+				value="14" />
+			<Trait
+				id="Politician"
+				value="12" />
+			<Trait
+				id="Manager"
+				value="16" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_5_2"
+		name="{=XNNngM7Z}Aelfeyja"
+		age="22"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		is_female="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000054034F002002699C89C54B9F6374E0B0BC607DA198138C5710FFA0F2301D00BAD6030B9EB2860000000000000000000000000000000000000000636C1002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="6" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Manager"
+				value="10" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Honor"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_5_3"
+		name="{=8vMGPtuR}Njasnir"
+		age="19"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_rookie_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000018082200059B699C88300000637430B0BC607DA198138C5710FF60F2301501BAE6130B9EB2860000000000000000000000000000000000000000636C1085" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="5" />
+			<Trait
+				id="Commander"
+				value="6" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="4" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Honor"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_14"
+		name="{=J5KgNrto}Gornlautir"
+		voice="earnest"
+		age="39"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000AA0081E002003F763F8D3432670F76736FF7361725B0F600800F27200600A03DD86350DFF7FF600000000000000000000000000000000000000007DAC3142" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="8" />
+			<Trait
+				id="Commander"
+				value="8" />
+			<Trait
+				id="Politician"
+				value="6" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_14_1"
+		name="{=sday8nvl}Gulsyf"
+		voice="earnest"
+		age="38"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0000000080000005506F030000007000C0A5000063701000F503000F60F0000A02988624093300000000000000000000000000000000000000000000213C8142" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="2" />
+			<Trait
+				id="Manager"
+				value="10" />
+			<Trait
+				id="Calculating"
+				value="1" />
+			<Trait
+				id="Mercy"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_14_2"
+		name="{=vNDpJ2kw}Alrika"
+		voice="earnest"
+		age="18"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_huntress_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0005700552B4100F606DB4B201127043B395B3716272400A6304105571D0101A0679AF62071C1F2600000000000000000000000000000000000000001CF43103" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="4" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_14_3"
+		name="{=Cz1gS50V}Stohrith"
+		voice="earnest"
+		age="16"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_matriarch_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00003405500020078668D32321147021C085B24361712001620410446190101A00B87F0205143415000000000000000000000000000000000000000075646102" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<!-- TEENAGER, NO SKILLS OR TRAITS YET-->
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_16"
+		name="{=1Alpz1mR}Kautas"
+		voice="earnest"
+		default_group="Infantry"
+		age="31"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00154404DA00369CC676663C11A058C7A19C883611A3B705B7417A3B8AD97D7201A996140A2C78B400000000000000000000000000000000000000002B5C1002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="6" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Manager"
+				value="4" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_16_1"
+		name="{=eyqaT2Sn}Alsa"
+		voice="earnest"
+		default_group="Infantry"
+		age="21"
+		is_hero="true"
+		is_female="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_dandy_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0002680A40B4100EB95A585C199FD8B67A9367306983579636D5069185C885890066B60306A4879E00000000000000000000000000000000000000001AC43083" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Manager"
+				value="4" />
+			<Trait
+				id="Mercy"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_21"
+		name="{=6Kc65gnH}Svorni"
+		age="33"
+		voice="ironic"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000268080EB42345F95A585C199FD8B670BC67306933570136D50F9185C88589029F562409A4879E00000000000000000000000000000000000000001B2C1142" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="6" />
+			<Trait
+				id="Commander"
+				value="12" />
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Manager"
+				value="10" />
+			<Trait
+				id="Honor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_21_1"
+		name="{=ua3O1sqi}Bjolablum"
+		age="28"
+		voice="earnest"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_matriarch_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00086404D12C2016B75A683C12997847A69388361683B035F38CF10286D8758501AC0F130A1938360000000000000000000000000000000000000000135C3084" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Manager"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Honor"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_17"
+		name="{=j5MT4gUM}Horgar"
+		age="34"
+		voice="softspoken"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000D2400000013DCF020255061312093929140455D833722F853CC3078F020E302AA96240ADA310000000000000000000000000000000000000000007D641146" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="4" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="12" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Mercy"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_17_1"
+		name="{=oAh569DX}Skathja"
+		age="31"
+		voice="curt"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0008B40A55CC1015B6B88A8959738A88A564208B6785A70C6964AB3863A07B59019CAF14092A346100000000000000000000000000000000000000002D243004" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="12" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_22"
+		name="{=mFuRer2G}Bjorgir"
+		age="29"
+		voice="softspoken"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000570060FB4065F5D7F1A4BB3AAD2FAAD696864D5601C469C0FFF3F9B22472801A7F6130A9BA4A300000000000000000000000000000000000000003B5C2002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="8" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Honor"
+				value="1" />
+			<Trait
+				id="Valor"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_22_1"
+		name="{=bCgNK0RF}Hralsa"
+		age="25"
+		voice="curt"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0008AC001400000B0FAFF6F1111C12A1BC669C9468966EEE58367465362A8A770157861305A98C8A00000000000000000000000000000000000000002EAC4083" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="3" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Honor"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_24"
+		name="{=SyAcaoYh}Yngvar"
+		age="39"
+		voice="ironic"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0002180080CC3253A28571123791A77489A8625A6191272A223202628832124501AF86130AE979AE00000000000000000000000000000000000000007F4410C4" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="8" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Valor"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_24_1"
+		name="{=2mlYNDoT}Vystrun"
+		is_female="true"
+		age="22"
+		voice="ironic"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_rookie_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00021800802C2004F28571123791A77489A8605561911021223202628835A24B00AF86030AE979AE00000000000000000000000000000000000000007F441082" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Commander"
+				value="4" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_18"
+		name="{=0Adm7TeO}Gafnir"
+		age="26"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0000AC0080700ACD35992E7823B6A3CFCE9CA7839DA68C195D3729B99AF100A301BBB6130BC8885500000000000000000000000000000000000000003B6C3002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="6" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_18_1"
+		name="{=bcbvVlaM}Vitharsura"
+		age="23"
+		voice="ironic"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_huntress_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0005BC0D00FC00105BABBA9952859A86496B517257648CA5A8B5355A445594370198B614098296D60000000000000000000000000000000000000000473C3103" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Mercy"
+				value="1" />
+			<Trait
+				id="Valor"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_23"
+		name="{=wvcuOHCa}Karlek"
+		age="49"
+		voice="curt"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_tactician_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00052008C0FC100B5BABBA9952859A86496BF7C057648CA5A8B5355A44559437049FF64609289EDC0000000000000000000000000000000000000000473C3103" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="8" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Valor"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_23_1"
+		name="{=IwDY5a1I}Ulvirinja"
+		age="23"
+		voice="earnest"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000AA007800020063063F379241320F86C599A764AA4242B600800F27200600A01ABB6130AFF7FF600000000000000000000000000000000000000007D643142" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="2" />
+			<Trait
+				id="Manager"
+				value="2" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_23_2"
+		name="{=KQ3Jl82E}Olvira"
+		age="27"
+		voice="ironic"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_politician_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000A50035CFC3485EBABBA9952859A86496B517257648C00A8B5355A44559437019BB613098296D60000000000000000000000000000000000000000473C0002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="6" />
+			<Trait
+				id="Commander"
+				value="5" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="4" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_15"
+		name="{=iSkRKcJl}Unjort"
+		age="49"
+		voice="softspoken"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000000008000100D706F090000009000C0A5000066700000F503000F60F0000A04879646083300000000000000000000000000000000000000000000010C8142" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="3" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="8" />
+			<Trait
+				id="Manager"
+				value="14" />
+			<Trait
+				id="Mercy"
+				value="1" />
+			<Trait
+				id="Valor"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_15_1"
+		name="{=c1iJYS9E}Tovsja"
+		age="38"
+		voice="softspoken"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0010CC06C0000004B39A2675232EA32690F3AA81BDC63C00A18BE33F7F8FA6FE00CBC6030CF506F400000000000000000000000000000000000000003B841002" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Mercy"
+				value="1" />
+			<Trait
+				id="Valor"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_15_2"
+		name="{=33bHPbav}Gudrinja"
+		age="21"
+		voice="softspoken"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00057005401420105D7F1A4BB34FD28DAE696861D5601C469C0FFF3F9B22476900832602089BA4A300000000000000000000000000000000000000003B041082" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Mercy"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_15_3"
+		name="{=JSCaSzyL}Svalsa"
+		age="17"
+		voice="softspoken"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_politician_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000240040014200AA56B03322110701275857E6061703005610410647180101A0379AF32051B0F23000000000000000000000000000000000000000046F46104" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Politician"
+				value="10" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Calculating"
+				value="1" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_15_4"
+		name="{=7bGRPCZi}Orthogar"
+		age="22"
+		voice="softspoken"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_dandy_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00004408D40015DE70FF04000000F05660450000A6A800000003000F66A00003009A760309000000000000000000000000000000000000000000000069347142" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="4" />
+			<Trait
+				id="Commander"
+				value="4" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Mercy"
+				value="1" />
+			<Trait
+				id="Valor"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_15_5"
+		name="{=kojLBSum}Liljan"
+		age="24"
+		voice="earnest"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_rookie_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0005F8028000138FFE8427A71585377B57FBAEA787B9CB0F2F3FE0FF97A4418C00AB9F030A9CF5AC0000000000000000000000000000000000000000494C20C4" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="6" />
+			<Trait
+				id="Commander"
+				value="8" />
+			<Trait
+				id="Politician"
+				value="6" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Honor"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_19"
+		name="{=boFlTtyJ}Murin"
+		age="32"
+		voice="ironic"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00028800000004093168291012067E0690B7131255813318A106003F6600A21C00AB86030AFC250400000000000000000000000000000000000000006D443142" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="3" />
+			<Trait
+				id="Commander"
+				value="8" />
+			<Trait
+				id="Politician"
+				value="12" />
+			<Trait
+				id="Manager"
+				value="10" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Valor"
+				value="-1" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_20"
+		name="{=bu3FcTZv}Toverik"
+		age="29"
+		voice="earnest"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00005804C0001148F0692844031189337058432170C19703B70520DF6700D507019BB61309ABD713000000000000000000000000000000000000000037341143" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="8" />
+			<Trait
+				id="Commander"
+				value="10" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_heavy" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_20_1"
+		name="{=3XCiPBLk}Hvana"
+		age="22"
+		voice="earnest"
+		is_female="true"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_archer_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0008DC0080880016AA9C2D29596EB8AD5784458A4279886AB5BC747597B7988B02658624065E9348000000000000000000000000000000000000000026DC00C3" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<skills></skills>
+		<Traits>
+			<Trait
+				id="Manager"
+				value="6" />
+			<Trait
+				id="Valor"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_25"
+		name="{=Pkm5gsX0}Dagvi"
+		age="49"
+		voice="ironic"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_quartermaster_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000068034014219DCC432642312386458289484498B3310FF643B73179D25114049CB6460969210000000000000000000000000000000000000000006F344104" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="6" />
+			<Trait
+				id="Commander"
+				value="12" />
+			<Trait
+				id="Politician"
+				value="6" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Calculating"
+				value="1" />
+			<Trait
+				id="Honor"
+				value="-1" />
+			<Trait
+				id="Generosity"
+				value="-1" />
+			<Trait
+				id="Oligarchic"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_25_1"
+		name="{=kiFHfVpB}Drivana"
+		is_female="true"
+		age="64"
+		voice="curt"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_tactician_skills"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000068034014201775432642312386458289484498E33105F643B73179D25114077886790769210000000000000000000000000000000000000000006EFC4102" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="Commander"
+				value="12" />
+			<Trait
+				id="Politician"
+				value="16" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="-1" />
+			<Trait
+				id="Oligarchic"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_26"
+		name="{=h7O4j2gF}Otfar"
+		age="34"
+		voice="earnest"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="00033002801432CF33433146335582358108529576B7222BC60784217BE2502400A88F030AE9240000001F777FFFFFF60000000000000000000000001D645104" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="BalancedFightingSkills"
+				value="8" />
+			<Trait
+				id="Commander"
+				value="8" />
+			<Trait
+				id="Politician"
+				value="6" />
+			<Trait
+				id="Manager"
+				value="8" />
+			<Trait
+				id="Mercy"
+				value="1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_27"
+		name="{=ndmUHHxN}Anle"
+		age="32"
+		voice="softspoken"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_sailor_skills_viking"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="000078002014348A40756A6813AB11324A7670A5A5B7A329AEAB3A1B8DE0743402C7F6240C59542800001F777FFFFFF6000000000000000000000000639450C5" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<beard_tags>
+				<beard_tag
+					name="nord" />
+			</beard_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="HuscarlFightingSkills"
+				value="8" />
+			<Trait
+				id="Commander"
+				value="8" />
+			<Trait
+				id="Politician"
+				value="4" />
+			<Trait
+				id="Manager"
+				value="6" />
+			<!-- obediant enforcer of dakhila's will -->
+			<Trait
+				id="Valor"
+				value="1" />
+			<Trait
+				id="Mercy"
+				value="-1" />
+			<Trait
+				id="Calculating"
+				value="-1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_medium" />
+			<EquipmentSet
+				id="nord_civ_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+	<NPCCharacter
+		id="lord_7_28"
+		name="{=K6slCnTc}Triven"
+		is_female="true"
+		age="23"
+		voice="softspoken"
+		default_group="Infantry"
+		is_hero="true"
+		culture="Culture.nord"
+		skill_template="SkillSet.spc_naval_trader_skills_rookie"
+		occupation="Lord"
+		face_mesh_cache="true">
+		<face>
+			<BodyProperties
+				version="4"
+				key="0005300340003017767665502436243366BE84458DC0401BEF164A3E88837156007786030736B6A000000000000000000000000000000000000000003CFC2003" />
+			<hair_tags>
+				<hair_tag
+					name="nord" />
+			</hair_tags>
+			<tattoo_tags>
+				<tattoo_tag
+					name="Cleanface" />
+			</tattoo_tags>
+		</face>
+		<Traits>
+			<Trait
+				id="Commander"
+				value="8" />
+			<Trait
+				id="Politician"
+				value="7" />
+			<Trait
+				id="Manager"
+				value="4" />
+			<Trait
+				id="Valor"
+				value="-1" />
+			<Trait
+				id="Generosity"
+				value="1" />
+		</Traits>
+		<Equipments>
+			<EquipmentRoster />
+			<EquipmentSet
+				id="nord_bat_template_lady" />
+			<EquipmentSet
+				id="nord_noncom_template_default"
+				equipmentType="Civilian" />
+		</Equipments>
+	</NPCCharacter>
+</NPCCharacters>

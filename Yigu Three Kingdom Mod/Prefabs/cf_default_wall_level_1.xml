@@ -1,0 +1,3699 @@
+<prefabs>
+	<game_entity name="cf_default_gatehouse_a_l1" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_gatehouse_a_l1"/>
+		<components>
+			<meta_mesh_component name="cf_default_gatehouse_a_l1"/>
+		</components>
+		<children>
+			<game_entity name="cf_default_gatehouse_a_l1_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="14.854, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_02"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="10.970, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_03"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="7.843, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_04"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="4.678, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_05" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_05"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_05"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="1.530, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_06" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_06"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_06"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-1.523, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_07" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_07"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_07"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-4.690, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_08" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_08"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_08"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-7.813, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_09" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_09"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_09"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-10.942, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_10" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_10"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_10"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-14.880, 10.811, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_11" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_11"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_11"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-14.880, 6.930, 11.040"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_12" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_12"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_12"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-14.880, 3.727, 11.040"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_13" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_13"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_13"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-14.880, -3.713, 11.040"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_14" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_14"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_14"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-14.880, -6.882, 11.040"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_15" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_15"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_15"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-14.880, -10.779, 11.040"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_16" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_16"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_16"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-10.963, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_17" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_17"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_17"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-7.837, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_18" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_18"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_18"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-4.727, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_19" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_19"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_19"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-1.605, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_20" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_20"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_20"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="1.603, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_21" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_21"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_21"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="4.619, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_22" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_22"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_22"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="7.849, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_23" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_23"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_23"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="10.896, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_24" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_24"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_24"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="14.924, -10.790, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_25" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_25"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_25"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="14.924, -6.846, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_26" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_26"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_26"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="14.924, -3.683, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_27" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_27"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_27"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="14.924, 3.712, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_gatehouse_a_l1_28" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_gatehouse_a_l1_28"/>
+				<components>
+					<meta_mesh_component name="cf_default_gatehouse_a_l1_28"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="14.924, 6.887, 11.035"/>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_jiaotai_l1" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_jiaotai_l1"/>
+		<components>
+			<meta_mesh_component name="cf_default_jiaotai_l1"/>
+		</components>
+		<children>
+			<game_entity name="cf_default_jiaotai_l1_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="8.533, -8.551, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_02"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="8.533, -4.726, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_03"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="8.533, -1.541, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_04"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="8.533, 1.589, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_05" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_05"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_05"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="8.533, 4.741, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_06" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_06"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_06"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="8.533, 8.538, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_07" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_07"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_07"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="4.690, 8.538, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_08" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_08"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_08"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="1.582, 8.538, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_09" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_09"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_09"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-8.566, -1.565, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_10" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_10"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_10"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-8.566, -4.672, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_11" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_11"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_11"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-8.566, -8.529, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_12" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_12"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_12"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-4.732, -8.529, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_13" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_13"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_13"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-1.580, -8.529, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_14" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_14"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_14"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="1.533, -8.529, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_15" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_jiaotai_l1_15"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_15"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="4.669, -8.529, 7.165"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_jiaotai_l1_nvqiang" old_prefab_name="">
+				<physics shape="bo_cf_default_jiaotai_l1_nvqiang"/>
+				<components>
+					<meta_mesh_component name="cf_default_jiaotai_l1_nvqiang"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_mamian_l1" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_mamian_l1"/>
+		<components>
+			<meta_mesh_component name="cf_default_mamian_l1"/>
+		</components>
+		<children>
+			<game_entity name="cf_default_mamian_l1_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_mamian_l1_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_mamian_l1_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-3.771, -3.816, 7.135"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_mamian_l1_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_mamian_l1_02"/>
+				<components>
+					<meta_mesh_component name="cf_default_mamian_l1_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-0.004, -3.816, 7.135"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_mamian_l1_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_mamian_l1_03"/>
+				<components>
+					<meta_mesh_component name="cf_default_mamian_l1_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="3.827, -3.816, 7.135"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_mamian_l1_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_mamian_l1_04"/>
+				<components>
+					<meta_mesh_component name="cf_default_mamian_l1_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="3.827, -0.036, 7.135"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_mamian_l1_05" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_mamian_l1_05"/>
+				<components>
+					<meta_mesh_component name="cf_default_mamian_l1_05"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="3.827, 3.428, 7.135"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_mamian_l1_06" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_mamian_l1_06"/>
+				<components>
+					<meta_mesh_component name="cf_default_mamian_l1_06"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-3.771, 3.410, 7.135"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_mamian_l1_07" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_mamian_l1_07"/>
+				<components>
+					<meta_mesh_component name="cf_default_mamian_l1_07"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-3.771, -0.055, 7.135"/>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_zhanpeng_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_zhanpeng_a"/>
+		<components>
+			<meta_mesh_component name="cf_default_zhanpeng_a"/>
+		</components>
+		<children>
+			<game_entity name="cf_default_zhanpeng_a_01" old_prefab_name="">
+				<transform position="-1.366, -1.260, 2.666"/>
+				<physics shape="bo_cf_default_zhanpeng_a_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_zhanpeng_a_01"/>
+				</components>
+			</game_entity>
+			<game_entity name="cf_default_zhanpeng_a_01" old_prefab_name="">
+				<transform position="-0.456, -1.260, 2.666"/>
+				<physics shape="bo_cf_default_zhanpeng_a_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_zhanpeng_a_01"/>
+				</components>
+			</game_entity>
+			<game_entity name="cf_default_zhanpeng_a_01" old_prefab_name="">
+				<transform position="0.465, -1.260, 2.666"/>
+				<physics shape="bo_cf_default_zhanpeng_a_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_zhanpeng_a_01"/>
+				</components>
+			</game_entity>
+			<game_entity name="cf_default_zhanpeng_a_01" old_prefab_name="">
+				<transform position="1.381, -1.260, 2.666"/>
+				<physics shape="bo_cf_default_zhanpeng_a_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_zhanpeng_a_01"/>
+				</components>
+			</game_entity>
+			<game_entity name="cf_default_zhanpeng_a_01" old_prefab_name="">
+				<transform position="1.920, -0.640, 2.670" rotation_euler="0.000, 0.000, 1.571"/>
+				<physics shape="bo_cf_default_zhanpeng_a_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_zhanpeng_a_01"/>
+				</components>
+			</game_entity>
+			<game_entity name="cf_default_zhanpeng_a_01" old_prefab_name="">
+				<transform position="-1.912, -0.637, 2.670" rotation_euler="0.000, 0.000, -1.571"/>
+				<physics shape="bo_cf_default_zhanpeng_a_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_zhanpeng_a_01"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_wall_b_l1" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_wall_b_l1"/>
+		<components>
+			<meta_mesh_component name="cf_default_wall_b_l1"/>
+		</components>
+		<children>
+			<game_entity name="cf_default_wall_b_l1_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_b_l1_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_b_l1_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-4.054, -3.803, 7.693"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_b_l1_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_b_l1_02"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_b_l1_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-0.884, -3.803, 8.225"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_b_l1_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_b_l1_03"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_b_l1_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="2.238, -3.803, 8.735"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_b_l1_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_b_l1_04"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_b_l1_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="5.316, -3.803, 9.167"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_nvqiang_b" old_prefab_name="">
+				<transform position="-0.004, 3.779, 7.060"/>
+				<physics shape="bo_cf_default_nvqiang_b"/>
+				<components>
+					<meta_mesh_component name="cf_default_nvqiang_b"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_nvqiang_b" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_nvqiang_b"/>
+		<components>
+			<meta_mesh_component name="cf_default_nvqiang_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="cf_default_nvqiang_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_nvqiang_a"/>
+		<components>
+			<meta_mesh_component name="cf_default_nvqiang_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="cf_default_wall_c_l1" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_wall_c_l1"/>
+		<components>
+			<meta_mesh_component name="cf_default_wall_c_l1"/>
+		</components>
+		<children>
+			<game_entity name="cf_default_wall_c_l1_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_c_l1_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_c_l1_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="5.324, -3.799, 7.189"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_c_l1_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_c_l1_02"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_c_l1_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="2.225, -3.799, 7.189"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_c_l1_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_c_l1_03"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_c_l1_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-0.914, -3.799, 7.189"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_c_l1_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_c_l1_04"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_c_l1_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-4.072, -3.799, 7.189"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_nvqiang_a" old_prefab_name="">
+				<transform position="0.000, 3.781, 6.000"/>
+				<physics shape="bo_cf_default_nvqiang_a"/>
+				<components>
+					<meta_mesh_component name="cf_default_nvqiang_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_wall_a_l1" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_wall_a_l1"/>
+		<components>
+			<meta_mesh_component name="cf_default_wall_a_l1"/>
+		</components>
+		<children>
+			<game_entity name="cf_default_wall_a_l1_01" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_a_l1_01"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_a_l1_01"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="5.313, -3.786, 7.188"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_a_l1_02" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_a_l1_02"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_a_l1_02"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="2.219, -3.786, 7.188"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_a_l1_03" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_a_l1_03"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_a_l1_03"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-0.912, -3.786, 7.188"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_a_l1_04" old_prefab_name="" mobility="1">
+				<physics shape="bo_cf_default_wall_a_l1_04"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_a_l1_04"/>
+				</components>
+				<scripts>
+					<script name="DestructableComponent">
+						<variables>
+							<variable name="DestructionStates" value="debris_aserai_l1"/>
+							<variable name="DestroyedByStoneOnly" value="true"/>
+							<variable name="CanBeDestroyedInitially" value="true"/>
+							<variable name="MaxHitPoint" value="1000.000"/>
+							<variable name="DestroyOnAnyHit" value="false"/>
+							<variable name="PassHitOnToParent" value="false"/>
+							<variable name="ReferenceEntityTag" value="reference"/>
+							<variable name="HeavyHitParticlesTag" value=""/>
+							<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+							<variable name="ParticleEffectOnDestroy" value=""/>
+							<variable name="SoundEffectOnDestroy" value=""/>
+							<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+							<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+							<variable name="BattleSide" value="None"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="reference"/>
+						</tags>
+						<transform position="-4.083, -3.786, 7.188"/>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_nvqiang_a" old_prefab_name="">
+				<transform position="0.000, 3.780, 6.000"/>
+				<physics shape="bo_cf_default_nvqiang_a"/>
+				<components>
+					<meta_mesh_component name="cf_default_nvqiang_a"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_wall_a_broken_l1" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="wall_left"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value="left"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="cf_default_wall_a_broken_l1" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="broken_child"/>
+				</tags>
+				<physics shape="bo_cf_default_wall_a_broken_l1"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_a_broken_l1"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="wait_pos" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="wait_pos"/>
+						</tags>
+						<transform position="0.000, 7.150, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="7.000, 1.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="debug_lod_mesh"/>
+						</components>
+						<scripts>
+							<script name="TacticalPosition">
+								<variables>
+									<variable name="_width" value="7.000"/>
+									<variable name="_slope" value="0.000"/>
+									<variable name="_isInsurmountable" value="false"/>
+									<variable name="_isOuterEdge" value="false"/>
+									<variable name="_tacticalPositionType" value="Regional"/>
+									<variable name="_tacticalRegionMembership" value="Forest"/>
+									<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="middle_pos" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="middle_pos"/>
+						</tags>
+						<transform position="0.000, -2.960, 6.000" rotation_euler="0.000, 0.000, 0.000" scale="10.000, 1.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="debug_lod_mesh"/>
+						</components>
+						<scripts>
+							<script name="TacticalPosition">
+								<variables>
+									<variable name="_width" value="10.000"/>
+									<variable name="_slope" value="0.000"/>
+									<variable name="_isInsurmountable" value="false"/>
+									<variable name="_isOuterEdge" value="false"/>
+									<variable name="_tacticalPositionType" value="Regional"/>
+									<variable name="_tacticalRegionMembership" value="Forest"/>
+									<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="attacker_wait_pos" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="attacker_wait_pos"/>
+						</tags>
+						<transform position="0.000, -7.560, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="10.000, 1.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="debug_lod_mesh"/>
+						</components>
+						<scripts>
+							<script name="TacticalPosition">
+								<variables>
+									<variable name="_width" value="10.000"/>
+									<variable name="_slope" value="0.000"/>
+									<variable name="_isInsurmountable" value="false"/>
+									<variable name="_isOuterEdge" value="false"/>
+									<variable name="_tacticalPositionType" value="Regional"/>
+									<variable name="_tacticalRegionMembership" value="Forest"/>
+									<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="children_objects" old_prefab_name="">
+						<children>
+							<game_entity name="cf_default_nvqiang_a" old_prefab_name="">
+								<transform position="4.632, 3.780, 6.000" rotation_euler="0.000, 0.000, 0.000" scale="0.259, 1.000, 1.000"/>
+								<physics shape="bo_cf_default_nvqiang_a"/>
+								<components>
+									<meta_mesh_component name="cf_default_nvqiang_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="cf_default_nvqiang_a" old_prefab_name="">
+								<transform position="-4.470, 3.780, 6.000" rotation_euler="0.000, 0.000, 0.000" scale="0.286, 1.000, 1.000"/>
+								<physics shape="bo_cf_default_nvqiang_a"/>
+								<components>
+									<meta_mesh_component name="cf_default_nvqiang_a"/>
+								</components>
+							</game_entity>
+							<game_entity name="cf_default_wall_a_broken_l1_01" old_prefab_name="" mobility="1">
+								<physics shape="bo_cf_default_wall_a_broken_l1_01"/>
+								<components>
+									<meta_mesh_component name="cf_default_wall_a_broken_l1_01"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_aserai_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1000.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+							<game_entity name="cf_default_wall_a_broken_l1_02" old_prefab_name="" mobility="1">
+								<physics shape="bo_cf_default_wall_a_broken_l1_02"/>
+								<components>
+									<meta_mesh_component name="cf_default_wall_a_broken_l1_02"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_aserai_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1000.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_a_l1" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<tags>
+					<tag name="solid_child"/>
+				</tags>
+				<physics shape="bo_cf_default_wall_a_l1"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_a_l1"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="wait_pos" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="wait_pos"/>
+						</tags>
+						<transform position="0.000, 8.300, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="7.000, 1.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="debug_lod_mesh"/>
+						</components>
+						<scripts>
+							<script name="TacticalPosition">
+								<variables>
+									<variable name="_width" value="7.000"/>
+									<variable name="_slope" value="0.000"/>
+									<variable name="_isInsurmountable" value="false"/>
+									<variable name="_isOuterEdge" value="false"/>
+									<variable name="_tacticalPositionType" value="Regional"/>
+									<variable name="_tacticalRegionMembership" value="Forest"/>
+									<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="middle_pos" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="middle_pos"/>
+						</tags>
+						<transform position="0.000, -1.800, 6.000" rotation_euler="0.000, 0.000, 0.000" scale="10.000, 1.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="debug_lod_mesh"/>
+						</components>
+						<scripts>
+							<script name="TacticalPosition">
+								<variables>
+									<variable name="_width" value="10.000"/>
+									<variable name="_slope" value="0.000"/>
+									<variable name="_isInsurmountable" value="false"/>
+									<variable name="_isOuterEdge" value="false"/>
+									<variable name="_tacticalPositionType" value="Regional"/>
+									<variable name="_tacticalRegionMembership" value="Forest"/>
+									<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+					<game_entity name="children_objects" old_prefab_name="">
+						<children>
+							<game_entity name="cf_default_wall_a_l1_01" old_prefab_name="" mobility="1">
+								<physics shape="bo_cf_default_wall_a_l1_01"/>
+								<components>
+									<meta_mesh_component name="cf_default_wall_a_l1_01"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_aserai_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1000.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="5.313, -3.786, 7.188"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="cf_default_wall_a_l1_02" old_prefab_name="" mobility="1">
+								<physics shape="bo_cf_default_wall_a_l1_02"/>
+								<components>
+									<meta_mesh_component name="cf_default_wall_a_l1_02"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_aserai_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1000.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="2.219, -3.786, 7.188"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="cf_default_wall_a_l1_03" old_prefab_name="" mobility="1">
+								<physics shape="bo_cf_default_wall_a_l1_03"/>
+								<components>
+									<meta_mesh_component name="cf_default_wall_a_l1_03"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_aserai_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1000.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-0.912, -3.786, 7.188"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="cf_default_wall_a_l1_04" old_prefab_name="" mobility="1">
+								<physics shape="bo_cf_default_wall_a_l1_04"/>
+								<components>
+									<meta_mesh_component name="cf_default_wall_a_l1_04"/>
+								</components>
+								<scripts>
+									<script name="DestructableComponent">
+										<variables>
+											<variable name="DestructionStates" value="debris_aserai_l1"/>
+											<variable name="DestroyedByStoneOnly" value="true"/>
+											<variable name="CanBeDestroyedInitially" value="true"/>
+											<variable name="MaxHitPoint" value="1000.000"/>
+											<variable name="DestroyOnAnyHit" value="false"/>
+											<variable name="PassHitOnToParent" value="false"/>
+											<variable name="ReferenceEntityTag" value="reference"/>
+											<variable name="HeavyHitParticlesTag" value=""/>
+											<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+											<variable name="ParticleEffectOnDestroy" value=""/>
+											<variable name="SoundEffectOnDestroy" value=""/>
+											<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+											<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+											<variable name="BattleSide" value="None"/>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<children>
+									<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+										<tags>
+											<tag name="reference"/>
+										</tags>
+										<transform position="-4.083, -3.786, 7.188"/>
+									</game_entity>
+								</children>
+							</game_entity>
+							<game_entity name="cf_default_nvqiang_a" old_prefab_name="">
+								<transform position="0.000, 3.780, 6.000"/>
+								<physics shape="bo_cf_default_nvqiang_a"/>
+								<components>
+									<meta_mesh_component name="cf_default_nvqiang_a"/>
+								</components>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_wall_a_l1_02" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_default_wall_a_l1" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.010, 0.010, 0.010"/>
+				<physics shape="bo_cf_default_wall_a_l1"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_a_l1"/>
+				</components>
+				<children>
+					<game_entity name="cf_default_wall_a_l1_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_a_l1_01"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_a_l1_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.313, -3.786, 7.188"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_a_l1_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_a_l1_02"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_a_l1_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.219, -3.786, 7.188"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_a_l1_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_a_l1_03"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_a_l1_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.912, -3.786, 7.188"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_a_l1_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_a_l1_04"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_a_l1_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.083, -3.786, 7.188"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_a_l1" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform rotation_euler="0.000, 0.000, -3.142" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_cf_default_wall_a_l1"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_a_l1"/>
+				</components>
+				<children>
+					<game_entity name="cf_default_wall_a_l1_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_a_l1_01"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_a_l1_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.313, -3.786, 7.188"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_a_l1_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_a_l1_02"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_a_l1_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.219, -3.786, 7.188"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_a_l1_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_a_l1_03"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_a_l1_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.912, -3.786, 7.188"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_a_l1_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_a_l1_04"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_a_l1_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.083, -3.786, 7.188"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_wall_b_l1_02" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_default_wall_b_l1" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.010, 0.010, 0.010"/>
+				<physics shape="bo_cf_default_wall_b_l1"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_b_l1"/>
+				</components>
+				<children>
+					<game_entity name="cf_default_wall_b_l1_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_b_l1_01"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_b_l1_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.054, -3.803, 7.693"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_b_l1_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_b_l1_02"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_b_l1_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.884, -3.803, 8.225"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_b_l1_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_b_l1_03"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_b_l1_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.238, -3.803, 8.735"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_b_l1_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_b_l1_04"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_b_l1_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.316, -3.803, 9.167"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_b_l1" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform rotation_euler="0.000, 0.000, 3.141" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_cf_default_wall_b_l1"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_b_l1"/>
+				</components>
+				<children>
+					<game_entity name="cf_default_wall_b_l1_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_b_l1_01"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_b_l1_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.054, -3.803, 7.693"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_b_l1_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_b_l1_02"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_b_l1_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.884, -3.803, 8.225"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_b_l1_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_b_l1_03"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_b_l1_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.238, -3.803, 8.735"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_b_l1_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_b_l1_04"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_b_l1_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.316, -3.803, 9.167"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_wall_c_l1_02" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_default_wall_c_l1" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform position="0.010, 0.010, 0.010"/>
+				<physics shape="bo_cf_default_wall_c_l1"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_c_l1"/>
+				</components>
+				<children>
+					<game_entity name="cf_default_wall_c_l1_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_c_l1_01"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_c_l1_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.324, -3.799, 7.189"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_c_l1_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_c_l1_02"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_c_l1_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.225, -3.799, 7.189"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_c_l1_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_c_l1_03"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_c_l1_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.914, -3.799, 7.189"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_c_l1_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_c_l1_04"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_c_l1_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.072, -3.799, 7.189"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="cf_default_wall_c_l1" old_prefab_name="">
+				<flags>
+					<flag name="record_to_scene_replay" value="true"/>
+				</flags>
+				<transform rotation_euler="0.000, 0.000, -3.142" scale="-1.000, 1.000, 1.000"/>
+				<physics shape="bo_cf_default_wall_c_l1"/>
+				<components>
+					<meta_mesh_component name="cf_default_wall_c_l1"/>
+				</components>
+				<children>
+					<game_entity name="cf_default_wall_c_l1_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_c_l1_01"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_c_l1_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.324, -3.799, 7.189"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_c_l1_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_c_l1_02"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_c_l1_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.225, -3.799, 7.189"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_c_l1_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_c_l1_03"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_c_l1_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.914, -3.799, 7.189"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_default_wall_c_l1_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_default_wall_c_l1_04"/>
+						<components>
+							<meta_mesh_component name="cf_default_wall_c_l1_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_aserai_l1"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-4.072, -3.799, 7.189"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_default_louti_01" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_cf_default_louti_01"/>
+		<components>
+			<meta_mesh_component name="cf_default_louti_01"/>
+		</components>
+	</game_entity>
+</prefabs>
+

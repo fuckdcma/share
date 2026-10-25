@@ -1,0 +1,21 @@
+<Quests>
+  <Quest
+    id="1"
+    name="测试任务"
+    description="描述">
+    <Accept>
+      <Trigger type="NPC" map="test" npc_tag="balabala" />
+      <Conditions></Conditions>
+    </Accept>
+    <Complete>
+      <Trigger />
+    </Complete>
+
+    <!--
+    <Phases>
+      <phase>
+      </phase>
+    </Phases>
+    -->
+  </Quest>
+</Quests>

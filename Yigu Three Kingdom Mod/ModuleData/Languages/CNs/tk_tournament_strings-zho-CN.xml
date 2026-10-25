@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-16"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+  <tags>
+    <tag language="简体中文" />
+  </tags>
+  <strings>
+    <!-- from TournamentCampaignBehavior -->
+    <string id="LN09ZLXZ" text="加入校场演武" />
+    <string id="6bQIRaIl" text="观摩校场演武" />
+    <string id="vGF5S2hE" text="龙虎榜" />
+    <string id="5Adr6toM" text="{MENU_TEXT}" />
+    <string id="es0Y3Bxc" text="加入" />
+    <string id="3sRdGQou" text="离开" />
+
+    <!-- from FightTournamentGame -->
+    <string id="MWGATOoz" text="此次演武乃是一场多队混战，各路人马同场厮杀。" />
+    <string id="GuWWKgEm" text="你行至校场近前，耳中偶闻些许流言，说的正是此次演武大会的参赛人和奖赏。据传，此次城中有{NOBLE_COUNT}位技艺非凡的将军将要下场比试。更有官府悬下重赏，许以“{TOURNAMENT_PRIZE}”为优胜者的奖品。" />
+    <string id="mnAdqeGu" text="你行至校场近前，耳中偶闻些许流言，说的正是此次演武大会的参赛人和奖赏。只可惜，此番竟无一位将军愿意下场应战。然而，优胜者依旧可得官府许诺的{TOURNAMENT_PRIZE}为奖品。" />
+
+    <!-- from PlayerTownVisitCampaignBehavior -->
+    <string id="1PwQxaOu" text="本县似乎正在筹备一场校场演武。" />
+    <string id="8bSHlWBL" text="本县目前未举办校场演武。" />
+
+    <!-- from TournamentVM -->
+    <string id="EHkzaZBi" text="{SETTLEMENT_NAME}演武大会" />
+    <string id="TvmDFK6o" text="{REWARD}" />
+    <string id="eJgaemO5" text="赌注收益：{BET} {GOLD_ICON}" />
+    <string id="UckVajhO" text="获得声望：+ {RENOWN}" />
+    <string id="CaeFx54J" text="获得影响力：+ {INFLUENCE} {INFLUENCE_ICON}" />
+    <string id="Lp0byzGQ" text="壹" />
+    <string id="aR4e8B2A" text="贰" />
+    <string id="5QN7SFNW" text="叁" />
+    <string id="7vdgxtwo" text="肆" />
+    <string id="gj2HD7M3" text="你还有赢的机会，确定要放弃吗？" />
+    <string id="HmbvM9Na" text="你想跳过这一场演武吗？" />
+    <string id="CthDdsb6" text="魁首" />
+    <string id="DRaJ7hoz" text="优胜者是" />
+    <string id="Ooqyo9RB" text="跳过回合" />
+    <string id="L9GnQvsq" text="赌注：{BETTED_DENARS}" />
+    <string id="xzzSaN4b" text="预计：{OVERALL_EXPECTED_DENARS}" />
+    <string id="yF5fpwNE" text="总计：{TOTAL}" />
+    <string id="L7qKijnE" text="{COMPANION.NAME}赢得的{ITEM_NAME}已添加至你的物品栏。" />
+    <string id="taaNCsVZ" text="你在决赛中击败了{TOURNAMENT_FINAL_OPPONENT}，最终在此次演武中夺魁。" />
+    <string id="rmSkXZlp" text="演武大会结束了，{TOURNAMENT_FINAL_OPPONENT}在决赛中击败了你，最终在此次演武中夺魁。" />
+    <string id="YxKHEUEX" text="演武大会结束了，{TOURNAMENT_FINAL_PARTICIPANT_A}在决赛中击败了{TOURNAMENT_FINAL_PARTICIPANT_B}，最终在此次演武中夺魁。你在第{TOURNAMENT_ELIMINATED_ROUND}回合中被淘汰。" />
+    <string id="OGxk0EXC" text="演武大会结束了，{TOURNAMENT_FINAL_PARTICIPANT_A}在决赛中击败了{TOURNAMENT_FINAL_PARTICIPANT_B}，最终在此次演武中夺魁。" />
+    <string id="FD9abtTo" text='如果你赌100&lt;img src="General\Icons\Coin@2x"&gt;赢了，你会得到{NORMALIZED_EXPECTED_GOLD}&lt;img src="General\Icons\Coin@2x"&gt;' />
+    <string id="H9y9dLao" text='你可以通过下注来增加你得到的奖金。每一轮的赔率都不同，你每次可下注{MAX_AMOUNT}&lt;img src="General\Icons\Coin@2x"&gt;。' />
+    <string id="K0XVOalL" text="当前赌注" />
+    <string id="OCGaTxac" text="校场演武奖品" />
+
+    <!-- from TournamentFightMissionController -->
+    <string id="UBd0dEPp" text="演武大会结束" />
+    <string id="Jn0k20c3" text="回合结束，你挺过了演武大会的最后一回合。" />
+    <string id="wOqOQuJl" text="回合结束，你的团队挺过了演武大会的最后一回合。" />
+    <string id="uytwdSVH" text="回合结束，你成功晋级演武大会下一回合。" />
+    <string id="fkOYvnVG" text="回合结束，你的团队成功晋级演武大会下一回合。" />
+    <string id="lcVauEKV" text="回合结束，你在演武大会中被淘汰了。" />
+    <string id="MLyBN51z" text="回合结束，你的团队在演武大会中被淘汰了。" />
+
+    <!-- from TournamentBehavior -->
+    <string id="tWzLqegB" text="演武大会结束了。" />
+
+    <!-- from TournamentWonLogEntry -->
+    <!-- 如何能获取WINNER的性别？这里应该根据性别使用他/她。 -->
+    <string id="4ADQ7YZj" text="{PERSON.LINK}赢得了{TOWN}的校场演武。"/>
+    <string id="Wec8VlAQ" text="恭喜足下，在{TOURNAMENT_TOWN}的演武大会中大获全胜，实在令人钦佩！" />
+    <string id="t3FQbYU6" text="听闻你在{TOURNAMENT_TOWN}的演武大会中夺魁，着实出人意料。呵，说来这等事，总归也要仗些天时人和，成败有时亦全凭天意。" />
+    <string id="y9bafYom" text="恭喜足下，在演武大会上独占鳌头，果然名不虚传！" />
+    <string id="csxzwd17" text="嘿，这演武大会你竟也能夺魁！说到底，还是靠着三分运气吧。像我这般实打实的，哪能比得上你这般天公赏饭吃的啊！" />
+    <string id="kBcfMYzE" text="在{TOURNAMENT_TOWN}的演武大会上得以与你一较高下，真是“不打不相识”！如此英豪，令人佩服不已！" />
+    <string id="eZh2qzeR" text="一提起{TOURNAMENT_TOWN}那场演武大会，便觉滑稽。那群参赛的，好不知天高地厚，竟还真以为能与将军我一较高下，倒叫人啼笑皆非！" />
+    <string id="iAKHTPlP" text="能在这场演武大会上与你交手，也算三生有幸了，在下佩服你的身手！" />
+    <string id="eHuiRxC4" text="这演武大会里的那些人，不过是些只配当正卒的脚色罢了！将军我可是从刀山火海里摸爬滚打出来的，刀口上讨生活，怎能与他们那等人同日而语？" />
+    <string id="k50ZjzZ7" text="自那{TOURNAMENT_TOWN}演武大会一别，便未再见足下身影。但愿能有缘再战，再一睹足下风采。" />
+    <string id="aKD9kfTI" text="想必足下也记得，{TOURNAMENT_WINNER}在{TOURNAMENT_TOWN}那场演武大会中拿了优胜……恕在下直言，就他也配？" />
+    <string id="hQlpbksp" text="回想起{TOURNAMENT_TOWN}的那场演武大会，实在是叫人失望至极！就凭{WINNER_NAME}整日挥霍无度的德行，只怕那赏银落他手里，早晚要被他折腾得一文不剩！" />
+    <string id="w6CzYbRH" text="那日演武大会上与足下一战，至今记忆犹新。今日得见，足下气色更胜往日，可见修养得当。" />
+    <string id="D5SIBhjl" text="足下可还记得，那日演武大会上，{WINNER_NAME}夺魁之事吗？阿呀，真是教人气煞！就凭{WINNER_NAME}那三脚猫的功夫，哪里配得上头筹？偏偏运气好，竟一路蒙混过去，真叫人不服！" /> 
+    <string id="a6EBXT6C" text="回想起{TOURNAMENT_TOWN}的那场演武大会，{WINNER_NAME}竟也拿了头筹，实在是新奇！我只待他在战场上大败而归，好教他清醒清醒！" />
+
+    <!-- from Native\ModuleData\mpclassdivisions.xml -->
+    <string id="IHKXNP9H" text="军曹掾" /> <!-- 原为竞技大赛管理员，与竞技场老板（军曹掾）不同，但暂时不知道改成什么 -->
+
+    <!-- Not Used In Game ? -->
+    <string id="FRepQsmO" text="The tournament will be a joust." />
+    <string id="IwpFM2CJ" text="The tournament will be a horse race." />
+    <string id="zNHtgL0S" text="The tournament will be an archery contest." />
+    <string id="5SQaiYXi" text="FOUL! No hitting your opponent's horse. You have been disqualified!" />
+    <string id="BsdOl4He" text="FOUL! Your opponent hit your horse. {?OPPONENT_GENDER}He{?}She{\?} has been disqualified!" />
+    <string id="GYhHacVk" text="You gained 1 point for the hit!" />
+    <string id="wjuieMsE" text="Your opponent gained 1 point for the hit!" />
+    <string id="FbcC2loc" text="You have been knocked unconscious and your opponent is granted victory!" />
+    <string id="Svem1NiV" text="Your opponent has been knocked unconscious and you are the winner!" />
+    <string id="a10WGnBr" text="FOUL! No fighting outside of the joust. You have been disqualified!" />
+    <string id="02E0oSJm" text="FOUL! Your opponent was fighting outside the joust. {?OPPONENT_GENDER}He{?}She{\?} has been disqualified!" />
+    <string id="yrvH6Oa1" text="Wait in the starting position!" />
+    <string id="pB5anEQq" text="Move to the starting position" />
+    <string id="LJwKdMdw" text="Wait for your opponent to get into position" />
+    <string id="mDbaNQay" text="Ride forth and attempt to strike your opponent!" />
+    <string id="9ECleB7I" text="Duel your opponent on foot for victory!" />
+    <string id="65QqsaKe" text="You are on the wrong side!" />
+    <string id="uOqdr7FM" text="Congratulations! You have triumphed over your opponent!" />
+    <string id="k6tT1vIg" text="The joust is over and your opponent has bested you this day..." />
+  </strings>
+</base>

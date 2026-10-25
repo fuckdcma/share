@@ -1,0 +1,133 @@
+<Prefab>
+  <Constants>
+    
+    <Constant Name="AlternativeUsageButton.Width" BrushLayer="Default" BrushName="MPLobby.AlternativeUsageButton.Previous" BrushValueType="Width" />
+    <Constant Name="AlternativeUsageButton.Height" BrushLayer="Default" BrushName="MPLobby.AlternativeUsageButton.Previous" BrushValueType="Height" />
+
+  </Constants>
+	<Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent">
+      <Children>
+          <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="40" MarginLeft="10" MarginRight="30" MarginTop="5" IsVisible="false">
+            <Children>
+              <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="MPLobby.Armory.Stats.FactionTitleText" Text="@FactionDescription" />
+              <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" Brush="MPLobby.Armory.Stats.FactionValueText" Text="@FactionName" />
+            </Children>
+          </ListPanel>
+          <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="130" MarginLeft="5" MarginRight="25" MarginTop="2" Brush="MPLobby.Armory.Stats.FlavorText" Text="@FlavorText" />
+          <Widget DataSource="{HeroInformation}" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="60" MarginRight="10" MarginTop="120">
+            <Children>
+              <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" VerticalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom">
+                <Children>
+                  <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="15">
+                    <Children>
+                      <NavigationScopeTargeter ScopeID="ArmoryHeroStatsScope" ScopeParent="..\HeroStatsContainer" ScopeMovements="Horizontal" />
+                      <NavigatableListPanel Id="HeroStatsContainer" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight">
+                        <Children>
+                          <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="60" HorizontalAlignment="Center" MarginLeft="15" MarginRight="15">
+                            <Children>
+                              <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="28" SuggestedHeight="34" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="MPLobby\Armory\icon_health" Color="#F4E1C4FF" />
+                              <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPClassLoadout.ClassStatText" IntText="@HitPoints" />
+                              <HintWidget DataSource="{HitPointsHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                            </Children>
+                          </Widget>
+                          <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="60" HorizontalAlignment="Center" MarginLeft="15" MarginRight="15" >
+                            <Children>
+                              <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="22" SuggestedHeight="38" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="MPLobby\Armory\icon_armor" Color="#F4E1C4FF" />
+                              <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPClassLoadout.ClassStatText" IntText="@Armor" />
+                              <HintWidget DataSource="{ArmorHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                            </Children>
+                          </Widget>
+                          <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="60" HorizontalAlignment="Center" MarginLeft="15" MarginRight="15" >
+                            <Children>
+                              <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="40" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="MPLobby\Armory\icon_movement_speed" Color="#F4E1C4FF" />
+                              <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPClassLoadout.ClassStatText" IntText="@MovementSpeed" />
+                              <HintWidget DataSource="{MovementSpeedHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                            </Children>
+                          </Widget>
+                          <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="90" SuggestedHeight="60" HorizontalAlignment="Center" MarginLeft="15" MarginRight="15" >
+                            <Children>
+                              <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="33" SuggestedHeight="40" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="MPLobby\Armory\icon_troop_count" Color="#F4E1C4FF" />
+                              <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="60" SuggestedHeight="60" HorizontalAlignment="Right" VerticalAlignment="Center" Brush="MPClassLoadout.ClassStatText" IntText="@ArmySize" />
+                              <HintWidget DataSource="{ArmySizeHint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+                            </Children>
+                          </Widget>
+                        </Children>
+                      </NavigatableListPanel>
+                    </Children>
+                  </Widget>
+                </Children>
+              </ListPanel>
+            </Children>
+          </Widget>
+          <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="20" PositionXOffset="-10" MarginTop="200" ClipContents="true">
+            <Children>
+              <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1288" HorizontalAlignment="Center" Sprite="MPLobby\Armory\divider_notched_for_item_icons" />
+              <Widget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="1288" HorizontalAlignment="Center" Sprite="MPLobby\Armory\divider_notched_for_item_icons" VerticalFlip="true" />
+            </Children>
+          </Widget>
+          <Widget DataSource="{HeroInformation}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginRight="15" MarginTop="240" >
+            <Children>
+              <NavigationScopeTargeter ScopeID="ArmoryStatsItemTypesScope" ScopeParent="..\ItemTabList" ScopeMovements="Horizontal" />
+              <NavigatableListPanel Id="ItemTabList" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="60" HorizontalAlignment="Center" MarginLeft="20" MarginRight="20">
+                <Children>
+                  <MPLobbyItemTab DataSource="{Item1}" WidthSizePolicy="Fixed" SuggestedWidth="100" />
+                  <MPLobbyItemTab DataSource="{Item2}" WidthSizePolicy="Fixed" SuggestedWidth="100" />
+                  <MPLobbyItemTab DataSource="{Item3}" WidthSizePolicy="Fixed" SuggestedWidth="100" />
+                  <MPLobbyItemTab DataSource="{Item4}" WidthSizePolicy="Fixed" SuggestedWidth="100" />
+                  <MPLobbyItemTab DataSource="{ItemHorse}" WidthSizePolicy="Fixed" SuggestedWidth="100" />
+                </Children>
+              </NavigatableListPanel>
+              <Widget DataSource="{ItemSelected}" WidthSizePolicy="StretchToParent" SuggestedHeight="500" HorizontalAlignment="Center" MarginLeft="10" MarginRight="5" MarginTop="70">
+                <Children>
+                  <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="350" SuggestedHeight="187" HorizontalAlignment="Center" Sprite="MPLobby\Armory\item_portrait_frame" AlphaFactor="0.6">
+                    <Children>
+                      <ImageIdentifierWidget DataSource="{Icon}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="6" MarginRight="6" MarginTop="6" MarginBottom="6" AdditionalArgs="@AdditionalArgs" ImageId="@Id" TextureProviderName="@TextureProviderName" IsBig="true" MaterialAlphaFactor="0.8" HideWhenNull="true"/>
+                    </Children>
+                  </Widget>
+                  
+                  <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="75" VerticalAlignment="Top" MarginTop="192" Brush="MPClassLoadout.ItemText" Text="@Name" />
+                  
+                  <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsVisible="@HasAnyAlternativeUsage" HorizontalAlignment="Center" MarginTop="250">
+                    <Children>
+                      <NavigationScopeTargeter ScopeID="ArmoryStatsWeaponAlternateUsageSelectorScope" ScopeParent="..\AlternateUsageSelector" ScopeMovements="Horizontal" />
+                      <ListPanel DataSource="{AlternativeUsageSelector}" Id="AlternateUsageSelector" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="30">
+                        <Children>
+                          <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!AlternativeUsageButton.Width" SuggestedHeight="!AlternativeUsageButton.Height" VerticalAlignment="Center" MarginRight="10" Brush="MPLobby.AlternativeUsageButton.Previous" Command.Click="ExecuteSelectPreviousItem" IsHidden="@HasSingleItem" GamepadNavigationIndex="0" />
+                          <TextWidget DataSource="{SelectedItem}" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" PositionYOffset="1" Brush="MPClassLoadout.AlternativeUsageText" Text="@StringItem" />
+                          <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!AlternativeUsageButton.Width" SuggestedHeight="!AlternativeUsageButton.Height" VerticalAlignment="Center" MarginLeft="10" Brush="MPLobby.AlternativeUsageButton.Next" Command.Click="ExecuteSelectNextItem" IsHidden="@HasSingleItem" GamepadNavigationIndex="1" />
+                        </Children>
+                      </ListPanel>
+                    </Children>
+                  </Widget>
+                  
+                  <ListPanel DataSource="{PropertyList}" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginTop="290" StackLayout.LayoutMethod="VerticalTopToBottom">
+                    <ItemTemplate>
+                      <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="34">
+                        <Children>
+                          <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="146" HorizontalAlignment="Left" Brush="MPClassLoadout.ItemStat.NameText" Text="@NameText" />
+                          <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="225" SuggestedHeight="3" VerticalAlignment="Center" MarginLeft="163" Sprite="MPLobby\Armory\item_stats_progress_canvas" />
+                          <FillBar WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="225" SuggestedHeight="7" VerticalAlignment="Center" MarginLeft="163" Brush="MPLobby.ItemStat.FillBar" CurrentAmount="@Permille" InitialAmount="@Permille" MaxAmount="1000" />
+                          <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="67" HorizontalAlignment="Right" PositionYOffset="-1" Brush="MPClassLoadout.ItemStat.ValueText" IntText="@Value" />
+                        </Children>
+                      </Widget>
+                    </ItemTemplate>
+                  </ListPanel>
+
+                  <ListPanel DataSource="{ItemInformationList}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" MarginRight="40" StackLayout.LayoutMethod="VerticalTopToBottom" >
+                    <ItemTemplate>
+                      <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" MarginBottom="10" Sprite="@Icon">
+                        <Children>
+                          <HintWidget DataSource="{Hint}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" IsEnabled="false" />
+                        </Children>
+                      </Widget>
+                    </ItemTemplate>
+                  </ListPanel>
+                </Children>
+              </Widget>
+            </Children>
+          </Widget>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

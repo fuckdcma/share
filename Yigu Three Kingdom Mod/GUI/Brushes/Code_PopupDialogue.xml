@@ -1,0 +1,72 @@
+<Brushes>
+  <Brush Name="Dialogue.Popup" Font="Galahad" TextHorizontalAlignment="Left">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="DialogPopup\dialog_bg_1" HorizontalFlip="true" />
+      <BrushLayer Name="Flipped" Sprite="DialogPopup\dialog_bg_1" HorizontalFlip="false" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" FontColor="#3CB371FF" />
+      <Style Name="Flipped" FontColor="#E55454FF" />
+    </Styles>
+  </Brush>
+  <Brush Name="DialogPopup\dialog_background" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="DialogPopup\dialog_background" />
+    </Layers>
+  </Brush>
+  <Brush Name="DialogPopup\dialog_avatar_pane" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="DialogPopup\dialog_avatar_pane" />
+    </Layers>
+  </Brush>
+  <Brush Name="DialogPopup\dialog_background_frame" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="DialogPopup\dialog_background_frame" />
+    </Layers>
+  </Brush>
+  <Brush Name="DialogPopup\dialog_name_pane" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="DialogPopup\dialog_name_pane" />
+    </Layers>
+  </Brush>
+  <Brush Name="DialogPopup\dialog_name_bg_1" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="DialogPopup\dialog_name_bg_1" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" FontColor="#D8CCC9FF" />
+    </Styles>
+  </Brush>
+  <Brush Name="DialogPopup\dialog_name_bg_2" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="DialogPopup\dialog_name_bg_2" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" FontColor="#D8CCC9FF" />
+    </Styles>
+  </Brush>
+  <Brush Name="MapEvent.ShootingStart" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="MapEvent\Shooting_Star" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" FontColor="#3CB371FF" />
+    </Styles>
+  </Brush>
+  <Brush Name="MapEvent.Pillage" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="MapEvent\Pillage" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" FontColor="#3CB371FF" />
+    </Styles>
+  </Brush>
+  <Brush Name="MapEvent.ArmyAmbush" Font="Galahad" TextHorizontalAlignment="Center">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="MapEvent\Army_Ambush" />
+    </Layers>
+    <Styles>
+      <Style Name="Default" FontColor="#3CB371FF" />
+    </Styles>
+  </Brush>
+</Brushes>

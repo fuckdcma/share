@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LocationComplexTemplates>
+	<LocationComplexTemplate
+		id="town_complex">
+		<Location
+			id="port"
+			name="{=narBTooi}Port"
+			scene_name="empire_interior_tavern_a"
+			indoor="true"
+			max_prosperity="30"
+			ai_can_enter="CanNever"
+			ai_can_exit="CanNever"
+			player_can_enter="CanIfSettlementAccessModelLetsPlayer"
+			player_can_see="CanAlways" />
+		<Passages>
+			<Passage
+				location_1="center"
+				location_2="port" />
+		</Passages>
+	</LocationComplexTemplate>
+</LocationComplexTemplates>

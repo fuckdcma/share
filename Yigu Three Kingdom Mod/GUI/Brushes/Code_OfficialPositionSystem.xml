@@ -1,0 +1,66 @@
+<Brushes>
+  <Brush Name="OfficialPosition.SubPage.Element">
+    <Layers>
+      <BrushLayer Name="Default" Sprite="OfficialPosition\bg_sangong" />
+      <BrushLayer Name="Frame" ExtendLeft="11" ExtendRight="12" ExtendTop="12" ExtendBottom="12" Sprite="subpage_slick_frame_9" />
+    </Layers>
+    <Styles>
+      <Style Name="Default">
+        <BrushLayer Name="Default" AlphaFactor="0.7" />
+        <BrushLayer Name="Frame" />
+      </Style>
+      <Style Name="Hovered">
+        <BrushLayer Name="Default" AlphaFactor="1.5" />
+        <BrushLayer Name="Frame" />
+      </Style>
+      <Style Name="Pressed">
+        <BrushLayer Name="Default" AlphaFactor="0.85" />
+        <BrushLayer Name="Frame" />
+      </Style>
+      <Style Name="Disabled">
+        <BrushLayer Name="Default" AlphaFactor="0.7" />
+        <BrushLayer Name="Frame" />
+      </Style>
+    </Styles>
+    <SoundProperties>
+      <EventSounds>
+        <EventSound EventName="ConnectedToRoot" Audio="empty" />
+      </EventSounds>
+    </SoundProperties>
+  </Brush>
+  <Brush Name="OfficialPosition.SubPage.Element.OPName.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#E2D5DBFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="18" />
+    </Styles>
+  </Brush>
+  <Brush Name="OfficialPosition.SubPage.Element.ZhuGongName.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#E3A12CFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="18" />
+    </Styles>
+  </Brush>
+  <Brush Name="OfficialPosition.SubPage.Element.WuName.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#E3572CFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="18" />
+    </Styles>
+  </Brush>
+  <Brush Name="OfficialPosition.SubPage.Element.WenName.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#E1D2BAFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="18" />
+    </Styles>
+  </Brush>
+  <Brush Name="OfficialPosition.SubPage.Element.CourtOPHint.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#E1D2BAFF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="16" />
+    </Styles>
+  </Brush>
+  <Brush Name="OfficialPosition.SubPage.Element.NobleOPHint.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#68E677FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="16" />
+    </Styles>
+  </Brush>
+  <Brush Name="OfficialPosition.SubPage.Element.DuduOPHint.Text" Font="FiraSansExtraCondensed-Regular" TextHorizontalAlignment="Center" TextVerticalAlignment="Center">
+    <Styles>
+      <Style Name="Default" FontColor="#EA4848FF" TextGlowColor="#000000FF" TextOutlineColor="#FFFFFF00" TextOutlineAmount="0" TextGlowRadius="0" TextBlur="0" FontSize="16" />
+    </Styles>
+  </Brush>
+</Brushes>

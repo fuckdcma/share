@@ -1,0 +1,48 @@
+<Prefab>
+  <Constants>
+    <Constant Name="CloseButton.Width" BrushLayer="Default" BrushName="MPLobby.Popup.CloseButton" BrushValueType="Width" />
+    <Constant Name="CloseButton.Height" BrushLayer="Default" BrushName="MPLobby.Popup.CloseButton" BrushValueType="Height" />
+    <Constant Name="DoneButton.Width" BrushLayer="Default" BrushName="MPLobby.Popup.DoneButton" BrushValueType="Width" />
+    <Constant Name="DoneButton.Height" BrushLayer="Default" BrushName="MPLobby.Popup.DoneButton" BrushValueType="Height" />
+  </Constants>
+  <Window>
+    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.8">
+      <Children>
+				<NavigationForcedScopeCollectionTargeter CollectionID="LobbyPopupCollection" CollectionParent="..\."/>
+        <ListPanel StackLayout.LayoutMethod="VerticalTopToBottom" WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="800" HorizontalAlignment="Center" VerticalAlignment="Center">
+          <Children>
+            <TextWidget Text="@Title" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginBottom="20" Brush="MPLobby.Popup.HeaderText" />
+            <TextWidget Text="@Message" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.Popup.MessageText" />
+
+						<NavigationScopeTargeter ScopeID="LobbyPopupActionsScope" ScopeParent="..\Actions" ScopeMovements="Horizontal" />
+            <ListPanel Id="Actions" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginTop="30" IsVisible="@IsInquiry">
+              <Children>
+                <ButtonWidget Command.Click="ExecuteAccept" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!DoneButton.Width" SuggestedHeight="!DoneButton.Height" MarginRight="20" Brush="MPLobby.Popup.DoneButton" GamepadNavigationIndex="0">
+                  <Children>
+                    <InputKeyVisualWidget DataSource="{DoneInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                  </Children>
+                </ButtonWidget>
+                <ButtonWidget Command.Click="ExecuteDecline" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CloseButton.Width" SuggestedHeight="!CloseButton.Height" MarginLeft="20" Brush="MPLobby.Popup.CloseButton" GamepadNavigationIndex="1">
+                  <Children>
+                    <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </ListPanel>
+
+            <NavigationScopeTargeter ScopeID="LobbyPopupNoInquiryActionScope" ScopeParent="..\NoInquiryAction" ScopeMovements="Horizontal" />
+            <ListPanel Id="NoInquiryAction" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginTop="30" IsHidden="@IsInquiry">
+              <Children>
+                <ButtonWidget Command.Click="ExecuteDecline" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!CloseButton.Width" SuggestedHeight="!CloseButton.Height" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginTop="30" Brush="MPLobby.Popup.CloseButton" GamepadNavigationIndex="0">
+                  <Children>
+                    <InputKeyVisualWidget DataSource="{CancelInputKey}" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="30" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                  </Children>
+                </ButtonWidget>
+              </Children>
+            </ListPanel>
+          </Children>
+        </ListPanel>
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

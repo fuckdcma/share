@@ -1,0 +1,82 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="DataSource" DefaultValue="" />
+    <Parameter Name="TitleText" DefaultValue="" />
+    <Parameter Name="DescriptionText" DefaultValue="" />
+    <Parameter Name="TableauWidth" DefaultValue="400" />
+    <Parameter Name="TableauHeight" DefaultValue="700" />
+    <Parameter Name="FrameWidth" DefaultValue="300" />
+    <Parameter Name="FrameExtendTop" DefaultValue="20" />
+    <Parameter Name="FrameExtendBottom" DefaultValue="0" />
+    <Parameter Name="ShowCompassElement" DefaultValue="true" />
+    <Parameter Name="TitleFontSize" DefaultValue="28" />
+    <Parameter Name="TextDataSource" DefaultValue="{..}" />
+  </Parameters>
+	<Window>
+
+    <Widget DataSource="*DataSource" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren">
+      <Children>
+
+        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="*FrameWidth" SuggestedHeight="75" VerticalAlignment="Top" HorizontalAlignment="Center" Sprite="BlankWhiteSquare_9" ExtendTop="*FrameExtendTop" ExtendBottom="*FrameExtendBottom" Color="#000000AA">
+          <Children>
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="rounded_frame_9" ExtendTop="*FrameExtendTop" ExtendBottom="*FrameExtendBottom" Color="#A96A16FF" />
+
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom" VerticalAlignment="Center" >
+              <Children>
+                
+                <!-- Avatar -->
+                <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="80" SuggestedHeight="80" HorizontalAlignment="Center" UpdateChildrenStates="true">
+                  <Children>
+                    <ImageIdentifierWidget DataSource="{Avatar}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="70" HorizontalAlignment="Center" VerticalAlignment="Center" PositionYOffset="-45" AdditionalArgs="@AdditionalArgs" ImageId="@Id" TextureProviderName="@TextureProviderName" MaterialAlphaFactor="0.7" />
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPGeneral\MPScoreboard\steam_profile_frame" PositionYOffset="-45" AlphaFactor="0.8" />
+                      
+                    <!-- Compass Element -->
+                    <Widget DataSource="{CompassElement}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="30" SuggestedHeight="30" HorizontalAlignment="Right" PositionXOffset="15" PositionYOffset="0" VerticalAlignment="Top" IsVisible="*ShowCompassElement">
+                      <Children>
+                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="-2" MarginBottom="-2" MarginLeft="-2" MarginRight="-2" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="BlankWhiteCircle" Color="@Color2" AlphaFactor="0.8"/>
+                        <ImageIdentifierWidget DataSource="{Banner}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginTop="1.5" MarginBottom="1.5" MarginLeft="1.5" MarginRight="1.5"  HorizontalAlignment="Center" VerticalAlignment="Center" ImageId="@Id" AdditionalArgs="@AdditionalArgs" TextureProviderName="@TextureProviderName" CircularClipEnabled="true" IsCircularClipRadiusHalfOfHeight="true"/>
+                      </Children>
+                    </Widget>
+
+                    <MultiplayerTroopTypeIconWidget DataSource="{CompassElement}" Id="IconContainer" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="31" SuggestedHeight="33" ScaleFactor="1.2" HorizontalAlignment="Left" PositionXOffset="-18" PositionYOffset="-5" VerticalAlignment="Top" ForegroundWidget="IconForeground" IconSpriteType="@IconSpriteType" Color="@Color" UseOriginalSize="false">
+                      <Children>
+                        <Widget Id="IconForeground" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Color="@Color2"/>
+                      </Children>
+                    </MultiplayerTroopTypeIconWidget>
+
+                  </Children>
+                </Widget>
+
+                <!-- Information Texts -->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" PositionYOffset="-40" VerticalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom">
+                  <Children>
+                    <ScrollingRichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" MarginLeft="10" MarginRight="10" Brush="MPHUD.DeathCard.Text" Brush.TextHorizontalAlignment="Center" Brush.FontSize="30" Text="@Name" DefaultTextHorizontalAlignment="Center" />
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                      <Children>
+                        <ScrollingRichTextWidget DataSource="*TextDataSource" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPHUD.EndOfBattle.Standing" Brush.TextHorizontalAlignment="Center" Brush.FontSize="*TitleFontSize" Text="*TitleText" DefaultTextHorizontalAlignment="Center"/>
+                      </Children>
+                    </Widget>
+
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                      <Children>
+                        <ScrollingRichTextWidget DataSource="*TextDataSource" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPHUD.DeathCard.Small.Text" Brush.TextHorizontalAlignment="Center" Brush.FontSize="20" Text="*DescriptionText" DefaultTextHorizontalAlignment="Center"/>
+                      </Children>
+                    </Widget>
+
+                  </Children>
+                </ListPanel>
+
+              </Children>
+            </ListPanel>
+                
+          </Children>
+        </Widget>
+
+        <!-- Selected Character -->
+        <CharacterTableauWidget DataSource="{Preview\HeroVisual}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="*TableauWidth" SuggestedHeight="*TableauHeight" HorizontalAlignment="Center" VerticalAlignment="Bottom" PositionYOffset="-10" BannerCodeText="@BannerCodeText" BodyProperties="@BodyProperties" CharStringId="@CharStringId" Race="@Race" EquipmentCode="@EquipmentCode" IsFemale="@IsFemale" MountCreationKey="@MountCreationKey" StanceIndex="@StanceIndex" ArmorColor1="@ArmorColor1" ArmorColor2="@ArmorColor2" DoNotUseCustomScale="false" CustomRenderScale="0.66"/>
+
+      </Children>
+    </Widget>
+
+	</Window>
+</Prefab>

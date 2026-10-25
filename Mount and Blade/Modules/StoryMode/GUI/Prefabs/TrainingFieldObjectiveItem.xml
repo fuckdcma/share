@@ -1,0 +1,29 @@
+<Prefab>
+  <Constants>
+
+
+  </Constants>
+  <Window>
+    <ListPanel MarginLeft="20" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+      <Children>
+
+        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" DoNotPassEventsToChildren="true">
+          <Children>
+            <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="15" SuggestedHeight="15" Brush="Objective.Completion" MarginTop="5" IsSelected="@IsActive" IsDisabled="@IsCompleted"/>
+            <ButtonWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IsSelected="@IsActive" IsDisabled="@IsCompleted" MarginTop="5" UpdateChildrenStates="true" MarginLeft="10">
+              <Children>
+                <TextWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="300" Text="@ObjectiveText" ClipContents="false" Brush="Objective.Text"/>
+              </Children>
+            </ButtonWidget>
+          </Children>
+        </ListPanel>
+
+        <ListPanel MarginLeft="20" DataSource="{ObjectiveItems}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <ItemTemplate>
+            <TrainingFieldObjectiveItem />
+          </ItemTemplate>
+        </ListPanel>
+      </Children>
+    </ListPanel>
+  </Window>
+</Prefab>

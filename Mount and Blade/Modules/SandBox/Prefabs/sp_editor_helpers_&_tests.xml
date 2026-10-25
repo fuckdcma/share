@@ -1,0 +1,1221 @@
+<prefabs>
+	<game_entity old_prefab_name="" name="caravan_test_prop_compact">
+		<levels>
+			<level name="base"/>
+		</levels>
+		<children>
+			<game_entity old_prefab_name="" name="merchandise_gold">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<children>
+					<game_entity old_prefab_name="" name="merchandise_hides_b">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="merchandise_hides_b"/>
+						</components>
+						<physics mass="1.000" shape="bo_merchandise_hides_b"/>
+						<transform scale="0.940, 0.940, 0.940" rotation_euler="0.000, 0.000, -1.238" position="-0.719, 0.414, 0.000"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="merchandise_iron_a">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="merchandise_iron_a"/>
+						</components>
+						<physics mass="1.000" shape="bo_merchandise_gold"/>
+						<transform scale="0.781, 0.781, 0.781" rotation_euler="0.000, 0.000, 0.000" position="-0.591, -0.134, 0.000"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="merchandise_iron_a">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="merchandise_iron_a"/>
+						</components>
+						<physics mass="1.000" shape="bo_merchandise_gold"/>
+						<transform scale="0.940, 0.940, 0.940" rotation_euler="-0.080, -0.231, -0.759" position="-0.219, -0.687, 0.017"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="merchandise_gold"/>
+				</components>
+				<physics mass="1.000" shape="bo_merchandise_gold"/>
+				<transform scale="1.064, 1.064, 1.064" rotation_euler="0.000, 0.000, 0.802" position="-2.754, -7.744, 0.000"/>
+			</game_entity>
+			<game_entity old_prefab_name="" name="bd_basket_aserai_a">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<children>
+					<game_entity old_prefab_name="" name="bd_basket_aserai_d">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_basket_aserai_d"/>
+						</components>
+						<physics mass="1.000" shape="bo_bd_basket_aserai_d"/>
+						<transform rotation_euler="1.323, -1.171, 2.113" position="-0.455, -0.480, 0.221"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_basket_aserai_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_basket_aserai_c"/>
+						</components>
+						<physics mass="1.000" shape="bo_bd_basket_aserai_c"/>
+						<transform rotation_euler="1.199, 0.000, 0.000" position="0.617, 0.145, 0.110"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_basket_aserai_d">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_basket_aserai_d"/>
+						</components>
+						<physics mass="1.000" shape="bo_bd_basket_aserai_d"/>
+						<transform rotation_euler="0.278, -0.255, 0.047" position="0.557, 0.597, 0.000"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="bd_basket_aserai_a"/>
+				</components>
+				<physics mass="1.000" shape="bo_bd_basket_aserai_a"/>
+				<transform rotation_euler="0.000, 0.000, 1.374" position="-9.980, -6.137, 0.000"/>
+				<flags>
+					<flag value="true" name="align_to_terrain"/>
+				</flags>
+			</game_entity>
+			<game_entity old_prefab_name="" name="crate_a">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<children>
+					<game_entity old_prefab_name="" name="market_apple_crate">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="market_apple_crate"/>
+						</components>
+						<physics mass="1.000" shape="bo_market_apple_crate"/>
+						<transform scale="1.238, 1.238, 1.238" rotation_euler="0.000, 0.000, 1.355" position="-1.071, -0.120, 0.869"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="crate_a">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="crate_a">
+								<mesh material="interior_wood_a" name="crate_a.8"/>
+								<mesh material="interior_wood_a" name="crate_a.4"/>
+							</meta_mesh_component>
+						</components>
+						<physics mass="1.000" shape="bo_crate_a"/>
+						<transform scale="1.238, 1.238, 1.238" rotation_euler="0.000, 0.000, 0.397" position="-0.944, -0.184, 0.000"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="camel_load">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="camel_saddle_a"/>
+						</components>
+						<physics mass="1.000"/>
+						<transform scale="1.540, 1.540, 1.540" rotation_euler="0.040, 0.000, 1.892" position="1.490, 0.593, -2.087"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="crate_a">
+						<mesh material="interior_wood_a" name="crate_a.8"/>
+						<mesh material="interior_wood_a" name="crate_a.4"/>
+					</meta_mesh_component>
+				</components>
+				<physics mass="1.000" shape="bo_crate_a"/>
+				<transform scale="0.808, 0.808, 0.808" rotation_euler="0.000, 0.000, -0.341" position="-7.040, -3.279, 0.000"/>
+				<flags>
+					<flag value="true" name="align_to_terrain"/>
+				</flags>
+			</game_entity>
+			<game_entity old_prefab_name="" name="bd_basket_aserai_c">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<children>
+					<game_entity old_prefab_name="" name="bd_basket_aserai_a">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_basket_aserai_a"/>
+						</components>
+						<physics mass="1.000" shape="bo_bd_basket_aserai_a"/>
+						<transform scale="0.839, 0.839, 0.839" rotation_euler="-1.511, 0.000, -1.204" position="-1.020, 0.258, 0.232"/>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="bd_basket_aserai_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_bd_basket_aserai_c"/>
+				<transform scale="0.887, 0.887, 0.887" rotation_euler="0.000, 0.000, 2.578" position="-12.074, -4.611, 0.000"/>
+				<flags>
+					<flag value="true" name="align_to_terrain"/>
+				</flags>
+			</game_entity>
+			<game_entity old_prefab_name="" name="shop_prop_merchantleather_c">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<children>
+					<game_entity old_prefab_name="" name="shop_prop_merchantleather_b">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantleather_b"/>
+						</components>
+						<physics mass="1.000" shape="bo_shop_prop_merchantleather_b"/>
+						<transform scale="1.212, 1.212, 1.212" rotation_euler="0.000, 0.000, 0.108" position="-0.631, -1.425, 0.000"/>
+						<tags>
+							<tag name="b"/>
+							<tag name="shop_prop"/>
+						</tags>
+					</game_entity>
+					<game_entity old_prefab_name="" name="shop_prop_merchantleather_b">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantleather_b"/>
+						</components>
+						<physics mass="1.000" shape="bo_shop_prop_merchantleather_b"/>
+						<transform scale="1.212, 1.212, 1.212" rotation_euler="0.000, 0.000, 0.523" position="0.711, 1.489, 0.000"/>
+						<tags>
+							<tag name="b"/>
+							<tag name="shop_prop"/>
+						</tags>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantleather_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_shop_prop_merchantleather_c"/>
+				<transform scale="0.825, 0.825, 0.825" rotation_euler="0.000, 0.000, 0.807" position="-0.734, -4.700, 0.000"/>
+				<tags>
+					<tag name="c"/>
+					<tag name="shop_prop"/>
+				</tags>
+				<flags>
+					<flag value="true" name="align_to_terrain"/>
+				</flags>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.564" position="-1.546, -6.591, -0.011"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="shop_prop_merchantweavery_linen_c">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<children>
+					<game_entity old_prefab_name="" name="merchandise_velvet">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="merchandise_velvet"/>
+						</components>
+						<physics mass="1.000" shape="bo_merchandise_velvet"/>
+						<transform scale="0.914, 0.914, 0.914" rotation_euler="-0.273, -0.420, -1.938" position="-0.014, 1.309, 0.634"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="shop_prop_merchantweavery_velvet_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantweavery_velvet_c"/>
+						</components>
+						<physics mass="1.000" shape="bo_shop_prop_merchantweavery_linen_c"/>
+						<transform scale="0.753, 0.753, 0.753" rotation_euler="0.000, 0.000, 2.372" position="-0.280, 1.525, 0.000"/>
+						<tags>
+							<tag name="c"/>
+							<tag name="shop_prop"/>
+						</tags>
+					</game_entity>
+				</children>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantweavery_linen_c"/>
+				</components>
+				<physics mass="1.000" shape="bo_shop_prop_merchantweavery_linen_c"/>
+				<transform scale="0.924, 0.924, 0.924" rotation_euler="0.000, 0.000, 2.531" position="6.471, -6.301, 0.000"/>
+				<tags>
+					<tag name="c"/>
+					<tag name="shop_prop"/>
+				</tags>
+				<flags>
+					<flag value="true" name="align_to_terrain"/>
+				</flags>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -0.226" position="-7.189, -7.497, -0.011"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, 0.311" position="2.271, -10.058, -0.011"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -0.015" position="4.617, -4.152, -0.011"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -0.226" position="-14.581, -6.085, -0.011"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.189" position="-3.474, -4.214, 0.000"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -0.516" position="7.862, -11.001, -0.011"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -1.876" position="0.103, -0.540, -0.011"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity visible="false" old_prefab_name="" name="CaravanTacticalPosition">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable value="DifficultTerrain" name="_tacticalRegionMembership"/>
+							<variable value="SpecialMissionPosition" name="_tacticalPositionType"/>
+							<variable value="false" name="_isOuterEdge"/>
+							<variable value="true" name="_isInsurmountable"/>
+							<variable value="0.000" name="_slope"/>
+							<variable value="20.000" name="_width"/>
+						</variables>
+					</script>
+				</scripts>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="20.000, 1.000, 1.000" rotation_euler="0.000, 0.000, 3.104" position="-2.296, -2.613, 0.000"/>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="caravan_animal_spawn_point">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -2.151" position="-10.868, -2.375, -0.011"/>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+			<game_entity old_prefab_name="" name="bd_sack_heap_c">
+				<levels>
+					<level name="base"/>
+				</levels>
+				<children>
+					<game_entity old_prefab_name="" name="bd_sack_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_c"/>
+						<transform scale="0.696, 0.696, 0.696" rotation_euler="-0.699, 0.210, -0.395" position="0.480, 0.779, 0.429"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_b">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_b"/>
+						<transform rotation_euler="0.000, 0.000, 2.764" position="0.270, -0.967, 0.000"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_c">
+								<mesh factor="4283190348" name="bd_sack_c.lod5.3"/>
+								<mesh factor="4283190348" name="bd_sack_c.lod4.3"/>
+								<mesh factor="4283190348" name="bd_sack_c.lod3.3"/>
+								<mesh factor="4283190348" name="bd_sack_c.lod2.3"/>
+								<mesh factor="4283190348" name="bd_sack_c.3"/>
+							</meta_mesh_component>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_c"/>
+						<transform rotation_euler="1.243, -0.046, -0.244" position="-0.795, -0.412, 0.281"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_c"/>
+						<transform scale="0.874, 0.874, 0.874" rotation_euler="0.035, 0.939, -1.530" position="0.820, -0.069, 0.266"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_c">
+								<mesh factor="4285554263" name="bd_sack_c.lod5.3"/>
+								<mesh factor="4285554263" name="bd_sack_c.lod4.3"/>
+								<mesh factor="4285554263" name="bd_sack_c.lod3.3"/>
+								<mesh factor="4285554263" name="bd_sack_c.lod2.3"/>
+								<mesh factor="4285554263" name="bd_sack_c.3"/>
+							</meta_mesh_component>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_c"/>
+						<transform scale="1.166, 1.166, 1.166" rotation_euler="0.186, 1.538, -2.319" position="0.371, -0.158, 0.173"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_b">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_b"/>
+						<transform scale="0.739, 0.739, 0.739" rotation_euler="-1.366, 0.648, -0.404" position="-0.697, 1.126, 0.000"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_b">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_b">
+								<mesh factor="4286350200" name="bd_sack_b.lod4.3"/>
+								<mesh factor="4286350200" name="bd_sack_b.lod3.3"/>
+								<mesh factor="4286350200" name="bd_sack_b.lod2.3"/>
+								<mesh factor="4286350200" name="bd_sack_b.3"/>
+							</meta_mesh_component>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_b"/>
+						<transform rotation_euler="-0.558, 0.216, -1.578" position="-1.531, 0.362, 0.000"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_c"/>
+						<transform scale="1.176, 1.176, 1.176" rotation_euler="0.859, 0.165, -1.616" position="-0.454, 0.377, 0.124"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_c"/>
+						<transform scale="0.748, 0.748, 0.748" rotation_euler="-0.017, -0.030, -1.210" position="0.604, 1.221, 0.012"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_c">
+								<mesh factor="4285554263" name="bd_sack_c.lod5.3"/>
+								<mesh factor="4285554263" name="bd_sack_c.lod4.3"/>
+								<mesh factor="4285554263" name="bd_sack_c.lod3.3"/>
+								<mesh factor="4285554263" name="bd_sack_c.lod2.3"/>
+								<mesh factor="4285554263" name="bd_sack_c.3"/>
+							</meta_mesh_component>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_c"/>
+						<transform scale="0.912, 0.912, 0.912" rotation_euler="-0.133, 0.745, 1.870" position="0.131, 0.547, 0.180"/>
+					</game_entity>
+					<game_entity old_prefab_name="" name="bd_sack_c">
+						<levels>
+							<level name="base"/>
+						</levels>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+						<physics mass="1.000" override_material="straw" shape="bo_bd_sack_c"/>
+						<transform position="0.640, 0.225, 0.000"/>
+					</game_entity>
+				</children>
+				<physics mass="1.000"/>
+				<transform rotation_euler="0.000, 0.000, -0.036" position="3.796, -1.386, 0.000"/>
+				<flags>
+					<flag value="true" name="align_to_terrain"/>
+				</flags>
+			</game_entity>
+		</children>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable value="caravan_disabler_navmesh" name="NavMeshPrefabName"/>
+					<variable value="Wait" name="WaitStandingPointTag"/>
+					<variable value="ammopickup" name="AmmoPickUpTag"/>
+					<variable value="Pilot" name="PilotStandingPointTag"/>
+				</variables>
+			</script>
+		</scripts>
+		<physics mass="1.000"/>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="0.000, 0.000, 0.000"/>
+		<tags>
+			<tag name="caravan"/>
+		</tags>
+		<flags>
+			<flag value="true" name="align_to_terrain"/>
+		</flags>
+	</game_entity>
+	<game_entity name="caravan_scattered_goods_prop" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="align_to_terrain" value="true"/>
+		</flags>
+		<tags>
+			<tag name="caravan"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="merchandise_gold" old_prefab_name="" mobility="1">
+				<transform position="-2.754, -7.744, 0.000" rotation_euler="0.000, 0.000, 0.802" scale="1.064, 1.064, 1.064"/>
+				<physics shape="bo_merchandise_gold"/>
+				<components>
+					<meta_mesh_component name="merchandise_gold"/>
+				</components>
+				<children>
+					<game_entity name="merchandise_hides_b" old_prefab_name="" mobility="1">
+						<transform position="-0.719, 0.414, 0.000" rotation_euler="0.000, 0.000, -1.238" scale="0.940, 0.940, 0.940"/>
+						<physics shape="bo_merchandise_hides_b"/>
+						<components>
+							<meta_mesh_component name="merchandise_hides_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_iron_a" old_prefab_name="" mobility="1">
+						<transform position="-0.591, -0.134, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.781, 0.781, 0.781"/>
+						<physics shape="bo_merchandise_gold"/>
+						<components>
+							<meta_mesh_component name="merchandise_iron_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_iron_a" old_prefab_name="" mobility="1">
+						<transform position="-0.219, -0.687, 0.017" rotation_euler="-0.080, -0.231, -0.759" scale="0.940, 0.940, 0.940"/>
+						<physics shape="bo_merchandise_gold"/>
+						<components>
+							<meta_mesh_component name="merchandise_iron_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_basket_aserai_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="align_to_terrain" value="true"/>
+				</flags>
+				<transform position="-9.980, -6.137, 0.000" rotation_euler="0.000, 0.000, 1.374"/>
+				<physics shape="bo_bd_basket_aserai_a"/>
+				<components>
+					<meta_mesh_component name="bd_basket_aserai_a"/>
+				</components>
+				<children>
+					<game_entity name="bd_basket_aserai_d" old_prefab_name="" mobility="1">
+						<transform position="-0.455, -0.480, 0.221" rotation_euler="1.323, -1.171, 2.113"/>
+						<physics shape="bo_bd_basket_aserai_d"/>
+						<components>
+							<meta_mesh_component name="bd_basket_aserai_d"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_basket_aserai_c" old_prefab_name="" mobility="1">
+						<transform position="0.617, 0.145, 0.110" rotation_euler="1.199, 0.000, 0.000"/>
+						<physics shape="bo_bd_basket_aserai_c"/>
+						<components>
+							<meta_mesh_component name="bd_basket_aserai_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_basket_aserai_d" old_prefab_name="" mobility="1">
+						<transform position="0.557, 0.597, 0.000" rotation_euler="0.278, -0.255, 0.047"/>
+						<physics shape="bo_bd_basket_aserai_d"/>
+						<components>
+							<meta_mesh_component name="bd_basket_aserai_d"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="crate_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="align_to_terrain" value="true"/>
+				</flags>
+				<transform position="-7.040, -3.279, 0.000" rotation_euler="0.000, 0.000, -0.341" scale="0.808, 0.808, 0.808"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a"/>
+				</components>
+				<children>
+					<game_entity name="market_apple_crate" old_prefab_name="" mobility="1">
+						<transform position="-1.071, -0.120, 0.869" rotation_euler="0.000, 0.000, 1.355" scale="1.238, 1.238, 1.238"/>
+						<physics shape="bo_market_apple_crate"/>
+						<components>
+							<meta_mesh_component name="market_apple_crate"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="" mobility="1">
+						<transform position="-0.944, -0.184, 0.000" rotation_euler="0.000, 0.000, 0.397" scale="1.238, 1.238, 1.238"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="camel_load" old_prefab_name="" mobility="1">
+						<transform position="1.490, 0.593, -2.087" rotation_euler="0.040, 0.000, 1.892" scale="1.540, 1.540, 1.540"/>
+						<physics shape="bo_camel_saddle_a"/>
+						<components>
+							<meta_mesh_component name="camel_saddle_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="bd_basket_aserai_c" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="align_to_terrain" value="true"/>
+				</flags>
+				<transform position="-12.074, -4.611, 0.000" rotation_euler="0.000, 0.000, 2.578" scale="0.887, 0.887, 0.887"/>
+				<physics shape="bo_bd_basket_aserai_c"/>
+				<components>
+					<meta_mesh_component name="bd_basket_aserai_c"/>
+				</components>
+				<children>
+					<game_entity name="bd_basket_aserai_a" old_prefab_name="" mobility="1">
+						<transform position="-1.020, 0.258, 0.232" rotation_euler="-1.511, 0.000, -1.204" scale="0.839, 0.839, 0.839"/>
+						<physics shape="bo_bd_basket_aserai_a"/>
+						<components>
+							<meta_mesh_component name="bd_basket_aserai_a"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="shop_prop_merchantleather_c" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="align_to_terrain" value="true"/>
+				</flags>
+				<tags>
+					<tag name="c"/>
+					<tag name="shop_prop"/>
+				</tags>
+				<transform position="-0.734, -4.700, 0.000" rotation_euler="0.000, 0.000, 0.807" scale="0.825, 0.825, 0.825"/>
+				<physics shape="bo_shop_prop_merchantleather_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantleather_c"/>
+				</components>
+				<children>
+					<game_entity name="shop_prop_merchantleather_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="b"/>
+							<tag name="shop_prop"/>
+						</tags>
+						<transform position="-0.631, -1.425, 0.000" rotation_euler="0.000, 0.000, 0.108" scale="1.212, 1.212, 1.212"/>
+						<physics shape="bo_shop_prop_merchantleather_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantleather_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantleather_b" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="b"/>
+							<tag name="shop_prop"/>
+						</tags>
+						<transform position="0.711, 1.489, 0.000" rotation_euler="0.000, 0.000, 0.523" scale="1.212, 1.212, 1.212"/>
+						<physics shape="bo_shop_prop_merchantleather_b"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantleather_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="-1.546, -6.591, -0.011" rotation_euler="0.000, 0.000, -1.564"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="shop_prop_merchantweavery_linen_c" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="align_to_terrain" value="true"/>
+				</flags>
+				<tags>
+					<tag name="c"/>
+					<tag name="shop_prop"/>
+				</tags>
+				<transform position="6.471, -6.301, 0.000" rotation_euler="0.000, 0.000, 2.531" scale="0.924, 0.924, 0.924"/>
+				<physics shape="bo_shop_prop_merchantweavery_linen_c"/>
+				<components>
+					<meta_mesh_component name="shop_prop_merchantweavery_linen_c"/>
+				</components>
+				<children>
+					<game_entity name="merchandise_velvet" old_prefab_name="" mobility="1">
+						<transform position="-0.014, 1.309, 0.634" rotation_euler="-0.273, -0.420, -1.938" scale="0.914, 0.914, 0.914"/>
+						<physics shape="bo_merchandise_velvet"/>
+						<components>
+							<meta_mesh_component name="merchandise_velvet"/>
+						</components>
+					</game_entity>
+					<game_entity name="shop_prop_merchantweavery_velvet_c" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="c"/>
+							<tag name="shop_prop"/>
+						</tags>
+						<transform position="-0.280, 1.525, 0.000" rotation_euler="0.000, 0.000, 2.372" scale="0.753, 0.753, 0.753"/>
+						<physics shape="bo_shop_prop_merchantweavery_linen_c"/>
+						<components>
+							<meta_mesh_component name="shop_prop_merchantweavery_velvet_c"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="-7.189, -7.497, -0.011" rotation_euler="0.000, 0.000, -0.226"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="2.271, -10.058, -0.011" rotation_euler="0.000, 0.000, 0.311"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="4.617, -4.152, -0.011" rotation_euler="0.000, 0.000, -0.015"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="-14.581, -6.085, -0.011" rotation_euler="0.000, 0.000, -0.226"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="-3.474, -4.214, 0.000" rotation_euler="0.000, 0.000, -1.189"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="7.862, -11.001, -0.011" rotation_euler="0.000, 0.000, -0.516"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="0.103, -0.540, -0.011" rotation_euler="0.000, 0.000, -1.876"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="CaravanTacticalPosition" old_prefab_name="" visible="false" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-2.296, -2.613, 0.000" rotation_euler="0.000, 0.000, 3.104" scale="20.000, 1.000, 1.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable name="_width" value="20.000"/>
+							<variable name="_slope" value="0.000"/>
+							<variable name="_isInsurmountable" value="true"/>
+							<variable name="_isOuterEdge" value="false"/>
+							<variable name="_tacticalPositionType" value="SpecialMissionPosition"/>
+							<variable name="_tacticalRegionMembership" value="DifficultTerrain"/>
+							<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="-10.868, -2.375, -0.011" rotation_euler="0.000, 0.000, -2.151"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="bd_sack_heap_c" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="align_to_terrain" value="true"/>
+				</flags>
+				<transform position="3.796, -1.386, 0.000" rotation_euler="0.000, 0.000, -0.036"/>
+				<children>
+					<game_entity name="bd_sack_c" old_prefab_name="" mobility="1">
+						<transform position="0.480, 0.779, 0.429" rotation_euler="-0.699, 0.210, -0.395" scale="0.696, 0.696, 0.696"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+						<transform position="0.270, -0.967, 0.000" rotation_euler="0.000, 0.000, 2.764"/>
+						<physics shape="bo_bd_sack_b" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_c" old_prefab_name="" mobility="1">
+						<transform position="-0.795, -0.412, 0.281" rotation_euler="1.243, -0.046, -0.244"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_c" old_prefab_name="" mobility="1">
+						<transform position="0.820, -0.069, 0.266" rotation_euler="0.035, 0.939, -1.530" scale="0.874, 0.874, 0.874"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_c" old_prefab_name="" mobility="1">
+						<transform position="0.371, -0.158, 0.173" rotation_euler="0.186, 1.538, -2.319" scale="1.166, 1.166, 1.166"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+						<transform position="-0.697, 1.126, 0.000" rotation_euler="-1.366, 0.648, -0.404" scale="0.739, 0.739, 0.739"/>
+						<physics shape="bo_bd_sack_b" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_b" old_prefab_name="" mobility="1">
+						<transform position="-1.531, 0.362, 0.000" rotation_euler="-0.558, 0.216, -1.578"/>
+						<physics shape="bo_bd_sack_b" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_b"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_c" old_prefab_name="" mobility="1">
+						<transform position="-0.454, 0.377, 0.124" rotation_euler="0.859, 0.165, -1.616" scale="1.176, 1.176, 1.176"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_c" old_prefab_name="" mobility="1">
+						<transform position="0.604, 1.221, 0.012" rotation_euler="-0.017, -0.030, -1.210" scale="0.748, 0.748, 0.748"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_c" old_prefab_name="" mobility="1">
+						<transform position="0.131, 0.547, 0.180" rotation_euler="-0.133, 0.745, 1.870" scale="0.912, 0.912, 0.912"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+					<game_entity name="bd_sack_c" old_prefab_name="" mobility="1">
+						<transform position="0.640, 0.225, 0.000"/>
+						<physics shape="bo_bd_sack_c" override_material="straw"/>
+						<components>
+							<meta_mesh_component name="bd_sack_c"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="villager_scattered_goods_prop" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="align_to_terrain" value="true"/>
+		</flags>
+		<tags>
+			<tag name="caravan"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="-4.462, -1.323, -0.011" rotation_euler="0.000, 0.000, -0.226"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="CaravanTacticalPosition" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="1.647, -0.773, 0.000" rotation_euler="0.000, 0.000, 3.141" scale="7.000, 1.000, 1.000"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+				<scripts>
+					<script name="TacticalPosition">
+						<variables>
+							<variable name="_width" value="7.000"/>
+							<variable name="_slope" value="0.000"/>
+							<variable name="_isInsurmountable" value="true"/>
+							<variable name="_isOuterEdge" value="false"/>
+							<variable name="_tacticalPositionType" value="SpecialMissionPosition"/>
+							<variable name="_tacticalRegionMembership" value="DifficultTerrain"/>
+							<variable name="_tacticalPositionSide" value="BehaviorSideNotSet"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="4.998, -3.884, -0.011" rotation_euler="0.000, 0.000, 0.311"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="crate_a" old_prefab_name="" mobility="1">
+				<flags>
+					<flag name="align_to_terrain" value="true"/>
+				</flags>
+				<transform position="2.734, 0.307, 0.000" rotation_euler="0.000, 0.000, -0.341" scale="0.808, 0.808, 0.808"/>
+				<physics shape="bo_crate_a"/>
+				<components>
+					<meta_mesh_component name="crate_a"/>
+				</components>
+				<children>
+					<game_entity name="camel_load" old_prefab_name="" mobility="1">
+						<transform position="1.490, 0.593, -2.087" rotation_euler="0.040, 0.000, 1.892" scale="1.540, 1.540, 1.540"/>
+						<components>
+							<meta_mesh_component name="camel_saddle_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="crate_a" old_prefab_name="" mobility="1">
+						<transform position="-0.944, -0.184, 0.000" rotation_euler="0.000, 0.000, 0.397" scale="1.238, 1.238, 1.238"/>
+						<physics shape="bo_crate_a"/>
+						<components>
+							<meta_mesh_component name="crate_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="market_apple_crate" old_prefab_name="" mobility="1">
+						<transform position="-1.071, -0.120, 0.869" rotation_euler="0.000, 0.000, 1.355" scale="1.238, 1.238, 1.238"/>
+						<physics shape="bo_market_apple_crate"/>
+						<components>
+							<meta_mesh_component name="market_apple_crate"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+			<game_entity name="caravan_animal_spawn_point" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="caravan_animal_spawn"/>
+				</tags>
+				<transform position="-0.747, 1.960, 0.000" rotation_euler="0.000, 0.000, -1.189"/>
+				<components>
+					<meta_mesh_component name="debug_lod_mesh"/>
+				</components>
+			</game_entity>
+			<game_entity name="merchandise_gold" old_prefab_name="" mobility="1">
+				<transform position="-0.027, -1.570, 0.000" rotation_euler="0.000, 0.000, 0.802" scale="1.064, 1.064, 1.064"/>
+				<physics shape="bo_merchandise_gold"/>
+				<components>
+					<meta_mesh_component name="merchandise_gold"/>
+				</components>
+				<children>
+					<game_entity name="merchandise_iron_a" old_prefab_name="" mobility="1">
+						<transform position="-0.219, -0.687, 0.017" rotation_euler="-0.080, -0.231, -0.759" scale="0.940, 0.940, 0.940"/>
+						<physics shape="bo_merchandise_gold"/>
+						<components>
+							<meta_mesh_component name="merchandise_iron_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_iron_a" old_prefab_name="" mobility="1">
+						<transform position="-0.591, -0.134, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.781, 0.781, 0.781"/>
+						<physics shape="bo_merchandise_gold"/>
+						<components>
+							<meta_mesh_component name="merchandise_iron_a"/>
+						</components>
+					</game_entity>
+					<game_entity name="merchandise_hides_b" old_prefab_name="" mobility="1">
+						<transform position="-0.719, 0.414, 0.000" rotation_euler="0.000, 0.000, -1.238" scale="0.940, 0.940, 0.940"/>
+						<physics shape="bo_merchandise_hides_b"/>
+						<components>
+							<meta_mesh_component name="merchandise_hides_b"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity old_prefab_name="" name="SpawnPointDebugView">
+		<levels>
+			<level name="base"/>
+		</levels>
+		<scripts>
+			<script name="SpawnPointDebugView"/>
+		</scripts>
+		<physics mass="1.000"/>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="0.000, 0.000, 0.000"/>
+		<visibility_masks>
+			<visibility_mask value="true" name="visible_only_when_editing"/>
+		</visibility_masks>
+	</game_entity>
+	<game_entity old_prefab_name="" name="lookout">
+		<children>
+			<game_entity old_prefab_name="" name="sp_common">
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<physics mass="1.000"/>
+				<transform scale="0.750, 0.750, 1.000" rotation_euler="0.000, 0.000, 0.000"/>
+				<tags>
+					<tag name="npc_common"/>
+				</tags>
+				<visibility_masks>
+					<visibility_mask value="true" name="visible_only_when_editing"/>
+				</visibility_masks>
+			</game_entity>
+		</children>
+		<scripts>
+			<script name="AnimationPoint">
+				<variables>
+					<variable value="" name="ActionMessage"/>
+					<variable value="" name="DescriptionMessage"/>
+					<variable value="true" name="TranslateUser"/>
+					<variable value="false" name="AutoSheathWeapons"/>
+					<variable value="aiwaypoint" name="WaypointTag"/>
+					<variable value="120.000" name="MaxWaitInSeconds"/>
+					<variable value="30.000" name="MinWaitinSeconds"/>
+					<variable value="false" name="ActivatePairs"/>
+					<variable value="1" name="MinUserToStartInteraction"/>
+					<variable value="" name="LeftHandItem"/>
+					<variable value="" name="RightHandItem"/>
+					<variable value="-1" name="GroupId"/>
+					<variable value="" name="LeaveAction"/>
+					<variable value="" name="PairLoopStartAction"/>
+					<variable value="act_lookout" name="LoopStartAction"/>
+					<variable value="" name="ArriveAction"/>
+				</variables>
+			</script>
+		</scripts>
+		<physics mass="1.000"/>
+		<transform rotation_euler="0.000, 0.000, 0.000" position="0.000, 0.000, 0.000"/>
+	</game_entity>
+	<game_entity name="generic_mission_event_box" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="volume_box"/>
+		</components>
+		<scripts>
+			<script name="GenericMissionEventBox">
+				<variables>
+					<variable name="ActivatorAgentTags" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+			<script name="GenericMissionEventScript">
+				<variables>
+					<variable name="EventId" value=""/>
+					<variable name="Parameter" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+</prefabs>
+

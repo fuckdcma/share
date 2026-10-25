@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CraftingPieces>
+  <CraftingPiece id="lz_guanyu_blade_xw"
+                 name="{=*}偃月刀"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_016"
+                 length="54.7"
+                 weight="0.3"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.96" />
+      <Swing damage_type="Cut" damage_factor="6.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_guanyu_handle_xw"
+                 name="{=*}偃月刀"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_005_b"
+                 length="230"
+                 is_hidden="true"
+                 weight="0.3">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_lvbu_blade_xw"
+                 name="{=*}方天画戟"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_012_b"
+                 length="54.7"
+                 weight="0.2"
+                 is_hidden="true">
+		<BuildData piece_offset="-10" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="5.96" />
+      <Swing damage_type="Cut" damage_factor="5.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_lvbu_handle_xw"
+                 name="{=*}方天画戟"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_005_b"
+                 length="230"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_huangzhong_blade_xw"
+                 name="{=*}赤血刀"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_025"
+                 length="50.58"
+                 weight="0.3"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.96" />
+      <Swing damage_type="Cut" damage_factor="6.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_huangzhong_handle_xw"
+                 name="{=*}赤血刀"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_005_b"
+                 length="230"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_zhaoyun_blade_xw"
+                 name="{=*}亮银枪"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_016"
+                 length="22.50"
+                 weight="0.2"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="8.96" />
+      <Swing damage_type="Cut" damage_factor="4.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_zhaoyun_handle_xw"
+                 name="{=*}亮银枪"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_001_b"
+                 length="210"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_machao_blade_xw"
+                 name="{=*}虎头湛金枪"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_016"
+                 length="20.9"
+                 weight="0.2"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="8.96" />
+      <Swing damage_type="Cut" damage_factor="4.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_machao_handle_xw"
+                 name="{=*}虎头湛金枪"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_006_b"
+                 length="180"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_zhangfei_blade_xw"
+                 name="{=*}丈八蛇矛"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_015"
+                 length="20.9"
+                 weight="0.2"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="8.96" />
+      <Swing damage_type="Cut" damage_factor="4.26" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_zhangfei_handle_xw"
+                 name="{=*}丈八蛇矛"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_005_b"
+                 length="230"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_gongsunzan_blade_xw"
+                 name="{=*}白马槊"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_023"
+                 length="22.5"
+                 weight="0.2"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="8.96" />
+      <Swing damage_type="Cut" damage_factor="4.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_gongsunzan_handle_xw"
+                 name="{=*}白马槊"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_001_b"
+                 length="210"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_xuhuang_blade_xw"
+                 name="{=*}开山斧"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_013"
+                 length="35.5"
+                 weight="0.3"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.96" />
+      <Swing damage_type="Cut" damage_factor="7.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_xuhuang_handle_xw"
+                 name="{=*}开山斧"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t2_spear_handle_006_b"
+                 length="190"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_sunce_blade_xw"
+                 name="{=*}霸王枪"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_016"
+                 length="20.9"
+                 weight="0.2"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="7.96" />
+      <Swing damage_type="Cut" damage_factor="4.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_sunce_handle_xw"
+                 name="{=*}霸王枪"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_005_b"
+                 length="230"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_chengpu_blade_xw"
+                 name="{=*}铁脊蛇矛"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_015"
+                 length="26.9"
+                 weight="0.2"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="7.96" />
+      <Swing damage_type="Cut" damage_factor="5.16" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_chengpu_handle_xw"
+                 name="{=*}铁脊蛇矛"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_003_b"
+                 length="290"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_dadao01_blade_xw"
+                 name="{=*}汉羽仪大刀"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_010"
+                 length="55.8"
+                 weight="0.3"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.96" />
+      <Swing damage_type="Cut" damage_factor="5.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_dadao01_handle_xw"
+                 name="{=*}汉羽仪大刀"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_003_a"
+                 length="180"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_changqiang01_blade_xw"
+                 name="{=*}汉羽仪长枪"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_004"
+                 length="18.1"
+                 weight="0.2"
+                 is_hidden="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="7.96" />
+      <Swing damage_type="Cut" damage_factor="4.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_changqiang01_handle_xw"
+                 name="{=*}汉羽仪长枪"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_003_b"
+                 length="290"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_sanlianji01_blade_xw"
+                 name="{=*}汉羽仪三联戟"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_016"
+                 length="73.5"
+                 weight="0.3"
+                 is_hidden="true">
+		<BuildData piece_offset="-45" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="6.96" />
+      <Swing damage_type="Cut" damage_factor="4.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_sanlianji01_handle_xw"
+                 name="{=*}汉羽仪三联戟"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_003_b"
+                 length="290"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_changji01_blade_xw"
+                 name="{=*}汉羽仪长戟"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="r_sg_t5_spear_blade_013"
+                 length="40.5"
+                 weight="0.2"
+                 is_hidden="true">
+		<BuildData piece_offset="-15" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="7.36" />
+      <Swing damage_type="Cut" damage_factor="4.66" />
+    </BladeData>                
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_changji01_handle_xw"
+                 name="{=*}汉羽仪长戟"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_003_b"
+                 length="290"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_danbianhuaji01_blade_xw"
+                 name="{=*}汉羽仪单边画戟"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_012_a"
+                 length="53.28"
+                 weight="0.2"
+                 is_hidden="true">
+		<BuildData piece_offset="-15" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="7.96" />
+      <Swing damage_type="Cut" damage_factor="5.66" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_danbianhuaji01_handle_xw"
+                 name="{=*}汉羽仪单边画戟"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_003_b"
+                 length="290"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_shuangbianhuaji01_blade_xw"
+                 name="{=*}汉羽仪双边画戟"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_spear_blade_013_b"
+                 length="62.01"
+                 weight="0.2"
+                 is_hidden="true">
+		<BuildData piece_offset="-15" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="7.16" />
+      <Swing damage_type="Cut" damage_factor="6.96" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_shuangbianhuaji01_handle_xw"
+                 name="{=*}汉羽仪双边画戟"
+                 tier="1"
+                 piece_type="Handle"
+                 mesh="r_sg_t5_spear_handle_003_b"
+                 length="290"
+                 is_hidden="true"
+                 weight="0.2">
+		<BuildData piece_offset="22.9" />
+		<Materials>
+			<Material id="Wood" count="1" />
+		</Materials>
+	</CraftingPiece>
+
+
+
+
+
+
+
+</CraftingPieces>

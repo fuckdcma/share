@@ -1,0 +1,522 @@
+<prefabs>
+	<game_entity name="sg_anim_guizuo_01" old_prefab_name="" mobility="1">
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="animation_stand_arrow_blue"/>
+		</components>
+		<scripts>
+			<script name="ChairUsePoint">
+				<variables>
+					<variable name="NearTable" value="false"/>
+					<variable name="NearTableLoopAction" value=""/>
+					<variable name="NearTablePairLoopAction" value=""/>
+					<variable name="Drink" value="false"/>
+					<variable name="DrinkLoopAction" value=""/>
+					<variable name="DrinkPairLoopAction" value=""/>
+					<variable name="DrinkRightHandItem" value=""/>
+					<variable name="DrinkLeftHandItem" value=""/>
+					<variable name="Eat" value="false"/>
+					<variable name="EatLoopAction" value=""/>
+					<variable name="EatPairLoopAction" value=""/>
+					<variable name="EatRightHandItem" value=""/>
+					<variable name="EatLeftHandItem" value=""/>
+					<variable name="ArriveAction" value="act_guizuo_01_down_from_front"/>
+					<variable name="LoopStartAction" value="act_guizuo_01"/>
+					<variable name="PairLoopStartAction" value=""/>
+					<variable name="LeaveAction" value="act_guizuo_01_up_to_front"/>
+					<variable name="GroupId" value="-1"/>
+					<variable name="RightHandItem" value=""/>
+					<variable name="RightHandItemBone" value="ItemR"/>
+					<variable name="LeftHandItem" value=""/>
+					<variable name="LeftHandItemBone" value="ItemL"/>
+					<variable name="MinUserToStartInteraction" value="1"/>
+					<variable name="ActivatePairs" value="false"/>
+					<variable name="MinWaitinSeconds" value="50.000"/>
+					<variable name="MaxWaitInSeconds" value="320.000"/>
+					<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+					<variable name="SideDistanceToPivotPoint" value="0.000"/>
+					<variable name="KeepOldVisibility" value="false"/>
+					<variable name="AutoSheathWeapons" value="false"/>
+					<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+					<variable name="AutoWieldWeapons" value="false"/>
+					<variable name="TranslateUser" value="true"/>
+					<variable name="HasRecentlyBeenRechecked" value="false"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+	</game_entity>
+	<game_entity name="guizuoi_ceshi_01" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_wj_zuodian_04"/>
+		<components>
+			<meta_mesh_component name="wj_zuodian_04"/>
+		</components>
+		<scripts>
+			<script name="Chair">
+				<variables>
+					<variable name="ChairType" value="Chair"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="sg_anim_guizuo_01" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="0.000, 0.008, 0.037" rotation_euler="0.000, 0.000, 3.139"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_guizuo_01_down_from_front"/>
+							<variable name="LoopStartAction" value="act_guizuo_01"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_guizuo_01_up_to_front"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_guizuo_a" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="npc_common"/>
+			<tag name="npc_wait"/>
+		</tags>
+		<transform position="53.293, 70.432, 0.082" rotation_euler="0.000, 0.000, -1.525"/>
+		<scripts>
+			<script name="Chair">
+				<variables>
+					<variable name="ChairType" value="Chair"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="sg_anim_guizuo_01" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="0.000, -0.028, -0.025"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_guizuo_01_down_from_front"/>
+							<variable name="LoopStartAction" value="act_guizuo_01"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_guizuo_01_up_to_front"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="tk_sp_wangzuo_a" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="182.538, 171.386, 5.348" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="UsablePlace">
+				<variables>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="chair_sit_position_front" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="sp_throne"/>
+				</tags>
+				<transform position="-0.147, -0.130, 0.198" rotation_euler="0.000, 0.000, 3.065" scale="0.750, 0.750, 1.000"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="Chair">
+						<variables>
+							<variable name="ChairType" value="Chair"/>
+							<variable name="PilotStandingPointTag" value="Pilot"/>
+							<variable name="AmmoPickUpTag" value="ammopickup"/>
+							<variable name="WaitStandingPointTag" value="Wait"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="sg_anim_guizuo_01" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<transform position="-0.196, -0.096, -0.198" rotation_euler="0.000, 0.000, 0.006" scale="1.333, 1.333, 1.000"/>
+						<components>
+							<meta_mesh_component name="animation_stand_arrow_blue"/>
+						</components>
+						<scripts>
+							<script name="ChairUsePoint">
+								<variables>
+									<variable name="NearTable" value="false"/>
+									<variable name="NearTableLoopAction" value=""/>
+									<variable name="NearTablePairLoopAction" value=""/>
+									<variable name="Drink" value="false"/>
+									<variable name="DrinkLoopAction" value=""/>
+									<variable name="DrinkPairLoopAction" value=""/>
+									<variable name="DrinkRightHandItem" value=""/>
+									<variable name="DrinkLeftHandItem" value=""/>
+									<variable name="Eat" value="false"/>
+									<variable name="EatLoopAction" value=""/>
+									<variable name="EatPairLoopAction" value=""/>
+									<variable name="EatRightHandItem" value=""/>
+									<variable name="EatLeftHandItem" value=""/>
+									<variable name="ArriveAction" value="act_guizuo_01_down_from_front"/>
+									<variable name="LoopStartAction" value="act_guizuo_01"/>
+									<variable name="PairLoopStartAction" value=""/>
+									<variable name="LeaveAction" value="act_guizuo_01_up_to_front"/>
+									<variable name="GroupId" value="-1"/>
+									<variable name="RightHandItem" value=""/>
+									<variable name="RightHandItemBone" value="ItemR"/>
+									<variable name="LeftHandItem" value=""/>
+									<variable name="LeftHandItemBone" value="ItemL"/>
+									<variable name="MinUserToStartInteraction" value="1"/>
+									<variable name="ActivatePairs" value="false"/>
+									<variable name="MinWaitinSeconds" value="50.000"/>
+									<variable name="MaxWaitInSeconds" value="320.000"/>
+									<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+									<variable name="SideDistanceToPivotPoint" value="0.000"/>
+									<variable name="KeepOldVisibility" value="false"/>
+									<variable name="AutoSheathWeapons" value="false"/>
+									<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+									<variable name="AutoWieldWeapons" value="false"/>
+									<variable name="TranslateUser" value="true"/>
+									<variable name="HasRecentlyBeenRechecked" value="false"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_guizuo_xiaqi_player" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="gambler_player"/>
+			<tag name="reserved"/>
+		</tags>
+		<transform position="42.925, 52.902, 2.312" rotation_euler="0.000, 0.000, 2.995"/>
+		<scripts>
+			<script name="Chair">
+				<variables>
+					<variable name="ChairType" value="Ground"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="sg_anim_guizuo_01" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="0.000, -0.028, -0.025"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_guizuo_01_down_from_front"/>
+							<variable name="LoopStartAction" value="act_guizuo_01"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_guizuo_01_up_to_front"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_guizuo_xiaqi_zhuangjia" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<tags>
+			<tag name="gambler_npc"/>
+			<tag name="npc_wait"/>
+		</tags>
+		<transform position="43.074, 51.080, 2.312" rotation_euler="0.000, 0.000, 2.995"/>
+		<scripts>
+			<script name="Chair">
+				<variables>
+					<variable name="ChairType" value="Ground"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="sg_anim_guizuo_01" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="0.000, -0.028, -0.025"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_guizuo_01_down_from_front"/>
+							<variable name="LoopStartAction" value="act_guizuo_01"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_guizuo_01_up_to_front"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="sp_sg_sit_on_the_ground" old_prefab_name="" mobility="1">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<visibility_masks>
+			<visibility_mask name="visible_only_when_editing" value="true"/>
+		</visibility_masks>
+		<tags>
+			<tag name="gambler_player"/>
+			<tag name="reserved"/>
+		</tags>
+		<transform position="28.652, 20.121, 0.059" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_bd_pillow_a">
+			<body_flags>
+				<body_flag name="only_collide_with_raycast"/>
+			</body_flags>
+		</physics>
+		<components>
+			<meta_mesh_component name="occ_box"/>
+		</components>
+		<scripts>
+			<script name="Chair">
+				<variables>
+					<variable name="ChairType" value="Ground"/>
+					<variable name="PilotStandingPointTag" value="Pilot"/>
+					<variable name="AmmoPickUpTag" value="ammopickup"/>
+					<variable name="WaitStandingPointTag" value="Wait"/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="sg_anim_guizuo_01" old_prefab_name="" mobility="1">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<transform position="-0.083, 0.083, -0.018" rotation_euler="0.000, 0.000, -1.542"/>
+				<components>
+					<meta_mesh_component name="animation_stand_arrow_blue"/>
+				</components>
+				<scripts>
+					<script name="ChairUsePoint">
+						<variables>
+							<variable name="NearTable" value="false"/>
+							<variable name="NearTableLoopAction" value=""/>
+							<variable name="NearTablePairLoopAction" value=""/>
+							<variable name="Drink" value="false"/>
+							<variable name="DrinkLoopAction" value=""/>
+							<variable name="DrinkPairLoopAction" value=""/>
+							<variable name="DrinkRightHandItem" value=""/>
+							<variable name="DrinkLeftHandItem" value=""/>
+							<variable name="Eat" value="false"/>
+							<variable name="EatLoopAction" value=""/>
+							<variable name="EatPairLoopAction" value=""/>
+							<variable name="EatRightHandItem" value=""/>
+							<variable name="EatLeftHandItem" value=""/>
+							<variable name="ArriveAction" value="act_guizuo_01_down_from_front"/>
+							<variable name="LoopStartAction" value="act_guizuo_01"/>
+							<variable name="PairLoopStartAction" value=""/>
+							<variable name="LeaveAction" value="act_guizuo_01_up_to_front"/>
+							<variable name="GroupId" value="-1"/>
+							<variable name="RightHandItem" value=""/>
+							<variable name="RightHandItemBone" value="ItemR"/>
+							<variable name="LeftHandItem" value=""/>
+							<variable name="LeftHandItemBone" value="ItemL"/>
+							<variable name="MinUserToStartInteraction" value="1"/>
+							<variable name="ActivatePairs" value="false"/>
+							<variable name="MinWaitinSeconds" value="50.000"/>
+							<variable name="MaxWaitInSeconds" value="320.000"/>
+							<variable name="ForwardDistanceToPivotPoint" value="0.000"/>
+							<variable name="SideDistanceToPivotPoint" value="0.000"/>
+							<variable name="KeepOldVisibility" value="false"/>
+							<variable name="AutoSheathWeapons" value="false"/>
+							<variable name="AutoEquipWeaponsOnUseStopped" value="false"/>
+							<variable name="AutoWieldWeapons" value="false"/>
+							<variable name="TranslateUser" value="true"/>
+							<variable name="HasRecentlyBeenRechecked" value="false"/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

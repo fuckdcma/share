@@ -1,0 +1,805 @@
+<terrain_materials>
+	<terrain_material is_enabled="true" name="XiLiang_dimian_a" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="1.000, 1.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="default" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="1.000" bigdetailmap_scale_y="1.000" bigdetailmap_bias_x="0.000" bigdetailmap_bias_y="0.000">
+		<textures>
+			<texture type="diffusemap" name="snow"/>
+			<texture type="areamap" name="snow_a_d"/>
+			<texture type="normalmap" name="none"/>
+			<texture type="specularmap" name="none"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="none"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="XiLiang_dimian_b" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="7.900, 7.900" shear="0.500, -0.400" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.040" ground_slope_scale="1.000" bigdetailmap_mode="2" bigdetailmap_weight="0.800" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="3.000" bigdetailmap_scale_y="3.000" bigdetailmap_bias_x="3.000" bigdetailmap_bias_y="3.000">
+		<textures>
+			<texture type="diffusemap" name="desert_floor_a"/>
+			<texture type="areamap" name="ground_earth_d"/>
+			<texture type="normalmap" name="desert_floor_a_n"/>
+			<texture type="specularmap" name="desert_floor_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="desert_floor_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="flora_grass_b" index="0" density="25.000" seed_index="31" colony_radius="350.000" colony_threshold="0.100" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.650"/>
+			<mesh name="flora_dry_plant_m" index="1" density="14.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="2.000, 2.000, 2.000" albedo_multiplier="0.523, 0.523, 0.523" weight_offset="0.500"/>
+			<mesh name="desert_rubble_stone_01" index="2" density="14.400" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.300, 1.300, 1.300" albedo_multiplier="0.708, 0.708, 0.708" weight_offset="0.410"/>
+			<mesh name="brushwood" index="3" density="9.500" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.300"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="XiLiang_shanjiao" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="1.000, 1.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="default" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="1" bigdetailmap_weight="-0.200" albedo_factor_color="0.560, 0.599, 0.554" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="1.000" bigdetailmap_scale_y="1.000" bigdetailmap_bias_x="0.000" bigdetailmap_bias_y="0.000">
+		<textures>
+			<texture type="diffusemap" name="snow"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="none"/>
+			<texture type="specularmap" name="none"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="none"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="XiLiang_shanshi_a" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="1.000, 1.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="default" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.230" ground_slope_scale="1.000" bigdetailmap_mode="1" bigdetailmap_weight="0.700" albedo_factor_color="0.715, 0.859, 0.851" albedo_factor_mode="0" smooth_blend_amount="0.300" bigdetailmap_scale_x="1.000" bigdetailmap_scale_y="1.000" bigdetailmap_bias_x="0.000" bigdetailmap_bias_y="0.000">
+		<textures>
+			<texture type="diffusemap" name="snow"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="none"/>
+			<texture type="specularmap" name="none"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="none"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="XiLiang_shanshi_b" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="1.000, 1.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="default" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="1.100" albedo_factor_color="0.173, 0.198, 0.216" albedo_factor_mode="0" smooth_blend_amount="0.700" bigdetailmap_scale_x="1.000" bigdetailmap_scale_y="1.000" bigdetailmap_bias_x="0.000" bigdetailmap_bias_y="0.000">
+		<textures>
+			<texture type="diffusemap" name="rock_b_d"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="rock_b_n"/>
+			<texture type="specularmap" name="rock_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="rock_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="default" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" elevation_amount="0.000" parallax_amount="0.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="editor_grid_8"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="none"/>
+			<texture type="specularmap" name="editor_grid_8_s"/>
+			<texture type="splattingmap" name="none"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="desert_a" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="desert_floor_a"/>
+			<texture type="areamap" name="desert_floor_a"/>
+			<texture type="normalmap" name="desert_floor_a_n"/>
+			<texture type="specularmap" name="desert_floor_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="desert_floor_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="desert_b" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="desert_floor_b"/>
+			<texture type="areamap" name="desert_floor_a"/>
+			<texture type="normalmap" name="desert_floor_b_n"/>
+			<texture type="specularmap" name="desert_floor_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="desert_floor_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="desert_cliff" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="stone" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="cliff_c_d"/>
+			<texture type="areamap" name="desert_floor_a"/>
+			<texture type="normalmap" name="cliff_c_n"/>
+			<texture type="specularmap" name="cliff_c_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="cliff_c_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="em f sum" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="3.600, 3.600" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="1" elevation_amount="0.200" parallax_amount="-0.200" ground_slope_scale="2.700" bigdetailmap_mode="2" bigdetailmap_weight="0.500" bigdetailmap_scale_x="0.001" bigdetailmap_scale_y="0.001" bigdetailmap_bias_x="0.001" bigdetailmap_bias_y="0.001">
+		<textures>
+			<texture type="diffusemap" name="ground_grass_soil_a_d"/>
+			<texture type="areamap" name="black_terrain"/>
+			<texture type="normalmap" name="ground_grass_soil_a_n"/>
+			<texture type="specularmap" name="ground_grass_soil_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_soil_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="true"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="flora_habitat_a" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="grass" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_grass_c_d"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="ground_grass_c_n"/>
+			<texture type="specularmap" name="ground_grass_c_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_c_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="flora_grass_a_non_shadow" index="0" density="55.000" seed_index="1" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.000, 1.000, 1.000" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_green__mix" index="1" density="45.000" seed_index="2" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_plant__mix" index="2" density="25.000" seed_index="3" colony_radius="0.000" colony_threshold="0.000" size_min="0.500, 0.500, 0.500" size_max="1.200, 1.200, 1.200" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="tree_high__mix" index="3" density="12.000" seed_index="4" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_green__mix_flower" index="4" density="35.000" seed_index="6" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="mud_cliff" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="stone" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="-0.300" ground_slope_scale="1.000" bigdetailmap_mode="2" bigdetailmap_weight="0.650" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_soil_b_d"/>
+			<texture type="areamap" name="ground_soil_b_d"/>
+			<texture type="normalmap" name="ground_earth_bump"/>
+			<texture type="specularmap" name="ground_road_mud_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_soil_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="rock_cliff" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="stone" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="rock_cliff_b_d"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="rock_cliff_b_n"/>
+			<texture type="specularmap" name="rock_cliff_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="rock_cliff_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="soil_b" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_soil_b_d"/>
+			<texture type="areamap" name="desert_floor_a"/>
+			<texture type="normalmap" name="ground_soil_b_n"/>
+			<texture type="specularmap" name="ground_soil_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_soil_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="summerFpreset" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="3.600, 3.600" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="1" elevation_amount="0.200" parallax_amount="-0.200" ground_slope_scale="2.700" bigdetailmap_mode="2" bigdetailmap_weight="0.500" bigdetailmap_scale_x="0.001" bigdetailmap_scale_y="0.001" bigdetailmap_bias_x="0.001" bigdetailmap_bias_y="0.001">
+		<textures>
+			<texture type="diffusemap" name="ground_grass_soil_a_d"/>
+			<texture type="areamap" name="black_terrain"/>
+			<texture type="normalmap" name="ground_grass_soil_a_n"/>
+			<texture type="specularmap" name="ground_grass_soil_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_soil_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="true"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xiliang_shanjiao" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.200, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.420" ground_slope_scale="4.300" bigdetailmap_mode="0" bigdetailmap_weight="0.600" albedo_factor_color="0.465, 0.405, 0.354" albedo_factor_mode="2" smooth_blend_amount="0.700" bigdetailmap_scale_x="9.900" bigdetailmap_scale_y="9.900" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_roads_a_d_noalpha"/>
+			<texture type="areamap" name="rock_cliff_a"/>
+			<texture type="normalmap" name="ground_road_dirt_a_n"/>
+			<texture type="specularmap" name="ground_road_dirt_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_road_dirt_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="true"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_drygrass" is_flora_layer="true" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.542, 0.442, 0.394" albedo_factor_mode="2" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="desert_floor_b"/>
+			<texture type="areamap" name=""/>
+			<texture type="normalmap" name="none"/>
+			<texture type="specularmap" name="editor_grid_8_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="none"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="plant_desert_bush_a" index="0" density="55.000" seed_index="2" colony_radius="0.000" colony_threshold="0.000" size_min="0.500, 0.500, 0.500" size_max="0.700, 0.700, 0.700" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="plant_desert_bush_b" index="1" density="45.000" seed_index="3" colony_radius="0.000" colony_threshold="0.000" size_min="0.500, 0.500, 0.500" size_max="0.700, 0.700, 0.700" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="plant_desert_bush_c" index="2" density="25.000" seed_index="4" colony_radius="0.000" colony_threshold="0.000" size_min="0.250, 0.250, 0.250" size_max="1.000, 1.000, 1.000" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="plant_desert_bush_d" index="3" density="35.000" seed_index="4" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.050, 1.050, 1.050" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="plant_desert_bush_e" index="4" density="25.000" seed_index="5" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="0.750, 0.750, 0.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="desert_rubble_stone_01" index="5" density="45.000" seed_index="2" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="0.650, 0.650, 0.650" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="rock_new_yellow" index="6" density="35.000" seed_index="3" colony_radius="0.000" colony_threshold="0.000" size_min="0.100, 0.100, 0.100" size_max="0.300, 0.300, 0.300" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_dry_plant_n" index="7" density="25.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.350, 0.350, 0.350" size_max="0.650, 0.650, 0.650" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_forest" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.310" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="forest_a_d"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="forest_a_n"/>
+			<texture type="specularmap" name="forest_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="forest_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="tree_forest_beech_e" index="0" density="12.000" seed_index="0" colony_radius="0.000" colony_threshold="0.000" size_min="0.400, 0.400, 0.400" size_max="1.200, 1.200, 1.200" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_sturgiaSnow_mix" index="1" density="11.000" seed_index="12" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="tree_high_j_poplar_forest" index="2" density="20.000" seed_index="0" colony_radius="0.000" colony_threshold="0.000" size_min="0.150, 0.150, 0.150" size_max="1.100, 1.100, 1.100" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="wheat_group_summer" index="3" density="25.000" seed_index="0" colony_radius="21.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.000, 1.000, 1.000" albedo_multiplier="0.599, 1.000, 0.875" weight_offset="0.500"/>
+			<mesh name="shrub__mix" index="4" density="14.000" seed_index="25" colony_radius="12.000" colony_threshold="0.000" size_min="0.300, 0.300, 0.300" size_max="0.400, 0.400, 0.400" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_grass_b" index="5" density="18.000" seed_index="0" colony_radius="0.000" colony_threshold="0.000" size_min="0.700, 0.700, 0.700" size_max="1.550, 1.550, 1.750" albedo_multiplier="0.646, 1.000, 0.619" weight_offset="0.500"/>
+			<mesh name="flora_grass_b_non_shadow" index="6" density="39.000" seed_index="0" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="0.708, 1.000, 0.701" weight_offset="0.500"/>
+			<mesh name="flora_shrub_c" index="7" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_tree_high_young_03" index="8" density="45.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.450, 1.450, 1.450" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_forset_2" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.310" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="forest_a_d"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="forest_a_n"/>
+			<texture type="specularmap" name="forest_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="forest_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="tree_forest_beech_e" index="0" density="100.000" seed_index="1" colony_radius="4.000" colony_threshold="0.000" size_min="0.200, 0.200, 0.200" size_max="0.600, 0.600, 0.600" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_sturgiaSnow_mix" index="1" density="100.000" seed_index="12" colony_radius="2.400" colony_threshold="0.000" size_min="0.200, 0.200, 0.200" size_max="0.600, 0.600, 0.600" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="tree_high_j_poplar_forest" index="2" density="11.000" seed_index="0" colony_radius="0.000" colony_threshold="0.000" size_min="0.150, 0.150, 0.150" size_max="0.600, 0.600, 0.600" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="wheat_group_summer" index="3" density="25.000" seed_index="0" colony_radius="21.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.000, 1.000, 1.000" albedo_multiplier="0.599, 1.000, 0.875" weight_offset="0.500"/>
+			<mesh name="shrub__mix" index="4" density="14.000" seed_index="25" colony_radius="12.000" colony_threshold="0.000" size_min="0.200, 0.200, 0.200" size_max="0.400, 0.400, 0.400" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_grass_b" index="5" density="18.000" seed_index="0" colony_radius="0.000" colony_threshold="0.000" size_min="0.700, 0.700, 0.700" size_max="1.550, 1.550, 1.750" albedo_multiplier="0.646, 1.000, 0.619" weight_offset="0.500"/>
+			<mesh name="flora_grass_b_non_shadow" index="6" density="39.000" seed_index="0" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="0.708, 1.000, 0.701" weight_offset="0.500"/>
+			<mesh name="flora_shrub_c" index="7" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_tree_high_young_03" index="8" density="100.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.300, 0.300, 0.300" size_max="0.800, 0.800, 0.800" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_maitian_01" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.630" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="vtstt_plowed_field_a_d"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="vtstt_plowed_field_a_n"/>
+			<texture type="specularmap" name="vtstt_plowed_field_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="vtstt_plowed_field_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="wheats_yellow" index="0" density="1000.000" seed_index="0" colony_radius="300.000" colony_threshold="0.000" size_min="1.050, 1.050, 1.050" size_max="1.500, 1.500, 1.500" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_road" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.160" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.805, 0.680, 0.619" albedo_factor_mode="2" smooth_blend_amount="1.500" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_mud_a_d"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="ground_mud_a_n"/>
+			<texture type="specularmap" name="ground_mud_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_mud_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_rock1" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="25.000, 25.000" shear="0.300, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.270" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.605, 0.442, 0.334" albedo_factor_mode="2" smooth_blend_amount="0.600" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="rock_cliff_b_d"/>
+			<texture type="areamap" name="rock_a"/>
+			<texture type="normalmap" name="rock_cliff_b_n"/>
+			<texture type="specularmap" name="rock_cliff_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="rock_cliff_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_rock2" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="4.000, 4.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="stone" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.530" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.231, 0.205, 0.198" albedo_factor_mode="2" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="rock_b_d"/>
+			<texture type="areamap" name=""/>
+			<texture type="normalmap" name="rock_b_n"/>
+			<texture type="specularmap" name="rock_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="rock_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_rock_road" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="4.000, 4.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.100" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.573, 0.459, 0.421" albedo_factor_mode="2" smooth_blend_amount="1.200" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_roads_a_d_noalpha"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="empire_road_floor_a_n"/>
+			<texture type="specularmap" name="empire_road_floor_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="empire_road_floor_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_sand" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="7.900, 7.900" shear="0.500, -0.400" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.040" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="desert_floor_a"/>
+			<texture type="areamap" name="desert_floor_a"/>
+			<texture type="normalmap" name="desert_floor_a_n"/>
+			<texture type="specularmap" name="desert_floor_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="desert_floor_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="xl_sandrock" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.200, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.210" ground_slope_scale="2.700" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.730, 0.625, 0.554" albedo_factor_mode="2" smooth_blend_amount="1.100" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_mud_a_d"/>
+			<texture type="areamap" name="desert_floor_a"/>
+			<texture type="normalmap" name="ground_mud_a_n"/>
+			<texture type="specularmap" name="ground_mud_a_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_mud_a_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_base_1" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="2" bigdetailmap_weight="1.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="5.000" bigdetailmap_scale_y="5.000" bigdetailmap_bias_x="5.000" bigdetailmap_bias_y="5.000">
+		<textures>
+			<texture type="diffusemap" name="ground_roads_a_d_noalpha"/>
+			<texture type="areamap" name="dry_grass"/>
+			<texture type="normalmap" name="ground_grass_stone_b_n"/>
+			<texture type="specularmap" name="ground_grass_stone_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_stone_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_caodi_1" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="6.700, 6.700" shear="0.800, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.523, 0.542, 0.431" albedo_factor_mode="2" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground2"/>
+			<texture type="areamap" name=""/>
+			<texture type="normalmap" name="ground_grass_rock_b_n"/>
+			<texture type="specularmap" name="ground_grass_rock_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_rock_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="flora_shrub_mix" index="0" density="55.000" seed_index="0" colony_radius="200.000" colony_threshold="0.200" size_min="0.400, 0.400, 0.400" size_max="0.900, 0.900, 0.900" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_grass_aa" index="1" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.100" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_green__mix_flower" index="2" density="65.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="ground_rock" index="3" density="70.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_tree_acacia_mix" index="4" density="150.000" seed_index="0" colony_radius="200.000" colony_threshold="0.100" size_min="0.350, 0.350, 0.350" size_max="0.700, 0.700, 0.700" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_tree_acacia_mix" index="5" density="15.000" seed_index="0" colony_radius="200.000" colony_threshold="0.200" size_min="0.500, 0.500, 0.500" size_max="1.550, 1.550, 1.750" albedo_multiplier="0.708, 0.523, 0.289" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_caodi_2" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="6.700, 6.700" shear="0.800, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.523, 0.542, 0.431" albedo_factor_mode="2" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground2"/>
+			<texture type="areamap" name=""/>
+			<texture type="normalmap" name="ground_grass_rock_b_n"/>
+			<texture type="specularmap" name="ground_grass_rock_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_rock_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="flora_shrub_mix" index="0" density="54.600" seed_index="0" colony_radius="200.000" colony_threshold="0.200" size_min="0.400, 0.400, 0.400" size_max="0.900, 0.900, 0.900" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_grass_aa" index="1" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.100" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_green__mix_flower" index="2" density="65.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="ground_rock" index="3" density="70.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_tree_acacia_mix" index="4" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.000" size_min="0.300, 0.300, 0.300" size_max="0.800, 0.800, 0.800" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.600"/>
+			<mesh name="flora_tree_acacia_mix" index="5" density="85.000" seed_index="0" colony_radius="200.000" colony_threshold="0.000" size_min="0.600, 0.600, 0.600" size_max="1.200, 1.200, 1.200" albedo_multiplier="0.659, 0.599, 0.394" weight_offset="0.500"/>
+			<mesh name="free_valley_flower__mix" index="6" density="55.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.300, 0.300, 0.300" size_max="0.600, 0.600, 0.600" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.850"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_caodi_a" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="10.000, 10.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.020" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.476, 0.625, 0.437" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_grass_c_d"/>
+			<texture type="areamap" name="desert_floor_a"/>
+			<texture type="normalmap" name="ground_grass_c_n"/>
+			<texture type="specularmap" name="ground_grass_c_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_c_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_caodi_b" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="2" bigdetailmap_weight="0.600" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="5.000" bigdetailmap_scale_y="5.000" bigdetailmap_bias_x="5.000" bigdetailmap_bias_y="5.000">
+		<textures>
+			<texture type="diffusemap" name="ground_grass_b_d"/>
+			<texture type="areamap" name="ground2"/>
+			<texture type="normalmap" name="ground_grass_b_n"/>
+			<texture type="specularmap" name="ground_grass_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="flora_grass_aa" index="0" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.350, 0.350, 0.350" size_max="1.750, 1.750, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_shrub_mix" index="1" density="3.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.350, 0.350, 0.350" size_max="1.550, 1.550, 1.750" albedo_multiplier="0.797, 1.000, 0.715" weight_offset="0.500"/>
+			<mesh name="free_valley_flower__mix" index="2" density="15.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_caogou1" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="sand" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="ground_grass_d_d"/>
+			<texture type="areamap" name="desert_floor_a"/>
+			<texture type="normalmap" name="ground_grass_d_n"/>
+			<texture type="specularmap" name="ground_grass_c_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="ground_grass_d_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_caoshi" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="7.100, 7.100" shear="0.100, -0.300" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.200" parallax_amount="0.050" ground_slope_scale="3.900" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.311, 0.293, 0.235" albedo_factor_mode="2" smooth_blend_amount="0.600" bigdetailmap_scale_x="0.001" bigdetailmap_scale_y="0.001" bigdetailmap_bias_x="0.001" bigdetailmap_bias_y="0.001">
+		<textures>
+			<texture type="diffusemap" name="ground_grass_rock_b_d"/>
+			<texture type="areamap" name=""/>
+			<texture type="normalmap" name="ground_grass_rock_b_n"/>
+			<texture type="specularmap" name="ground_grass_rock_b_s"/>
+			<texture type="splattingmap" name="black_h"/>
+			<texture type="displacementmap" name="ground_grass_rock_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="flora_shrub_mix" index="0" density="100.000" seed_index="0" colony_radius="200.000" colony_threshold="0.200" size_min="0.750, 0.750, 0.750" size_max="0.850, 0.850, 0.850" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_grass_aa" index="1" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.450, 0.450, 0.450" size_max="1.150, 1.150, 1.150" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_green__mix_flower" index="2" density="55.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="ground_rock" index="3" density="45.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_caoshi2" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="7.100, 7.100" shear="0.100, -0.300" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.200" parallax_amount="0.050" ground_slope_scale="3.900" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="0.311, 0.293, 0.235" albedo_factor_mode="2" smooth_blend_amount="0.600" bigdetailmap_scale_x="0.001" bigdetailmap_scale_y="0.001" bigdetailmap_bias_x="0.001" bigdetailmap_bias_y="0.001">
+		<textures>
+			<texture type="diffusemap" name="ground_grass_rock_b_d"/>
+			<texture type="areamap" name=""/>
+			<texture type="normalmap" name="ground_grass_rock_b_n"/>
+			<texture type="specularmap" name="ground_grass_rock_b_s"/>
+			<texture type="splattingmap" name="black_h"/>
+			<texture type="displacementmap" name="ground_grass_rock_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="flora_shrub_mix" index="0" density="99.900" seed_index="0" colony_radius="200.000" colony_threshold="0.200" size_min="0.650, 0.650, 0.650" size_max="0.850, 0.850, 0.850" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_grass_aa" index="1" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.450, 0.450, 0.450" size_max="1.150, 1.150, 1.150" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_green__mix_flower" index="2" density="55.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="ground_rock" index="3" density="45.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_senlin1" is_flora_layer="true" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="5.000, 5.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="soil" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.000" ground_slope_scale="1.000" bigdetailmap_mode="0" bigdetailmap_weight="0.000" albedo_factor_color="1.000, 1.000, 1.000" albedo_factor_mode="0" smooth_blend_amount="1.000" bigdetailmap_scale_x="0.080" bigdetailmap_scale_y="0.080" bigdetailmap_bias_x="0.080" bigdetailmap_bias_y="0.080">
+		<textures>
+			<texture type="diffusemap" name="editor_grid_8"/>
+			<texture type="areamap" name="none"/>
+			<texture type="normalmap" name="none"/>
+			<texture type="specularmap" name="editor_grid_8_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="none"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="false"/>
+			<flag name="use_displacement_mapping" value="false"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes>
+			<mesh name="flora_grass_a_non_shadow" index="0" density="55.000" seed_index="2" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.400, 1.400, 1.400" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_green__mix" index="1" density="25.000" seed_index="3" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_plant__mix" index="2" density="25.000" seed_index="4" colony_radius="0.000" colony_threshold="0.000" size_min="0.500, 0.500, 0.500" size_max="1.500, 1.500, 1.500" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_grass_b_non_shadow" index="3" density="30.000" seed_index="6" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.300, 1.300, 1.300" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="shrub__mix" index="4" density="6.000" seed_index="7" colony_radius="0.000" colony_threshold="0.000" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="rock_new_green" index="5" density="14.000" seed_index="9" colony_radius="0.000" colony_threshold="0.000" size_min="0.300, 0.300, 0.300" size_max="0.700, 0.700, 0.700" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_tree_aspen_mix" index="6" density="200.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.300, 0.300, 0.300" size_max="1.250, 1.250, 1.250" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.700"/>
+			<mesh name="flora_tree_aspen_young_03" index="7" density="65.000" seed_index="0" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_tree_aspen_forest" index="8" density="150.000" seed_index="70" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.550, 1.550, 1.750" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.500"/>
+			<mesh name="flora_tree_beech_mix" index="9" density="65.000" seed_index="150" colony_radius="200.000" colony_threshold="0.300" size_min="0.650, 0.650, 0.650" size_max="1.350, 1.350, 1.350" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.600"/>
+			<mesh name="flora_tree_birch_mix" index="10" density="75.000" seed_index="0" colony_radius="100.000" colony_threshold="0.300" size_min="0.300, 0.300, 0.300" size_max="1.200, 1.200, 1.200" albedo_multiplier="1.000, 1.000, 1.000" weight_offset="0.300"/>
+		</meshes>
+	</terrain_material>
+	<terrain_material is_enabled="true" name="zy_shanshi_a" is_flora_layer="false" is_mesh_blend_layer="false" pitch_roll_yaw="0.000, 0.000, 0.000" scale="25.000, 25.000" shear="0.000, 0.000" position_offset="0.000, 0.000" physics_material="stone" detail_level_adjustment="0" elevation_amount="0.000" parallax_amount="0.160" ground_slope_scale="1.000" bigdetailmap_mode="2" bigdetailmap_weight="0.500" albedo_factor_color="0.470, 0.701, 0.505" albedo_factor_mode="2" smooth_blend_amount="1.100" bigdetailmap_scale_x="10.000" bigdetailmap_scale_y="10.000" bigdetailmap_bias_x="10.000" bigdetailmap_bias_y="10.000">
+		<textures>
+			<texture type="diffusemap" name="rock_cliff_b_d"/>
+			<texture type="areamap" name="ground2"/>
+			<texture type="normalmap" name="rock_cliff_b_n"/>
+			<texture type="specularmap" name="rock_cliff_b_s"/>
+			<texture type="splattingmap" name="none"/>
+			<texture type="displacementmap" name="rock_cliff_b_h"/>
+		</textures>
+		<layer_flags>
+			<flag name="use_parallax" value="true"/>
+			<flag name="use_displacement_mapping" value="true"/>
+			<flag name="use_randomized_normalmap" value="false"/>
+			<flag name="use_transparency_of_diffuse_alpha" value="false"/>
+			<flag name="use_transparency_of_ground_slope" value="false"/>
+			<flag name="use_dxt5_normal" value="false"/>
+			<flag name="use_six_side_uv_mapping" value="false"/>
+		</layer_flags>
+		<meshes/>
+	</terrain_material>
+</terrain_materials>
+

@@ -1,0 +1,140 @@
+<Prefab>
+  <Constants>
+    <Constant Name="ParallaxDuration" Value="6"/>
+  </Constants>
+  <Window>
+    <MultiplayerLobbyBadgeProgressInformationWidget ActiveBadgesList="PopupAreaParent\PopupArea\ContentContainer\AllBadgesListGroup\BadgeListContainer\BadgeList" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsEnabled" ShownBadgeCount="@ShownBadgeCount">
+      <Children>
+
+        <NavigationForcedScopeCollectionTargeter CollectionID="BadgeProgressCollection" CollectionParent="..\." CollectionOrder="1000" />
+        <!--Background-->
+        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.9" />
+
+        <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" VerticalAlignment="Top" Command.Click="ExecuteClosePopup" DoNotPassEventsToChildren="true" />
+
+        <ListPanel Id="PopupAreaParent" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="950" VerticalAlignment="Center" StackLayout.LayoutMethod="VerticalTopToBottom" DoNotAcceptEvents="true">
+          <Children>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="200" Sprite="MPLobby\Popup\level_progress_popup_glow" VerticalAlignment="Top" HorizontalAlignment="Center" DoNotAcceptEvents="true" />
+
+            <Widget Id="PopupArea" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="550" VerticalAlignment="Center" DoNotAcceptEvents="false" UpdateChildrenStates="true">
+              <Children>
+
+                <!--Popup Background-->
+                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" DoNotAcceptEvents="true" StackLayout.LayoutMethod="VerticalTopToBottom">
+                  <Children>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="0" Sprite="MPLobby\Popup\level_progress_popup_glow" HorizontalAlignment="Center" DoNotAcceptEvents="true"/>
+                      </Children>
+                    </Widget>
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="popup_gradient_background_9" Color="#3B1C09FF" AlphaFactor="0.9" ColorFactor="0.8" />
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="0" Sprite="MPLobby\Popup\level_progress_popup_glow" HorizontalAlignment="Center" VerticalFlip="true" DoNotAcceptEvents="true" />
+                      </Children>
+                    </Widget>
+                  </Children>
+                </ListPanel>
+
+                <ListPanel Id="ContentContainer" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1500" SuggestedHeight="500" HorizontalAlignment="Center" VerticalAlignment="Center" MarginTop="0" MarginBottom="0" StackLayout.LayoutMethod="VerticalTopToBottom" >
+                  <Children>
+                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.AfterBattle.Popup.Header.Text" MarginTop="0" Text="@TitleText" Brush.FontSize="42" />
+
+                    <!-- Current Active Badge -->
+                    <Widget DataSource="{BadgeGroup}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="150" HorizontalAlignment="Center" MarginTop="0">
+                      <Children>
+                        <ListPanel DataSource="{ShownBadgeItem}" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalTopToBottom">
+                          <Children>
+                            <MultiplayerPlayerBadgeVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="150" SuggestedHeight="150" BadgeId="@BadgeId" />
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" PositionYOffset="5" Brush="MPLobby.Profile.ActiveBadge.Text" Text="@Name" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </Widget>
+
+                    <NavigationScopeTargeter ScopeID="LobbyBadgeProggressPreviousButtonScope" ScopeParent="..\AllBadgesListGroup\PreviousButton" FollowMobileTargets="true" />
+                    <NavigationScopeTargeter ScopeID="LobbyBadgeProggressScope" ScopeParent="..\AllBadgesListGroup\BadgeListContainer" ScopeMovements="Horizontal" />
+                    <NavigationScopeTargeter ScopeID="LobbyBadgeProggressNextButtonScope" ScopeParent="..\AllBadgesListGroup\NextButton" FollowMobileTargets="true" />
+                    <ListPanel Id="AllBadgesListGroup" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="0" StackLayout.LayoutMethod="HorizontalSpaced">
+                      <Children>
+
+                        <ButtonWidget Id="PreviousButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="50" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Progression.Button.Previous" Command.Click="ExecuteDecreaseActiveBadgeIndices" IsEnabled="@CanDecreaseBadgeIndices" GamepadNavigationIndex="0">
+                          <Children>
+                            <Widget DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="-25" PositionXOffset="-15" IsVisible="@CanDecreaseBadgeIndices">
+                              <Children>
+                                <InputKeyVisualWidget DataSource="{PreviousTabInputKey}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                              </Children>
+                            </Widget>
+                          </Children>
+                        </ButtonWidget>
+
+                        <Widget Id="BadgeListContainer" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent">
+                          <Children>
+
+                            <NavigatableListPanel Id="BadgeList" DataSource="{AvailableBadgeIDs}" WidthSizePolicy="CoverChildren" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="HorizontalCentered">
+                              <ItemTemplate>
+                                <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Center">
+                                  <Children>
+                                    <NavigationTargetSwitcher FromTarget="..\." ToTarget="..\BadgeContainer" />
+                                    <StringBasedVisibilityWidget Id="BadgeContainer" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" FirstString="" SecondString="@Value" WatchType="NotEqual">
+                                      <Children>
+                                        <MultiplayerPlayerBadgeVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="175" SuggestedHeight="175" BadgeId="@Value" />
+                                      </Children>
+                                    </StringBasedVisibilityWidget>
+                                  </Children>
+                                </Widget>
+
+                              </ItemTemplate>
+                            </NavigatableListPanel>
+
+                          </Children>
+                        </Widget>
+
+                        <ButtonWidget Id="NextButton" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="35" SuggestedHeight="50" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Progression.Button.Next" Command.Click="ExecuteIncreaseActiveBadgeIndices" IsEnabled="@CanIncreaseBadgeIndices" GamepadNavigationIndex="0">
+                          <Children>
+                            <Widget DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Top" PositionYOffset="-25" PositionXOffset="15" IsVisible="@CanIncreaseBadgeIndices">
+                              <Children>
+                                <InputKeyVisualWidget DataSource="{NextTabInputKey}" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="45" SuggestedHeight="45" KeyID="@KeyID" IsVisible="@IsVisible"/>
+                              </Children>
+                            </Widget>
+                          </Children>
+                        </ButtonWidget>
+
+                      </Children>
+                    </ListPanel>
+
+                    <!-- Progress -->
+                    <FillBarWidget DataSource="{BadgeGroup}" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="800" SuggestedHeight="60" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="6" FillWidget="FillWidget" MaxAmount="@TotalProgress" InitialAmount="@CurrentProgress" Sprite="MPLobby\Home\player_stats_level_bar_bed" AlphaFactor="0.5" IsHidden="@IsProgressComplete">
+                      <Children>
+                        <Widget Id="FillWidget" ClipContents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedHeight="30" ExtendLeft="-12" ExtendRight="-12" ExtendBottom="-2" VerticalAlignment="Center" Sprite="MPLobby\Home\player_stats_level_bar_fill" AlphaFactor="0.6" />
+                        <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center" StackLayout.LayoutMethod="HorizontalCentered">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IntText="@CurrentProgress" Brush="MPLobby.Profile.Badge.Count.Text" DoNotAcceptEvents="true" />
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Text="/" Brush="MPLobby.Profile.Badge.Count.Separator.Text" DoNotAcceptEvents="true" />
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" IntText="@TotalProgress" Brush="MPLobby.Profile.Badge.Count.Text" DoNotAcceptEvents="true" />
+                          </Children>
+                        </ListPanel>
+                      </Children>
+                    </FillBarWidget>
+
+                    <TextWidget DataSource="{BadgeGroup}" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="24" Brush="MPLobby.Profile.ActiveBadge.Text" Brush.FontSize="34" IsVisible="@IsProgressComplete" Text="@ProgressCompletedText" />
+
+                  </Children>
+                </ListPanel>
+
+                <TextWidget Id="ClickToContinue" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" HorizontalAlignment="Center" PositionYOffset="75"  Brush="MPLobby.Profile.Popup.SubTitle.Text" Text="@ClickToCloseText" />
+
+              </Children>
+            </Widget>
+
+            <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="200" Sprite="MPLobby\Popup\level_progress_popup_glow" HorizontalAlignment="Center" VerticalFlip="true" DoNotAcceptEvents="true" />
+          </Children>
+        </ListPanel>
+
+      </Children>
+    </MultiplayerLobbyBadgeProgressInformationWidget>
+  </Window>
+</Prefab>

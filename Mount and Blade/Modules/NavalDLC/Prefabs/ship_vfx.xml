@@ -1,0 +1,167 @@
+<prefabs>
+	<game_entity name="ship_ram_hit_hole_debris" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="dummy" old_prefab_name="">
+				<transform position="0.000, 0.000, 0.000" rotation_euler="-0.081, -0.108, 1.444"/>
+				<children>
+					<game_entity name="plank_debris_5" old_prefab_name="">
+						<transform position="-0.006, -0.492, 0.301" rotation_euler="-0.112, 1.529, 1.535" scale="1.199, 1.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="plank_debris_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_splinter_2" old_prefab_name="">
+						<transform position="0.079, -0.037, 0.477" rotation_euler="-0.162, 1.997, -2.050"/>
+						<components>
+							<meta_mesh_component name="plank_splinter_2"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_29" old_prefab_name="">
+						<transform position="-0.095, 0.535, -0.209" rotation_euler="-0.569, -1.351, -0.920"/>
+						<components>
+							<meta_mesh_component name="plank_debris_29"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_20" old_prefab_name="">
+						<transform position="0.032, -0.694, 0.026" rotation_euler="0.050, -1.585, -1.610"/>
+						<components>
+							<meta_mesh_component name="plank_debris_20"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_18" old_prefab_name="">
+						<transform position="-0.142, 0.587, 0.158" rotation_euler="0.092, 1.694, -1.201" scale="1.303, 1.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="plank_debris_18"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_36" old_prefab_name="">
+						<transform position="-0.160, 0.682, 0.063" rotation_euler="-0.836, -1.749, 1.775"/>
+						<components>
+							<meta_mesh_component name="plank_debris_36"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_24" old_prefab_name="">
+						<transform position="0.042, -0.846, -0.178" rotation_euler="0.097, 1.583, 1.562"/>
+						<components>
+							<meta_mesh_component name="plank_debris_24"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_23" old_prefab_name="">
+						<transform position="-0.199, 0.753, -0.085" rotation_euler="-0.064, 1.658, -1.291" scale="1.182, 1.000, 1.000"/>
+						<components>
+							<meta_mesh_component name="plank_debris_23"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_16" old_prefab_name="">
+						<transform position="-0.202, 0.676, -0.337" rotation_euler="0.273, -1.706, 1.974" scale="0.909, 1.000, 0.998"/>
+						<components>
+							<meta_mesh_component name="plank_debris_16"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_20" old_prefab_name="">
+						<transform position="0.027, -0.399, -0.348" rotation_euler="0.209, 1.538, 1.559" scale="0.672, 0.999, 0.999"/>
+						<components>
+							<meta_mesh_component name="plank_debris_20"/>
+						</components>
+					</game_entity>
+					<game_entity name="plank_splinter_3" old_prefab_name="">
+						<transform position="-0.033, 0.220, 0.484" rotation_euler="-0.977, -1.508, -1.243"/>
+						<components>
+							<meta_mesh_component name="plank_splinter_3"/>
+						</components>
+					</game_entity>
+					<game_entity name="psys_naval_ship_hit_large" old_prefab_name="">
+						<tags>
+							<tag name="particle"/>
+						</tags>
+						<transform position="-0.014, -0.040, 0.040"/>
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{F16E5B2B-18F2-4A1D-8569-0DDBB3CE5FDE}"/>
+							</particle_system_instanced_component>
+						</components>
+					</game_entity>
+					<game_entity name="plank_debris_23" old_prefab_name="">
+						<transform position="-0.174, 0.617, 0.422" rotation_euler="0.181, 1.706, -1.253"/>
+						<components>
+							<meta_mesh_component name="plank_debris_23"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ship_mast_holder_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_ship_mast_holder_a"/>
+		<components>
+			<meta_mesh_component name="ship_mast_holder_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="ship_mast_holder_b" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_ship_mast_holder_b"/>
+		<components>
+			<meta_mesh_component name="ship_mast_holder_b"/>
+		</components>
+	</game_entity>
+	<game_entity name="ship_mast_holder_c" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_ship_mast_holder_c"/>
+		<components>
+			<meta_mesh_component name="ship_mast_holder_c"/>
+		</components>
+	</game_entity>
+	<game_entity name="ship_mast_holder_angled_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_ship_mast_holder_angled_a"/>
+		<components>
+			<meta_mesh_component name="ship_mast_holder_angled_a"/>
+		</components>
+		<children>
+			<game_entity name="ship_mast_holder_angled_a_support" old_prefab_name="">
+				<transform position="0.000, 0.701, 0.080" rotation_euler="0.321, 0.000, 0.000"/>
+				<physics shape="bo_ship_mast_holder_angled_a_support"/>
+				<components>
+					<meta_mesh_component name="ship_mast_holder_angled_a_support"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ship_mast_holder_angled_b" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<physics shape="bo_ship_mast_holder_angled_b"/>
+		<components>
+			<meta_mesh_component name="ship_mast_holder_angled_b"/>
+		</components>
+		<children>
+			<game_entity name="ship_mast_holder_angled_b_support" old_prefab_name="">
+				<transform position="-0.002, 0.473, 0.000"/>
+				<physics shape="bo_ship_mast_holder_angled_b_support"/>
+				<components>
+					<meta_mesh_component name="ship_mast_holder_angled_b_support"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="ship_fishing_mast_holder_angled_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="ship_fishing_mast_holder_angled_a"/>
+		</components>
+	</game_entity>
+	<game_entity name="ship_fishing_mast_holder_angled_a_support" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="ship_fishing_mast_holder_angled_a_support"/>
+		</components>
+	</game_entity>
+	<game_entity name="ship_fishing_mast_holder_a" old_prefab_name="">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<components>
+			<meta_mesh_component name="ship_fishing_mast_holder_a"/>
+		</components>
+	</game_entity>
+</prefabs>
+

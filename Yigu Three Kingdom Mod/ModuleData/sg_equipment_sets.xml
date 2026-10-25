@@ -1,0 +1,1783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EquipmentRosters>
+  <!-- 民用 -->
+  <EquipmentRoster
+    id="lz_han_hero_nan_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <equipment slot="Item0" id="Item.lz_hsd_han_03_chushi" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan_chushi" />
+      <equipment slot="Body" id="Item.lz_cloth_troop_01_chushi" />
+      <equipment slot="Leg" id="Item.sg_cl_c01_farmer001_leg_chushi" />
+      <equipment slot="Gloves" id="Item.sg_ar_c08_s4002_arm_chushi" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="lz_han_hero_nv_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01_chushi" />
+      <equipment slot="Leg" id="Item.sg_ar_c01_s003_leg_chushi" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 地方流氓 -->
+  <EquipmentRoster
+    id="lz_difang_liumang_equipment_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <equipment slot="Item0" id="Item.lz_ji_han_02" />
+      <equipment slot="Item1" id="Item.sg_throwing_knife_whole_001" />
+      <equipment slot="Head" id="Item.lz_yanzhou_mao_07" />
+      <equipment slot="Body" id="Item.lz_cloth_troop_01" />
+      <equipment slot="Leg" id="Item.lz_yanzhou_xie_01" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <!-- 小兵 -->
+  <EquipmentRoster
+    id="lz_han_troops_equipment_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Item1" id="Item.lz_hsd_han_06" />
+      <equipment slot="Item2" id="Item.lz_ji_han_02" />
+      <equipment slot="Item3" id="Item.sg_throwing_knife_whole_001" />
+      <equipment slot="Head" id="Item.lz_yanzhou_mao_07" />
+      <equipment slot="Body" id="Item.lz_cloth_troop_01" />
+      <equipment slot="Leg" id="Item.lz_yanzhou_xie_01" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <!-- 野怪 -->
+  <EquipmentRoster
+    id="lz_bandit_troops_equipment_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <equipment slot="Item0" id="Item.sg_sword_whole_001_1h" />
+      <equipment slot="Head" id="Item.sg_npc_guard_head" />
+      <equipment slot="Cape" id="Item.sg_cl_c03_s1001_shoulder" />
+      <equipment slot="Body" id="Item.sg_cl_c04_s1001_body" />
+      <equipment slot="Gloves" id="Item.sg_ar_c11_com01_arm" />
+      <equipment slot="Leg" id="Item.sg_cl_c07_s1001_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <!-- 刘备势力 -->
+  <EquipmentRoster
+    id="sg_npc_yizhou_man_hero_wujiang_equipment_template"
+    culture="Culture.yizhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c03_s7002_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yizhou_man_hero_moushi_equipment_template"
+    culture="Culture.yizhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yizhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.yizhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yizhou_woman_hero_moushi_equipment_template"
+    culture="Culture.yizhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yizhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yizhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yizhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yizhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.yizhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 曹操势力 -->
+  <EquipmentRoster
+    id="sg_npc_yanzhou_man_hero_wujiang_equipment_template"
+    culture="Culture.yanzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c02_s7001_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c02_s7001_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c02_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c02_s7001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+    </EquipmentSet>
+    <Flags
+      IsNobleTemplate="true"
+      IsCombatantTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yanzhou_man_hero_moushi_equipment_template"
+    culture="Culture.yanzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+    <Flags
+      IsNobleTemplate="true"
+      IsCombatantTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yanzhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.yanzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c02_s7001_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c02_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c02_s7001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+    </EquipmentSet>
+    <Flags
+      IsNobleTemplate="true"
+      IsCombatantTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yanzhou_woman_hero_moushi_equipment_template"
+    culture="Culture.yanzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c02_s7001_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c02_s6002_body" />
+      <equipment slot="Gloves" id="Item.sg_ar_c02_s7001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+      <Equipment
+        slot="Head"
+        id="Item.sg_ar_c02_s7001_head" />
+      <Equipment
+        slot="Cape"
+        id="Item.sg_ar_c08_s6001_shoulder" />
+      <Equipment
+        slot="Body"
+        id="Item.sg_ar_c02_s7001_body" />
+      <Equipment
+        slot="Gloves"
+        id="Item.sg_ar_c02_s8002_arm" />
+      <Equipment
+        slot="Leg"
+        id="Item.sg_ar_c02_s7001_leg" />
+    </EquipmentSet>
+    <Flags
+      IsNobleTemplate="true"
+      IsCombatantTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yanzhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yanzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yanzhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.yanzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yanzhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yanzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yanzhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.yanzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 孙坚势力 -->
+  <EquipmentRoster
+    id="sg_npc_yangzhou_man_hero_wujiang_equipment_template"
+    culture="Culture.yangzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c04_s7002_head_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c04_s7001_arm" />
+      <equipment slot="Cape" id="Item.sg_ar_c04_s6002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c04_s7002_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c04_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yangzhou_man_hero_moushi_equipment_template"
+    culture="Culture.yangzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yangzhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.yangzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Gloves" id="Item.sg_ar_c04_s7001_arm" />
+      <equipment slot="Cape" id="Item.sg_ar_c04_s6002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c04_s7002_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c04_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yangzhou_woman_hero_moushi_equipment_template"
+    culture="Culture.yangzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Gloves" id="Item.sg_ar_c04_s7001_arm" />
+      <equipment slot="Cape" id="Item.sg_ar_c04_s6002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c04_s7002_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c04_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yangzhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yangzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yangzhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.yangzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yangzhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yangzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yangzhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.yangzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 董卓势力 -->
+  <EquipmentRoster
+    id="sg_npc_yongliang_man_hero_wujiang_equipment_template"
+    culture="Culture.yongliang">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.lz_horse_yongliang_01" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.sg_ar_c01_s7001_head" />
+      <equipment slot="Cape" id="Item.sg_ar_c01_s7001_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c01_s7001_body" />
+      <equipment slot="Gloves" id="Item.sg_ar_c01_s7001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c01_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yongliang_man_hero_moushi_equipment_template"
+    culture="Culture.yongliang">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.lz_horse_yongliang_01" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yongliang_woman_hero_wujiang_equipment_template"
+    culture="Culture.yongliang">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.lz_horse_yongliang_01" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c01_s7001_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c01_s7001_body" />
+      <equipment slot="Gloves" id="Item.sg_ar_c01_s7001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c01_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yongliang_woman_hero_moushi_equipment_template"
+    culture="Culture.yongliang">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.lz_horse_yongliang_01" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c01_s7001_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c01_s7001_body" />
+      <equipment slot="Gloves" id="Item.sg_ar_c01_s7001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c01_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yongliang_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yongliang">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yongliang_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.yongliang">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yongliang_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yongliang">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yongliang_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.yongliang">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 袁绍势力 -->
+  <EquipmentRoster
+    id="sg_npc_jizhou_man_hero_wujiang_equipment_template"
+    culture="Culture.jizhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c05_s7001_head_j" />
+      <equipment slot="Body" id="Item.sg_ar_c05_s7001_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+      <equipment slot="Cape" id="Item.sg_ar_c05_s7001_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jizhou_man_hero_moushi_equipment_template"
+    culture="Culture.jizhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jizhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.jizhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Body" id="Item.sg_ar_c05_s7001_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+      <equipment slot="Cape" id="Item.sg_ar_c05_s7001_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jizhou_woman_hero_moushi_equipment_template"
+    culture="Culture.jizhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Body" id="Item.sg_ar_c05_s7001_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c05_s5003_leg" />
+      <equipment slot="Cape" id="Item.sg_ar_c05_s7001_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c05_s3002_arm" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jizhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.jizhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jizhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.jizhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jizhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.jizhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jizhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.jizhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 袁术势力 -->
+  <EquipmentRoster
+    id="sg_npc_yuzhou_man_hero_wujiang_equipment_template"
+    culture="Culture.yuzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.lz_horse_zhongyuan_01" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c07_s7001_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c07_s6002_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c07_s7001_arm" />
+      <equipment slot="Body" id="Item.sg_ar_c07_s7001_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c07_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yuzhou_man_hero_moushi_equipment_template"
+    culture="Culture.yuzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.lz_horse_zhongyuan_01" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yuzhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.yuzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.lz_horse_zhongyuan_01" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c07_s6002_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c07_s7001_arm" />
+      <equipment slot="Body" id="Item.sg_ar_c07_s7001_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c07_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yuzhou_woman_hero_moushi_equipment_template"
+    culture="Culture.yuzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.lz_horse_zhongyuan_01" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c07_s6002_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c07_s7001_arm" />
+      <equipment slot="Body" id="Item.sg_ar_c07_s7001_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c07_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yuzhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yuzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yuzhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.yuzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yuzhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.yuzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_yuzhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.yuzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 公孙瓒势力 -->
+  <EquipmentRoster
+    id="sg_npc_youzhou_man_hero_wujiang_equipment_template"
+    culture="Culture.youzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c06_s7001_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c06_s6002_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c06_s7001_arm" />
+      <equipment slot="Body" id="Item.sg_ar_c06_s7001_body_j" />
+      <equipment slot="Leg" id="Item.sg_ar_c06_s6002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_youzhou_man_hero_moushi_equipment_template"
+    culture="Culture.youzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_youzhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.youzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c06_s6002_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c06_s7001_arm" />
+      <equipment slot="Body" id="Item.sg_ar_c06_s7001_body" />
+      <equipment slot="Leg" id="Item.sg_ar_c06_s6002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_youzhou_woman_hero_moushi_equipment_template"
+    culture="Culture.youzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c06_s6002_shoulder" />
+      <equipment slot="Gloves" id="Item.sg_ar_c06_s7001_arm" />
+      <equipment slot="Body" id="Item.sg_ar_c06_s7001_body" />
+      <equipment slot="Leg" id="Item.sg_ar_c06_s6002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_youzhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.youzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_youzhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.youzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_youzhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.youzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_youzhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.youzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 刘表势力 -->
+  <EquipmentRoster
+    id="sg_npc_jingzhou_man_hero_wujiang_equipment_template"
+    culture="Culture.jingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c08_s7002_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jingzhou_man_hero_moushi_equipment_template"
+    culture="Culture.jingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jingzhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.jingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jingzhou_woman_hero_moushi_equipment_template"
+    culture="Culture.jingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jingzhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.jingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jingzhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.jingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jingzhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.jingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jingzhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.jingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <!-- 士燮势力 -->
+  <EquipmentRoster
+    id="sg_npc_jiaozhou_man_hero_wujiang_equipment_template"
+    culture="Culture.jiaozhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c10_s6005_head" />
+      <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c10_s6002_body" />
+      <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jiaozhou_man_hero_moushi_equipment_template"
+    culture="Culture.jiaozhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jiaozhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.jiaozhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c10_s6002_body" />
+      <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jiaozhou_woman_hero_moushi_equipment_template"
+    culture="Culture.jiaozhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c10_s6002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c10_s6002_body" />
+      <equipment slot="Gloves" id="Item.sg_ar_c10_s5001_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c02_s7001_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jiaozhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.jiaozhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jiaozhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.jiaozhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jiaozhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.jiaozhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_jiaozhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.jiaozhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+<!-- 并州 -->
+  <EquipmentRoster
+    id="sg_npc_bingzhou_man_hero_wujiang_equipment_template"
+    culture="Culture.bingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c08_s7002_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_bingzhou_man_hero_moushi_equipment_template"
+    culture="Culture.bingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_bingzhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.bingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_bingzhou_woman_hero_moushi_equipment_template"
+    culture="Culture.bingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_bingzhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.bingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_bingzhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.bingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_bingzhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.bingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_bingzhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.bingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+<!-- 司隶 -->
+  <EquipmentRoster
+    id="sg_npc_sili_man_hero_wujiang_equipment_template"
+    culture="Culture.sili">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c08_s7002_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_sili_man_hero_moushi_equipment_template"
+    culture="Culture.sili">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_sili_woman_hero_wujiang_equipment_template"
+    culture="Culture.sili">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_sili_woman_hero_moushi_equipment_template"
+    culture="Culture.sili">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_sili_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.sili">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_sili_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.sili">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_sili_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.sili">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_sili_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.sili">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+<!-- 青州 -->
+  <EquipmentRoster
+    id="sg_npc_qingzhou_man_hero_wujiang_equipment_template"
+    culture="Culture.qingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c08_s7002_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_qingzhou_man_hero_moushi_equipment_template"
+    culture="Culture.qingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_qingzhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.qingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_qingzhou_woman_hero_moushi_equipment_template"
+    culture="Culture.qingzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_qingzhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.qingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_qingzhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.qingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_qingzhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.qingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_qingzhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.qingzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+<!-- 徐州 -->
+  <EquipmentRoster
+    id="sg_npc_xuzhou_man_hero_wujiang_equipment_template"
+    culture="Culture.xuzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changji_01" />
+      <equipment slot="Head" id="Item.sg_ar_c08_s7002_head_j" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_xuzhou_man_hero_moushi_equipment_template"
+    culture="Culture.xuzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Head" id="Item.lz_jinxianguan_wenguan" />
+      <equipment slot="Body" id="Item.lz_wenguan_armor" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_xuzhou_woman_hero_wujiang_equipment_template"
+    culture="Culture.xuzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_xuzhou_woman_hero_moushi_equipment_template"
+    culture="Culture.xuzhou">
+    <EquipmentSet>
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.lz_changqiang_01" />
+      <equipment slot="Head" id="Item.lz_head_nv_02" />
+      <equipment slot="Cape" id="Item.sg_ar_c03_s7002_shoulder" />
+      <equipment slot="Body" id="Item.sg_ar_c03_s6002_body_j" />
+      <equipment slot="Gloves" id="Item.sg_ar_c03_s7002_arm" />
+      <equipment slot="Leg" id="Item.sg_ar_c03_s7002_leg" />
+    </EquipmentSet>
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_xuzhou_man_hero_wujiang_equipment_civilian_template"
+    culture="Culture.xuzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_xuzhou_man_hero_moushi_equipment_civilian_template"
+    culture="Culture.xuzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Body" id="Item.lz_cloth_wuguan" />
+      <equipment slot="Head" id="Item.lz_shufa_wenguan" />
+      <equipment slot="Leg" id="Item.sg_ar_c08_004_leg" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_xuzhou_woman_hero_wujiang_equipment_civilian_template"
+    culture="Culture.xuzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+  <EquipmentRoster
+    id="sg_npc_xuzhou_woman_hero_moushi_equipment_civilian_template"
+    culture="Culture.xuzhou">
+    <EquipmentSet
+        civilian="true">
+      <Equipment slot="Horse" id="Item.sg_c05_horse_jizhoudama" />
+      <Equipment slot="HorseHarness" id="Item.sg_hh_c02_001_t3" />
+      <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      <equipment slot="Gloves" id="Item.lz_arm_nv_01" />
+      <equipment slot="Body" id="Item.lz_cloth_nv_01" />
+      <equipment slot="Leg" id="Item.sg_npc_wuguan_leg" />
+      <equipment slot="Head" id="Item.lz_head_nv_01" />
+    </EquipmentSet>
+    <Flags
+      IsCombatantTemplate="true"
+      IsNobleTemplate="true"
+      IsCivilianTemplate="true"
+      IsFemaleTemplate="true" />
+  </EquipmentRoster>
+</EquipmentRosters>

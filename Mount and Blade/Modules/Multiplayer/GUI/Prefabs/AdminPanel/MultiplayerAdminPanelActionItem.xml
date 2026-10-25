@@ -1,0 +1,18 @@
+<Prefab>
+  <Window>
+    <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="40" VerticalAlignment="Center" HorizontalAlignment="Center">
+      <Children>
+
+        <ButtonWidget DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="300" SuggestedHeight="50" Command.Click="ExecuteAction" Brush="WideButton.Flat" IsDisabled="@IsDisabled">
+          <Children>
+            <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Text="@OptionTitle" Brush="MPAdminPanel.Option.Button.Text" />
+            <HintWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{DescriptionHint}" IsDisabled="true"/>
+          </Children>
+        </ButtonWidget>
+
+        <HintWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" DataSource="{DisabledHint}" IsDisabled="true"/>
+
+      </Children>
+    </Widget>
+  </Window>
+</Prefab>

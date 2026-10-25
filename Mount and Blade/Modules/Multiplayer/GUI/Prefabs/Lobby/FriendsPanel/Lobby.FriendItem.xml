@@ -1,0 +1,75 @@
+<Prefab>
+  <Parameters>
+    <Parameter Name="StatusBrush" DefaultValue="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.Online" />
+  </Parameters>
+  <Constants>
+    <Constant Name="FriendButton.Width" BrushName="MPLobby.FriendsPanel.FriendButton" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FriendButton.Height" BrushName="MPLobby.FriendsPanel.FriendButton" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="FriendButton.ProfileCanvas.Width" BrushName="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.Online" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="FriendButton.ProfileCanvas.Height" BrushName="MPLobby.FriendsPanel.FriendButton.ProfileCanvas.Online" BrushLayer="Default" BrushValueType="Height"/>
+  </Constants>
+  <Window>
+    <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+      <Children>
+        <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" UpdateChildrenStates="true" Command.Click="ExecuteActivatePlayerActions">
+          <Children>
+            <BrushWidget DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedWidth="!FriendButton.Width" SuggestedHeight="!FriendButton.Height" VerticalAlignment="Center" MarginLeft="57" Brush="MPLobby.FriendsPanel.FriendButton">
+              <Children>
+                <ListPanel UpdateChildrenStates="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="23" MarginTop="5" MarginLeft="5" >
+                  <Children>
+                    <ScrollingRichTextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" SuggestedHeight="23" MarginRight="50" Brush="MPLobby.FriendsPanel.PlayerName" Text="@Name" />
+                  </Children>
+                </ListPanel>
+                <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" MarginLeft="5" MarginBottom="3" Brush="MPLobby.FriendsPanel.PlayerAction" Text="@StateText"/>
+              </Children>
+            </BrushWidget>
+            <BrushWidget DoNotAcceptEvents="true" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!FriendButton.ProfileCanvas.Width" SuggestedHeight="!FriendButton.ProfileCanvas.Height" PositionXOffset="-5" Brush="*StatusBrush">
+              <Children>
+                <ImageIdentifierWidget DataSource="{Avatar}" ImageId="@Id" AdditionalArgs="@AdditionalArgs" IsVisible="@IsValid" TextureProviderName="@TextureProviderName" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="53" SuggestedHeight="53" HorizontalAlignment="Right" VerticalAlignment="Center" MarginRight="6" MaterialAlphaFactor="0.75"/>
+              </Children>
+            </BrushWidget>
+          </Children>
+        </ButtonWidget>
+
+        <ButtonWidget IsVisible="@CanInviteToParty" IsEnabled="@CanBeInvited" Command.Click="ExecuteInviteToParty" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="29" SuggestedHeight="46" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="4" Brush="MPLobby.FriendsPanel.FriendButton.Invite">
+          <Children>
+            <HintWidget DataSource="{InviteToPartyHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+          </Children>
+        </ButtonWidget>
+
+        <ButtonWidget IsVisible="@CanRemove" Command.Click="ExecuteRemoveFriend" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="29" SuggestedHeight="46" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="4" Brush="MPLobby.FriendsPanel.FriendButton.Remove">
+          <Children>
+            <HintWidget DataSource="{RemoveFriendHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+          </Children>
+        </ButtonWidget>
+
+        <ListPanel IsVisible="@IsFriendRequest" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginTop="6" StackLayout.LayoutMethod="VerticalTopToBottom">
+          <Children>
+
+            <ButtonWidget Command.Click="ExecuteAcceptFriendRequest" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="29" SuggestedHeight="21" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="4" MarginBottom="4" Brush="MPLobby.FriendsPanel.FriendButton.Accept">
+              <Children>
+                <HintWidget DataSource="{AcceptFriendRequestHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </ButtonWidget>
+
+
+            <ButtonWidget Command.Click="ExecuteDeclineFriendRequest" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="29" SuggestedHeight="21" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="4" Brush="MPLobby.FriendsPanel.FriendButton.Decline">
+              <Children>
+                <HintWidget DataSource="{DeclineFriendRequestHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+              </Children>
+            </ButtonWidget>
+
+          </Children>
+        </ListPanel>
+		
+        <ButtonWidget IsVisible="@IsPendingRequest" Command.Click="ExecuteCancelPendingFriendRequest" DoNotPassEventsToChildren="true" UpdateChildrenStates="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="29" SuggestedHeight="46" HorizontalAlignment="Right" VerticalAlignment="Center" MarginLeft="4" Brush="MPLobby.FriendsPanel.FriendButton.Cancel">
+          <Children>
+            <HintWidget DataSource="{CancelFriendRequestHint}" DoNotAcceptEvents="true" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.HoverBegin="ExecuteBeginHint" Command.HoverEnd="ExecuteEndHint" />
+          </Children>          
+        </ButtonWidget>
+
+      </Children>
+    </ListPanel>
+  </Window>
+</Prefab>

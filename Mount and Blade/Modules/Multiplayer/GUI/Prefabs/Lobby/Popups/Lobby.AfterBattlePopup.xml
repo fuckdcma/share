@@ -1,0 +1,269 @@
+<Prefab>
+  <Constants>
+    <Constant Name="AnimDelay" Value="0.5" />
+
+    <Constant Name="Experience.AnimDelay" Value="0.0" />
+    <Constant Name="Experience.AnimationDuration" Value="1.0" />
+    <Constant Name="Reward.RevealDuration" Value="0.9" />
+
+    <Constant Name="CloseButton.Width" BrushLayer="Default" BrushName="MPLobby.Popup.CloseButton" BrushValueType="Width" />
+    <Constant Name="CloseButton.Height" BrushLayer="Default" BrushName="MPLobby.Popup.CloseButton" BrushValueType="Height" />
+
+    <Constant Name="Experience.BarFrame.Width" BrushName="MPLobby.AfterBattle.Experience.BarFrame" BrushLayer="Default" BrushValueType="Width"/>
+    <Constant Name="Experience.BarFrame.Height" BrushName="MPLobby.AfterBattle.Experience.BarFrame" BrushLayer="Default" BrushValueType="Height"/>
+
+    <Constant Name="ParallaxDuration" Value="6"/>
+
+  </Constants>
+  <Window>
+    <MultiplayerLobbyAfterBattlePopupWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" AnimationDelay="!AnimDelay" AnimationDuration="!Experience.AnimationDuration" RewardRevealDuration="!Reward.RevealDuration" IsActive="@IsEnabled" ExperiencePanel="PopupArea\ContentContainer\BattleRewards\ExperiencePanel" RewardsListPanel="PopupArea\ContentContainer\BattleRewards\RewardsList" ClickToContinueTextWidget="ClickToContinue">
+      <Children>
+        <!--Background-->
+        <ButtonWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Command.Click="ExecuteClose" DoNotPassEventsToChildren="true" >
+          <Children>
+            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="BlankWhiteSquare_9" Color="#000000FF" AlphaFactor="0.9" />
+          </Children>
+        </ButtonWidget>
+
+        <Widget Id="PopupArea" WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="1000" VerticalAlignment="Center" DoNotAcceptEvents="true" DoNotPassEventsToChildren="true">
+          <Children>
+
+            <!--Popup Background-->
+            <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" StackLayout.LayoutMethod="VerticalTopToBottom">
+              <Children>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="221" Sprite="MPLobby\Popup\level_progress_popup_glow" HorizontalAlignment="Center" />
+                    <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="200" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="-70" InitialDirection="Right" IsEaseInOutEnabled="true" VerticalAlignment="Bottom">
+                      <Children>
+                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="mp_popup_particle" HorizontalAlignment="Center"  />
+                      </Children>
+                    </ParallaxItemBrushWidget>
+                  </Children>
+                </Widget>
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="popup_gradient_background_9" Color="#3B1C09FF" AlphaFactor="0.9" ColorFactor="0.8" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="3" Sprite="popup_gradient_background_9" Color="#FEC157FF" />
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="221" Sprite="MPLobby\Popup\level_progress_popup_glow" HorizontalAlignment="Center" VerticalFlip="true" />
+                    <ParallaxItemBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1349" SuggestedHeight="200" HorizontalAlignment="Center" OneDirectionDuration="!ParallaxDuration" OneDirectionDistance="70" InitialDirection="Right" IsEaseInOutEnabled="true" VerticalAlignment="Bottom" >
+                      <Children>
+                        <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="mp_popup_particle" HorizontalAlignment="Center" PositionYOffset="-22" VerticalFlip="true" />
+                      </Children>
+                    </ParallaxItemBrushWidget>
+                  </Children>
+                </Widget>
+              </Children>
+            </ListPanel>
+
+            <Widget Id="ContentContainer" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="800" MarginTop="225" MarginBottom="275" HorizontalAlignment="Center">
+              <Children>
+                <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" Brush="MPLobby.AfterBattle.Popup.Header.Text" MarginTop="25" Text="@TitleText" />
+
+                <!-- General Progression -->
+                <Widget Id="BattleRewards" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsShowingGeneralProgression">
+                  <Children>
+
+                    <!--Counter Text-->
+                    <ListPanel Id="EarnedExperienceTextGrandParent" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight" HorizontalAlignment="Center" MarginTop="90">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="38" SuggestedHeight="85" Sprite="MPLobby\Popup\xp_gained_icon" Color="#FFC874FF" VerticalFlip="@HasLostRating"/>
+                        <Widget Id="EarnedExperienceTextParent" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren">
+                          <Children>
+                            <CounterTextBrushWidget Id="EarnedExperienceText" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="250" SuggestedHeight="110" HorizontalAlignment="Center" Brush="MPLobby.AfterBattle.Experience.Amount.Text" CounterTime="!Experience.AnimationDuration" Representation="Integer" ShowSign="true"/>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="MPLobby.AfterBattle.Experience.Text" MarginTop="90" Text="@ExperienceText" />
+                          </Children>
+                        </Widget>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="38" SuggestedHeight="85" Sprite="MPLobby\Popup\xp_gained_icon" Color="#FFC874FF" VerticalFlip="@HasLostRating"/>
+                      </Children>
+                    </ListPanel>
+
+                    <MultiplayerLobbyAfterBattleExperiencePanelWidget Id="ExperiencePanel" WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="275" ExperienceFillBar="FillBar" GainedExperience="@GainedExperience" EarnedExperienceCounterTextWidget="..\EarnedExperienceTextGrandParent\EarnedExperienceTextParent\EarnedExperienceText" CurrentLevelTextWidget="CurrentLevelData\Value" NextLevelTextWidget="NextLevelData\Value" >
+                      <Children>
+
+                        <MultiplayerScoreboardAnimatedFillBarWidget Id="FillBar" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Experience.BarFrame.Width" SuggestedHeight="!Experience.BarFrame.Height" HorizontalAlignment="Center" FillWidget="FillArea\FillWidget" ChangeWidget="FillArea\ChangeWidget" DividerWidget="DividerWidget" MaxAmount="100" InitialAmount="@InitialRatio" CurrentAmount="@FinalRatio" AnimationDelay="!Experience.AnimDelay" TimesOfFullFill="@NumOfLevelUps" AnimationFillSpeed="2">
+                          <Children>
+                            <Widget Id="FillArea" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="21" MarginRight="21">
+                              <Children>
+                                <Widget Id="ChangeWidget" ClipContents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="5">
+                                  <Children>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="672" SuggestedHeight="26" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="MPLobby\Popup\level_progress_fill_gained_xp" />
+                                  </Children>
+                                </Widget>
+                                <Widget Id="FillWidget" ClipContents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="5">
+                                  <Children>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="672" SuggestedHeight="26" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="MPLobby\Popup\level_progress_fill" />
+                                  </Children>
+                                </Widget>
+                              </Children>
+                            </Widget>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Popup\level_progress_frame" AlphaFactor="1.0"/>
+                            <Widget Id="DividerWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="43" SuggestedHeight="82" MarginLeft="21" MarginRight="21" VerticalAlignment="Center" Sprite="MPLobby\Popup\level_progress_fill_gained_xp_glow" />
+                          </Children>
+                        </MultiplayerScoreboardAnimatedFillBarWidget>
+
+                        <ListPanel Id="CurrentLevelData" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Left" VerticalAlignment="Center" PositionXOffset="-65">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginRight="10" Brush="MPLobby.AfterBattle.Experience.TargetLevel" Text="@LevelText"  />
+                            <TextWidget Id="Value" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.AfterBattle.Experience.TargetLevel" IntText="@CurrentLevel" />
+                          </Children>
+                        </ListPanel>
+
+                        <ListPanel Id="NextLevelData" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Right" VerticalAlignment="Center" PositionXOffset="65">
+                          <Children>
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" MarginRight="10" Brush="MPLobby.AfterBattle.Experience.TargetLevel" Text="@LevelText" />
+                            <TextWidget Id="Value" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" Brush="MPLobby.AfterBattle.Experience.TargetLevel" IntText="@NextLevel" />
+                          </Children>
+                        </ListPanel>
+
+                      </Children>
+                    </MultiplayerLobbyAfterBattleExperiencePanelWidget>
+
+                    <!--List of Battle Rewards-->
+                    <ListPanel Id="RewardsList" DataSource="{RewardsEarned}" WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedHeight="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" StackLayout.LayoutMethod="HorizontalSpaced">
+                      <ItemTemplate>
+                        <MultiplayerLobbyBattleRewardWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="150" MarginLeft="15" MarginRight="15" AnimationDuration="0.25" IsVisible="false">
+                          <Children>
+
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="Fixed" SuggestedHeight="1" />
+
+                            <!--Loot-->
+                            <ValueBasedVisibilityWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" WatchType="Equal" IndexToBeVisible="0" IndexToWatch="@Type">
+                              <Children>
+                                <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+                                  <Children>
+                                    <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="120" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" Brush="MPLobby.Profile.Badge.Card" IsEnabled="false">
+                                      <Children>
+                                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="70" SuggestedHeight="70" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPLobby\Generic\mp_loot_icon" Color="#E0A73EFF" />
+                                      </Children>
+                                    </ButtonWidget>
+                                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="MPLobby.AfterBattlePopup.BadgesText" Text="@Name" />
+                                  </Children>
+                                </ListPanel>
+                              </Children>
+                            </ValueBasedVisibilityWidget>
+
+                            <!--Badge-->
+                            <ValueBasedVisibilityWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" WatchType="Equal" IndexToBeVisible="1" IndexToWatch="@Type">
+                              <Children>
+                                <ListPanel WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="VerticalTopToBottom">
+                                  <Children>
+                                    <ButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="120" SuggestedHeight="120" HorizontalAlignment="Center" VerticalAlignment="Center" MarginLeft="5" MarginRight="5" MarginTop="5" MarginBottom="5" Brush="MPLobby.Profile.Badge.Card" IsEnabled="false">
+                                      <Children>
+                                        <MultiplayerPlayerBadgeVisualWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center" VerticalAlignment="Center" Brush="MPLobby.Profile.Badge.Icon" BadgeId="@BadgeID" />
+                                      </Children>
+                                    </ButtonWidget>
+                                    <TextWidget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="MPLobby.AfterBattlePopup.BadgesText" Text="@Name" />
+                                  </Children>
+                                </ListPanel>
+                              </Children>
+                            </ValueBasedVisibilityWidget>
+
+                          </Children>
+                        </MultiplayerLobbyBattleRewardWidget>
+                      </ItemTemplate>
+                    </ListPanel>
+
+
+                  </Children>
+                </Widget>
+
+                <!-- Level Up -->
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsShowingNewLevel">
+                  <Children>
+                    <!--New Level-->
+                    <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="Fixed" SuggestedWidth="598" SuggestedHeight="248" MarginTop="50" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPLobby\Popup\current_level_popper">
+                      <Children>
+                        <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Center"  Brush="MPLobby.LevelUp.CurrentLevel.Text" PositionYOffset="15" MarginLeft="200" MarginRight="200" Text="@ReachedLevelText" />
+                      </Children>
+                    </Widget>                    
+                  </Children>
+                </Widget>
+
+                <!-- Rank Progression -->
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsShowingRankProgression">
+                  <Children>
+
+                    <MultiplayerLobbyRankItemButtonWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="100" SuggestedHeight="100" HorizontalAlignment="Center" MarginTop="65" RankID="@NewRankID" />
+
+                    <!--Counter Text-->
+                    <ListPanel WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" StackLayout.LayoutMethod="HorizontalLeftToRight" HorizontalAlignment="Center" MarginTop="180">
+                      <Children>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="38" SuggestedHeight="85" Sprite="MPLobby\Popup\xp_gained_icon" Color="#FFC874FF" VerticalFlip="@HasLostRating" />
+                        <Widget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren">
+                          <Children>
+                            <CounterTextBrushWidget WidthSizePolicy="Fixed" HeightSizePolicy="CoverChildren" SuggestedWidth="250" HorizontalAlignment="Center" Brush="MPLobby.AfterBattle.Experience.Amount.Text" CounterTime="!Experience.AnimationDuration" Representation="Integer" IntTarget="@ShownRating" />
+                            <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" Brush="MPLobby.AfterBattle.Experience.Text" MarginTop="75" Text="@PointsText" />
+                          </Children>
+                        </Widget>
+                        <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="38" SuggestedHeight="85" Sprite="MPLobby\Popup\xp_gained_icon" Color="#FFC874FF" VerticalFlip="@HasLostRating" />
+                      </Children>
+                    </ListPanel>
+
+                    <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="320" >
+                      <Children>
+
+                        <MultiplayerScoreboardAnimatedFillBarWidget Id="FillBar" DoNotPassEventsToChildren="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="!Experience.BarFrame.Width" SuggestedHeight="!Experience.BarFrame.Height" HorizontalAlignment="Center" FillWidget="FillArea\FillWidget" ChangeWidget="FillArea\ChangeWidget" DividerWidget="DividerWidget" MaxAmount="100" InitialAmount="@InitialRatio" CurrentAmount="@FinalRatio" AnimationDelay="!Experience.AnimDelay" TimesOfFullFill="@NumOfLevelUps" AnimationFillSpeed="2" IsStartRequested="@IsShowingRankProgression">
+                          <Children>
+                            <Widget Id="FillArea" WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" MarginLeft="21" MarginRight="21">
+                              <Children>
+                                <Widget Id="ChangeWidget" ClipContents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="5">
+                                  <Children>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="672" SuggestedHeight="26" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="MPLobby\Popup\level_progress_fill_gained_xp" />
+                                  </Children>
+                                </Widget>
+                                <Widget Id="FillWidget" ClipContents="true" WidthSizePolicy="Fixed" HeightSizePolicy="StretchToParent" SuggestedWidth="5">
+                                  <Children>
+                                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="672" SuggestedHeight="26" HorizontalAlignment="Left" VerticalAlignment="Center" Sprite="MPLobby\Popup\level_progress_fill" />
+                                  </Children>
+                                </Widget>
+                              </Children>
+                            </Widget>
+                            <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" Sprite="MPLobby\Popup\level_progress_frame" AlphaFactor="1.0"/>
+                            <Widget Id="DividerWidget" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="43" SuggestedHeight="82" MarginLeft="21" MarginRight="21" VerticalAlignment="Center" Sprite="MPLobby\Popup\level_progress_fill_gained_xp_glow" />
+                          </Children>
+                        </MultiplayerScoreboardAnimatedFillBarWidget>
+
+                      </Children>
+                    </Widget>
+
+                    <TextWidget WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" MarginTop="400" Brush="MPLobby.Rank.Progress.Title.Text" Brush.FontSize="42" Text="@PointChangedText"/>
+
+                  </Children>
+                </Widget>
+
+                <!-- Rank Change (Promotion / Demotion) -->
+                <Widget WidthSizePolicy="StretchToParent" HeightSizePolicy="StretchToParent" IsVisible="@IsShowingNewRank">
+                  <Children>
+                    <Widget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="1200" SuggestedHeight="500" MarginTop="50" HorizontalAlignment="Center" VerticalAlignment="Center" Sprite="MPLobby\Popup\current_level_popper" AlphaFactor="0.6"/>
+
+                    <MultiplayerLobbyAnimatedRankChangeWidget WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="600" SuggestedHeight="600" HorizontalAlignment="Center" VerticalAlignment="Center" MarginBottom="30" IsAnimationRequested="@IsShowingNewRank" OldRankSprite="OldRank" NewRankSprite="NewRank" OldRankName="OldRankName" NewRankName="NewRankName">
+                      <Children>
+                        <MultiplayerLobbyRankItemButtonWidget Id="OldRank" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center" RankID="@OldRankID" />
+                        <MultiplayerLobbyRankItemButtonWidget Id="NewRank" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" HorizontalAlignment="Center" VerticalAlignment="Center" RankID="@NewRankID" />
+
+                        <TextWidget Id="OldRankName" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="25" Brush="MPLobby.Rank.Progress.Title.Text" Brush.FontSize="64" Text="@OldRankName" /> 
+                        <TextWidget Id="NewRankName" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" HorizontalAlignment="Center" VerticalAlignment="Bottom" MarginBottom="25" Brush="MPLobby.Rank.Progress.Title.Text" Brush.FontSize="64" Text="@NewRankName" /> 
+                      </Children>
+                    </MultiplayerLobbyAnimatedRankChangeWidget>
+
+                  </Children>
+                </Widget>
+
+              </Children>
+            </Widget>
+
+          </Children>
+        </Widget>
+
+        <TextWidget Id="ClickToContinue" DoNotAcceptEvents="true" WidthSizePolicy="CoverChildren" HeightSizePolicy="CoverChildren" VerticalAlignment="Bottom" HorizontalAlignment="Center" MarginBottom="200"  Brush="MPLobby.Profile.Popup.SubTitle.Text" Text="@ClickToContinueText" IsVisible="false" />
+
+        <NavigationForcedScopeCollectionTargeter CollectionID="AfterBattlePopupCollection" CollectionParent="..\." />
+        <NavigationScopeTargeter ScopeID="AfterBattlePopupScope" ScopeParent="..\CenterScopeParent" />
+        <Widget Id="CenterScopeParent" DoNotAcceptEvents="true" WidthSizePolicy="Fixed" HeightSizePolicy="Fixed" SuggestedWidth="50" SuggestedHeight="50" HorizontalAlignment="Center" VerticalAlignment="Center" GamepadNavigationIndex="0"/>
+        
+      </Children>
+    </MultiplayerLobbyAfterBattlePopupWidget>
+  </Window>
+</Prefab>

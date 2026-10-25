@@ -1,0 +1,2872 @@
+<prefabs>
+	<game_entity name="p_cf_chengqiang_01_xinan" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="2.869, 13.777, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_chengqiang_01_c" old_prefab_name="">
+				<transform position="-0.283, 0.000, -7.012"/>
+				<physics shape="bo_cf_chengqiang_01_c"/>
+				<components>
+					<meta_mesh_component name="cf_chengqiang_01_c"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_chengqiang_01_c_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_c_01"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_c_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="9.852, 2.595, 13.388" rotation_euler="0.000, 0.000, 0.002"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_c_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_c_02"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_c_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="6.493, 2.595, 13.388" rotation_euler="0.000, 0.000, 0.002"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_c_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_c_03"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_c_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="3.334, 2.595, 13.388" rotation_euler="0.000, 0.000, 0.002"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_c_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_c_04"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_c_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.242, 2.595, 13.388" rotation_euler="0.000, 0.000, 0.002"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_c_05" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_c_05"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_c_05"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-3.571, 2.595, 13.388" rotation_euler="0.000, 0.000, 0.002"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_c_06" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_c_06"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_c_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.788, 2.595, 13.388" rotation_euler="0.000, 0.000, 0.002"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_c_07" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_c_07"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_c_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-9.755, 2.595, 13.388" rotation_euler="0.000, 0.000, 0.002"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_c_nvqiang" old_prefab_name="">
+						<physics shape="bo_cf_chengqiang_01_c_nvqiang"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_c_nvqiang"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_chengqiang_02_xinan" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="-20.198, 15.195, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_chengqiang_02_c" old_prefab_name="">
+				<transform position="0.449, 0.416, -8.747"/>
+				<physics shape="bo_cf_chengqiang_02_c"/>
+				<components>
+					<meta_mesh_component name="cf_chengqiang_02_c"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_chengqiang_02_c_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_02_c_01"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_c_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.377, 2.595, 13.388"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_02_c_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_02_c_02"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_c_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="1.887, 2.595, 13.388"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_02_c_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_02_c_03"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_c_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.620, 2.595, 13.388"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_02_c_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_02_c_04"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_c_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-5.296, 2.595, 13.388"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_02_c_nvqiang" old_prefab_name="">
+						<physics shape="bo_cf_chengqiang_02_c_nvqiang"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_c_nvqiang"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_chengqiang_03_xinan" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="-40.164, 18.556, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_chengqiang_03_c" old_prefab_name="">
+				<transform position="-0.743, -0.875, -7.130"/>
+				<physics shape="bo_cf_chengqiang_03_c"/>
+				<components>
+					<meta_mesh_component name="cf_chengqiang_03_c"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_chengqiang_03_c_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_c_01"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_c_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="9.665, 2.565, 12.471"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_c_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_c_02"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_c_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="6.167, 2.565, 12.471"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_c_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_c_03"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_c_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.820, 2.565, 12.471"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_c_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_c_04"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_c_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.254, 2.565, 12.471"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_c_05" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_c_05"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_c_05"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-3.459, 2.565, 12.471"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_c_06" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_c_06"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_c_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.455, 2.565, 12.471"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_c_07" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_c_07"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_c_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-9.160, 2.565, 12.471"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_c_nvqiang" old_prefab_name="">
+						<physics shape="bo_cf_chengqiang_03_c_nvqiang"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_c_nvqiang"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_chengqiang_04_xinan" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="-23.456, 32.747, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="WallSegment">
+				<variables>
+					<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+					<variable name="_properGroundInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+					<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+					<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+					<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+					<variable name="SideTag" value=""/>
+					<variable name="NavMeshPrefabName" value=""/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="cf_chengqiang_04_c" old_prefab_name="">
+				<transform position="0.258, 0.224, -9.157"/>
+				<physics shape="bo_cf_chengqiang_04_c"/>
+				<components>
+					<meta_mesh_component name="cf_chengqiang_04_c"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_chengqiang_04_c_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_04_c_01"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_c_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="4.936, 2.595, 13.388"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_04_c_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_04_c_02"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_c_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="1.621, 2.595, 13.388"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_04_c_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_04_c_03"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_c_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.800, 2.595, 13.388"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_04_c_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_04_c_04"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_c_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-5.275, 2.595, 13.388"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_04_c_nvqiang" old_prefab_name="">
+						<physics shape="bo_cf_chengqiang_04_c_nvqiang"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_c_nvqiang"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_chengqiang_01_zhongyuan" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="32.616, 0.112, 7.321" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_chengqiang_01_b" old_prefab_name="">
+				<transform position="-0.698, -0.112, -7.321"/>
+				<physics shape="bo_cf_chengqiang_01_b"/>
+				<components>
+					<meta_mesh_component name="cf_chengqiang_01_b"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_chengqiang_01_b_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_b_01"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_b_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="9.902, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_b_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_b_02"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_b_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="6.554, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_b_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_b_03"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_b_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="3.193, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_b_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_b_04"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_b_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.101, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_b_05" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_b_05"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_b_05"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-3.456, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_b_06" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_b_06"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_b_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.530, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_b_07" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_01_b_07"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_b_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-9.691, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_01_b_nvqiang" old_prefab_name="">
+						<physics shape="bo_cf_chengqiang_01_b_nvqiang"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_01_b_nvqiang"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_chengqiang_04_zhongyuan" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="-3.559, -0.485, 8.225" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_chengqiang_04_b" old_prefab_name="">
+				<transform position="0.683, 0.485, -8.225"/>
+				<physics shape="bo_cf_chengqiang_04_b"/>
+				<components>
+					<meta_mesh_component name="cf_chengqiang_04_b"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_chengqiang_04_b_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_04_b_01"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_b_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="4.953, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_04_b_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_04_b_02"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_b_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="1.687, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_04_b_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_04_b_03"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_b_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.732, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_04_b_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_04_b_04"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_b_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-5.103, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_04_b_nvqiang" old_prefab_name="">
+						<physics shape="bo_cf_chengqiang_04_b_nvqiang"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_04_b_nvqiang"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_chengqiang_02_zhongyuan" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="-36.100, -1.761, 4.715" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_chengqiang_02_b" old_prefab_name="">
+				<transform position="-0.305, 1.761, -4.715"/>
+				<physics shape="bo_cf_chengqiang_02_b"/>
+				<components>
+					<meta_mesh_component name="cf_chengqiang_02_b"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_chengqiang_02_b_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_02_b_01"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_b_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="5.025, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_02_b_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_02_b_02"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_b_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="1.654, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_02_b_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_02_b_03"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_b_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-1.644, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_02_b_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_02_b_04"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_b_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-5.000, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_02_b_nvqiang" old_prefab_name="">
+						<physics shape="bo_cf_chengqiang_02_b_nvqiang"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_02_b_nvqiang"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_chengqiang_03_zhongyuan" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="-59.526, -0.150, 4.922" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_chengqiang_03_b" old_prefab_name="">
+				<transform position="-0.431, 0.150, -4.922"/>
+				<physics shape="bo_cf_chengqiang_03_b"/>
+				<components>
+					<meta_mesh_component name="cf_chengqiang_03_b"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_chengqiang_03_b_01" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_b_01"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_b_01"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="9.847, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_b_02" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_b_02"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_b_02"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="6.469, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_b_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_b_03"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_b_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="3.094, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_b_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_b_04"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_b_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="0.067, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_b_05" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_b_05"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_b_05"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-3.125, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_b_06" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_b_06"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_b_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.041, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_b_07" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_chengqiang_03_b_07"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_b_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-9.031, 2.712, 13.340"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_chengqiang_03_b_nvqiang" old_prefab_name="">
+						<physics shape="bo_cf_chengqiang_03_b_nvqiang"/>
+						<components>
+							<meta_mesh_component name="cf_chengqiang_03_b_nvqiang"/>
+						</components>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="cf_jiaotai_01" old_prefab_name="">
+		<transform position="7.392, 18.969, 0.010" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_jiaotai_01_01" old_prefab_name="">
+				<transform position="-0.488, 0.187, -3.749"/>
+				<physics shape="bo_cf_jiaotai_01_01"/>
+				<components>
+					<meta_mesh_component name="cf_jiaotai_01_01"/>
+				</components>
+			</game_entity>
+			<game_entity name="cf_jiaotai_01_02" old_prefab_name="">
+				<transform position="-0.488, 0.187, -3.749"/>
+				<physics shape="bo_cf_jiaotai_01_02"/>
+				<components>
+					<meta_mesh_component name="cf_jiaotai_01_02"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_gate_01_b_01" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="0.317, 0.071, 9.783" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_gate_01_b_01" old_prefab_name="">
+				<transform position="-0.317, -0.071, -9.783"/>
+				<physics shape="bo_cf_gate_01_b_01"/>
+				<components>
+					<meta_mesh_component name="cf_gate_01_b_01"/>
+				</components>
+				<scripts>
+					<script name="WallSegment">
+						<variables>
+							<variable name="_properGroundOutsideNavmeshID" value="-1"/>
+							<variable name="_properGroundInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisOutsideNavmeshID" value="-1"/>
+							<variable name="_overDebrisInsideNavmeshID" value="-1"/>
+							<variable name="_underDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_overDebrisGenericNavmeshID" value="-1"/>
+							<variable name="_onSolidWallGenericNavmeshID" value="-1"/>
+							<variable name="SideTag" value=""/>
+							<variable name="NavMeshPrefabName" value=""/>
+						</variables>
+					</script>
+				</scripts>
+				<children>
+					<game_entity name="cf_gate_01_b_02" old_prefab_name="">
+						<physics shape="bo_cf_gate_01_b_02"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_03"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="18.827, 5.754, 18.000" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_04"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="15.523, 5.750, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_05" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_05"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_05"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="2.764, 5.788, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_06" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_06"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.382, 5.797, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_07" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_07"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-9.716, 5.825, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_08" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_08"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_08"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-12.793, 5.834, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_09" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_09"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_09"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-15.687, 5.843, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_10" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_10"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_10"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="9.296, 5.768, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_11" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_11"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_11"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="12.416, 5.759, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_12" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_12"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_12"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-18.620, 5.851, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_13" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_13"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_13"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.483, 5.815, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_14" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_14"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_14"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-3.493, 5.806, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_b_15" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_b_15"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_b_15"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="6.313, 5.777, 18.087" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="p_cf_gate_01_c_01" old_prefab_name="">
+		<flags>
+			<flag name="record_to_scene_replay" value="true"/>
+		</flags>
+		<transform position="-57.007, -0.904, 17.649" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="cf_gate_01_c_01" old_prefab_name="">
+				<transform position="-0.159, 0.904, -7.649"/>
+				<physics shape="bo_cf_gate_01_c_17"/>
+				<components>
+					<meta_mesh_component name="cf_gate_01_c_01"/>
+				</components>
+				<children>
+					<game_entity name="cf_gate_01_c_02" old_prefab_name="">
+						<physics shape="bo_cf_gate_01_c_02"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_02"/>
+						</components>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_03" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_03"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_03"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="18.709, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_04" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_04"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_04"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="15.443, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_05" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_05"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_05"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="3.031, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_06" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_06"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_06"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-0.275, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_07" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_07"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_07"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-9.545, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_08" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_08"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_08"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-12.485, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_09" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_09"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_09"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-15.577, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_10" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_11"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_10"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="9.300, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_11" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_12"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_11"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="12.226, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_12" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_13"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_12"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-18.765, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_13" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_14"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_13"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-6.475, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_14" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_15"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_14"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="-3.462, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="cf_gate_01_c_15" old_prefab_name="" mobility="1">
+						<physics shape="bo_cf_gate_01_c_16"/>
+						<components>
+							<meta_mesh_component name="cf_gate_01_c_15"/>
+						</components>
+						<scripts>
+							<script name="DestructableComponent">
+								<variables>
+									<variable name="DestructionStates" value="debris_sturgia_l3"/>
+									<variable name="DestroyedByStoneOnly" value="true"/>
+									<variable name="CanBeDestroyedInitially" value="true"/>
+									<variable name="MaxHitPoint" value="1000.000"/>
+									<variable name="DestroyOnAnyHit" value="false"/>
+									<variable name="PassHitOnToParent" value="false"/>
+									<variable name="ReferenceEntityTag" value="reference"/>
+									<variable name="HeavyHitParticlesTag" value=""/>
+									<variable name="HeavyHitParticlesThreshold" value="5.000"/>
+									<variable name="ParticleEffectOnDestroy" value=""/>
+									<variable name="SoundEffectOnDestroy" value=""/>
+									<variable name="SoundAndParticleEffectHeightOffset" value="0.000"/>
+									<variable name="SoundAndParticleEffectForwardOffset" value="0.000"/>
+									<variable name="BattleSide" value="None"/>
+									<variable name="NavMeshPrefabName" value=""/>
+								</variables>
+							</script>
+						</scripts>
+						<children>
+							<game_entity name="debris_holder" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="reference"/>
+								</tags>
+								<transform position="6.159, 5.851, 17.928" rotation_euler="0.000, 0.000, 3.139"/>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

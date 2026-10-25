@@ -1,0 +1,3548 @@
+<prefabs>
+	<game_entity name="mi_sg_village_001" old_prefab_name="" mobility="1">
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="Town Entity Manager">
+				<variables>
+					<variable name="Override Factor Color" value="false"/>
+					<variable name="Factor Color" value="1.000, 1.000, 1.000, 1.000"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="bo_village" old_prefab_name="" mobility="1">
+				<physics shape="bo_sphere_collider">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="mi_sg_village_001_looted" old_prefab_name="" mobility="1">
+				<transform rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="mi_sg_village_001_l1"/>
+				</components>
+				<children>
+					<game_entity name="siege_fire_particle_e" old_prefab_name="" mobility="1">
+						<components>
+							<particle_system_instanced_component>
+								<effect_ref base_effect="{3AB30F23-7F38-4FA8-AC08-8AC736BF6F92}"/>
+							</particle_system_instanced_component>
+						</components>
+						<levels>
+							<level name="level_1"/>
+							<level name="level_2"/>
+							<level name="level_3"/>
+						</levels>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="level_2"/>
+					<level name="level_3"/>
+				</levels>
+			</game_entity>
+			<game_entity name="mi_sg_village_001_l1" old_prefab_name="" mobility="1">
+				<transform rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="mi_sg_village_001_l1"/>
+				</components>
+				<levels>
+					<level name="level_1"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="mi_sg_village_001_l2" old_prefab_name="" mobility="1">
+				<transform rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="mi_sg_village_001_l2"/>
+				</components>
+				<levels>
+					<level name="level_2"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="mi_sg_village_001_l3" old_prefab_name="" mobility="1">
+				<transform rotation_euler="0.000, 0.000, 3.141"/>
+				<components>
+					<meta_mesh_component name="mi_sg_village_001_l3"/>
+				</components>
+				<levels>
+					<level name="level_3"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="map_decal_village_desert" old_prefab_name="" mobility="1">
+				<transform position="0.240, 0.200, 0.000" rotation_euler="0.000, 0.000, 1.295" scale="1.451, 1.451, 1.451"/>
+				<components>
+					<decal_component material="mainmap_decal_undervillage_desert"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="mi_sg_castle_001" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="castle"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="Town Entity Manager">
+				<variables>
+					<variable name="Override Factor Color" value="false"/>
+					<variable name="Factor Color" value="1.000, 1.000, 1.000, 1.000"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="bo_castle" old_prefab_name="" mobility="1">
+				<transform rotation_euler="0.000, 0.000, 0.000" scale="1.675, 1.675, 1.000"/>
+				<physics shape="bo_sphere_collider">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="level_1" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="mi_sg_castle_001_l1" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="mi_sg_castle_001_l1"/>
+						</components>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.000, -1.324, -0.131"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="0.943, -1.324, -0.131"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-0.542, -1.585, 0.551" rotation_euler="0.000, 0.000, 0.000" scale="1.090, 0.500, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="level_2" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="mi_sg_castle_001_l2" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="mi_sg_castle_001_l2"/>
+						</components>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.000, -1.324, -0.131"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="0.943, -1.324, -0.131"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-0.542, -1.585, 0.551" rotation_euler="0.000, 0.000, 0.000" scale="1.090, 0.500, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_2"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="level_3" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="mi_sg_castle_001_l3" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="mi_sg_castle_001_l3"/>
+						</components>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.000, -1.324, -0.131"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="0.943, -1.324, -0.131"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-1.698, -1.069, 0.430" rotation_euler="0.000, 0.000, 0.000" scale="0.260, 0.850, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="1.334, -1.069, 0.430" rotation_euler="0.000, 0.000, 0.000" scale="0.260, 0.850, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_3"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="town_circle_decal" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="map_settlement_circle"/>
+				</tags>
+				<transform rotation_euler="0.000, 0.000, 3.141" scale="3.120, 3.120, 2.301"/>
+				<components>
+					<decal_component material="decal_city_circle_a" argument="1.000, 1.000, 0.000, 0.000"/>
+				</components>
+			</game_entity>
+			<game_entity name="gate_position" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="main_map_city_gate"/>
+				</tags>
+				<transform position="0.000, -1.998, 0.000"/>
+			</game_entity>
+			<game_entity name="mi_sg_siege" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="main_map_castle_gate"/>
+				</tags>
+				<children>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-2.512, -2.700, 0.000" rotation_euler="0.000, 0.000, 0.991" scale="0.973, 0.973, 0.973"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="2.066, -3.448, 0.000" rotation_euler="0.000, -0.007, -1.269" scale="1.748, 3.091, 1.631"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.254, 0.401, -0.500" non_orthogonal_rotation_mat="0.987509, 0.157565, -0.000000, -0.446444, 0.894812, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.976, 0.772, 0.999"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_1"/>
+						</tags>
+						<transform position="1.516, -5.161, 0.000" rotation_euler="0.000, 0.007, 1.571" scale="1.270, 2.390, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.582, 0.630, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="-2.464, -7.003, 0.000" rotation_euler="-0.007, -0.002, 0.000" scale="4.910, 1.690, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="-3.263, -2.378, 0.000" rotation_euler="0.005, -0.005, -2.136" scale="1.750, 2.220, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.607, 0.418, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-1.065, -2.928, 0.000" rotation_euler="0.000, 0.000, 1.496" scale="1.014, 1.014, 1.014"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-0.528, -2.628, 0.000" rotation_euler="0.000, 0.000, -1.018" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="0.461, -2.896, 0.000" rotation_euler="0.000, 0.000, 1.646" scale="1.014, 1.014, 1.014"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="1.512, -2.815, 0.000" rotation_euler="0.000, 0.000, -0.756" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_5" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="2.521, -2.306, 0.000" rotation_euler="0.000, 0.000, 1.744"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_3"/>
+						</tags>
+						<transform position="1.657, -3.443, 0.000" rotation_euler="-0.007, 0.002, 0.450" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.048, 0.021, -0.013" rotation_euler="0.000, 0.000, 2.438" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_2"/>
+						</tags>
+						<transform position="0.630, -3.480, 0.000" rotation_euler="-0.007, -0.001, 0.004" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.006, -0.038, -0.017" rotation_euler="0.000, 0.000, -0.236" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_1"/>
+						</tags>
+						<transform position="-0.245, -3.505, 0.000" rotation_euler="-0.007, 0.000, 0.043" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.051, -0.014, 0.009" rotation_euler="0.000, 0.000, 2.889" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_0"/>
+						</tags>
+						<transform position="-1.293, -3.402, 0.000" rotation_euler="-0.007, -0.002, -0.134" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.024, -0.093, -0.028" rotation_euler="0.000, 0.000, 2.879" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_ram" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_ram"/>
+						</tags>
+						<transform position="-1.665, -4.350, 0.000" rotation_euler="-0.007, -0.002, -0.071" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.079, 0.058, -0.020" rotation_euler="0.000, 0.000, 1.922" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_tower" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_tower"/>
+						</tags>
+						<transform position="1.664, -4.329, 0.000" rotation_euler="-0.007, 0.000, 0.205" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="-0.023, 0.025, -0.024" rotation_euler="0.000, 0.000, -0.555" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_tower" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_tower"/>
+						</tags>
+						<transform position="2.245, -4.867, 0.000" rotation_euler="-0.007, 0.000, 0.285" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.024, 0.028, -0.022" rotation_euler="0.000, 0.000, -2.195" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="1.474, 1.648, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-1.572, -1.234, 0.668" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="1.498, -1.242, 0.670" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-1.586, 1.640, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-1.248, 1.645, 0.670" rotation_euler="0.007, 0.002, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="1.481, 1.641, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-1.587, -1.236, 0.670" rotation_euler="0.007, 0.002, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="1.487, -1.239, 0.670" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="1.493, -1.239, 0.670" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-1.590, 1.643, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="1.477, 1.639, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-1.569, -1.238, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-2.005, -2.628, 0.000" rotation_euler="0.000, 0.000, -1.559" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="level_2"/>
+					<level name="level_3"/>
+					<level name="siege"/>
+				</levels>
+			</game_entity>
+			<game_entity name="map_decal_village_desert" old_prefab_name="" mobility="1">
+				<transform rotation_euler="0.000, 0.000, -1.758" scale="1.173, 1.173, 1.450"/>
+				<components>
+					<decal_component material="mainmap_decal_undervillage_desert"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="mi_sg_pass_001" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="castle"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="Town Entity Manager">
+				<variables>
+					<variable name="Override Factor Color" value="false"/>
+					<variable name="Factor Color" value="1.000, 1.000, 1.000, 1.000"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="bo_castle" old_prefab_name="" mobility="1">
+				<transform rotation_euler="0.000, 0.000, 0.000" scale="2.370, 1.270, 1.000"/>
+				<physics shape="bo_sphere_collider">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="level_1" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.482, -0.551, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="1.450, -0.550, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-2.138, -0.286, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.650, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="mi_sg_pass_001_l1" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, -3.142"/>
+						<components>
+							<meta_mesh_component name="mi_sg_pass_001_l1"/>
+						</components>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="1.896, -0.286, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.650, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="level_2" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="mi_sg_pass_001_l2" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, -3.142"/>
+						<components>
+							<meta_mesh_component name="mi_sg_pass_001_l2"/>
+						</components>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.482, -0.551, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="1.450, -0.550, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-2.138, -0.286, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.650, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="1.896, -0.286, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.650, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_2"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="level_3" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="mi_sg_pass_001_l3" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, -3.142"/>
+						<components>
+							<meta_mesh_component name="mi_sg_pass_001_l3"/>
+						</components>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.482, -0.551, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="1.450, -0.550, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-2.138, -0.286, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.650, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="1.896, -0.286, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.650, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_3"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="town_circle_decal" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="map_settlement_circle"/>
+				</tags>
+				<transform rotation_euler="0.000, 0.000, 3.141" scale="3.120, 3.120, 2.301"/>
+				<components>
+					<decal_component material="decal_city_circle_a" argument="1.000, 1.000, 0.000, 0.000"/>
+				</components>
+			</game_entity>
+			<game_entity name="gate_position" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="main_map_city_gate"/>
+				</tags>
+				<transform position="0.000, -1.404, 0.000"/>
+			</game_entity>
+			<game_entity name="mi_sg_siege" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="main_map_castle_gate"/>
+				</tags>
+				<children>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-2.512, -2.700, 0.000" rotation_euler="0.000, 0.000, 0.991" scale="0.973, 0.973, 0.973"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="2.066, -3.448, 0.000" rotation_euler="0.000, -0.007, -1.269" scale="1.748, 3.091, 1.631"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.254, 0.401, -0.500" non_orthogonal_rotation_mat="0.987509, 0.157565, -0.000000, -0.446444, 0.894812, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.976, 0.772, 0.999"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_1"/>
+						</tags>
+						<transform position="1.516, -5.161, 0.000" rotation_euler="0.000, 0.007, 1.571" scale="1.270, 2.390, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.582, 0.630, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="-2.464, -7.003, 0.000" rotation_euler="-0.007, -0.002, 0.000" scale="4.910, 1.690, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="-3.263, -2.378, 0.000" rotation_euler="0.005, -0.005, -2.136" scale="1.750, 2.220, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.607, 0.418, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-1.065, -2.928, 0.000" rotation_euler="0.000, 0.000, 1.496" scale="1.014, 1.014, 1.014"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-0.528, -2.628, 0.000" rotation_euler="0.000, 0.000, -1.018" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="0.461, -2.896, 0.000" rotation_euler="0.000, 0.000, 1.646" scale="1.014, 1.014, 1.014"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="1.512, -2.815, 0.000" rotation_euler="0.000, 0.000, -0.756" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_5" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="2.521, -2.306, 0.000" rotation_euler="0.000, 0.000, 1.744"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_3"/>
+						</tags>
+						<transform position="1.657, -3.443, 0.000" rotation_euler="-0.007, 0.002, 0.450" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.048, 0.021, -0.013" rotation_euler="0.000, 0.000, 2.438" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_2"/>
+						</tags>
+						<transform position="0.630, -3.480, 0.000" rotation_euler="-0.007, -0.001, 0.004" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.006, -0.038, -0.017" rotation_euler="0.000, 0.000, -0.236" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_1"/>
+						</tags>
+						<transform position="-0.245, -3.505, 0.000" rotation_euler="-0.007, 0.000, 0.043" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.051, -0.014, 0.009" rotation_euler="0.000, 0.000, 2.889" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_0"/>
+						</tags>
+						<transform position="-1.293, -3.402, 0.000" rotation_euler="-0.007, -0.002, -0.134" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.024, -0.093, -0.028" rotation_euler="0.000, 0.000, 2.879" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_ram" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_ram"/>
+						</tags>
+						<transform position="-1.665, -4.350, 0.000" rotation_euler="-0.007, -0.002, -0.071" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.079, 0.058, -0.020" rotation_euler="0.000, 0.000, 1.922" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_tower" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_tower"/>
+						</tags>
+						<transform position="1.664, -4.329, 0.000" rotation_euler="-0.007, 0.000, 0.205" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="-0.023, 0.025, -0.024" rotation_euler="0.000, 0.000, -0.555" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_tower" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_tower"/>
+						</tags>
+						<transform position="2.245, -4.867, 0.000" rotation_euler="-0.007, 0.000, 0.285" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.024, 0.028, -0.022" rotation_euler="0.000, 0.000, -2.195" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="2.058, 0.713, 0.620" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-2.048, -0.432, 0.623" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="2.030, -0.441, 0.620" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-2.031, 0.714, 0.620" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-1.248, 1.645, 0.670" rotation_euler="0.007, 0.002, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="1.481, 1.641, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-1.587, -1.236, 0.670" rotation_euler="0.007, 0.002, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="1.487, -1.239, 0.670" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="1.493, -1.239, 0.670" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-1.590, 1.643, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="1.477, 1.639, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-1.569, -1.238, 0.670" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-2.005, -2.628, 0.000" rotation_euler="0.000, 0.000, -1.559" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="level_2"/>
+					<level name="level_3"/>
+					<level name="siege"/>
+				</levels>
+			</game_entity>
+		</children>
+	</game_entity>
+	<game_entity name="mi_sg_town_001" old_prefab_name="" mobility="1">
+		<tags>
+			<tag name="town"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<scripts>
+			<script name="Town Entity Manager">
+				<variables>
+					<variable name="Override Factor Color" value="false"/>
+					<variable name="Factor Color" value="1.000, 1.000, 1.000, 1.000"/>
+				</variables>
+			</script>
+		</scripts>
+		<children>
+			<game_entity name="bo_castle" old_prefab_name="" mobility="1">
+				<transform rotation_euler="0.000, 0.000, 0.000" scale="2.370, 1.970, 1.000"/>
+				<physics shape="bo_sphere_collider">
+					<body_flags>
+						<body_flag name="only_collide_with_raycast"/>
+					</body_flags>
+				</physics>
+			</game_entity>
+			<game_entity name="level_1" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.163, -1.401, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="1.066, -1.400, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-0.555, -1.655, 0.511" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.550, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="mi_sg_town_001_l1" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="mi_sg_town_001_l1"/>
+						</components>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="0.311, -1.655, 0.511" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.550, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="level_2" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.619, -1.400, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<children>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l2" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l2"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l2_broken" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l2_broken"/>
+								</components>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-1.354, -1.502, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.700, 0.230, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="1.896, -0.286, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.240, 0.650, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="mi_sg_town_001_l2" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="mi_sg_town_001_l2"/>
+						</components>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="1.519, -1.400, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<children>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l2" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l2"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l2_broken" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l2_broken"/>
+								</components>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="0.665, -1.502, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="0.600, 0.230, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_2"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="level_3" old_prefab_name="" mobility="1">
+				<children>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="1.450, -0.550, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-0.650, -2.333, 0.411" rotation_euler="0.000, 0.000, 0.000" scale="1.290, 0.300, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="mi_sg_town_001_l3" old_prefab_name="" mobility="1">
+						<transform rotation_euler="0.000, 0.000, 3.141"/>
+						<components>
+							<meta_mesh_component name="mi_sg_town_001_l3"/>
+						</components>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="1.520, -1.400, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="wall_breach_l1" old_prefab_name="" mobility="1">
+						<tags>
+							<tag name="map_breachable_wall"/>
+						</tags>
+						<transform position="-1.620, -1.400, 0.000" rotation_euler="0.000, 0.000, 3.141"/>
+						<children>
+							<game_entity name="mi_town_wall_01_l1_broken" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_broken_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1_broken"/>
+								</components>
+							</game_entity>
+							<game_entity name="mi_town_wall_01_l1" old_prefab_name="" mobility="1">
+								<tags>
+									<tag name="map_solid_wall"/>
+								</tags>
+								<transform rotation_euler="0.000, 0.000, 0.000" scale="0.740, 0.730, 0.730"/>
+								<components>
+									<meta_mesh_component name="mi_town_wall_01_l1"/>
+								</components>
+							</game_entity>
+							<game_entity name="bo_siege_wall" old_prefab_name="" mobility="1">
+								<transform position="0.000, -0.236, 0.000" rotation_euler="0.000, 0.000, 0.000" scale="0.280, 0.280, 0.280"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="banner_pos" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_banner_placeholder"/>
+						</tags>
+						<transform position="-0.333, -0.515, 0.334" rotation_euler="0.000, 0.000, 0.000" scale="0.660, 0.320, 0.050"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+							</game_entity>
+						</children>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_3"/>
+					<level name="siege"/>
+					<level name="civilian"/>
+				</levels>
+			</game_entity>
+			<game_entity name="town_circle_decal" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="map_settlement_circle"/>
+				</tags>
+				<transform rotation_euler="0.000, 0.000, 3.141" scale="4.180, 4.180, 2.300"/>
+				<components>
+					<decal_component material="decal_city_circle_a" argument="1.000, 1.000, 0.000, 0.000"/>
+				</components>
+			</game_entity>
+			<game_entity name="gate_position" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="main_map_city_gate"/>
+				</tags>
+				<transform position="0.000, -2.471, 0.000"/>
+			</game_entity>
+			<game_entity name="mi_sg_siege" old_prefab_name="" mobility="1">
+				<tags>
+					<tag name="main_map_castle_gate"/>
+				</tags>
+				<children>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-2.512, -3.500, 0.000" rotation_euler="0.000, 0.000, 0.991" scale="0.973, 0.973, 0.973"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="2.066, -4.248, 0.000" rotation_euler="0.000, -0.007, -1.269" scale="1.748, 3.091, 1.631"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.254, 0.401, -0.500" non_orthogonal_rotation_mat="0.987509, 0.157565, -0.000000, -0.446444, 0.894812, 0.000000, 0.000000, 0.000000, 1.000000" scale="0.976, 0.772, 0.999"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_1"/>
+						</tags>
+						<transform position="1.516, -5.961, 0.000" rotation_euler="0.000, 0.007, 1.571" scale="1.270, 2.390, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.582, 0.630, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="-2.464, -7.803, 0.000" rotation_euler="-0.007, -0.002, 0.000" scale="4.910, 1.690, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.500, 0.500, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="volume_box_corner" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_camp_area_2"/>
+						</tags>
+						<transform position="-3.263, -3.178, 0.000" rotation_euler="0.005, -0.005, -2.136" scale="1.750, 2.220, 1.630"/>
+						<children>
+							<game_entity name="volume_box" old_prefab_name="" mobility="1">
+								<flags>
+									<flag name="record_to_scene_replay" value="true"/>
+								</flags>
+								<visibility_masks>
+									<visibility_mask name="visible_only_when_editing" value="true"/>
+								</visibility_masks>
+								<transform position="0.607, 0.418, -0.500"/>
+								<components>
+									<meta_mesh_component name="volume_box"/>
+								</components>
+								<scripts>
+									<script name="VolumeBox">
+										<variables>
+											<variable name="NavMeshPrefabName" value=""/>
+										</variables>
+									</script>
+								</scripts>
+								<levels>
+									<level name="base"/>
+								</levels>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="base"/>
+						</levels>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-1.065, -3.728, 0.000" rotation_euler="0.000, 0.000, 1.496" scale="1.014, 1.014, 1.014"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-0.528, -3.428, 0.000" rotation_euler="0.000, 0.000, -1.018" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_4" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="0.461, -3.696, 0.000" rotation_euler="0.000, 0.000, 1.646" scale="1.014, 1.014, 1.014"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_4"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="1.512, -3.615, 0.000" rotation_euler="0.000, 0.000, -0.756" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_5" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="2.521, -3.106, 0.000" rotation_euler="0.000, 0.000, 1.744"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_5"/>
+						</components>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_3"/>
+						</tags>
+						<transform position="1.657, -4.243, 0.000" rotation_euler="-0.007, 0.002, 0.450" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.048, 0.021, -0.013" rotation_euler="0.000, 0.000, 2.438" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_2"/>
+						</tags>
+						<transform position="0.630, -4.280, 0.000" rotation_euler="-0.007, -0.001, 0.004" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.006, -0.038, -0.017" rotation_euler="0.000, 0.000, -0.236" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_1"/>
+						</tags>
+						<transform position="-0.245, -4.305, 0.000" rotation_euler="-0.007, 0.000, 0.043" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.051, -0.014, 0.009" rotation_euler="0.000, 0.000, 2.889" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_ranged_engine" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_engine_0"/>
+						</tags>
+						<transform position="-1.293, -4.202, 0.000" rotation_euler="-0.007, -0.002, -0.134" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.024, -0.093, -0.028" rotation_euler="0.000, 0.000, 2.879" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_ram" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_ram"/>
+						</tags>
+						<transform position="-1.665, -5.150, 0.000" rotation_euler="-0.007, -0.002, -0.071" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.079, 0.058, -0.020" rotation_euler="0.000, 0.000, 1.922" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_tower" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_tower"/>
+						</tags>
+						<transform position="1.664, -5.129, 0.000" rotation_euler="-0.007, 0.000, 0.205" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="-0.023, 0.025, -0.024" rotation_euler="0.000, 0.000, -0.555" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="attacker_siege_tower" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+						</flags>
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_siege_tower"/>
+						</tags>
+						<transform position="2.245, -5.667, 0.000" rotation_euler="-0.007, 0.000, 0.285" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform position="0.024, 0.028, -0.022" rotation_euler="0.000, 0.000, -2.195" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="2.058, 0.713, 0.620" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-2.048, -0.432, 0.623" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="2.030, -0.441, 0.620" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l1" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-2.031, 0.714, 0.620" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_1"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-2.110, 1.900, 0.626" rotation_euler="0.007, 0.002, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="1.988, 1.924, 0.628" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-2.115, -1.296, 0.629" rotation_euler="0.007, 0.002, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l2" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="1.996, -1.297, 0.631" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_2"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_1"/>
+						</tags>
+						<transform position="1.997, -1.294, 0.631" rotation_euler="0.007, 0.001, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.102" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_2"/>
+						</tags>
+						<transform position="-2.115, 1.904, 0.628" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.088" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_3"/>
+						</tags>
+						<transform position="2.003, 1.919, 0.628" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -3.076" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="defender_ranged_l3" old_prefab_name="" mobility="1">
+						<visibility_masks>
+							<visibility_mask name="visible_only_when_editing" value="true"/>
+						</visibility_masks>
+						<tags>
+							<tag name="map_defensive_engine_0"/>
+						</tags>
+						<transform position="-2.116, -1.294, 0.630" rotation_euler="0.007, 0.000, 3.141" scale="0.350, 0.350, 0.350"/>
+						<components>
+							<meta_mesh_component name="arrow_new_icon"/>
+						</components>
+						<children>
+							<game_entity name="bo_siege_engine" old_prefab_name="" mobility="1">
+								<transform rotation_euler="0.000, 0.000, -2.776" scale="1.050, 1.050, 1.050"/>
+								<physics shape="bo_sphere_collider"/>
+							</game_entity>
+						</children>
+						<levels>
+							<level name="level_3"/>
+							<level name="siege"/>
+							<level name="civilian"/>
+						</levels>
+					</game_entity>
+					<game_entity name="map_icon_siege_camp_1" old_prefab_name="" mobility="1">
+						<flags>
+							<flag name="align_to_terrain" value="true"/>
+							<flag name="align_rotation_to_terrain" value="true"/>
+						</flags>
+						<tags>
+							<tag name="siege_preparation"/>
+						</tags>
+						<transform position="-2.005, -3.428, 0.000" rotation_euler="0.000, 0.000, -1.559" scale="1.188, 1.188, 1.188"/>
+						<components>
+							<meta_mesh_component name="map_icon_siege_camp_1"/>
+						</components>
+					</game_entity>
+				</children>
+				<levels>
+					<level name="level_1"/>
+					<level name="level_2"/>
+					<level name="level_3"/>
+					<level name="siege"/>
+				</levels>
+			</game_entity>
+			<game_entity name="map_decal_village_desert" old_prefab_name="" mobility="1">
+				<transform position="-0.020, 0.110, 0.000" rotation_euler="0.000, 0.000, -1.758" scale="1.722, 1.722, 1.450"/>
+				<components>
+					<decal_component material="mainmap_decal_undervillage_desert"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

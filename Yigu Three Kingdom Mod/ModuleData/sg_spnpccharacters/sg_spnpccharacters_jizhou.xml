@@ -1,0 +1,1606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <!-- 士兵 -->
+  <NPCCharacter id="jizhou_sol_1001" default_group="Infantry" level="6" name="{=*}河北义士" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="30" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="0" />
+      <skill id="Athletics" value="30" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sili_sol_2001" />
+      <upgrade_target id="NPCCharacter.yuanshao_sol_000" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ge_jizhou_01" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s1001_hair" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s1001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s1001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s1001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- <NPCCharacter id="jizhou_sol_2001" default_group="Infantry" level="11" name="{=*}河朔材士" occupation="Soldier" is_basic_troop="true" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="65" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="5" />
+      <skill id="Athletics" value="55" />
+    </skills>
+    <upgrade_targets>
+
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ge_jizhou_02" />
+        <equipment slot="Head" id="Item.sg_ar_c05_s2001_head" />
+        <equipment slot="Body" id="Item.sg_ar_c05_s2001_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c05_s2001_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c05_s2001_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter> -->
+
+  <!-- 文化相关 -->
+  <NPCCharacter id="tournament_master_jizhou" default_group="Infantry" is_hero="false" occupation="ArenaMaster" culture="Culture.jizhou" name="兵曹掾" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_jingjichanglaoban_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_jingjichanglaoban_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="villager_jizhou" default_group="Infantry" level="1" name="{=*}冀州农民" occupation="Villager" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485" key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000" />
+      <BodyPropertiesMax version="4" age="69.94" weight="0.9923" build="0.7052" key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="0" />
+      <skill id="Athletics" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.jizhou_sol_1001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="Item.sg_axe_001" />
+        <equipment slot="Item1" id="Item.sg_throwing_stone" />
+        <equipment slot="Head" id="Item.sg_npc_bartender_head" />
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004" />
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sg_axe_0018" />
+        <equipment slot="Item1" id="Item.sg_throwing_stone" />
+        <equipment slot="Head" id="Item.sg_npc_bartender_head" />
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004" />
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="caravan_master_jizhou" default_group="Infantry" level="26" name="冀州商队头领" occupation="CaravanGuard" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="130" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="160" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="60" />
+      <skill id="Bow" value="80" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="50" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_gaojihuwei_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_gaojihuwei_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="armed_trader_jizhou" default_group="Ranged" level="16" name="冀州武装商贩" occupation="CaravanGuard" culture="Culture.jizhou" is_basic_troop="true">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="70" />
+      <skill id="Riding" value="10" />
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="70" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="30" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_gaojihuwei_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_gaojihuwei_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="caravan_guard_jizhou" default_group="HorseArcher" level="21" name="冀州商队护卫" upgrade_requires="ItemCategory.horse" occupation="CaravanGuard" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="40" />
+      <skill id="Riding" value="90" />
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="15" />
+      <skill id="Polearm" value="100" />
+      <skill id="Bow" value="40" />
+      <skill id="Crossbow" value="110" />
+      <skill id="Throwing" value="15" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangduihuwei_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou" />
+      <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma" />
+      <equipment slot="HorseHarness" id="Item.sg_hh_001" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="veteran_caravan_guard_jizhou" default_group="Cavalry" level="26" name="冀州资深商队护卫" occupation="CaravanGuard" culture="Culture.jizhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="Athletics" value="80" />
+      <skill id="Riding" value="130" />
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="130" />
+      <skill id="Bow" value="80" />
+      <skill id="Crossbow" value="20" />
+      <skill id="Throwing" value="60" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangduihuwei_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou" />
+      <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma" />
+      <equipment slot="HorseHarness" id="Item.sg_hh_001" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="prison_guard_jizhou" default_group="Infantry" level="21" culture="Culture.jizhou" occupation="PrisonGuard" name="冀州监狱守卫" skill_template="SkillSet.infantry_heavyinfantry_level21_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <!--<skill id="Athletics" value="50" /> #OLD_SKILL# -->
+      <skill id="OneHanded" value="50" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="50" />
+      <skill id="Crossbow" value="50" />
+      <skill id="Bow" value="50" />
+      <skill id="Throwing" value="50" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangduihuwei_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="guard_jizhou" default_group="Infantry" level="21" occupation="Soldier" culture="Culture.jizhou" name="冀州守卫" skill_template="SkillSet.infantry_heavyinfantry_level21_template_skills" is_hidden_encyclopedia="true">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <!--<skill id="Athletics" value="50" /> #OLD_SKILL# -->
+      <skill id="OneHanded" value="50" />
+      <skill id="TwoHanded" value="50" />
+      <skill id="Polearm" value="50" />
+      <skill id="Crossbow" value="50" />
+      <skill id="Bow" value="50" />
+      <skill id="Throwing" value="50" />
+    </skills>
+    <Traits>
+    </Traits>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangduihuwei_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="blacksmith_jizhou" default_group="Infantry" is_hero="false" occupation="Blacksmith" culture="Culture.jizhou" name="铁匠" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_tiejiang_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_tiejiang_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="weaponsmith_jizhou" default_group="Infantry" is_hero="false" occupation="Weaponsmith" culture="Culture.jizhou" name="传奇铁匠大师" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_tiejiang_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_tiejiang_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townswoman_jizhou" default_group="Infantry" is_female="true" level="1" name="{=*}河北女镇民" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <BodyProperties version="4" age="22.05" weight="0.2918" build="0.2886" key="0000600990000001227101022221000240008203101023225532432173535432004446030401121200000000000000000000000000000000000000000A940001" />
+      <BodyPropertiesMax version="4" age="58.36" weight="0.7701" build="0.838" key="0020F80FD2B4300FFE7EFEEEEDFFFFEFEFFE9EEFEFF8FFEEFFFFEFEE8FFEFFFE05CDC6570CFEFFFF0000000000000000000000000000000000000000698C90C4" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Head" id="Item.sg_npc_bartender_head" />
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004" />
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Head" id="Item.sg_npc_bartender_head" />
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004" />
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townswoman_infant_jizhou" name="女婴" age="3" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townswoman_child_jizhou" name="儿童" age="6" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townswoman_teenager_jizhou" name="河北百姓" age="14" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townsman_jizhou" default_group="Infantry" name="{=*}镇民" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+      <hair_tags>
+        <hair_tag name="Bald" />
+        <hair_tag name="ShortAndThin" />
+        <hair_tag name="Tousled" />
+        <hair_tag name="Short" />
+      </hair_tags>
+      <beard_tags>
+        <beard_tag name="Cleanshaven" />
+        <beard_tag name="LightShortBeard" />
+        <beard_tag name="HeavyShortBeard" />
+        <beard_tag name="Cleanshaven" />
+      </beard_tags>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Head" id="Item.sg_npc_bartender_head" />
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004" />
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sg_sword_whole_001_1h" />
+        <equipment slot="Head" id="Item.sg_npc_bartender_head" />
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004" />
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townsman_infant_jizhou" name="男婴" age="3" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townsman_child_jizhou" name="孩子" age="6" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="village_woman_jizhou" default_group="Infantry" is_female="true" level="1" name="{=*}女农民" occupation="Villager" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+      <hair_tags>
+        <hair_tag name="Bobbed" />
+        <hair_tag name="RestingOnShoulders" />
+        <hair_tag name="ShoulderLengthTied" />
+        <hair_tag name="AboveShoulderLength" />
+      </hair_tags>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Head" id="Item.sg_npc_bartender_head" />
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004" />
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001" />
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Head" id="Item.sg_npc_bartender_head" />
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004" />
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001" />
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="villager_child_jizhou" name="孩子" age="6" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="villager_teenager_jizhou" name="河北百姓" age="14" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="village_woman_child_jizhou" name="儿童" age="6" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="village_woman_teenager_jizhou" name="河北百姓" age="14" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townsman_teenager_jizhou" name="河北百姓" age="14" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="ransom_broker_jizhou" default_group="Infantry" is_hero="false" name="人牙子" occupation="RansomBroker" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangfan_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_shangfan_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gangleader_bodyguard_jizhou" default_group="Infantry" name="里正" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level16_template_skills" level="16">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template" />
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="merchant_notary_jizhou" default_group="Infantry" name="乡绅" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template" />
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="artisan_notary_jizhou" default_group="Infantry" name="匠人" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template" />
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="preacher_notary_jizhou" default_group="Infantry" name="布道" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template" />
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="rural_notable_notary_jizhou" default_group="Infantry" name="保人" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template" />
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shop_worker_jizhou" default_group="Infantry" name="店员" occupation="ShopWorker" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_dianyuan_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_dianyuan_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tavernkeeper_jizhou" default_group="Infantry" is_hero="false" name="酒馆店主" occupation="Tavernkeeper" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_jiudiandianzhu_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_jiudiandianzhu_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="taverngamehost_jizhou" default_group="Infantry" is_hero="false" name="赌棍" occupation="TavernGameHost" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="musician_jizhou" default_group="Infantry" is_hero="false" name="说书人" occupation="Musician" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_dushuren_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_dushuren_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tavern_wench_jizhou" default_group="Infantry" name="酒館侍女" is_female="true" is_hero="false" occupation="TavernWench" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shinv_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_shinv_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="armorer_jizhou" default_group="Infantry" is_hero="false" occupation="Armorer" culture="Culture.jizhou" name="函人" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_tiejiang_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_tiejiang_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="horseMerchant_jizhou" default_group="Infantry" is_hero="false" occupation="HorseTrader" culture="Culture.jizhou" name="马匹贩子" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_mapifanzi_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_mapifanzi_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="barber_jizhou" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.jizhou" name="理发师" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_lifashi_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_lifashi_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="merchant_jizhou" default_group="Infantry" is_hero="true" occupation="GoodsTrader" culture="Culture.jizhou" name="商贩" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangfan_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_shangfan_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beggar_jizhou" default_group="Infantry" name="乞丐" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <BodyProperties version="4" age="49.19" weight="0.1661" build="0.0462" key="000504000600141300000000000200100000000000000000000000000000000000012BA6010000000000000000000000000000000000000000000000000000C1" />
+      <BodyPropertiesMax version="4" age="74.26" weight="0.6145" build="0.6767" key="001CFC0FD50034D4FFFFFFFFFFF9FFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFFFFF000A9BA90AFFFFFF000000000000000000000000000000000000000000F08101" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_qigai_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_qigai_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="female_beggar_jizhou" default_group="Infantry" is_female="true" level="1" name="女乞丐" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_qigai_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_qigai_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="female_dancer_jizhou" default_group="Infantry" name="舞者" is_female="true" is_hero="false" occupation="Townsfolk" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shinv_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_shinv_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gear_dummy_jizhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.jizhou" name="{=!}Empire Gear Dummy" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills" is_obsolete="true">
+    <face>
+      <face_key_template value="BodyProperty.guard" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+    </Traits>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_jingjichanglaoban_equipment_template_yanzhou" />
+      <EquipmentSet civilian="true" id="sg_npc_jingjichanglaoban_equipment_civilian_template_yanzhou" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- 竞技场练习 -->
+  <NPCCharacter id="gear_practice_dummy_jizhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.jizhou" name="{=!}YongLiang Gear Dummy" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.guard" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026" />
+        <equipment slot="Body" id="Item.sg_cl_c01_farmer001_body" />
+        <equipment slot="Leg" id="Item.sg_cl_c01_farmer001_leg" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026" />
+        <equipment slot="Head" id="Item.sg_ar_c01_s001_head_a" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s001_body_a" />
+        <equipment slot="Leg" id="Item.sg_cl_c01_farmer001_leg" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026" />
+        <equipment slot="Head" id="Item.sg_ar_c01_s001_head_b" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s001_body_b" />
+        <equipment slot="Leg" id="Item.sg_cl_c01_farmer001_leg" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026" />
+        <equipment slot="Head" id="Item.sg_ar_c01_s002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body" />
+        <equipment slot="Leg" id="Item.sg_ar_c01_s002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="weapon_practice_stage_1_jizhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.jizhou" name="{=!}Empire Weapon Dummy">
+    <face>
+      <face_key_template value="BodyProperty.guard" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item2" id="Item.sg_shortbow_001" />
+        <equipment slot="Item3" id="Item.default_arrows" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h" />
+        <equipment slot="Item2" id="Item.sg_shortbow_001" />
+        <equipment slot="Item3" id="Item.default_arrows" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="weapon_practice_stage_2_jizhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.jizhou" name="{=!}Empire Weapon Dummy">
+    <face>
+      <face_key_template value="BodyProperty.guard" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_20_1h_01_l" />
+        <equipment slot="Item2" id="Item.sg_shortbow_001" />
+        <equipment slot="Item3" id="Item.lz_arrow_jjc_01" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_003_1h" />
+        <equipment slot="Item2" id="Item.sg_shortbow_001" />
+        <equipment slot="Item3" id="Item.default_arrows" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_20_1h_01_l" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_20_1h_01_l" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_010" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_010" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_003_1h" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_003_1h" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_003_1h" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_20_1h_01_l" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="weapon_practice_stage_3_jizhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.jizhou" name="{=!}YongLiang Weapon Dummy" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.guard" />
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+        <equipment slot="Item2" id="Item.sg_shortbow_001" />
+        <equipment slot="Item3" id="Item.default_arrows" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_004_1h" />
+        <equipment slot="Item2" id="Item.sg_shortbow_001" />
+        <equipment slot="Item3" id="Item.lz_arrow_jjc_01" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_004_1h" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_014_1h" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_004_1h" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_axe_002" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_axe_002" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_axe_002" />
+        <equipment slot="Item1" id="Item.sg_javelin_001" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- 竞技场大赛 -->
+  <NPCCharacter id="tournament_template_jizhou_one_participant_set_v1" default_group="Infantry" level="6" name="{=!}tournament_template_jizhou_one_participant_set_v1" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template_civilian" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_jizhou_two_participant_set_v1" default_group="Infantry" level="6" name="{=!}tournament_template_jizhou_two_participant_set_v1" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template_civilian" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_jizhou_two_participant_set_v2" default_group="Infantry" level="6" name="{=!}tournament_template_jizhou_two_participant_set_v2" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_javelin_001" />
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template_civilian" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_jizhou_two_participant_set_v3" default_group="Infantry" level="6" name="{=!}tournament_template_jizhou_two_participant_set_v3" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jjc_01" />
+        <equipment slot="Item1" id="Item.lz_arrow_jjc_01" />
+        <equipment slot="Item2" id="Item.lz_hsd_jjc_01" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template_civilian" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_jizhou_four_participant_set_v1" default_group="Infantry" level="6" name="{=!}tournament_template_jizhou_four_participant_set_v1" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_javelin_001" />
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jjc_01" />
+        <equipment slot="Item1" id="Item.lz_arrow_jjc_01" />
+        <equipment slot="Item2" id="Item.lz_hsd_jjc_01" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005" />
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma" />
+        <equipment slot="HorseHarness" id="Item.sg_hh_c05_001_a" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template_civilian" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_jizhou_four_participant_set_v2" default_group="Infantry" level="6" name="{=!}tournament_template_jizhou_four_participant_set_v2" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item1" id="Item.sg_shield_008_c" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005" />
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma" />
+        <equipment slot="HorseHarness" id="Item.sg_hh_c05_001_a" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005" />
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma" />
+        <equipment slot="HorseHarness" id="Item.sg_hh_c05_001_a" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template_civilian" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_jizhou_four_participant_set_v3" default_group="Infantry" level="6" name="{=!}tournament_template_jizhou_four_participant_set_v3" culture="Culture.jizhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_javelin_001" />
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Item2" id="Item.sg_javelin_001" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jjc_01" />
+        <equipment slot="Item1" id="Item.lz_arrow_jjc_01" />
+        <equipment slot="Item2" id="Item.lz_hsd_jjc_01" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005" />
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma" />
+        <equipment slot="HorseHarness" id="Item.sg_hh_c05_001_a" />
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005" />
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01" />
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma" />
+        <equipment slot="HorseHarness" id="Item.sg_hh_c05_001_a" />
+      </EquipmentRoster>
+      <EquipmentSet id="jizhou_npc_wanderer_equipment_template_civilian" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- 流浪者 -->
+  <!-- WANDERER CHARACTERS BEGIN -->
+  <!-- WANDERERS OF EMPIRE -->
+  <!-- Engineer who refused to comply with guild backscratching -->
+  <NPCCharacter id="spc_wanderer_jizhou_0" name="{=bvjFhiDr}{FIRSTNAME} the Scholar" voice="curt" age="29" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_0_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Mercy" value="1" />
+      <Trait id="Generosity" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- Very boastful -->
+  <NPCCharacter id="spc_wanderer_jizhou_1" name="{=xTQPfmS9}{FIRSTNAME} the Bull" voice="earnest" age="29" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_1_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="-1" />
+      <Trait id="Calculating" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- Family lost military land grant, must work for merchants -->
+  <NPCCharacter id="spc_wanderer_jizhou_2" name="{=Ivx4uJVp}{FIRSTNAME} the Silent" voice="softspoken" age="26" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_2_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Mercy" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!--  Die-hard legionary -->
+  <NPCCharacter id="spc_wanderer_jizhou_3" name="{=1OZBZZCi}{FIRSTNAME} the Boar" voice="ironic" age="40" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_3_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Mercy" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- Bandit who found bandits too sociopathic -->
+  <NPCCharacter id="spc_wanderer_jizhou_4" name="{=t9e34kgH}{FIRSTNAME} the Robber" voice="ironic" age="22" default_group="Infantry" is_hero="false" is_template="true" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_4_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="-1" />
+      <Trait id="Mercy" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- the butcher, doesn't give much away about himself -->
+  <NPCCharacter id="spc_wanderer_jizhou_5" name="{=pZSAdyC0}{FIRSTNAME} the Butcher" voice="curt" age="30" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_5_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Honor" value="-1" />
+      <Trait id="Generosity" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- maquisard, ex-messianic rebel turned mafiosi -->
+  <NPCCharacter id="spc_wanderer_jizhou_6" name="{=OArAImbM}{FIRSTNAME} of the Hills" voice="curt" age="22" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_6_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Generosity" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- posed as man to join army. needed the money -->
+  <NPCCharacter id="spc_wanderer_jizhou_7" name="{=28tWEFNi}{FIRSTNAME} the Wanderer" voice="ironic" age="24" is_template="true" default_group="Infantry" is_female="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_7_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- merchant-class dispossessed. family was in sacked city, followed in wake of refugee columns.  -->
+  <NPCCharacter id="spc_wanderer_jizhou_8" name="{=PQkMcfAW}{FIRSTNAME} the Exile" voice="curt" age="23" default_group="Infantry" is_template="true" is_female="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_8_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Mercy" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!--female outlaw. Mascot, used as assassin as girl. Got older, men's antics not as funny. Gang leader nemesis -->
+  <NPCCharacter id="spc_wanderer_jizhou_9" name="{=7apnGFz7}{FIRSTNAME} the Black" voice="curt" age="21" default_group="Infantry" is_template="true" is_female="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_9_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- extra imperials -->
+  <!--  Doctor, forced to torture -->
+  <NPCCharacter id="spc_wanderer_jizhou_10" name="{=cud22JY1}{FIRSTNAME} the Surgeon" voice="ironic" is_template="true" age="31" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_10_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Generosity" value="1" />
+      <Trait id="Mercy" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!--upper-class dispossessed, refused a bad marriage -->
+  <NPCCharacter id="spc_wanderer_jizhou_11" name="{=e84pvBYI}{FIRSTNAME} the Dispossessed" voice="earnest" age="28" default_group="Infantry" is_template="true" is_female="true" is_hero="false" culture="Culture.jizhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_11_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <!-- 名人 -->
+  <NPCCharacter id="spc_notable_jizhou_0" name="{=!}Cautious imperial merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_0b" name="{=!}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Commander" value="4" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_1" name="{=!}Empire merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_1b" name="{=!}Cold imperial merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Commander" value="4" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_2" name="{=!}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_2b" name="{=!}Empire merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Commander" value="4" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_3" name="{=!}Empire merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_3b" name="{=!}Empire merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Commander" value="4" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_4" name="{=!}Empire merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_4b" name="{=!}Empire merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Commander" value="4" />
+      <Trait id="Manager" value="10" />
+      <Trait id="Honor" value="-1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_5" name="{=!}Messianic imperial preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Preacher">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+      <EquipmentSet id="spc_notable_jizhou_5" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_6" name="{=!}Puritan imperial preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Preacher">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+      <Trait id="Generosity" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+      <EquipmentSet id="spc_notable_jizhou_6" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_7" name="{=!}Female imperial mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.jizhou" occupation="Preacher">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Mercy" value="1" />
+      <Trait id="Generosity" value="0" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+      <EquipmentSet id="spc_notable_jizhou_7" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_8" name="{=!}Imperial gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.jizhou" occupation="Artisan">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+      <EquipmentSet id="spc_notable_jizhou_8" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_9" name="{=!}Imperial outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.jizhou" occupation="Artisan">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+      <EquipmentSet id="spc_notable_jizhou_9" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_10" name="{=!}Ironic imperial gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="GangLeader">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Mercy" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_11" name="{=!}Intimidating male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="GangLeader">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Mercy" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_12" name="{=!}Female imperial gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.jizhou" occupation="GangLeader" default_group="Infantry">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Honor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_13" name="{=!}Menacing female imperial gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.jizhou" occupation="GangLeader" default_group="Infantry">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Generosity" value="-1" />
+      <Trait id="Mercy" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_21" name="{=!}Empire gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.jizhou" occupation="RuralNotable">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Calculating" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_22" name="{=!}Empire rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.jizhou" occupation="RuralNotable">
+    <face>
+      <face_key_template value="BodyProperty.townsman_empire" />
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_gl1" name="{=!}Protective imperial male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="GangLeader">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Generosity" value="1" />
+      <Trait id="Honor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_jizhou_gl4" name="{=!}Bestial male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="GangLeader">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Honor" value="-1" />
+      <Trait id="Mercy" value="-1" />
+      <Trait id="Calculating" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_jizhou_headman_1" name="{=!}empire rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Headman">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="1" />
+      <Trait id="Calculating" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_jizhou_headman_2" name="{=!}empire conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Headman">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Valor" value="-1" />
+      <Trait id="Generosity" value="1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_jizhou_headman_3" name="{=!}empire devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.jizhou" occupation="Headman">
+    <face>
+      <face_key_template value="BodyProperty.villager_yongliang" />
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1" />
+      <Trait id="Calculating" value="1" />
+      <Trait id="Honor" value="-1" />
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template" />
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

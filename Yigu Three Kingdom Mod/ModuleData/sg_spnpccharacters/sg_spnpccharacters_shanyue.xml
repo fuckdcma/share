@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NPCCharacters>
+  <NPCCharacter id="shanyue_sol_1001" default_group="Ranged" level="6" name="{=*}山越猎手" occupation="Bandit" culture="Culture.shanyue_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="20" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="20" />
+      <skill id="Bow" value="20" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="0" />
+      <skill id="Athletics" value="20" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shanyue_sol_2001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shanyue_sol_2001" default_group="Ranged" level="11" name="{=*}山越弓手" occupation="Bandit" culture="Culture.shanyue_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="20" />
+      <skill id="Polearm" value="40" />
+      <skill id="Bow" value="40" />
+      <skill id="Crossbow" value="15" />
+      <skill id="Throwing" value="20" />
+      <skill id="Riding" value="5" />
+      <skill id="Athletics" value="40" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shanyue_sol_3001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shanyue_sol_3001" default_group="Ranged" level="16" name="{=*}山越射手" occupation="Bandit" culture="Culture.shanyue_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="70" />
+      <skill id="TwoHanded" value="40" />
+      <skill id="Polearm" value="30" />
+      <skill id="Bow" value="70" />
+      <skill id="Crossbow" value="30" />
+      <skill id="Throwing" value="40" />
+      <skill id="Riding" value="10" />
+      <skill id="Athletics" value="70" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shanyue_sol_4001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shanyue_sol_4001" default_group="Ranged" level="21" name="{=*}山越追击手" occupation="Bandit" culture="Culture.shanyue_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="100" />
+      <skill id="TwoHanded" value="60" />
+      <skill id="Polearm" value="60" />
+      <skill id="Bow" value="100" />
+      <skill id="Crossbow" value="45" />
+      <skill id="Throwing" value="45" />
+      <skill id="Riding" value="15" />
+      <skill id="Athletics" value="100" />
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.shanyue_sol_5001" />
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shanyue_sol_5001" default_group="Ranged" level="26" name="{=*}山越密林追击手" occupation="Bandit" culture="Culture.shanyue_bandits">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yongliang" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="130" />
+      <skill id="TwoHanded" value="80" />
+      <skill id="Polearm" value="80" />
+      <skill id="Bow" value="140" />
+      <skill id="Crossbow" value="80" />
+      <skill id="Throwing" value="60" />
+      <skill id="Riding" value="40" />
+      <skill id="Athletics" value="130" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_longbow_004" />
+        <equipment slot="Item1" id="Item.range_arrows" />
+        <equipment slot="Item2" id="Item.sg_sword_20_1h_01_s" />
+        <equipment slot="Head" id="Item.sg_ar_c11_s2002_head" />
+        <equipment slot="Body" id="Item.sg_ar_c11_s2002_body" />
+        <equipment slot="Gloves" id="Item.sg_ar_c11_s2002_arm" />
+        <equipment slot="Leg" id="Item.sg_ar_c11_s2002_leg" />
+      </EquipmentRoster>
+      <EquipmentSet id="empire_troop_civilian_template_t2" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

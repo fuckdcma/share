@@ -1,0 +1,60 @@
+<prefabs>
+	<game_entity name="sp_naval_ship_set" old_prefab_name="">
+		<tags>
+			<tag name="spawnpoint_set"/>
+			<tag name="naval_battle_set"/>
+		</tags>
+		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
+		<children>
+			<game_entity name="sp_attacker_ship_reinforcement" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="attacker_ship_reinforcement_sp"/>
+				</tags>
+				<transform position="0.000, -50.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_defender_ship_reinforcement" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="defender_ship_reinforcement_sp"/>
+				</tags>
+				<transform position="0.000, 50.000, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_attacker_ship" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="attacker_ship_sp"/>
+				</tags>
+				<transform position="0.000, -55.000, 0.000"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+			<game_entity name="sp_defender_ship" old_prefab_name="">
+				<visibility_masks>
+					<visibility_mask name="visible_only_when_editing" value="true"/>
+				</visibility_masks>
+				<tags>
+					<tag name="defender_ship_sp"/>
+				</tags>
+				<transform position="0.000, 55.000, 0.000" rotation_euler="0.000, 0.000, -3.142"/>
+				<components>
+					<meta_mesh_component name="arrow_new_icon"/>
+				</components>
+			</game_entity>
+		</children>
+	</game_entity>
+</prefabs>
+

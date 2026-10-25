@@ -1,0 +1,1988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CraftingPieces>
+  <!-- T1 -->
+  <!-- T1: 刃 -->
+  <CraftingPiece id="sg_t1_spear_blade_001"
+                 name="{=*}熟铁叶形枪头"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_001"
+                 length="26.4"
+                 weight="0.41"
+                 excluded_item_usage_features="swing"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.7" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_002"
+                 name="{=*}熟铁羽形枪头"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_002"
+                 length="27.3"
+                 weight="0.34"
+                 excluded_item_usage_features="swing"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.9" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_003"
+                 name="{=*}熟铁双锋阔刃"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_003"
+                 length="31.1"
+                 weight="0.36"
+                 excluded_item_usage_features="swing"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.95" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_004"
+                 name="{=*}熟铁粗制戟头"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_axe_head_005"
+                 length="36.1"
+                 weight="0.56"
+                 is_default="true">
+    <BuildData piece_offset="-23" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.9" />
+      <Swing damage_type="Cut" damage_factor="1.8" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron2" count="4" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_005"
+                 name="{=*}熟铁单锋厚刀刃"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_005"
+                 length="50"
+                 weight="0.74"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.1" />
+      <Swing damage_type="Cut" damage_factor="2.45" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_006"
+                 name="{=*}熟铁朴刀刃"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_006"
+                 length="43.7"
+                 weight="0.66"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.0" />
+      <Swing damage_type="Cut" damage_factor="2.0" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_007"
+                 name="{=*}熟铁单锋弯刀刃"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_007"
+                 length="49.6"
+                 weight="0.60"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.3" />
+      <Swing damage_type="Cut" damage_factor="1.8" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_008"
+                 name="{=*}熟铁单锋阔刀刃"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_008"
+                 length="47.7"
+                 weight="0.72"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.1" />
+      <Swing damage_type="Cut" damage_factor="1.95" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_009"
+                 name="{=*}熟铁大刀刃"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_009"
+                 length="43.7"
+                 weight="0.68"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.3" />
+      <Swing damage_type="Cut" damage_factor="1.75" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_010"
+                 name="{=*}熟铁单锋厚弯刀刃"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_010"
+                 length="45.8"
+                 weight="0.72"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.2" />
+      <Swing damage_type="Cut" damage_factor="2.05" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="6" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_011"
+                 name="{=*}熟铁巨型双锋阔刃"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_011"
+                 length="50.8"
+                 weight="0.63"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.5" />
+      <Swing damage_type="Cut" damage_factor="1.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="6" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_012"
+                 name="{=*}熟铁菱形枪头"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_012"
+                 length="29.7"
+                 weight="0.2376"
+                 excluded_item_usage_features="swing"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.05" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_013"
+                 name="{=*}熟铁直刃双锋阔刃矛"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_013"
+                 length="29.7"
+                 weight="0.35"
+                 excluded_item_usage_features="swing"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.00" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_014"
+                 name="{=*}熟铁锥形枪头"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_014"
+                 length="29.7"
+                 weight="0.39"
+                 excluded_item_usage_features="swing"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.15" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_015"
+                 name="{=*}熟铁柳叶枪头"
+                 tier="1"
+                 piece_type="Blade"
+                 mesh="sg_t1_spear_blade_015"
+                 length="37.4"
+                 weight="0.30"
+                 excluded_item_usage_features="swing"
+                 is_default="true">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.25" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4" />
+    </Materials>
+  </CraftingPiece>
+
+
+  <!-- T2 -->
+  <!-- T2: 刃 -->
+  <CraftingPiece id="sg_t2_spear_blade_001"
+                 name="{=*}铜制长枪头"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_001"
+                 excluded_item_usage_features="swing"
+                 length="26.4"
+                 weight="0.42">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron3" count="1" />
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_002"
+                 name="{=*}钢制镀铜双孔叶形枪头"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_002"
+                 excluded_item_usage_features="swing"
+                 length="19.7"
+                 weight="0.45">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron3" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_003"
+                 name="{=*}廿炼钢带钩厚刀刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_003"
+                 length="49.1"
+                 weight="0.74">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.5" />
+      <Swing damage_type="Cut" damage_factor="3.1" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron3" count="1" />
+      <Material id="Iron4" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_004"
+                 name="{=*}廿炼钢带钩朴刀刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_004"
+                 length="44.2"
+                 weight="0.72">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.3" />
+      <Swing damage_type="Cut" damage_factor="3.15" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_005"
+                 name="{=*}廿炼钢大刀刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_005"
+                 length="48.9"
+                 weight="0.72">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.35" />
+      <Swing damage_type="Cut" damage_factor="3.05" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_006"
+                 name="{=*}廿炼钢齿收锋刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_006"
+                 length="43.7"
+                 weight="0.59">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.85" />
+      <Swing damage_type="Cut" damage_factor="2.6" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_007"
+                 name="{=*}廿炼钢偃月刀刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_007"
+                 length="46.8"
+                 weight="0.72">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.55" />
+      <Swing damage_type="Cut" damage_factor="3.35" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_008"
+                 name="{=*}廿炼钢卷云刀刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_008"
+                 length="42.7"
+                 weight="0.72">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.35" />
+      <Swing damage_type="Cut" damage_factor="3.45" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_009"
+                 name="{=*}廿炼钢双锋尖头阔刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_009"
+                 excluded_item_usage_features="swing"
+                 length="31.3"
+                 weight="0.45">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.3" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="3" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_010"
+                 name="{=*}廿炼钢枪头"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_010"
+                 excluded_item_usage_features="swing"
+                 length="19.7"
+                 weight="0.24">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_011"
+                 name="{=*}廿炼钢鸦嘴刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_011"
+                 excluded_item_usage_features="swing"
+                 length="33.7"
+                 weight="0.36">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_012"
+                 name="{=*}廿炼钢枪头"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_012"
+                 excluded_item_usage_features="swing"
+                 length="15.1"
+                 weight="0.27">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_013"
+                 name="{=*}廿炼钢鸭喙刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_013"
+                 excluded_item_usage_features="swing"
+                 length="27.7"
+                 weight="0.37">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_014"
+                 name="{=*}廿炼钢双锋柳叶刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_014"
+                 excluded_item_usage_features="swing"
+                 length="36"
+                 weight="0.44">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_015"
+                 name="{=*}廿炼钢鸦项枪头"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_015"
+                 excluded_item_usage_features="swing"
+                 length="27.8"
+                 weight="0.40">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_016"
+                 name="{=*}廿炼钢巨型双锋阔刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_016"
+                 excluded_item_usage_features="swing"
+                 length="36.5"
+                 weight="0.53">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_017"
+                 name="{=*}廿炼钢双锋阔刃"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_017"
+                 excluded_item_usage_features="swing"
+                 length="35.8"
+                 weight="0.49">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.25" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_018"
+                 name="{=*}廿炼钢马项枪头"
+                 tier="2"
+                 piece_type="Blade"
+                 mesh="sg_t2_spear_blade_018"
+                 excluded_item_usage_features="swing"
+                 length="38.4"
+                 weight="0.47">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.35" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+    </Materials>
+  </CraftingPiece>
+
+
+  <!-- T3 -->
+  <!-- T3: 刃 -->
+  <CraftingPiece id="sg_t3_spear_blade_001"
+                 name="{=*}卅炼优质钢四孔柳叶刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_001"
+                 excluded_item_usage_features="swing"
+                 length="37.7"
+                 weight="0.35">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_002"
+                 name="{=*}卅炼优质钢三孔葫芦枪头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_002"
+                 excluded_item_usage_features="swing"
+                 length="15.1"
+                 weight="0.22">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_003"
+                 name="{=*}卅炼优质钢叶形枪头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_003"
+                 excluded_item_usage_features="swing"
+                 length="13.3"
+                 weight="0.19">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_004"
+                 name="{=*}卅炼优质钢苞形钢枪头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_004"
+                 excluded_item_usage_features="swing"
+                 length="20.4"
+                 weight="0.32">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_005"
+                 name="{=*}卅炼优质钢刺锥枪头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_005"
+                 excluded_item_usage_features="swing"
+                 length="30.4"
+                 weight="0.35">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_006"
+                 name="{=*}卅炼优质钢锥形枪头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_006"
+                 excluded_item_usage_features="swing"
+                 length="30.3"
+                 weight="0.36">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_007"
+                 name="{=*}卅炼优质钢黄铜套筒卜字戟刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="r_sg_t3_spear_blade_007"
+                 length="38.5"
+                 weight="0.57">
+    <BuildData piece_offset="-18" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.1" />
+      <Swing damage_type="Pierce" damage_factor="2.9" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_008"
+                 name="{=*}卅炼优质钢黄铜套筒四孔卜字戟刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="r_sg_t3_spear_blade_008"
+                 length="35.1"
+                 weight="0.55">
+    <BuildData piece_offset="-29" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.1" />
+      <Swing damage_type="Pierce" damage_factor="2.85" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_009"
+                 name="{=*}卅炼优质钢双钩朴刀刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_009"
+                 length="45"
+                 weight="0.64">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.6" />
+      <Swing damage_type="Cut" damage_factor="3.6" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_010"
+                 name="{=*}卅炼优质钢锯齿大刀刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_010"
+                 length="48.9"
+                 weight="0.62">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.7" />
+      <Swing damage_type="Cut" damage_factor="3.55" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_011"
+                 name="{=*}卅炼优质钢双尖朴刀刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_011"
+                 length="51.9"
+                 weight="0.69">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.6" />
+      <Swing damage_type="Cut" damage_factor="3.6" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_012"
+                 name="{=*}卅炼优质钢锯齿单锋厚刀刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_012"
+                 length="48.9"
+                 weight="0.68">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.6" />
+      <Swing damage_type="Cut" damage_factor="3.6" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_013"
+                 name="{=*}卅炼优质钢铁套筒双头戈刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="r_sg_t3_spear_blade_013"
+                 length="25.5"
+                 weight="0.58">
+    <BuildData piece_offset="-13" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.8" />
+      <Swing damage_type="Pierce" damage_factor="2.0" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_014"
+                 name="{=*}卅炼优质钢四孔卜字戟刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="r_sg_t3_spear_blade_014"
+                 length="35.1"
+                 weight="0.53">
+    <BuildData piece_offset="-24" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.1" />
+      <Swing damage_type="Pierce" damage_factor="2.9" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_015"
+                 name="{=*}卅炼优质钢多孔卜字戟刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_axe_head_005"
+                 length="36"
+                 weight="0.26">
+    <BuildData piece_offset="-23" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Pierce" damage_factor="3.5" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_016"
+                 name="{=*}卅炼优质钢锯齿双钩叶形矛头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_016"
+                 excluded_item_usage_features="swing"
+                 length="21.4"
+                 weight="0.37">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_017"
+                 name="{=*}卅炼优质钢笔形枪头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_017"
+                 excluded_item_usage_features="swing"
+                 length="19.4"
+                 weight="0.41">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.7" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_018"
+                 name="{=*}卅炼优质钢双锋长刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_018"
+                 excluded_item_usage_features="swing"
+                 length="35.3"
+                 weight="0.48">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_019"
+                 name="{=*}卅炼优质钢葫芦枪头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_019"
+                 excluded_item_usage_features="swing"
+                 length="15.1"
+                 weight="0.33">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.45" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_020"
+                 name="{=*}卅炼优质钢云尾双锋阔刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_020"
+                 length="31.2"
+                 weight="0.41">
+    <BuildData piece_offset="-5" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.4" />
+      <Swing damage_type="Cut" damage_factor="3.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_021"
+                 name="{=*}卅炼优质钢钝枪头"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_021"
+                 length="32.6"
+                 weight="0.46">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Blunt" damage_factor="3.85" />
+      <Swing damage_type="Blunt" damage_factor="3.95" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_022"
+                 name="{=*}卅炼优质钢舌形刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_022"
+                 length="31.5"
+                 weight="0.45">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Blunt" damage_factor="1.75" />
+      <Swing damage_type="Cut" damage_factor="2.8" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_023"
+                 name="{=*}卅炼优质钢双锋刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_023"
+                 length="31.8"
+                 excluded_item_usage_features="swing"
+                 weight="0.37">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.65" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_024"
+                 name="{=*}卅炼优质钢锯齿双锋刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_024"
+                 length="31.3"
+                 excluded_item_usage_features="swing"
+                 weight="0.57">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.55" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_025"
+                 name="{=*}卅炼优质钢双锋剑刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_025"
+                 length="47.4"
+                 weight="0.71">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.3" />
+      <Swing damage_type="Cut" damage_factor="2.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_026"
+                 name="{=*}卅炼优质钢鸭喙刃"
+                 tier="3"
+                 piece_type="Blade"
+                 mesh="sg_t3_spear_blade_026"
+                 length="42.1"
+                 weight="0.58">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2" />
+      <Swing damage_type="Cut" damage_factor="2.9" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2" />
+    </Materials>
+  </CraftingPiece>
+
+
+  <!-- T4: 刃 -->
+  <CraftingPiece id="sg_t4_spear_blade_001"
+                 name="{=*}五十炼精炼钢六孔叶形枪头"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_001"
+                 excluded_item_usage_features="swing"
+                 length="16"
+                 weight="0.32">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_002"
+                 name="{=*}五十炼精炼钢叶形枪头"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_002"
+                 excluded_item_usage_features="swing"
+                 length="13.5"
+                 weight="0.32">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_003"
+                 name="{=*}五十炼精炼钢柳叶枪头"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_003"
+                 excluded_item_usage_features="swing"
+                 length="20"
+                 weight="0.33">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.9" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_004"
+                 name="{=*}五十炼精炼钢暗纹锥形刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_004"
+                 excluded_item_usage_features="swing"
+                 length="18.1"
+                 weight="0.325">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.95" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_005"
+                 name="{=*}五十炼精炼钢巨型双锋阔刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_005"
+                 length="35.9"
+                 weight="0.49">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.9" />
+      <Swing damage_type="Cut" damage_factor="3.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_006"
+                 name="{=*}五十炼精炼钢暗纹笔形枪头"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_006"
+                 excluded_item_usage_features="swing"
+                 length="18.1"
+                 weight="0.36">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.0" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_007"
+                 name="{=*}五十炼精炼钢倒钩葫芦枪头"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_007"
+                 excluded_item_usage_features="swing"
+                 length="20.2"
+                 weight="0.35">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.55" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_008"
+                 name="{=*}五十炼精炼钢笏形双锋阔刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_008"
+                 length="28.6"
+                 weight="0.45">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4" />
+      <Swing damage_type="Cut" damage_factor="3.7" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_009"
+                 name="{=*}五十炼精炼钢兽吞偃月刀刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_009"
+                 length="46.8"
+                 weight="0.72">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.9" />
+      <Swing damage_type="Cut" damage_factor="4.1" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_010"
+                 name="{=*}五十炼精炼钢兽吞大刀刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_010"
+                 length="60.7"
+                 weight="0.75">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.8" />
+      <Swing damage_type="Cut" damage_factor="4.2" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_011"
+                 name="{=*}五十炼精炼钢方天画戟刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_011"
+                 length="48.9"
+                 weight="0.68">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.8" />
+      <Swing damage_type="Cut" damage_factor="3.9" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_012"
+                 name="{=*}五十炼精炼钢暗纹长剑刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_012"
+                 length="46.7"
+                 weight="0.47">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="3.2" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_013"
+                 name="{=*}五十炼精炼钢鱼首斧刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_013"
+                 length="35.5"
+                 weight="0.82">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.4" />
+      <Swing damage_type="Cut" damage_factor="4.0" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_014"
+                 name="{=*}五十炼精炼钢镶金虎符戈刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_014"
+                 length="17.6"
+                 weight="0.35">
+    <BuildData piece_offset="-1.5" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.4" />
+      <Swing damage_type="Pierce" damage_factor="4.0" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_015"
+                 name="{=*}五十炼精炼钢暗纹金套筒戟刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_015"
+                 length="47.8"
+                 weight="0.42">
+    <BuildData piece_offset="-10" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.7" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_016"
+                 name="{=*}五十炼精炼钢单边三联戟刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_016"
+                 length="73.5"
+                 weight="0.39">
+    <BuildData piece_offset="-45" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.7" />
+      <Swing damage_type="Cut" damage_factor="5.5" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="4" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_017"
+                 name="{=*}五十炼精炼钢金套筒卜字戟刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_017"
+                 length="36.9"
+                 weight="0.37">
+    <BuildData piece_offset="-13" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="3.7" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_018"
+                 name="{=*}五十炼精炼钢雕纹双援雄戟刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_018"
+                 length="40.1"
+                 weight="0.45">
+    <BuildData piece_offset="-8" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.2" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_019"
+                 name="{=*}五十炼精炼钢卜字戟刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="r_sg_t4_spear_blade_019"
+                 length="36.2"
+                 weight="0.31">
+    <BuildData piece_offset="-27" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+      <Swing damage_type="Cut" damage_factor="3.8" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_020"
+                 name="{=*}五十炼精炼钢宽刃枪刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_020"
+                 length="29.1"
+                 weight="0.35">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.7" />
+      <Swing damage_type="Cut" damage_factor="3.3" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_021"
+                 name="{=*}五十炼精炼钢矢形枪刃"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_021"
+                 length="27.6"
+                 weight="0.33">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+      <Swing damage_type="Cut" damage_factor="3.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_022"
+                 name="{=*}五十炼精炼钢单脊槊头"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_022"
+                 length="22.4"
+                 weight="0.26">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.9" />
+      <Swing damage_type="Cut" damage_factor="3.6" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_023"
+                 name="{=*}五十炼精炼钢舌形槊头"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_023"
+                 length="22.5"
+                 weight="0.27">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.0" />
+      <Swing damage_type="Cut" damage_factor="3.35" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_024"
+                 name="{=*}五十炼精炼钢双孔锥槊"
+                 tier="4"
+                 piece_type="Blade"
+                 mesh="sg_t4_spear_blade_024"
+                 length="28"
+                 weight="0.30">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.9" />
+      <Swing damage_type="Cut" damage_factor="3.4" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2" />
+    </Materials>
+  </CraftingPiece>
+
+
+  <!-- T5: 刃 -->
+  <CraftingPiece id="sg_t5_spear_blade_001"
+                 name="{=*}百炼钢锯形枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_001"
+                 excluded_item_usage_features="swing"
+                 length="20.9"
+                 weight="0.33">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.2" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_002"
+                 name="{=*}百炼钢三尖枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_002"
+                 excluded_item_usage_features="swing"
+                 length="20.8"
+                 weight="0.32">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.25" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_003"
+                 name="{=*}百炼钢错金羽形枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_003"
+                 excluded_item_usage_features="swing"
+                 length="19.9"
+                 weight="0.34">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.3" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_004"
+                 name="{=*}百炼钢镀金叶形枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_004"
+                 excluded_item_usage_features="swing"
+                 length="13.8"
+                 weight="0.31">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.35" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_005"
+                 name="{=*}百炼钢铩枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_005"
+                 excluded_item_usage_features="swing"
+                 length="22.2"
+                 weight="0.35">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.9" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_006"
+                 name="{=*}百炼钢暗纹烛焰枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_006"
+                 excluded_item_usage_features="swing"
+                 length="17.9"
+                 weight="0.33">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_007"
+                 name="{=*}百炼钢金兽吞飞鱼鳍大刀刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_007"
+                 length="53.6"
+                 weight="0.58">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+      <Swing damage_type="Cut" damage_factor="5.1" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_008"
+                 name="{=*}百炼钢金兽吞锯齿大刀刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_008"
+                 length="53.3"
+                 weight="0.58">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6" />
+      <Swing damage_type="Cut" damage_factor="5.1" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_009"
+                 name="{=*}百炼钢暗兽纹双面钺刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="r_sg_t5_spear_blade_009"
+                 length="17.9"
+                 weight="0.82">
+    <BuildData piece_offset="-1" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.4" />
+      <Swing damage_type="Cut" damage_factor="5.4" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_010"
+                 name="{=*}百炼钢金兽吞偃月刀刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_010"
+                 length="55.8"
+                 weight="0.65">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="5.3" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_011"
+                 name="{=*}百炼钢金兽吞带钩偃月刀刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_011"
+                 length="54.4"
+                 weight="0.66">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="5.4" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_012"
+                 name="{=*}百炼钢暗兽纹双面斧枪刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="r_sg_t5_spear_blade_012"
+                 length="22.1"
+                 weight="0.84">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5" />
+      <Swing damage_type="Cut" damage_factor="5.3" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+			<Flag
+				name="CanKnockDown" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_013"
+                 name="{=*}纯金暗纹套筒百炼钢戟刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="r_sg_t5_spear_blade_013"
+                 length="40.5"
+                 weight="0.33">
+    <BuildData piece_offset="-10" />
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.3" />
+      <Swing damage_type="Pierce" damage_factor="4.7" />
+    </BladeData>
+		<Flags>
+			<Flag
+				name="CanDismount" />
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_014"
+                 name="{=*}百炼钢菱形枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_014"
+                 length="26.6"
+                 weight="0.28">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.3" />
+      <Swing damage_type="Cut" damage_factor="4.4" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_015"
+                 name="{=*}百炼钢四方双尖刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_015"
+                 length="26.8"
+                 weight="0.28">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.05" />
+      <Swing damage_type="Cut" damage_factor="4.35" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="4" />
+			<Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_016"
+                 name="{=*}百炼钢葫芦枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_016"
+                 excluded_item_usage_features="swing"
+                 length="20.9"
+                 weight="0.29">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_017"
+                 name="{=*}百炼钢暗回文三角刃"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_017"
+                 excluded_item_usage_features="swing"
+                 length="22.9"
+                 weight="0.28">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.5" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2" />
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="4" />
+			<Material id="Wood" count="2" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_018"
+                 name="{=*}百炼钢暗纹阔翼枪头"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_018"
+                 excluded_item_usage_features="swing"
+                 length="18.1"
+                 weight="0.28">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_s01"
+                 name="{=*}百炼钢葫芦枪头2"
+                 tier="5"
+                 piece_type="Blade"
+                 mesh="sg_t5_spear_blade_016"
+                 excluded_item_usage_features="swing"
+                 length="20.9"
+                 weight="0.29">
+    <BladeData stack_amount="3"
+               physics_material="metal_weapon"
+               body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="6.6" />
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1" />
+      <Material id="Iron6" count="1" />
+    </Materials>
+  </CraftingPiece>
+</CraftingPieces>
