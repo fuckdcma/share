@@ -24,8 +24,8 @@ def parse_xml(p):
         raw = p.read_bytes()
         for codec in ("utf-8-sig", "utf-16", "gb18030"):
             try:
-                decoded = raw.decode(codec).lstrip("\\ufeff")
-                decoded = re.sub(r"^\\s*<\\?xml[^>]*\\?>", "", decoded, count=1)
+                decoded = raw.decode(codec).lstrip("\ufeff")
+                decoded = re.sub(r"^\s*<\?xml[^>]*\?>", "", decoded, count=1)
                 return ET.fromstring(decoded), None
             except (UnicodeError, ET.ParseError, ValueError):
                 continue
