@@ -17,10 +17,19 @@ OUT.mkdir(exist_ok=True)
 TOKEN = re.compile(r"\{[^{}]+\}")
 HAN = re.compile(r"[\u3400-\u9fff]")
 def parse_xml(p):
+    """Parse XML, tolerating malformed legacy encoding declarations in YiGu CNs."""
     try:
         return ET.parse(p).getroot(), None
-    except (ET.ParseError, LookupError, ValueError) as exc:
-        return None, str(exc)
+    except (ET.ParseError, LookupError, ValueError) as original:
+        raw = p.read_bytes()
+        for codec in ("utf-8-sig", "utf-16", "gb18030"):
+            try:
+                decoded = raw.decode(codec).lstrip("\\ufeff")
+                decoded = re.sub(r"^\\s*<\\?xml[^>]*\\?>", "", decoded, count=1)
+                return ET.fromstring(decoded), None
+            except (UnicodeError, ET.ParseError, ValueError):
+                continue
+        return None, str(original)
 def rows(root):
     return [(elem.get("id"), elem.get("text")) for elem in root.iter("string")
             if elem.get("id") and elem.get("text") is not None]
@@ -140,6 +149,7 @@ csvwrite(OUT/"QA_REMAINING_HAN.csv", ["file","id","text"], remain_han)
 csvwrite(OUT/"QA_ACTIVE_HAN_IN_CONTENT.csv", ["file","attr","value"], active_han)
 csvwrite(OUT/"QA_CN_SOURCE_TOKEN_CONFLICT.csv", ["id","CN_files","CN_token_sets"], cn_token_conflicts)
 csvwrite(OUT/"QA_BAD_BRACES.csv", ["file","id","value"], brace_issues)
+csvwrite(OUT/"QA_CN_PARSE_ERRORS.csv", ["file","error"], source_error)
 stats = {
     "xml_in_accumulated_pack":len(all_xml),
     "vi_string_tables":len(vi_files),
@@ -187,3 +197,6 @@ with ZipFile(zip_path,"w",compression=ZIP_DEFLATED,compresslevel=8) as zipf:
             zipf.write(fp, "BAO_CAO/"+fp.name)
 print(json.dumps(stats,ensure_ascii=False,indent=2))
 print("OUTPUT",zip_path,zip_path.stat().st_size)
+print("SOURCE_ERRORS", json.dumps(source_error[:24],ensure_ascii=False))
+print("TOKEN_MISMATCH_DETAILS", json.dumps(source_mismatch[:25],ensure_ascii=False))
+print("NO_SOURCE_SAMPLE", json.dumps(source_missing[:25],ensure_ascii=False))
