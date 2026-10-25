@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<Item
+		id="lz_horse_youmu_01"
+		name="{=*}Ngựa du mục già"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="horse"
+		culture="Culture.yizhou"
+		weight="410"
+		is_merchandise="false"
+		difficulty="0"
+		appearance="0"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="46"
+				speed="40"
+				charge_damage="1"
+				body_length="95"
+				is_mountable="true"
+				extra_health="5"
+				skeleton_scale="battania_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="dales_pony_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+	<Item
+		id="lz_horse_youmu_02"
+		name="{=*}Ngựa du mục"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="horse"
+		culture="Culture.yizhou"
+		weight="410"
+		is_merchandise="false"
+		difficulty="0"
+		appearance="0"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="49"
+				speed="43"
+				charge_damage="3"
+				body_length="100"
+				is_mountable="true"
+				extra_health="10"
+				skeleton_scale="battania_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="dales_pony_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+	<Item
+		id="lz_horse_youmu_03"
+		name="{=*}Quân mã du mục"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="horse"
+		culture="Culture.yizhou"
+		weight="410"
+		is_merchandise="false"
+		difficulty="0"
+		appearance="0"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="51"
+				speed="46"
+				charge_damage="5"
+				body_length="105"
+				is_mountable="true"
+				extra_health="15"
+				skeleton_scale="battania_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="dales_pony_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+	<Item
+		id="lz_horse_youmu_04"
+		name="{=*}Chiến mã du mục"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="horse"
+		culture="Culture.yizhou"
+		weight="410"
+		is_merchandise="false"
+		difficulty="0"
+		appearance="0"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="54"
+				speed="49"
+				charge_damage="10"
+				body_length="110"
+				is_mountable="true"
+				extra_health="15"
+				skeleton_scale="battania_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="dales_pony_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+	<Item
+		id="lz_horse_youmu_05"
+		name="{=*}Chiến mã Tiên Ti"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="horse"
+		culture="Culture.yizhou"
+		weight="410"
+		is_merchandise="false"
+		difficulty="0"
+		appearance="0"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="55"
+				speed="52"
+				charge_damage="15"
+				body_length="115"
+				is_mountable="true"
+				extra_health="20"
+				skeleton_scale="battania_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="dales_pony_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+  <Item id="lz_hh_youmu_01"
+        name="{=*}Yên ngựa Đông Hồ"
+        mesh="hh_c05_001_a"
+        culture="Culture.jizhou"
+        weight="68"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="16"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="none"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+
+  <Item id="lz_hh_youmu_02"
+        name="{=*}Mã giáp nửa thân Tiên Ti"
+        mesh="hh_c02_001_t2"
+        culture="Culture.yanzhou"
+        weight="150"
+        appearance="1"
+        Type="HorseHarness">
+    <ItemComponent>
+      <Armor body_armor="35"
+              hair_cover_type="all"
+              covers_head="true"
+              mane_cover_type="all"
+              maneuver_bonus="0"
+              speed_bonus="0"
+              reins_mesh="horse_harness_a_new_rein"
+              charge_bonus="0"
+              family_type="1"
+              modifier_group="chain"
+              material_type="Chainmail" />
+    </ItemComponent>
+    <Flags Civilian="true" />
+  </Item>
+
+	<Item
+		id="lz_cloth_youmu_01"
+		name="{=*}Áo du mục"
+		mesh="pict_armor_long_furry"
+		subtype="body_armor"
+		culture="Culture.sili"
+		weight="2.6"
+		difficulty="0"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor
+				body_armor="12"
+				leg_armor="6"
+				arm_armor="2"
+				covers_body="true"
+				modifier_group="leather"
+				material_type="Leather" />
+		</ItemComponent>
+		<Flags
+			UseTeamColor="true"
+			Civilian="true" />
+	</Item>
+
+	<Item
+		id="lz_cloth_youmu_02"
+		name="{=*}Áo lông thú du mục"
+		mesh="bandit_3_a"
+		culture="Culture.sili"
+		weight="1.3"
+		appearance="1"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor
+				body_armor="14"
+				leg_armor="5"
+				arm_armor="3"
+				covers_body="true"
+				modifier_group="leather"
+				material_type="Leather" />
+		</ItemComponent>
+		<Flags
+			UseTeamColor="true" />
+	</Item>
+
+	<Item
+		id="lz_cloth_youmu_03"
+		name="{=*}Áo lông thú kèm giáp xích du mục"
+		mesh="bandit_3_b"
+		culture="Culture.sili"
+		weight="14.0"
+		appearance="0"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor
+				body_armor="19"
+				leg_armor="11"
+				arm_armor="7"
+				covers_body="true"
+				modifier_group="chain"
+				material_type="Chainmail" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item
+		id="lz_cloth_youmu_04"
+		name="{=*}Áo lông thú dày kèm giáp xích du mục"
+		mesh="bandit_3_b"
+		culture="Culture.sili"
+		weight="14.0"
+		appearance="0"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor
+				body_armor="24"
+				leg_armor="15"
+				arm_armor="11"
+				covers_body="true"
+				modifier_group="chain"
+				material_type="Chainmail" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item
+		id="lz_cloth_youmu_05"
+		name="{=*}Áo lông thú tinh xảo kèm giáp xích du mục"
+		mesh="bandit_3_b"
+		culture="Culture.sili"
+		weight="14.0"
+		appearance="0"
+		Type="BodyArmor">
+		<ItemComponent>
+			<Armor
+				body_armor="33"
+				leg_armor="19"
+				arm_armor="15"
+				covers_body="true"
+				modifier_group="chain"
+				material_type="Chainmail" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item
+		id="lz_hat_youmu_01"
+		name="{=*}Mũ lông thú du mục"
+		mesh="sturgia_helmet_m"
+		culture="Culture.sili"
+		weight="0.3"
+		appearance="1"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor
+				head_armor="4"
+				has_gender_variations="false"
+				hair_cover_type="type2"
+				beard_cover_type="none"
+				modifier_group="leather"
+				material_type="Leather" />
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+	<Item
+		id="lz_hat_youmu_02"
+		name="{=*}Mũ dày Ô Hoàn"
+		subtype="head_armor"
+		mesh="khuzait_helmet_e"
+		culture="Culture.sili"
+		weight="0.7"
+		difficulty="0"
+		appearance="1.2"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor
+				head_armor="13"
+				has_gender_variations="false"
+				hair_cover_type="type3"
+				modifier_group="leather"
+				material_type="Leather" />
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<Item
+		id="lz_hat_youmu_03"
+		name="{=*}Mũ dày Tiên Ti"
+		subtype="head_armor"
+		mesh="khuzait_helmet_b"
+		culture="Culture.sili"
+		weight="2.1"
+		difficulty="0"
+		appearance="1.6"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor
+				head_armor="24"
+				has_gender_variations="false"
+				hair_cover_type="type2"
+				modifier_group="plate"
+				material_type="Plate" />
+		</ItemComponent>
+		<Flags
+			UseTeamColor="true" />
+	</Item>
+
+	<Item
+		id="lz_hat_youmu_04"
+		name="{=*}Kim khôi Tiên Ti"
+		subtype="head_armor"
+		mesh="sturgian_crown"
+		culture="Culture.sili"
+		is_merchandise="false"
+		weight="2.4"
+		difficulty="0"
+		appearance="2.0"
+		Type="HeadArmor">
+		<ItemComponent>
+			<Armor
+				head_armor="35"
+				has_gender_variations="false"
+				hair_cover_type="type1"
+				modifier_group="plate"
+				material_type="Plate" />
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+	<Item
+		id="lz_shoe_youmu_01"
+		name="{=*}Ủng lông thú du mục"
+		mesh="battania_fur_boot_a"
+		culture="Culture.sili"
+		weight="1.5"
+		difficulty="0"
+		appearance="1"
+		Type="LegArmor">
+		<ItemComponent>
+			<Armor
+				leg_armor="9"
+				covers_legs="true"
+				modifier_group="leather"
+				material_type="Leather" />
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+	<Item
+		id="lz_shoe_youmu_02"
+		name="{=*}Ủng lông thú dày du mục"
+		mesh="battania_fur_boot_a"
+		culture="Culture.sili"
+		weight="1.5"
+		difficulty="0"
+		appearance="1"
+		Type="LegArmor">
+		<ItemComponent>
+			<Armor
+				leg_armor="16"
+				covers_legs="true"
+				modifier_group="leather"
+				material_type="Leather" />
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+
+	<CraftedItem id="lz_javelin_youmu_01"
+							 name="{=*}Đoản lao mũi đồng"
+							 crafting_template="SG_Javelin"
+							 culture="Culture.sili"
+							 modifier_group="spear_dart_throwing">
+		<Pieces>
+			<Piece id="sg_javelin_blade_001" Type="Blade" scale_factor="150" />
+			<Piece id="default_polearm_guard" Type="Guard" scale_factor="100" />
+			<Piece id="sg_javelin_handle_003" Type="Handle" scale_factor="100" />
+			<Piece id="sg_javelin_pommel_001" Type="Pommel" scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+
+	<Item
+		id="lz_bow_youmu_01"
+		name="{=*}Cung nhẹ du mục"
+		body_name="bo_sg_longbow_003"
+		mesh="sg_longbow_003"
+		weight="0.15"
+		difficulty="0"
+		appearance="0.1"
+		Type="Bow"
+		item_holsters="bow_hip:bow_hip_2:bow_back:bow_back_2">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Bow"
+				ammo_class="Arrow"
+				ammo_limit="1"
+				thrust_speed="110"
+				speed_rating="110"
+				missile_speed="67"
+				weapon_length="113"
+				accuracy="100"
+				thrust_damage="32"
+				thrust_damage_type="Pierce"
+				item_usage="bow"
+				physics_material="wood_weapon"
+				center_of_mass="0.1,0,-0.15"
+				modifier_group="bow">
+				<WeaponFlags
+					RangedWeapon="true"
+					HasString="true"
+					StringHeldByHand="true"
+					NotUsableWithOneHand="true"
+					TwoHandIdleOnMount="true"
+					AutoReload="true"
+					UnloadWhenSheathed="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item
+		id="lz_bow_youmu_02"
+		name="{=*}Cung du mục"
+		body_name="bo_sg_longbow_003"
+		mesh="sg_longbow_003"
+		weight="0.15"
+		difficulty="0"
+		appearance="0.1"
+		Type="Bow"
+		item_holsters="bow_hip:bow_hip_2:bow_back:bow_back_2">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Bow"
+				ammo_class="Arrow"
+				ammo_limit="1"
+				thrust_speed="112"
+				speed_rating="112"
+				missile_speed="69"
+				weapon_length="113"
+				accuracy="100"
+				thrust_damage="35"
+				thrust_damage_type="Pierce"
+				item_usage="bow"
+				physics_material="wood_weapon"
+				center_of_mass="0.1,0,-0.15"
+				modifier_group="bow">
+				<WeaponFlags
+					RangedWeapon="true"
+					HasString="true"
+					StringHeldByHand="true"
+					NotUsableWithOneHand="true"
+					TwoHandIdleOnMount="true"
+					AutoReload="true"
+					UnloadWhenSheathed="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item
+		id="lz_bow_youmu_03"
+		name="{=*}Chiến cung du mục"
+		body_name="bo_sg_longbow_003"
+		mesh="sg_longbow_003"
+		weight="0.15"
+		difficulty="0"
+		appearance="0.1"
+		Type="Bow"
+		item_holsters="bow_hip:bow_hip_2:bow_back:bow_back_2">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Bow"
+				ammo_class="Arrow"
+				ammo_limit="1"
+				thrust_speed="112"
+				speed_rating="112"
+				missile_speed="71"
+				weapon_length="113"
+				accuracy="103"
+				thrust_damage="39"
+				thrust_damage_type="Pierce"
+				item_usage="bow"
+				physics_material="wood_weapon"
+				center_of_mass="0.1,0,-0.15"
+				modifier_group="bow">
+				<WeaponFlags
+					RangedWeapon="true"
+					HasString="true"
+					StringHeldByHand="true"
+					NotUsableWithOneHand="true"
+					TwoHandIdleOnMount="true"
+					AutoReload="true"
+					UnloadWhenSheathed="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item
+		id="lz_bow_youmu_04"
+		name="{=*}Cung Bôi"
+		body_name="bo_sg_longbow_003"
+		mesh="sg_longbow_003"
+		weight="0.15"
+		difficulty="0"
+		appearance="0"
+		Type="Bow"
+		item_holsters="bow_hip:bow_hip_2:bow_back:bow_back_2">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Bow"
+				ammo_class="Arrow"
+				ammo_limit="1"
+				thrust_speed="115"
+				speed_rating="115"
+				missile_speed="79"
+				weapon_length="113"
+				accuracy="107"
+				thrust_damage="42"
+				thrust_damage_type="Pierce"
+				item_usage="bow"
+				physics_material="wood_weapon"
+				center_of_mass="0.1,0,-0.15"
+				modifier_group="bow">
+				<WeaponFlags
+					RangedWeapon="true"
+					HasString="true"
+					StringHeldByHand="true"
+					NotUsableWithOneHand="true"
+					TwoHandIdleOnMount="true"
+					AutoReload="true"
+					UnloadWhenSheathed="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+
+	<Item
+		id="lz_arrow_youmu_01"
+		name="{=*}Tên minh đích du mục"
+		body_name="bo_capsule_arrow"
+		holster_body_name="bo_axe_short"
+		mesh="arrow_bl_a"
+		holster_mesh="arrow_bl_a_quiver"
+		holster_mesh_with_weapon="arrow_bl_a_quiver"
+		subtype="arrows"
+		flying_mesh="arrow_bl_flying"
+		weight="0.06"
+		difficulty="0"
+		appearance="0"
+		Type="Arrows"
+		item_holsters="quiver_back_middle:quiver_bolts:quiver_bolts_2"
+		holster_position_shift="0,0,0.15">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Arrow"
+				stack_amount="55"
+				thrust_speed="0"
+				speed_rating="0"
+				physics_material="missile"
+				missile_speed="1"
+				weapon_length="97"
+				thrust_damage="1"
+				thrust_damage_type="Pierce"
+				item_usage="arrow_top"
+				passby_sound_code="event:/mission/combat/missile/passby"
+				rotation="0, -80, 25"
+				sticking_position="0,-0.97,0"
+				sticking_rotation="90,0,0"
+				center_of_mass="0,0.0,-0.13"
+				modifier_group="arrow">
+				<WeaponFlags
+					Consumable="true"
+					AmmoSticksWhenShot="true"
+					CanKnockDown="true"
+					AmmoBreaksOnBounceBack="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+
+	<CraftedItem
+		id="lz_dao_youmu_01"
+		name="{=*}Đao chém du mục"
+		crafting_template="SG_OneHandedSword"
+		culture="Culture.sili"
+		is_merchandise="false">
+		<Pieces>
+			<Piece
+				id="sg_t2_sword_blade_002_1h"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t1_sword_grip_005_1h"
+				Type="Handle"
+				scale_factor="120" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem
+		id="lz_dao_youmu_02"
+		name="{=*}Trường đao chém du mục"
+		crafting_template="SG_OneHandedSword"
+		culture="Culture.sili"
+		is_merchandise="false">
+		<Pieces>
+			<Piece
+				id="sg_t3_sword_blade_003_1h"
+				Type="Blade"
+				scale_factor="190" />
+			<Piece
+				id="sg_t1_sword_grip_005_1h"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_sword_pommel_003"
+				Type="Pommel"
+				scale_factor="110" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem
+		id="lz_spear_youmu_01"
+		name="{=*}Trường mâu Tiên Ti"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="false"
+		culture="Culture.sili">
+		<Pieces>
+			<Piece
+				id="sg_spear_blade_014"
+				Type="Blade"
+				scale_factor="120" />
+			<Piece
+				id="sg_spear_handle_002_e"
+				Type="Handle"
+				scale_factor="110" />
+		</Pieces>
+	</CraftedItem>
+
+	<CraftedItem
+		id="lz_spear_youmu_02"
+		name="{=*}Trường đao Tiên Ti"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="false"
+		culture="Culture.sili">
+		<Pieces>
+			<Piece
+				id="sg_spear_blade_021"
+				Type="Blade"
+				scale_factor="120" />
+			<Piece
+				id="sg_spear_handle_002_e"
+				Type="Handle"
+				scale_factor="80" />
+		</Pieces>
+	</CraftedItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Items>

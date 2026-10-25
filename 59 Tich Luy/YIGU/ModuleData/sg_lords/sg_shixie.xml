@@ -1,0 +1,978 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NPCCharacters>
+  <NPCCharacter id="lord_shixie" name="{=lord_shixie_name}Sĩ Nhiếp" age="55" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="Hero.lord_luo_xifen" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.3796" build="0.5000" key="001FE80D80001083877786766675888666868566766898586888986778A95764009766030978877600000000000000000000000000000000000000003F247080"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="1"/>
+      <Trait id="Valor" value="2"/>
+      <Trait id="Honor" value="0"/>
+      <Trait id="Generosity" value="2"/>
+      <Trait id="Calculating" value="2"/>
+      <Trait id="BalancedFightingSkills" value="12"/>
+      <Trait id="Commander" value="16"/>
+      <Trait id="Politician" value="18"/>
+      <Trait id="Manager" value="20"/>
+      <Trait id="Trader" value="19"/>
+      <Trait id="KnightFightingSkills" value="14"/>
+      <Trait id="CavalryFightingSkills" value="10"/>
+      <Trait id="ArcherFIghtingSkills" value="12"/>
+      <Trait id="HorseArcherFightingSkills" value="14"/>
+      <Trait id="HuscarlFightingSkills" value="9"/>
+      <Trait id="PeltastFightingSkills" value="11"/>
+      <Trait id="HopliteFightingSkills" value="13"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="175"/>
+      <NengLi id="TwoHanded" value="62"/>
+      <NengLi id="Polearm" value="75"/>
+      <NengLi id="Bow" value="96"/>
+      <NengLi id="Crossbow" value="139"/>
+      <NengLi id="Throwing" value="128"/>
+      <NengLi id="Riding" value="212"/>
+      <NengLi id="Athletics" value="176"/>
+      <NengLi id="Crafting" value="106"/>
+      <NengLi id="Scouting" value="191"/>
+      <NengLi id="Tactics" value="152"/>
+      <NengLi id="Roguery" value="146"/>
+      <NengLi id="Charm" value="200"/>
+      <NengLi id="Leadership" value="196"/>
+      <NengLi id="Trade" value="193"/>
+      <NengLi id="Steward" value="184"/>
+      <NengLi id="Medicine" value="146"/>
+      <NengLi id="Engineering" value="112"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_shiyi" name="{=lord_shiyi_name}Sĩ Nhất" age="45" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.5602" build="0.5602" key="000FD80D8000004366778778659667669884857686877895876668767A987856009886030965656500000000000000000000000000000000000000003F3C3080"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="2"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Honor" value="1"/>
+      <Trait id="Generosity" value="2"/>
+      <Trait id="Calculating" value="1"/>
+      <Trait id="BalancedFightingSkills" value="8"/>
+      <Trait id="Commander" value="10"/>
+      <Trait id="Politician" value="17"/>
+      <Trait id="Manager" value="18"/>
+      <Trait id="Trader" value="20"/>
+      <Trait id="KnightFightingSkills" value="9"/>
+      <Trait id="CavalryFightingSkills" value="7"/>
+      <Trait id="ArcherFIghtingSkills" value="8"/>
+      <Trait id="HorseArcherFightingSkills" value="10"/>
+      <Trait id="HuscarlFightingSkills" value="6"/>
+      <Trait id="PeltastFightingSkills" value="7"/>
+      <Trait id="HopliteFightingSkills" value="8"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="138"/>
+      <NengLi id="TwoHanded" value="78"/>
+      <NengLi id="Polearm" value="78"/>
+      <NengLi id="Bow" value="117"/>
+      <NengLi id="Crossbow" value="124"/>
+      <NengLi id="Throwing" value="115"/>
+      <NengLi id="Riding" value="152"/>
+      <NengLi id="Athletics" value="126"/>
+      <NengLi id="Crafting" value="89"/>
+      <NengLi id="Scouting" value="155"/>
+      <NengLi id="Tactics" value="118"/>
+      <NengLi id="Roguery" value="106"/>
+      <NengLi id="Charm" value="124"/>
+      <NengLi id="Leadership" value="150"/>
+      <NengLi id="Trade" value="148"/>
+      <NengLi id="Steward" value="151"/>
+      <NengLi id="Medicine" value="115"/>
+      <NengLi id="Engineering" value="94"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_shiwu" name="{=lord_shiwu_name}Sĩ Vũ" age="40" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.5625" build="0.6250" key="001FD40F00B4414338679767897876765978A8557A868899876866748867775700998603097776670000000000000000000000000000000000000000193C4140"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="0"/>
+      <Trait id="Valor" value="0"/>
+      <Trait id="Honor" value="2"/>
+      <Trait id="Generosity" value="1"/>
+      <Trait id="Calculating" value="-1"/>
+      <Trait id="BalancedFightingSkills" value="16"/>
+      <Trait id="Commander" value="14"/>
+      <Trait id="Politician" value="8"/>
+      <Trait id="Manager" value="12"/>
+      <Trait id="Trader" value="10"/>
+      <Trait id="KnightFightingSkills" value="18"/>
+      <Trait id="CavalryFightingSkills" value="13"/>
+      <Trait id="ArcherFIghtingSkills" value="15"/>
+      <Trait id="HorseArcherFightingSkills" value="17"/>
+      <Trait id="HuscarlFightingSkills" value="12"/>
+      <Trait id="PeltastFightingSkills" value="14"/>
+      <Trait id="HopliteFightingSkills" value="16"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="126"/>
+      <NengLi id="TwoHanded" value="66"/>
+      <NengLi id="Polearm" value="66"/>
+      <NengLi id="Bow" value="87"/>
+      <NengLi id="Crossbow" value="97"/>
+      <NengLi id="Throwing" value="92"/>
+      <NengLi id="Riding" value="148"/>
+      <NengLi id="Athletics" value="105"/>
+      <NengLi id="Crafting" value="76"/>
+      <NengLi id="Scouting" value="125"/>
+      <NengLi id="Tactics" value="104"/>
+      <NengLi id="Roguery" value="100"/>
+      <NengLi id="Charm" value="85"/>
+      <NengLi id="Leadership" value="116"/>
+      <NengLi id="Trade" value="120"/>
+      <NengLi id="Steward" value="120"/>
+      <NengLi id="Medicine" value="79"/>
+      <NengLi id="Engineering" value="88"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_shizhi" name="{=lord_shizhi_name}Sĩ Chi" age="25" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="Hero.lord_shixie" mother="" spouse="" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.5329" build="0.6667" key="001FD40E40E4004336996557A57796A8993646689A87A8598A75886478897766009A86030989674600000000000000000000000000000000000000003B349140"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="-1"/>
+      <Trait id="Valor" value="-1"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Generosity" value="0"/>
+      <Trait id="Calculating" value="-2"/>
+      <Trait id="BalancedFightingSkills" value="15"/>
+      <Trait id="Commander" value="13"/>
+      <Trait id="Politician" value="10"/>
+      <Trait id="Manager" value="14"/>
+      <Trait id="Trader" value="11"/>
+      <Trait id="KnightFightingSkills" value="17"/>
+      <Trait id="CavalryFightingSkills" value="12"/>
+      <Trait id="ArcherFIghtingSkills" value="16"/>
+      <Trait id="HorseArcherFightingSkills" value="18"/>
+      <Trait id="HuscarlFightingSkills" value="13"/>
+      <Trait id="PeltastFightingSkills" value="15"/>
+      <Trait id="HopliteFightingSkills" value="14"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="204"/>
+      <NengLi id="TwoHanded" value="144"/>
+      <NengLi id="Polearm" value="144"/>
+      <NengLi id="Bow" value="117"/>
+      <NengLi id="Crossbow" value="133"/>
+      <NengLi id="Throwing" value="133"/>
+      <NengLi id="Riding" value="204"/>
+      <NengLi id="Athletics" value="185"/>
+      <NengLi id="Crafting" value="98"/>
+      <NengLi id="Scouting" value="119"/>
+      <NengLi id="Tactics" value="117"/>
+      <NengLi id="Roguery" value="142"/>
+      <NengLi id="Charm" value="75"/>
+      <NengLi id="Leadership" value="140"/>
+      <NengLi id="Trade" value="114"/>
+      <NengLi id="Steward" value="147"/>
+      <NengLi id="Medicine" value="80"/>
+      <NengLi id="Engineering" value="130"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_shihui" name="{=lord_shihui_name}Sĩ Huy" age="20" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="Hero.lord_shixie" mother="" spouse="" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.4541" build="0.5903" key="001FF00D8044840367B8567877677778879966987688877B7787576777978887009976030969664600000000000000000000000000000000000000003D3C3100"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="-2"/>
+      <Trait id="Valor" value="-2"/>
+      <Trait id="Honor" value="0"/>
+      <Trait id="Generosity" value="-1"/>
+      <Trait id="Calculating" value="-2"/>
+      <Trait id="BalancedFightingSkills" value="17"/>
+      <Trait id="Commander" value="15"/>
+      <Trait id="Politician" value="7"/>
+      <Trait id="Manager" value="11"/>
+      <Trait id="Trader" value="9"/>
+      <Trait id="KnightFightingSkills" value="19"/>
+      <Trait id="CavalryFightingSkills" value="16"/>
+      <Trait id="ArcherFIghtingSkills" value="14"/>
+      <Trait id="HorseArcherFightingSkills" value="19"/>
+      <Trait id="HuscarlFightingSkills" value="15"/>
+      <Trait id="PeltastFightingSkills" value="17"/>
+      <Trait id="HopliteFightingSkills" value="18"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="222"/>
+      <NengLi id="TwoHanded" value="162"/>
+      <NengLi id="Polearm" value="162"/>
+      <NengLi id="Bow" value="96"/>
+      <NengLi id="Crossbow" value="127"/>
+      <NengLi id="Throwing" value="119"/>
+      <NengLi id="Riding" value="184"/>
+      <NengLi id="Athletics" value="187"/>
+      <NengLi id="Crafting" value="104"/>
+      <NengLi id="Scouting" value="120"/>
+      <NengLi id="Tactics" value="127"/>
+      <NengLi id="Roguery" value="152"/>
+      <NengLi id="Charm" value="92"/>
+      <NengLi id="Leadership" value="153"/>
+      <NengLi id="Trade" value="115"/>
+      <NengLi id="Steward" value="171"/>
+      <NengLi id="Medicine" value="91"/>
+      <NengLi id="Engineering" value="154"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_luo_xifen" name="{=lord_luo_xifen_name}La Hy Phân" age="30" voice="" default_group="Cavalry" is_hero="true" is_female="true" father="" mother="" spouse="Hero.lord_shixie" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.3704" build="0.6250" key="001FDC0D80004004977788866696677566758488888468887889755578875755009966030987756500000000000000000000000000000000000000003F2C2080"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Honor" value="2"/>
+      <Trait id="Generosity" value="1"/>
+      <Trait id="Calculating" value="0"/>
+      <Trait id="BalancedFightingSkills" value="9"/>
+      <Trait id="Commander" value="5"/>
+      <Trait id="Politician" value="14"/>
+      <Trait id="Manager" value="16"/>
+      <Trait id="Trader" value="18"/>
+      <Trait id="KnightFightingSkills" value="10"/>
+      <Trait id="CavalryFightingSkills" value="8"/>
+      <Trait id="ArcherFIghtingSkills" value="9"/>
+      <Trait id="HorseArcherFightingSkills" value="11"/>
+      <Trait id="HuscarlFightingSkills" value="7"/>
+      <Trait id="PeltastFightingSkills" value="8"/>
+      <Trait id="HopliteFightingSkills" value="9"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="95"/>
+      <NengLi id="TwoHanded" value="45"/>
+      <NengLi id="Polearm" value="45"/>
+      <NengLi id="Bow" value="69"/>
+      <NengLi id="Crossbow" value="85"/>
+      <NengLi id="Throwing" value="75"/>
+      <NengLi id="Riding" value="84"/>
+      <NengLi id="Athletics" value="66"/>
+      <NengLi id="Crafting" value="66"/>
+      <NengLi id="Scouting" value="114"/>
+      <NengLi id="Tactics" value="92"/>
+      <NengLi id="Roguery" value="90"/>
+      <NengLi id="Charm" value="139"/>
+      <NengLi id="Leadership" value="92"/>
+      <NengLi id="Trade" value="121"/>
+      <NengLi id="Steward" value="103"/>
+      <NengLi id="Medicine" value="90"/>
+      <NengLi id="Engineering" value="118"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_zhangjin" name="{=lord_zhangjin_name}Trương Tân" age="50" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="Hero.lord_shi_liyan" culture="Culture.jingzhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.5260" build="0.5625" key="003FD80D80A09203A77C5556685598866746569B6887676758789896886684680098860309668555000000000000000000000000000000000000000029244040"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="0"/>
+      <Trait id="Valor" value="-1"/>
+      <Trait id="Honor" value="-2"/>
+      <Trait id="Generosity" value="-1"/>
+      <Trait id="Calculating" value="-2"/>
+      <Trait id="BalancedFightingSkills" value="6"/>
+      <Trait id="Commander" value="8"/>
+      <Trait id="Politician" value="12"/>
+      <Trait id="Manager" value="10"/>
+      <Trait id="Trader" value="11"/>
+      <Trait id="KnightFightingSkills" value="7"/>
+      <Trait id="CavalryFightingSkills" value="5"/>
+      <Trait id="ArcherFIghtingSkills" value="6"/>
+      <Trait id="HorseArcherFightingSkills" value="8"/>
+      <Trait id="HuscarlFightingSkills" value="4"/>
+      <Trait id="PeltastFightingSkills" value="5"/>
+      <Trait id="HopliteFightingSkills" value="6"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="129"/>
+      <NengLi id="TwoHanded" value="69"/>
+      <NengLi id="Polearm" value="69"/>
+      <NengLi id="Bow" value="102"/>
+      <NengLi id="Crossbow" value="107"/>
+      <NengLi id="Throwing" value="109"/>
+      <NengLi id="Riding" value="164"/>
+      <NengLi id="Athletics" value="133"/>
+      <NengLi id="Crafting" value="76"/>
+      <NengLi id="Scouting" value="143"/>
+      <NengLi id="Tactics" value="94"/>
+      <NengLi id="Roguery" value="126"/>
+      <NengLi id="Charm" value="79"/>
+      <NengLi id="Leadership" value="97"/>
+      <NengLi id="Trade" value="142"/>
+      <NengLi id="Steward" value="105"/>
+      <NengLi id="Medicine" value="103"/>
+      <NengLi id="Engineering" value="49"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_huanshoudao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="lz_arm_nv_01"/>
+        <equipment slot="Body" id="sg_ar_c05_g009_body"/>
+        <equipment slot="Head" id="lz_jinxianguan_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c03_s7002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c01_g015_shoulder_old"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_qujing" name="{=lord_qujing_name}Khu Cảnh" age="32" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.4974" build="0.5718" key="000FD80D80FC63838842378477777879766586766787658878786868B767778700997603097477840000000000000000000000000000000000000000392C4100"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="-2"/>
+      <Trait id="Valor" value="-2"/>
+      <Trait id="Honor" value="-2"/>
+      <Trait id="Generosity" value="-2"/>
+      <Trait id="Calculating" value="1"/>
+      <Trait id="BalancedFightingSkills" value="16"/>
+      <Trait id="Commander" value="12"/>
+      <Trait id="Politician" value="4"/>
+      <Trait id="Manager" value="7"/>
+      <Trait id="Trader" value="5"/>
+      <Trait id="KnightFightingSkills" value="18"/>
+      <Trait id="CavalryFightingSkills" value="14"/>
+      <Trait id="ArcherFIghtingSkills" value="11"/>
+      <Trait id="HorseArcherFightingSkills" value="16"/>
+      <Trait id="HuscarlFightingSkills" value="13"/>
+      <Trait id="PeltastFightingSkills" value="14"/>
+      <Trait id="HopliteFightingSkills" value="15"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="114"/>
+      <NengLi id="TwoHanded" value="114"/>
+      <NengLi id="Polearm" value="120"/>
+      <NengLi id="Bow" value="138"/>
+      <NengLi id="Crossbow" value="153"/>
+      <NengLi id="Throwing" value="150"/>
+      <NengLi id="Riding" value="180"/>
+      <NengLi id="Athletics" value="206"/>
+      <NengLi id="Crafting" value="96"/>
+      <NengLi id="Scouting" value="145"/>
+      <NengLi id="Tactics" value="130"/>
+      <NengLi id="Roguery" value="136"/>
+      <NengLi id="Charm" value="72"/>
+      <NengLi id="Leadership" value="170"/>
+      <NengLi id="Trade" value="133"/>
+      <NengLi id="Steward" value="153"/>
+      <NengLi id="Medicine" value="98"/>
+      <NengLi id="Engineering" value="61"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_huanshoudao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="lz_arm_nv_01"/>
+        <equipment slot="Body" id="sg_ar_c05_g009_body"/>
+        <equipment slot="Head" id="lz_jinxianguan_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c03_s7002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c01_g015_shoulder_old"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_qianbo" name="{=lord_qianbo_name}Tiền Bác" age="50" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="" culture="Culture.yangzhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.3893" build="0.5625" key="002FE40D80B4A0836789577888756775787567898689789988679A567986787600986603097A7587000000000000000000000000000000000000000039341080"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="1"/>
+      <Trait id="Valor" value="0"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Generosity" value="0"/>
+      <Trait id="Calculating" value="1"/>
+      <Trait id="BalancedFightingSkills" value="5"/>
+      <Trait id="Commander" value="7"/>
+      <Trait id="Politician" value="16"/>
+      <Trait id="Manager" value="17"/>
+      <Trait id="Trader" value="19"/>
+      <Trait id="KnightFightingSkills" value="6"/>
+      <Trait id="CavalryFightingSkills" value="4"/>
+      <Trait id="ArcherFIghtingSkills" value="5"/>
+      <Trait id="HorseArcherFightingSkills" value="7"/>
+      <Trait id="HuscarlFightingSkills" value="3"/>
+      <Trait id="PeltastFightingSkills" value="4"/>
+      <Trait id="HopliteFightingSkills" value="5"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="144"/>
+      <NengLi id="TwoHanded" value="84"/>
+      <NengLi id="Polearm" value="84"/>
+      <NengLi id="Bow" value="102"/>
+      <NengLi id="Crossbow" value="122"/>
+      <NengLi id="Throwing" value="117"/>
+      <NengLi id="Riding" value="168"/>
+      <NengLi id="Athletics" value="155"/>
+      <NengLi id="Crafting" value="72"/>
+      <NengLi id="Scouting" value="106"/>
+      <NengLi id="Tactics" value="100"/>
+      <NengLi id="Roguery" value="186"/>
+      <NengLi id="Charm" value="58"/>
+      <NengLi id="Leadership" value="109"/>
+      <NengLi id="Trade" value="107"/>
+      <NengLi id="Steward" value="135"/>
+      <NengLi id="Medicine" value="65"/>
+      <NengLi id="Engineering" value="28"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_yiliao" name="{=lord_yiliao_name}Di Liêu" age="35" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.5139" build="0.5833" key="002FD40FC070A083776B88877797765654A58779779A968688869847A779778600A986030A766766000000000000000000000000000000000000000035545000"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="-1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Honor" value="0"/>
+      <Trait id="Generosity" value="1"/>
+      <Trait id="Calculating" value="0"/>
+      <Trait id="BalancedFightingSkills" value="14"/>
+      <Trait id="Commander" value="9"/>
+      <Trait id="Politician" value="5"/>
+      <Trait id="Manager" value="8"/>
+      <Trait id="Trader" value="7"/>
+      <Trait id="KnightFightingSkills" value="16"/>
+      <Trait id="CavalryFightingSkills" value="11"/>
+      <Trait id="ArcherFIghtingSkills" value="13"/>
+      <Trait id="HorseArcherFightingSkills" value="15"/>
+      <Trait id="HuscarlFightingSkills" value="10"/>
+      <Trait id="PeltastFightingSkills" value="12"/>
+      <Trait id="HopliteFightingSkills" value="13"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="129"/>
+      <NengLi id="TwoHanded" value="69"/>
+      <NengLi id="Polearm" value="69"/>
+      <NengLi id="Bow" value="90"/>
+      <NengLi id="Crossbow" value="97"/>
+      <NengLi id="Throwing" value="107"/>
+      <NengLi id="Riding" value="180"/>
+      <NengLi id="Athletics" value="141"/>
+      <NengLi id="Crafting" value="65"/>
+      <NengLi id="Scouting" value="107"/>
+      <NengLi id="Tactics" value="93"/>
+      <NengLi id="Roguery" value="156"/>
+      <NengLi id="Charm" value="58"/>
+      <NengLi id="Leadership" value="83"/>
+      <NengLi id="Trade" value="107"/>
+      <NengLi id="Steward" value="123"/>
+      <NengLi id="Medicine" value="62"/>
+      <NengLi id="Engineering" value="58"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_shi_liyan" name="{=lord_shi_liyan_name}Sĩ Lệ Diễm" age="25" voice="" default_group="Cavalry" is_hero="true" is_female="true" father="Hero.lord_shixie" mother="" spouse="Hero.lord_zhangjin" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.3773" build="0.6806" key="001FE80D80004005877787777785687788768589889587889565665776986765009A66030966666600000000000000000000000000000000000000003F242080"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="1"/>
+      <Trait id="Valor" value="0"/>
+      <Trait id="Honor" value="1"/>
+      <Trait id="Generosity" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+      <Trait id="BalancedFightingSkills" value="11"/>
+      <Trait id="Commander" value="6"/>
+      <Trait id="Politician" value="13"/>
+      <Trait id="Manager" value="15"/>
+      <Trait id="Trader" value="14"/>
+      <Trait id="KnightFightingSkills" value="12"/>
+      <Trait id="CavalryFightingSkills" value="9"/>
+      <Trait id="ArcherFIghtingSkills" value="10"/>
+      <Trait id="HorseArcherFightingSkills" value="12"/>
+      <Trait id="HuscarlFightingSkills" value="8"/>
+      <Trait id="PeltastFightingSkills" value="9"/>
+      <Trait id="HopliteFightingSkills" value="10"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="132"/>
+      <NengLi id="TwoHanded" value="82"/>
+      <NengLi id="Polearm" value="82"/>
+      <NengLi id="Bow" value="120"/>
+      <NengLi id="Crossbow" value="140"/>
+      <NengLi id="Throwing" value="117"/>
+      <NengLi id="Riding" value="114"/>
+      <NengLi id="Athletics" value="89"/>
+      <NengLi id="Crafting" value="97"/>
+      <NengLi id="Scouting" value="137"/>
+      <NengLi id="Tactics" value="113"/>
+      <NengLi id="Roguery" value="162"/>
+      <NengLi id="Charm" value="106"/>
+      <NengLi id="Leadership" value="116"/>
+      <NengLi id="Trade" value="120"/>
+      <NengLi id="Steward" value="130"/>
+      <NengLi id="Medicine" value="84"/>
+      <NengLi id="Engineering" value="88"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_zhufu" name="{=lord_zhufu_name}Chu Phù" age="42" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="Hero.lord_shi_lijia" culture="Culture.yangzhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.4352" build="0.5807" key="001FE40F00B431C3897E4887577664758787BA687787775768A868777999B677009976030977876700000000000000000000000000000000000000003F2C1100"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="-2"/>
+      <Trait id="Valor" value="-2"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Generosity" value="-2"/>
+      <Trait id="Calculating" value="-2"/>
+      <Trait id="BalancedFightingSkills" value="7"/>
+      <Trait id="Commander" value="9"/>
+      <Trait id="Politician" value="10"/>
+      <Trait id="Manager" value="9"/>
+      <Trait id="Trader" value="12"/>
+      <Trait id="KnightFightingSkills" value="8"/>
+      <Trait id="CavalryFightingSkills" value="6"/>
+      <Trait id="ArcherFIghtingSkills" value="7"/>
+      <Trait id="HorseArcherFightingSkills" value="9"/>
+      <Trait id="HuscarlFightingSkills" value="5"/>
+      <Trait id="PeltastFightingSkills" value="6"/>
+      <Trait id="HopliteFightingSkills" value="7"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="165"/>
+      <NengLi id="TwoHanded" value="105"/>
+      <NengLi id="Polearm" value="105"/>
+      <NengLi id="Bow" value="126"/>
+      <NengLi id="Crossbow" value="132"/>
+      <NengLi id="Throwing" value="110"/>
+      <NengLi id="Riding" value="180"/>
+      <NengLi id="Athletics" value="126"/>
+      <NengLi id="Crafting" value="74"/>
+      <NengLi id="Scouting" value="102"/>
+      <NengLi id="Tactics" value="89"/>
+      <NengLi id="Roguery" value="170"/>
+      <NengLi id="Charm" value="76"/>
+      <NengLi id="Leadership" value="85"/>
+      <NengLi id="Trade" value="118"/>
+      <NengLi id="Steward" value="114"/>
+      <NengLi id="Medicine" value="76"/>
+      <NengLi id="Engineering" value="46"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_huanshoudao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="lz_arm_nv_01"/>
+        <equipment slot="Body" id="sg_ar_c05_g009_body"/>
+        <equipment slot="Head" id="lz_jinxianguan_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c03_s7002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c01_g015_shoulder_old"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_shi_lijia" name="{=lord_shi_lijia_name}Sĩ Lệ Giai" age="35" voice="" default_group="Cavalry" is_hero="true" is_female="true" father="Hero.lord_shixie" mother="" spouse="Hero.lord_zhufu" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.3171" build="0.6250" key="000FE80FC0000005767787788777788789A68488979567764896575676775654009956030967565500000000000000000000000000000000000000003F242080"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="2"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Honor" value="0"/>
+      <Trait id="Generosity" value="1"/>
+      <Trait id="Calculating" value="0"/>
+      <Trait id="BalancedFightingSkills" value="6"/>
+      <Trait id="Commander" value="4"/>
+      <Trait id="Politician" value="11"/>
+      <Trait id="Manager" value="13"/>
+      <Trait id="Trader" value="15"/>
+      <Trait id="KnightFightingSkills" value="7"/>
+      <Trait id="CavalryFightingSkills" value="5"/>
+      <Trait id="ArcherFIghtingSkills" value="6"/>
+      <Trait id="HorseArcherFightingSkills" value="8"/>
+      <Trait id="HuscarlFightingSkills" value="4"/>
+      <Trait id="PeltastFightingSkills" value="5"/>
+      <Trait id="HopliteFightingSkills" value="6"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="105"/>
+      <NengLi id="TwoHanded" value="55"/>
+      <NengLi id="Polearm" value="55"/>
+      <NengLi id="Bow" value="93"/>
+      <NengLi id="Crossbow" value="122"/>
+      <NengLi id="Throwing" value="104"/>
+      <NengLi id="Riding" value="123"/>
+      <NengLi id="Athletics" value="84"/>
+      <NengLi id="Crafting" value="92"/>
+      <NengLi id="Scouting" value="158"/>
+      <NengLi id="Tactics" value="124"/>
+      <NengLi id="Roguery" value="130"/>
+      <NengLi id="Charm" value="145"/>
+      <NengLi id="Leadership" value="123"/>
+      <NengLi id="Trade" value="152"/>
+      <NengLi id="Steward" value="124"/>
+      <NengLi id="Medicine" value="102"/>
+      <NengLi id="Engineering" value="130"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_zhangmin" name="{=lord_zhangmin_name}Trương Mân" age="30" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="" culture="Culture.yangzhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.5165" build="0.6211" key="002FDC0D80E490437758387A895945885643A988996757988698665898668876009986030976777500000000000000000000000000000000000000003F3490C0"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="-2"/>
+      <Trait id="Valor" value="-2"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Generosity" value="-1"/>
+      <Trait id="Calculating" value="-2"/>
+      <Trait id="BalancedFightingSkills" value="15"/>
+      <Trait id="Commander" value="11"/>
+      <Trait id="Politician" value="6"/>
+      <Trait id="Manager" value="8"/>
+      <Trait id="Trader" value="7"/>
+      <Trait id="KnightFightingSkills" value="17"/>
+      <Trait id="CavalryFightingSkills" value="13"/>
+      <Trait id="ArcherFIghtingSkills" value="12"/>
+      <Trait id="HorseArcherFightingSkills" value="16"/>
+      <Trait id="HuscarlFightingSkills" value="12"/>
+      <Trait id="PeltastFightingSkills" value="13"/>
+      <Trait id="HopliteFightingSkills" value="14"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="117"/>
+      <NengLi id="TwoHanded" value="57"/>
+      <NengLi id="Polearm" value="57"/>
+      <NengLi id="Bow" value="90"/>
+      <NengLi id="Crossbow" value="124"/>
+      <NengLi id="Throwing" value="89"/>
+      <NengLi id="Riding" value="144"/>
+      <NengLi id="Athletics" value="92"/>
+      <NengLi id="Crafting" value="87"/>
+      <NengLi id="Scouting" value="183"/>
+      <NengLi id="Tactics" value="128"/>
+      <NengLi id="Roguery" value="140"/>
+      <NengLi id="Charm" value="137"/>
+      <NengLi id="Leadership" value="145"/>
+      <NengLi id="Trade" value="189"/>
+      <NengLi id="Steward" value="111"/>
+      <NengLi id="Medicine" value="120"/>
+      <NengLi id="Engineering" value="94"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_dadao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="sg_ar_c10_s5001_arm"/>
+        <equipment slot="Body" id="lz_body_wujiang_11"/>
+        <equipment slot="Head" id="lz_head_han_01"/>
+        <equipment slot="Leg" id="sg_ar_c10_s5002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c10_s6005_shoulder"/>
+        <equipment slot="Horse" id="lz_horse_youzhou_xw"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="lord_huanzhi" name="{=lord_huanzhi_name}Hoàn Trị" age="45" voice="" default_group="Cavalry" is_hero="true" is_female="false" father="" mother="" spouse="" culture="Culture.jiaozhou" occupation="Lord" face_mesh_cache="true">
+    <face>
+      <BodyProperties version="4" weight="0.4296" build="0.5434" key="002FD80FC014308375957587757766578686769865856677A7766968A98677770098660309867699000000000000000000000000000000000000000051247040"/>
+    </face>
+    <Traits>
+      <Trait id="Mercy" value="0"/>
+      <Trait id="Valor" value="0"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Generosity" value="1"/>
+      <Trait id="Calculating" value="-1"/>
+      <Trait id="BalancedFightingSkills" value="8"/>
+      <Trait id="Commander" value="7"/>
+      <Trait id="Politician" value="9"/>
+      <Trait id="Manager" value="11"/>
+      <Trait id="Trader" value="10"/>
+      <Trait id="KnightFightingSkills" value="9"/>
+      <Trait id="CavalryFightingSkills" value="7"/>
+      <Trait id="ArcherFIghtingSkills" value="8"/>
+      <Trait id="HorseArcherFightingSkills" value="10"/>
+      <Trait id="HuscarlFightingSkills" value="6"/>
+      <Trait id="PeltastFightingSkills" value="7"/>
+      <Trait id="HopliteFightingSkills" value="8"/>
+    </Traits>
+    <NengLis>
+      <NengLi id="OneHanded" value="138"/>
+      <NengLi id="TwoHanded" value="138"/>
+      <NengLi id="Polearm" value="144"/>
+      <NengLi id="Bow" value="120"/>
+      <NengLi id="Crossbow" value="102"/>
+      <NengLi id="Throwing" value="140"/>
+      <NengLi id="Riding" value="192"/>
+      <NengLi id="Athletics" value="189"/>
+      <NengLi id="Crafting" value="96"/>
+      <NengLi id="Scouting" value="116"/>
+      <NengLi id="Tactics" value="130"/>
+      <NengLi id="Roguery" value="138"/>
+      <NengLi id="Charm" value="67"/>
+      <NengLi id="Leadership" value="124"/>
+      <NengLi id="Trade" value="111"/>
+      <NengLi id="Steward" value="163"/>
+      <NengLi id="Medicine" value="89"/>
+      <NengLi id="Engineering" value="118"/>
+    </NengLis>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="lz_huanshoudao_01"/>
+        <equipment slot="Item4" id="sg_flag_39"/>
+        <equipment slot="Gloves" id="lz_arm_nv_01"/>
+        <equipment slot="Body" id="sg_ar_c05_g009_body"/>
+        <equipment slot="Head" id="lz_jinxianguan_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c03_s7002_leg"/>
+        <equipment slot="Cape" id="sg_ar_c01_g015_shoulder_old"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="sg_sword_014_1h"/>
+        <equipment slot="Body" id="lz_cloth_wuguan"/>
+        <equipment slot="Head" id="lz_shufa_wenguan"/>
+        <equipment slot="Leg" id="sg_ar_c08_004_leg"/>
+        <equipment slot="Horse" id="sg_c05_horse_jizhoudama"/>
+        <equipment slot="HorseHarness" id="sg_hh_c02_001_t3"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

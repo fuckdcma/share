@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  OccupationType  父母职业
+    Artisan       工匠 (村子|贫穷)
+    Bard          吟游诗人 (村子|贫穷)
+    Retainer      侍从 (村子|富裕)
+    Merchant      商人 (城镇|富裕)
+    Farmer        农民 (村子|贫穷)
+    Hunter        猎人 (村子|贫穷)
+    Vagabond      流浪者 (村子|贫穷)
+    Mercenary     雇佣兵 (城镇|贫穷)
+    Herder        牧民 (村子|贫穷)
+    Healer        医生 (村子|富裕)
+
+  Skill           角色技能
+    OneHanded     单手
+    TwoHanded     双手
+    Polearm       长杆
+    Bow           弓
+    Crossbow      弩
+    Throwing      投掷
+    Riding        骑术
+    Athletics     跑动
+    Crafting      锻造
+    Tactics       战术
+    Scouting      侦察
+    Roguery       流氓习气
+    Charm         魅力
+    Trade         交易
+    Steward       管理
+    Leadership    统御
+    Medicine      医术
+    Engineering   工程
+
+  Attribute       角色属性
+    Vigor         活力
+    Control       控制
+    Endurance     耐力
+    Cunning       狡诈
+    Social        社交
+    Intelligence  智力
+
+  Traits          角色性格
+    Valor         胆气
+    Mercy         善恶
+    Honor         荣誉
+    Generosity    胸怀
+    Calculating   谋略
+
+  Option  选项
+    拥有属性：
+      Text                  选项文本
+      Description           选择后的描述文本
+      Culture               选项是否显示所要求的文化
+      Stage                 选项归属的选择阶段
+      ConditionCulture      条件：当前文化
+      ConditionFamily       选项：家庭归属类型
+      ConditionEconomy      选项：家庭经济
+      ConditionOccupation   选项：家庭职业
+      Skills                提升的技能
+      Attribute             提升的属性
+      Traits                提升的性格
+      Renown                提升的声望
+      ParentType            家庭类型
+      OccupationType        家庭职业
+      Animation             选择选项后，人物所播放的动作
+      AnimationItem         播放动画时，人物所佩戴的模型（可以是武器id，也可以是预制件id）
+      TitleType             用于控制青年阶段不同选项人物所穿的衣服
+
+
+    详细说明：
+      Text 与 Description
+        这部分文本需要先在 ModuleData\Languages 的语言文件中配置文本
+        然后填写时按照格式 {=ID}备选文本 进行填写
+
+      ConditionCulture, ConditionFamily, ConditionEconomy, ConditionOccupation
+        以上为选项是否显示的控制条件
+        条件可以写多项，使用英文小写逗号分隔，如果存在多项条件，则是判断是否满足多个条件中的任意一项
+        如果不写或着删除，则表示不进行限制
+        例：
+          单个：ConditionCulture="yongliang"
+          多个：ConditionCulture="yongliang,jizhou,yangzhou"
+
+        填写说明：
+          ConditionCulture    文化id
+          ConditionFamily     农村：Rual 城镇：Urban
+          ConditionEconomy    贫穷：Poor 富有：Rich
+          ConditionOccupation 职业id
+
+        提示：农村或城镇、贫穷或富有依照家庭职业来判断
+
+      Skills  提升的技能
+        技能最多填写两个，使用英文小写逗号分隔
+        如果不写或着删除，则表示不提升技能
+        例：
+          单个：Skills="OneHanded"
+          两个：Skills="OneHanded,TwoHanded"
+
+      ParentType 家庭类型
+        家庭类型限制比较死，只能填写1-6，目前 Parents 阶段不建议新增或删减。
+--><CharacterCreationConfig>
+  <SpawnPoints>
+    <SpawnPoint ConditionCulture="sili" PosX="1557.926" PosY="1276.781"/>
+    <SpawnPoint ConditionCulture="sili" PosX="1727.099" PosY="1284.797"/>
+    <SpawnPoint ConditionCulture="jingzhou" PosX="1718.374" PosY="1137.188"/>
+    <SpawnPoint ConditionCulture="yizhou" PosX="1323.133" PosY="1060.337"/>
+    <SpawnPoint ConditionCulture="jizhou" PosX="1826.127" PosY="1390.325"/>
+    <SpawnPoint ConditionCulture="youzhou" PosX="1902.199" PosY="1584.422"/>
+    <SpawnPoint ConditionCulture="youzhou" PosX="2265.752" PosY="1733.277"/>
+    <SpawnPoint ConditionCulture="yanzhou" PosX="1853.003" PosY="1347.125"/>
+    <SpawnPoint ConditionCulture="yanzhou" PosX="1894.281" PosY="1407.157"/>
+    <SpawnPoint ConditionCulture="xuzhou" PosX="1959.639" PosY="1273.276"/>
+    <SpawnPoint ConditionCulture="jiaozhou" PosX="1786.773" PosY="740.53"/>
+    <SpawnPoint ConditionCulture="jiaozhou" PosX="1667.071" PosY="729.677"/>
+    <SpawnPoint ConditionCulture="yangzhou" PosX="2031.761" PosY="1133.969"/>
+    <SpawnPoint ConditionCulture="yangzhou" PosX="1898.133" PosY="960.014"/>
+    <SpawnPoint ConditionCulture="bingzhou" PosX="1739.744" PosY="1582.084"/>
+    <SpawnPoint ConditionCulture="qingzhou" PosX="2011.935" PosY="1429.97"/>
+    <SpawnPoint ConditionCulture="yuzhou" PosX="1832.596" PosY="1212.255"/>
+    <SpawnPoint ConditionCulture="yongliang" PosX="1186.357" PosY="1589.468"/>
+  </SpawnPoints>
+  <OtherTexts>
+    <OtherText Id="ReviewPageDescription" Text="{=*}Ngươi sắp bước vào cuộc phiêu lưu giữa thời loạn cuối Đông Hán! Đây là nhân vật của ngươi. Nếu đã sẵn sàng, hãy tiếp tục; nếu chưa, có thể quay lại để thay đổi các lựa chọn trước."/>
+    <OtherText Id="AgeSelectionTitle" Text="{=*}Tuổi khởi đầu"/>
+    <OtherText Id="AgeSelectionDescription" Text="{=*}Nhân vật của ngươi bắt đầu cuộc hành trình ở độ tuổi nào?"/>
+    <OtherText Id="AgeSelectionYoungAdult" Text="{=*}Tuổi vừa đôi mươi, phong độ đang độ thanh xuân. Mái tóc đen mượt, ánh mắt sáng như sao sớm, dáng người hiên ngang, chí khí ngút trời. Trong lòng ôm hoài bão lớn, nhưng trải đời chưa nhiều, tựa chim ưng vừa thử cánh giữa gió bụi, hổ non mới cất tiếng gầm nơi thung lũng. Dẫu có chí vươn mây, đôi cánh vẫn chưa đủ cứng; dẫu ôm mộng lập nghiệp, nền móng còn chưa vững."/>
+    <OtherText Id="AgeSelectionAdult" Text="{=*}Tuổi vừa ba mươi, khí chất chín chắn, không còn bồng bột như thuở thiếu thời. Gánh trên vai gia phong tiên tổ và kỳ vọng của gia tộc, ngươi đang ở độ sung sức như mặt trời giữa trưa, trăng sắp đến ngày tròn. Gân cốt còn mạnh, tâm trí ngày càng sâu sắc; nhiệt huyết vẫn đầy mànét sắc sảo đã biết thu lại. Trách nhiệm trong ngoài cùng đến, việc công việc tư đều phải gánh vác. Đây là bước ngoặt quan trọng trên đường đời."/>
+    <OtherText Id="AgeSelectionMiddleAged" Text="{=*}Tuổi bước sang bốn mươi, khí độ trầm hùng. Tóc mai điểm bạc, ánh mắt thâm trầm, dung mạo mang dấu vết phong sương. Đứng vững như núi sau bao cơn mưa gió, điềm tĩnh như nước giữa sóng dữ. Ngươi đã hiểu nhiều lẽ đời, không còn dễ bị thịnh suy lay động. Như mặt trời vừa qua chính ngọ, ánh sáng thu vào bên trong; như giếng cổ phẳng lặng, càng trải năm tháng càng thêm sâu sắc."/>
+    <OtherText Id="AgeSelectionElder" Text="{=*}Tuổi đã năm mươi, bước vào thời tri thiên mệnh. Tóc pha sương, dáng vẻ khoan thai, trong mắt ẩn chứa bao điều từng trải. Thế sự thăng trầm đã rõ, lòng người muôn vẻ đều nhìn bằng sự bình thản. Như dòng sông cuồn cuộn qua khúc giữa, sóng trước nối sóng sau; như gương cổ không vướng bụi, như tùng già bám vách đá qua bao mùa gió tuyết. Sự vững vàng chính là khí chất của tuổi đời này."/>
+  </OtherTexts>
+  <!-- 定义家庭职业 -->
+  <BackStoryOccupations>
+    <Occupation Id="Artisan" Urban="false" Rich="false"/>    <!-- 工匠 (村子|贫穷) -->
+    <Occupation Id="Bard" Urban="false" Rich="false"/>       <!-- 吟游诗人 (村子|贫穷) -->
+    <Occupation Id="Retainer" Urban="false" Rich="false"/>   <!-- 侍从 (村子|富裕) -->
+    <Occupation Id="Merchant" Urban="false" Rich="false"/>   <!-- 商人 (城镇|富裕) -->
+    <Occupation Id="Farmer" Urban="false" Rich="false"/>     <!-- 农民 (村子|贫穷) -->
+    <Occupation Id="Hunter" Urban="false" Rich="false"/>     <!-- 猎人 (村子|贫穷) -->
+    <Occupation Id="Vagabond" Urban="false" Rich="false"/>   <!-- 流浪者 (村子|贫穷) -->
+    <Occupation Id="Mercenary" Urban="false" Rich="false"/>  <!-- 雇佣兵 (城镇|贫穷) -->
+    <Occupation Id="Herder" Urban="false" Rich="false"/>     <!-- 牧民 (村子|贫穷) -->
+    <Occupation Id="Healer" Urban="false" Rich="false"/>     <!-- 医生 (村子|富裕) -->
+  </BackStoryOccupations>
+  <BackStoryStageTexts>
+    <StageText Stage="Parents" Title="{=*}【Gia thế】" Description="{=*}Số mệnh mỗi người mỗi khác, gia thế cũng chẳng ai giống ai. Giữa thời loạn, ngươi sinh ra trong gia đình như thế nào?…"/>
+
+    <StageText Stage="Childhood" Title="{=*}【Học hành, đọc kinh sách】" Description="{=*}Thuở nhỏ, ngươi thông minh, sáng dạ, được người làng khen ngợi và cho theo học. Ngươi quyết chí nghiên cứu…"/>
+
+    <StageText Stage="Education" Title="{=*}【Giặc cướp kéo đến】" Description="{=*}Bấy giờ Khăn Vàng hoành hành, giặc cướp nổi lên khắp nơi. Hơn trăm tên cướp tụ tập, định cướp phá thôn làng. Vị lý chính vì che chở phụ nữ và trẻ nhỏ mà bị đạn ná của giặc bắn trúng, ngã ngựa, máu chảy đầm đìa.{newline}{newline}Ngươi khi ấy tuổi trẻ khí thịnh, lòng đầy căm phẫn, bèn…"/>
+
+    <StageText Stage="Education" Title="{=*}【Giặc cướp kéo đến】" Description="{=*}Bấy giờ Khăn Vàng hoành hành, giặc cướp nổi lên khắp nơi. Hơn trăm tên cướp tụ tập, định cướp phá thôn làng. Vị lý chính vì che chở phụ nữ và trẻ nhỏ mà bị đạn ná của giặc bắn trúng, ngã ngựa, máu chảy đầm đìa.{newline}{newline}Ngươi khi ấy tuổi trẻ khí thịnh, lòng đầy căm phẫn, bèn…" ConditionFamily="Urban"/>
+
+    <StageText Stage="Youth" Title="{=*}【Tặng binh khí】" Description="{=*}Ngươi vừa tròn mười bảy, đến tuổi phải phục dịch. Lý chính biết ngươi dũng mãnh, nhưng thấy trong tay chỉ có một con dao ngắn chuôi vòng gọi là “phách bễ”, vốn dùng khắc thẻ tre, khó thể tự vệ.{newline}{newline}Ông mời ngươi đến nhà, muốn tặng một món binh khí để phòng thân. Ngươi chọn…"/>
+
+    <StageText Stage="Youth" Title="{=*}【Tặng binh khí】" Description="{=*}Ngươi đã đến tuổi cập kê, muốn ra ngoài gây dựng sự nghiệp. Lý chính biết ngươi gan dạ, nhưng thấy trong tay chỉ có con dao ngắn chuôi vòng gọi là “phách bễ”, vốn dùng khắc thẻ tre, khó thể tự vệ.{newline}{newline}Ông mời ngươi đến nhà, muốn tặng một món binh khí để phòng thân. Ngươi chọn…" ConditionGender="Female"/>
+
+    <StageText Stage="Adulthood" Title="{=*}【Lên đường】" Description="{=*}Một hôm, mây thấp giăng trên mặt sông rộng, ánh đèn soi chén rượu đục. Ngươi uống cạn một chén, mang kiếm ra cửa, nghĩ về con đường phía trước. Tương lai, ngươi sẽ trở thành…"/>
+  </BackStoryStageTexts>
+  <BackStoryOptions>
+    <!-- 家族 -->
+    <!-- empire -->
+    <Option Text="{=*}【Chăm luyện võ nghệ, hành hiệp giúp đời】" Description="{=*}【Chăm luyện võ nghệ, hành hiệp giúp đời】{newline}{newline}Cha ngươi là một du hiệp nổi danh trong vùng, thường dạy: “Phải học cả văn lẫn võ, đi đường ngay, cứu giúp thiên hạ.” Ngươi khắc ghi lời cha, tập võ từ nhỏ, mong dẹp chuyện bất bình.{newline}{newline}Nhà tuy nghèo, cha vẫn truyền kiếm thuật, dạy cưỡi ngựa bắn cung. Đêm xuống, ông dẫn ngươi ra bãi hoang chỉ từng đường kiếm, bảo: “Kiếm là vật do tâm điều khiển. Tâm chính thì kiếm chính, tâm tà thì kiếm cũng tà.” Ngươi kính cẩn nghe theo, ngày đêm khổ luyện, chẳng dám lười nhác.{newline}{newline}Đến mười tuổi, ngươi đã múa kiếm thành thạo, cưỡi ngựa bắn tên rất giỏi. Thấy chuyện bất bình trong làng, ngươi luôn muốn ra tay. Có người hỏi: “Tuổi còn nhỏ, sao chẳng sợ kẻ mạnh?” Ngươi đáp: “Cha dạy lấy chính nghĩa làm đầu, ta phải lấy dũng khí mà thực hiện. Thấy điều bất bình, lẽ nào khoanh tay?”" Stage="Parents" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="OneHanded,Polearm" Attribute="Endurance" ParentType="1" OccupationType="Retainer"/> 
+          
+    <Option Text="{=*}【Miệt mài đèn sách, ngày đêm không nghỉ】" Description="{=*}【Miệt mài đèn sách, ngày đêm không nghỉ】{newline}{newline}Nhà chẳng dư dả, chỉ có mấy quyển sách, ngươi đọc đi đọc lại sớm tối không rời tay. Đêm khuya, ánh đèn leo lét, ngươi vẫn chăm chú bên bàn, học không biết mệt. Nhà hàng xóm giàu sang, áo gấm cơm ngon, suốt ngày vui chơi, ngươi cũng chẳng hề ghen tị. Chỉ yêu mùi giấy mực, đắm mình trong sách như thưởng rượu ngon, quên cả đói rét.{newline}{newline}Có người hỏi: “Ai cũng lo chuyện cơm áo, sao ngươi tự làm khổ mình?” Ngươi đáp: “Trong sách có cả đất trời, khổ nỗi gì?”{newline}{newline}Đến mười tuổi, ngươi đã đọc hết sách nhà, bèn mượn thêm sách khắp làng. Mỗi lần mượn được cuốn mới đều quý như báu vật, đọc ngày đọc đêm đến thuộc lòng. Nhà nghèo không có giấy bút, ngươi lấy cành cây viết lên đất, lấy cát làm giấy, tập chữ không ngừng. Người làng than rằng: “Cái nghèo không đáng sợ, chỉ sợ đánh mất chí lớn.”" Stage="Parents" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="Medicine,Tactics" Attribute="Intelligence" ParentType="2" OccupationType="Bard"/>
+
+    <Option Text="{=*}【Nhà giàu chí lớn, hướng về triều chính】" Description="{=*}【Nhà giàu chí lớn, hướng về triều chính】{newline}{newline}Ta sinh trưởng trong một thế gia danh giá, gia sản sung túc, áo gấm cơm ngon, tôi tớ đông đúc. Nhưng lòng ta chỉ hướng về chính sự, ôm chí kinh bang tế thế. Nghe chuyện triều đình, ta chăm chú lắng nghe; đọc đến sử sách, ta miệt mài nghiền ngẫm. Có khi một mình ngồi trong thư phòng, giở từng trang sử, khảo xét biến đổi xưa nay, tìm căn nguyên trị loạn.{newline}{newline}Có người hỏi: “Ngươi còn nhỏ, cớ sao đã lo việc nước?” Ta đáp: “Đại trượng phu phải có chí tung hoành bốn bể, há chịu bó mình trong tầm mắt chim sẻ? Trách nhiệm với gia quốc nặng tựa Thái Sơn, chí hướng vì thiên hạ xa rộng như biển cả.”{newline}{newline}Lên mười tuổi, ta đã thông hiểu Xuân Thu, Thượng Thư, biết phép lễ nhạc và đại lược hình chính. Ta thường cùng cha anh luận bàn thế cuộc, lời lẽ sắc bén, kiến giải khác thường. Người trong họ đều lấy làm lạ, khen rằng: “Ở giữa phú quý mà không mê hưởng lạc; sống cảnh an nhàn mà chẳng quên mối lo thời thế.”" Stage="Parents" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="Steward,Leadership" Attribute="Social" ParentType="3" OccupationType="Merchant"/>
+
+    <Option Text="{=*}【Đói rét rèn chí, lưu lạc không khuất】" Description="{=*}【Đói rét rèn chí, lưu lạc không khuất】{newline}{newline}Gia cảnh suy vi, nghèo đến mức không có lấy một mảnh đất cắm dùi. Đúng lúc thiên hạ mất mùa đói kém, lưu dân nổi lên khắp nơi. Ta đành theo đoàn người bỏ xứ, phiêu bạt giữa đồng hoang, dãi dầu mưa nắng, không nơi nương tựa.{newline}{newline}Thuở mới rời quê, ta đi cùng những người già yếu, bệnh tật. Ban ngày trèo đèo lội suối, ban đêm màn trời chiếu đất. Đói thì hái quả rừng lót dạ, khát thì uống nước khe. Ta cắn răng chịu đựng, chẳng dám kêu khổ. Trên đường, người chết đói nằm la liệt, tiếng kêu than chẳng dứt; ta vẫn chia phần ăn cho người già, cởi áo giúp kẻ ốm yếu.{newline}{newline}Có người hỏi: “Ngươi còn nhỏ, sao không lo thân mình trước?” Ta đáp: “Quân tử dù khốn cùng cũng không được đánh mất chí khí.”{newline}{newline}Một lần gặp bọn cướp chặn đường, đoàn lưu dân hoảng hốt chạy tán loạn. Chỉ mình ta cầm gậy gỗ che chở cho người yếu thế. Biết sức chẳng địch nổi, ta vẫn không lùi bước. Bọn cướp thấy đứa trẻ can đảm, chợt động lòng thương rồi bỏ đi. Từ đó, ta càng hiểu đức kiên nhẫn quý giá đến nhường nào, chí khí con người không thể dễ dàng bẻ gãy." Stage="Parents" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="Athletics,Scouting" Attribute="Vigor" ParentType="4" OccupationType="Vagabond"/>
+
+    <Option Text="{=*}【Vừa cày ruộng vừa đọc sách, nối nghiệp nhà nông】" Description="{=*}【Vừa cày ruộng vừa đọc sách, nối nghiệp nhà nông】{newline}{newline}Tổ tiên ta nhiều đời sống nơi thôn dã, lấy việc đồng áng và đèn sách làm gia phong, giản dị mà cần cù. Cha siêng cày cấy, mẹ giỏi dệt vải. Nhà chẳng dư của, nhưng đủ ăn đủ mặc, trên dưới thuận hòa.{newline}{newline}Trừ những ngày phải đi phu dịch, mùa xuân lo gieo mạ, mùa hạ cúi lưng nhổ cỏ, mùa thu gặt lúa trĩu bông, mùa đông tu sửa mương máng để chuẩn bị vụ mới.{newline}{newline}Từ thuở còn để tóc trái đào, ta đã theo cha ra đồng. Cha thường dặn: “Nông nghiệp là gốc của nước. Con tuy còn nhỏ, phải hiểu cày ruộng và học chữ đều là nền tảng. Lúa mạ cũng như con người: chăm thì tốt, lười thì héo.” Ta khắc ghi từng lời, không dám trễ nải. Dù tuổi còn thơ, ta đã biết hạt thóc đổi bằng mồ hôi, sinh kế nào có dễ dàng." Stage="Parents" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="Engineering,Trade" Attribute="Endurance" ParentType="5" OccupationType="Farmer"/>
+
+
+    <Option Text="{=*}【Dòng dõi phương Bắc, hậu duệ Hung Nô】" Description="{=*}【Dòng dõi phương Bắc, hậu duệ Hung Nô】{newline}{newline}Ta sinh giữa thảo nguyên phương Bắc, lớn lên dưới lều nỉ. Từ nhỏ đã quen đời du mục, thạo cưỡi ngựa bắn cung, có thể ăn ngủ trên lưng ngựa, phi nhanh như gió; dường như ấy là bản tính trời sinh.{newline}{newline}Khi người Hung Nô dời vào nội địa, ta theo bộ chúng nam tiến, định cư ở Trung Nguyên. Tuy sống giữa đất Hoa Hạ, phong tục Hung Nô vẫn chưa phai, tài kỵ xạ vẫn còn nguyên. Thuở thiếu thời, mỗi lần nhớ đồng cỏ mênh mang, nhất là cuối xuân, ta thường thúc ngựa ra ngoài thành, buông cương phi nước đại. Nghĩ tới Mạc Bắc, lòng lại bồi hồi khôn nguôi.{newline}{newline}Tính ta chất phác, chuộng dũng khí, yêu võ nghệ. Dù ở Trung Nguyên, ta vẫn thích cùng bè bạn thi săn bắn, đấu vật để thử sức, chẳng quên nếp sống cũ.{newline}{newline}Song đất Trung Nguyên trọng lễ nhạc, văn giáo thịnh hành. Mang tài nghệ Hung Nô trong mình, ta cũng dần thấm nhuần phong hóa Hoa Hạ, học thi thư và lễ nghi. Dẫu vậy, tận đáy lòng vẫn nhớ sự tự do trên thảo nguyên và khí phách của người kỵ mã. Đêm khuya nhìn sao Bắc Đẩu, ta lại nhớ trời sao Mạc Bắc, nhiều phen xúc động đến rơi lệ." Stage="Parents" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="Riding,Bow" Attribute="Control" ParentType="6" OccupationType="Herder"/>
+
+
+    <!-- 童年早期 -->
+    <Option Text="{=*}【Binh pháp và mưu lược】" Description="{=*}Ngươi lập chí nghiên cứu 【Binh pháp và mưu lược】{newline}{newline}Binh đao là đại sự quốc gia, liên quan sinh tử và tồn vong, không thể không xét cho thấu đáo. Xưa Hoàng Đế đánh Xi Vưu ở Trác Lộc, nhờ thế trận mà thắng; Thang và Vũ dấy binh phạt Kiệt, Trụ, nhờ mưu lược mà thành công. Bởi vậy, binh pháp bao hàm lẽ trời đất, biến hóa âm dương, cách vận dụng cương nhu và phép phối hợp chính binh, kỳ binh.{newline}{newline}Tôn Tử nói: “Binh giả, quỷ đạo dã.” Người giỏi dụng binh có thể khiến địch khuất phục mà chẳng cần giao chiến; người giỏi phòng thủ giữ vững đất nước nhờ biết thế cuộc. Binh không có thế cố định, cũng như nước không có hình dạng bất biến. Biết tùy địch mà biến, lấy biến hóa giành thắng lợi, ấy mới là bậc thần diệu.{newline}{newline}Dụng binh quý thần tốc, không chuộng kéo dài; trọng kỳ mưu, chẳng chỉ dựa chính diện. Người thiện chiến tránh khi địch đang hăng hái, đánh lúc chúng mỏi mệt trở về, lấy sức nhàn đợi quân mệt, lấy quân no chống kẻ đói. Xưa Hàn Tín bày trận quay lưng ra sông, lấy ít thắng nhiều; Hạng Vũ đập nồi dìm thuyền, lấy dũng thắng mạnh. Đó đều là chỗ kỳ diệu của binh pháp." Stage="Childhood" Skills="Leadership,Tactics" Attribute="Cunning" Traits="Calculating" Animation="act_childhood_leader"/>
+          
+    <Option Text="{=*}【Trước tác Mặc gia】" Description="{=*}Ngươi lập chí nghiên cứu 【Trước tác Mặc gia】{newline}{newline}Học phái Mặc gia khởi từ Mặc Tử, hình thành vào thời Chiến Quốc. Chủ trương đề cao sự đồng lòng; môn đồ tinh thông dụng cụ thủ thành, hiểu phép công chiến, song không chuộng xâm lược mà cốt lo phòng giữ.{newline}{newline}Kinh sách Mặc gia lời lẽ mộc mạc mà ý tứ sâu xa; chẳng chuộng văn vẻ nhưng đánh trúng thói tệ đương thời, đủ sức cảnh tỉnh người đời. Học thuyết ấy trọng tiết kiệm, phản đối lễ nghi xa hoa và âm nhạc phung phí, đề cao tiết dụng, tiết táng. Mặc gia giảng “kiêm tương ái, giao tương lợi”, lấy yêu thương lẫn nhau và cùng hưởng lợi làm gốc; phản đối chiến tranh xâm lược, coi trọng giữ yên bờ cõi.{newline}{newline}Đến đời Hán, tuy Nho học được tôn sùng, ảnh hưởng Mặc gia vẫn còn trong dân gian. Lời răn tiết kiệm và phản đối việc vô cớ dùng binh vẫn đủ để khuyên đời. Học thuyết ấy tuy không hiển hách, chí vẫn ở cứu đời, đạo vẫn ở an dân. Lời nói giản dị mà nghĩa lý sâu xa; dẫu ít người coi trọng, tinh thần và học vấn của Mặc gia vẫn không vì thế mà mai một." Stage="Childhood" Skills="Engineering,Crafting" Attribute="Intelligence" Traits="Mercy" Animation="act_childhood_athlete"/>
+
+    <Option Text="{=*}【Thuật tung hoành】" Description="{=*}Ngươi lập chí nghiên cứu 【Thuật tung hoành】{newline}{newline}Kẻ sĩ tung hoành xuất hiện từ thời Chiến Quốc, hưng thịnh sang đời Tần Hán. Thuật của họ biến ảo khó lường, lời nói hùng biện; lấy quyền biến làm gốc, cân nhắc lợi hại làm thước đo, du thuyết chư hầu khắp thiên hạ.{newline}{newline}Những trước tác của họ lấy mưu lược làm nền, lấy ngôn từ làm mũi nhọn. Lời văn tung hoành ngang dọc, sắc bén như kiếm. Khi bàn hợp tung liên minh, lúc luận liên hoành kết giao, thảy đều xét thế lợi hại. Đó chính là phép tắc của phái tung hoành.{newline}{newline}Xưa Tê Thủ thuyết phục các nước hợp tung, Trương Nghi khuyên Tần thi hành liên hoành, chỉ một lời mà xoay chuyển thế cuộc. Tài biện luận ấy quả có thể khiến “một lời dựng nước, một lời mất nước”. Thuật tung hoành tuy nhiều kế biến, vẫn có đạo lý: lấy quyền biến để hành sự, dùng nhân nghĩa để nâng đỡ. Mưu có thể kín, nhưng thành bại rồi sẽ rõ; kế có thể hiểm, nhưng vẫn nên hướng về điều chính đáng.{newline}{newline}Vậy nên người học thuật tung hoành dù coi trọng ứng biến cũng không thể quên gốc nhân nghĩa. Kẻ hậu thế chẳng nhất thiết phải dùng mọi mưu thuật, nhưng không thể không hiểu lẽ trong đó." Stage="Childhood" Skills="Charm,Trade" Attribute="Social" Traits="Calculating" Animation="act_childhood_manners"/>
+
+    <Option Text="{=*}【Học thuyết Pháp gia】" Description="{=*}Ngươi lập chí nghiên cứu 【Học thuyết Pháp gia】{newline}{newline}Pháp gia khởi từ Quản Trọng, đến Hàn Phi thì thành hệ thống, lấy pháp luật làm tôn chỉ, coi trọng quyền thế và thuật trị nước. Xưa Thương Quân phò nước Tần, biến pháp cầu cường, bãi bỏ phép tỉnh điền, mở mang ruộng đất, khuyến khích cày cấy và chiến đấu, cấm đánh nhau vì tư thù. Nhờ vậy Tần giàu quân mạnh, chư hầu khiếp sợ. Hàn Phi trước tác, tập đại thành học thuyết pháp, thuật, thế; văn nghiêm khắc, lý sâu sắc, coi đó là công cụ không thể thiếu của bậc đế vương.{newline}{newline}Cốt yếu của Pháp gia là pháp lệnh nghiêm minh, thưởng phạt phân minh. Quản Tử nói pháp luật là khuôn phép của thiên hạ, chuẩn mực cho muôn việc. Hàn Phi dạy: “Pháp bất a quý, thằng bất nạo khúc”, nghĩa là pháp chẳng thiên vị người sang, dây mực chẳng uốn theo chỗ cong. Pháp thi hành thì nước trị, pháp buông lỏng thì nước loạn. Phép Thương Quân khiến dân Tần dũng cảm khi đánh giặc cho nước, e ngại chuyện tư đấu; sau cùng Tần thôn tính sáu nước, thống nhất thiên hạ.{newline}{newline}Pháp gia đề cao quân quyền, ràng buộc bề tôi, chủ trương làm giàu nước mạnh quân; giữa thời loạn, ấy là phương thuật trị quốc đáng xét. Nhà Hán nối phép Tần, dù tôn sùng Nho học vẫn dùng lễ và pháp bổ trợ cho nhau, chưa từng bỏ hẳn pháp chế." Stage="Childhood" Skills="Steward,Leadership" Attribute="Control" Traits="Valor" Animation="act_childhood_animals"/>
+
+    <Option Text="{=*}【Kinh điển Nho gia】" Description="{=*}Ngươi lập chí nghiên cứu 【Kinh điển Nho gia】{newline}{newline}Xưa Khổng Tử san định lục kinh, để lại phép tắc cho muôn đời, khiến đạo Nho sáng tỏ. Nho học khởi nơi đất Thù, Tứ rồi truyền khắp chín châu, thành học phái lớn. Thi, Thư, Lễ, Nhạc, Dịch, Xuân Thu đều hàm chứa lời dạy thâm sâu của thánh hiền; lời ngắn mà ý xa, chuyện gần mà nghĩa rộng, đủ làm khuôn phép trị đời.{newline}{newline}Đạo Nho lấy tu thân, tề gia, trị quốc, bình thiên hạ làm đường lớn. Kẻ học quý ở bền chí, ngày ngày tích lũy mới thành đại khí. Mạnh Tử từng dạy: khi trời muốn giao trọng trách cho ai, trước phải khiến lòng người ấy chịu khổ, gân cốt nhọc nhằn. Bởi thế quân tử phải sửa mình rồi mới có thể yên nhà, trị nước, giúp thiên hạ thái bình. Nhân là yêu người; Nghĩa là giữ điều phải; Lễ là phân định trên dưới; Trí là biết lẽ đúng sai; Tín là giữ lời hứa.{newline}{newline}Vậy nên Nho gia lấy nhân nghĩa làm gốc, dùng lễ trí để thực hành, lấy chữ tín làm nếp xử thế, từ đó theo đuổi đại đạo." Stage="Childhood" Skills="Charm,Medicine" Attribute="Endurance" Traits="Honor" Animation="act_childhood_memory"/>
+
+    <Option Text="{=*}【Kinh điển Đạo gia】" Description="{=*}Ngươi lập chí nghiên cứu 【Kinh điển Đạo gia】{newline}{newline}Đạo gia khởi từ học thuyết Hoàng Lão, tôn trọng lẽ huyền vi. Đạo ấy thâm sâu, lý ấy tinh diệu. Xưa Hoàng Đế hỏi đạo Quảng Thành Tử, Lão Đam viết kinh nơi Hàm Cốc Quan. Năm nghìn lời Đạo Đức chứa huyền cơ của trời đất, thông suốt đạo lý xưa nay.{newline}{newline}Học thuyết Đạo gia rộng lớn, uyên thâm. Bàn thiên đạo thì xét âm dương thịnh suy; luận nhân sự thì nói họa phúc nương nhau. Hiểu lẽ trời, thuận theo vận hành của tự nhiên, ấy là chỗ tinh yếu. Vì thế mới có lời: “Lưới trời lồng lộng, thưa mà khó lọt”, lại dạy lấy mềm yếu thắng cứng mạnh, cá không thể rời vực sâu. Đó là trí tuệ Đạo gia và lời răn khi xử thế.{newline}{newline}Thuở nhà Hán mới dựng nghiệp, triều đình chuộng phép Hoàng Lão; thời Văn Cảnh trị nước quý ở thanh tĩnh. Tào Tham giữ phép của Tiêu Hà, Cấp Ảm theo lối vô vi. Đó đều là ảnh hưởng Đạo gia, có công hiệu rõ trong việc trị nước. Bởi vậy học thuyết này nào chỉ là chuyện hư vô tịch diệt? Thật còn là đường tu thân trị quốc, giúp đời lợi dân." Stage="Childhood" Skills="Athletics,Tactics" Attribute="Endurance" Traits="Generosity" Animation="act_childhood_numbers"/>
+
+    <!-- 流寇来犯 -->
+    <Option Text="{=*}【Rút đao nghênh chiến, xông lên trước】" Description="{=*}【Rút đao nghênh chiến, xông lên trước】{newline}{newline}Thấy vậy, ta phẫn nộ rút đao, bước lên quát lớn: “Há có thể ngồi nhìn giặc cướp lộng hành? Ai muốn bảo vệ quê nhà, hãy theo ta!” Mọi người đồng thanh hưởng ứng.{newline}{newline}Ta xông lên trước, lao vào trận địch, lưỡi đao sáng loáng như mãnh hổ xuống núi. Bọn cướp không kịp trở tay, vội vàng tháo lui. Ta vung đao hạ mấy tên, áo nhuốm máu mà chí chiến đấu càng sôi sục.{newline}{newline}Thấy ta dũng mãnh, bọn cướp khiếp vía, hàng ngũ rối loạn. Ta thừa thế truy kích, đao tới đâu địch tan tới đó. Đánh đến chạng vạng, bọn chúng tan tác, thôn làng được bảo toàn. Dẫu thân mang nhiều vết thương, ta không hề hối tiếc; dân làng cảm kích, hết lời ca ngợi lòng dũng cảm ấy." Stage="Education" Skills="OneHanded,Athletics" Attribute="Vigor" Animation="act_childhood_gracious" AnimationItem="lz_hsd_han_03_chushi"/>
+          
+    <Option Text="{=*}【Tập hợp dân làng, bày trận chống giặc】" Description="{=*}【Tập hợp dân làng, bày trận chống giặc】{newline}{newline}Thấy tình thế nguy ngập, ta lập tức triệu tập dân làng, xếp hàng ngũ để chống giặc. Ta nói: “Giặc cướp tuy đông, nhưng chỉ là đám ô hợp, chẳng đáng sợ. Chỉ cần đồng lòng, chúng ta nhất định đánh lui được!” Mọi người nghe vậy đều phấn chấn.{newline}{newline}Ta sai trai tráng cầm gậy tre đứng trước, người già yếu có cung săn thì ở phía sau; phụ nữ và trẻ nhỏ lo chăm sóc thương binh ở một bên. Bản thân ta cầm trường đao đứng đầu trận. Giặc đến thấy trong làng đã phòng bị thì chùn bước. Ta vung đao chỉ huy, dân làng đồng thanh hò hét, tiếng vang khắp thung lũng.{newline}{newline}Bọn cướp xung phong mấy lượt đều bị đẩy lui. Thấy sĩ khí chúng đã sa sút, ta lập tức lệnh cho dân làng phản kích. Giặc vỡ trận tháo chạy, thôn làng được bảo toàn. Sau trận, mọi người đều khen ta có trí có dũng; ta lấy làm mừng." Stage="Education" Skills="Leadership,Tactics" Attribute="Intelligence" Animation="act_childhood_militia" AnimationItem="lz_hj_chushi_1"/>
+
+    <Option Text="{=*}【Vung kích xông tới, đánh thẳng đầu sỏ】" Description="{=*}【Vung kích xông tới, đánh thẳng đầu sỏ】{newline}{newline}Thấy tình thế nguy cấp, ta đỡ vị lý chính dậy, nhặt cây trường qua của ông, nhảy lên ngựa, cầm qua xông vào trận địch. Bọn cướp thấy ta đơn thương độc mã lao tới thì kinh ngạc khôn xiết.{newline}{newline}Ta múa qua như gió, đánh đâu thắng đó, xông thẳng đến tên đầu sỏ. Hắn rút đao nghênh chiến, nhưng ta vừa căm phẫn vừa quyết liệt, khiến hắn không sao chống đỡ. Một đòn đâm trúng, ta hất hắn ngã khỏi ngựa, rồi đánh tiếp khiến hắn bỏ mạng tại chỗ.{newline}{newline}Thấy thủ lĩnh đã chết, bọn cướp lập tức hoảng loạn, đua nhau bỏ chạy. Ta thừa thắng truy kích, đánh chúng đại bại, giữ được thôn làng. Sau trận ấy, dân làng đều khen ta dũng mãnh, sau này ắt có thể thành một viên dũng tướng." Stage="Education" Skills="Polearm,Riding" Attribute="Vigor" Animation="act_childhood_grit" AnimationItem="lz_ge_minbing_chushi"/>
+
+    <Option Text="{=*}【Phi ngựa bắn tên, dẹp đám lưu khấu】" Description="{=*}【Phi ngựa bắn tên, dẹp đám lưu khấu】{newline}{newline}Thấy giặc đông thế mạnh, ta hiểu không thể đối đầu trực diện, bèn quyết dùng tài săn bắn để chế địch. Ta nắm chắc cung săn, thúc ngựa phi nhanh, giương cung lắp tên, nhắm thẳng vào bọn cướp.{newline}{newline}Từ nhỏ ta đã thích săn bắn, mỗi mũi tên gần như không bao giờ trượt. Dây cung vừa bật, giặc đã trúng tên ngã xuống. Ta cưỡi ngựa lượn vòng bên ngoài, tên bắn dồn dập như châu chấu bay; bọn cướp kinh hãi, bỏ chạy tứ tán.{newline}{newline}Trai tráng trong làng thấy quân địch rối loạn liền thừa cơ phản kích. Bọn cướp đại bại, thôn làng được bảo toàn. Sau trận ấy, dân làng hết lời ca ngợi tài bắn cung của ta." Stage="Education" Skills="Bow,Riding" Attribute="Control" Animation="act_childhood_sharp" AnimationItem="lz_bow_han_01_chushi"/>
+            
+    <Option Text="{=*}【Nấp trong đống lúa, chờ dịp thoát thân】" Description="{=*}【Nấp trong đống lúa, chờ dịp thoát thân】{newline}{newline}Thấy giặc cướp đông và hung hãn, ta quyết định nấp trong đống rơm lúa, nín thở chờ thời cơ. Bọn chúng tràn vào làng, cướp bóc khắp nơi nhưng không phát hiện chỗ ẩn náu của ta.{newline}{newline}Khi thấy bọn cướp tản ra, ta lặng lẽ rời làng, nhân lúc hỗn loạn mà thoát thân. Ta đi một mạch hơn ba mươi dặm mới dám dừng lại thở. Sau nghe tin quan binh đã tiêu diệt giặc, ta mới trở về quê. Tuy không trực tiếp chống trả, ta vẫn mừng vì giữ được tính mạng." Stage="Education" Skills="Scouting,Roguery" Attribute="Cunning" Animation="act_childhood_fierce" AnimationItem="lz_hsd_han_03_chushi"/>
+
+    <Option Text="{=*}【Nhân lúc hỗn loạn, báo gấp huyện úy】" Description="{=*}【Nhân lúc hỗn loạn, báo gấp huyện úy】{newline}{newline}Nhân khi bọn giặc mải cướp phá, ta lấy một con ngựa khỏe ở dịch trạm trong làng, thúc ngựa chạy thẳng đến huyện nha. Ta lập tức báo cho huyện úy. Nghe tin, ông sai một trăm giáp sĩ, ba trăm lính thiện chiến, cùng hàng trăm dân binh, nỏ thủ và người phục dịch gấp rút đến cứu làng.{newline}{newline}Quan binh vừa tới liền bắn nỏ dồn dập, buộc bọn cướp phải đầu hàng. Huyện úy hạ lệnh chém hết quân giặc, treo đầu ở thành để răn đe đám lưu khấu. Thôn làng nhờ thế được bảo toàn. Sau trận ấy, dân làng đều khen ta nhanh trí." Stage="Education" Skills="Riding,Steward" Attribute="Social" Animation="act_childhood_sharp" AnimationItem="lz_hsd_han_03_chushi"/>
+
+    <!-- 青年 -->
+    <Option Text="{=*}Chọn một thanh 【Hán kiếm】" Description="{=*}【Ngươi sẽ nhận được một thanh Hán kiếm】{newline}{newline}Vỏ kiếm lấy gỗ mỏng làm cốt, quấn gai cho chắc, phủ lớp trát rồi sơn son đen;{newline}Lưỡi kiếm có tám mặt, sống kiếm rõ nét, dài bốn thước, được mài sáng như gương.{newline}Dáng kiếm thanh thoát, đâm nhanh như chớp; kiểu dáng cổ kính, chế tác tinh xảo.{newline}{newline}Mũi kiếm sắc lạnh, ánh thép như sương thu đọng trên mặt nước.{newline}Đây vừa là lợi khí nơi sa trường, vừa là biểu tượng cho thân phận và uy danh." Stage="Youth" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="OneHanded,Athletics" Attribute="Vigor" TitleType="1" Animation="act_childhood_gracious"/>
+
+    <Option Text="{=*}Chọn một thanh 【Hoàn thủ đao】" Description="{=*}【Ngươi sẽ nhận được một thanh Hoàn thủ đao】{newline}{newline}Hoàn thủ đao có sống dày, lưỡi thẳng, hơi cong vào trong. Kiểu dáng gọn gàng mà hữu dụng; chuôi đao có vòng, trang trí hoa văn chạm khắc. Thân đao bền chắc, lưỡi sắc như sương. Thép được gấp rèn qua nghìn búa, tôi luyện kỹ lưỡng.{newline}{newline}Nhờ thế, thân đao vừa cứng vừa dẻo, ánh thép lạnh lẽo, rất thích hợp chém và bổ trong chiến trận." Stage="Youth" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="OneHanded,TwoHanded" Attribute="Endurance" TitleType="2" Animation="act_childhood_grit"/>
+
+    <Option Text="{=*}Chọn một chiếc 【Phủ việt】" Description="{=*}【Ngươi sẽ nhận được một chiếc Phủ việt】{newline}{newline}Phủ việt vừa là binh khí sát phạt, vừa tượng trưng cho uy quyền. Đầu việt đúc bằng đồng, lưỡi rộng mà mỏng, trang trí mặt thú và mây cuộn, dáng vẻ trang nghiêm. Cán dài bốn thước, lưỡi cong tựa trăng non.{newline}{newline}Sát khí toát ra đã đủ khiến người khiếp sợ. Vung lên như sấm sét, bổ xuống như núi lở đất rung." Stage="Youth" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="TwoHanded,Riding" Attribute="Vigor" TitleType="3" Animation="act_childhood_sharp"/>
+
+    <Option Text="{=*}Chọn một cây 【Trường kích】" Description="{=*}【Ngươi sẽ nhận được một cây Bốc tự kích】{newline}{newline}Trường kích thời Hán có đầu hình chữ “bốc”, là binh khí dài rất lợi hại. Mũi sắt nhọn hướng trước, nhánh ngang chìa sang bên, vừa đâm vừa móc được.{newline}{newline}Kỵ binh cầm kích xông trận, có thể đâm kẻ địch ngã ngựa hoặc móc người khỏi yên; bộ binh xếp kích thành rừng, dựng thành tường thép ngăn quân địch và phá trận xung phong." Stage="Youth" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="Polearm,Riding" Attribute="Vigor" TitleType="4" Animation="act_childhood_gracious"/>
+
+    <Option Text="{=*}Chọn một bộ 【Cung tên】" Description="{=*}【Ngươi sẽ nhận được một cây Hán cung】{newline}{newline}Cung là binh khí đánh xa, có thể uy hiếp cả đội hình địch. Cung ghép nhiều lớp: cốt bằng gỗ, bọc sừng, gân làm lớp chịu lực nên vừa dẻo vừa khỏe. Dây cung làm từ tơ hoặc gân, căng như vầng trăng chờ lúc buông tên. Mũi tên có thân tre gỗ, đầu sắt sắc như lá liễu, lông vũ giúp bay nhanh tựa sao băng. Khi lâm trận, kéo cung tròn vành vạnh, tên rời dây tựa chớp.{newline}{newline}Kỵ binh vừa phi ngựa vừa bắn, phát nào trúng phát ấy; bộ binh đồng loạt giương cung, tên bay che khuất trời. Quân địch thấy mưa tên đều phải khiếp đảm." Stage="Youth" Skills="Bow,Athletics" Attribute="Control" TitleType="5" Animation="act_childhood_fierce"/>
+
+    <Option Text="{=*}Chọn một chiếc 【Thủ nỏ】" Description="{=*}【Ngươi sẽ nhận được một chiếc Thủ nỏ】{newline}{newline}Thủ nỏ nhỏ gọn nhưng là lợi khí phòng thân, có thể bắn xa xuyên giáp. Cánh nỏ làm từ gỗ cứng ghép sừng và gân; cơ nỏ bằng đồng sắt, cấu tạo tinh xảo. Bộ phận ngắm giúp lấy chuẩn, lẫy giữ dây và cò nhả tên đúng lúc. Trước trận, nỏ giương căng như trăng tròn, tên lao đi như sao sa.{newline}{newline}Binh sĩ giữ thành nương nỏ ngăn địch áp sát; quân phục kích đồng loạt phát tên khiến đối phương khó thoát. Gặp sức nỏ mạnh, ngay cả áo giáp cũng khó chống đỡ." Stage="Youth" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="Crossbow,Athletics" Attribute="Control" TitleType="6" Animation="act_childhood_apprentice"/>
+    
+    <Option Text="{=*}Đổi lấy một con 【Khoái mã】" Description="{=*}【Ngươi sẽ nhận được một con khoái mã】{newline}{newline}Có binh khí tốt đôi khi vẫn không bằng một con tuấn mã. Giữa thời loạn, dẫu kiếm sắc đến đâu cũng khó sánh với tốc độ của ngựa hay. Con ngựa này thân hình cường tráng, bốn vó nhanh như bay, có thể giúp ngươi vượt hiểm nguy và tìm đường sống giữa thời binh đao." Stage="Youth" ConditionCulture="yongliang,yanzhou,yizhou,yangzhou,jizhou,youzhou,yuzhou,jingzhou,jiaozhou,sili,bingzhou,qingzhou,xuzhou" Skills="Riding,Medicine" Attribute="Endurance" TitleType="9" Animation="act_childhood_athlete"/>
+
+    <!-- 成年 -->
+    <Option Text="{=*}【Võ tốt】     Cầm qua trấn mạc, cờ bay rượu nồng,{newline}             Cưỡi ngựa qua Âm Sơn, kiếm lạnh gió đông." Description="{=*}【Võ tốt】{newline}Áo giáp lạnh sương, kích qua san sát; thiết kỵ tung hoành, quét sạch bụi Hồ.{newline}Tuyết Kỳ Liên soi gió bấc buốt giá, phong sương biên tái rèn nên mũi giáo sắc bén.{newline}Cung giương tròn như trăng, tên bay tựa sao sa; cờ xí chỉ đến đâu, uy thế nhà Hán lan đến đó.{newline}Lập công ghi sử xanh, lưu danh thiên cổ; anh hồn soi đất nước, tiếng thơm truyền mãi về sau.{newline}Đó là tấm lá chắn của xã tắc, xương sống che chở muôn dân." Stage="Adulthood" Skills="Polearm,Riding" Attribute="Vigor" Traits="Valor" Renown="20" Animation="act_childhood_athlete"/>
+          
+    <Option Text="{=*}【Văn lại】     Gấm vóc văn chương thành bài phú,{newline}             Sớm chiều chốn điện, bút sắc tựa đao." Description="{=*}【Văn lại】{newline}Chép điển chương cho muôn đời, dẹp loạn lạc khắp bốn phương.{newline}Trong sáng như trăng, cứng cỏi như sương; thương dân, sáng suốt đến từng việc nhỏ.{newline}Dâng kế yên nước, gây dựng cơ nghiệp; lúc nguy nan nhận mệnh, đặt nền cho quốc gia.{newline}Tâm chí vững tựa non cao, tiết tháo bền như tùng bách.{newline}Trí rộng tựa sông dài biển lớn, hoài bão sáng như sao trời.{newline}Đó là bậc hiền tài của xã tắc, chỗ mong đợi của thiên hạ." Stage="Adulthood" Skills="Steward,Leadership" Attribute="Social" Traits="Calculating" Renown="10" Animation="act_childhood_gracious"/>
+
+    <Option Text="{=*}【Thương nhân】     Đường buôn muôn ngả, mây bay cánh én,{newline}             Tính chuyện hàng hóa, mưu kế dài lâu." Description="{=*}【Thương nhân】{newline}Đào Chu, Y Đốn giàu có bốn phương; họ Lã nhờ “hàng quý” mà vang danh chín châu.{newline}Huyền Cao đem lễ vật khao quân, giải nguy cho nước Trịnh; Phạm Lãi vượt sông, góp công trong nghiệp diệt Ngô.{newline}Đường buôn thông suốt bốn biển, trao đổi hàng hóa khắp nơi. Người giỏi nhìn thời thế có thể góp sức vào vận nước.{newline}Mưu lợi mà không bỏ nghĩa, ở chợ mà chẳng quên lo cho đời; của cải cũng có thể giúp nước hưng thịnh.{newline}Đó là mạch máu của giao thương, trụ cột trong vận mệnh quốc gia." Stage="Adulthood" Skills="Trade,Roguery" Attribute="Cunning" Traits="Calculating" Renown="10" Animation="act_childhood_clever"/>
+
+    <Option Text="{=*}【Du hiệp】     Người đi mang kiếm tám nghìn dặm,{newline}             Trăng lạnh trong chén, khúc ca bi hùng." Description="{=*}【Du hiệp】{newline}Xem nhẹ sinh tử, coi trọng lời hứa; cứu người gặp nạn, giúp kẻ khốn cùng.{newline}Mang kiếm đi khắp thiên hạ, khí phách ngút trời, chí bền tựa sắt đá, nghĩa cao hơn mây.{newline}Kinh Kha hát nơi Dịch Thủy, bi ca rung động lòng người; Nhiếp Chính tuốt kiếm đất Hàn, uy danh chấn động.{newline}Chu Gia che chở Quý Bố, nghĩa khắp bốn phương; Quách Giải cứu người nghèo, tiếng tăm vang chín châu.{newline}Ngựa trắng yên bạc vượt sa mạc, kiếm sắc gan son giữa phong ba.{newline}Đó là hào kiệt trong thiên hạ, nghĩa sĩ lưu danh muôn thuở." Stage="Adulthood" Skills="OneHanded,Crossbow" Attribute="Control" Traits="Honor" Renown="5" Animation="act_childhood_tough"/>
+
+    <Option Text="{=*}【Ẩn sĩ】     Đôi ba thú nhàn nơi non biếc,{newline}             Dăm người buông câu bên suối trong." Description="{=*}【Ẩn sĩ】{newline}Khói lửa thời Tần Hán chẳng che nổi chí khí; bụi trần náo nhiệt cũng không đổi được tấm lòng.{newline}Thanh cao đạm bạc như Bá Di, Thúc Tề; ẩn cư hái rau nơi Thủ Dương, lòng hướng về Sào Phủ, Hứa Do.{newline}Chẳng màng vinh hiển của Quản Trọng, Án Anh, bằng lòng với cảnh thanh bần như Nhan Hồi.{newline}Thà chịu nghèo như Nguyên Hiến, chẳng ham giàu sang của Tử Cống.{newline}Bốn lão núi Thương tránh đời Tần mà ẩn; Kỳ Sơn, Dĩnh Thủy gợi chí sống thuận tự nhiên.{newline}Tiết tháo Bá Di được người đời ngưỡng mộ, Nghiêm Quang nằm cao để lại tiếng thơm.{newline}Đó là bậc cao sĩ giữa núi sông, người thanh nhã từ xưa đến nay." Stage="Adulthood" Skills="Athletics,Charm" Attribute="Intelligence" Traits="Mercy" Renown="5" Animation="act_childhood_ready"/>
+
+    <Option Text="{=*}【Sứ giả】     Công nơi Tây Vực lưu trang sử,{newline}             Trở về còn mang ánh trời nhà Hán." Description="{=*}【Sứ giả】{newline}Mở đường đến Tây Vực, chí bền qua muôn nỗi gian lao; cầm tiết đi vạn dặm, một mình vượt chốn hiểm nguy.{newline}Phong sương đất Hồ không lay chuyển được ý chí; vầng nhật nguyệt nhà Hán vẫn sáng trong tim.{newline}Mang nho và cỏ linh lăng về làm giàu Trung Nguyên; tuấn mã Hãn Huyết thêm uy nghi cho triều đình.{newline}Công trạng Bác Vọng Hầu được ghi trong sử xanh, danh tiếng lưu truyền nghìn thuở.{newline}Đó là tấm gương của sứ thần nhà Hán, bậc lương đống của Hoa Hạ." Stage="Adulthood" Skills="Scouting,Tactics" Attribute="Endurance" Traits="Honor" Renown="15" Animation="act_childhood_ready"/>
+
+  </BackStoryOptions>
+</CharacterCreationConfig>

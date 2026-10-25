@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<quest id="0" title="Nhiệm vụ thử nghiệm" description="Mô tả nhiệm vụ" type="side">
+  <accpt_nodes>
+    <node id="0" name="" type="node_start" out="1"/>
+    <node id="1" name="" type="node_end"/>
+    <node id="1" name="" type="on_talk_quest_town_npc" out="2"/>
+    <node id="2" name="" type="show_talk" out="3">
+      <params>
+        <speaker value="talk_npc"/>
+        <text value="Tướng quân, nay binh đao loạn lạc, giặc cướp nổi lên khắp nơi. Xin tướng quân giúp tôi luyện binh để tự vệ. Tôi xin dâng 800 đồng và hai con ngựa làm phí luyện quân; sau khi xong việc, nhất định còn hậu tạ."/>
+      </params>
+    </node>
+    <node id="3" name="" type="show_talk" out="4">
+      <params>
+        <speaker value="player"/>
+        <text value="Không còn cách nào khác sao?"/>
+      </params>
+    </node>
+    <node id="4" name="" type="show_talk" out="5">
+      <params>
+        <speaker value="talk_npc"/>
+        <text value="Nếu tướng quân bận quân vụ, chỉ cần cử một thuộc hạ tâm phúc, giỏi chiến trận tới giúp là được."/>
+      </params>
+    </node>
+    <node id="5" name="" type="show_talk_options">
+      <outs>
+        <out id="0" value="6"/>
+        <out id="1" value="7"/>
+        <out id="2" value="1"/>
+      </outs>
+      <params>
+        <speaker value="player"/>
+        <options>
+          <option out_bind="0" out_params="{player_character}" value="Đã được nhờ cậy, ta nguyện giúp một tay."/>
+          <option out_bind="1" value="Được, ta sẽ lập tức phái người đi lo liệu."/>
+          <option out_bind="2" value="Quân vụ đang bề bộn, xin thứ lỗi không thể nhận lời."/>
+        </options>
+      </params>
+    </node>
+    <node id="6" name="" type="accept_quest" out="1">
+      <params>
+        <quest value="current_quest"/>
+        <accepter value="{in_params}"/>
+      </params>
+    </node>
+    <node id="7" name="" type="show_select_buddy">
+      <outs>
+        <out id="0" value="6"/>
+        <out id="1" value="5"/>
+      </outs>
+    </node>
+  </accpt_nodes>
+  <objectives>
+  </objectives>
+  <end_actions>
+  </end_actions>
+  <failure_actions>
+  </failure_actions>
+</quest>

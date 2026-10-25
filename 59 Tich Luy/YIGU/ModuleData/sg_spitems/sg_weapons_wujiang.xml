@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<CraftedItem
+		id="lz_guanyu_01"
+		name="{=*}【Thần binh III】Thanh Long Yển Nguyệt Đao"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_guanyu_blade"
+				Type="Blade"
+				scale_factor="170" />
+			<Piece
+				id="sg_t5_spear_guard_019"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_guanyu_handle"
+				Type="Handle"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_lvbu_01"
+		name="{=*}【Thần binh III】Phương Thiên Họa Kích"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_lvbu_blade"
+				Type="Blade"
+				scale_factor="110" />
+			<Piece
+				id="sg_t5_spear_guard_019"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_lvbu_handle"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_lvwen_01"
+		name="{=*}【Thần binh III】Đoản Phương Thiên Họa Kích"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_lvbu_blade"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_019"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_lvbu_handle"
+				Type="Handle"
+				scale_factor="90" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_huangzhong_01"
+		name="{=*}【Thần binh III】Xích Huyết Đao"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_huangzhong_blade"
+				Type="Blade"
+				scale_factor="150" />
+			<Piece
+				id="sg_t5_spear_guard_022"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_huangzhong_handle"
+				Type="Handle"
+				scale_factor="110" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<Item
+		id="lz_bow_jiang"
+		name="{=*}【Thần binh III】Điêu Cung Mười Hai Thạch"
+		body_name="bo_sg_longbow_003"
+		mesh="sg_longbow_003"
+		weight="0.45"
+		difficulty="70"
+		appearance="0.1"
+		value="450000"
+		Type="Bow"
+		item_holsters="bow_hip:bow_hip_2:bow_back:bow_back_2">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Bow"
+				ammo_class="Arrow"
+				ammo_limit="1"
+				thrust_speed="50"
+				speed_rating="50"
+				missile_speed="107"
+				weapon_length="113"
+				accuracy="112"
+				thrust_damage="148"
+				thrust_damage_type="Pierce"
+				item_usage="bow"
+				physics_material="wood_weapon"
+				center_of_mass="0.1,0,-0.15"
+				modifier_group="bow">
+				<WeaponFlags
+					RangedWeapon="true"
+					HasString="true"
+					StringHeldByHand="true"
+					NotUsableWithOneHand="true"
+					TwoHandIdleOnMount="true"
+					AutoReload="true"
+					UnloadWhenSheathed="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags
+			ForceAttachOffHandPrimaryItemBone="true" />
+	</Item>
+	<Item
+		id="lz_arrow_jiang"
+		name="{=*}【Thần binh III】Lệnh Tiễn Tướng Quân"
+		body_name="bo_capsule_arrow"
+		holster_body_name="bo_axe_short"
+		mesh="arrow_bl_a"
+		holster_mesh="arrow_bl_a_quiver"
+		holster_mesh_with_weapon="arrow_bl_a_quiver"
+		subtype="arrows"
+		flying_mesh="arrow_bl_flying"
+		weight="0.2"
+		is_merchandise="true"
+		difficulty="90"
+		appearance="0.1"
+		value="50000"
+		Type="Arrows"
+		item_holsters="quiver_back_top:quiver_back_top_2"
+		holster_position_shift="0,0,0.15">
+		<ItemComponent>
+			<Weapon
+				weapon_class="Arrow"
+				stack_amount="5"
+				thrust_speed="0"
+				speed_rating="0"
+				physics_material="missile"
+				missile_speed="10"
+				weapon_length="97"
+				thrust_damage="79"
+				thrust_damage_type="Pierce"
+				item_usage="arrow_top"
+				passby_sound_code="event:/mission/combat/missile/passby"
+				rotation="0, -80, 25"
+				sticking_position="0,-0.97,0"
+				sticking_rotation="90,0,0"
+				center_of_mass="0,0.0,-0.13"
+				modifier_group="arrow">
+				<WeaponFlags
+					Consumable="true"
+					AmmoSticksWhenShot="true"
+					CanKnockDown="true"
+					CanPenetrateShield="true"
+					MultiplePenetration="true"
+					AmmoBreaksOnBounceBack="true" />
+			</Weapon>
+		</ItemComponent>
+		<Flags />
+	</Item>
+	<CraftedItem
+		id="lz_zhaoyun_01"
+		name="{=*}【Thần binh III】Lượng Ngân Thương"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_zhaoyun_blade"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="120" />
+			<Piece
+				id="lz_zhaoyun_handle"
+				Type="Handle"
+				scale_factor="190" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_machao_01"
+		name="{=*}【Thần binh III】Hổ Đầu Trạm Kim Thương"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_machao_blade"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_013"
+				Type="Guard"
+				scale_factor="95" />
+			<Piece
+				id="lz_machao_handle"
+				Type="Handle"
+				scale_factor="180" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_zhangfei_01"
+		name="{=*}【Thần binh III】Trượng Bát Xà Mâu"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_zhangfei_blade"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="120" />
+			<Piece
+				id="lz_zhangfei_handle"
+				Type="Handle"
+				scale_factor="150" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_gongsunzan_01"
+		name="{=*}【Thần binh III】Bạch Mã Sóc"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_gongsunzan_blade"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="120" />
+			<Piece
+				id="lz_gongsunzan_handle"
+				Type="Handle"
+				scale_factor="170" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_xuhuang_01"
+		name="{=*}【Thần binh III】Khai Sơn Phủ"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_xuhuang_blade"
+				Type="Blade"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_spear_guard_022"
+				Type="Guard"
+				scale_factor="150" />
+			<Piece
+				id="lz_xuhuang_handle"
+				Type="Handle"
+				scale_factor="90" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_sunce_01"
+		name="{=*}【Thần binh III】Bá Vương Thương"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_sunce_blade"
+				Type="Blade"
+				scale_factor="140" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_sunce_handle"
+				Type="Handle"
+				scale_factor="130" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_chengpu_01"
+		name="{=*}【Thần binh III】Thiết Tích Xà Mâu"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="450000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_chengpu_blade"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_chengpu_handle"
+				Type="Handle"
+				scale_factor="130" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_dadao_01"
+		name="{=*}【Thần binh II】Đại đao nghi trượng nhà Hán"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="50000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_dadao01_blade"
+				Type="Blade"
+				scale_factor="150" />
+			<Piece
+				id="sg_t5_spear_guard_022"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_dadao01_handle"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_changqiang_01"
+		name="{=*}【Thần binh II】Trường thương nghi trượng nhà Hán"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="50000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_changqiang01_blade"
+				Type="Blade"
+				scale_factor="160" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_changqiang01_handle"
+				Type="Handle"
+				scale_factor="130" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_sanlianji_01"
+		name="{=*}【Thần binh II】Tam liên kích nghi trượng nhà Hán"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="50000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_sanlianji01_blade"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_sanlianji01_handle"
+				Type="Handle"
+				scale_factor="140" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_changji_01"
+		name="{=*}【Thần binh II】Trường kích nghi trượng nhà Hán"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="50000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_changji01_blade"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_changji01_handle"
+				Type="Handle"
+				scale_factor="130" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_danbianhuaji_01"
+		name="{=*}【Thần binh II】Họa kích một cánh nghi trượng nhà Hán"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="50000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_danbianhuaji01_blade"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_danbianhuaji01_handle"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_shuangbianhuaji_01"
+		name="{=*}【Thần binh II】Họa kích hai cánh nghi trượng nhà Hán"
+		crafting_template="SG_TwoHandedPolearm"
+		is_merchandise="true"
+		value="50000"
+		culture="Culture.yongliang">
+		<Pieces>
+			<Piece
+				id="lz_shuangbianhuaji01_blade"
+				Type="Blade"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_spear_guard_018"
+				Type="Guard"
+				scale_factor="100" />
+			<Piece
+				id="lz_shuangbianhuaji01_blade"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_pommel_a_005"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_hanjian_01"
+		name="{=*}【Thần binh II】Hán kiếm tám mặt trang sức ngọc nghi trượng"
+		crafting_template="SG_OneHandedSword"
+		culture="Culture.yongliang"
+		value="50000"
+		is_merchandise="true">
+		<Pieces>
+			<Piece
+				id="sg_t5_sword_blade_004_1h"
+				Type="Blade"
+				scale_factor="140" />
+			<Piece
+				id="sg_t5_sword_guard_006"
+				Type="Guard"
+				scale_factor="80" />
+			<Piece
+				id="sg_sword_grip_014_1h"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_sword_pommel_005"
+				Type="Pommel"
+				scale_factor="80" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_huanshoudao_01"
+		name="{=*}【Thần binh II】Đao hoàn thủ cong vào bách luyện nghi trượng nhà Hán"
+		crafting_template="SG_OneHandedSword"
+		culture="Culture.yongliang"
+		value="50000"
+		is_merchandise="true">
+		<Pieces>
+			<Piece
+				id="sg_t5_sword_blade_001_1h"
+				Type="Blade"
+				scale_factor="140" />
+			<Piece
+				id="sg_t4_sword_grip_001_1h"
+				Type="Handle"
+				scale_factor="100" />
+			<Piece
+				id="sg_t5_sword_pommel_009"
+				Type="Pommel"
+				scale_factor="100" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_caocao_01"
+		name="{=*}【Thần binh II】Ỷ Thiên Kiếm"
+		crafting_template="SG_OneHandedSword"
+		culture="Culture.yongliang"
+		value="50000"
+		is_merchandise="true">
+		<Pieces>
+			<Piece
+				id="sg_t5_sword_blade_006_both"
+				Type="Blade"
+				scale_factor="140" />
+			<Piece
+				id="sg_t5_sword_guard_006"
+				Type="Guard"
+				scale_factor="80" />
+			<Piece
+				id="sg_t4_sword_grip_003_1h"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_sword_pommel_005"
+				Type="Pommel"
+				scale_factor="70" />
+		</Pieces>
+	</CraftedItem>
+	<CraftedItem
+		id="lz_liubei_01"
+		name="{=*}【Thần binh II】Hán Thiên Tử Kiếm"
+		crafting_template="SG_OneHandedSword"
+		culture="Culture.yongliang"
+		value="50000"
+		is_merchandise="true">
+		<Pieces>
+			<Piece
+				id="sg_t5_sword_blade_006_both"
+				Type="Blade"
+				scale_factor="150" />
+			<Piece
+				id="sg_t5_sword_guard_006"
+				Type="Guard"
+				scale_factor="80" />
+			<Piece
+				id="sg_t4_sword_grip_003_1h"
+				Type="Handle"
+				scale_factor="120" />
+			<Piece
+				id="sg_t5_sword_pommel_005"
+				Type="Pommel"
+				scale_factor="70" />
+		</Pieces>
+	</CraftedItem>
+	<Item
+		id="lz_horse_zhaoyun"
+		name="【Thần binh III】Dạ Chiếu Ngọc Sư Tử"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="300"
+		appearance="0"
+		value="150000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="71"
+				speed="73"
+				charge_damage="37"
+				body_length="122"
+				is_mountable="true"
+				extra_health="240"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_youzhou"
+		name="【Thần binh II】U Vân Bạch Ngọc Câu"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="242"
+		appearance="0"
+		value="50000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="68"
+				speed="68"
+				charge_damage="29"
+				body_length="120"
+				is_mountable="true"
+				extra_health="240"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_dilu"
+		name="【Thần binh III】Đích Lư Mã"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="300"
+		appearance="0"
+		value="150000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="68"
+				speed="71"
+				charge_damage="33"
+				body_length="120"
+				is_mountable="true"
+				extra_health="290"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_dilu_2"
+		name="【Thần binh II】Đích Lư Mã (bản khắc chủ)"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="250"
+		appearance="0"
+		value="50000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="48"
+				speed="83"
+				charge_damage="33"
+				body_length="120"
+				is_mountable="true"
+				extra_health="290"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_yizhou"
+		name="【Thần binh II】Quan mã Dịch Môn Nam quân"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		difficulty="210"
+		appearance="0"
+		value="50000"
+		is_merchandise="true"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="69"
+				speed="65"
+				charge_damage="26"
+				body_length="120"
+				is_mountable="true"
+				extra_health="210"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_lvbu"
+		name="【Thần binh III】Xích Thố Mã"
+		mesh="horse_brown"
+		item_category="noble_horse"
+		culture="Culture.yongliang"
+		is_merchandise="true"
+		subtype="horse"
+		weight="570"
+		difficulty="300"
+		appearance="0"
+		value="150000"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="70"
+				speed="78"
+				charge_damage="36"
+				body_length="129"
+				is_mountable="true"
+				extra_health="220"
+				modifier_group="horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_brown_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_jingzhou_01"
+		name="【Thần binh II】Hoàng Tông Mã"
+		mesh="horse_brown"
+		is_merchandise="true"
+		item_category="noble_horse"
+		subtype="horse"
+		culture="Culture.yongliang"
+		weight="550"
+		value="50000"
+		difficulty="300"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="60"
+				speed="67"
+				charge_damage="31"
+				body_length="116"
+				is_mountable="true"
+				extra_health="245"
+				modifier_group="horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="steppe_horse">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_zhongyuan_01"
+		name="【Thần binh II】Chiến mã Trung Lũy doanh Bắc quân"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		is_merchandise="true"
+		culture="Culture.yanzhou"
+		weight="520"
+		difficulty="210"
+		appearance="0"
+		value="50000"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="62"
+				speed="75"
+				charge_damage="35"
+				body_length="126"
+				is_mountable="true"
+				extra_health="250"
+				skeleton_scale="empire_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_brown_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_jizhou_01"
+		name="【Thần binh II】Chiến mã Đồn Kỵ doanh Bắc quân"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		is_merchandise="true"
+		culture="Culture.yanzhou"
+		weight="520"
+		difficulty="300"
+		appearance="0"
+		value="50000"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="60"
+				speed="70"
+				charge_damage="35"
+				body_length="126"
+				is_mountable="true"
+				extra_health="250"
+				skeleton_scale="empire_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_brown_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_white_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="1.0" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_southwest_01"
+		name="【Thần binh II】Hoàng Phiêu Mã Tây Nam"
+		mesh="horse_brown"
+		subtype="horse"
+		item_category="noble_horse"
+		culture="Culture.youzhou"
+		weight="500"
+		value="50000"
+		difficulty="300"
+		appearance="0"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="75"
+				speed="73"
+				charge_damage="30"
+				body_length="130"
+				is_mountable="true"
+				extra_health="260"
+				skeleton_scale="sturgia_horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane_2"
+						affected_by_cover="true" />
+					<Mesh
+						name="horse_trotter" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="horse_black_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF010101"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+					<Material
+						name="horse_grey_mat">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF303030"
+								percentage="0.75" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+	<Item
+		id="lz_horse_yongliang_01"
+		name="【Thần binh III】Ngự mã Thượng Lâm Uyển Bắc quân"
+		mesh="horse_brown"
+		is_merchandise="true"
+		item_category="noble_horse"
+		subtype="horse"
+		culture="Culture.yongliang"
+		weight="550"
+		value="50000"
+		difficulty="300"
+		Type="Horse">
+		<ItemComponent>
+			<Horse
+				monster="Monster.horse"
+				maneuver="60"
+				speed="77"
+				charge_damage="36"
+				body_length="126"
+				is_mountable="true"
+				extra_health="245"
+				modifier_group="horse">
+				<AdditionalMeshes>
+					<Mesh
+						name="horse_mane"
+						affected_by_cover="true" />
+				</AdditionalMeshes>
+				<Materials>
+					<Material
+						name="steppe_horse">
+						<MeshMultipliers>
+							<MeshMultiplier
+								mesh_multiplier="FF08080B"
+								percentage="1.0" />
+							<MeshMultiplier
+								mesh_multiplier="FF909090"
+								percentage="0.25" />
+						</MeshMultipliers>
+					</Material>
+				</Materials>
+			</Horse>
+		</ItemComponent>
+		<Flags
+			Civilian="true" />
+	</Item>
+    <Item id="lz_cloth_wenguan" 
+        name="{=*}【Quan phục】Triều phục văn quan nhà Hán" 
+        mesh="sg_npc_wenguan_body_black" 
+        weight="13.2" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="false" 
+           Civilian="true" />
+	</Item>
+    <Item id="lz_cloth_wuguan" 
+        name="{=*}【Quan phục】Triều phục võ quan nhà Hán" 
+        mesh="sg_npc_wenguan_body_red" 
+        weight="13.2" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="false" 
+           Civilian="true" />
+	</Item>
+	<Item id="lz_head_wenguan"
+        name="{=*}【Quan phục】Tiểu quan văn quan"
+        subtype="head_armor"
+        mesh="ar_c05_g008_head"
+        culture="Culture.jizhou"
+        weight="0.3"
+        difficulty="0" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="10"
+           hair_cover_type="none"
+           has_gender_variations="false"
+           modifier_group="cloth_unarmoured" 
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_shufa_wenguan"
+        name="{=*}【Quan phục】Búi tóc văn quan"
+        subtype="head_armor"
+        mesh="ar_c05_s1001_hair"
+        culture="Culture.jizhou"
+        weight="0.1"
+        difficulty="0" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="45"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+  <Item id="lz_jinxianguan_wenguan"
+        name="{=*}【Quan phục】Mũ Tiến Hiền của văn quan"
+        subtype="head_armor"
+        mesh="sg_npc_wenguan_head"
+        weight="0.1"
+        difficulty="1" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="45"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_wenguan_armor" 
+        name="{=*}【Quan phục】Khinh giáp da chiến trường cho văn quan" 
+        mesh="ar_c01_s009_body" 
+        culture="Culture.yongliang" 
+        weight="1.5" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="69" 
+             leg_armor="53" 
+             arm_armor="53" 
+             covers_body="false" 
+             modifier_group="leather"
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	<Item id="lz_head_wuguan"
+        name="{=*}【Quan phục】Mũ triều phục võ quan"
+        subtype="head_armor"
+        mesh="ar_c01_g001_head"
+        culture="Culture.yongliang"
+        weight="0.8"
+        difficulty="0" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="7"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+		<Item id="lz_head_nv_01"
+        name="{=*}【Quan phục】Khăn vấn tóc thiếu nữ thế gia"
+        subtype="head_armor"
+        mesh="ar_c01_g015_head"
+        culture="Culture.yongliang"
+        weight="0.5"
+        difficulty="0" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="45"
+           has_gender_variations="false"
+           hair_cover_type="type1"
+           modifier_group="leather"
+           material_type="Leather" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+	<Item id="lz_head_nv_02"
+        name="{=*}【Quan phục】Khăn vấn tóc thiếu nữ thế gia"
+        subtype="head_armor"
+        mesh="ar_c01_g015_head_old_a"
+        culture="Culture.yongliang"
+        weight="0.1"
+        difficulty="0" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="HeadArmor">
+	  <ItemComponent>
+		<Armor head_armor="40"
+           has_gender_variations="false"
+           hair_cover_type="all"
+           modifier_group="cloth_unarmoured"
+           material_type="Cloth" />
+	  </ItemComponent>
+	  <Flags UseTeamColor="true" 
+                Civilian="true" />
+	</Item>
+    <Item id="lz_cloth_nv_01" 
+        name="{=*}【Quan phục】Thâm y thường phục thiếu nữ thế gia" 
+        mesh="sg_npc_maid_body" 
+        weight="13.2" 
+        appearance="0" 
+		value="-1"
+		is_merchandise="false"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="45" 
+             covers_body="true" 
+             modifier_group="cloth_unarmoured" 
+             material_type="Cloth" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+	    <Item id="lz_cloth_troop_01" 
+        name="{=*}【Quan phục】Nhung phục nhà Hán" 
+        mesh="cl_c08_s3002_body" 
+        culture="Culture.jingzhou" 
+        weight="1.1" 
+        appearance="0.1" 
+		value="-1"
+		is_merchandise="false"
+        Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="11" 
+             leg_armor="6" 
+             arm_armor="6" 
+             covers_body="true" 
+             modifier_group="leather" 
+             material_type="Leather" />
+		</ItemComponent>
+		<Flags UseTeamColor="true" 
+           Civilian="true" />
+	</Item>
+		<Item id="lz_arm_nv_01"
+        name="{=*}【Quan phục】Vòng cổ tay trang sức" 
+        mesh="ar_c06_g002_arm" 
+        culture="Culture.youzhou"
+        weight="0.13" 
+        appearance="0.1" 
+		is_merchandise="false"
+		value="-1"
+        Type="HandArmor">
+		<ItemComponent>
+			<Armor arm_armor="25" 
+             covers_hands="false" 
+             modifier_group="plate" 
+             material_type="Plate" />
+		</ItemComponent>
+		<Flags UseTeamColor="false" 
+               Civilian="true" />
+	</Item>
+</Items>

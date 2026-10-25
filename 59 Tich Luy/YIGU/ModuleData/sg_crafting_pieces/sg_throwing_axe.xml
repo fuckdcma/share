@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CraftingPieces>
+  <!-- T1 -->
+  <!-- T1: 刃 -->
+	<CraftingPiece id="sg_t1_throwing_axe_head_001" name="{=*}Lưỡi rìu bằng sắt" tier="1" piece_type="Blade" mesh="sg_t1_axe_head_001" distance_to_next_piece="8.92" distance_to_previous_piece="2.16" weight="0.632" is_default="true">
+		<BuildData piece_offset="-8"/>
+		<BladeData stack_amount="3" blade_length="13.7" blade_width="15.1" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t1_throwing_axe_head_002" name="{=*}Lưỡi phủ bằng sắt" tier="1" piece_type="Blade" mesh="sg_t1_axe_head_002" distance_to_next_piece="6.27" distance_to_previous_piece="1.65" weight="0.632" is_default="true">
+		<BuildData piece_offset="-8"/>
+		<BladeData stack_amount="3" blade_length="9.67" blade_width="17.6" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t1_throwing_axe_head_003" name="{=*}Lưỡi qua bằng sắt" tier="1" piece_type="Blade" mesh="r_sg_t1_axe_head_003" distance_to_next_piece="10.7" distance_to_previous_piece="-6.2" weight="0.632" is_default="true">
+		<BuildData piece_offset="-2"/>
+		<BladeData stack_amount="3" blade_length="15.5" blade_width="25.7" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t1_throwing_axe_head_004" name="{=*}Lưỡi việt bằng sắt" tier="1" piece_type="Blade" mesh="sg_t1_axe_head_004" distance_to_next_piece="8.98" distance_to_previous_piece="2.1" weight="0.632" is_default="true">
+		<BuildData piece_offset="-8"/>
+		<BladeData stack_amount="3" blade_length="13.7" blade_width="17.3" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+
+  <!-- T2 -->
+  <!-- T2: 刃 -->
+	<CraftingPiece id="sg_t2_throwing_axe_head_001" name="{=*}Lưỡi việt hình đuôi thú bằng thép" tier="2" piece_type="Blade" mesh="r_sg_t2_axe_head_001" distance_to_next_piece="7.63" distance_to_previous_piece="2.71" weight="0.632">
+		<BuildData piece_offset="-8"/>
+		<BladeData stack_amount="3" blade_length="11.7" blade_width="21.7" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.7"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t2_throwing_axe_head_002" name="{=*}Lưỡi qua đeo vòng đồng bằng thép" tier="2" piece_type="Blade" mesh="r_sg_t2_axe_head_002" distance_to_next_piece="10.4" distance_to_previous_piece="-4.72" weight="0.632">
+		<BuildData piece_offset="-1"/>
+		<BladeData stack_amount="3" blade_length="14.9" blade_width="25.3" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.7"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t2_throwing_axe_head_003" name="{=*}Lưỡi phủ hình đuôi mây bằng thép" tier="2" piece_type="Blade" mesh="r_sg_t2_axe_head_003" distance_to_next_piece="6.74" distance_to_previous_piece="2.12" weight="0.632">
+		<BuildData piece_offset="-7"/>
+		<BladeData stack_amount="3" blade_length="10.4" blade_width="17.6" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.7"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t2_throwing_axe_head_004" name="{=*}Lưỡi qua hình đoản kiếm bằng thép" tier="2" piece_type="Blade" mesh="r_sg_t2_axe_head_004" distance_to_next_piece="5.24" distance_to_previous_piece="1.28" weight="0.632">
+		<BuildData piece_offset="-6"/>
+		<BladeData stack_amount="3" blade_length="8.06" blade_width="18" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.7"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t2_throwing_axe_head_005" name="{=*}Lưỡi qua có mép sau thẳng bằng thép" tier="2" piece_type="Blade" mesh="r_sg_t2_axe_head_005" distance_to_next_piece="9.38" distance_to_previous_piece="-2.02" weight="0.632">
+		<BuildData piece_offset="-1.4"/>
+		<BladeData stack_amount="3" blade_length="13.2" blade_width="23.2" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.7"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t2_throwing_axe_head_006" name="{=*}Lưỡi qua có mép sau cong bằng thép" tier="2" piece_type="Blade" mesh="r_sg_t2_axe_head_006" distance_to_next_piece="11.4" distance_to_previous_piece="-3.9" weight="0.632">
+		<BuildData piece_offset="-1"/>
+		<BladeData stack_amount="3" blade_length="17.3" blade_width="27.3" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="1.7"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+
+  <!-- T3 -->
+  <!-- T3: 刃 -->
+	<CraftingPiece id="sg_t3_throwing_axe_head_001" name="{=*}Lưỡi qua bản rộng chạm đầu thú bằng thép tinh luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_axe_head_001" distance_to_next_piece="5.64" distance_to_previous_piece="-3.95" weight="0.632">
+		<BuildData piece_offset="-3"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t3_throwing_axe_head_002" name="{=*}Lưỡi kích chữ Bốc với ống lắp đồng thau bằng thép tinh luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_axe_head_002" distance_to_next_piece="15.7" distance_to_previous_piece="9.6" weight="0.632">
+		<BuildData piece_offset="-2"/>
+		<BladeData stack_amount="3" blade_length="31.5" blade_width="20.1" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t3_throwing_axe_head_003" name="{=*}Lưỡi kích chữ Bốc bốn lỗ với ống lắp đồng thau bằng thép tinh luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_axe_head_003" distance_to_next_piece="13.5" distance_to_previous_piece="-4.3" weight="0.632">
+		<BuildData piece_offset="-2.5"/>
+		<BladeData stack_amount="3" blade_length="27" blade_width="20.6" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t3_throwing_axe_head_004" name="{=*}Lưỡi rìu chạm vân sóng biển bằng thép tinh luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_axe_head_004" distance_to_next_piece="6.1" distance_to_previous_piece="4.49" weight="0.632">
+		<BuildData piece_offset="-12"/>
+		<BladeData stack_amount="3" blade_length="9.49" blade_width="15.5" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t3_throwing_axe_head_005" name="{=*}Lưỡi việt hình đuôi cá bằng thép tinh luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_axe_head_005" distance_to_next_piece="7.26" distance_to_previous_piece="1.65" weight="0.632">
+		<BuildData piece_offset="-7"/>
+		<BladeData stack_amount="3" blade_length="11.2" blade_width="17.2" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t3_throwing_axe_head_006" name="{=*}Lưỡi việt hình sóng biển bằng thép tinh luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_axe_head_006" distance_to_next_piece="6.62" distance_to_previous_piece="2.72" weight="0.632">
+		<BuildData piece_offset="-9"/>
+		<BladeData stack_amount="3" blade_length="10.2" blade_width="15.9" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.2"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+
+  <!-- T4 -->
+  <!-- T4: 刃 -->
+	<CraftingPiece id="sg_t4_throwing_axe_head_001" name="{=*}Lưỡi qua ba đầu với ống lắp vàng ròng bằng thép bách luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_axe_head_001" distance_to_next_piece="5.23" distance_to_previous_piece="4.2" weight="0.632">
+		<BuildData piece_offset="-2"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.8"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t4_throwing_axe_head_002" name="{=*}Lưỡi việt hình đầu cá bằng thép bách luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_axe_head_002" distance_to_next_piece="5.54" distance_to_previous_piece="1.55" weight="0.632">
+		<BuildData piece_offset="-7"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.8"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t4_throwing_axe_head_003" name="{=*}Lưỡi qua hai đầu với ống lắp vàng ròng bằng thép bách luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_axe_head_003" distance_to_next_piece="9.9" distance_to_previous_piece="2.78" weight="0.632">
+		<BuildData piece_offset="-2"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.8"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t4_throwing_axe_head_004" name="{=*}Lưỡi rìu hình đầu cá bằng thép bách luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_axe_head_004" distance_to_next_piece="4.33" distance_to_previous_piece="1" weight="0.632">
+		<BuildData piece_offset="-5"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.8"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t4_throwing_axe_head_005" name="{=*}Lưỡi kích chữ Bốc với ống lắp vàng ròng bằng thép bách luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_axe_head_005" distance_to_next_piece="23.8" distance_to_previous_piece="-6.6" weight="0.632">
+		<BuildData piece_offset="-2.5"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.8"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t4_throwing_axe_head_006" name="{=*}Lưỡi qua khảm vàng hình hổ phù bằng thép bách luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_axe_head_006" distance_to_next_piece="6.97" distance_to_previous_piece="6.1" weight="0.632">
+		<BuildData piece_offset="-2"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="2.8"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+
+  <!-- T5 -->
+  <!-- T5: 刃 -->
+	<CraftingPiece id="sg_t5_throwing_axe_head_001" name="{=*}Lưỡi kích chữ Bốc với ống lắp vàng ròng mang phù rồng bằng thép bách luyện" tier="5" piece_type="Blade" mesh="r_sg_t5_axe_head_001" distance_to_next_piece="24.5" distance_to_previous_piece="2.25" weight="0.632">
+		<BuildData piece_offset="-2"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="3.3"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t5_throwing_axe_head_002" name="{=*}Lưỡi qua hai đầu với ống lắp vàng ròng chạm hoa văn chìm bằng thép bách luyện" tier="5" piece_type="Blade" mesh="r_sg_t5_axe_head_002" distance_to_next_piece="27.5" distance_to_previous_piece="0" weight="0.632">
+		<BuildData piece_offset="-2.5"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="3.3"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t5_throwing_axe_head_003" name="{=*}Lưỡi qua bản rộng với ống lắp vàng ròng chạm chim vàng và hoa văn chìm bằng thép bách luyện" tier="5" piece_type="Blade" mesh="r_sg_t5_axe_head_003" distance_to_next_piece="8.43" distance_to_previous_piece="5.38" weight="0.632">
+		<BuildData piece_offset="-2.5"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="3.3"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t5_throwing_axe_head_004" name="{=*}Lưỡi họa kích với ống lắp vàng ròng chạm hoa văn chìm bằng thép bách luyện" tier="5" piece_type="Blade" mesh="r_sg_t5_axe_head_004" distance_to_next_piece="16.2" distance_to_previous_piece="5.81" weight="0.632">
+		<BuildData piece_offset="-2.5"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="3.3"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t5_throwing_axe_head_005" name="{=*}Lưỡi phủ thương với ống lắp vàng ròng chạm hoa văn chìm bằng thép bách luyện" tier="5" piece_type="Blade" mesh="r_sg_t5_axe_head_005" distance_to_next_piece="9.58" distance_to_previous_piece="3.98" weight="0.632">
+		<BuildData piece_offset="-2.5"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="3.3"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t5_throwing_axe_head_006" name="{=*}Lưỡi kích bằng thép bách luyện, ống lắp vàng ròng chạm hoa văn chìm" tier="5" piece_type="Blade" mesh="r_sg_t5_axe_head_006" distance_to_next_piece="14.7" distance_to_previous_piece="2.43" weight="0.632">
+		<BuildData piece_offset="-2"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="3.3"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+	<CraftingPiece id="sg_t5_throwing_axe_head_007" name="{=*}Lưỡi qua với ống lắp vàng ròng chạm hoa văn chìm bằng thép bách luyện" tier="5" piece_type="Blade" mesh="r_sg_t5_axe_head_007" distance_to_next_piece="10.3" distance_to_previous_piece="1.57" weight="0.632">
+		<BuildData piece_offset="-2.5"/>
+		<BladeData stack_amount="3" blade_length="11.3" blade_width="19" physics_material="metal_weapon" body_name="bo_axe_longer_b" holster_mesh="throwing_axe_quiver_1">
+			<Swing damage_type="Cut" damage_factor="3.3"/>
+		</BladeData>
+		<Flags>
+			<Flag name="CanBePickedUpFromCorpse" type="ItemFlags"/>
+			<Flag name="BonusAgainstShield"/>
+		</Flags>
+		<Materials>
+			<Material id="Iron1" count="2"/>
+		</Materials>
+	</CraftingPiece>
+</CraftingPieces>

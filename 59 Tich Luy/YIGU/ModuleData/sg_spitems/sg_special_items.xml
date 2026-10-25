@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+	<!-- 名马 -->
+
+	<!-- 特殊武器 -->
+		<CraftedItem id="sg_special_wuqi_01"
+				name="Lương đao khắc chữ Từ"
+				crafting_template="SG_OneHandedSword"
+				is_merchandise="false"
+				culture="Culture.yongliang">
+				<Pieces>
+				<Piece id="sg_t4_sword_blade_006_both"
+							Type="Blade"
+							scale_factor="110"/>
+				<Piece id="sg_sword_guard_012"
+							Type="Guard"/>
+				<Piece id="sg_t4_sword_grip_001_1h"
+							Type="Handle"
+							scale_factor="110"/>
+				<Piece id="sg_sword_pommel_016"
+							Type="Pommel"
+							scale_factor="95"/>
+				</Pieces>
+		</CraftedItem>
+		<CraftedItem id="sg_special_wuqi_02"
+					name="Sát Phạt"
+					crafting_template="SG_TwoHandedSword"
+					is_merchandise="false"
+					culture="Culture.sili">
+			<Pieces>
+				<Piece id="sg_sword_blade_012_2h_special"
+							Type="Blade"
+							scale_factor="134"/>
+				<Piece id="sg_sword_guard_010"
+							Type="Guard"
+							scale_factor="134"/>
+				<Piece id="sg_sword_grip_010_2h"
+							Type="Handle"
+							scale_factor="134"/>
+				<Piece id="sg_t4_sword_pommel_005"
+							Type="Pommel"/>
+			</Pieces>
+		</CraftedItem>
+	<!-- 特殊材料 -->
+	<Item id="darksteel" 
+		name="Huyền thiết thiên ngoại" 
+		mesh="steel" 
+		item_category="sho_unassigned" 
+		is_merchandise="false" 
+		value="1" 
+		weight="50.0" 
+		Type = "Goods" >
+        <Flags Civilian="true"/>
+    </Item>
+	<Item id="beifangshizulingpai" 
+		name="Lệnh bài các thị tộc phương Bắc" 
+		mesh="wj_lingpai_a" 
+		item_category="sho_unassigned" 
+		is_merchandise="false" 
+		value="1000" 
+		weight="0.1" 
+		Type = "Goods" >
+        <Flags Civilian="true"/>
+    </Item>
+	<Item id="soldier_level_3" 
+		name="Bộ trang bị thăng cấp binh sĩ bậc ba" 
+		mesh="steel" 
+		is_merchandise="false" 
+		item_category="soldier_level_3" 
+		value="1" 
+		weight="10.0"  
+		Type = "Goods" >
+        <Flags Civilian="true"/>
+    </Item>
+	<Item id="soldier_level_4" 
+		name="Bộ trang bị thăng cấp binh sĩ bậc bốn" 
+		mesh="steel" 
+		item_category="soldier_level_4" 
+		is_merchandise="false" 
+		value="1" 
+		weight="15.0" 
+		Type = "Goods" >
+        <Flags Civilian="true"/>
+    </Item>
+	<Item id="soldier_level_5" 
+		name="Bộ trang bị thăng cấp binh sĩ bậc năm" 
+		mesh="steel" 
+		item_category="soldier_level_5" 
+		is_merchandise="false" 
+		value="1" 
+		weight="20.0"
+		Type = "Goods" >
+        <Flags Civilian="true"/>
+    </Item>
+	<Item id="soldier_level_6" 
+		name="Bộ trang bị thăng cấp binh sĩ bậc sáu" 
+		mesh="steel" 
+		item_category="soldier_level_6" 
+		is_merchandise="false" 
+		value="1" 
+		weight="25.0" 
+		Type = "Goods" >
+        <Flags Civilian="true"/>
+    </Item>
+	<Item id="soldier_level_7" 
+		name="Bộ trang bị thăng cấp binh sĩ bậc bảy" 
+		mesh="steel" 
+		item_category="soldier_level_7" 
+		is_merchandise="false" 
+		value="1" 
+		weight="30.0" 
+		Type = "Goods" >
+        <Flags Civilian="true"/>
+    </Item>
+</Items>

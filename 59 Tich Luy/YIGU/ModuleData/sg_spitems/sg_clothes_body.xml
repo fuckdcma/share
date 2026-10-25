@@ -1,0 +1,1356 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Items>
+<!-- 雍凉 -->
+	<Item id="sg_cl_c01_farmer001_body" name="{=*}Áo vải nông dân" mesh="cl_c01_farmer001_body" culture="Culture.yongliang" weight="0.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" leg_armor="1" arm_armor="1" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s001_body_a" name="{=*}Áo ngắn rách màu trơn" mesh="ar_c01_s001_body_a" culture="Culture.yongliang" weight="0.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" leg_armor="1" arm_armor="1" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s001_body_b" name="{=*}Áo không tay màu trơn" mesh="ar_c01_s001_body_b" culture="Culture.yongliang" weight="0.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" leg_armor="2" arm_armor="0" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s002_body" name="{=*}Áo ngắn tay hẹp vạt thẳng màu trơn" mesh="ar_c01_s002_body" culture="Culture.yongliang" weight="1.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4" leg_armor="2" arm_armor="1" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s003_body" name="{=*}Giáp ngực phiến da thô Tây Lương" mesh="ar_c01_s003_body" culture="Culture.yongliang" weight="2.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="11" leg_armor="4" arm_armor="2" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s005_body" name="{=*}Giáp da hai tấm Tây Lương" mesh="ar_c01_s005_body" culture="Culture.yongliang" weight="3.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" leg_armor="4" arm_armor="3" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s006_body" name="{=*}Giáp da thô kèm hộ hạ" mesh="ar_c01_s006_body" culture="Culture.yongliang" weight="4.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="5" arm_armor="3" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s007_body" name="{=*}Giáp sắt hai tấm Tây Lương" mesh="ar_c01_s007_body" culture="Culture.yongliang" weight="8.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="4" arm_armor="4" covers_body="false" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s009_body" name="{=*}Giáp da triều trước" mesh="ar_c01_s009_body" culture="Culture.yongliang" weight="3.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="3" arm_armor="3" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="lz_yizhou_yi_01" name="{=*}Giáp da kho vũ khí Ích Châu" mesh="ar_c01_s009_body" culture="Culture.yongliang" weight="3.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" leg_armor="3" arm_armor="8" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="lz_yizhou_yi_02" name="{=*}Giáp da dày kho vũ khí Ích Châu" mesh="ar_c01_s009_body" culture="Culture.yongliang" weight="3.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="4" arm_armor="12" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s010_body" name="{=*}Giáp ngực sắt thô Tây Lương" mesh="ar_c01_s010_body" culture="Culture.yongliang" weight="8.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="3" arm_armor="3" covers_body="false" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s011_body" name="{=*}Giáp phiến sắt Tây Lương" mesh="ar_c01_s011_body" culture="Culture.yongliang" weight="11.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" leg_armor="8" arm_armor="3" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s013_body" name="{=*}Giáp da vảy Tây Lương kèm hộ hạ" mesh="ar_c01_s013_body" culture="Culture.yongliang" weight="8.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" leg_armor="6" arm_armor="4" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s015_body" name="{=*}Giáp ngực sắt thô kèm váy giáp chân" mesh="ar_c01_s015_body" culture="Culture.yongliang" weight="13.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="12" arm_armor="3" covers_body="false" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s016_body" name="{=*}Giáp phiến sắt Tây Lương kèm váy giáp chân" mesh="ar_c01_s016_body" culture="Culture.yongliang" weight="13.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="31" leg_armor="13" arm_armor="4" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s018_body" name="{=*}Giáp vảy sắt thô Tây Lương" mesh="ar_c01_s018_body" culture="Culture.yongliang" weight="18.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41" leg_armor="18" arm_armor="15" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s019_body" name="{=*}Giáp vảy hai tấm Tây Lương kèm váy giáp chân" mesh="ar_c01_s019_body" culture="Culture.yongliang" weight="18.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="43" leg_armor="17" arm_armor="8" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_g001_body" name="{=*}【Tượng tác】Giáp phiến sắt đầu thú" mesh="ar_c01_g001_body" culture="Culture.yongliang" weight="11.9" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="21" body_armor="75" leg_armor="21" arm_armor="18" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_cl_c01_g001_body" name="{=*}【Tượng tác】Thường phục Đổng Trác" mesh="cl_c01_g001_body" culture="Culture.yongliang" weight="16.0" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="60" leg_armor="16" arm_armor="17" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g002_body" name="{=*}【Tượng tác】Giáp xích liên hoàn mặt thú" mesh="S_GEN001_0002_xj" culture="Culture.yongliang" weight="23.8" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="79" leg_armor="25" arm_armor="21" covers_body="false" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g002_body_civilian" name="{=*}【Tượng tác】Thường phục Lữ Bố" mesh="ar_c01_g002_body_a" culture="Culture.yongliang" weight="2.8" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="86" leg_armor="42" arm_armor="42" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_g003_body" name="{=*}【Tượng tác】Giáp phiến nặng sơn đen cổ chậu" mesh="ar_c01_g003_body" culture="Culture.yongliang" weight="24.5" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" body_armor="74" leg_armor="22" arm_armor="21" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g003_body_b" name="{=*}【Tượng tác】Giáp phiến nặng đen cổ chậu" mesh="ar_c01_g003_body_b" culture="Culture.yongliang" weight="24.5" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="23" body_armor="69" leg_armor="25" arm_armor="21" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g004_body_a" name="{=*}【Tượng tác】Giáp sắt nặng hai tấm tinh xảo" mesh="ar_c01_g004_body_a" culture="Culture.yongliang" weight="21.4" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" body_armor="72" leg_armor="21" arm_armor="19" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g004_body_b" name="{=*}【Tượng tác】Giáp sắt nặng hai tấm viền lông" mesh="ar_c01_g004_body_b" culture="Culture.yongliang" weight="21.4" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="22" body_armor="76" leg_armor="23" arm_armor="21" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g005_body" name="{=*}【Tượng tác】Giáp phiến nặng hai tấm sơn bóng" mesh="ar_c01_g005_body" culture="Culture.yongliang" weight="20.4" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="76" leg_armor="23" arm_armor="20" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_cl_c01_g005_body" name="{=*}【Tượng tác】Áo vạt thẳng đai ngọc" mesh="cl_c01_g005_body" culture="Culture.yongliang" weight="1.2" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="18" arm_armor="12" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g006_body" name="{=*}【Tượng tác】Giáp vảy cá đen bóng" mesh="ar_c01_g006_body" culture="Culture.yongliang" weight="21.3" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="69" leg_armor="26" arm_armor="27" covers_body="false" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g007_body_a" name="{=*}【Tượng tác】Giáp phiến sắt liên hoàn phủ da thú" mesh="ar_c01_g007_body_a" culture="Culture.yongliang" weight="20.1" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="25" body_armor="74" leg_armor="21" arm_armor="19" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g007_body_b" name="{=*}【Tượng tác】Giáp phiến sắt liên hoàn phủ da thú (kèm cánh lông)" mesh="ar_c01_g007_body_b" culture="Culture.yongliang" weight="20.6" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="25" body_armor="74" leg_armor="21" arm_armor="19" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g008_body" name="{=*}【Tượng tác】Giáp hai tấm phủ áo choàng lớn" mesh="ar_c01_g008_body" culture="Culture.yongliang" weight="24.3" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" body_armor="65" leg_armor="19" arm_armor="17" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_g010_body" name="{=*}【Tượng tác】Giáp phiến nặng không tay sơn bóng kèm khăn da sói" mesh="ar_c01_g010_body" culture="Culture.yongliang" weight="23.8" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="72" leg_armor="25" arm_armor="25" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g011_body" name="{=*}【Tượng tác】Giáp hai tấm vảy cá viền lông" mesh="ar_c01_g011_body" culture="Culture.yongliang" weight="22.1" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="28" body_armor="74" leg_armor="19" arm_armor="19" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_cl_c01_g011_body" name="{=*}【Tượng tác】Hành y" mesh="cl_c01_g011_body" culture="Culture.yongliang" weight="1.8" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="32" leg_armor="14" arm_armor="13" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_g012_body" name="{=*}【Tượng tác】Giáp da nặng liền khối vảy cá kèm hộ ngực sắt và áo đối khâm" mesh="ar_c01_g012_body" culture="Culture.yongliang" weight="22.5" is_merchandise="false" appearance="4" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="24" body_armor="64" leg_armor="23" arm_armor="17" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g015_body" name="{=*}【Tượng tác】Giáp vảy bạc trang trí vàng" mesh="ar_c01_g015_body_converted" culture="Culture.yongliang" weight="12.7" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="27" body_armor="78" leg_armor="25" arm_armor="25" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c01_g015_body_old" name="{=*}【Tượng tác】Giáp da phiến nặng hai tấm dành cho nữ" mesh="ar_c01_g015_body_old" culture="Culture.yongliang" weight="16.7" is_merchandise="false" appearance="5" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="68" leg_armor="23" arm_armor="23" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_cl_c01_g015_body" name="{=*}Y phục nữ màu đỏ" mesh="cl_c01_g015_body_old" culture="Culture.yongliang" weight="0.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="7" leg_armor="3" arm_armor="3" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_g016_body" name="{=*}【Tượng tác】Hán phục hoa lệ" mesh="ar_c01_g016_body" culture="Culture.yongliang" weight="1.25" is_merchandise="false" appearance="5" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="56" leg_armor="21" arm_armor="21" head_armor="11" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_ar_c01_s3001_body" name="{=*}Quân phục ngắn tay Tây Lương kèm giáp ngực phiến sắt" mesh="ar_c01_s3001_body" culture="Culture.yongliang" weight="8.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="7" arm_armor="6" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s3002_body" name="{=*}Quân phục ngắn tay Tây Lương thắt vải kèm giáp ngực phiến da" mesh="ar_c01_s3002_body" culture="Culture.yongliang" weight="8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="15" leg_armor="7" arm_armor="6" covers_body="false" modifier_group="leather" material_type="Leather" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s4001_body" name="{=*}Quân phục dài tay Tây Lương kèm giáp da thô hai tấm và hộ hạ vảy da" mesh="ar_c01_s4001_body" culture="Culture.yongliang" weight="10.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="11" arm_armor="8" covers_body="false" modifier_group="leather" material_type="Leather" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="lz_yongliang_yi_01" name="{=*}Quân phục dài tay Tây Lương kèm giáp da thô hai tấm và hộ hạ vảy da" mesh="ar_c01_s4001_body" culture="Culture.yongliang" weight="10.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="19" arm_armor="17" covers_body="false" modifier_group="leather" material_type="Leather" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s4002_body" name="{=*}Quân phục ngắn tay Tây Lương thắt đai da kèm giáp ngực phiến da 1" mesh="ar_c01_s4002_body" culture="Culture.yongliang" weight="8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="7" arm_armor="6" covers_body="false" modifier_group="leather" material_type="Leather" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s4003_body" name="{=*}Quân phục ngắn tay Tây Lương thắt đai da kèm giáp ngực phiến da" mesh="ar_c01_s4003_body" culture="Culture.yongliang" weight="8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" leg_armor="7" arm_armor="6" covers_body="false" modifier_group="leather" material_type="Leather" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s5002_body" name="{=*}Quân phục dài tay Tây Lương kèm giáp sắt phiến nhỏ hai tấm, lông bọc bụng" mesh="ar_c01_s5002_body" culture="Culture.yongliang" weight="12.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="34" leg_armor="14" arm_armor="8" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c01_s5003_body" name="{=*}Quân phục ngắn tay Tây Lương kèm giáp sắt phiến nhỏ hai tấm hoa văn và váy giáp vải" mesh="ar_c01_s5003_body" culture="Culture.yongliang" weight="12.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="34" leg_armor="14" arm_armor="8" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s5004_body" name="{=*}Quân phục ngắn tay Tây Lương thắt đai da kèm giáp ngực phiến sắt nhỏ" mesh="ar_c01_s5004_body" culture="Culture.yongliang" weight="11.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="8" arm_armor="8" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s6001_body" name="{=*}Quân phục dài tay Tây Lương kèm giáp sắt hai tấm và hộ hạ vảy sắt" mesh="ar_c01_s6001_body" culture="Culture.yongliang" weight="18.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="19" arm_armor="18" covers_body="false" modifier_group="plate" material_type="Plate" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s6002_body" name="{=*}Quân phục ngắn tay Tây Lương kèm giáp sắt phiến nhỏ hai tấm và váy giáp chân" mesh="ar_c01_s6002_body" culture="Culture.yongliang" weight="18.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="39" leg_armor="17" arm_armor="9" covers_body="false" modifier_group="plate" material_type="Plate" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s7001_body" name="{=*}Quân phục dài tay Tây Lương kèm giáp sắt vảy cá sơn vàng hai tấm và váy giáp chân" mesh="ar_c01_s7001_body" culture="Culture.yongliang" weight="20.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="47" leg_armor="20" arm_armor="10" covers_body="false" modifier_group="plate" material_type="Plate" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s7002_body" name="{=*}Quân phục ngắn tay Tây Lương kèm giáp sắt phiến nhỏ hai tấm và váy giáp chân dài" mesh="ar_c01_s7002_body" culture="Culture.yongliang" weight="21.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="47" leg_armor="21" arm_armor="10" covers_body="false" modifier_group="plate" material_type="Plate" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c01_s7003_body" name="{=*}Quân phục dài tay Tây Lương kèm giáp sắt phiến nhỏ hai tấm, hộ hạ sắt nhiều lớp và váy giáp vảy sắt dài" mesh="ar_c01_s7003_body" culture="Culture.yongliang" weight="22.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="47" leg_armor="19" arm_armor="5" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_cl_c01_s2001_body" name="{=*}Quân phục ngắn tay Tây Lương" mesh="cl_c01_s2001_body" culture="Culture.yongliang" weight="3.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5" leg_armor="1" arm_armor="2" covers_body="false" modifier_group="plate" material_type="Plate" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+
+
+<!-- 冀州 -->
+	<Item id="sg_ar_c05_s1001_body" name="{=*}Giáp da Ký Châu" mesh="ar_c05_s1001_body" culture="Culture.jizhou" weight="2.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" leg_armor="3" arm_armor="1" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c05_s2001_body" name="{=*}Giáp phiến da Ký Châu" mesh="ar_c05_s2001_body" culture="Culture.jizhou" weight="4.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="4" arm_armor="3" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c05_s3001_body" name="{=*}Giáp phiến da đen Ký Châu" mesh="ar_c05_s3001_body" culture="Culture.jizhou" weight="4.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="4" arm_armor="4" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c05_s3002_body" name="{=*}Giáp da thô Ký Châu" mesh="ar_c05_s3002_body" culture="Culture.jizhou" weight="2.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="15" leg_armor="3" arm_armor="2" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c05_s3002_body_old" name="{=*}Giáp da thô dài Ký Châu" mesh="ar_c05_s3002_body_old" culture="Culture.jizhou" weight="3.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" leg_armor="4" arm_armor="2" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c05_s4003_body" name="{=*}Giáp da thô gia cố Ký Châu" mesh="ar_c05_s4003_body" culture="Culture.jizhou" weight="3.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="19" leg_armor="4" arm_armor="4" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c05_s5003_body" name="{=*}Giáp da Ký Châu phủ lá sắt" mesh="ar_c05_s5003_body" culture="Culture.jizhou" weight="11.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="14" arm_armor="5" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c05_s6001_body" name="{=*}Giáp da Ký Châu phủ lá sắt kèm hộ hạ" mesh="ar_c05_s6001_body" culture="Culture.jizhou" weight="13.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="37" leg_armor="17" arm_armor="7" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c05_s7001_body" name="{=*}Giáp da Ký Châu phủ lá sắt hoa lệ kèm hộ hạ" mesh="ar_c05_s7001_body" culture="Culture.jizhou" weight="14.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41" leg_armor="18" arm_armor="7" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_cl_com_body_0001" name="{=*}Áo bình dân 1" mesh="cl_com_body_0001" culture="Culture.yongliang" weight="0.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" leg_armor="1" arm_armor="1" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_cl_com_body_0002" name="{=*}Áo bình dân 2" mesh="cl_com_body_0002" culture="Culture.yongliang" weight="0.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" leg_armor="1" arm_armor="1" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_cl_com_body_0003" name="{=*}Áo bình dân 3" mesh="cl_com_body_0003" culture="Culture.yongliang" weight="0.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" leg_armor="1" arm_armor="1" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="sg_cl_com_body_0004" name="{=*}Áo nông dân" mesh="cl_com_body_0004" culture="Culture.yongliang" weight="0.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="3" leg_armor="1" arm_armor="1" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+
+
+
+
+	<Item id="sg_ar_c05_g001_body" name="{=*}【Tượng tác】Giáp sắt nặng thông cánh tay hoa lệ 2" mesh="ar_c05_g001_body" culture="Culture.jizhou" weight="14.6" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="21" body_armor="69" leg_armor="32" arm_armor="22" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+	<Item id="sg_ar_c05_g002_body" name="{=*}【Tượng tác】Giáp sắt hoa lệ phủ bào văn võ" mesh="ar_c05_g002_body" culture="Culture.jizhou" weight="17.2" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="80" leg_armor="24" arm_armor="24" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+	<Item id="sg_ar_c05_g003_body" name="{=*}【Tượng tác】Giáp sắt hoa lệ phủ áo gấm viền lông" mesh="ar_c05_g003_body" culture="Culture.jizhou" weight="17.6" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="28" body_armor="78" leg_armor="32" arm_armor="29" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+	<Item id="sg_ar_c05_g004_body" name="{=*}【Tượng tác】Giáp sắt nặng thông cánh tay hoa lệ" mesh="ar_c05_g004_body" culture="Culture.jizhou" weight="14.3" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="27" body_armor="75" leg_armor="25" arm_armor="24" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+	<Item id="sg_ar_c05_g005_body" name="{=*}【Tượng tác】Giáp sắt hoa lệ phủ bào tím" mesh="ar_c05_g005_body" culture="Culture.jizhou" weight="11.7" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="78" leg_armor="28" arm_armor="27" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+	<Item id="sg_ar_c05_g006_body" name="{=*}【Tượng tác】Giáp da nặng phủ lá sắt hoa lệ" mesh="ar_c05_g006_body" culture="Culture.jizhou" weight="10.4" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="74" leg_armor="28" arm_armor="27" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+	<Item id="sg_ar_c05_g007_body" name="{=*}【Tượng tác】Váy nữ hộ eo vảy da" mesh="ar_c05_g007_body_converted" culture="Culture.jizhou" weight="6.5" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" body_armor="72" leg_armor="25" arm_armor="25" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+	<Item id="sg_ar_c05_g008_body" name="{=*}【Tượng tác】Y phục mưu sĩ màu xanh" mesh="ar_c05_g008_body" culture="Culture.jizhou" weight="1.8" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="15" body_armor="50" leg_armor="15" arm_armor="15" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+	<Item id="sg_ar_c05_g009_body" name="{=*}【Tượng tác】Y phục mưu sĩ màu trơn" mesh="ar_c05_g009_body" culture="Culture.jizhou" weight="1.8" is_merchandise="false" appearance="4" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="17" body_armor="55" leg_armor="12" arm_armor="12" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+
+<!-- 兖州 -->
+	<Item id="sg_cl_c02_s1001_body" name="{=*}Áo vải dân binh Duyện Châu a" mesh="cl_c02_s1001_body" culture="Culture.yanzhou" weight="0.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4" leg_armor="2" arm_armor="0" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+	<Item id="lz_yanzhou_yi_03" name="{=*}Áo vải gai thô cung thủ Duyện Châu" mesh="cl_c02_s1001_body" culture="Culture.yanzhou" weight="0.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" leg_armor="3" arm_armor="2" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="lz_yanzhou_yi_01" name="{=*}Áo vải gai thô lính thú Duyện Châu" mesh="cl_c02_s1001_body" culture="Culture.yanzhou" weight="0.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5" leg_armor="2" arm_armor="2" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s2001_body" name="{=*}Quân phục dài tay quân Duyện Châu kèm áo da đối khâm dày" mesh="ar_c02_s2001_body" culture="Culture.yanzhou" weight="2.5" appearance="2" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" leg_armor="8" arm_armor="2" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="lz_yanzhou_yi_02" name="{=*}Quân phục dài tay chính tốt Duyện Châu kèm áo da đối khâm" mesh="ar_c02_s2001_body" culture="Culture.yanzhou" weight="2.5" appearance="2" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" leg_armor="5" arm_armor="1" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s4001_body" name="{=*}Quân phục dài tay Duyện Châu kèm áo da đối khâm cổ chậu ống tay thẳng" mesh="ar_c02_s4001_body" culture="Culture.yanzhou" weight="4.9" appearance="4" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" leg_armor="5" arm_armor="10" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s4002_body" name="{=*}Quân phục dài tay Duyện Châu kèm áo da đối khâm cổ chậu ống tay thẳng phủ phiến sắt" mesh="ar_c02_s4002_body" culture="Culture.yanzhou" weight="8.9" appearance="4" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="28" leg_armor="10" arm_armor="12" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s4003_body" name="{=*}Quân phục dài tay Trung Nguyên kèm áo da đối khâm dài" mesh="ar_c02_s4003_body" culture="Culture.yanzhou" weight="4.7" appearance="4" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="21" leg_armor="10" arm_armor="10" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s5001_body" name="{=*}Quân phục dài tay Trung Nguyên kèm áo da đối khâm cổ chậu cao ống tay thẳng phủ phiến sắt" mesh="ar_c02_s5001_body" culture="Culture.yanzhou" weight="10.8" appearance="5" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="34" leg_armor="12" arm_armor="12" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s5002_body" name="{=*}Quân phục dài tay Trung Nguyên kèm giáp sắt phiến cổ chậu ống tay thẳng đối khâm" mesh="ar_c02_s5002_body" culture="Culture.yanzhou" weight="11" appearance="5" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="13" arm_armor="12" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s5003_body" name="{=*}Quân phục dài tay Trung Nguyên kèm giáp sắt phiến cổ chậu ống tay thẳng, váy da đối khâm" mesh="ar_c02_s5003_body" culture="Culture.yanzhou" weight="12" appearance="5" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="14" arm_armor="11" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s5004_body" name="{=*}Quân phục ngắn tay Trung Nguyên kèm giáp sắt phiến cổ chậu ống tay dài đối khâm trang trí da báo" mesh="ar_c02_s5004_body" culture="Culture.yanzhou" weight="9.8" appearance="5" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="33" leg_armor="12" arm_armor="14" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s6001_body" name="{=*}Quân phục ngắn tay Trung Nguyên kèm giáp sắt phiến cổ chậu cao ống tay dài đối khâm" mesh="ar_c02_s6001_body" culture="Culture.yanzhou" weight="15" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="39" leg_armor="15" arm_armor="13" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s6002_body" name="{=*}Quân phục ngắn tay Trung Nguyên kèm giáp sắt phiến cổ chậu ống tay dài đối khâm và hộ chân da dài" mesh="ar_c02_s6002_body" culture="Culture.yanzhou" weight="18.8" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41" leg_armor="15" arm_armor="17" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s7001_body" name="{=*}Quân phục ngắn tay Trung Nguyên kèm giáp sắt phiến cổ chậu cao ống tay dài đối khâm và hộ chân sắt dài" mesh="ar_c02_s7001_body" culture="Culture.yanzhou" weight="20" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="15" arm_armor="18" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s7002_body" name="{=*}Quân phục ngắn tay Trung Nguyên kèm giáp sắt phiến cổ chậu ống tay dài đối khâm và hộ chân da dài" mesh="ar_c02_s7002_body" culture="Culture.yanzhou" weight="18.8" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="15" arm_armor="17" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s8001_body" name="{=*}Quân phục ngắn tay Trung Nguyên kèm giáp sắt phiến cổ chậu đối khâm" mesh="ar_c02_s8001_body" culture="Culture.yanzhou" weight="12" appearance="5" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" leg_armor="10" arm_armor="12" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+	<Item id="sg_ar_c02_s8002_body" name="{=*}Quân phục ngắn tay Trung Nguyên kèm giáp sắt phiến cổ chậu đối khâm và hộ vai dài" mesh="ar_c02_s8002_body" culture="Culture.yanzhou" weight="13" appearance="5" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" leg_armor="11" arm_armor="12" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+<!-- 扬州 -->
+    <Item id="sg_cl_c04_s1001_body" name="{=*}Y phục trơn Dương Châu" mesh="cl_c04_s1001_body" culture="Culture.yangzhou" weight="18.8" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="10" leg_armor="1" arm_armor="1" covers_body="false" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s2002_body" name="{=*}Y phục trơn Dương Châu" mesh="ar_c04_s2002_body" culture="Culture.yangzhou" weight="18.8" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" leg_armor="9" arm_armor="3" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s3002_body" name="{=*}Quân phục dài tay Đông Ngô kèm hộ ngực da" mesh="ar_c04_s3002_body" culture="Culture.yangzhou" weight="7.9" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16" leg_armor="2" arm_armor="6" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s4001_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp sắt hai tấm, váy giáp ngắn và hộ vai sắt" mesh="ar_c04_s4001_body" culture="Culture.yangzhou" weight="11.3" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="28" leg_armor="8" arm_armor="9" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s4002_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp sắt hai tấm, váy giáp đồng ngắn và hộ vai da" mesh="ar_c04_s4002_body" culture="Culture.yangzhou" weight="9.8" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" leg_armor="8" arm_armor="8" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s4003_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp da hai tấm" mesh="ar_c04_s4003_body" culture="Culture.yangzhou" weight="7.9" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" leg_armor="6" arm_armor="3" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s5001_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp sắt hai tấm, váy giáp ngắn, hộ vai sắt và đai hộ eo vải" mesh="ar_c04_s5001_body" culture="Culture.yangzhou" weight="11.3" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="29" leg_armor="8" arm_armor="9" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s5002_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp sắt hai tấm, váy giáp ngắn, hộ vai sắt và đai hộ eo nỉ" mesh="ar_c04_s5002_body" culture="Culture.yangzhou" weight="11.3" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" leg_armor="8" arm_armor="9" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s5003_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp sắt hai tấm, váy giáp ngắn, hộ yết da và hộ vai sắt" mesh="ar_c04_s5003_body" culture="Culture.yangzhou" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="11" arm_armor="13" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s5004_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp sắt hai tấm và hộ vai da" mesh="ar_c04_s5004_body" culture="Culture.yangzhou" weight="10.7" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="10" arm_armor="8" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s6001_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp đồng hai tấm, váy giáp sắt ngắn, hộ yết da và hộ vai sắt" mesh="ar_c04_s6001_body" culture="Culture.yangzhou" weight="18.8" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="15" arm_armor="17" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s6002_body" name="{=*}Quân phục ngắn tay Đông Ngô kèm giáp đồng hai tấm, váy giáp sắt ngắn, hộ yết da và hộ vai sắt" mesh="ar_c04_s6002_body" culture="Culture.yangzhou" weight="13.4" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="31" leg_armor="12" arm_armor="12" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s7001_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp sắt hai tấm, váy giáp dài, giáp ngực phiến sắt và hộ vai sắt" mesh="ar_c04_s7001_body" culture="Culture.yangzhou" weight="20.4" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="21" arm_armor="15" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s7002_body" name="{=*}Quân phục dài tay Đông Ngô kèm giáp đồng hai tấm, váy giáp dài và hộ vai đồng" mesh="ar_c04_s7002_body" culture="Culture.yangzhou" weight="21.4" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41" leg_armor="20" arm_armor="14" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c04_s8001_body_converted" name="{=*}Quân phục dài tay Đông Ngô kèm hộ ngực sắt" mesh="ar_c04_s8001_body_converted" culture="Culture.yangzhou" weight="18.8" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="15" arm_armor="17" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+
+<!-- 黄巾 -->
+    <Item id="sg_ar_c11_com02_body" name="{=*}Giáp thân bộ tốt Hoàng Cân" mesh="ar_c11_com02_body" culture="Culture.huangjin_bandits" weight="12.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="16" leg_armor="3" arm_armor="3" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c11_s2002_body" name="{=*}Giáp thân cung thủ nông dân Hoàng Cân" mesh="ar_c11_s2002_body" culture="Culture.huangjin_bandits" weight="5.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5" leg_armor="2" arm_armor="1" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c11_s2003_body" name="{=*}Giáp thân loạn quân Hoàng Cân" mesh="ar_c11_s2003_body" culture="Culture.huangjin_bandits" weight="5.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="7" leg_armor="3" arm_armor="2" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+	<Item id="sg_ar_c11_s3001_body" name="{=*}Giáp thân đao thuẫn thủ Hoàng Cân" mesh="ar_c11_s3001_body" culture="Culture.huangjin_bandits" weight="3.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="13" leg_armor="3" arm_armor="2" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_S_YOL001_1002_2020_4_20_Aworl_MAX19_YF" name="{=*}Giáp thân đao thuẫn thủ Hoàng Cân" mesh="S_YOL001_1002_2020_4_20_Aworl_MAX19_YF" culture="Culture.huangjin_bandits" weight="8.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="19" leg_armor="4" arm_armor="3" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_S_YOL001_1004" name="{=*}Giáp thân đao thuẫn thủ Hoàng Cân" mesh="S_YOL001_1004" culture="Culture.huangjin_bandits" weight="11.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="5" arm_armor="1" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_S_YOL001_1005" name="{=*}Giáp thân đao thuẫn thủ Hoàng Cân" mesh="S_YOL001_1005" culture="Culture.huangjin_bandits" weight="0.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="2" leg_armor="1" arm_armor="0" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+
+
+<!-- 幽州 -->
+	<Item id="sg_ar_c06_g001_body" name="{=*}【Tượng tác】Giáp ngực da hoa văn phủ phiến sắt nhỏ" mesh="ar_c06_g001_body" culture="Culture.youzhou" weight="8.9" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="27" body_armor="78" leg_armor="25" arm_armor="26" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_g002_body" name="{=*}【Tượng tác】Giáp da phiến nặng trang trí vàng hoa văn mây" mesh="ar_c06_g002_body_converted" culture="Culture.youzhou" weight="8.9" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="29" body_armor="80" leg_armor="35" arm_armor="35" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+ 
+    <Item id="sg_ar_c06_g004_body" name="{=*}【Tượng tác】Giáp sắt phiến nặng kèm hộ ngực thép tấm" mesh="ar_c06_g004_body" culture="Culture.youzhou" weight="19.8" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="27" body_armor="76" leg_armor="31" arm_armor="31" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_g005_body" name="{=*}【Tượng tác】Giáp phiến nặng đối khâm phủ áo bào viền lông Bắc địa" mesh="ar_c06_g005_body" culture="Culture.youzhou" weight="21.2" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="19" body_armor="76" leg_armor="22" arm_armor="22" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_cl_c06_g006_body" name="{=*}【Tượng tác】Bào văn võ nạm ngọc kèm hộ ngực da" mesh="cl_c06_g006_body" culture="Culture.youzhou" weight="30.0" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="24" body_armor="71" leg_armor="23" arm_armor="23" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s2001_body" name="{=*}Quân phục dài tay U Châu kèm hộ ngực sắt" mesh="ar_c06_s2001_body" culture="Culture.youzhou" weight="30.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="12" leg_armor="6" arm_armor="3" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s3002_body" name="{=*}Quân phục dài tay U Châu kèm hộ ngực da thô" mesh="ar_c06_s3002_body" culture="Culture.youzhou" weight="3.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" leg_armor="3" arm_armor="5" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s4001_body" name="{=*}Quân phục dài tay U Châu kèm hộ ngực sắt và hộ tâm kính" mesh="ar_c06_s4001_body" culture="Culture.youzhou" weight="30.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="20" leg_armor="8" arm_armor="9" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s4002_body" name="{=*}Quân phục dài tay U Châu kèm hộ ngực sắt, hộ tâm kính và váy giáp da" mesh="ar_c06_s4002_body" culture="Culture.youzhou" weight="30.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="8" arm_armor="8" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s4003_body" name="{=*}Quân phục dài tay U Châu kèm giáp da hai tấm thô và váy giáp chân" mesh="ar_c06_s4003_body" culture="Culture.youzhou" weight="4.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="24" leg_armor="10" arm_armor="6" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s4004_body" name="{=*}Quân phục dài tay U Châu kèm giáp da hai tấm thô phủ lá sắt và váy giáp chân" mesh="ar_c06_s4004_body" culture="Culture.youzhou" weight="9.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="32" leg_armor="11" arm_armor="8" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s5001_body" name="{=*}Quân phục dài tay U Châu kèm hộ ngực sắt và hộ tâm kính 1" mesh="ar_c06_s5001_body" culture="Culture.youzhou" weight="30.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="14" arm_armor="11" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s5002_body" name="{=*}Quân phục dài tay U Châu kèm hộ ngực sắt, hộ tâm kính và váy giáp da hai lớp" mesh="ar_c06_s5002_body" culture="Culture.youzhou" weight="30.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36" leg_armor="23" arm_armor="17" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s6001_body" name="{=*}Quân phục dài tay U Châu kèm giáp sắt phiến nhỏ, hộ tâm kính đầu thú và váy giáp phiến sắt" mesh="ar_c06_s6001_body" culture="Culture.youzhou" weight="30.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="23" arm_armor="21" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s6002_body" name="{=*}Quân phục dài tay U Châu kèm giáp da hai tấm phủ lá sắt và váy giáp da" mesh="ar_c06_s6002_body" culture="Culture.youzhou" weight="11.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="34" leg_armor="14" arm_armor="8" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s7001_body" name="{=*}Quân phục dài tay U Châu kèm giáp sắt phiến nhỏ hai tấm hoa văn và váy giáp da" mesh="ar_c06_s7001_body" culture="Culture.youzhou" weight="16.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="17" arm_armor="8" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c06_s8001_body" name="{=*}Váy giáp da hai lớp U Châu kèm đai hộ eo bằng vải" mesh="ar_c06_s8001_body" culture="Culture.youzhou" weight="30.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="23" arm_armor="21" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_cl_c06_s1001_body" name="{=*}Quân phục dài tay U Châu" mesh="cl_c06_s1001_body" culture="Culture.youzhou" weight="30.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="8" leg_armor="2" arm_armor="2" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+
+
+
+<!-- 益州 -->
+    <Item id="sg_cl_c03_s1001_body" name="{=*}Quân phục Quý Hán" mesh="cl_c03_s1001_body" culture="Culture.yizhou" weight="1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4" leg_armor="3" arm_armor="2" covers_body="false" modifier_group="cloth" material_type="Cloth" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s3002_body" name="{=*}Quân phục Quý Hán kèm đai hộ eo vải gai" mesh="ar_c03_s3002_body" culture="Culture.yizhou" weight="1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5" leg_armor="3" arm_armor="2" covers_body="false" modifier_group="cloth" material_type="Cloth" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s4001_body" name="{=*}Quân phục Quý Hán kèm hộ ngực nỉ" mesh="ar_c03_s4001_body" culture="Culture.yizhou" weight="2.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" leg_armor="3" arm_armor="2" covers_body="false" modifier_group="cloth" material_type="Cloth" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s5001_body" name="{=*}Quân phục Quý Hán kèm giáp ngực vảy sắt nhỏ, hộ vai nỉ và hộ chân da" mesh="ar_c03_s5001_body" culture="Culture.yizhou" weight="8.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="12" arm_armor="11" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s5002_body" name="{=*}Quân phục Quý Hán kèm giáp ngực vảy sắt nhỏ và hộ vai nỉ" mesh="ar_c03_s5002_body" culture="Culture.yizhou" weight="8.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="10" arm_armor="13" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s5003_body" name="{=*}Quân phục Quý Hán kèm hộ ngực nỉ và đai hộ eo" mesh="ar_c03_s5003_body" culture="Culture.yizhou" weight="5.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="6" arm_armor="3" covers_body="false" modifier_group="leather" material_type="Leather" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s5004_body" name="{=*}Quân phục Quý Hán kèm giáp ngực vảy sắt nhỏ, hộ vai và hộ hạ" mesh="ar_c03_s5004_body" culture="Culture.yizhou" weight="21.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="18" arm_armor="14" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s6001_body" name="{=*}Quân phục Quý Hán kèm giáp vảy sắt nhỏ hai tấm, hộ vai và hộ hạ" mesh="ar_c03_s6001_body" culture="Culture.yizhou" weight="21.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="18" arm_armor="14" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s6002_body" name="{=*}Quân phục Quý Hán kèm giáp vảy sắt nhỏ hai tấm, hộ vai, hộ hạ, áo phủ và đai hộ eo nỉ" mesh="ar_c03_s6002_body" culture="Culture.yizhou" weight="23.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="41" leg_armor="16" arm_armor="14" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s7001_body" name="{=*}Giáp vảy sắt nhỏ Bạch Nhĩ Nhuệ Sĩ Quý Hán" mesh="ar_c03_s7001_body" culture="Culture.yizhou" weight="19.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="20" arm_armor="10" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s7002_body" name="{=*}Quân phục Quý Hán kèm giáp vảy sắt nhỏ hai tấm, hộ vai, hộ hạ và đai hộ eo nỉ" mesh="ar_c03_s7002_body" culture="Culture.yizhou" weight="3" appearance="23.6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="45" leg_armor="21" arm_armor="14" covers_body="false" modifier_group="chain" material_type="Chainmail" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c03_s8001_body" name="{=*}Giáp da hoa văn man binh Quý Hán kèm váy giáp phiến da" mesh="ar_c03_s8001_body" culture="Culture.yizhou" weight="23.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="43" leg_armor="21" arm_armor="10" covers_body="false" modifier_group="leather" material_type="Leather" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="lz_jiaozhou_yi01" name="{=*}Giáp da hoa văn man binh Giao Châu" mesh="ar_c03_s8001_body" culture="Culture.yizhou" weight="20.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="40" leg_armor="22" arm_armor="12" covers_body="false" modifier_group="leather" material_type="Leather" has_gender_variations="false"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+<!-- 荆州 -->
+    <Item id="sg_cl_c08_s1001_body" name="{=*}Quân phục trơn Kinh Châu" mesh="cl_c08_s1001_body" culture="Culture.jingzhou" weight="3.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="9" leg_armor="4" arm_armor="3" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s2001_body" name="{=*}Quân phục trơn Kinh Châu kèm giáp ngực phiến da" mesh="ar_c08_s2001_body" culture="Culture.jingzhou" weight="5.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" leg_armor="4" arm_armor="3" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s3001_body" name="{=*}Quân phục Kinh Châu kèm hộ ngực da thô" mesh="ar_c08_s3001_body" culture="Culture.jingzhou" weight="8.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="22" leg_armor="5" arm_armor="3" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_cl_c08_s3002_body" name="{=*}Quân phục Kinh Châu" mesh="cl_c08_s3002_body" culture="Culture.jingzhou" weight="3.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="9" leg_armor="4" arm_armor="4" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s4001_body" name="{=*}Quân phục Kinh Châu kèm hộ ngực da khâu" mesh="ar_c08_s4001_body" culture="Culture.jingzhou" weight="10.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="8" arm_armor="4" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s4002_body" name="{=*}Quân phục trơn Kinh Châu kèm hộ ngực da khâu" mesh="ar_c08_s4002_body" culture="Culture.jingzhou" weight="10.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="26" leg_armor="8" arm_armor="4" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s4003_body" name="{=*}Quân phục Kinh Châu kèm hộ ngực da triều trước" mesh="ar_c08_s4003_body" culture="Culture.jingzhou" weight="10.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="19" leg_armor="5" arm_armor="3" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s4004_body" name="{=*}Quân phục Kinh Châu kèm hộ ngực da đơn giản" mesh="ar_c08_s4004_body" culture="Culture.jingzhou" weight="11.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="30" leg_armor="8" arm_armor="5" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s5001_body" name="{=*}Quân phục Kinh Châu kèm giáp phiến sắt hai tấm 1" mesh="ar_c08_s5001_body" culture="Culture.jingzhou" weight="5.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="17" leg_armor="4" arm_armor="3" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s5002_body" name="{=*}Quân phục Kinh Châu kèm giáp phiến sắt hai tấm 2" mesh="ar_c08_s5002_body" culture="Culture.jingzhou" weight="15.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="14" arm_armor="8" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s5003_body" name="{=*}Quân phục Kinh Châu kèm giáp da hai tấm hoa văn" mesh="ar_c08_s5003_body" culture="Culture.jingzhou" weight="10.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="31" leg_armor="12" arm_armor="4" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s5004_body" name="{=*}Quân phục Kinh Châu kèm hộ ngực phiến da nhỏ" mesh="ar_c08_s5004_body" culture="Culture.jingzhou" weight="10.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="27" leg_armor="8" arm_armor="4" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s5005_body" name="{=*}Quân phục Kinh Châu kèm hộ ngực phiến da" mesh="ar_c08_s5005_body" culture="Culture.jingzhou" weight="8.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" leg_armor="5" arm_armor="3" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s6001_body" name="{=*}Quân phục trơn Kinh Châu kèm giáp phiến sắt hai tấm" mesh="ar_c08_s6001_body" culture="Culture.jingzhou" weight="15.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="39" leg_armor="14" arm_armor="8" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s6002_body" name="{=*}Quân phục Kinh Châu kèm hộ ngực phiến sắt" mesh="ar_c08_s6002_body" culture="Culture.jingzhou" weight="15.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="35" leg_armor="9" arm_armor="7" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s7001_body" name="{=*}Quân phục trơn Kinh Châu kèm giáp phiến sắt hai tấm và váy giáp" mesh="ar_c08_s7001_body" culture="Culture.jingzhou" weight="22.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="13" arm_armor="5" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_s7002_body" name="{=*}Quân phục Kinh Châu kèm giáp phiến sắt hai tấm 3" mesh="ar_c08_s7002_body" culture="Culture.jingzhou" weight="22.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="44" leg_armor="14" arm_armor="5" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c08_004_body" name="{=*}【Tượng tác】Giáp phiến sắt hoa văn hổ trang trí vàng" mesh="ar_c08_004_c08_body" culture="Culture.jingzhou" weight="14.4" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="26" body_armor="78" leg_armor="34" arm_armor="34" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_S_SOL002_1002_kjwz" name="{=*}Giáp vảy đỏ son buộc dây" mesh="S_SOL002_1002_kjwz" weight="6.2" appearance="4" culture="Culture.sili" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="3" arm_armor="2" head_armor="5" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+<!-- 豫州 -->
+    <Item id="sg_cl_c07_s1001_body" name="{=*}Quân phục dài tay Dự Châu" mesh="cl_c07_s1001_body" culture="Culture.youzhou" weight="1.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4" leg_armor="3" arm_armor="2" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c07_s2001_body" name="{=*}Quân phục dài tay Dự Châu kèm hộ ngực da" mesh="ar_c07_s2001_body" culture="Culture.youzhou" weight="3.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="9" arm_armor="4" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c07_s3001_body" name="{=*}Quân phục dài tay Dự Châu kèm hộ ngực da nạm đinh đồng phủ lá sắt 1" mesh="ar_c07_s3001_body" culture="Culture.youzhou" weight="8.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" leg_armor="10" arm_armor="5" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c07_s3002_body" name="{=*}Quân phục dài tay Dự Châu kèm hộ ngực da nạm đinh đồng" mesh="ar_c07_s3002_body" culture="Culture.youzhou" weight="7.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="10" arm_armor="5" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c07_s4001_body" name="{=*}Quân phục dài tay Dự Châu kèm hộ ngực da nạm nhiều đinh đồng" mesh="ar_c07_s4001_body" culture="Culture.youzhou" weight="7.6" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="23" leg_armor="10" arm_armor="5" covers_body="false" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c07_s5001_body" name="{=*}Quân phục dài tay Dự Châu kèm hộ ngực sắt, hộ hạ vảy sắt và váy giáp da nạm đinh đồng" mesh="ar_c07_s5001_body" culture="Culture.youzhou" weight="12.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36" leg_armor="13" arm_armor="8" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c07_s5002_body" name="{=*}Quân phục dài tay Dự Châu kèm hộ ngực sắt, hộ hạ da và váy giáp nạm đinh đồng" mesh="ar_c07_s5002_body" culture="Culture.youzhou" weight="12.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36" leg_armor="13" arm_armor="5" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c07_s5003_body" name="{=*}Quân phục dài tay Dự Châu kèm hộ ngực da nạm đinh đồng phủ lá sắt 2" mesh="ar_c07_s5003_body" culture="Culture.youzhou" weight="12.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36" leg_armor="13" arm_armor="8" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c07_s6001_body" name="{=*}Quân phục dài tay Dự Châu kèm hộ ngực sắt, hộ hạ vảy sắt, váy giáp da nạm đinh đồng và đai da" mesh="ar_c07_s6001_body" culture="Culture.youzhou" weight="17.2" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="14" arm_armor="9" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+
+    <Item id="sg_ar_c07_s7001_body" name="{=*}Quân phục dài tay Dự Châu kèm giáp sắt hai tấm cổ chậu, hộ hạ vảy sắt, váy giáp chân và đai da" mesh="ar_c07_s7001_body" culture="Culture.youzhou" weight="20.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="42" leg_armor="18" arm_armor="11" head_armor="7" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+<!-- 汉 -->
+    <Item id="sg_cl_c10_s1001_body" name="{=*}Quân phục tài quan nhà Hán" mesh="cl_c10_s1001_body" culture="Culture.sili" weight="1.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="4" leg_armor="4" arm_armor="2" head_armor="2" covers_body="true" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_cl_c10_s2001_body" name="{=*}Quân phục nhuệ sĩ nhà Hán" mesh="cl_c10_s2001_body" culture="Culture.sili" weight="1.0" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="5" leg_armor="3" arm_armor="2" head_armor="5" covers_body="false" modifier_group="cloth" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_cl_c10_s3001_body" name="{=*}Hộ ngực da nhà Hán" mesh="cl_c10_s3001_body" culture="Culture.sili" weight="3.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="13" leg_armor="5" arm_armor="3" head_armor="8" covers_body="true" modifier_group="leather" material_type="Leather"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_cl_c10_s4001_body" name="{=*}Hộ ngực vảy da nhà Hán" mesh="cl_c10_s4001_body" culture="Culture.sili" weight="4.9" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="5" arm_armor="3" head_armor="5" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c10_s5002_body" name="{=*}Giáp sắt phiến hai tấm vạt chéo nhà Hán" mesh="ar_c10_s5002_body" culture="Culture.sili" weight="12.7" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="24" leg_armor="6" arm_armor="5" head_armor="6" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c10_s6001_body" name="{=*}Giáp sắt hai tấm nhà Hán 1" mesh="ar_c10_s6001_body" culture="Culture.sili" weight="13.3" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" leg_armor="8" arm_armor="7" head_armor="7" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c10_s6002_body" name="{=*}Giáp sắt phiến hai tấm vạt chéo nhà Hán kèm váy giáp phiến sắt" mesh="ar_c10_s6002_body" culture="Culture.sili" weight="18.4" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="31" leg_armor="14" arm_armor="6" head_armor="6" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c10_s6004_body" name="{=*}Giáp sắt hai tấm nhà Hán 2" mesh="ar_c10_s6004_body" culture="Culture.sili" weight="16.5" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="29" leg_armor="11" arm_armor="9" head_armor="6" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c10_s5006_body" name="{=*}Giáp phiến sắt đối khâm Vũ Lâm quân nhà Hán" mesh="ar_c10_s5006_body" culture="Culture.sili" weight="20.1" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="36" leg_armor="9" arm_armor="7" head_armor="6" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_ar_c10_s6005_body" name="{=*}Giáp phiến sắt nặng đối khâm Vũ Lâm quân nhà Hán kèm váy giáp" mesh="ar_c10_s6005_body" culture="Culture.sili" weight="24.8" appearance="1" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="39" leg_armor="14" arm_armor="10" head_armor="8" covers_body="true" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="false"/>
+	</Item>
+    <Item id="sg_cl_c10_g1001_body" name="{=*}Long bào" mesh="cl_c10_g1001_body" weight="12" culture="Culture.sili" appearance="0" difficulty="290" is_merchandise="false" value="500000" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="28" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="false" Civilian="true"/>
+	</Item>
+
+
+
+
+
+<!-- 通用 -->
+    <Item id="sg_npc_barber_body" name="{=*}Áo ngắn phối hai màu" mesh="cl_sg_npc_barber_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_cityresident_body" name="{=*}Áo ngắn màu trơn" mesh="sg_npc_cityresident_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_merchant_body" name="{=*}Áo vạt thẳng vải dày màu trơn, tay ngắn" mesh="sg_npc_merchant_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_guard_body" name="{=*}Áo vạt thẳng vải dày sẫm màu phủ trường bào" mesh="sg_npc_guard_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_bartender_body" name="{=*}Áo ngắn tay dài màu trơn" mesh="sg_npc_bartender_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_clerk_body" name="{=*}Áo vạt thẳng ngắn tay màu trơn" mesh="sg_npc_clerk_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="false" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_maid_body" name="{=*}Áo vạt cong nữ hoa văn" mesh="sg_npc_maid_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_booksellers_body" name="{=*}Áo vạt thẳng sẫm màu phủ trường bào trơn" mesh="sg_npc_booksellers_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_gladiator_body" name="{=*}Áo ngắn kèm hộ ngực da" mesh="cl_sg_npc_gladiator_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_wenguan_body" name="{=*}Văn quan" mesh="sg_npc_wenguan_body" weight="13.2" is_merchandise="false" appearance="0" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_wuguan_body" name="{=*}Võ quan" mesh="sg_npc_wuguan_body" weight="13.2" is_merchandise="false" appearance="0" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_peddler_body" name="{=*}Thương nhân bán rong" mesh="cl_sg_npc_peddler_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="14" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_guizuwujiang_body" name="{=*}【Tượng tác】Giáp da phiến nặng quý tộc phủ áo ngoài" mesh="npc_guizuwujiang_body" weight="20.2" is_merchandise="false" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor head_armor="18" body_armor="65" leg_armor="18" arm_armor="18" covers_body="false" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_npc_jianke_body" name="{=*}Y phục hiệp sĩ" mesh="sg_npc_jianke_body" weight="13.2" appearance="6" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="7" arm_armor="2" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+<!-- 匈奴-鲜卑 -->
+    <Item id="sg_s_t1021_xj" name="{=*}Chiến bào xích giáp phong cách người Hồ" mesh="s_t1021_xj" weight="20.1" appearance="2" culture="Culture.beifangshizu_bandits" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="32" leg_armor="11" arm_armor="12" head_armor="6" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_yol002_xj003" name="{=*}Quân phục da thuộc Bạch Lộc" mesh="sg_yol002_xj003" weight="18.2" appearance="2" culture="Culture.beifangshizu_bandits" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="25" leg_armor="6" arm_armor="4" covers_body="true" modifier_group="chain" material_type="Chainmail"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_yol002_xj005" name="{=*}Giáp vảy đầu sói" mesh="sg_yol002_xj005" weight="20.2" appearance="2" culture="Culture.beifangshizu_bandits" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="37" leg_armor="18" covers_body="false" modifier_group="plate" material_type="Plate"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+    <Item id="sg_xnxb_425_yifuzt" name="{=*}Áo choàng da hươu Tiên Ti" mesh="xnxb_425_yifuzt" weight="6.2" appearance="4" culture="Culture.beifangshizu_bandits" Type="BodyArmor">
+		<ItemComponent>
+			<Armor body_armor="18" leg_armor="3" arm_armor="2" head_armor="5" covers_body="true" modifier_group="cloth_unarmoured" material_type="Cloth"/>
+		</ItemComponent>
+		<Flags UseTeamColor="true" Civilian="true"/>
+	</Item>
+
+    
+
+</Items>

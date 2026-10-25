@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+-->
+<strings>
+	<!-- 铁匠铺打造 -->
+  <string id="str_crafting_template.SG_Mace" text="{=*}Chùy một tay Tam Quốc"/>
+  <string id="str_crafting_template.SG_TwoHandedMace" text="{=*}Chùy hai tay Tam Quốc"/>
+
+	<string id="str_crafting_template.SG_OneHandedSword" text="{=*}Kiếm một tay Tam Quốc"/>
+  <string id="str_crafting_template.SG_TwoHandedSword" text="{=*}Kiếm hai tay Tam Quốc"/>
+
+	<string id="str_crafting_template.SG_Pike" text="{=*}Trường thương bộ chiến Tam Quốc"/>
+  <string id="str_crafting_template.SG_TwoHandedPolearm" text="{=*}Binh khí cán dài Tam Quốc"/>
+  
+  <string id="str_crafting_template.SG_ThrowingKnife" text="{=*}Phi đao Tam Quốc"/>
+  <string id="str_crafting_template.SG_Javelin" text="{=*}Lao ném Tam Quốc"/>
+  <string id="str_crafting_template.SG_ThrowingAxe" text="{=*}Phi phủ Tam Quốc"/>
+
+  <string id="str_crafting_template.SG_OneHandedAxe" text="{=*}Búa một tay Tam Quốc"/>
+  <string id="str_crafting_template.SG_TwoHandedAxe" text="{=*}Búa hai tay Tam Quốc"/>
+
+  <string id="str_weapon_usage.SG_Mace" text="{=*}Một tay"/>
+  <string id="str_weapon_usage.SG_TwoHandedMace" text="{=*}Hai tay"/>
+
+  <string id="str_weapon_usage.SG_OneHandedSword" text="{=*}Một tay"/>
+  <string id="str_weapon_usage.SG_TwoHandedSword" text="{=*}Hai tay"/>
+
+  <string id="str_weapon_usage.SG_OneHandedPolearm" text="{=*}Một tay"/>
+  <string id="str_weapon_usage.SG_TwoHandedPolearm" text="{=*}Hai tay"/>
+  <string id="str_weapon_usage.SG_TwoHandedPolearm_Couchable" text="{=*}Xung phong bằng thương kỵ"/>
+  <string id="str_weapon_usage.SG_TwoHandedPolearm_Pike" text="{=*}Hai tay"/>
+  <string id="str_weapon_usage.SG_TwoHandedPolearm_Bracing" text="{=*}Chống thương"/>
+  <string id="str_weapon_usage.SG_TwoHandedPolearm_Thrown" text="{=*}Ném"/>
+
+	<string id="str_weapon_usage.SG_ThrowingKnife" text="{=*}Ném"/>
+	<string id="str_weapon_usage.SG_Javelin" text="{=*}Ném"/>
+
+  <string id="str_weapon_usage.SG_OneHandedAxe" text="{=*}Một tay"/>
+  <string id="str_weapon_usage.SG_TwoHandedAxe" text="{=*}Hai tay"/>
+	<string id="str_weapon_usage.SG_ThrowingAxe" text="{=*}Ném"/>
+
+  <!-- History Records -->
+  <string id="str_history_record" text="{=strHistoryRecord}history record"/>
+  <string id="str_history_record_desc" text="{=strHistoryRecordDesc}history record desc"/>
+  <string id="str_history_record_sort_time" text="{=strHistoryRecordSortTime}time of history"/>
+  <string id="str_history_record_filter_group_time" text="{=strHistoryRecordFilterGroupTime}year of history"/>
+  <string id="str_battle_record_title" text="{=strBattleRecordTitle}battle record title"/>
+  <string id="str_battle_record_desc_first_field" text="{=strBattleRecordDescFirstField}battle record first desc field"/>
+  <string id="str_battle_record_desc_first_settlement" text="{=strBattleRecordDescFirstSettlement}battle record first desc settlement"/>
+  <string id="str_battle_record_desc_first_settlement_no_hero" text="{=strBattleRecordDescFirstSettlementNoHero}battle record first desc settlement"/>
+  <string id="str_battle_record_desc_first_settlement_hero" text="{=strBattleRecordDescFirstSettlementHero}battle record first desc settlement"/>
+  <string id="str_battle_record_regular_troop" text="{=strBattleRecordRegularTroop}regular troop"/>
+  <string id="str_battle_record_splitter" text="{=strBattleRecordSplitter}, "/>
+  <string id="str_battle_record_comma" text="{=strBattleRecordComma}, "/>
+  <string id="str_battle_record_fullstop" text="{=strBattleRecordFullstop}, "/>
+  <string id="str_battle_record_semicolon" text="{=strBattleRecordSemicolon}; "/>
+  <string id="str_battle_record_result_win1" text="{=strBattleRecordResultWin1}greatly win"/>
+  <string id="str_battle_record_result_win2" text="{=strBattleRecordResultWin2}regular victory"/>
+  <string id="str_battle_record_result_win3" text="{=strBattleRecordResultWin3}miserable victor"/>
+  <string id="str_battle_record_result_lose1" text="{=strBattleRecordResultLose1}fiasco"/>
+  <string id="str_battle_record_result_lose2" text="{=strBattleRecordResultLose2}defeated"/>
+  <string id="str_battle_record_result_lose3" text="{=strBattleRecordResultLose3}lose by a neck"/>
+  <string id="str_battle_record_desc_second" text="{=strBattleRecordDescSecond}battle record desc second"/>
+  <string id="str_battle_record_desc_third_prefix" text="{=strBattleRecordDescThirdPrefix}during this battle"/>
+  <string id="str_battle_record_desc_third_kill_regular" text="{=strBattleRecordDescThirdKillRegular}desc third kill regular"/>
+  <string id="str_battle_record_desc_third_kill_hero" text="{=strBattleRecordDescThirdKillHero}desc third kill hero"/>
+  <string id="str_battle_record_desc_third_wound_hero" text="{=strBattleRecordDescThirdWoundHero}desc third wound hero"/>
+  <string id="str_battle_record_desc_third_hero_wounded" text="{=strBattleRecordDescThirdHeroWounded}hero is wounded during the battle"/>
+  <string id="str_battle_record_desc_third_hero_killed" text="{=strBattleRecordDescThirdHeroKilled}hero is killed during the battle"/>
+
+  <!-- 文化名称 -->
+  <string id="str_culture_rich_name.yongliang" text="{=*}Ung Lương"/>
+  <string id="str_culture_rich_name.yanzhou" text="{=*}Duyện Châu"/>
+  <string id="str_culture_rich_name.yizhou" text="{=*}Ích Châu"/>
+  <string id="str_culture_rich_name.yangzhou" text="{=*}Dương Châu"/>
+  <string id="str_culture_rich_name.jizhou" text="{=*}Ký Châu"/>
+  <string id="str_culture_rich_name.youzhou" text="{=*}U Châu"/>
+  <string id="str_culture_rich_name.yuzhou" text="{=*}Dự Châu"/>
+  <string id="str_culture_rich_name.jingzhou" text="{=*}Kinh Châu"/>
+  <string id="str_culture_rich_name.jiaozhou" text="{=*}Giao Châu"/>
+  <string id="str_culture_rich_name.sili" text="{=*}Tư Châu"/>
+  <string id="str_culture_rich_name.qingzhou" text="{=*}Thanh Châu"/>
+  <string id="str_culture_rich_name.xuzhou" text="{=*}Từ Châu"/>
+  <string id="str_culture_rich_name.bingzhou" text="{=*}Tịnh Châu"/>
+  <!-- 文化描述 -->
+  <string id="str_culture_description.yongliang" text="{=*}Văn hóa Ung Lương bắt nguồn từ nền văn minh Hoàng Hà xa xưa. Sau khi nhà Tần thống nhất thiên hạ, vùng đất này được chia thành Ung Châu và Lương Châu. Từ thời Tây Hán, Ung Lương trở thành lá chắn che chở Trường An, đồng thời giữ vị trí trọng yếu trên Con đường Tơ lụa. Thương nhân, sứ đoàn qua lại không ngớt, thúc đẩy giao thương giữa Trung Nguyên và Tây Vực. Là trọng trấn quân sự nơi biên cương Tây Bắc, Ung Lương có dân phong chất phác, cứng cỏi, chuộng võ nghệ. Quân mã địa phương nổi tiếng với những đội tinh kỵ hành quân thần tốc, xông trận như lửa, từng góp mặt trong vô số cuộc chinh chiến. Trải bao thăng trầm, Ung Lương vẫn là một phần quan trọng của văn hiến Hoa Hạ."/>
+  <string id="str_culture_description.yanzhou" text="{=*}Lịch sử Duyện Châu có từ thời Xuân Thu, khi một phần đất đai thuộc nước Lỗ. Sau khi nhà Tần thống nhất, quận huyện được thiết lập tại đây; đến Đông Hán, Duyện Châu trở thành khu vực hành chính trọng yếu ở phía Đông. Đất đai màu mỡ, muối sắt dồi dào, nông nghiệp và ngư nghiệp thịnh vượng. Trải mấy trăm năm dưới hai triều Hán, kho lương đầy ắp, võ khố chất cứng cung trường mâu, nhân tài và văn sĩ xuất hiện đông đảo. Binh sĩ Duyện Châu nổi tiếng trang bị tốt, thao luyện nghiêm khắc, tướng lĩnh nhiều người xuất thân thế gia, thiện chiến trận và phối hợp nhiều binh chủng; tiến công hay phòng thủ đều vững vàng."/>
+  <string id="str_culture_description.yizhou" text="{=*}Phần lớn Ích Châu nằm trên đất Ba Thục, núi sông hiểm trở, đường sá gập ghềnh nhưng cảnh sắc hùng vĩ. Trước thời Tần, nơi đây có nhiều tiểu quốc; sau khi nhà Tần thống nhất, văn hóa Quan Trung và Ba Thục hòa quyện, qua mấy trăm năm hai triều Hán dần hình thành phong tục đặc sắc của miền Tây Nam. Ích Châu giàu tài nguyên, nổi tiếng gấm Thục và tơ lụa, lại có nhiều ruộng tốt nên được gọi là đất Thiên Phủ. Địa hình tự nhiên thuận lợi cho việc phòng thủ. Triều Hán dựng nhiều cứ điểm quân sự tại Lâm Cung, Thục Quận, huyện Bì cùng các quận huyện lân cận, đồn trú binh mã để giữ yên biên cương Tây Nam."/>
+  <string id="str_culture_description.yangzhou" text="{=*}Dương Châu nằm ở miền duyên hải phía Đông, từ xưa bao gồm các vùng Hoài, Hải và Giang Nam, nổi tiếng là miền cá gạo của Ngô, Sở. Thời Hán, đất này kề sông Hoài, sông Trường Giang, nối miền Ngô Việt, phía Đông giáp biển, khí hậu ôn hòa, đồng ruộng phì nhiêu. Nông thương phát triển, kho lẫm sung túc, thế gia đông đúc. Quân lính Dương Châu thường được tuyển từ những người quen đi lâu thuyền; họ thạo thủy chiến, biết dùng cường cung và nỏ cứng đánh địch trên chiến thuyền. Cuối thời Đông Hán, địa vực Dương Châu bị chia cắt giữa Hoài Nam và Giang Đông; sự đối đầu giữa các hào tộc cũng trở thành mối họa khó dẹp yên."/>
+  <string id="str_culture_description.jizhou" text="{=*}Ký Châu là một trong Cửu Châu từ thời cổ, đến năm Nguyên Phong thứ năm đời Hán Vũ Đế được đặt làm Ký Châu Thứ sử bộ. Nằm giữa đồng bằng Hà Bắc, đất đai Ký Châu có nhiều thành quách, thôn xóm san sát, dân cư đông đúc, nguồn binh lực dồi dào; bởi vậy từ xưa đã là nơi chư hầu tranh đoạt. Quân sĩ ở đây gồm bộ binh, kỵ sĩ và khinh xa, đặc biệt tinh thông chiến trận theo đội hình, rất có lợi trong những trận quyết chiến quy mô lớn trên đồng bằng. Tuy nhiên, nhiều quân sĩ phương Bắc không quen sông nước nên thường bất lợi khi giao tranh bằng thủy quân."/>
+  <string id="str_culture_description.youzhou" text="{=*}U Châu vốn là đất Yên thời Chiến Quốc, nơi sinh ra nhiều hào kiệt cương trực, dũng cảm. Vùng U Yên khí hậu giá rét, mùa đông thiếu thốn vật tư khiến thương nhân ngần ngại lui tới. Để ngăn quân Hung Nô quấy nhiễu biên ải, suốt hai triều Hán, nơi đây không ngừng xây đồn lũy, củng cố phòng tuyến và chăm lo việc nuôi ngựa. Từ đầu Đông Hán, đội Đột Kỵ U Châu đã lừng danh thiên hạ, được Hán Quang Vũ Đế trọng dụng. Tướng sĩ U Châu thiện chiến trên lưng ngựa, chịu đựng được băng tuyết và giá lạnh, là lực lượng quan trọng trấn giữ biên cương phương Bắc."/>
+  <string id="str_culture_description.yuzhou" text="{=*}Dự Châu thuộc Cửu Châu thời Đại Vũ, nằm giữa thiên hạ nên còn gọi là Trung Châu. Phía Đông nối Thanh Châu, Từ Châu; phía Tây giáp Ung Châu, Tịnh Châu; phía Bắc kề Ký Châu, Duyện Châu; phía Nam thông Kinh Tương. Vùng đất này là đầu mối giao thông chiến lược giữa Nam và Bắc. Triều Hán đặt Dự Châu Thứ sử bộ, cai quản những quận như Dĩnh Xuyên, Nhữ Nam, Bái và nước Lương. Tuy địa bàn không rộng, vị thế Dự Châu lại rất trọng yếu, danh sĩ hiền tài nhiều đời xuất hiện. Nhân khẩu sung túc, ngựa và lương thảo dồi dào, binh khí cùng cung nỏ sắc bén khiến quân Dự Châu có sức chiến đấu đáng gờm."/>
+  <string id="str_culture_description.jingzhou" text="{=*}Theo Vũ Cống, miền Kinh Sơn đến phía Nam Hành Sơn thuộc Kinh Châu. Đất này có đầm Vân Mộng, dãy Hành Sơn, phía Bắc dựa Kinh Sơn, phía Nam vượt Ngũ Lĩnh, án ngữ trung lưu Trường Giang với mạng lưới sông ngòi và đồi núi chằng chịt. Từ thời Xuân Thu, Chiến Quốc, vùng Yển Dĩnh đã là một cái nôi của văn hóa nước Sở. Trải nhiều đời Hán, Kinh Châu ngày càng trở thành nơi xung yếu trong thiên hạ. Đất Kinh Sở giàu có, dân chúng tương đối yên ổn, văn nhân và hiền sĩ tụ hội đông đảo. Quân sĩ nơi đây vừa can đảm vừa có mưu, đặc biệt thiện dùng kiếm, thuẫn, cung và nỏ, công thủ đều giỏi."/>
+  <string id="str_culture_description.jiaozhou" text="{=*}Giao Châu xưa là đất Bách Việt. Nhà Tần đặt quận Quế Lâm, Tượng Quận; Hán Vũ Đế lập Giao Chỉ Thứ sử bộ, về sau gọi là Giao Châu. Đây là vùng cực Nam của cương vực nhà Hán, xa Trung Nguyên, cách trở bởi Ngũ Lĩnh, nhiều rừng mưa, đầm lầy và lam chướng. Người Hán cùng các cộng đồng Việt chung sống; binh sĩ quen khí hậu nóng ẩm, thiện chiến trong rừng núi. Thời hai triều Hán, Giao Châu có sản vật phong phú: trái cây phương Nam, châu báu, hương liệu; đường biển nối vào tuyến giao thương hàng hải. Quân dân địa phương thường tuyển binh từ miền sơn lâm, giỏi hành quân đột kích nơi địa hình hiểm trở."/>
+  <string id="str_culture_description.sili" text="{=*}Tư Lệ là miền kinh kỳ của hai triều Hán. Đất này thời Tần thuộc Nội Sử; đến đời Hán Vũ Đế đặt Tư Lệ Hiệu úy bộ, quản những trọng trấn như Lạc Dương và Trường An. Đây là trung tâm chính trị, quân sự, kinh tế và giáo hóa của thiên hạ. Địa thế tương đối bằng phẳng, thành trì san sát, phòng tuyến kiên cố, cung điện và quan phủ dày đặc, dân cư đông đúc, nhân tài hội tụ. Dẫu cuối thời Hán phải chịu cảnh chiến loạn, Tư Lệ vẫn nắm giữ vị trí trung tâm không thể thay thế, luôn là mục tiêu tranh đoạt của các chư hầu."/>
+  <string id="str_culture_description.qingzhou" text="{=*}Thanh Châu có nguồn gốc từ thời thượng cổ, gắn với vùng đất nơi Thiếu Hạo từng dựng đô; đến thời Đại Vũ được xếp vào Cửu Châu. Đất tựa núi, nhìn ra biển, nghề đánh cá và làm muối thịnh vượng, từ lâu là một miền trù phú. Những đô thị như Lâm Truy là nơi thương nhân hội tụ, song vị trí chiến lược cũng khiến Thanh Châu nhiều lần chịu binh đao. Từ loạn Bảy nước đến khởi nghĩa Hoàng Cân, dân chúng liên tiếp trải cảnh ly tán. Người Thanh Châu khi yên bình cày ruộng, đánh cá, khi có chiến sự lại cầm binh khí thủ thành, quen việc biển cả. Nơi đây hội tụ nề nếp Nho học Tề Lỗ cùng khí chất cứng cỏi giữa thời loạn."/>
+  <string id="str_culture_description.xuzhou" text="{=*}Từ Châu là vùng đất trọng yếu từ thời thượng cổ, gắn với truyền thuyết vua Nghiêu phong đất cho Bành Tổ. Nhà Tần đặt Tứ Thủy Quận, nhà Hán lập Thứ sử bộ, cai quản những trọng trấn như Bành Thành và Hạ Bì. Nằm ở nơi giao nhau giữa Giang Hoài và Trung Nguyên, đây là đầu mối trao đổi muối sắt, tơ lụa và lương thực, cũng là con đường thông thương Nam Bắc. Nhưng vì địa thế xung yếu, Từ Châu thường chìm trong chiến trận. Dân chúng vừa giỏi nông tang vừa biết cầm giáo giữ thành; bộ binh thiện xếp trận, nỏ binh giỏi dựa tường lũy phòng thủ. Phong tục kết hợp sự mềm dẻo của Giang Hoài với nét cứng cỏi của Trung Nguyên."/>
+  <string id="str_culture_description.bingzhou" text="{=*}Tịnh Châu là một trong Cửu Châu cổ, vùng đất giáp Hung Nô ở phía Bắc và Tiên Ti ở phía Đông, được xem như tuyến phòng thủ đầu tiên của Trung Nguyên trước các bộ tộc phương Bắc. Trải hai triều Hán, binh họa biên cương không dứt, dân chúng quen chiến trận, tính tình cương mãnh, chuộng võ nghệ. Thảo nguyên và đồng cỏ rộng lớn khiến nghề nuôi ngựa rất phát triển; người Hồ và người Hán chung sống, khiến kỹ nghệ bộ chiến và kỵ chiến hòa quyện. Từ những cuộc chinh phạt phương Bắc của Vệ Thanh, Hoắc Khứ Bệnh đến thời Tam Quốc, thiết kỵ Tịnh Châu luôn nổi danh dũng mãnh giữa loạn thế."/>
+
+  <!-- 文化父母名称 -->
+  <string id="str_player_father_name.yongliang" text="{=*}Nghĩa phụ người Ung Lương"/>
+  <string id="str_player_mother_name.yongliang" text="{=*}Nghĩa mẫu người Ung Lương"/>
+  <string id="str_player_father_name.yanzhou" text="{=*}Nghĩa phụ người Duyện Châu"/>
+  <string id="str_player_mother_name.yanzhou" text="{=*}Nghĩa mẫu người Duyện Châu"/>
+  <string id="str_player_father_name.yizhou" text="{=*}Nghĩa phụ người Ích Châu"/>
+  <string id="str_player_mother_name.yizhou" text="{=*}Nghĩa mẫu người Ích Châu"/>
+  <string id="str_player_father_name.yangzhou" text="{=*}Nghĩa phụ người Dương Châu"/>
+  <string id="str_player_mother_name.yangzhou" text="{=*}Nghĩa mẫu người Dương Châu"/>
+  <string id="str_player_father_name.jizhou" text="{=*}Nghĩa phụ người Ký Châu"/>
+  <string id="str_player_mother_name.jizhou" text="{=*}Nghĩa mẫu người Ký Châu"/>
+  <string id="str_player_father_name.youzhou" text="{=*}Nghĩa phụ người U Châu"/>
+  <string id="str_player_mother_name.youzhou" text="{=*}Nghĩa mẫu người U Châu"/>
+  <string id="str_player_father_name.yuzhou" text="{=*}Nghĩa phụ người Dự Châu"/>
+  <string id="str_player_mother_name.yuzhou" text="{=*}Nghĩa mẫu người Dự Châu"/>
+  <string id="str_player_father_name.jingzhou" text="{=*}Nghĩa phụ người Kinh Châu"/>
+  <string id="str_player_mother_name.jingzhou" text="{=*}Nghĩa mẫu người Kinh Châu"/>
+  <string id="str_player_father_name.jiaozhou" text="{=*}Nghĩa phụ người Giao Châu"/>
+  <string id="str_player_mother_name.jiaozhou" text="{=*}Nghĩa mẫu người Giao Châu"/>
+  <string id="str_player_father_name.sili" text="{=*}Nghĩa phụ người Tư Lệ"/>
+  <string id="str_player_mother_name.sili" text="{=*}Nghĩa mẫu người Tư Lệ"/>
+  <string id="str_player_father_name.xuzhou" text="{=*}Nghĩa phụ người Từ Châu"/>
+  <string id="str_player_mother_name.xuzhou" text="{=*}Nghĩa mẫu người Từ Châu"/>
+  <string id="str_player_father_name.qingzhou" text="{=*}Nghĩa phụ người Thanh Châu"/>
+  <string id="str_player_mother_name.qingzhou" text="{=*}Nghĩa mẫu người Thanh Châu"/>
+  <string id="str_player_father_name.bingzhou" text="{=*}Nghĩa phụ người Tịnh Châu"/>
+  <string id="str_player_mother_name.bingzhou" text="{=*}Nghĩa mẫu người Tịnh Châu"/>
+
+  <!-- 文化文本 -->
+  <!--IS_GENERAL_SIDE true means there are several behaviours which explicitly declare their side, in which case in order not to repeat "from left side" several times, main body text will say it once and it won't be mentioned in each individiual behaviour's text-->
+  <string id="str_faction_ruler.yongliang" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.yanzhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.yizhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.yangzhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.jizhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.youzhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.yuzhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.jingzhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.jiaozhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.sili" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.qingzhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.xuzhou" text="{=*}Chủ công"/>
+  <string id="str_faction_ruler.bingzhou" text="{=*}Chủ công"/>
+
+  <string id="str_faction_official.yongliang" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.yanzhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.yizhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.yangzhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.jizhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.youzhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.yuzhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.jingzhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.jiaozhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.sili" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.qingzhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.xuzhou" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.bingzhou" text="{=*}{RULER_OP}"/>
+  
+  <string id="str_faction_official.yongliang_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.yanzhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.yizhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.yangzhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.jizhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.youzhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.yuzhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.jingzhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.jiaozhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.sili_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.qingzhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.bingzhou_f" text="{=*}{RULER_OP}"/>
+  <string id="str_faction_official.xuzhou_f" text="{=*}{RULER_OP}"/>
+  <!-- <string id="lpbDPuuW" text="{RULER.NAME}{?RULER.GENDER}女皇{?}皇帝{\?}"/>
+       <string id="7pAZatbz" text="{RULER.NAME}{?RULER.GENDER}女皇{?}皇帝{\?}"/> -->
+  <string id="str_faction_ruler_term_in_speech.yongliang" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.yanzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.yizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.yangzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.jizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.youzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.yuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.jingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.jiaozhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.sili" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.qingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.bingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_term_in_speech.xuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+
+  <string id="str_faction_ruler_name_with_title.yongliang" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.yanzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.yizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.yangzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.jizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.youzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.yuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.jingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.jiaozhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.sili" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.qingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.bingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+  <string id="str_faction_ruler_name_with_title.xuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ chủ công{?}Chủ công{\?}"/>
+
+  <!-- <string id="nAaT19CC" text="{RULER.NAME}{?RULER.GENDER}执政官{?}执政官{\?}"/> -->
+  <string id="str_faction_noble_name_with_title.yongliang" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.yanzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.yizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.yangzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.jizhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.youzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.yuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.jingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.jiaozhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.sili" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.qingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.bingzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+  <string id="str_faction_noble_name_with_title.xuzhou" text="{=*}{RULER.NAME}{?RULER.GENDER}Nữ tướng quân{?}Tướng quân{\?}"/>
+
+  <!-- "The southern imperial forces have withdrawn" -->
+  <string id="str_adjective_for_faction.yongliang" text="{=*}Ung Lương"/> <!-- 北帝国 -->
+  <string id="str_adjective_for_faction.yanzhou" text="{=*}Duyện Châu"/>
+  <string id="str_adjective_for_faction.yizhou" text="{=*}Ích Châu"/>
+  <string id="str_adjective_for_faction.yangzhou" text="{=*}Dương Châu"/>
+  <string id="str_adjective_for_faction.jizhou" text="{=*}Ký Châu"/>
+  <string id="str_adjective_for_faction.youzhou" text="{=*}U Châu"/>
+  <string id="str_adjective_for_faction.yuzhou" text="{=*}Dự Châu"/>
+  <string id="str_adjective_for_faction.jingzhou" text="{=*}Kinh Châu"/>
+  <string id="str_adjective_for_faction.jiaozhou" text="{=*}Giao Châu"/>
+  <string id="str_adjective_for_faction.sili" text="{=*}Tư Lệ"/>
+  <string id="str_adjective_for_faction.qingzhou" text="{=*}Thanh Châu"/>
+  <string id="str_adjective_for_faction.bingzhou" text="{=*}Tịnh Châu"/>
+  <string id="str_adjective_for_faction.xuzhou" text="{=*}Từ Châu"/>
+
+
+  <!-- "Not much left after the Southern Empire raided the place" -->
+  <string id="str_short_term_for_faction.yongliang" text="{=*}Ung Lương"/> <!-- 北帝国 -->
+  <string id="str_short_term_for_faction.yanzhou" text="{=*}Duyện Châu"/>
+  <string id="str_short_term_for_faction.yizhou" text="{=*}Ích Châu"/>
+  <string id="str_short_term_for_faction.yangzhou" text="{=*}Dương Châu"/>
+  <string id="str_short_term_for_faction.jizhou" text="{=*}Ký Châu"/>
+  <string id="str_short_term_for_faction.youzhou" text="{=*}U Châu"/>
+  <string id="str_short_term_for_faction.yuzhou" text="{=*}Dự Châu"/>
+  <string id="str_short_term_for_faction.jingzhou" text="{=*}Kinh Châu"/>
+  <string id="str_short_term_for_faction.jiaozhou" text="{=*}Giao Châu"/>
+  <string id="str_short_term_for_faction.sili" text="{=*}Tư Lệ"/>
+  <string id="str_short_term_for_faction.bingzhou" text="{=*}Tịnh Châu"/>
+  <string id="str_short_term_for_faction.qingzhou" text="{=*}Thanh Châu"/>
+  <string id="str_short_term_for_faction.xuzhou" text="{=*}Từ Châu"/>
+
+  <!-- The formal name for a faction is derived from the culture, as the southern Empire doesn't consider itself the 'southern Empire,' it considers itself the sole legitimate empire -->
+  <!-- "In the name of the Calradian Empire, I welcome you" -->
+  <string id="str_faction_formal_name_for_culture.yongliang" text="{=*}Ung Lương"/> <!-- 卡拉德帝国 -->
+  <string id="str_faction_formal_name_for_culture.yanzhou" text="{=*}Duyện Châu"/>
+  <string id="str_faction_formal_name_for_culture.yizhou" text="{=*}Ích Châu"/>
+  <string id="str_faction_formal_name_for_culture.yangzhou" text="{=*}Dương Châu"/>
+  <string id="str_faction_formal_name_for_culture.jizhou" text="{=*}Ký Châu"/>
+  <string id="str_faction_formal_name_for_culture.youzhou" text="{=*}U Châu"/>
+  <string id="str_faction_formal_name_for_culture.yuzhou" text="{=*}Dự Châu"/>
+  <string id="str_faction_formal_name_for_culture.jingzhou" text="{=*}Kinh Châu"/>
+  <string id="str_faction_formal_name_for_culture.jiaozhou" text="{=*}Giao Châu"/>
+  <string id="str_faction_formal_name_for_culture.sili" text="{=*}Tư Lệ"/>
+  <string id="str_faction_formal_name_for_culture.bingzhou" text="{=*}Tịnh Châu"/>
+  <string id="str_faction_formal_name_for_culture.qingzhou" text="{=*}Thanh Châu"/>
+  <string id="str_faction_formal_name_for_culture.xuzhou" text="{=*}Từ Châu"/>
+
+  <!-- "The language and laws of the Empire" -->
+  <string id="str_faction_informal_name_for_culture.yongliang" text="{=*}Người Ung Lương"/> <!-- 帝国人 -->
+  <string id="str_faction_informal_name_for_culture.yanzhou" text="{=*}Người Duyện Châu"/>
+  <string id="str_faction_informal_name_for_culture.yizhou" text="{=*}Người Ích Châu"/>
+  <string id="str_faction_informal_name_for_culture.yangzhou" text="{=*}Người Dương Châu"/>
+  <string id="str_faction_informal_name_for_culture.jizhou" text="{=*}Người Ký Châu"/>
+  <string id="str_faction_informal_name_for_culture.youzhou" text="{=*}Người U Châu"/>
+  <string id="str_faction_informal_name_for_culture.yuzhou" text="{=*}Người Dự Châu"/>
+  <string id="str_faction_informal_name_for_culture.jingzhou" text="{=*}Người Kinh Châu"/>
+  <string id="str_faction_informal_name_for_culture.jiaozhou" text="{=*}Người Giao Châu"/>
+  <string id="str_faction_informal_name_for_culture.sili" text="{=*}Người Tư Lệ"/>
+  <string id="str_faction_informal_name_for_culture.qingzhou" text="{=*}Người Thanh Châu"/>
+  <string id="str_faction_informal_name_for_culture.bingzhou" text="{=*}Người Tịnh Châu"/>
+  <string id="str_faction_informal_name_for_culture.xuzhou" text="{=*}Người Từ Châu"/>
+
+
+  <!-- I will teach you imperial ways -->
+  <string id="str_adjective_for_culture.yongliang" text="{=*}Ung Lương"/> <!-- 帝国 -->
+  <string id="str_adjective_for_culture.yanzhou" text="{=*}Duyện Châu"/>
+  <string id="str_adjective_for_culture.yizhou" text="{=*}Ích Châu"/>
+  <string id="str_adjective_for_culture.yangzhou" text="{=*}Dương Châu"/>
+  <string id="str_adjective_for_culture.jizhou" text="{=*}Ký Châu"/>
+  <string id="str_adjective_for_culture.youzhou" text="{=*}U Châu"/>
+  <string id="str_adjective_for_culture.yuzhou" text="{=*}Dự Châu"/>
+  <string id="str_adjective_for_culture.jingzhou" text="{=*}Kinh Châu"/>
+  <string id="str_adjective_for_culture.jiaozhou" text="{=*}Giao Châu"/>
+  <string id="str_adjective_for_culture.sili" text="{=*}Tư Lệ"/>
+  <string id="str_adjective_for_culture.qingzhou" text="{=*}Thanh Châu"/>
+  <string id="str_adjective_for_culture.bingzhou" text="{=*}Tịnh Châu"/>
+  <string id="str_adjective_for_culture.xuzhou" text="{=*}Từ Châu"/>
+
+  <!-- I don't care for the imperials and their big, decadent cities -->
+  <string id="str_neutral_term_for_culture.yongliang" text="{=*}thuộc Ung Lương"/> <!-- 帝国的 -->
+  <string id="str_neutral_term_for_culture.yanzhou" text="{=*}thuộc Duyện Châu"/>
+  <string id="str_neutral_term_for_culture.yizhou" text="{=*}thuộc Ích Châu"/>
+  <string id="str_neutral_term_for_culture.yangzhou" text="{=*}thuộc Dương Châu"/>
+  <string id="str_neutral_term_for_culture.jizhou" text="{=*}thuộc Ký Châu"/>
+  <string id="str_neutral_term_for_culture.youzhou" text="{=*}thuộc U Châu"/>
+  <string id="str_neutral_term_for_culture.yuzhou" text="{=*}thuộc Dự Châu"/>
+  <string id="str_neutral_term_for_culture.jingzhou" text="{=*}thuộc Kinh Châu"/>
+  <string id="str_neutral_term_for_culture.jiaozhou" text="{=*}thuộc Giao Châu"/>
+  <string id="str_neutral_term_for_culture.sili" text="{=*}thuộc Tư Lệ"/>
+  <string id="str_neutral_term_for_culture.qingzhou" text="{=*}thuộc Thanh Châu"/>
+  <string id="str_neutral_term_for_culture.bingzhou" text="{=*}thuộc Tịnh Châu"/>
+  <string id="str_neutral_term_for_culture.xuzhou" text="{=*}thuộc Từ Châu"/>
+
+
+  <!-- 衣谷新增物种类的物品字串符 -->
+  <string id="str_item_category.soldier_level_3" text="{=*}Bộ trang bị thăng cấp binh sĩ bậc ba"/>
+    <string id="str_item_category.soldier_level_4" text="{=*}Bộ trang bị thăng cấp binh sĩ bậc bốn"/>
+    <string id="str_item_category.soldier_level_5" text="{=*}Bộ trang bị thăng cấp binh sĩ bậc năm"/>
+    <string id="str_item_category.soldier_level_6" text="{=*}Bộ trang bị thăng cấp binh sĩ bậc sáu"/>
+    <string id="str_item_category.soldier_level_7" text="{=*}Bộ trang bị thăng cấp binh sĩ bậc bảy"/>
+</strings>
+<!--
+</base> 
+-->

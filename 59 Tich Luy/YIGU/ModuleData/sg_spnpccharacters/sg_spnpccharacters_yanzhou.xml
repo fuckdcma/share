@@ -1,0 +1,1656 @@
+<?xml version='1.0' encoding='utf-8'?>
+<NPCCharacters>
+  <!-- 士兵 -->
+  <NPCCharacter id="yanzhou_sol_1001" default_group="Infantry" level="6" name="{=*}Thú tốt Duyện Châu" occupation="Soldier" is_basic_troop="true" culture="Culture.yanzhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+      <skill id="OneHanded" value="30"/>
+      <skill id="TwoHanded" value="10"/>
+      <skill id="Polearm" value="40"/>
+      <skill id="Bow" value="5"/>
+      <skill id="Crossbow" value="5"/>
+      <skill id="Throwing" value="10"/>
+      <skill id="Riding" value="0"/>
+      <skill id="Athletics" value="30"/>
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.sili_sol_2001"/>
+      <upgrade_target id="NPCCharacter.caocao_sol_000"/>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ge_yanzhou_03"/>
+        <equipment slot="Head" id="Item.lz_yanzhou_mao_01"/>
+        <equipment slot="Body" id="Item.lz_yanzhou_yi_01"/>
+        <equipment slot="Leg" id="Item.lz_yanzhou_xie_01"/>
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- <NPCCharacter id="yanzhou_sol_2001" default_group="Infantry" level="11" name="{=*}兖州正卒" occupation="Soldier" is_basic_troop="true" culture="Culture.yanzhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="10" />
+      <skill id="Polearm" value="65" />
+      <skill id="Bow" value="5" />
+      <skill id="Crossbow" value="5" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="5" />
+      <skill id="Athletics" value="55" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_ge_yanzhou_03" />
+        <equipment slot="Head" id="Item.lz_yanzhou_mao_02" />
+        <equipment slot="Body" id="Item.lz_yanzhou_yi_02" />
+        <equipment slot="Gloves" id="Item.lz_yanzhou_bi_02" />
+        <equipment slot="Leg" id="Item.lz_yanzhou_xie_02" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="yanzhou_sol_2002" default_group="Ranged" level="11" name="{=*}兖州弓手" occupation="Soldier" is_basic_troop="true" culture="Culture.yanzhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou" />
+    </face>
+    <skills>
+      <skill id="OneHanded" value="40" />
+      <skill id="TwoHanded" value="5" />
+      <skill id="Polearm" value="5" />
+      <skill id="Bow" value="40" />
+      <skill id="Crossbow" value="10" />
+      <skill id="Throwing" value="10" />
+      <skill id="Riding" value="5" />
+      <skill id="Athletics" value="65" />
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_yanzhou_01" />
+        <equipment slot="Item1" id="Item.lz_arrow_yanzhou_01" />
+        <equipment slot="Item2" id="Item.lz_hsd_yanzhou_03" />
+        <equipment slot="Head" id="Item.lz_yanzhou_mao_03" />
+        <equipment slot="Body" id="Item.lz_yanzhou_yi_03" />
+        <equipment slot="Leg" id="Item.lz_yanzhou_xie_03" />
+      </EquipmentRoster>
+      <EquipmentSet id="lz_han_troops_equipment_template" civilian="true" />
+    </Equipments>
+  </NPCCharacter> -->
+
+
+  <!-- 文化相关 -->
+  <NPCCharacter id="tournament_master_yanzhou" default_group="Infantry" is_hero="false" occupation="ArenaMaster" culture="Culture.yanzhou" name="Binh tào duyện" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_jingjichanglaoban_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_jingjichanglaoban_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="villager_yanzhou" default_group="Infantry" level="1" name="{=*}Nông dân Duyện Châu" occupation="Villager" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <BodyProperties version="4" age="25.57" weight="0.3164" build="0.2485" key="00052008000000010070030000001603003300110010200000000001010000000144501304010000000000000000000000000000000000000000000010880000"/>
+      <BodyPropertiesMax version="4" age="69.94" weight="0.9923" build="0.7052" key="0010F80FC000370FFFFFEFEFFEEFFF7EEEFFFFFFFEF7EFFEFFFFFFFFFEFFFFFF07CBF0780CFFFFEF000000000000000000000000000000000000000061809105"/>
+    </face>
+    <skills>
+      <skill id="OneHanded" value="20"/>
+      <skill id="TwoHanded" value="10"/>
+      <skill id="Polearm" value="20"/>
+      <skill id="Bow" value="5"/>
+      <skill id="Crossbow" value="5"/>
+      <skill id="Throwing" value="10"/>
+      <skill id="Riding" value="0"/>
+      <skill id="Athletics" value="20"/>
+    </skills>
+    <upgrade_targets>
+      <upgrade_target id="NPCCharacter.yanzhou_sol_1001"/>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="Item.sg_axe_001"/>
+        <equipment slot="Item1" id="Item.sg_throwing_stone"/>
+        <equipment slot="Head" id="Item.sg_npc_bartender_head"/>
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004"/>
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sg_axe_001"/>
+        <equipment slot="Item1" id="Item.sg_throwing_stone"/>
+        <equipment slot="Head" id="Item.sg_npc_bartender_head"/>
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004"/>
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="caravan_master_yanzhou" default_group="Infantry" level="26" name="Thủ lĩnh thương đội Duyện Châu" occupation="CaravanGuard" culture="Culture.yanzhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+      <skill id="Athletics" value="130"/>
+      <skill id="Riding" value="130"/>
+      <skill id="OneHanded" value="160"/>
+      <skill id="TwoHanded" value="80"/>
+      <skill id="Polearm" value="60"/>
+      <skill id="Bow" value="80"/>
+      <skill id="Crossbow" value="20"/>
+      <skill id="Throwing" value="50"/>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_gaojihuwei_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_gaojihuwei_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="armed_trader_yanzhou" default_group="Ranged" level="16" name="Thương nhân vũ trang Duyện Châu" occupation="CaravanGuard" culture="Culture.yanzhou" is_basic_troop="true">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+      <skill id="Athletics" value="70"/>
+      <skill id="Riding" value="10"/>
+      <skill id="OneHanded" value="70"/>
+      <skill id="TwoHanded" value="40"/>
+      <skill id="Polearm" value="40"/>
+      <skill id="Bow" value="70"/>
+      <skill id="Crossbow" value="30"/>
+      <skill id="Throwing" value="30"/>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_gaojihuwei_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_gaojihuwei_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="caravan_guard_yanzhou" default_group="HorseArcher" level="21" name="Hộ vệ thương đội Duyện Châu" upgrade_requires="ItemCategory.horse" occupation="CaravanGuard" culture="Culture.yanzhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+      <skill id="Athletics" value="40"/>
+      <skill id="Riding" value="90"/>
+      <skill id="OneHanded" value="100"/>
+      <skill id="TwoHanded" value="15"/>
+      <skill id="Polearm" value="100"/>
+      <skill id="Bow" value="40"/>
+      <skill id="Crossbow" value="110"/>
+      <skill id="Throwing" value="15"/>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangduihuwei_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou"/>
+      <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma"/>
+      <equipment slot="HorseHarness" id="Item.sg_hh_001"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="veteran_caravan_guard_yanzhou" default_group="Cavalry" level="26" name="Hộ vệ thương đội kỳ cựu Duyện Châu" occupation="CaravanGuard" culture="Culture.yanzhou">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+      <skill id="Athletics" value="80"/>
+      <skill id="Riding" value="130"/>
+      <skill id="OneHanded" value="130"/>
+      <skill id="TwoHanded" value="60"/>
+      <skill id="Polearm" value="130"/>
+      <skill id="Bow" value="80"/>
+      <skill id="Crossbow" value="20"/>
+      <skill id="Throwing" value="60"/>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangduihuwei_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou"/>
+      <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma"/>
+      <equipment slot="HorseHarness" id="Item.sg_hh_001"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="prison_guard_yanzhou" default_group="Infantry" level="21" culture="Culture.yanzhou" occupation="PrisonGuard" name="Lính canh ngục Duyện Châu" skill_template="SkillSet.infantry_heavyinfantry_level21_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+      <!--<skill id="Athletics" value="50" /> #OLD_SKILL# -->
+      <skill id="OneHanded" value="50"/>
+      <skill id="TwoHanded" value="50"/>
+      <skill id="Polearm" value="50"/>
+      <skill id="Crossbow" value="50"/>
+      <skill id="Bow" value="50"/>
+      <skill id="Throwing" value="50"/>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangduihuwei_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="guard_yanzhou" default_group="Infantry" level="21" occupation="Soldier" culture="Culture.yanzhou" name="Lính canh Duyện Châu" skill_template="SkillSet.infantry_heavyinfantry_level21_template_skills" is_hidden_encyclopedia="true">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+      <!--<skill id="Athletics" value="50" /> #OLD_SKILL# -->
+      <skill id="OneHanded" value="50"/>
+      <skill id="TwoHanded" value="50"/>
+      <skill id="Polearm" value="50"/>
+      <skill id="Crossbow" value="50"/>
+      <skill id="Bow" value="50"/>
+      <skill id="Throwing" value="50"/>
+    </skills>
+    <Traits>
+    </Traits>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangduihuwei_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_shangduihuwei_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="blacksmith_yanzhou" default_group="Infantry" is_hero="false" occupation="Blacksmith" culture="Culture.yanzhou" name="Thợ rèn" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_tiejiang_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_tiejiang_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="weaponsmith_yanzhou" default_group="Infantry" is_hero="false" occupation="Weaponsmith" culture="Culture.yanzhou" name="Đại sư thợ rèn truyền kỳ" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_tiejiang_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_tiejiang_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townswoman_yanzhou" default_group="Infantry" is_female="true" level="1" name="{=*}Nữ dân thành trấn Duyện Châu" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <BodyProperties version="4" age="22.05" weight="0.2918" build="0.2886" key="0000600990000001227101022221000240008203101023225532432173535432004446030401121200000000000000000000000000000000000000000A940001"/>
+      <BodyPropertiesMax version="4" age="58.36" weight="0.7701" build="0.838" key="0020F80FD2B4300FFE7EFEEEEDFFFFEFEFFE9EEFEFF8FFEEFFFFEFEE8FFEFFFE05CDC6570CFEFFFF0000000000000000000000000000000000000000698C90C4"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Item0" id="Item.sg_spear_018"/>
+        <equipment slot="Item1" id="Item.sg_throwing_stone"/>
+        <equipment slot="Head" id="Item.sg_npc_bartender_head"/>
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004"/>
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Head" id="Item.sg_npc_bartender_head"/>
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004"/>
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townswoman_infant_yanzhou" name="Bé gái sơ sinh" age="3" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townswoman_child_yanzhou" name="Trẻ nhỏ" age="6" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townswoman_teenager_yanzhou" name="Bách tính Duyện Châu" age="14" is_female="true" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townsman_yanzhou" default_group="Infantry" name="{=*}Dân thành trấn" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+      <hair_tags>
+        <hair_tag name="Bald"/>
+        <hair_tag name="ShortAndThin"/>
+        <hair_tag name="Tousled"/>
+        <hair_tag name="Short"/>
+      </hair_tags>
+      <beard_tags>
+        <beard_tag name="Cleanshaven"/>
+        <beard_tag name="LightShortBeard"/>
+        <beard_tag name="HeavyShortBeard"/>
+        <beard_tag name="Cleanshaven"/>
+      </beard_tags>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Head" id="Item.sg_npc_bartender_head"/>
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004"/>
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sg_sword_whole_001_1h"/>
+        <equipment slot="Head" id="Item.sg_npc_bartender_head"/>
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004"/>
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townsman_infant_yanzhou" name="Bé trai sơ sinh" age="3" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townsman_child_yanzhou" name="Trẻ em" age="6" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="village_woman_yanzhou" default_group="Infantry" is_female="true" level="1" name="{=*}Nữ nông dân" occupation="Villager" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+      <hair_tags>
+        <hair_tag name="Bobbed"/>
+        <hair_tag name="RestingOnShoulders"/>
+        <hair_tag name="ShoulderLengthTied"/>
+        <hair_tag name="AboveShoulderLength"/>
+      </hair_tags>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="false">
+        <equipment slot="Head" id="Item.sg_npc_bartender_head"/>
+        <equipment slot="Body" id="Item.sg_cl_com_body_0004"/>
+        <equipment slot="Leg" id="Item.sg_cl_com_leg_0001"/>
+      </EquipmentRoster>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.sg_axe_001"/>
+        <equipment slot="Body" id="Item.bandit_leather_water_flask"/>
+        <equipment slot="Leg" id="Item.sg_npc_maid_leg"/>
+      </EquipmentRoster>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="villager_child_yanzhou" name="Trẻ em" age="6" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="villager_teenager_yanzhou" name="Bách tính Duyện Châu" age="14" is_female="false" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="village_woman_child_yanzhou" name="Trẻ em" age="6" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="village_woman_teenager_yanzhou" name="Bách tính Duyện Châu" age="14" is_female="true" default_group="Infantry" is_hero="false" occupation="Villager" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="townsman_teenager_yanzhou" name="Bách tính Duyện Châu" age="14" is_female="false" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="ransom_broker_yanzhou" default_group="Infantry" is_hero="false" name="Kẻ buôn người" occupation="RansomBroker" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangfan_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_shangfan_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gangleader_bodyguard_yanzhou" default_group="Infantry" name="Lý chính" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level16_template_skills" level="16">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template"/>
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="merchant_notary_yanzhou" default_group="Infantry" name="Hương thân" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template"/>
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="artisan_notary_yanzhou" default_group="Infantry" name="Thợ thủ công" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template"/>
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="preacher_notary_yanzhou" default_group="Infantry" name="Người truyền đạo" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template"/>
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="rural_notable_notary_yanzhou" default_group="Infantry" name="Người bảo lãnh" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_common_equipment_template"/>
+      <EquipmentSet civilian="true" id="sg_npc_yaoren_equipment_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="shop_worker_yanzhou" default_group="Infantry" name="Người bán hàng" occupation="ShopWorker" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_dianyuan_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_dianyuan_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tavernkeeper_yanzhou" default_group="Infantry" is_hero="false" name="Chủ quán rượu" occupation="Tavernkeeper" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_jiudiandianzhu_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_jiudiandianzhu_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="taverngamehost_yanzhou" default_group="Infantry" is_hero="false" name="Con bạc" occupation="TavernGameHost" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_juming_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_juming_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="musician_yanzhou" default_group="Infantry" is_hero="false" name="Người kể chuyện" occupation="Musician" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_dushuren_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_dushuren_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tavern_wench_yanzhou" default_group="Infantry" name="Nữ hầu quán rượu" is_female="true" is_hero="false" occupation="TavernWench" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shinv_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_shinv_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="armorer_yanzhou" default_group="Infantry" is_hero="false" occupation="Armorer" culture="Culture.yanzhou" name="Thợ làm giáp" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_tiejiang_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_tiejiang_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="horseMerchant_yanzhou" default_group="Infantry" is_hero="false" occupation="HorseTrader" culture="Culture.yanzhou" name="Lái buôn ngựa" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_mapifanzi_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_mapifanzi_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="barber_yanzhou" default_group="Infantry" is_hero="false" occupation="Townsfolk" culture="Culture.yanzhou" name="Thợ cắt tóc" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_lifashi_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_lifashi_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="merchant_yanzhou" default_group="Infantry" is_hero="true" occupation="GoodsTrader" culture="Culture.yanzhou" name="Tiểu thương" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shangfan_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_shangfan_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="beggar_yanzhou" default_group="Infantry" name="Ăn mày" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <BodyProperties version="4" age="49.19" weight="0.1661" build="0.0462" key="000504000600141300000000000200100000000000000000000000000000000000012BA6010000000000000000000000000000000000000000000000000000C1"/>
+      <BodyPropertiesMax version="4" age="74.26" weight="0.6145" build="0.6767" key="001CFC0FD50034D4FFFFFFFFFFF9FFFFFFFFFFFFFFFFFFFFFFFFFEFFFFFFFFFF000A9BA90AFFFFFF000000000000000000000000000000000000000000F08101"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_qigai_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_qigai_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="female_beggar_yanzhou" default_group="Infantry" is_female="true" level="1" name="Nữ ăn mày" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_qigai_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_qigai_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="female_dancer_yanzhou" default_group="Infantry" name="Vũ công" is_female="true" is_hero="false" occupation="Townsfolk" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_shinv_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_shinv_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="gear_dummy_yanzhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.yanzhou" name="{=!}Empire Gear Dummy" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills" is_obsolete="true">
+    <face>
+      <face_key_template value="BodyProperty.guard"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+    </Traits>
+    <Equipments>
+      <EquipmentSet civilian="false" id="sg_npc_jingjichanglaoban_equipment_template_yanzhou"/>
+      <EquipmentSet civilian="true" id="sg_npc_jingjichanglaoban_equipment_civilian_template_yanzhou"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- 竞技场练习 -->
+  <NPCCharacter id="gear_practice_dummy_yanzhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.yanzhou" name="{=!}yanzhou Gear Dummy" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.guard"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026"/>
+        <equipment slot="Body" id="Item.sg_cl_c01_farmer001_body"/>
+        <equipment slot="Leg" id="Item.sg_cl_c01_farmer001_leg"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026"/>
+        <equipment slot="Head" id="Item.sg_ar_c01_s001_head_a"/>
+        <equipment slot="Body" id="Item.sg_ar_c01_s001_body_a"/>
+        <equipment slot="Leg" id="Item.sg_cl_c01_farmer001_leg"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026"/>
+        <equipment slot="Head" id="Item.sg_ar_c01_s001_head_b"/>
+        <equipment slot="Body" id="Item.sg_ar_c01_s001_body_b"/>
+        <equipment slot="Leg" id="Item.sg_cl_c01_farmer001_leg"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026"/>
+        <equipment slot="Head" id="Item.sg_ar_c01_s002_head"/>
+        <equipment slot="Body" id="Item.sg_ar_c01_s002_body"/>
+        <equipment slot="Leg" id="Item.sg_ar_c01_s002_leg"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="weapon_practice_stage_1_yanzhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.yanzhou" name="{=!}Empire Weapon Dummy">
+    <face>
+      <face_key_template value="BodyProperty.guard"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.glen_ranger_bow"/>
+        <equipment slot="Item1" id="Item.range_arrows"/>
+        <equipment slot="Item2" id="Item.vlandia_mace_1_t2"/>
+        <equipment slot="Body" id="Item.footmans_tunic"/>
+        <equipment slot="Leg" id="Item.leather_shoes"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item2" id="Item.sg_shortbow_001"/>
+        <equipment slot="Item3" id="Item.default_arrows"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h"/>
+        <equipment slot="Item2" id="Item.sg_shortbow_001"/>
+        <equipment slot="Item3" id="Item.default_arrows"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_026"/>
+        <equipment slot="Item1" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h"/>
+        <equipment slot="Item1" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="weapon_practice_stage_2_yanzhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.yanzhou" name="{=!}Empire Weapon Dummy">
+    <face>
+      <face_key_template value="BodyProperty.guard"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.glen_ranger_bow"/>
+        <equipment slot="Item1" id="Item.range_arrows"/>
+        <equipment slot="Item2" id="Item.vlandia_mace_1_t2"/>
+        <equipment slot="Body" id="Item.footmans_tunic"/>
+        <equipment slot="Leg" id="Item.leather_shoes"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_20_1h_01_l"/>
+        <equipment slot="Item2" id="Item.sg_shortbow_001"/>
+        <equipment slot="Item3" id="Item.lz_arrow_jjc_01"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_003_1h"/>
+        <equipment slot="Item2" id="Item.sg_shortbow_001"/>
+        <equipment slot="Item3" id="Item.default_arrows"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_20_1h_01_l"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_20_1h_01_l"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_010"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_010"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_003_1h"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_003_1h"/>
+        <equipment slot="Item1" id="Item.sg_javelin_001"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_003_1h"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_20_1h_01_l"/>
+        <equipment slot="Item1" id="Item.sg_javelin_001"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_005_1h"/>
+        <equipment slot="Item1" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="weapon_practice_stage_3_yanzhou" default_group="Infantry" is_hero="false" occupation="Special" culture="Culture.yanzhou" name="{=!}yanzhou Weapon Dummy" skill_template="SkillSet.infantry_heavyinfantry_level1_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.guard"/>
+    </face>
+    <skills>
+    </skills>
+    <Equipments>
+      <EquipmentRoster civilian="true">
+        <equipment slot="Item0" id="Item.glen_ranger_bow"/>
+        <equipment slot="Item1" id="Item.range_arrows"/>
+        <equipment slot="Item2" id="Item.vlandia_mace_1_t2"/>
+        <equipment slot="Body" id="Item.footmans_tunic"/>
+        <equipment slot="Leg" id="Item.leather_shoes"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+        <equipment slot="Item2" id="Item.sg_shortbow_001"/>
+        <equipment slot="Item3" id="Item.default_arrows"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_004_1h"/>
+        <equipment slot="Item2" id="Item.sg_shortbow_001"/>
+        <equipment slot="Item3" id="Item.lz_arrow_jjc_01"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_004_1h"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_sword_014_1h"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_mace_004_1h"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_axe_002"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_axe_002"/>
+        <equipment slot="Item1" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_axe_002"/>
+        <equipment slot="Item1" id="Item.sg_javelin_001"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- 竞技场大赛 -->
+  <NPCCharacter id="tournament_template_yanzhou_one_participant_set_v1" default_group="Infantry" level="6" name="{=!}tournament_template_yanzhou_one_participant_set_v1" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template_civilian" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_yanzhou_two_participant_set_v1" default_group="Infantry" level="6" name="{=!}tournament_template_yanzhou_two_participant_set_v1" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template_civilian" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_yanzhou_two_participant_set_v2" default_group="Infantry" level="6" name="{=!}tournament_template_yanzhou_two_participant_set_v2" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_javelin_001"/>
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template_civilian" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_yanzhou_two_participant_set_v3" default_group="Infantry" level="6" name="{=!}tournament_template_yanzhou_two_participant_set_v3" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jjc_01"/>
+        <equipment slot="Item1" id="Item.lz_arrow_jjc_01"/>
+        <equipment slot="Item2" id="Item.lz_hsd_jjc_01"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template_civilian" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_yanzhou_four_participant_set_v1" default_group="Infantry" level="6" name="{=!}tournament_template_yanzhou_four_participant_set_v1" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_javelin_001"/>
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jjc_01"/>
+        <equipment slot="Item1" id="Item.lz_arrow_jjc_01"/>
+        <equipment slot="Item2" id="Item.lz_hsd_jjc_01"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005"/>
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma"/>
+        <equipment slot="HorseHarness" id="Item.sg_hh_c01_001_a"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template_civilian" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_yanzhou_four_participant_set_v2" default_group="Infantry" level="6" name="{=!}tournament_template_yanzhou_four_participant_set_v2" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item1" id="Item.sg_shield_008_c"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005"/>
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma"/>
+        <equipment slot="HorseHarness" id="Item.sg_hh_c01_001_a"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005"/>
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma"/>
+        <equipment slot="HorseHarness" id="Item.sg_hh_c01_001_a"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template_civilian" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="tournament_template_yanzhou_four_participant_set_v3" default_group="Infantry" level="6" name="{=!}tournament_template_yanzhou_four_participant_set_v3" culture="Culture.yanzhou" skill_template="SkillSet.infantry_heavyinfantry_level6_template_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <upgrade_targets>
+    </upgrade_targets>
+    <Equipments>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_javelin_001"/>
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Item2" id="Item.sg_javelin_001"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.lz_bow_jjc_01"/>
+        <equipment slot="Item1" id="Item.lz_arrow_jjc_01"/>
+        <equipment slot="Item2" id="Item.lz_hsd_jjc_01"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005"/>
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma"/>
+        <equipment slot="HorseHarness" id="Item.sg_hh_c01_001_a"/>
+      </EquipmentRoster>
+      <EquipmentRoster>
+        <equipment slot="Item0" id="Item.sg_spear_005"/>
+        <equipment slot="Item1" id="Item.lz_hsd_jjc_01"/>
+        <equipment slot="Horse" id="Item.sg_c02_horse_zhongyuanqichengma"/>
+        <equipment slot="HorseHarness" id="Item.sg_hh_c01_001_a"/>
+      </EquipmentRoster>
+      <EquipmentSet id="yanzhou_npc_wanderer_equipment_template_civilian" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- 流浪者 -->
+  <!-- WANDERER CHARACTERS BEGIN -->
+  <!-- WANDERERS OF EMPIRE -->
+  <!-- Engineer who refused to comply with guild backscratching -->
+  <NPCCharacter id="spc_wanderer_yanzhou_0" name="{=bvjFhiDr}{FIRSTNAME} the Scholar" voice="curt" age="29" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_0_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Mercy" value="1"/>
+      <Trait id="Generosity" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- Very boastful -->
+  <NPCCharacter id="spc_wanderer_yanzhou_1" name="{=xTQPfmS9}{FIRSTNAME} the Bull" voice="earnest" age="29" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_1_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Calculating" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- Family lost military land grant, must work for merchants -->
+  <NPCCharacter id="spc_wanderer_yanzhou_2" name="{=Ivx4uJVp}{FIRSTNAME} the Silent" voice="softspoken" age="26" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_2_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Mercy" value="1"/>
+      <Trait id="Generosity" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!--  Die-hard legionary -->
+  <NPCCharacter id="spc_wanderer_yanzhou_3" name="{=1OZBZZCi}{FIRSTNAME} the Boar" voice="ironic" age="40" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_3_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Honor" value="1"/>
+      <Trait id="Mercy" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- Bandit who found bandits too sociopathic -->
+  <NPCCharacter id="spc_wanderer_yanzhou_4" name="{=t9e34kgH}{FIRSTNAME} the Robber" voice="ironic" age="22" default_group="Infantry" is_hero="false" is_template="true" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_4_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Mercy" value="1"/>
+      <Trait id="Generosity" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- the butcher, doesn't give much away about himself -->
+  <NPCCharacter id="spc_wanderer_yanzhou_5" name="{=pZSAdyC0}{FIRSTNAME} the Butcher" voice="curt" age="30" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_5_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Mercy" value="-1"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Generosity" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- maquisard, ex-messianic rebel turned mafiosi -->
+  <NPCCharacter id="spc_wanderer_yanzhou_6" name="{=OArAImbM}{FIRSTNAME} of the Hills" voice="curt" age="22" default_group="Infantry" is_template="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_6_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Honor" value="1"/>
+      <Trait id="Generosity" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- posed as man to join army. needed the money -->
+  <NPCCharacter id="spc_wanderer_yanzhou_7" name="{=28tWEFNi}{FIRSTNAME} the Wanderer" voice="ironic" age="24" is_template="true" default_group="Infantry" is_female="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_7_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- merchant-class dispossessed. family was in sacked city, followed in wake of refugee columns.  -->
+  <NPCCharacter id="spc_wanderer_yanzhou_8" name="{=PQkMcfAW}{FIRSTNAME} the Exile" voice="curt" age="23" default_group="Infantry" is_template="true" is_female="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_8_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Honor" value="1"/>
+      <Trait id="Mercy" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!--female outlaw. Mascot, used as assassin as girl. Got older, men's antics not as funny. Gang leader nemesis -->
+  <NPCCharacter id="spc_wanderer_yanzhou_9" name="{=7apnGFz7}{FIRSTNAME} the Black" voice="curt" age="21" default_group="Infantry" is_template="true" is_female="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_9_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Generosity" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- extra imperials -->
+  <!--  Doctor, forced to torture -->
+  <NPCCharacter id="spc_wanderer_yanzhou_10" name="{=cud22JY1}{FIRSTNAME} the Surgeon" voice="ironic" is_template="true" age="31" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_10_skills">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Honor" value="1"/>
+      <Trait id="Calculating" value="1"/>
+      <Trait id="Generosity" value="1"/>
+      <Trait id="Mercy" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!--upper-class dispossessed, refused a bad marriage -->
+  <NPCCharacter id="spc_wanderer_yanzhou_11" name="{=e84pvBYI}{FIRSTNAME} the Dispossessed" voice="earnest" age="28" default_group="Infantry" is_template="true" is_female="true" is_hero="false" culture="Culture.yanzhou" occupation="Wanderer" skill_template="SkillSet.spc_wanderer_empire_11_skills">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Honor" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <!-- 名人 -->
+  <NPCCharacter id="spc_notable_yanzhou_0" name="{=!}Cautious imperial merchant" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_0b" name="{=!}{FIRSTNAME} the Vintner" is_template="true" voice="ironic" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Commander" value="4"/>
+      <Trait id="Valor" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_1" name="{=!}Empire merchant 3, ruthless" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Generosity" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_1b" name="{=!}Cold imperial merchant" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Commander" value="4"/>
+      <Trait id="Generosity" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_2" name="{=!}{FIRSTNAME} the Saltpanner" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_2b" name="{=!}Empire merchant 6, cautious" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Commander" value="4"/>
+      <Trait id="Valor" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_3" name="{=!}Empire merchant 7, selfmade" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_3b" name="{=!}Empire merchant 8, jocular" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Commander" value="4"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_4" name="{=!}Empire merchant 9, heiress" voice="curt" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_4b" name="{=!}Empire merchant 10, devious" voice="ironic" is_template="true" is_female="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Merchant">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Commander" value="4"/>
+      <Trait id="Manager" value="10"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_woman_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_5" name="{=!}Messianic imperial preacher" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Preacher">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Honor" value="1"/>
+      <Trait id="Generosity" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+      <EquipmentSet id="spc_notable_yanzhou_5"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_6" name="{=!}Puritan imperial preacher" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Preacher">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Honor" value="1"/>
+      <Trait id="Generosity" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_woman_equipment_template_yanzhou" civilian="true"/>
+      <EquipmentSet id="spc_notable_yanzhou_6"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_7" name="{=!}Female imperial mystic" voice="earnest" is_template="true" default_group="Infantry" is_female="true" culture="Culture.yanzhou" occupation="Preacher">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Mercy" value="1"/>
+      <Trait id="Generosity" value="0"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_woman_equipment_template_yanzhou" civilian="true"/>
+      <EquipmentSet id="spc_notable_yanzhou_7"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_8" name="{=!}Imperial gruff labor leader" voice="curt" is_template="true" default_group="Infantry" is_female="false" culture="Culture.yanzhou" occupation="Artisan">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Generosity" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+      <EquipmentSet id="spc_notable_yanzhou_8"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_9" name="{=!}Imperial outgoing labor leader" voice="earnest" is_template="true" default_group="Infantry" is_female="false" culture="Culture.yanzhou" occupation="Artisan">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Generosity" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+      <EquipmentSet id="spc_notable_yanzhou_9"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_10" name="{=!}Ironic imperial gang leader" voice="ironic" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="GangLeader">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Calculating" value="1"/>
+      <Trait id="Mercy" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_11" name="{=!}Intimidating male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="GangLeader">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Generosity" value="-1"/>
+      <Trait id="Mercy" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_12" name="{=!}Female imperial gang leader" voice="ironic" is_template="true" is_female="true" culture="Culture.yanzhou" occupation="GangLeader" default_group="Infantry">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Honor" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_woman_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_13" name="{=!}Menacing female imperial gang leader" voice="softspoken" is_template="true" is_female="true" culture="Culture.yanzhou" occupation="GangLeader" default_group="Infantry">
+    <face>
+      <face_key_template value="BodyProperty.townswoman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Calculating" value="1"/>
+      <Trait id="Generosity" value="-1"/>
+      <Trait id="Mercy" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_woman_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_21" name="{=!}Empire gruff rural notable" voice="curt" is_template="true" default_group="Infantry" culture="Culture.yanzhou" occupation="RuralNotable">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Calculating" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_22" name="{=!}Empire rural notable agreeable" voice="softspoken" is_template="true" default_group="Infantry" culture="Culture.yanzhou" occupation="RuralNotable">
+    <face>
+      <face_key_template value="BodyProperty.townsman_empire"/>
+    </face>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Honor" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_gl1" name="{=!}Protective imperial male gang leader" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="GangLeader">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Generosity" value="1"/>
+      <Trait id="Honor" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_notable_yanzhou_gl4" name="{=!}Bestial male imperial gang leader" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="GangLeader">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Honor" value="-1"/>
+      <Trait id="Mercy" value="-1"/>
+      <Trait id="Calculating" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_yanzhou_headman_1" name="{=!}empire rebellious headman" voice="earnest" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Headman">
+    <face>
+      <face_key_template value="BodyProperty.fighter_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="1"/>
+      <Trait id="Calculating" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_yanzhou_headman_2" name="{=!}empire conservative headman" voice="curt" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Headman">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Valor" value="-1"/>
+      <Trait id="Generosity" value="1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+  <NPCCharacter id="spc_yanzhou_headman_3" name="{=!}empire devious headman" voice="softspoken" is_template="true" default_group="Infantry" is_hero="false" culture="Culture.yanzhou" occupation="Headman">
+    <face>
+      <face_key_template value="BodyProperty.villager_yanzhou"/>
+    </face>
+    <skills>
+    </skills>
+    <Traits>
+      <Trait id="RomanHair" value="1"/>
+      <Trait id="Calculating" value="1"/>
+      <Trait id="Honor" value="-1"/>
+    </Traits>
+    <Equipments>
+      <EquipmentSet id="sg_npc_common_war_equipment_template"/>
+      <EquipmentSet id="sg_npc_yaoren_equipment_template_yanzhou" civilian="true"/>
+    </Equipments>
+  </NPCCharacter>
+</NPCCharacters>

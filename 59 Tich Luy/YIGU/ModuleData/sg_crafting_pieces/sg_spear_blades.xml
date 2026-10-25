@@ -1,0 +1,1059 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CraftingPieces>
+  <!-- T1 -->
+  <!-- T1: 刃 -->
+  <CraftingPiece id="sg_t1_spear_blade_001" name="{=*}Đầu thương hình lá bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_001" length="26.4" weight="0.41" excluded_item_usage_features="swing" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.7"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_002" name="{=*}Đầu thương hình lông vũ bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_002" length="27.3" weight="0.34" excluded_item_usage_features="swing" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.9"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_003" name="{=*}Lưỡi rộng hai cạnh sắc bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_003" length="31.1" weight="0.36" excluded_item_usage_features="swing" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.95"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_004" name="{=*}Đầu kích thô bằng sắt rèn" tier="1" piece_type="Blade" mesh="r_sg_t4_axe_head_005" length="36.1" weight="0.56" is_default="true">
+    <BuildData piece_offset="-23"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.9"/>
+      <Swing damage_type="Cut" damage_factor="1.8"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron2" count="4"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_005" name="{=*}Lưỡi đao một cạnh dày bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_005" length="50" weight="0.74" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.1"/>
+      <Swing damage_type="Cut" damage_factor="2.45"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_006" name="{=*}Lưỡi phác đao bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_006" length="43.7" weight="0.66" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.0"/>
+      <Swing damage_type="Cut" damage_factor="2.0"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_007" name="{=*}Lưỡi đao cong một cạnh bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_007" length="49.6" weight="0.60" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.3"/>
+      <Swing damage_type="Cut" damage_factor="1.8"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_008" name="{=*}Lưỡi đao bản rộng một cạnh bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_008" length="47.7" weight="0.72" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.1"/>
+      <Swing damage_type="Cut" damage_factor="1.95"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_009" name="{=*}Lưỡi đại đao bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_009" length="43.7" weight="0.68" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.3"/>
+      <Swing damage_type="Cut" damage_factor="1.75"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="7"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_010" name="{=*}Lưỡi đao cong dày một cạnh bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_010" length="45.8" weight="0.72" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.2"/>
+      <Swing damage_type="Cut" damage_factor="2.05"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="6"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_011" name="{=*}Lưỡi cực lớn hai cạnh sắc bản rộng bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_011" length="50.8" weight="0.63" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.5"/>
+      <Swing damage_type="Cut" damage_factor="1.4"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="6"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_012" name="{=*}Đầu thương hình thoi bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_012" length="29.7" weight="0.2376" excluded_item_usage_features="swing" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.05"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_013" name="{=*}Lưỡi mâu thẳng hai cạnh sắc bản rộng bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_013" length="29.7" weight="0.35" excluded_item_usage_features="swing" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.00"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_014" name="{=*}Đầu thương hình nón bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_014" length="29.7" weight="0.39" excluded_item_usage_features="swing" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.15"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t1_spear_blade_015" name="{=*}Đầu thương hình lá liễu bằng sắt rèn" tier="1" piece_type="Blade" mesh="sg_t1_spear_blade_015" length="37.4" weight="0.30" excluded_item_usage_features="swing" is_default="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.25"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron2" count="4"/>
+    </Materials>
+  </CraftingPiece>
+
+
+  <!-- T2 -->
+  <!-- T2: 刃 -->
+  <CraftingPiece id="sg_t2_spear_blade_001" name="{=*}Đầu trường thương bằng đồng" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_001" excluded_item_usage_features="swing" length="26.4" weight="0.42">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron3" count="1"/>
+      <Material id="Iron4" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_002" name="{=*}Đầu thương hình lá hai lỗ mạ đồng bằng thép mạ đồng" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_002" excluded_item_usage_features="swing" length="19.7" weight="0.45">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron3" count="3"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_003" name="{=*}Lưỡi đao dày có móc bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_003" length="49.1" weight="0.74">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.5"/>
+      <Swing damage_type="Cut" damage_factor="3.1"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron3" count="1"/>
+      <Material id="Iron4" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_004" name="{=*}Lưỡi phác đao có móc bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_004" length="44.2" weight="0.72">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.3"/>
+      <Swing damage_type="Cut" damage_factor="3.15"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="3"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_005" name="{=*}Lưỡi đại đao bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_005" length="48.9" weight="0.72">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.35"/>
+      <Swing damage_type="Cut" damage_factor="3.05"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="3"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_006" name="{=*}Lưỡi đao răng cưa thu nhọn bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_006" length="43.7" weight="0.59">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.85"/>
+      <Swing damage_type="Cut" damage_factor="2.6"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_007" name="{=*}Lưỡi Yển Nguyệt Đao bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_007" length="46.8" weight="0.72">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.55"/>
+      <Swing damage_type="Cut" damage_factor="3.35"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="3"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_008" name="{=*}Lưỡi đao cuộn mây bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_008" length="42.7" weight="0.72">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.35"/>
+      <Swing damage_type="Cut" damage_factor="3.45"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron4" count="3"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_009" name="{=*}Lưỡi bản rộng hai cạnh sắc đầu nhọn bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_009" excluded_item_usage_features="swing" length="31.3" weight="0.45">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.3"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="3"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_010" name="{=*}Đầu thương bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_010" excluded_item_usage_features="swing" length="19.7" weight="0.24">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_011" name="{=*}Lưỡi hình mỏ quạ bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_011" excluded_item_usage_features="swing" length="33.7" weight="0.36">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_012" name="{=*}Đầu thương bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_012" excluded_item_usage_features="swing" length="15.1" weight="0.27">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_013" name="{=*}Lưỡi hình mỏ vịt bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_013" excluded_item_usage_features="swing" length="27.7" weight="0.37">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_014" name="{=*}Lưỡi hình lá liễu hai cạnh sắc bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_014" excluded_item_usage_features="swing" length="36" weight="0.44">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_015" name="{=*}Đầu thương hình cổ quạ bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_015" excluded_item_usage_features="swing" length="27.8" weight="0.40">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_016" name="{=*}Lưỡi cực lớn hai cạnh sắc bản rộng bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_016" excluded_item_usage_features="swing" length="36.5" weight="0.53">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_017" name="{=*}Lưỡi rộng hai cạnh sắc bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_017" excluded_item_usage_features="swing" length="35.8" weight="0.49">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.25"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t2_spear_blade_018" name="{=*}Đầu thương hình cổ ngựa bằng thép 20 luyện" tier="2" piece_type="Blade" mesh="sg_t2_spear_blade_018" excluded_item_usage_features="swing" length="38.4" weight="0.47">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.35"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+    </Materials>
+  </CraftingPiece>
+
+
+  <!-- T3 -->
+  <!-- T3: 刃 -->
+  <CraftingPiece id="sg_t3_spear_blade_001" name="{=*}Lưỡi lá liễu bốn lỗ bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_001" excluded_item_usage_features="swing" length="37.7" weight="0.35">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_002" name="{=*}Đầu thương hình hồ lô ba lỗ bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_002" excluded_item_usage_features="swing" length="15.1" weight="0.22">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_003" name="{=*}Đầu thương hình lá bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_003" excluded_item_usage_features="swing" length="13.3" weight="0.19">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_004" name="{=*}Đầu thương hình nụ hoa bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_004" excluded_item_usage_features="swing" length="20.4" weight="0.32">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_005" name="{=*}Đầu thương nhọn dạng dùi bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_005" excluded_item_usage_features="swing" length="30.4" weight="0.35">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_006" name="{=*}Đầu thương hình nón bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_006" excluded_item_usage_features="swing" length="30.3" weight="0.36">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_007" name="{=*}Lưỡi kích chữ Bốc, ống lắp đồng thau bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_spear_blade_007" length="38.5" weight="0.57">
+    <BuildData piece_offset="-18"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.1"/>
+      <Swing damage_type="Pierce" damage_factor="2.9"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_008" name="{=*}Lưỡi kích chữ Bốc bốn lỗ, ống lắp đồng thau bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_spear_blade_008" length="35.1" weight="0.55">
+    <BuildData piece_offset="-29"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.1"/>
+      <Swing damage_type="Pierce" damage_factor="2.85"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_009" name="{=*}Lưỡi phác đao hai móc bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_009" length="45" weight="0.64">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.6"/>
+      <Swing damage_type="Cut" damage_factor="3.6"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_010" name="{=*}Lưỡi đại đao răng cưa bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_010" length="48.9" weight="0.62">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.7"/>
+      <Swing damage_type="Cut" damage_factor="3.55"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_011" name="{=*}Lưỡi phác đao hai mũi nhọn bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_011" length="51.9" weight="0.69">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.6"/>
+      <Swing damage_type="Cut" damage_factor="3.6"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_012" name="{=*}Lưỡi đao một cạnh dày có răng cưa bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_012" length="48.9" weight="0.68">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.6"/>
+      <Swing damage_type="Cut" damage_factor="3.6"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_013" name="{=*}Lưỡi qua hai đầu, ống lắp sắt bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_spear_blade_013" length="25.5" weight="0.58">
+    <BuildData piece_offset="-13"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.8"/>
+      <Swing damage_type="Pierce" damage_factor="2.0"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_014" name="{=*}Lưỡi kích chữ Bốc bốn lỗ bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="r_sg_t3_spear_blade_014" length="35.1" weight="0.53">
+    <BuildData piece_offset="-24"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.1"/>
+      <Swing damage_type="Pierce" damage_factor="2.9"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_015" name="{=*}Lưỡi kích chữ Bốc nhiều lỗ bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="r_sg_t4_axe_head_005" length="36" weight="0.26">
+    <BuildData piece_offset="-23"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+      <Swing damage_type="Pierce" damage_factor="3.5"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_016" name="{=*}Đầu mâu hình lá hai móc có răng cưa bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_016" excluded_item_usage_features="swing" length="21.4" weight="0.37">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_017" name="{=*}Đầu thương hình ngòi bút bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_017" excluded_item_usage_features="swing" length="19.4" weight="0.41">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.7"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_018" name="{=*}Lưỡi dài hai cạnh sắc bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_018" excluded_item_usage_features="swing" length="35.3" weight="0.48">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_019" name="{=*}Đầu thương hình hồ lô bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_019" excluded_item_usage_features="swing" length="15.1" weight="0.33">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.45"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_020" name="{=*}Lưỡi rộng hai cạnh sắc hình đuôi mây bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_020" length="31.2" weight="0.41">
+    <BuildData piece_offset="-5"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.4"/>
+      <Swing damage_type="Cut" damage_factor="3.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_021" name="{=*}Đầu thương tù bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_021" length="32.6" weight="0.46">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Blunt" damage_factor="3.85"/>
+      <Swing damage_type="Blunt" damage_factor="3.95"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_022" name="{=*}Lưỡi hình lưỡi bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_022" length="31.5" weight="0.45">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Blunt" damage_factor="1.75"/>
+      <Swing damage_type="Cut" damage_factor="2.8"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_023" name="{=*}Lưỡi hai cạnh sắc bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_023" length="31.8" excluded_item_usage_features="swing" weight="0.37">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.65"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_024" name="{=*}Lưỡi hai cạnh sắc có răng cưa bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_024" length="31.3" excluded_item_usage_features="swing" weight="0.57">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.55"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_025" name="{=*}Lưỡi kiếm hai cạnh sắc bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_025" length="47.4" weight="0.71">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.3"/>
+      <Swing damage_type="Cut" damage_factor="2.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t3_spear_blade_026" name="{=*}Lưỡi hình mỏ vịt bằng thép tốt 30 luyện" tier="3" piece_type="Blade" mesh="sg_t3_spear_blade_026" length="42.1" weight="0.58">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2"/>
+      <Swing damage_type="Cut" damage_factor="2.9"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+
+
+  <!-- T4: 刃 -->
+  <CraftingPiece id="sg_t4_spear_blade_001" name="{=*}Đầu thương hình lá sáu lỗ bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_001" excluded_item_usage_features="swing" length="16" weight="0.32">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.8"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_002" name="{=*}Đầu thương hình lá bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_002" excluded_item_usage_features="swing" length="13.5" weight="0.32">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.8"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_003" name="{=*}Đầu thương hình lá liễu bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_003" excluded_item_usage_features="swing" length="20" weight="0.33">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.9"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_004" name="{=*}Lưỡi hình nón khắc hoa văn chìm bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_004" excluded_item_usage_features="swing" length="18.1" weight="0.325">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.95"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_005" name="{=*}Lưỡi cực lớn hai cạnh sắc bản rộng bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_005" length="35.9" weight="0.49">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.9"/>
+      <Swing damage_type="Cut" damage_factor="3.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_006" name="{=*}Đầu thương hình ngòi bút khắc hoa văn chìm bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_006" excluded_item_usage_features="swing" length="18.1" weight="0.36">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.0"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_007" name="{=*}Đầu thương hình hồ lô có ngạnh ngược bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_007" excluded_item_usage_features="swing" length="20.2" weight="0.35">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.55"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_008" name="{=*}Lưỡi rộng hai cạnh sắc hình hốt bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_008" length="28.6" weight="0.45">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.4"/>
+      <Swing damage_type="Cut" damage_factor="3.7"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_009" name="{=*}Lưỡi Yển Nguyệt Đao đầu thú bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_009" length="46.8" weight="0.72">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.9"/>
+      <Swing damage_type="Cut" damage_factor="4.1"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_010" name="{=*}Lưỡi đại đao đầu thú bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_010" length="60.7" weight="0.75">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.8"/>
+      <Swing damage_type="Cut" damage_factor="4.2"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_011" name="{=*}Lưỡi Phương Thiên Họa Kích bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_011" length="48.9" weight="0.68">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.8"/>
+      <Swing damage_type="Cut" damage_factor="3.9"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_012" name="{=*}Lưỡi trường kiếm khắc hoa văn chìm bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_012" length="46.7" weight="0.47">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+      <Swing damage_type="Cut" damage_factor="3.2"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_013" name="{=*}Lưỡi rìu hình đầu cá bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_013" length="35.5" weight="0.82">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.4"/>
+      <Swing damage_type="Cut" damage_factor="4.0"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_014" name="{=*}Lưỡi qua khảm vàng hình hổ phù bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_014" length="17.6" weight="0.35">
+    <BuildData piece_offset="-1.5"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.4"/>
+      <Swing damage_type="Pierce" damage_factor="4.0"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_015" name="{=*}Lưỡi kích ống vàng chạm hoa văn chìm bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_015" length="47.8" weight="0.42">
+    <BuildData piece_offset="-10"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.7"/>
+      <Swing damage_type="Cut" damage_factor="3.8"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_016" name="{=*}Lưỡi kích ba nhánh một bên bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_016" length="73.5" weight="0.39">
+    <BuildData piece_offset="-45"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.7"/>
+      <Swing damage_type="Cut" damage_factor="5.5"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="4"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_017" name="{=*}Lưỡi kích chữ Bốc có ống lắp vàng bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_017" length="36.9" weight="0.37">
+    <BuildData piece_offset="-13"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+      <Swing damage_type="Cut" damage_factor="3.7"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_018" name="{=*}Lưỡi hùng kích hai nhánh chạm hoa văn bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_018" length="40.1" weight="0.45">
+    <BuildData piece_offset="-8"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.2"/>
+      <Swing damage_type="Cut" damage_factor="3.8"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_019" name="{=*}Lưỡi kích chữ Bốc bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="r_sg_t4_spear_blade_019" length="36.2" weight="0.31">
+    <BuildData piece_offset="-27"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+      <Swing damage_type="Cut" damage_factor="3.8"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_020" name="{=*}Lưỡi thương bản rộng bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_020" length="29.1" weight="0.35">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.7"/>
+      <Swing damage_type="Cut" damage_factor="3.3"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_021" name="{=*}Lưỡi thương hình mũi tên bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_021" length="27.6" weight="0.33">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+      <Swing damage_type="Cut" damage_factor="3.5"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_022" name="{=*}Đầu sóc một sống bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_022" length="22.4" weight="0.26">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.9"/>
+      <Swing damage_type="Cut" damage_factor="3.6"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_023" name="{=*}Đầu sóc hình lưỡi bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_023" length="22.5" weight="0.27">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.0"/>
+      <Swing damage_type="Cut" damage_factor="3.35"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t4_spear_blade_024" name="{=*}Đầu sóc hình nón hai lỗ bằng thép tinh luyện 50 luyện" tier="4" piece_type="Blade" mesh="sg_t4_spear_blade_024" length="28" weight="0.30">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.9"/>
+      <Swing damage_type="Cut" damage_factor="3.4"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron6" count="2"/>
+    </Materials>
+  </CraftingPiece>
+
+
+  <!-- T5: 刃 -->
+  <CraftingPiece id="sg_t5_spear_blade_001" name="{=*}Đầu thương hình răng cưa bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_001" excluded_item_usage_features="swing" length="20.9" weight="0.33">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.2"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_002" name="{=*}Đầu thương ba mũi bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_002" excluded_item_usage_features="swing" length="20.8" weight="0.32">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.25"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_003" name="{=*}Đầu thương hình lông vũ khảm vàng bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_003" excluded_item_usage_features="swing" length="19.9" weight="0.34">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.3"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_004" name="{=*}Đầu thương hình lá mạ vàng bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_004" excluded_item_usage_features="swing" length="13.8" weight="0.31">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.35"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_005" name="{=*}Đầu thương loại sát bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_005" excluded_item_usage_features="swing" length="22.2" weight="0.35">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.9"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_006" name="{=*}Đầu thương hình ngọn nến khắc hoa văn chìm bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_006" excluded_item_usage_features="swing" length="17.9" weight="0.33">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.4"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_007" name="{=*}Lưỡi đại đao vây cá chuồn, đầu thú vàng bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_007" length="53.6" weight="0.58">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+      <Swing damage_type="Cut" damage_factor="5.1"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_008" name="{=*}Lưỡi đại đao răng cưa, đầu thú vàng bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_008" length="53.3" weight="0.58">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.6"/>
+      <Swing damage_type="Cut" damage_factor="5.1"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_009" name="{=*}Lưỡi việt hai mặt chạm chìm vân thú bằng thép bách luyện" tier="5" piece_type="Blade" mesh="r_sg_t5_spear_blade_009" length="17.9" weight="0.82">
+    <BuildData piece_offset="-1"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="1.4"/>
+      <Swing damage_type="Cut" damage_factor="5.4"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_010" name="{=*}Lưỡi Yển Nguyệt Đao đầu thú vàng bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_010" length="55.8" weight="0.65">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+      <Swing damage_type="Cut" damage_factor="5.3"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_011" name="{=*}Lưỡi Yển Nguyệt Đao có móc, đầu thú vàng bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_011" length="54.4" weight="0.66">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+      <Swing damage_type="Cut" damage_factor="5.4"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_012" name="{=*}Lưỡi phủ thương hai mặt chạm chìm vân thú bằng thép bách luyện" tier="5" piece_type="Blade" mesh="r_sg_t5_spear_blade_012" length="22.1" weight="0.84">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="2.5"/>
+      <Swing damage_type="Cut" damage_factor="5.3"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_013" name="{=*}Lưỡi kích bằng thép bách luyện, ống lắp vàng ròng chạm hoa văn chìm" tier="5" piece_type="Blade" mesh="r_sg_t5_spear_blade_013" length="40.5" weight="0.33">
+    <BuildData piece_offset="-10"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.3"/>
+      <Swing damage_type="Pierce" damage_factor="4.7"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_014" name="{=*}Đầu thương hình thoi bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_014" length="26.6" weight="0.28">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.3"/>
+      <Swing damage_type="Cut" damage_factor="4.4"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_015" name="{=*}Lưỡi bốn mặt hai mũi nhọn bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_015" length="26.8" weight="0.28">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.05"/>
+      <Swing damage_type="Cut" damage_factor="4.35"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="4"/>
+			<Material id="Wood" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_016" name="{=*}Đầu thương hình hồ lô bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_016" excluded_item_usage_features="swing" length="20.9" weight="0.29">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_017" name="{=*}Lưỡi tam giác khắc chìm hoa văn hồi văn bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_017" excluded_item_usage_features="swing" length="22.9" weight="0.28">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.5"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron4" count="2"/>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="4"/>
+			<Material id="Wood" count="2"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_018" name="{=*}Đầu thương cánh rộng chạm vân chìm bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_018" excluded_item_usage_features="swing" length="18.1" weight="0.28">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+  <CraftingPiece id="sg_t5_spear_blade_s01" name="{=*}Đầu thương hình hồ lô mẫu 2 bằng thép bách luyện" tier="5" piece_type="Blade" mesh="sg_t5_spear_blade_016" excluded_item_usage_features="swing" length="20.9" weight="0.29">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="6.6"/>
+    </BladeData>
+    <Materials>
+      <Material id="Iron5" count="1"/>
+      <Material id="Iron6" count="1"/>
+    </Materials>
+  </CraftingPiece>
+</CraftingPieces>

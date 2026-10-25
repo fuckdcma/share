@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<base type="string">
+  <tags>
+    <tag language="Tiếng Việt"/>
+  </tags>
+  <strings>
+    <string id="09ooh9I3" text="Quân cờ tiến về phía doanh trại đối phương. Khi đến ô cuối cùng, nó sẽ quay về phía doanh trại của mình. Trên đường đi, quân cờ có thể bắt quân của đối thủ."/>
+    <string id="1asbVsat" text="Dùng quân cờ của mình kẹp quân đối phương từ hai phía để bắt quân.{newline}Cũng có thể bắt quân bằng cách kẹp quân đối phương giữa quân của mình và ô trung tâm. Quy tắc này áp dụng cho cả hai bên."/>
+    <string id="1E6hFc0r" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang ngăn quân địch vòng ra phía sau quân ta."/>
+    <string id="24L5DoQt" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang cố thủ tại vị trí trọng yếu."/>
+    <string id="29bsCzkn" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang rút lui về nơi an toàn."/>
+    <string id="2X1rBrdC" text="{?IS_UNDER_A_DAY}{?}{DAY_VALUE}{?IS_MORE_THAN_ONE_DAY} ngày{?} ngày{\?}{\?}{?IS_UNDER_ONE_HOUR}{?}{HOUR_VALUE}{?IS_MORE_THAN_AN_HOUR} giờ{?} giờ{\?}{\?}"/>
+    <string id="3vT6TQmF" text="{PLAYER.LINK}, ngươi thuộc {SIDE_STRING}{CLASS_NAME}."/>
+    <string id="3wS4uOvU" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang tập kích phía sau quân địch."/>
+    <string id="5lDYh7wJ" text="Ngươi đã dựng được phòng tuyến ngăn đối thủ, nhưng số quân cờ còn lại ít hơn. Ngươi thua!"/>
+    <string id="5WJbtDqp" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang quấy rối phía sau quân đồng minh."/>
+    <string id="5WWbQRQ5" text="Nếu đối thủ không còn nước đi hợp lệ (bị bắt hết), người chơi còn lại giành chiến thắng."/>
+    <string id="77SdNt8C" text="Đối phương đã lập phòng tuyến chặn ngươi, trong khi quân cờ của ngươi còn ít hơn. Ngươi thua!"/>
+    <string id="7cnb2iEb" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang quấy rối quân địch."/>
+    <string id="7EVjgrFW" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang tiến hành các cuộc tập kích nhỏ."/>
+    <string id="8UFjXbbW" text="Đánh bọc sườn {?IS_GENERAL_SIDE}phía{?}{SIDE_STRING}{\?}"/>
+    <string id="9pwIt4aa" text="Sáp{@Plural}Những xe chở sáp{\@}"/>
+    <string id="9yffPYUl" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang xung phong."/>
+    <string id="a15eUf3B" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang giao chiến với địch trong thành."/>
+    <string id="aaQtzfjL" text="Làm tốt lắm, {?PLAYER.GENDER}phu nhân{?}các hạ{\?}. Cứ tiếp tục đưa tiền và rượu đến đây, bảo đảm ở Calradia không ai dám động đến ngươi.[ib:convo_approving]"/>
+    <string id="aNSAaHk9" text="Cờ Sói và Cừu là trò chơi giữa phe Cừu (quân trắng) và phe Sói (quân đen).{newline}Phe Sói có bốn quân, ban đầu đặt ở bốn góc bàn cờ. Mỗi lượt, phe Cừu đặt thêm một quân lên bàn, còn phe Sói được di chuyển hoặc bắt cừu cho tới khi tất cả quân Cừu đã được đặt lên bàn.{newline}Sau đó, phe Cừu cũng có thể di chuyển."/>
+    <string id="AWW0T6xR" text="Mỗi quân cờ được di chuyển theo các đường trên bàn, mỗi lượt một ô.{newline}Không được quay về ô vừa đứng ở lượt trước.{newline}Nếu người chơi không còn nước đi, người ấy có thể bỏ một quân của đối thủ khỏi bàn rồi tiếp tục di chuyển."/>
+    <string id="b0yJ9JsW" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang tấn công tường thành."/>
+    <string id="B1j4F6i7" text=" {?DAY_IS_PLURAL}ngày{?}ngày{\?}"/>
+    <string id="b7aDfCR9" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang giữ thế phòng thủ."/>
+    <string id="bh2v8n4K" text="Y phục{@Plural}Những xe chở y phục{\@}"/>
+    <string id="BQDrheU6" text="Vải vóc{@Plural}Những xe chở vải vóc{\@}"/>
+    <string id="bWVG2s2h" text="Chỉ có thể di chuyển một quân vào ô trung tâm khi quân đối phương nằm ngay bên cạnh ô đó.{newline}Mỗi quân có thể tự do tiến một ô dọc mép ngoài bàn cờ.{newline}Quân ở ô trung tâm có thể di chuyển đến bất kỳ ô trống hợp lệ nào."/>
+    <string id="c1Ag8YJS" text="Với người Battania, ký ức về thời rừng rậm phủ khắp miền bắc Calradia vẫn chưa phai, khi Đế quốc và những thành thị của nó chưa xâm phạm thánh địa của họ. Những chiến binh dũng mãnh ấy vẫn trung thành với truyền thống: họ vẽ chiến văn lên mặt trước khi ra trận, còn giới quý tộc cũng chuộng bộ chiến với đại phủ và kiếm hai tay sắc bén."/>
+    <string id="c3cdHImi" text="Bắt quân bằng cách kẹp quân đối thủ từ hai phía. Nếu một quân tự di chuyển vào giữa hai quân địch thì nó không bị bắt.{newline}Trong hai hình đầu, quân trắng bị quân đen bắt; ở hai hình sau, quân trắng không bị bắt."/>
+    <string id="dyY3hkH1" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang xung phong vào {?IS_PLURAL}nhiều đội hình địch{?}một đội hình địch{\?}."/>
+    <string id="EvvMNX3A" text="Người đi trước chọn một trong bốn quân trên bàn để bỏ đi.{newline}Sau đó người còn lại bỏ một quân liền kề. Nếu quân người đi trước chọn nằm ở giữa, người còn lại phải bỏ một trong hai quân trung tâm.{newline}{newline}Ván cờ bắt đầu."/>
+    <string id="faYiCHXK" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang vào vị trí bắn."/>
+    <string id="Fg9qCGUu" text="Nho{@Plural}Những bao nho{\@}"/>
+    <string id="gA5fByM2" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang tìm cách chiếm lại đoạn tường thành {#IS_LEFT}{#}bên phải{#}nhiều phía{\#}{?IS_MIDDLE}ở giữa{?}{\?}{?IS_RIGHT}bên trái{?}{\?}."/>
+    <string id="gAX49b7b" text="Ngươi đã tạo được phòng tuyến ngăn đối thủ, nhưng hai bên còn số quân cờ bằng nhau. Hòa!"/>
+    <string id="GbbGlcMZ" text="Quân cờ được di chuyển ngang hoặc dọc đến ô trống bất kỳ, nhưng không được nhảy qua quân khác.{newline}Quân thường không được đi xuyên hoặc tiến vào ô trung tâm. Khi quân Vua đã rời ô ấy, quân Vua cũng không được đi xuyên qua nữa."/>
+    <string id="HD2wzAxz" text="Người Sturgia là hậu duệ các bộ tộc từ phương bắc Calradia đến. Khi Đế quốc bành trướng tới những cánh rừng lạnh giá của họ, họ nhận ra da lông thú săn được bán rất có giá. Các tù trưởng Sturgia trở thành vương công, tranh giành quyền thế nhờ lính đánh thuê Nord di cư đến vương quốc. Họ thiện nghệ săn bắn, đi đường xa, tìm cơ hội buôn bán và cướp bóc."/>
+    <string id="HkZ4E94O" text="Liên minh bộ tộc thảo nguyên này từng sống đời du mục, nhưng nay định cư ở biên giới phía đông Đế quốc và dần chuyển sang canh tác quanh các thị trấn. Dẫu vậy, họ vẫn giữ nhiều tập tục cũ, đặc biệt là lòng yêu ngựa. Họ giỏi cưỡi ngựa bắn cung, vừa đánh địch vừa giữ khoảng cách an toàn."/>
+    <string id="hSsS5xAa" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang chờ các khí giới công thành khác tới nơi."/>
+    <string id="iCirZbD8" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang bắn từ trên tường thành."/>
+    <string id="ilhkpKfp" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang cưỡi ngựa quấy rối địch."/>
+    <string id="JdNTRtpJ" text="Duy trì sĩ khí quân đội; tập hợp và chỉ huy quân đoàn; nâng cấp binh sĩ."/>
+    <string id="JG2bgZMM" text="Quấy rối phía trước {AI_SIDE}{CLASS} quân đồng minh"/>
+    <string id="jhosdZaX" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang giữ vị trí trọng yếu của thành."/>
+    <string id="jIcGy6gI" text="{LEFT} : {RIGHT}"/>
+    <string id="JnoB0RZ4" text="Xử tử {?DYING_HERO.GENDER}nàng{?}hắn{\?}"/>
+    <string id="jnTQbSsH" text="Ngươi thấy dân làng tụ tập chống lại mình. Ngươi định làm gì?"/>
+    <string id="JP7LTAsa" text="Tốt! Tốt lắm! Giờ thì cút! Đi càng xa càng tốt![ib:aggressive][if:convo_angry]"/>
+    <string id="jPwa1oOm" text="Quặng bạc{@Plural}Những xe chở quặng bạc{\@}"/>
+    <string id="jSXE0Gbj" text="Dân làng ở đây vừa ít vừa nhút nhát; họ nhanh chóng bỏ chạy tán loạn trước mặt ngươi. Cả ngôi làng giờ mặc ngươi định đoạt."/>
+    <string id="k8ocninL" text="Đứng lại! Chớ sợ. Trời cao đã ban vùng đất này cho chúng ta; không ai được qua đây khi chưa có phép của chúng ta."/>
+    <string id="ka7vAxgo" text="Xung phong vào {AI_SIDE}{CLASS} quân địch"/>
+    <string id="KC5AZohd" text="Hân hạnh gặp các hạ, lữ khách. Hoan nghênh đến khu rừng của bọn ta. Xin nộp chút lộ phí![rf:convo_mocking_revenge]"/>
+    <string id="KcQiDE6b" text="Giá bán tại {SETTLEMENT_NAME}: {SELL_PRICE}"/>
+    <string id="kdV0tx9K" text="Chào lữ khách. Mong ngươi có mang túi tiền. Như ngươi gọi, chúng ta là thổ phỉ, nên e rằng ngươi phải để lại ít bạc rồi mới đi được.[if:convo_mocking_revenge]"/>
+    <string id="kDV7wCtI" text="Thời gian hoàn tất: {PREPARATION_TIME}"/>
+    <string id="KGH8rjOP" text="Đến {SETTLEMENT_NAME} để cướp phá."/>
+    <string id="KGHlXL8H" text="Tốt lắm! Máu ngươi sẽ rửa sạch mảnh đất này."/>
+    <string id="kgqCVvIb" text="Huynh đệ của ta {REFERING_HERO.LINK}"/>
+    <string id="Khr5yETv" text="Người Aserai sống trong sa mạc Nahasa, gồm các bộ tộc Bedouin du mục và dân canh tác ở ốc đảo. Họ nổi tiếng cưỡi ngựa giỏi và học rộng, nhất là y thuật, nhờ các tuyến thương lộ phồn thịnh. Các gia tộc đều tự hào về dòng dõi và coi thường nhau, nhưng nếu được một lãnh tụ tài ba thống nhất, họ sẽ trở thành thế lực hùng mạnh phương nam."/>
+    <string id="KiVCv1Bx" text="Giao chiến tại {SETTLEMENT_NAME}"/>
+    <string id="KJDqOGEU" text="Kế của quân ta là chỉnh đốn đội ngũ, chờ ngày tái chiến."/>
+    <string id="KkaVpLXd" text="Đề nghị ban hành chính sách này (ủng hộ: {SUPPORT}%)"/>
+    <string id="kM1Y8XT0" text="Các hạ sẽ không thất vọng, {?PLAYER.GENDER}phu nhân{?}đại nhân{\?}. Khắp Calradia chẳng tìm được chiến binh nào giỏi hơn chúng ta đâu.[ib:convo_approving]"/>
+    <string id="kRKYHQ6V" text="Khi một chồng quân cờ đáp đúng vào ô doanh trại của nó, tất cả quân cờ thuộc người điều khiển chồng đó được thu lại và có thể đem dùng tiếp. Quân cờ thuộc người chơi kia trong chồng ấy sẽ bị loại."/>
+    <string id="kRraos2Z" text="Ngươi gây rắc rối trên đất của ta... nhưng ta chẳng bận tâm."/>
+    <string id="ktFeXrXl" text="Ngươi không còn nước đi nào, bỏ lượt này."/>
+    <string id="KTGG9EgL" text="Thượng lộ bình an! Ngoài bọn ta ra, nhớ đừng để ai khác cướp ngươi đấy!"/>
+    <string id="kvykuTJS" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang đánh phá khí giới công thành."/>
+    <string id="kwKT6zKq" text="Binh sĩ dưới quyền dự kiến sẽ: {BEHAVIOUR_NAME_BEGIN}{?IS_PLURAL} và {?}{\?}{BEHAVIOUR_NAME_END}"/>
+    <string id="KWXEMsHC" text="{LORD.LINK} hiện ở {SETTLEMENT_NAME}"/>
+    <string id="kx8ZfaST" text="Được thôi, vậy ngươi quý cái mạng mình đến mức nào?[ib:hip][if:convo_bared_teeth]"/>
+    <string id="KZAQHSa2" text="Song cảnh phồn vinh không đến với tất cả mọi người. Dân chúng tỏ ra phẫn uất, liên tục than phiền về người nhập cư từ thôn quê, vật giá leo thang và kẻ làm giàu nhanh hơn người khác."/>
+    <string id="l4uTnJct" text="Ngươi phải đưa ra quyết định và chọn mức đánh đổi mình sẵn lòng chấp nhận để ủng hộ quyết định ấy."/>
+    <string id="Lc1vIEnM" text="Sói và Cừu đều đi theo các đường kẻ trên bàn cờ, mỗi lượt một ô."/>
+    <string id="lfMgaBiJ" text="Muốn bọn ta tha mạng thì hãy đưa ra cái giá đáng nghe."/>
+    <string id="Lg3zeoYi" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang bảo vệ {#IS_LEFT}{#}cánh trái{#}nhiều cánh{\#}{?IS_MIDDLE}trung quân{?}{\?}{?IS_RIGHT}cánh phải{?}{\?}{#IS_LEFT}{#}{#}{\#}."/>
+    <string id="lpbDPuuW" text="{RULER.NAME}{?RULER.GENDER}Nữ hoàng đế{?}Hoàng đế{\?}"/>
+    <string id="lQQPKo02" text="Tiến đến che chở quân ta trước địch đang vòng ra sau lưng"/>
+    <string id="m2YKBbdI" text="Chào con cừu lạc đàn! Chúng ta là bầy sói núi rừng, muốn xin ngươi chút thời gian...[rf:convo_mocking_revenge]"/>
+    <string id="M6tfHhq7" text="Ngươi đã bỏ phiếu; người cai trị đã định đoạt kết quả."/>
+    <string id="M9p0vPad" text="Ta biết danh ngươi... {COMMENT_STRING_MAIN}"/>
+    <string id="m9vD3VlN" text="Quân số đội này sẽ không tăng hay giảm; đội quân sẽ cố giữ nguyên quy mô."/>
+    <string id="MacceKIX" text="{RELATION_TEXT} của {BASE_HERO.NAME}"/>
+    <string id="MeQmoYb4" text="Quan hệ của ngươi chưa đủ tốt để chiêu mộ binh sĩ này.{newline}Quan hệ hiện tại: {REL1}; yêu cầu: {REL2}."/>
+    <string id="MGv4Uabd" text="Ngươi đã cược {BET_AMOUNT} vào bản thân nhưng lại thua trận."/>
+    <string id="MHJCuM3N" text="Đứng lại! Bàn chân kẻ ngoại lai như ngươi đã vấy bẩn thánh địa tổ tiên chúng ta truyền đời. Phải xử ngươi thế nào đây?[rf:convo_mocking_revenge]"/>
+    <string id="MmNF7sW7" text="Chỉ được di chuyển bằng cách bắt quân đối phương.{newline}Muốn bắt quân, phải nhảy ngang hoặc dọc qua một hay nhiều quân địch."/>
+    <string id="mPaQzgS0" text="Hân hạnh gặp các hạ tại đây, {PLAYER.LINK}."/>
+    <string id="MpDMaBE9" text="Ngươi dám khiêu khích ư? Bọn ta sẽ lấy sọ ngươi làm chén uống rượu!"/>
+    <string id="mSPDO0Fe" text="Ngươi đã bị quân địch vây khốn, lại không còn sức chiến đấu; con đường duy nhất là đầu hàng."/>
+    <string id="MUCmJaXQ" text="Người đứng đầu {FACTION_INFORMAL_NAME}"/>
+    <string id="MwgcfGsr" text="Khi quân cờ tiến vào ô có quân đối phương, nó sẽ bắt quân ấy. Quân bị bắt được xếp bên dưới quân vừa tiến vào.{newline}Một chồng quân cờ vẫn có thể bị bắt tiếp nếu quân trên cùng thuộc đối thủ.{newline}Sau khi bắt quân, quân vừa bắt sẽ đi về phía doanh trại trong lượt sau."/>
+    <string id="N7w6zi0F" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang rút về."/>
+    <string id="N84HlDaV" text="{NUMBER_OF}{ITEM} ({AMOUNT}{GOLD_ICON})"/>
+    <string id="nHGm1wYg" text="Trận đánh kết thúc. Nhấn {leave_key} để xem kết quả."/>
+    <string id="nHSVy0ns" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang tấn công từ {#IS_LEFT}{#}cánh trái{#}nhiều hướng{\#}{?IS_MIDDLE}trung quân{?}{\?}{?IS_RIGHT}cánh phải{?}{\?}."/>
+    <string id="nk0bADtq" text="Ngươi đã từ chối lời thách đấu. Binh sĩ cho đó là hành vi khiếp nhược, khiến sĩ khí quân ngươi giảm sút."/>
+    <string id="nnr8sANN" text="{PARTY_LIST_TAG} ({COUNT} + {WEAK_COUNT} bị thương)"/>
+    <string id="nVKEUvaC" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang sử dụng các lỗ sát thương."/>
+    <string id="nvswKHTZ" text="Ngươi đã trả {GOLD_AMOUNT}{GOLD_ICON}."/>
+    <string id="nxQaab9d" text="{SHOPNAME} ({SHOPTYPE})"/>
+    <string id="O69Vhqxk" text="Vậy ngươi định đưa bọn ta bao nhiêu?[rf:convo_angry]"/>
+    <string id="OBXNbvkK" text="Khi ngươi định cưỡng ép lấy quân nhu của dân làng, một số người sẽ tụ tập chống trả. Giao chiến với họ sẽ bị coi là tuyên chiến với {KINGDOM}."/>
+    <string id="OdFPHvtE" text="Loạn quân đang tấn công khu định cư này. Ngươi có muốn can thiệp không?"/>
+    <string id="OEax2Y9c" text="Cướp thương đội; chiêu mộ và chỉ huy toán cường đạo; lẻn vào thành địch; hối lộ; trốn khỏi lao ngục."/>
+    <string id="oGflu1jV" text="Sử dụng lỗ sát thương"/>
+    <string id="OGjq7rpg" text="Chúng ta đang đưa hàng hóa tới chợ ở {TOWN}."/>
+    <string id="ogtgc69b" text="Ngươi được quyền mang quân kỳ, biểu tượng của thân phận và vinh dự. Ngươi muốn chọn lá cờ nào?"/>
+    <string id="OIBpCGYv" text="Quân số đội này sẽ giảm. Quy mô mục tiêu hiện tại là {TARGET_SIZE}."/>
+    <string id="OiCCv0EL" text="Ngôi làng rõ ràng đang khốn khó: nông cụ gỉ sét, hư hỏng; bụi rậm và cỏ hoang đang dần chiếm lại những thửa ruộng ngoài rìa."/>
+    <string id="OJmC1Ckc" text="Đối thủ còn lại: {REMAINING_OPPONENT_COUNT}"/>
+    <string id="ol0rBSrb" text="{STR1}{newline}{STR2}"/>
+    <string id="ONGv27TH" text="Cút khỏi mắt ta ngay, đồ khốn bẩn thỉu!"/>
+    <string id="OqCodBZJ" text="Đứng lại, đồ chó má! Đưa đây xem ngươi mang theo thứ gì!"/>
+    <string id="OSZUvWbG" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đã sẵn sàng xuất trận."/>
+    <string id="ot2M62R8" text="+{BONUS_AMOUNT} kinh nghiệm quân đồn trú"/>
+    <string id="ou9asw1a" text="Sát thương {SWING_DAMAGE_TYPE} khi vung chém:"/>
+    <string id="OWCoBElc" text="Ngươi đã bị {PARTY_NAME} bắt làm tù binh."/>
+    <string id="p4PIzGTP" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang chiếm giữ cao điểm."/>
+    <string id="P8BxiiKd" text="Dù nghèo khổ, nơi đây hầu như chẳng có lời than vãn. Dân chúng đã chai sạn, không còn mong tình thế đổi thay."/>
+    <string id="PAa618xe" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang phá vòng vây."/>
+    <string id="Pc0zpaGa" text="Hê hê, muốn qua đường này thì để tiền mãi lộ lại![if:convo_bared_teeth]"/>
+    <string id="pcy8IXDf" text="{RULER.NAME}{?RULER.GENDER}Nữ vương{?}Quốc vương{\?}"/>
+    <string id="PdXqoa2W" text="Đang đến {SETTLEMENT_NAME}."/>
+    <string id="PGXitpMN" text="{SETTLEMENT_NAME} - ({COMMON_AREA_NAME})"/>
+    <string id="PhoKHbhd" text="Chiến thắng! Nhấn {leave_key} để xem kết quả."/>
+    <string id="Pia30xtc" text="{?ASKED_LORD.GENDER}Nàng{?}Hắn{\?} hiện ở {TOWN_NAME}."/>
+    <string id="pLZeP6L6" text="{?IS_GENERAL_SIDE}{?}Công kích tường thành từ phía {SIDE_STRING}{\?}"/>
+    <string id="pm0yiOmv" text="Nhận được: {DENAR_AMOUNT}{GOLD_ICON}"/>
+    <string id="PMnSk81U" text="Vậy ngươi thà giao chiến sao, cừu non? Để ta xem sừng ngươi sắc được bao nhiêu!"/>
+    <string id="pn9KNMxb" text="Ngươi đã bị vây khốn, binh sĩ không còn sức chiến đấu; chỉ còn cách đầu hàng."/>
+    <string id="porKAP64" text="Đề nghị bãi bỏ chính sách này (ủng hộ: {SUPPORT}%)"/>
+    <string id="PqfS5lgq" text="{ABSORBED_AMOUNT} sát thương được {ARMOR_AMOUNT} giáp trụ hấp thụ."/>
+    <string id="pSjnd6PX" text="Ngươi thua trận quyết đấu. Binh sĩ nản lòng khiến sĩ khí quân ngươi giảm."/>
+    <string id="pSWt8NXH" text="Cướp phá {SETTLEMENT_NAME} ({RAIDING_PROCESS}%)"/>
+    <string id="pSz4xSqO" text="Kỹ năng {SKILL_NAME} của nhân vật cần đạt ít nhất {MIN_SKILL_AMOUNT}."/>
+    <string id="Q2alNolf" text="Người cùng tộc của ta {REFERING_HERO.LINK}"/>
+    <string id="Q2JYjFQl" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang rút lui."/>
+    <string id="Q67Wys0i" text="Đang tuần tra quanh {SETTLEMENT_NAME}."/>
+    <string id="Q7ONA10T" text="&lt;b&gt;Máy bắn đá đối trọng&lt;/b&gt;{NEWLINE}Độ chính xác không cao, nhưng có sức phá hoại tường thành rất lớn."/>
+    <string id="QA8Gm9PY" text="Hôm nay trời nóng thật, phải không? Đánh nhau mệt lắm. Cứ giao thứ bọn ta cần ra, bọn ta sẽ đi ngay.[rf:convo_mocking_revenge]"/>
+    <string id="qaueUlAp" text="Được rồi, ra ngoài nhớ cẩn thận. Đạo tặc đầy đường, may cho ngươi là gặp được bọn ta tử tế nhất thiên hạ![ib:closed][rf:convo_bemused]"/>
+    <string id="qDSda1OI" text="{DAY} {?DAY_IS_PLURAL}ngày{?}ngày{\?}"/>
+    <string id="QE1XRyUP" text="+{BONUS_AMOUNT}% tốc độ chế tạo khí giới công thành"/>
+    <string id="qe686AAn" text="Ngươi là người cai trị. Ngươi có quyền quyết định cuối cùng và quyền phủ quyết."/>
+    <string id="QFMshJaj" text="Đang tập kết gần {SETTLEMENT_NAME}."/>
+    <string id="Qg5suamT" text="Ngươi đã cược {BET_AMOUNT} vào {FIGHTER_NAME}, nhưng {?FIGHTER_GENDER}nàng{?}hắn{\?} đã thua trận."/>
+    <string id="qgL4P2vO" text="Thành này rất phồn thịnh, dân chúng có vẻ đủ ăn đủ mặc, đời sống khá sung túc."/>
+    <string id="qM8daraD" text="Tổng điểm kỹ năng: {CURRENT_SKILL_POINTS}"/>
+    <string id="QmaVRAkx" text="Ngươi không trả đủ quân lương; sĩ khí quân ngươi giảm {reg1} điểm."/>
+    <string id="qQLh6S2w" text="{CURRENTAMOUNT}/{TARGETAMOUNT}"/>
+    <string id="qR0s1VvE" text="Ngươi nghe vài lời phàn nàn về vật giá đắt đỏ, thiếu hàng hóa và lòng tham thương nhân, song đó dường như là chuyện thường ngày."/>
+    <string id="qsh0I4Rm" text="Đối thủ tung được {DICE_ROLL} điểm."/>
+    <string id="qt7WSK15" text="{SETTLEMENT_NAME} (đã bị cướp sạch)"/>
+    <string id="qtmj7h2r" text="0"/>
+    <string id="qUtYks66" text="Quân đoàn của {ARMY_LEADER.LINK} đang tập kết gần {SETTLEMENT_NAME}."/>
+    <string id="R4eS65oX" text="Một số dân làng phẫn nộ cầm nông cụ định chống trả. Nếu ngươi vẫn tiếp tục, giao chiến sẽ khó tránh khỏi."/>
+    <string id="R6oKMaZ5" text="{MARRIED_HERO.LINK} đã thành thân với {MARRIED_TO.LINK}."/>
+    <string id="rBieLPA7" text="Quân số ngươi đã vượt quá giới hạn.{newline}Ngươi vẫn tạm giữ được số binh sĩ này, nhưng chẳng bao lâu họ sẽ bỏ đi, còn tốc độ hành quân cũng giảm.{newline}Ngươi có chắc không?"/>
+    <string id="REdb7vbQ" text="{RULER.NAME}{?RULER.GENDER}Nữ Sultan{?}Sultan{\?}"/>
+    <string id="rFvEZJu7" text="{ITEM_NAME} đã được đưa vào hành trang của {PLAYER.LINK}."/>
+    <string id="RjgBIYvH" text="&lt;b&gt;Xe phá cổng cải tiến&lt;/b&gt;{NEWLINE}Dùng để phá cổng thành, mạnh hơn xe phá cổng thường."/>
+    <string id="RJJ1Pbjk" text="Lính đánh thuê chiến đấu cho {FACTION_INFORMAL_NAME}"/>
+    <string id="RNQIG1DS" text="Nghe tiếng huýt sáo và gào thét kia chứ? Không phải gió đâu! Đó là oan hồn những kẻ dám chống lại chúng ta, và ngươi sắp nhập bọn với chúng!"/>
+    <string id="RO0a71EP" text="Đối phương dựng được phòng tuyến chặn ngươi, nhưng hai bên còn số quân cờ bằng nhau. Hòa!"/>
+    <string id="ROB0VcsI" text="Dũng sĩ của ngươi thắng trận quyết đấu. Chiến thắng ấy khích lệ quân đoàn, khiến sĩ khí tăng lên."/>
+    <string id="rQ5On2GL" text="Tăng giới hạn quân số cho mọi đội quân thuộc gia tộc"/>
+    <string id="RqnEjYVe" text="+{RECRUIT_AMOUNT} tân binh"/>
+    <string id="RU6D7hSR" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang tiến quân."/>
+    <string id="rzsRQkXw" text="{CHAR_NAME} đã sở hữu đặc tính {PERK_NAME}."/>
+    <string id="SBp4Ja1u" text="Có thể dùng điểm chuyên tâm chưa phân bổ để nâng giới hạn học tập của từng kỹ năng. Mỗi lần nhân vật lên cấp sẽ nhận {FOCUS_PER_LEVEL} điểm chuyên tâm."/>
+    <string id="SdcpdfaV" text="Ha ha ha! Cuối cùng cũng có mối rồi![if:convo_bared_teeth]"/>
+    <string id="sfcbd6QS" text="Hiện ngươi có {CURRENT_PROGRESS} điểm; cần tổng cộng {TARGET_PROGRESS} điểm để thuyết phục thành công."/>
+    <string id="SNfvAnuV" text="+{BONUS_AMOUNT}% tốc độ sửa chữa tường thành"/>
+    <string id="snxLc1Wq" text="Như hình minh họa, mỗi người chơi ban đầu có hai quân trên bàn. Hai bên lần lượt đặt những quân còn lại vào bất kỳ ô trống nào, trừ ô trung tâm."/>
+    <string id="SRYuaoh1" text="Địa phương này hỗn loạn, nhưng dân chúng vẫn phải lo việc thường ngày. Hầu hết không nán lại ngoài chợ và tránh nhìn thẳng vào nhau. Thỉnh thoảng ngươi nghe họ bàn về loạn quân vùng thôn quê. Có người sợ hãi, kẻ lại thầm hả hê vì thế cuộc thay đổi, dẫu chỉ đôi chút cũng gây bất lợi cho giới giàu sang quyền thế."/>
+    <string id="SYm7rgCX" text="{COMPANION.LINK} đã rời đội quân của ngươi."/>
+    <string id="T0aULilA" text="&lt;b&gt;Xe phá cổng&lt;/b&gt;{NEWLINE}Dùng để phá cổng thành, hữu hiệu hơn chỉ dùng thang công thành."/>
+    <string id="T3JJ7aIV" text="Di chuyển trên bản đồ nhanh nhất có thể; tận dụng tốc độ khi cưỡi ngựa để gia tăng sát thương."/>
+    <string id="T592iYI4" text="Ngươi tung được {DICE_ROLL} điểm."/>
+    <string id="t5X1TNBq" text="Dùng khí giới công thành ở {?IS_GENERAL_SIDE}{?}phía {SIDE_STRING}{\?}"/>
+    <string id="t6xdCj43" text="Ồ, đương nhiên rồi! Miễn là túi tiền ngươi đủ căng và ngươi muốn nó nhẹ bớt thôi.[ib:hip][rf:convo_bemused]"/>
+    <string id="TDQId8c9" text="Ngươi đã lập phòng tuyến ngăn đối thủ và còn nhiều quân cờ hơn. Ngươi thắng!"/>
+    <string id="TeWnL9bh" text="Phu quân của ta {REFERING_HERO.LINK}"/>
+    <string id="TgtdcMGS" text="Con ruồi hấp hối còn giãy giụa thôi, bọn ta thừa sức xử lý..."/>
+    <string id="thIebQAR" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang dẫn đầu mũi kỵ binh xung phong."/>
+    <string id="Ti2GeG0U" text="Tùy lựa chọn, hành động này sẽ khóa ngẫu nhiên một phương án."/>
+    <string id="tpjGRDHP" text="Giữ {leave_key} để rời trận quyết đấu."/>
+    <string id="Tqa0r78j" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang quấy rối địch."/>
+    <string id="trRLa9pi" text="Ngươi gặp {PARTY}. Giao chiến với họ sẽ bị xem là tuyên chiến với {KINGDOM}."/>
+    <string id="TSw4tD02" text="Thật sao? Vậy hôm nay ta phải rửa tay cho sạch máu ngươi rồi![ib:aggressive][if:convo_bared_teeth]"/>
+    <string id="Tu46dFyH" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang vận hành khí giới công thành."/>
+    <string id="Txbga7js" text="Ngươi bắt gặp trận chiến giữa {ATTACKER} và {DEFENDER}."/>
+    <string id="TxeKpK3Y" text="Quan hệ giữa ngươi và {HERO.NAME} tăng {MAGNITUDE}, hiện là {VALUE}."/>
+    <string id="tXl9REtA" text="Dân binh của {SETTLEMENT_NAME}"/>
+    <string id="U8TPlwW9" text="Hân hạnh gặp lại, {PLAYER.LINK}. Ta vô cùng cảm kích những việc ngươi đã làm và mong có ngày báo đáp."/>
+    <string id="uAL3bCfN" text="Mức nặng hành trang{newline}Tổng trọng lượng giáp trụ và vũ khí đang mang.{newline}Mang quá nặng sẽ khiến ngươi đi bộ chậm hơn."/>
+    <string id="Uaw5VF3D" text="Đối thủ muốn bỏ cuộc. Ngươi có chấp nhận đối phương đầu hàng không? Nếu từ chối, ván chơi sẽ tiếp tục."/>
+    <string id="uCikaIoq" text="Tuyệt lắm! Ngươi thấy đấy, ta và huynh đệ chẳng phải hạng tàn độc, chỉ hơi ham tiền thôi. Cho nên ngươi nhớ hào phóng một chút![ib:hip][rf:convo_bemused]"/>
+    <string id="ucyy9Sc5" text="{LEFT} / {RIGHT}"/>
+    <string id="UgMbCUMO" text="Thân phụ của ta {REFERING_HERO.LINK}"/>
+    <string id="um1Z5swc" text="Phu nhân {REFERING_HERO.LINK}"/>
+    <string id="uOqfaqbk" text="{PARTY_LIST_TAG}({COUNT} / {MAX_COUNT})"/>
+    <string id="uUlO8l6M" text="Nghe nói ngươi đánh nhau với mấy kẻ làm việc cho {COMMON_AREA_OWNER}. Nhưng chuyện đó chẳng liên quan đến ta."/>
+    <string id="UX7reJ3K" text="Phải mau bảo vệ khí giới công thành, đừng để địch phá hủy!"/>
+    <string id="UxD6lPXa" text="Ngươi nhận {INFLUENCE} điểm ảnh hưởng, hiện có {NEW_INFLUENCE} điểm."/>
+    <string id="V1FKcYyi" text="{SETTLEMENT_NAME} (đã bị cướp phá)"/>
+    <string id="v5bJd6mZ" text="+{BONUS_AMOUNT} biến động độ phồn vinh"/>
+    <string id="Vap6ahft" text="Chư quân! {BEHAVIOUR_NAME_BEGIN}!"/>
+    <string id="vdK5SaJN" text="Ừm, thật đáng tiếc.[ib:aggressive][if:convo_annoyed]"/>
+    <string id="vdKLq8T5" text="Tường thành{newline}Cấp {LEVEL}"/>
+    <string id="VeOqrmx5" text="{LEFT}{FOCUS_ICON}{RIGHT}"/>
+    <string id="VeqwXwYc" text="Quân địch đang tháo chạy, ngươi đã thắng trận!"/>
+    <string id="Vi6ojGrk" text="{FACTION_1_NAME} đấu với {FACTION_2_NAME}"/>
+    <string id="VJNJsdif" text="{COMPANION.NAME} đã gia nhập đội quân của ngươi."/>
+    <string id="vLU6nNwp" text="Ngươi đặt cược {BET_AMOUNT} denar vào {FIGHTER_NAME} và {?FIGHTER_GENDER}nàng{?}hắn{\?} đã chiến thắng. Tiền thưởng: {REWARD_AMOUNT}{GOLD_ICON}."/>
+    <string id="vn7A8aXV" text="Ngươi đang ở ngoài {SETTLEMENT_NAME}, quân kỳ của ngươi phấp phới trên cổng thành."/>
+    <string id="VoZBLWay" text="{RULER.NAME}{?RULER.GENDER}Khả đôn{?}Khả hãn{\?}"/>
+    <string id="VpCa9ATa" text="Được, ngươi chết chắc rồi![ib:aggressive][if:convo_insulted]"/>
+    <string id="VpKIzJxz" text="Chào lữ khách! Bọn ta mới đặt chân tới vùng này, đang muốn thử vận may bằng vài vụ cướp, ai ngờ gặp ngươi đúng lúc![rf:convo_mocking_revenge]"/>
+    <string id="vw1bbcww" text="Quấy rối phía sau {AI_SIDE}{CLASS} quân đồng minh"/>
+    <string id="VWahbQGh" text="Bằng hữu của ta {REFERING_HERO.LINK}"/>
+    <string id="vXzJJtYq" text="Kế hoạch là tiến vào tầm bắn rồi trút mưa tên lên đầu quân địch."/>
+    <string id="VyJMWO8a" text="Mất {GOLD_AMOUNT}{GOLD_ICON}."/>
+    <string id="w3v2S03V" text="Quan hệ với {HERO_NAME} sẽ &lt;a style=&quot;IncreaseStyle&quot; &gt;&lt;b&gt;được cải thiện&lt;/b&gt;&lt;/a&gt;"/>
+    <string id="W5gPypVY" text="Dùng lò rèn để chế tạo vũ khí, tinh luyện nguyên liệu thô và nấu chảy những vũ khí không cần dùng."/>
+    <string id="w9C43LhX" text="Ngươi muốn đưa ra quyết định cuối cùng về {DECISION_NAME} không?"/>
+    <string id="wdsJRYRn" text="Ngươi đến thật đúng lúc, {PLAYER.LINK}. Ta sẽ không quên ân tình này."/>
+    <string id="WharCvcX" text="Phải giữ vững tường thành, chớ để địch tràn vào!"/>
+    <string id="wKbafI9r" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang bắn từ tháp công thành."/>
+    <string id="wKgpciSx" text="{AMOUNT}{INFLUENCE_ICON}"/>
+    <string id="wtDdqXGW" text="Tốt! Ta mừng vì ngươi tôn trọng những đặc quyền thiêng liêng từ thuở xưa của chúng ta."/>
+    <string id="WTR5Lr8W" text="Nếu phe phòng thủ đưa quân Vua đến bất kỳ mép bàn cờ nào, phe phòng thủ thắng.{newline}Nếu phe tiến công bắt được Vua hoặc chặn hết nước đi của phe phòng thủ, phe tiến công thắng."/>
+    <string id="WVAUoXMY" text="{CURRENT_XP} / {LEVEL_MAX_XP} điểm kinh nghiệm"/>
+    <string id="wx6DZJ0W" text="+{BONUS_AMOUNT} độ bền tường thành"/>
+    <string id="wXQUXa1P" text="Ngươi không thể phân bổ thêm điểm chuyên tâm vào kỹ năng này."/>
+    <string id="WYfjyuHj" text="Được thôi... đây là chuyến đi rất xa, tốt nhất ngươi xem kỹ hầu bao của mình."/>
+    <string id="wZnsFoQ6" text="Có lẽ chúng ta còn chưa làm quen tử tế, bằng hữu. Ngươi vừa cứu mạng ta mà ta vẫn chưa biết tên ngươi..."/>
+    <string id="x2mSJAVa" text="Nếu đối phương chỉ còn một quân hoặc không còn quân nào, người chơi thắng.{newline}{newline}Cũng có thể thắng bằng cách dựng một phòng tuyến chặn tất cả quân địch ở phía bên kia; khi ấy bên còn nhiều quân cờ hơn thắng."/>
+    <string id="XJ6EG3Pa" text="+{BONUS_AMOUNT} giới hạn dự trữ lương thực"/>
+    <string id="xKa6TwEX" text="Ở lại {SETTLEMENT_NAME}"/>
+    <string id="xo2zvOir" text="Đối thủ không còn nước đi, lượt này bị bỏ qua."/>
+    <string id="xq62HAIO" text="Che chở {AI_SIDE}{CLASS} quân đồng minh ở cánh {?IS_GENERAL_SIDE}{?}{SIDE_STRING}{\?}"/>
+    <string id="XqV3x4i3" text="Tùy lựa chọn, hành động này sẽ đưa cuộc thuyết phục sang giai đoạn tiếp theo."/>
+    <string id="xsIU28Za" text="Tuyệt quá! Không còn phải ngủ trên đá lạnh cứng, cũng chẳng phải ăn mấy con sóc gầy trơ xương nữa!"/>
+    <string id="Xv6knZP8" text="-{PRISONERS_AMOUNT} tù binh"/>
+    <string id="xv8T0Il8" text="Số ô có thể đi trong lượt của mỗi bên được quyết định bằng cách gieo bốn thanh xúc xắc hai màu."/>
+    <string id="xycMiCIq" text="Gần đây ta chưa thấy vụ làm ăn nào có lời."/>
+    <string id="xZxbFuDI" text="Vậy đêm nay lũ chó rừng có bữa đại tiệc rồi."/>
+    <string id="y0MmmV8C" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang lập vòng phòng thủ quanh đội quân đánh xa."/>
+    <string id="y3OKIfj0" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang bắn dưới sự che chở của bộ binh."/>
+    <string id="YbabzW3H" text="Ngươi đã bị giam {NUMBER_OF_DAYS} ngày trong ngục ở {SETTLEMENT_NAME}."/>
+    <string id="YbB2IpTR" text="Quan hệ giữa ngươi và {HERO.NAME} giảm {MAGNITUDE}, hiện là {VALUE}."/>
+    <string id="yeEaBV29" text="Hàng thuộc về bọn ta rồi, lần này tha mạng cho ngươi. Cút trước khi ta đổi ý![ib:closed][if:convo_normal]"/>
+    <string id="YevUiidU" text="Quan hệ giữa ngươi và {CLAN_LEADER} giảm {MAGNITUDE}, hiện là {VALUE}."/>
+    <string id="Yf6bHCeW" text="{SETTLEMENT_NAME} (thuế quan)"/>
+    <string id="yfNAkFgF" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang dàn đội hình tản binh."/>
+    <string id="ygY1oKQD" text="Chúng ta nghe lệnh các hạ, {?PLAYER.GENDER}phu nhân{?}đại nhân{\?}. Chỉ cần chỉ rõ kẻ phải đánh, việc còn lại cứ giao cho bọn ta![ib:convo_approving]"/>
+    <string id="yjXoftYs" text="Lần cuối được thấy tại {SETTLEMENT}{?IS_IN_SETTLEMENT}{?} (vùng lân cận){\?}."/>
+    <string id="YkagFP1z" text="Thân mẫu của ta {REFERING_HERO.LINK}"/>
+    <string id="ylQJwqKH" text="Ngươi sắp vứt bỏ chiến lợi phẩm vất vả mới có được! Chắc chắn chứ?"/>
+    <string id="ySlVPZyF" text="Khi ngươi định cưỡng ép dân làng sung quân, một số người sẽ đứng lên chống lại. Giao chiến với họ bị coi là tuyên chiến với {KINGDOM}."/>
+    <string id="ytlsMCCn" text="{DESERTER_COUNT} binh sĩ đã đào ngũ khỏi {PARTY}."/>
+    <string id="yUo269Us" text="Đa tạ ân cứu giúp, các hạ. Chúng ta còn chưa kịp chính thức làm quen, phải không? Xin hỏi quý danh?"/>
+    <string id="YYdPfXEP" text="Cờ Vua Phòng Thủ là trò chơi giữa phe tiến công (đen) và phe phòng thủ (trắng).{newline}Quân tiến công đông hơn hẳn, nhưng phe phòng thủ không nhất thiết phải bắt quân để thắng. Mục tiêu chính là bảo vệ quân Vua (quân ở giữa).{newline}Quân Vua di chuyển và bắt quân theo cùng quy tắc như các quân khác."/>
+    <string id="yzIOcJoK" text="Nếu đối phương bị chặn và không còn nước đi hợp lệ, người chơi thắng."/>
+    <string id="z3AvJZMt" text="Có thể mua tại {SETTLEMENT_NAME} với giá: {BUY_PRICE} denar"/>
+    <string id="Z3yCe1HS" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang chỉnh đốn đội ngũ."/>
+    <string id="Z5RlxyPJ" text="Ngươi đã bị {PARTY_NAME} bắt giữ trong {NUMBER_OF_DAYS} ngày."/>
+    <string id="Zg5Zmgui" text="Chúng ta đang rời chợ ở {TOWN} để trở về làng."/>
+    <string id="ZhiB1EOM" text="Đang bị giam tại {SETTLEMENT_NAME}"/>
+    <string id="ZlJIpfWg" text="Gia tăng sát thương nhờ tốc độ: {SPEED_BONUS}%."/>
+    <string id="zo5hQfll" text="Phe Sói thắng nếu bắt được năm quân Cừu.{newline}{newline}Phe Cừu thắng nếu chặn được phe Sói đến mức không thể di chuyển."/>
+    <string id="ZPaw3WuO" text="Người Vlandia là hậu duệ của những kẻ phiêu lưu từ phương tây, từng sống nhiều thế kỷ dưới ách Đế quốc trước khi lập vương quốc độc lập. Khi hoàng quyền suy yếu, họ xây dựng xã hội phong kiến có tổ chức, đứng đầu là giới quý tộc thượng võ ưa chiến đấu trên lưng ngựa bằng giáo dài và thương kỵ."/>
+    <string id="zqihwKAs" text="&lt;b&gt;Nỏ pháo&lt;/b&gt;{NEWLINE}Phóng tên nỏ mạnh và hiểm, đặc biệt hữu hiệu để sát thương binh sĩ."/>
+    <string id="ZqWOb1jM" text="Ngươi ở ngoài thành {SETTLEMENT_NAME} nhưng không thể vào vì đang bị {FACTION_TERM} truy nã."/>
+    <string id="ZuLa12aT" text="Phải vậy chứ... bọn ta chính là hạng người ngươi chẳng nên dây vào.[rf:convo_bemused]"/>
+    <string id="ZV7bt7Il" text="{newline}{PARTY_NAME}: {PARTY_MORALE}"/>
+    <string id="Zw60OTJe" text="Dù nghe những lời than phiền về vật giá tăng, bất công giàu nghèo và dân di cư từ thôn quê, phần đông vẫn hài lòng với cuộc sống."/>
+    <string id="ZwyPnboN" text="+{BONUS_AMOUNT} điểm trung thành của khu định cư"/>
+    <string id="zX4C3332" text="Vậy thì chịu chết đi! Ta cho ngươi chuẩn bị một chút đấy, đồ tép riu."/>
+    <string id="ZxcnmaXi" text="Ngươi đã tới {SETTLEMENT}, có thể bắt đầu cướp phá mà không gặp kháng cự. Hành động này bị xem là tuyên chiến với {KINGDOM}."/>
+    <string id="ZXXNrvvg" text="Nếu đối thủ không còn quân cờ hợp lệ trên tay lẫn trên bàn, người chơi thắng."/>
+    <string id="DaX6bsaD" text="Đội quân {CLAN_PARTY_NAME} bị {ENEMY_PARTY_NAME} tấn công gần {SETTLEMENT_NAME}."/>
+    <string id="FdTd3yIx" text="Các thay đổi chưa được lưu. Ngươi có muốn đặt lại giao diện này không?"/>
+    <string id="a6zaA9Um" text="+{BONUS_AMOUNT} dân binh khu định cư"/>
+    <string id="ki5DqTtC" text="+{BONUS_AMOUNT} độ phồn vinh khu định cư"/>
+    <string id="vqHDX6hf" text="+{BONUS_AMOUNT} lòng trung thành khu định cư"/>
+    <string id="8mBT44QK" text="Quý tộc của {FACTION_INFORMAL_NAME}"/>
+    <string id="ioKwRFcj" text="Đề nghị nghị hòa (ủng hộ: {SUPPORT}%)"/>
+    <string id="PYaUEZzn" text="Đề nghị tuyên chiến (ủng hộ: {SUPPORT}%)"/>
+    <string id="NaAA5kjG" text="Đề nghị nghị hòa, nhận {TRIBUTE} cống kim mỗi ngày (ủng hộ: {SUPPORT}%)"/>
+    <string id="RdsbyNE2" text="Đề nghị nghị hòa, nộp {TRIBUTE} cống kim mỗi ngày (ủng hộ: {SUPPORT}%)"/>
+    <string id="4U6x48yQ" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang dẫn đầu trận chiến."/>
+    <string id="KafFddmO" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang bảo vệ vị tướng chỉ huy."/>
+    <string id="uFDiRV1Z" text="({PRIMARY_ROLE})"/>
+    <string id="7pAZatbz" text="{RULER.NAME}{?RULER.GENDER}Nữ hoàng đế{?}Hoàng đế{\?}"/>
+    <string id="BbYFboh2" text="{RULER.NAME}{?RULER.GENDER}Nữ Bey{?}Bey{\?}"/>
+    <string id="jM9KGCIa" text="{RULER.NAME}{?RULER.GENDER}Nữ Emir{?}Emir{\?}"/>
+    <string id="lb13ceVM" text="{RULER.NAME}{?RULER.GENDER}Nữ chí tôn vương{?}Chí tôn vương{\?}"/>
+    <string id="lqm9PfF1" text="{RULER.NAME}{?RULER.GENDER}Nữ vương công{?}Vương công{\?}"/>
+    <string id="nAaT19CC" text="{RULER.NAME}{?RULER.GENDER}Chấp chính quan{?}Chấp chính quan{\?}"/>
+    <string id="nojcK4ia" text="{RULER.NAME}{?RULER.GENDER}Nữ đại công{?}Đại công{\?}"/>
+    <string id="veiFupWz" text="{RULER.NAME}{?RULER.GENDER}Nữ nam tước{?}Nam tước{\?}"/>
+    <string id="X4qO3jBf" text="{RULER.NAME}{?RULER.GENDER}Nữ bá tước{?}Bá tước{\?}"/>
+    <string id="rGNrtXSx" text="Ngươi đã đến {SETTLEMENT} giúp khu định cư chống lại quân xâm lược."/>
+    <string id="U7etPQA2" text="{JOB_NAME}{FIRSTNAME}"/>
+    <string id="7MSuWxaY" text="{CHILD.NAME} đã {CHILD.AGE} tuổi, đến lúc ngươi hướng dẫn {?CHILD.GENDER}con gái{?}con trai{\?} về đường đời."/>
+    <string id="kVLfRWjE" text="+{BONUS_AMOUNT}% giảm quân lương quân đồn trú."/>
+    <string id="Nfm5lLWv" text="{CHILD.NAME} đang cần ngươi quan tâm ngay!"/>
+    <string id="1XE7yeaP" text="Khi tù binh này đạt thêm {CONFORMITY_AMOUNT} điểm phục tùng, ngươi có thể chiêu mộ thêm một tù binh."/>
+    <string id="8c8NDpAd" text="{HERO.NAME} nhận được đặc tính {TRAIT_NAME}."/>
+    <string id="bdJtVxQp" text="Ảnh hưởng sẽ {?PAY_OR_GET}+{?}-{\?}{TRADE_AMOUNT}{INFLUENCE_ICON}"/>
+    <string id="haRRjDmy" text="Ngươi sẽ dùng {TRADE_AMOUNT} đơn vị quân nhu để nâng cấp binh sĩ!"/>
+    <string id="PvrRFwHM" text="Sĩ khí sẽ {?PAY_OR_GET}+{?}-{\?}{TRADE_AMOUNT}{MORALE_ICON}"/>
+    <string id="BixmxJPX" text="Chư tướng dưới quyền sẽ thiên về chủ động đánh địch, chẳng hạn cướp phá và vây hãm."/>
+    <string id="DkaNhxpg" text="Ngươi có chắc muốn thoái vị không?{?WILL_DESTROY}{newline}Không gia tộc nào khác tiếp quản quyền lãnh đạo, vương quốc của ngươi sẽ diệt vong.{?}{\?}"/>
+    <string id="JbN0RwM2" text="Ngươi mất {INFLUENCE} điểm ảnh hưởng vì bỏ một trận thủ thành của vương quốc mình."/>
+    <string id="Ma0PyWAC" text="Trong quyết sách của vương quốc, cướp phá, đánh quân địch và vây thành được ưu tiên hơn; quân ta cũng có xu hướng truy kích địch xa hơn."/>
+    <string id="qzRbMK8G" text="Chư tướng dưới quyền sẽ thiên về phòng thủ, chẳng hạn ứng cứu khi địch cướp phá hoặc vây thành."/>
+    <string id="VOYhAyJh" text="Nhấn “{MODIFIER_KEY}” + “{CLICK_KEY}” để đi theo"/>
+    <string id="zruLFJDG" text="Trong quyết sách của vương quốc, bảo vệ các khu định cư được ưu tiên hơn; quân ta có xu hướng truy kích địch ở cự ly gần."/>
+    <string id="ap1wEfdW" text="V"/>
+    <string id="g6J4Oe6z" text="Tên gia tộc phải dài từ {MIN} đến {MAX} ký tự."/>
+    <string id="j2OaZPQz" text="Nhờ đặc tính của ngươi, binh sĩ sẽ nhận {XP_AMOUNT} kinh nghiệm từ vũ khí và/hoặc giáp trụ được quyên góp; tối đa nhận được {XP_DONATION_LIMIT} kinh nghiệm."/>
+    <string id="jAISxqxR" text="{TROOP_NAMES_BEGIN}{?IS_PLURAL}và{?}{\?}{TROOP_NAMES_END} đang bảo vệ một khí giới công thành."/>
+    <string id="KTUcgvMZ" text="Quân số ngươi sắp vượt mức tối đa, gây bất lợi cho sĩ khí đội quân."/>
+    <string id="L3EE8bmx" text="Không ai trong đội có đủ cấp kỹ năng {SKILL} để thi hành mệnh lệnh này (cần ít nhất {AMOUNT})."/>
+    <string id="qHkTYCy0" text="Binh sĩ của ngươi sẽ nhận {XP_AMOUNT} kinh nghiệm."/>
+    <string id="QtXf82OD" text="Vũ khí cần có sát thương đâm loại {THRUST_DAMAGE_TYPE}."/>
+    <string id="RsBO5aOq" text="Vũ khí cần có sát thương chém loại {SWING_DAMAGE_TYPE}."/>
+    <string id="svnxJA0L" text="{HERO} không đủ cấp kỹ năng {SKILL} để rèn vũ khí này."/>
+    <string id="uGahvbVP" text="Bảo vệ khí giới công thành ở {?IS_GENERAL_SIDE}{?}phía {SIDE_STRING}{\?}"/>
+    <string id="UJ01br0b" text="Nhân vật này thiếu kỹ năng {SKILL}, không thể thi hành mệnh lệnh."/>
+    <string id="fUNa6FAo" text="Trong chiến đấu, giữ {MISSION_INDICATORS_KEY} để xem dấu hiệu các đội hình hai bên."/>
+    <string id="fAEvWw8z" text="Quân thủ thành đã rút vào chính lâu và đang chống cự đến cùng."/>
+    <string id="kZ7gLqMz" text="Khi bật tự động chiêu mộ, quân đồn trú sẽ tự tuyển binh từ các nhân vật có thế lực trong thành và làng lân cận. Chủ khu định cư chịu chi phí chiêu mộ."/>
+    <string id="RVfkxgMm" text="{?IS_PRISONER_FOLLOWING}Ở lại{?}Đi theo{\?}"/>
+    <string id="qNgjr719" text="Quân vây {SETTLEMENT} đã mở cuộc tiến công!"/>
+    <string id="entirestackdiscarditems" text="Giữ [{KEY_NAME}] để bỏ tất cả"/>
+    <string id="entirestackrecruitunits" text="Giữ [{KEY_NAME}] để chiêu mộ tất cả"/>
+    <string id="entirestacktransfertroops" text="Giữ [{KEY_NAME}] để chuyển tất cả"/>
+    <string id="entirestackupgradeunits" text="Giữ [{KEY_NAME}] để nâng cấp tất cả"/>
+    <string id="fivestackdiscarditems" text="Giữ [{KEY_NAME}] để bỏ x5"/>
+    <string id="fivestackrecruitunits" text="Giữ [{KEY_NAME}] để chiêu mộ x5"/>
+    <string id="fivestacktransfertroops" text="Giữ [{KEY_NAME}] để chuyển x5"/>
+    <string id="fivestackupgradeunits" text="Giữ [{KEY_NAME}] để nâng cấp x5"/>
+    <string id="l57Dk2DQ" text="Vượt sức chứa lao ngục ({TROOP_NUMBER} tù binh)"/>
+    <string id="baFazbmR" text="Quặng sắt{@Plural}Những xe chở quặng sắt{\@}"/>
+    <string id="bxtraSPF" text="{STR1}{newline}{newline}{STR2}"/>
+    <string id="entirestacktakeitems" text="Giữ [{KEY_NAME}] để lấy tất cả"/>
+    <string id="fivestacktakeitems" text="Giữ [{KEY_NAME}] để lấy x5"/>
+    <string id="genericcharacterfirstname" text="{CHARACTER_FIRSTNAME}"/>
+    <string id="genericcharactername" text="{CHARACTER_NAME}"/>
+    <string id="generickingdomshortname" text="{KINGDOM_SHORT_NAME}"/>
+    <string id="mds0myr4" text="{HERO.NAME} đã mất đặc tính {TRAIT_NAME} của {?PLAYER.GENDER}nàng{?}hắn{\?}."/>
+    <string id="v4nltcfz" text="{PARTY_LIST_TAG}{TOTAL_COUNT}/{MAX_COUNT} ({COUNT}+{WEAK_COUNT} bị thương)"/>
+    <string id="22tbyEYI" text="Ngươi nhận được {COUNT}{ITEM} từ {PARTY_NAME}."/>
+    <string id="2EzfAklA" text="Ngươi đã trao {COUNT}{ITEM} cho {HERO.NAME}."/>
+    <string id="3lZchBXQ" text="{ISSUE_NAME}: binh sĩ của ngươi không giải quyết được vấn đề."/>
+    <string id="6GmsZ7AG" text="Ngươi đã trao {COUNT}{ITEM} cho {PARTY_NAME}."/>
+    <string id="6kqK0kUn" text="Không cần cố thủ nữa; hãy tuần tra khu vực này."/>
+    <string id="7fjOwwVH" text="Được thôi, ta sẽ mách ngươi một tin. Ta nghe thương nhân kể rằng họ vừa mua {ITEM_NAME} ở {SETTLEMENT} với giá {BUY_COST}{GOLD_ICON}, rồi đem tới {DESTINATION} bán được {GOLD_ICON}{SELL_COST}."/>
+    <string id="aepux62p" text="Ngươi không thể chiếm khu định cư trước khi quyết định quyền sở hữu được thông qua."/>
+    <string id="aqCj9dhC" text="Không cần cố thủ nữa; hãy đi vây thành của địch!"/>
+    <string id="b5DWVsOZ" text="{HERO.NAME} đã tử trận."/>
+    <string id="DGbSsANY" text="{HERO.NAME} đã qua đời vì tuổi già."/>
+    <string id="DGOgsMfx" text="{PRISONER.NAME} được thả sau khi tiền chuộc của {?PRISONER.GENDER}nàng{?}hắn{\?} được thanh toán."/>
+    <string id="EMVLtu5L" text="Kỹ năng {SKILL_NAME} của {HERO.LINK} tăng {?PLURAL}{GAINED_POINTS}{?}1{\?} điểm, hiện đạt {UPDATED_SKILL_LEVEL}."/>
+    <string id="fMh5KZfk" text="Chẳng cần ở lại đây nữa, đi thôi!"/>
+    <string id="FmIIQEQD" text="{HERO.NAME} đã qua đời."/>
+    <string id="FSl1LFP6" text="{CLAN} nhận {AMOUNT_TO_ADD} điểm thanh danh, hiện có {NEW_RENOWN} điểm."/>
+    <string id="gCaT2BTu" text="{PRISONER.NAME} được phóng thích sau khi ký hòa ước."/>
+    <string id="gE7QFy6y" text="{PRISONER.NAME} đã trốn khỏi nơi giam giữ {?PRISONER.GENDER}nàng{?}hắn{\?}."/>
+    <string id="geJQxzgB" text="Nhiệm vụ thất bại: {QUEST_TITLE}"/>
+    <string id="GHdrCWpF" text="Nhấn {CONSOLE_KEY_NAME} để đóng."/>
+    <string id="Hvw3uSNN" text="{PRISONER.NAME} được thả sau khi phe bắt giữ {?PRISONER.GENDER}nàng{?}hắn{\?} thua trận."/>
+    <string id="ID8wnSIi" text="Không thể thực hiện hành động này ở giai đoạn hiện tại của cốt truyện."/>
+    <string id="iLEhyGI8" text="Đế quốc Calradia đang suy tàn. Ngay trước cái chết bí ẩn của tiên hoàng Arenicos, những cuộc tranh đoạt chính trị đã xé nát quốc gia từng thống nhất này. Nay các phe công khai khai chiến với nhau. Dẫu trải bao gian khổ, người Calradia vẫn có những phép phòng ngự thành thạo: quân thủ thành cầm chân giặc xâm lược tới khi quân cơ động ngoài chiến địa kéo đến tiếp viện. Nhờ đó, họ có thể kiềm chế các nước láng giềng."/>
+    <string id="LjUhEJxz" text="Thương đội của {OWNER.NAME}"/>
+    <string id="lTTWrL1Q" text="Nhiệm vụ quá hạn: {QUEST_TITLE}"/>
+    <string id="mAEaO8jM" text="{PRISONER.NAME} đã được phóng thích."/>
+    <string id="mhAr3dfG" text="Nhiệm vụ được kích hoạt: {QUEST_TITLE}"/>
+    <string id="n9qR84YI" text="{PRISONER.NAME} đã trốn khỏi {SETTLEMENT}."/>
+    <string id="nbw71MCj" text="Công trình {BUILDING_NAME} ở {SETTLEMENT_NAME} đã hoàn tất."/>
+    <string id="NLmaID0O" text="{HERO.NAME} đã bị {KILLER.NAME} xử tử."/>
+    <string id="P1VmnfsB" text="Công trình {BUILDING_NAME} ở {SETTLEMENT_NAME} đã được nâng cấp."/>
+    <string id="PH7pkve4" text="{ISSUE_NAME}: binh sĩ của ngươi đang giải quyết vấn đề."/>
+    <string id="qlnXblKO" text="{ISSUE_NAME}: binh sĩ đã giải quyết xong và đang trên đường trở về."/>
+    <string id="rZ9aqmaq" text="Có mục tiêu tốt hơn, chúng ta nên tới đó."/>
+    <string id="SydDh9jf" text="Ngươi nhận được {COUNT}{ITEM} từ {HERO.NAME}."/>
+    <string id="szSjkkyl" text="Chúng ta nên chọn mục tiêu tiếp theo."/>
+    <string id="vvUayAoO" text="{HERO.NAME} đã bị mưu sát."/>
+    <string id="wZovddJ9" text="{PRISONER.NAME} đã trốn khỏi đội quân của ngươi."/>
+    <string id="XaCbpDUv" text="Chúng ta nên tuần tra vùng này một thời gian."/>
+    <string id="xWydBJyS" text="Loạn quân tại {SETTLEMENT} đã nổi binh chống lại chủ nhân là {RULER}."/>
+    <string id="Y20AQIvo" text="{PRISONER.NAME} đã bị {CAPTOR_NAME} bắt giữ!"/>
+    <string id="y3cP8Etv" text="Nhiệm vụ bị hủy: {QUEST_TITLE}"/>
+    <string id="yNyQ3RFa" text="{HERO.NAME} đã mất khi sinh nở."/>
+    <string id="zkJPFtYn" text="Nhiệm vụ hoàn thành: {QUEST_TITLE}"/>
+    <string id="9zpZRkYz" text="Tốn {COST} tiền Ngũ Thù mỗi ngày để tăng tốc công trình thêm {BOOST}."/>
+    <string id="gwKPbSVE" text="{TRAIT}{newline}{TRAIT_DESCRIPTION}"/>
+    <string id="GZKY51fB" text="Không thể gia nhập quân đoàn khi đang hưởng quyền qua lại an toàn."/>
+    <string id="hdyQFP2Z" text="Ngươi đã bị một con {MOUNT_NAME} hoang giết chết!"/>
+    <string id="IiyN5krb" text="{TRAIT_NAME} ({TRAIT}{TRAIT_VALUE}){newline}{TRAIT_DESCRIPTION}"/>
+    <string id="troopclassname" text="{FORMATION_CLASS}"/>
+    <string id="XNNvdkul" text="Đang quản trị {SETTLEMENT_NAME}"/>
+    <string id="xqeFT0cU" text="{DAY}{?DAY_IS_PLURAL}ngày{?}ngày{\?}"/>
+    <string id="ZnsseELq" text="Tên phe phải dài từ {MIN} đến {MAX} ký tự."/>
+    <string id="1ICTi9xQ" text="Quân thủ thành xuất chiến, tấn công doanh trại vây thành của {BESIEGER_LEADER.NAME}."/>
+    <string id="5a4cY5az" text="Không thể thực hiện hành động này khi đang bị vây thành."/>
+    <string id="9raxrECY" text="Nếu tiếp tục, {LEADER.NAME} sẽ trở thành chỉ huy mới của đội quân này. Ngươi có chắc không?"/>
+    <string id="aBssWwIu" text="Nếu tiếp tục, {GOVERNOR.NAME} sẽ thành Thái thú mới của {SETTLEMENT_NAME}. Ngươi có chắc không?"/>
+    <string id="anSH3M5W" text="{NUM1} x {NUM2}"/>
+    <string id="AxRxT2Xj" text="Khi đội quân giải tán, binh sĩ sẽ sáp nhập vào đơn vị gần nhất hoặc trở về khu định cư cùng phe gần nhất để nhập quân đồn trú.{newline}{newline}Hành động này không thể hoàn tác.{newline}{newline}Ngươi có chắc không?"/>
+    <string id="bbmrHzRF" text="Phái thành viên gia tộc tới {SETTLEMENT_NAME}"/>
+    <string id="debCJDAZ" text="Không thể thực hiện hành động này khi đang giao chiến."/>
+    <string id="ehsuyvdT" text="Nếu tiếp tục, đội quân sẽ không có người chỉ huy trong {TRAVEL_DURATION} chờ người của gia tộc ngươi đến nơi. Trước khi có tân chỉ huy, đội quân không thể gia nhập quân đoàn. Ngươi có chắc không?"/>
+    <string id="GNGTllPc" text="Không thể thực hiện hành động này khi đang cướp phá làng."/>
+    <string id="hoebgN2u" text="Nếu tiếp tục, thành viên gia tộc được chọn sẽ lên đường và không thể điều động cho tới khi đến {SETTLEMENT_NAME}. Ngươi có chắc không?"/>
+    <string id="mJkJWccN" text="Nếu tiếp tục, ngươi sẽ bãi nhiệm {GOVERNOR.NAME} khỏi chức Thái thú tại {SETTLEMENT_NAME}. Ngươi có chắc không?"/>
+    <string id="NKYem1X0" text="Đội quân này đang ở trong quân đoàn của {ARMY_LEADER}."/>
+    <string id="OLZqZZF3" text="Nếu tiếp tục, {GOVERNOR.NAME} sẽ lên đường trong {TRAVEL_DURATION}, sau đó đảm nhiệm chức Thái thú ở {SETTLEMENT_NAME}. Trong lúc đi đường, {GOVERNOR.NAME} không thể điều động; ngươi cũng không thể thay Thái thú tại {SETTLEMENT_NAME} trước khi {GOVERNOR.NAME} tới nơi. Ngươi có chắc không?"/>
+    <string id="Xedhfj07" text="{HERO_NAME} cần khoảng {TRAVEL_DURATION} để tới đội quân của ngươi. Ngươi có muốn tiếp tục không?"/>
+    <string id="zxckitKe" text="Ngươi chủ động xuất thành tiến đánh {PARTY}."/>
+    <string id="0rsySqR6" text="Ngày {DAY_OF_YEAR} năm {YEAR}, ngươi nghe tin một thế lực âm mưu đang bí mật liên kết những kẻ thù của Đế quốc."/>
+    <string id="1m8zRjs8" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {CLAN_NAME} gia nhập {KINGDOM_FORMALNAME}."/>
+    <string id="36hbMBhb" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {FORMAL_NAME} đã bị tiêu diệt, vĩnh viễn không thể hoàn thành sứ mệnh {?PLAYER_WANTS_RESTORE}phục hưng{?}hủy diệt{\?} Đế quốc, đúng như ý nguyện của ngươi."/>
+    <string id="4tdVrFtU" text="31"/>
+    <string id="5lT70YJY" text="Ngày {DAY_OF_YEAR} năm {YEAR}, ngươi nghe tin các thế lực chống Đế quốc đang lập mật ước, định hợp quân đối đầu với Đế quốc."/>
+    <string id="5UpDD9eS" text="10"/>
+    <string id="7b60SOvI" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {KING_NAME} được tôn lên ngôi {TITLE_NAME}."/>
+    <string id="7Wcnipag" text="14"/>
+    <string id="8fLMcFFG" text="Ngày {DAY_OF_YEAR} năm {YEAR}, ngươi đưa Long Kỳ tái xuất nhân gian và tuyên cáo sứ mệnh của mình là {?PLAYER_WANTS_RESTORE}phục hưng{?}đánh bại{\?} Đế quốc."/>
+    <string id="8iONwXCz" text="22"/>
+    <string id="9Lhd2zVW" text="Ngày {DAY_OF_YEAR} năm {YEAR}, ngươi tìm được mảnh Long Kỳ thứ ba và định đưa lá cờ ấy tái xuất."/>
+    <string id="aHu7bgbx" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {HERO_NAME} đã trưởng thành."/>
+    <string id="AqHr4nRR" text="4"/>
+    <string id="arfabNbu" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {NAME} đã tử trận."/>
+    <string id="AT5aTROe" text="7"/>
+    <string id="b1c0Sh4A" text="21"/>
+    <string id="CgAGsR1P" text="29"/>
+    <string id="cNaiQyva" text="16"/>
+    <string id="E0lb2Z2r" text="Ngày {DAY_OF_YEAR} năm {YEAR}, thế lực âm mưu chống Đế quốc đã liên kết thành công các kẻ thù của Đế quốc. Quân của {FACTION_NAMES} nay đã đứng chung một chiến tuyến."/>
+    <string id="eHBvuPk6" text="26"/>
+    <string id="Ej0QNsY9" text="15"/>
+    <string id="F3U9AtmF" text="9"/>
+    <string id="fTyJB9wd" text="24"/>
+    <string id="FuYivUV1" text="Ngày {DAY_OF_YEAR} năm {YEAR}, ngươi tuyên thệ trung thành với {RULER.NAME}, mong {?RULER.GENDER}nàng{?}người ấy{\?} dẫn dắt cuộc chiến {?PLAYER_WANTS_RESTORE}phục hưng{?}đánh bại{\?} Đế quốc tới thắng lợi."/>
+    <string id="GralaKWi" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {FATHER_NAME} và {MOTHER_NAME} sinh được một người con."/>
+    <string id="gxsoJMb8" text="0"/>
+    <string id="I3Vfk5mz" text="20"/>
+    <string id="ISz5bLEO" text="12"/>
+    <string id="i5ROjI8K" text="Ngày {DAY_OF_YEAR} năm {YEAR}, ngươi phát hiện cổ vật mà Tacteos từng nhắc tới."/>
+    <string id="j46AltVv" text="28"/>
+    <string id="jIZcOvMT" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {NAME} bị xử tử."/>
+    <string id="JKQjXH9M" text="27"/>
+    <string id="Jw4oiIM4" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {KING_NAME} tự xưng là {?IS_KING_MALE}Hoàng đế{?}Nữ hoàng đế{\?} Calradia."/>
+    <string id="jxatfzXh" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {NAME} qua đời vì tuổi già."/>
+    <string id="KkwLUO3o" text="6"/>
+    <string id="ksDGaGIi" text="19"/>
+    <string id="kVuucX4o" text="13"/>
+    <string id="lKIHqkAV" text="17"/>
+    <string id="ma49Ya6b" text="30"/>
+    <string id="MWatMKoP" text="Ngày {DAY_OF_YEAR} năm {YEAR}, mật ước giữa các thế lực Đế quốc bị bại lộ khi những đạo quân từng là địch thủ lại đứng chung một chiến tuyến."/>
+    <string id="oAg4dtbB" text="25"/>
+    <string id="Q9h3y2oO" text="8"/>
+    <string id="qSC0t1lY" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {FIRST_HERO} và {SECOND_HERO} thành thân."/>
+    <string id="QxlDIo3q" text="5"/>
+    <string id="t1hYTrMR" text="Ngày {DAY_OF_YEAR} năm {YEAR}, một vương quốc sụp đổ: {FORMAL_NAME} không còn tồn tại."/>
+    <string id="tAMBVG9B" text="3"/>
+    <string id="TlvM7kuQ" text="18"/>
+    <string id="uEiFfbOq" text="{SEASON} năm {YEAR}, ngày {DAY}"/>
+    <string id="vSr60kDj" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {MOTHER_NAME} sinh được một người con."/>
+    <string id="WHtINdhX" text="23"/>
+    <string id="wNHfL0x0" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {NAME} ngã xuống giữa chiến trường."/>
+    <string id="y8tOrlnJ" text="11"/>
+    <string id="YeaFZzXS" text="Ngày {DAY_OF_YEAR} năm {YEAR}, {LEADER_NAME} tuyên bố dựng nước mới mang tên {KINGDOM_NAME}."/>
+    <string id="YxEcX6pS" text="Ngày {DAY_OF_YEAR} năm {YEAR}, ngươi tìm thấy mảnh Long Kỳ Calrados thứ hai."/>
+    <string id="YMIFqVOk" text="Ngươi có chắc muốn đầu hàng không? Toàn bộ binh sĩ dưới quyền sẽ mất!"/>
+    <string id="d4n8AuUh" text="Quân ta đang tháo chạy khỏi chiến trường. Ngươi đã thua trận."/>
+    <string id="7zaMwF08" text="Khi ngươi cướp phá {SETTLEMENT}, {PARTY} đến cứu viện ngôi làng. Ngươi quyết định..."/>
+    <string id="87vr9BHq" text="Khống chế một con hẻm ở {SETTLEMENT_NAME}"/>
+    <string id="D2KdSGGJ" text="Ngươi đang ở ngoài {SETTLEMENT_NAME} nhưng bị từ chối vào thành. Thông thường, đường sá vắng tanh khi ngươi đến gần thành địch; lần này lại có người tụ tập xem, thậm chí thỉnh thoảng reo hò. Ngươi nghi nhiều người trong số họ trung thành với {FACTION_INFORMAL_NAME}, còn dân binh thì không muốn tham gia giữ thành."/>
+    <string id="kMAD20Ny" text="Ngươi đang ở ngoài {SETTLEMENT_NAME}, không thể vào vì đây là thành lũy của địch. Thông thường, đường sá vắng tanh khi ngươi đến gần thành địch; lần này lại có người tụ tập xem, thậm chí thỉnh thoảng reo hò. Ngươi nghi nhiều người trong số họ trung thành với {FACTION_INFORMAL_NAME}, còn dân binh thì không muốn tham gia giữ thành."/>
+    <string id="SLNKWIj5" text="Đặc tính {TRAIT_NAME} của nhân vật phải ở mức {MAX_TRAIT_AMOUNT} trở xuống."/>
+    <string id="2Mic7nhz" text="Không ai trong đội quân đủ cấp kỹ năng {SKILL} để thi hành mệnh lệnh."/>
+    <string id="7j4fQHg7" text="Giao chiến trong rừng{newline}{newline}• Bộ binh được lợi thế nhỏ.{newline}• Cung thủ chịu bất lợi vừa.{newline}• Kỵ binh chịu bất lợi lớn.{newline}• Cung kỵ chịu bất lợi nghiêm trọng."/>
+    <string id="DaMQ9c3T" text="Giao chiến tại làng{newline}{newline}• Bộ binh được lợi thế nhỏ.{newline}• Cung thủ khi phòng thủ được lợi thế nhỏ.{newline}• Kỵ binh khi phòng thủ chịu bất lợi vừa."/>
+    <string id="DOaIBObZ" text="(Nếu không có công trình đang thi công, hoạt động thường ngày sẽ được kích hoạt)"/>
+    <string id="ekQP9052" text="Giao chiến trên thảo nguyên{newline}{newline}• Kỵ binh được lợi thế lớn.{newline}• Cung kỵ được lợi thế lớn."/>
+    <string id="GfR7NY0n" text="Giao chiến khi vây thành{newline}{newline}• Cung thủ khi phòng thủ được lợi thế đáng kể.{newline}• Kỵ binh khi phòng thủ chịu bất lợi vừa.{newline}• Cung kỵ khi phòng thủ được lợi thế đáng kể."/>
+    <string id="jFL2rgkP" text="Ngươi đang bỏ lại binh sĩ hoặc tù binh! Ngươi có chắc không?"/>
+    <string id="kUBvVY89" text="Giao chiến tại bến vượt sông{newline}{newline}• Bộ binh được lợi thế nhỏ.{newline}• Cung thủ khi phòng thủ được lợi thế nhỏ.{newline}• Kỵ binh khi phòng thủ chịu bất lợi nhỏ."/>
+    <string id="LpAiJGeV" text="{HERO_NAME} không thể hoàn thành bất kỳ đơn đặt hàng nào."/>
+    <string id="mPtUKcI3" text="Quân địch đang tập kết, mau cân nhắc rút lui chiến thuật!"/>
+    <string id="mxuirhkW" text="Ngươi đã phá hủy toàn bộ khí giới công thành của địch! Đến lúc rút vào thành rồi."/>
+    <string id="N7yWipWU" text="Giao chiến tại bến vượt sông{newline}{newline}• Bộ binh được lợi thế nhỏ.{newline}Kỵ binh khi tiến công chịu bất lợi vừa.{newline}• Cung kỵ khi tiến công chịu bất lợi nhỏ."/>
+    <string id="OgRtdJhu" text="Giao chiến tại làng{newline}{newline}• Bộ binh được lợi thế nhỏ.{newline}• Cung thủ khi tiến công chịu bất lợi vừa.{newline}• Cung kỵ khi tiến công chịu bất lợi vừa."/>
+    <string id="pAOtyE9u" text="Giao chiến trên đồi cát{newline}{newline}• Kỵ binh được lợi thế lớn.{newline}• Cung kỵ được lợi thế lớn."/>
+    <string id="ql8Xr5ap" text="Giao chiến khi vây thành{newline}{newline}• Cung thủ khi tiến công chịu bất lợi đáng kể.{newline}• Kỵ binh khi tiến công chịu bất lợi vừa.{newline}• Cung kỵ khi tiến công chịu bất lợi nghiêm trọng."/>
+    <string id="rgmnL6sF" text="Giao chiến trong sa mạc{newline}{newline}• Kỵ binh được lợi thế lớn.{newline}• Cung kỵ được lợi thế lớn."/>
+    <string id="rxxZFVOa" text="{HERO_NAME} có thể hoàn thành {NUMBER} đơn đặt hàng."/>
+    <string id="SqUphVOm" text="Quân đội ({CURRENT} / {LIMIT}"/>
+    <string id="wmpwMa8j" text="{?IS_POSITIVE}+{?}-{\?}{CHANGE}"/>
+    <string id="xD3ICb06" text="Giao chiến trên tuyết{newline}{newline}• Kỵ binh được lợi thế lớn.{newline}• Cung kỵ được lợi thế lớn."/>
+    <string id="YgcirtUD" text="Giao chiến trên đồng bằng{newline}{newline}• Kỵ binh được lợi thế lớn.{newline}• Cung kỵ được lợi thế lớn."/>
+    <string id="cBNSgpZN" text="Quan hệ của ngươi với {CLAN_NAME} sẽ được cải thiện &lt;a style=&quot;IncreaseStyle&quot; &gt;&lt;b&gt;{AMOUNT}&lt;/b&gt;&lt;/a&gt;"/>
+    <string id="HEUDyfbG" text="{HERO.NAME} sẽ gia nhập {CLAN_NAME}."/>
+    <string id="6dNTZdPf" text="Nhân danh những người tự do nơi rừng núi, ta ra lệnh ngươi đứng lại! Nào, xem trên người ngươi có gì cho bọn ta lấy nào?"/>
+  </strings>
+</base>

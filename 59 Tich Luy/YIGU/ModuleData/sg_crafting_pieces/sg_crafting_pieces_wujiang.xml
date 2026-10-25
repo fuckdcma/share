@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CraftingPieces>
+  <CraftingPiece id="lz_guanyu_blade" name="{=*}Thanh Long Yển Nguyệt Đao" tier="1" piece_type="Blade" mesh="sg_spear_blade_016" length="54.7" weight="0.2" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="5.96"/>
+      <Swing damage_type="Cut" damage_factor="10.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_guanyu_handle" name="{=*}Thanh Long Yển Nguyệt Đao" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_005_b" length="230" is_hidden="true" weight="0.2">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_lvbu_blade" name="{=*}Phương Thiên Họa Kích" tier="1" piece_type="Blade" mesh="sg_spear_blade_012_b" length="54.7" weight="0.1" is_hidden="true">
+		<BuildData piece_offset="-10"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="11.96"/>
+      <Swing damage_type="Cut" damage_factor="10.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_lvbu_handle" name="{=*}Phương Thiên Họa Kích" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_005_b" length="230" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_huangzhong_blade" name="{=*}Xích Huyết Đao" tier="1" piece_type="Blade" mesh="sg_spear_blade_025" length="50.58" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="5.96"/>
+      <Swing damage_type="Cut" damage_factor="8.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_huangzhong_handle" name="{=*}Xích Huyết Đao" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_005_b" length="230" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_zhaoyun_blade" name="{=*}Lượng Ngân Thương" tier="1" piece_type="Blade" mesh="sg_t5_spear_blade_016" length="22.50" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="15.96"/>
+      <Swing damage_type="Cut" damage_factor="5.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_zhaoyun_handle" name="{=*}Lượng Ngân Thương" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_001_b" length="210" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_machao_blade" name="{=*}Hổ Đầu Trạm Kim Thương" tier="1" piece_type="Blade" mesh="sg_t5_spear_blade_016" length="20.9" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="15.96"/>
+      <Swing damage_type="Cut" damage_factor="5.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_machao_handle" name="{=*}Hổ Đầu Trạm Kim Thương" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_006_b" length="180" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_zhangfei_blade" name="{=*}Trượng Bát Xà Mâu" tier="1" piece_type="Blade" mesh="sg_t5_spear_blade_015" length="20.9" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="14.96"/>
+      <Swing damage_type="Cut" damage_factor="6.26"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_zhangfei_handle" name="{=*}Trượng Bát Xà Mâu" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_005_b" length="230" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_gongsunzan_blade" name="{=*}Bạch Mã Sóc" tier="1" piece_type="Blade" mesh="sg_t4_spear_blade_023" length="22.5" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="12.96"/>
+      <Swing damage_type="Cut" damage_factor="5.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_gongsunzan_handle" name="{=*}Bạch Mã Sóc" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_001_b" length="210" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_xuhuang_blade" name="{=*}Khai Sơn Phủ" tier="1" piece_type="Blade" mesh="sg_t4_spear_blade_013" length="35.5" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="3.96"/>
+      <Swing damage_type="Cut" damage_factor="15.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_xuhuang_handle" name="{=*}Khai Sơn Phủ" tier="1" piece_type="Handle" mesh="r_sg_t2_spear_handle_006_b" length="190" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_sunce_blade" name="{=*}Bá Vương Thương" tier="1" piece_type="Blade" mesh="sg_t5_spear_blade_016" length="20.9" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="14.96"/>
+      <Swing damage_type="Cut" damage_factor="5.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_sunce_handle" name="{=*}Bá Vương Thương" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_005_b" length="230" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_chengpu_blade" name="{=*}Thiết Tích Xà Mâu" tier="1" piece_type="Blade" mesh="sg_t5_spear_blade_015" length="26.9" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="13.96"/>
+      <Swing damage_type="Cut" damage_factor="6.16"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_chengpu_handle" name="{=*}Thiết Tích Xà Mâu" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_003_b" length="290" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_dadao01_blade" name="{=*}Hán Vũ Nghi Đại Đao" tier="1" piece_type="Blade" mesh="sg_t5_spear_blade_010" length="55.8" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="5.96"/>
+      <Swing damage_type="Cut" damage_factor="10.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_dadao01_handle" name="{=*}Hán Vũ Nghi Đại Đao" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_003_a" length="180" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_changqiang01_blade" name="{=*}Hán Vũ Nghi Trường Thương" tier="1" piece_type="Blade" mesh="sg_t4_spear_blade_004" length="18.1" weight="0.1" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="10.96"/>
+      <Swing damage_type="Cut" damage_factor="6.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_changqiang01_handle" name="{=*}Hán Vũ Nghi Trường Thương" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_003_b" length="290" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_sanlianji01_blade" name="{=*}Hán Vũ Nghi Tam Liên Kích" tier="1" piece_type="Blade" mesh="r_sg_t4_spear_blade_016" length="73.5" weight="0.1" is_hidden="true">
+		<BuildData piece_offset="-45"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="10.96"/>
+      <Swing damage_type="Cut" damage_factor="10.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_sanlianji01_handle" name="{=*}Hán Vũ Nghi Tam Liên Kích" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_003_b" length="290" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_changji01_blade" name="{=*}Hán Vũ Nghi Trường Kích" tier="1" piece_type="Blade" mesh="r_sg_t5_spear_blade_013" length="40.5" weight="0.1" is_hidden="true">
+		<BuildData piece_offset="-15"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="10.36"/>
+      <Swing damage_type="Cut" damage_factor="8.66"/>
+    </BladeData>                
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_changji01_handle" name="{=*}Hán Vũ Nghi Trường Kích" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_003_b" length="290" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_danbianhuaji01_blade" name="{=*}Hán Vũ Nghi Đơn Biên Họa Kích" tier="1" piece_type="Blade" mesh="sg_spear_blade_012_a" length="53.28" weight="0.1" is_hidden="true">
+		<BuildData piece_offset="-15"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="10.96"/>
+      <Swing damage_type="Cut" damage_factor="8.66"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_danbianhuaji01_handle" name="{=*}Hán Vũ Nghi Đơn Biên Họa Kích" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_003_b" length="290" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+  <CraftingPiece id="lz_shuangbianhuaji01_blade" name="{=*}Hán Vũ Nghi Song Biên Họa Kích" tier="1" piece_type="Blade" mesh="sg_spear_blade_013_b" length="62.01" weight="0.1" is_hidden="true">
+		<BuildData piece_offset="-15"/>
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_spear_b">
+      <Thrust damage_type="Pierce" damage_factor="10.16"/>
+      <Swing damage_type="Cut" damage_factor="9.96"/>
+    </BladeData>
+		<Flags>
+			<Flag name="CanDismount"/>
+			<Flag name="CanKnockDown"/>
+		</Flags>
+    <Materials>
+      <Material id="Iron5" count="2"/>
+    </Materials>
+  </CraftingPiece>
+	<CraftingPiece id="lz_shuangbianhuaji01_handle" name="{=*}Hán Vũ Nghi Song Biên Họa Kích" tier="1" piece_type="Handle" mesh="r_sg_t5_spear_handle_003_b" length="290" is_hidden="true" weight="0.1">
+		<BuildData piece_offset="42.9"/>
+		<Materials>
+			<Material id="Wood" count="1"/>
+		</Materials>
+	</CraftingPiece>
+
+<!-- 特殊物品 -->
+  <CraftingPiece id="sg_sword_blade_012_2h_special" name="{=*}Lưỡi trường đao sát phạt" tier="1" piece_type="Blade" mesh="sg_sword_blade_012_2h" length="98" weight="0.99" is_hidden="true">
+    <BladeData stack_amount="3" physics_material="metal_weapon" body_name="bo_sword_one_handed">
+      <Thrust damage_type="Pierce" damage_factor="3.3"/>
+      <Swing damage_type="Cut" damage_factor="5.12"/>
+    </BladeData>
+    <Flags>
+      <Flag name="Civilian" type="ItemFlags"/>
+    </Flags>
+    <Materials>
+      <Material id="Iron5" count="3"/>
+    </Materials>
+  </CraftingPiece>
+
+
+
+
+</CraftingPieces>

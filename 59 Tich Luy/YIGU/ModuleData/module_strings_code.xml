@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+--><strings>
+  <!-- 三国纪年 -->
+  <string id="str_yigu_date_format" text="{=strYiguDateFormat}{SEASON} {DAY}, Jian'an {YEAR}"/>
+  <string id="str_yigu_date_season_Spring" text="{=strYiguDateSeason0}Spring"/>
+  <string id="str_yigu_date_season_Summer" text="{=strYiguDateSeason1}Summer"/>
+  <string id="str_yigu_date_season_Autumn" text="{=strYiguDateSeason2}Autumn"/>
+  <string id="str_yigu_date_season_Winter" text="{=strYiguDateSeason3}Winter"/>
+
+  <string id="str_formation_ai_behavior_text.BehaviorInfantryLaneFight" text="{=strAIBehaviorLaneFight}{TROOP_NAMES_BEGIN}{?IS_PLURAL} and {?}{\?}{TROOP_NAMES_END} {?IS_PLURAL}are{?}is{\?} lane fighting."/>
+  <string id="str_formation_ai_behavior_text.BehaviorRangedLaneFight" text="{=strAIBehaviorLaneFight}{TROOP_NAMES_BEGIN}{?IS_PLURAL} and {?}{\?}{TROOP_NAMES_END} {?IS_PLURAL}are{?}is{\?} lane fighting."/>
+
+  <!-- 三国功能 -->
+  <string id="str_officialposition_authority_InfluenceNotQualified" text="{=*}Hiện chức quan của ngươi chưa có quyền tham nghị triều chính."/>
+  <string id="str_officialposition_character_ChuanLing" text="{=*}Sứ giả truyền lệnh"/>
+  <string id="str_officialposition_group" text="{=*}Quan chức"/>
+
+  <!-- ThreeKingdoms Hero Title-->
+  <string id="sg_notable" text="Đại nhân"/>
+  <string id="sg_general" text="Tướng quân"/>
+  <string id="sg_kingdom_region_governor" text="Đô đốc"/>
+  <string id="sg_kingdom_leader" text="Chủ công"/>
+
+  <!-- ThreeKingdoms Official Position related -->
+  <string id="tkcore00" text="{HERO_NAME} nhận được {MERIT_CHANGE} điểm quân công."/>
+  <string id="tkcore01" text="{HERO_NAME} bị trừ {MERIT_CHANGE} điểm quân công."/>
+
+  <!-- In Camp - Encounter - Menu Title -->
+  <string id="tkice000" text="Phụ trách đoạn hậu"/>
+  <string id="tkice001" text="Bó tay chịu trói"/>
+
+  <!-- In Camp - Battle End - Menu Title -->
+  <string id="tkyyyy11" text="Quân ta tử chiến mới giành được thắng lợi, nhưng thương vong cũng rất nặng nề...&#10;&#10;{PLAYER_BATTLE_RECORD}"/>
+  <string id="tkyyyy12" text="Trận này quân ta thắng sít sao; địch liều chết chống trả khiến bên ta tổn thất không ít...&#10;&#10;{PLAYER_BATTLE_RECORD}"/>
+  <string id="tkyyyy13" text="Quân ta đại phá quân địch!&#10;&#10;{PLAYER_BATTLE_RECORD}"/>
+  <string id="tkyyyy14" text="Lấy ít địch nhiều, quân ta tử chiến giành thắng lợi!&#10;&#10;{PLAYER_BATTLE_RECORD}"/>
+  <string id="tkyyyy15" text="Lấy ít thắng nhiều, quân ta còn giành đại thắng!&#10;&#10;{PLAYER_BATTLE_RECORD}"/>
+
+  <!-- In Camp - Battle End - Battle Record -->
+  <string id="tkyyyy61" text="Quân công của ngươi trong {BATTLE_INDEX}{BATTLE_TYPE} như sau:"/>
+  <string id="tkyyyy62" text="Chém hạ tướng địch {GENERAL_NAME_WITH_TITLE}"/>
+  <string id="tkyyyy63" text="Đánh lui tướng địch {GENERAL_NAME_WITH_TITLE}"/>
+  <string id="tkyyyy64" text="Chém {KILL_NUMBER} quân {ENEMY_SOLDIER}, đánh bị thương và đẩy lui {WOUND_NUMBER} người."/>
+  <string id="tkyyyy65" text="Chém {KILL_NUMBER} quân {ENEMY_SOLDIER}."/>
+  <string id="tkyyyy66" text="Đánh bị thương và đẩy lui {WOUND_NUMBER} quân {ENEMY_SOLDIER}."/>
+  <string id="tkyyyy67" text="Tổng cộng {BATTLE_MERIT} điểm quân công."/>
+
+  <!-- In Camp - Battle End - Menu Options -->
+  <string id="tkyyyy21" text="Chỉ huy tiểu đội, tiếp tục đi săn."/>
+  <string id="tkyyyy31" text="Tiếp tục giúp sửa chữa và chế tạo quân nhu, binh khí."/>
+  <string id="tkyyyy41" text="Thu dọn chiến trường, trở về doanh băng bó vết thương."/>
+
+  <!-- In Camp - Player Promoted after Battle - Dialogue -->
+  <string id="tkyyyy51" text="{PLAYER_NAME}, từ ngày gia nhập quân ngũ, ngươi luôn dũng mãnh xung trận, khích lệ sĩ khí, lập được nhiều công lao. {LEADER_TITLE} trọng dụng tài năng của ngươi, muốn thăng ngươi lên chức {PROMO_OP}. Ngươi có bằng lòng không?"/>
+  <string id="tkyyyy52" text="Vì đại nghiệp của {LEADER_TITLE}, {PLAYER_NAME} nguyện tận sức khuyển mã! Đa tạ Chủ công đã ưu ái."/>
+  <string id="tkyyyy53" text="Tốt lắm! Cứ yên tâm, ta sẽ thay ngươi chuyển lời cảm tạ. Tin rằng {LEADER_TITLE} cũng rất mong đợi biểu hiện của ngươi sau này!"/>
+  <string id="tkyyyy54" text="Đa tạ {LEADER_TITLE} đã coi trọng... Nhưng ta còn thiếu kinh nghiệm. Phiền ngài bẩm lại rằng tại hạ muốn tiếp tục rèn luyện ở chức vụ hiện tại!"/>
+  <string id="tkyyyy55" text="Đã vậy, ta sẽ bẩm đúng lời ngươi với {LEADER_TITLE}. Khi nào sẵn sàng gánh vác quân chức cao hơn, hãy đến tìm ta."/>
+  <string id="tkyyyy56" text="Hiện được thăng làm: {NEW_MILITARY_OP}"/>
+
+  <!-- In Camp - JunSiMa - Menu Title -->
+  <string id="tkjsm001" text="Ngươi đến doanh trướng của Quân tư mã, thấy ông đang hỏi kỹ mấy thám kỵ vừa trở về."/>
+  <string id="tkjsm002" text="Ngươi đến doanh trướng của Quân tư mã, thấy ông đang chỉnh lý danh sách binh sĩ mới nhập ngũ."/>
+  <string id="tkjsm003" text="Ngươi đến doanh trướng của Quân tư mã, thấy ông đang quở trách những binh sĩ chưa đạt yêu cầu trong buổi thao luyện trước."/>
+  <string id="tkjsm004" text="Ngươi đến doanh trướng của Quân tư mã, thấy ông đang xử phạt vài binh sĩ phạm quân pháp."/>
+  <string id="tkjsm005" text="Ngươi đến doanh trướng của Quân tư mã, thấy ông đang gà gật ngủ..."/>
+
+  <!-- In Camp - JunSiMa - Menu Options -->
+  <string id="tkjsm010" text="Yết kiến Quân tư mã"/>
+  <string id="tkjsm011" text="Xin phân bổ binh sĩ"/>
+  <string id="tkjsm012" text="Xin làm thám kỵ"/>
+  <string id="tkjsm013" text="Thao luyện trong doanh"/>
+  <string id="tkjsm014" text="Trở lại giáo trường trung quân"/>
+
+  <!-- In Camp - JunSiMa - Dialogue Intro -->
+  <string id="tkjsm100" text="{PLAYER_NAME}, ngươi đến có việc gì?"/>
+  <string id="tkjsm101" text="Cáo từ"/>
+
+  <!-- In Camp - JunSiMa - Dialogue - Ask for Promotion -->
+  <string id="tkjsm200" text="Bẩm Quân tư mã, tại hạ muốn hỏi về việc thay đổi quân chức..."/>
+  <string id="tkjsm201" text="Ừm, mọi quân công lớn nhỏ trong doanh đều có ghi chép. Để ta tra sổ xem..."/>
+  <string id="tkjsm202" text="Hiện ngươi có thể thăng lên những quân chức sau..."/>
+  <string id="tkjsm203" text="Xem ra, muốn thăng lên quân chức cao hơn, ngươi vẫn còn thiếu quân công."/>
+  <string id="tkjsm204" text="Với chức vụ hiện giờ, chuyện thăng chức tiếp theo đã vượt quyền quyết định của ta. Hãy thỉnh ý {LEADER_TITLE} đại nhân."/>
+  <string id="tkjsm205" text="Những quân chức có thể thăng khác..."/>
+  <string id="tkjsm206" text="Đa tạ Quân tư mã đã tra cứu. Xin cho ta thêm thời gian suy xét, cáo từ."/>
+  <string id="tkjsm207" text="Nhận thưởng thăng chức"/>
+
+  <!-- In Camp - JunSiMa - Dialogue - Ask for Retirement -->
+  <string id="tkjsm300" text="Bẩm Quân tư mã, hôm nay thuộc hạ đến xin xuất ngũ."/>
+  <string id="tkjsm301" text="Ồ? Ngươi đã quyết định rời quân ngũ, trở về quê thật sao?"/>
+  <string id="tkjsm302" text="Đúng vậy."/>
+  <string id="tkjsm303" text="Xin cho thuộc hạ suy nghĩ thêm..."/>
+  <string id="tkjsm304" text="Cũng phải. Đời lính gian lao, chiến trận hiểm nguy; muốn cởi giáp về quê cũng là lẽ thường."/>
+  <string id="tkjsm305" text="Ngươi cũng đã theo {LEADER_TITLE} đại nhân nhiều ngày...&#10;&#10;Để ta xem lại quân tịch..."/>
+  <string id="tkjsm306" text="Ừm... Tính đến hôm nay, ngươi còn {REMAINING_MERIT} điểm quân công.&#10;Đây là {MERIT_TO_GOLD} tiền, coi như lộ phí về quê. Hãy cất cho kỹ, thu xếp hành trang rồi rời doanh đi!"/>
+  <string id="tkjsm307" text="Đa tạ Quân tư mã! Thuộc hạ xin bái biệt."/>
+
+  <!-- In Camp - JunSiMa - Menu - Sentry -->
+  <string id="tkjsm400" text="Quân tư mã truyền lệnh: ngươi phải dẫn tiểu đội tuần tra quanh đại quân, canh phòng và dò xét tình báo."/>
+  <string id="tkjsm401" text="Trở về doanh báo cáo"/>
+  <string id="tkjsm402" text="Lúc này đại quân đang hành tiến, một toán thám kỵ ít người như ta khó phát huy tác dụng."/>
+  <string id="tkjsm403" text="Có quân lệnh của Tướng quân"/>
+  <string id="tkjsm404" text="Tướng quân nghe tin toán thám kỵ của ta chịu nhiều tổn thất khi giao chiến với địch, đặc biệt điều binh trong doanh đến bổ sung lực lượng!"/>
+  <string id="tkjsm405" text="Thám kỵ thuộc bộ {ENEMY_PARTY_NAME}"/>
+  <string id="tkjsm406" text="Binh sĩ do Tướng quân điều đến"/>
+
+  <!-- In Camp - JunSiMa - Menu - Start Battle as Sentry -->
+  <string id="tkjsm500" text="Chúng ta gặp thám kỵ quân địch!"/>
+  <string id="tkjsm501" text="Rút đao nghênh chiến!"/>
+  <string id="tkjsm502" text="Lũ sơn tặc này dám cản đường ta!"/>
+  <string id="tkjsm503" text="Giết sạch chúng!"/>
+  <string id="tkjsm504" text="Gặp bọn lưu khấu trên đường, xin hạ lệnh!"/>
+  <string id="tkjsm505" text="Tha cho chúng đi."/>
+
+  <!-- In Camp - JunSiMa - Menu - Win Battle -->
+  <string id="tkjsm600" text="Quân ta đại thắng!&#10;&#10;{PLAYER_BATTLE_RECORD}"/>
+  <string id="tkjsm601" text="Phái người về doanh báo cáo, tiếp tục do thám"/>
+  <string id="tkjsm602" text="Thu dọn chiến trường, về doanh báo cáo"/>
+
+  <!-- In Camp - JunSiMa - Menu - Fail Battle -->
+  <string id="tkjsm700" text="Quân ta đại bại, may được Tướng quân kịp thời phái binh tiếp ứng...&#10;&#10;{PLAYER_BATTLE_RECORD}"/>
+  <string id="tkjsm701" text="Trở về doanh dưỡng thương..."/>
+
+  <!-- In Camp - JunSiMa - Menu - Select Training -->
+  <string id="tkjsm900" text="Hôm nay muốn thao luyện:"/>
+  <string id="tkjsm901" text="Kiếm và khiên"/>
+  <string id="tkjsm902" text="Chiến đấu bằng vũ khí hai tay"/>
+  <string id="tkjsm903" text="Đâm giáo dài"/>
+  <string id="tkjsm904" text="Cung thuật"/>
+  <string id="tkjsm905" text="Sử dụng nỏ mạnh"/>
+  <string id="tkjsm906" text="Kỹ thuật ném"/>
+  <string id="tkjsm907" text="Kỵ thuật"/>
+  <string id="tkjsm908" text="Thể lực"/>
+  <string id="tkjsm909" text="Tạm thời thôi vậy..."/>
+
+  <!-- In Camp - JunSiMa - Menu - Training -->
+  <string id="tkjsm800" text="Đang thao luyện trong doanh..."/>
+  <string id="tkjsm801" text="Trở về trướng nghỉ ngơi"/>
+  <string id="tkjsm802" text="Hoàn tất thao luyện"/>
+
+  <!-- In Camp - JunSiMa - Menu - Ask for more Soldier -->
+  <string id="tkjsma00" text="Quân chức chưa đủ cao, không thể yêu cầu phân bổ binh sĩ."/>
+  <string id="tkjsma01" text="Trung quân thiếu binh lực, không thể điều quân bổ sung cho tiểu đội."/>
+  <string id="tkjsma02" text="Chúng ta đã không còn trực thuộc bản bộ Tướng quân. Đã đến lúc tự lập một đội quân và chiêu mộ dũng sĩ!"/>
+  <string id="tkjsma03" text="Trung quân chưa chiêu mộ đủ binh sĩ, không thể phân quân bổ sung cho tiểu đội."/>
+  <string id="tkjsma04" text="Lần này chỉ được điều tối đa {MAX_ALLOWED_DISTRIBUTED_SOLDIER_NUMBER} binh sĩ."/>
+  <string id="tkjsma05" text="Không được giao đồng bạn cho bản bộ của Tướng quân."/>
+  <string id="tkjsma06" text="Đại doanh trung quân"/>
+
+
+  <string id="str_options_type_BattleSize_0" text="{=RBSG9oAjFL7}Very Low (100)"/>
+  <string id="str_options_type_BattleSize_1" text="{=RBSIam02fhz}Low (400)"/>
+  <string id="str_options_type_BattleSize_2" text="{=RBSX1nFnomy}Medium (800)"/>
+  <string id="str_options_type_BattleSize_3" text="{=RBSkNpWwJcc}High (1000)"/>
+  <string id="str_options_type_BattleSize_4" text="{=RBSG17kWzwi}Very High (1400)"/>
+  <string id="str_options_type_BattleSize_5" text="{=RBSQfsXhxOI}Ultra (1800)"/>
+  <string id="str_options_type_BattleSize_6" text="{=RBSdV5ar9eP}Max (2000)"/>
+
+  <string id="str_Tactical" text="{=TACTICAL}Chiến thuật"/>
+  <string id="str_start_ambush" text="{=TACTICALSTARTAMBUSH}{ATTACKER} Start Ambush"/>
+  <string id="str_stop_ambush" text="{=TACTICALSTOPAMBUSH}{ATTACKER} Stop Ambush"/>
+  <string id="str_many_enemy" text="{=TACTICALMANYENEMY}There are too many enemies near {ATTACKER}"/>
+  <string id="str_ambush_attack" text="{=TACTICALAMBUSHATK}The {ATTACKER} ambushed the {DEFENDER}"/>
+  <string id="str_ambush_fail" text="{=TACTICALAMBUSHFAIL}The {ATTACKER} plan was discovered by the {DEFENDER}"/>
+  <string id="str_start_lure" text="{=TACTICALSTARTLURE}{ATTACKER} are seducing the enemy near {AMBUSHER}"/>
+  <string id="str_stop_lure" text="{=TACTICALSTOPLURE}{ATTACKER} stop lure"/>
+  <string id="str_ambush_interrupt" text="{=TACTICALAMBUSHINT}The {DEFENDER} troops suddenly interrupted {ATTACKER} ambush "/>
+  <string id="str_attack" text="Tiến công"/>
+  <string id="str_let_them_go" text="Thả họ đi"/>
+  <string id="str_leave" text="Rời đi…"/>
+
+  <string id="str_sg_friendlyduel_dialog_nohorse" text="{=sg_friendlyduel_dialog_nohorse}Bộ chiến"/>
+  <string id="str_sg_friendlyduel_dialog_horse" text="{=sg_friendlyduel_dialog_horse}Mã chiến"/>
+
+  <!-- 史书 -->
+  <string id="tk_historical_records" text="Sử thư"/>
+  <string id="tk_historical_records_desc" text="Cuối thời Đông Hán, thiên hạ đại loạn, các thứ sử, châu mục chiếm giữ châu quận, tranh quyền xưng bá. Sử quan biên soạn bộ “Hán Mạt Liệt Quốc Chí”, ghi lại sự hưng vong của chư hầu và những biến động bờ cõi, qua đó soi rõ đạo trị loạn."/>
+  <string id="tk_historical_records_by_year" text="Biên niên"/>
+  <string id="tk_historical_records_by_kingdom" text="Liệt Quốc Chí"/>
+
+
+
+  <!-- 单挑 -->
+  <string id="sg_friendlyduel_request_option" text="Có câu “Văn vô đệ nhất, võ vô đệ nhị”. Hôm nay tại hạ muốn cùng các hạ phân tài cao thấp, chẳng hay có chịu chỉ giáo?"/>
+  <string id="sg_friendlyduel_request_refuse" text="Ta không muốn tranh hơn thua bằng sức võ phu, xin miễn."/>
+  <string id="sg_friendlyduel_request_accept" text="Ta cũng đang có ý ấy. Cứ ra chiêu đi!"/>
+  <string id="sg_friendlyduel_request_won" text="Võ nghệ các hạ quả tinh diệu. Hôm nay được giao đấu một trận, thật là vinh hạnh."/>
+  <string id="sg_friendlyduel_request_lose" text="Đa tạ nhường nhịn! Hôm nay tại hạ may mắn thắng được, hẳn các hạ đã nương tay."/>
+  <string id="sg_friendlyduel_dialog_title" text="Tỷ thí:"/>
+  <string id="sg_friendlyduel_dialog_desc" text="Chọn thể thức tỷ thí:"/>
+  <string id="sg_friendlyduel_dialog_nohorse" text="Bộ chiến"/>
+  <string id="sg_friendlyduel_dialog_horse" text="Mã chiến"/>
+  <string id="sg_friendlyduel_result_won" text="Ngươi đã thắng trận tỷ thí với {ENEMY_NAME}."/>
+  <string id="sg_friendlyduel_result_lose" text="Ngươi đã thua trận tỷ thí với {ENEMY_NAME}."/>
+
+</strings><!--
+</base>
+-->
