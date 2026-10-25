@@ -1,0 +1,67 @@
+name: Package YiGu Vietnamese localization
+on:
+  push:
+    branches: [yigu-qa-final-20261025]
+    paths:
+      - '59 Tich Luy/YIGU/**'
+      - '.github/workflows/package-yigu.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify XML and build installable ZIP
+        run: |
+          python3 - <<'PY'
+          import re
+          from pathlib import Path
+          from xml.etree import ElementTree as ET
+          from zipfile import ZipFile, ZIP_DEFLATED
+          root = Path("59 Tich Luy/YIGU")
+          lang = root / "ModuleData/Languages/VI"
+          xmls = sorted(p for p in root.rglob("*.xml") if "THAM_KHAO_KHONG_CAI" not in p.parts)
+          vi = sorted(p for p in lang.rglob("*.xml") if p.name != "language_data.xml")
+          assert len(xmls) == 190, f"Unexpected XML count: {len(xmls)}"
+          assert len(vi) == 76, f"Unexpected VI file count: {len(vi)}"
+          ids = set()
+          for p in xmls:
+              ET.parse(p)
+          for p in vi:
+              for string in ET.parse(p).getroot().iter("string"):
+                  id_ = string.attrib.get("id")
+                  assert id_ and id_ not in ids, f"Missing/duplicate ID: {id_}"
+                  assert string.attrib.get("text", "").strip(), f"Empty text: {id_}"
+                  ids.add(id_)
+          assert len(ids) == 8989, f"Unexpected VI ID count: {len(ids)}"
+          manifest = ET.parse(lang / "language_data.xml").getroot()
+          refs = [e.attrib["xml_path"] for e in manifest.iter("LanguageFile")]
+          assert len(refs) == 76 and len(set(refs)) == 76, "Invalid language manifest"
+          for path in refs:
+              assert (root / "ModuleData/Languages" / path).is_file(), f"Missing file: {path}"
+          outfile = Path("dist/YiGu_Tam_Quoc_Viet_Hoa_B59_BienTap.zip")
+          outfile.parent.mkdir(exist_ok=True)
+          with ZipFile(outfile, "w", compression=ZIP_DEFLATED, compresslevel=9) as z:
+              for p in xmls:
+                  z.write(p, Path("YIGU") / p.relative_to(root))
+          with ZipFile(outfile) as z:
+              assert z.testzip() is None, "CRC check failed"
+              assert len(z.namelist()) == 190
+          print("PASS", outfile, "xml", len(xmls), "vi", len(vi), "unique IDs", len(ids))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: YiGu-Tam-Quoc-VI-B59-BienTap
+          path: dist/YiGu_Tam_Quoc_Viet_Hoa_B59_BienTap.zip
+          retention-days: 90
+      - name: Commit ZIP to branch for single-download handoff
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dist/YiGu_Tam_Quoc_Viet_Hoa_B59_BienTap.zip
+          if ! git diff --cached --quiet; then
+            git commit -m 'Package YiGu VI localization [skip ci]'
+            git push
+          fi
