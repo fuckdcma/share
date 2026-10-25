@@ -14,6 +14,27 @@ jobs:
         uses: actions/checkout@v4
       - name: Validate all accumulated XML and make installable ZIP
         run: python "59 Tich Luy/qa_final_yigu.py"
+      - name: Package authoritative CN and available EN reference XML for offline proofreading
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, ZIP_DEFLATED
+          files = []
+          for folder in [Path('Yigu Three Kingdom Mod/ModuleData/Languages/CNs'), Path('Yigu Three Kingdom Mod/ModuleData/Languages/ENs')]:
+              files.extend(folder.rglob('*.xml'))
+          files.append(Path('Yigu Three Kingdom Mod/ModuleData/sg_heroes.xml'))
+          files.extend(Path('Mount and Blade/Modules').glob('*/ModuleData/Languages/*.xml'))
+          with ZipFile('release/YiGu_Nguon_CN_EN_DoiChieu.zip','w',ZIP_DEFLATED,compresslevel=8) as z:
+              for f in sorted(set(files)):
+                  if f.is_file(): z.write(f,f.as_posix())
+          PY
+      - name: Upload private QA reference corpus
+        uses: actions/upload-artifact@v4
+        with:
+          name: YiGu_QA_CN_EN_References
+          path: release/YiGu_Nguon_CN_EN_DoiChieu.zip
+          if-no-files-found: error
+          retention-days: 7
       - name: Upload final-review ZIP and QA reports
         uses: actions/upload-artifact@v4
         with:
