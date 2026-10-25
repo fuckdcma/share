@@ -1,0 +1,27 @@
+name: YiGu Vietnamese - static QA and install ZIP
+on:
+  push:
+    branches:
+      - 'review/yigu-sau-b59-qa-20261026'
+  workflow_dispatch:
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout reviewed translations
+        uses: actions/checkout@v4
+      - name: Validate all accumulated XML and make installable ZIP
+        run: python "59 Tich Luy/qa_final_yigu.py"
+      - name: Upload final-review ZIP and QA reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: YiGu_Tam_Quoc_Viet_Hoa_Ra_Soat_Cuoi
+          path: |
+            release/YiGu_Tam_Quoc_Viet_Hoa_Ra_Soat_Cuoi.zip
+            release/QA_*.csv
+            release/QA_SUMMARY.json
+            release/README_QA.md
+          if-no-files-found: error
+          retention-days: 30
